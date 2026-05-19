@@ -624,3 +624,24 @@ a { color: inherit; text-decoration: none; }
     align-items: flex-start;
   }
 }
+
+/* ── Footer ─────────────────────────────────────────────── */
+.footer {
+  background: var(--dark);
+  padding: 32px 0;
+}
+.footer__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  text-align: center;
+}
+.footer__logo { font-size: 16px; font-weight: 800; color: #fff; }
+.footer__copy { font-size: 13px; color: rgba(255,255,255,0.4); }
+.footer__link { font-size: 13px; color: var(--green); text-decoration: underline; }
+.footer__link:hover { color: #fff; }
+
+@media (min-width: 640px) {
+  .footer__inner { flex-direction: row; justify-content: space-between; text-align: left; }
+}
