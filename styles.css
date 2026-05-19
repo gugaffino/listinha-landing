@@ -349,3 +349,178 @@ a { color: inherit; text-decoration: none; }
   .pain__grid { grid-template-columns: repeat(3, 1fr); }
   .pain__transition { padding: 48px 56px; }
 }
+
+/* ── Features ───────────────────────────────────────────── */
+.features { padding: var(--section-pad); }
+
+.features__header {
+  text-align: center;
+  margin-bottom: 52px;
+}
+.features__headline {
+  font-size: clamp(22px, 4vw, 32px);
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+.features__sub { font-size: 16px; color: var(--text-secondary); }
+
+.features__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+@media (min-width: 640px) {
+  .features__grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* Feature card */
+.feat-card {
+  background: var(--bg);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Mockup area */
+.feat-mockup {
+  padding: 24px 24px 0;
+  min-height: 160px;
+  display: flex;
+  flex-direction: column;
+}
+
+.feat-mockup--lista  { background: #f7f9ff; border-bottom: 1px solid #e8eeff; }
+.feat-mockup--despensa { background: #fffbf0; border-bottom: 1px solid #fde8b0; }
+.feat-mockup--receitas { background: #fffef5; border-left: 4px solid #d4a843; border-bottom: 1px solid #e8e0c8; }
+.feat-mockup--plano  { background: #faf5ff; border-bottom: 1px solid #e0ccff; }
+
+.fm-header {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--blue);
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fm-badge {
+  font-size: 10px;
+  font-weight: 600;
+  padding: 3px 8px;
+  border-radius: 20px;
+  background: #eef2ff;
+  color: var(--blue);
+}
+
+.fm-item {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding: 6px 0;
+  border-bottom: 1px solid rgba(0,0,0,0.04);
+  font-size: 11px;
+  color: var(--text-primary);
+}
+.fm-item:last-child { border-bottom: none; }
+.fm-item--done { color: var(--text-muted); }
+.fm-item--done span:not(.fm-check):not(.fm-qty) { text-decoration: line-through; }
+
+.fm-check {
+  width: 13px; height: 13px;
+  border-radius: 3px;
+  border: 1.5px solid var(--border);
+  flex-shrink: 0;
+}
+.fm-check--done { background: var(--green-dark); border-color: var(--green-dark); }
+
+.fm-qty { margin-left: auto; font-size: 10px; color: var(--text-muted); }
+
+/* Pantry tags */
+.fm-tags { display: flex; flex-wrap: wrap; gap: 6px; }
+.fm-tag-item {
+  font-size: 10px;
+  font-weight: 600;
+  padding: 3px 9px;
+  border-radius: 20px;
+  background: #fff3d0;
+  color: #b86e00;
+  border: 1px solid #fde8b0;
+}
+.fm-tag-item--out {
+  background: #fff0f0;
+  color: #cc3333;
+  border-color: #ffd0d0;
+  text-decoration: line-through;
+  opacity: 0.75;
+}
+.fm-tag-item--add {
+  background: var(--bg-soft);
+  color: var(--text-muted);
+  border: 1px dashed var(--border);
+}
+
+/* Recipe list */
+.fm-recipe-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 0;
+  border-bottom: 1px solid #f0e8d0;
+  font-size: 11px;
+  color: var(--text-primary);
+}
+.fm-recipe-item:last-child { border-bottom: none; }
+.fm-source { font-size: 10px; color: var(--text-muted); }
+
+/* Weekly plan */
+.fm-day {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 5px 0;
+  border-bottom: 1px solid rgba(124,58,237,0.08);
+  font-size: 11px;
+}
+.fm-day:last-child { border-bottom: none; }
+.fm-day-label { color: var(--text-muted); width: 28px; flex-shrink: 0; font-weight: 700; font-size: 10px; }
+.fm-empty { color: #ccc; font-style: italic; }
+
+/* Feature body */
+.feat-body { padding: 20px 24px 24px; flex: 1; }
+
+.feat-tag {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 10px;
+}
+.feat-tag--blue   { background: #eef2ff; color: var(--blue); }
+.feat-tag--yellow { background: #fff3d0; color: var(--yellow); }
+.feat-tag--green  { background: #e8f8ee; color: var(--green-dark); }
+.feat-tag--purple { background: #f0e8ff; color: var(--purple); }
+
+.feat-body h3 {
+  font-size: 17px;
+  font-weight: 800;
+  line-height: 1.25;
+  margin-bottom: 8px;
+}
+.feat-body p { font-size: 14px; color: var(--text-secondary); line-height: 1.65; margin-bottom: 14px; }
+
+.feat-bullets { list-style: none; display: flex; flex-direction: column; gap: 5px; }
+.feat-bullets li {
+  font-size: 13px;
+  color: #555;
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+}
+.feat-bullets li::before { content: '✓'; color: var(--green-dark); font-weight: 700; font-size: 12px; flex-shrink: 0; }
