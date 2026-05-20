@@ -9,7 +9,7 @@
 
 Ao construir um cluster pra uma nova página:
 
-1. **Primária deve vir do CSV de keywords** (`keywords.csv` na raiz do projeto). Nunca inventa primária.
+1. **Primária deve vir do CSV de keywords** (`blog-keywords.csv` na raiz do projeto). Nunca inventa primária.
 2. **Checa este arquivo primeiro** — nunca reutiliza primária.
 3. **Keywords secundárias/cluster: CSV primeiro, inventa só o que falta.**
    - Varre o CSV pra variações de mesma intenção da primária.
@@ -42,7 +42,7 @@ Ao construir um cluster pra uma nova página:
 
 ## Primárias disponíveis (não usadas ainda)
 
-Do cluster restante em `keywords.csv` — alto volume, baixo KD, ainda sem página:
+Do cluster restante em `blog-keywords.csv` — alto volume, baixo KD, ainda sem página:
 
 | Keyword | Vol | KD | Intenção |
 |---|---|---|---|
@@ -58,7 +58,7 @@ Do cluster restante em `keywords.csv` — alto volume, baixo KD, ainda sem pági
 
 ## Workflow para o próximo post
 
-1. Abre o `keywords.csv` na raiz do projeto
+1. Abre o `blog-keywords.csv` na raiz do projeto
 2. Filtra por volume × (1 / KD) ou similar
 3. Pula qualquer primária já na tabela acima
 4. Escolhe uma primária do CSV que ainda não foi usada
