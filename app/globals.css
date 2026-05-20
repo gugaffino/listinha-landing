@@ -927,3 +927,57 @@ h1,h2,h3,h4 {
 .svc-faq-item:first-child { border-top: 1px solid var(--linha); }
 .svc-faq-q { font-size: 17px; font-weight: 600; margin-bottom: 10px; letter-spacing: -0.01em; color: var(--carvao); }
 .svc-faq-a { font-size: 15px; color: var(--carvao-2); line-height: 1.65; text-wrap: pretty; }
+
+/* Hub de funcionalidades */
+.svc-hub-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+@media (max-width: 900px) { .svc-hub-grid { grid-template-columns: 1fr; } }
+@media (min-width: 601px) and (max-width: 900px) { .svc-hub-grid { grid-template-columns: repeat(2, 1fr); } }
+
+.svc-hub-card {
+  display: flex; flex-direction: column; gap: 12px;
+  background: var(--papel);
+  border: 1px solid var(--linha);
+  border-radius: 20px;
+  padding: 28px;
+  text-decoration: none;
+  transition: border-color .15s, box-shadow .15s, transform .12s;
+}
+.svc-hub-card:hover {
+  border-color: var(--verde-folha);
+  box-shadow: 0 8px 24px rgba(26,29,23,0.08);
+  transform: translateY(-2px);
+}
+.svc-hub-icon {
+  width: 48px; height: 48px;
+  background: var(--verde-claro);
+  border-radius: 13px;
+  display: grid; place-items: center;
+  color: var(--verde-folha);
+}
+.svc-hub-eyebrow {
+  font-size: 11px; font-weight: 700;
+  letter-spacing: 0.12em; text-transform: uppercase;
+  color: var(--verde-musgo);
+}
+.svc-hub-title {
+  font-size: 20px; font-weight: 600;
+  letter-spacing: -0.02em; line-height: 1.2;
+  color: var(--carvao);
+}
+.svc-hub-desc { font-size: 14px; color: var(--carvao-2); line-height: 1.6; flex: 1; text-wrap: pretty; }
+.svc-hub-tags { display: flex; flex-wrap: wrap; gap: 6px; }
+.svc-hub-tag {
+  font-size: 12px; font-weight: 500;
+  padding: 3px 10px; border-radius: 999px;
+  background: var(--verde-claro); color: var(--verde-musgo);
+}
+.svc-hub-link {
+  display: flex; align-items: center; gap: 6px;
+  font-size: 13px; font-weight: 600;
+  color: var(--verde-folha);
+  margin-top: 4px;
+}
