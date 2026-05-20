@@ -172,6 +172,9 @@ export default function Home() {
         </div>
       </section>
 
+      {/* MAIN CONTENT */}
+      <main>
+
       {/* DORES */}
       <section className="section pain">
         <div className="container">
@@ -372,17 +375,17 @@ export default function Home() {
           <div className="how-grid">
             <div className="how-step reveal">
               <div className="num">1</div>
-              <h4>Monta sua despensa</h4>
+              <h3>Monta sua despensa</h3>
               <p>Em 2 minutos, você adiciona os básicos que sempre tem em casa. Pode usar as sugestões do app — não precisa começar do zero.</p>
             </div>
             <div className="how-step reveal">
               <div className="num">2</div>
-              <h4>Cria a lista de mercado</h4>
+              <h3>Cria a lista de mercado</h3>
               <p>Digita os itens, escolhe um corredor ou loja, e compartilha pelo zap. Quem for às compras vê tudo organizado.</p>
             </div>
             <div className="how-step reveal">
               <div className="num">3</div>
-              <h4>Marca o que comprou</h4>
+              <h3>Marca o que comprou</h3>
               <p>No corredor do mercado, vai marcando o que pegou. A despensa atualiza sozinha. Pronto, bora cozinhar.</p>
             </div>
           </div>
@@ -427,6 +430,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      </main>
 
       {/* FOOTER */}
       <footer className="footer">
