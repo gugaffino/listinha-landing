@@ -2,14 +2,30 @@ import RevealObserver from '../../../components/RevealObserver'
 import CopyButton from '../../../components/CopyButton'
 
 export const metadata = {
-  title: 'Lista Básica de Compras: guia completo com 80+ itens pra copiar',
+  title: 'Lista básica de compras: guia com 80+ itens pra copiar',
   description: 'Lista básica de compras com os 7 grupos essenciais, 80+ itens pra copiar, como adaptar ao seu perfil, quanto custa por mês e 5 dicas pra economizar no supermercado.',
+  alternates: {
+    canonical: 'https://listinha-landing-delta.vercel.app/blog/lista-basica-de-compras',
+  },
   openGraph: {
-    title: 'Lista Básica de Compras: guia completo com 80+ itens pra copiar',
+    title: 'Lista básica de compras: guia com 80+ itens pra copiar',
     description: 'Os 7 grupos essenciais, 80+ itens pra copiar, perfis de compra e quanto custa por mês.',
     type: 'article',
     url: 'https://listinha-landing-delta.vercel.app/blog/lista-basica-de-compras',
-    images: [{ url: 'https://images.pexels.com/photos/11018212/pexels-photo-11018212.jpeg?auto=compress&cs=tinysrgb&h=630&w=1200' }],
+    images: [
+      {
+        url: 'https://images.pexels.com/photos/11018212/pexels-photo-11018212.jpeg?auto=compress&cs=tinysrgb&h=630&w=1200',
+        width: 1200,
+        height: 630,
+        alt: 'Carrinho de compras em supermercado com itens da lista básica',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Lista básica de compras: guia com 80+ itens pra copiar',
+    description: 'Os 7 grupos essenciais, 80+ itens pra copiar, perfis de compra e quanto custa por mês.',
+    images: ['https://images.pexels.com/photos/11018212/pexels-photo-11018212.jpeg?auto=compress&cs=tinysrgb&h=630&w=1200'],
   },
 }
 
@@ -65,6 +81,46 @@ const faqSchema = {
         text: 'A forma mais eficaz é ter uma lista fixa por grupos (hortifruti, carnes, mercearia, limpeza, higiene) e verificar a despensa antes de sair. Com isso você sabe o que acabou antes de precisar — não depois. Quem conecta lista, despensa e receitas no mesmo lugar erra menos.',
       },
     },
+  ],
+}
+
+const articleSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: 'Lista básica de compras: guia com 80+ itens pra copiar',
+  description: 'Lista básica de compras com os 7 grupos essenciais, 80+ itens pra copiar, como adaptar ao seu perfil, quanto custa por mês e 5 dicas pra economizar no supermercado.',
+  image: 'https://images.pexels.com/photos/11018212/pexels-photo-11018212.jpeg?auto=compress&cs=tinysrgb&h=630&w=1200',
+  datePublished: '2025-05-16',
+  dateModified: '2025-05-20',
+  author: {
+    '@type': 'Person',
+    name: 'Gustavo Fino',
+    url: 'https://listinha-landing-delta.vercel.app',
+  },
+  publisher: {
+    '@type': 'Organization',
+    name: 'Listinha',
+    url: 'https://listinha-landing-delta.vercel.app',
+    logo: {
+      '@type': 'ImageObject',
+      url: 'https://listinha-puce.vercel.app/icons/icon-192.png',
+      width: 192,
+      height: 192,
+    },
+  },
+  mainEntityOfPage: {
+    '@type': 'WebPage',
+    '@id': 'https://listinha-landing-delta.vercel.app/blog/lista-basica-de-compras',
+  },
+}
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://listinha-landing-delta.vercel.app' },
+    { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://listinha-landing-delta.vercel.app/blog' },
+    { '@type': 'ListItem', position: 3, name: 'Lista básica de compras', item: 'https://listinha-landing-delta.vercel.app/blog/lista-basica-de-compras' },
   ],
 }
 
@@ -140,9 +196,19 @@ export default function ListaBasicaDeCompras() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       <RevealObserver />
 
-      <header className="nav">
+      <a href="#main-content" className="skip-link">Pular para o conteúdo</a>
+
+      <header id="top" className="nav">
         <div className="container nav-inner">
           <a href="/" className="brand">
             <div className="brand-mark">
@@ -163,12 +229,27 @@ export default function ListaBasicaDeCompras() {
         </div>
       </header>
 
-      <main className="blog-page">
+      <main id="main-content" className="blog-page">
+
+        <nav className="breadcrumb" aria-label="Você está aqui">
+          <ol className="breadcrumb-nav">
+            <li><a href="/">Home</a></li>
+            <li aria-hidden="true" className="breadcrumb-sep">/</li>
+            <li><a href="/blog">Blog</a></li>
+            <li aria-hidden="true" className="breadcrumb-sep">/</li>
+            <li className="breadcrumb-current" aria-current="page">Lista básica de compras</li>
+          </ol>
+        </nav>
+
         <div className="blog-header reveal">
           <div className="blog-meta">
-            <span className="blog-date">Mai 2025</span>
+            <time className="blog-date" dateTime="2025-05-16">16 mai. 2025</time>
             <span className="blog-meta-sep">·</span>
             <span className="blog-read">9 min de leitura</span>
+            <span className="blog-meta-sep">·</span>
+            <span className="blog-date" style={{ color: 'var(--carvao-3)', fontSize: 13 }}>
+              Atualizado <time dateTime="2025-05-20">20 mai. 2025</time>
+            </span>
             <span className="blog-meta-sep">·</span>
             <a href="/blog" className="blog-meta-link">Blog</a>
           </div>
@@ -192,6 +273,8 @@ export default function ListaBasicaDeCompras() {
             src="https://images.pexels.com/photos/11018212/pexels-photo-11018212.jpeg?auto=compress&cs=tinysrgb&h=630&w=1200"
             alt="Carrinho de compras em supermercado com itens da lista básica"
             className="blog-hero-img"
+            width="1200"
+            height="630"
             loading="eager"
           />
           <p className="blog-img-credit">Foto: Jan van der Wolf / Pexels</p>
@@ -199,18 +282,35 @@ export default function ListaBasicaDeCompras() {
 
         <article className="prose">
 
+          <nav className="toc" aria-label="Índice do artigo">
+            <p className="toc-title">Neste artigo</p>
+            <ol className="toc-list">
+              <li><a href="#por-que-ter-lista">Por que uma lista básica muda tudo no mercado</a></li>
+              <li><a href="#os-7-grupos">Os 7 grupos de uma lista completa</a></li>
+              <li><a href="#lista-pra-copiar">Lista pra copiar e colar (80+ itens)</a></li>
+              <li><a href="#perfil">Como adaptar ao seu perfil</a></li>
+              <li><a href="#por-corredor">Como organizar por corredor do supermercado</a></li>
+              <li><a href="#lista-despensa">Por que lista, despensa e receitas precisam estar conectadas</a></li>
+              <li><a href="#economizar">5 dicas pra economizar no mercado</a></li>
+              <li><a href="#quanto-custa">Quanto custa por mês</a></li>
+              <li><a href="#faq">Perguntas frequentes</a></li>
+            </ol>
+          </nav>
+
           {/* POR QUE TER LISTA */}
           <div className="h2-img-block">
             <img
               src="https://images.pexels.com/photos/4959907/pexels-photo-4959907.jpeg?auto=compress&cs=tinysrgb&h=380&w=760"
               alt="Lista de compras escrita no papel sobre mesa de cozinha"
               className="blog-inline-img"
+              width="760"
+              height="380"
               loading="lazy"
             />
             <p className="blog-img-credit">Foto: Kaboompics / Pexels</p>
           </div>
 
-          <h2 className="img-above">Por que uma lista básica de compras muda tudo no mercado</h2>
+          <h2 id="por-que-ter-lista" className="img-above">Por que uma lista básica de compras muda tudo no mercado</h2>
 
           <p>
             A lista básica não é um cardápio. É o piso — os itens que a casa precisa independente
@@ -235,12 +335,14 @@ export default function ListaBasicaDeCompras() {
               src="https://images.pexels.com/photos/37321079/pexels-photo-37321079.jpeg?auto=compress&cs=tinysrgb&h=380&w=760"
               alt="Frutas e vegetais frescos coloridos no hortifruti do mercado"
               className="blog-inline-img"
+              width="760"
+              height="380"
               loading="lazy"
             />
             <p className="blog-img-credit">Foto: Muhamad Guruh Budi Hartono / Pexels</p>
           </div>
 
-          <h2 className="img-above">Os 7 grupos de uma lista de compras completa</h2>
+          <h2 id="os-7-grupos" className="img-above">Os 7 grupos de uma lista de compras completa</h2>
           <p>
             A maioria das casas funciona bem com os mesmos 7 grupos. O que muda entre famílias
             é quantidade — não os grupos em si.
@@ -332,12 +434,14 @@ export default function ListaBasicaDeCompras() {
               src="https://images.pexels.com/photos/8580727/pexels-photo-8580727.jpeg?auto=compress&cs=tinysrgb&h=380&w=760"
               alt="Despensa doméstica organizada com os grupos essenciais de compras"
               className="blog-inline-img"
+              width="760"
+              height="380"
               loading="lazy"
             />
             <p className="blog-img-credit">Foto: RDNE Stock project / Pexels</p>
           </div>
 
-          <h2 className="img-above">Lista de compras básica para copiar e colar</h2>
+          <h2 id="lista-pra-copiar" className="img-above">Lista de compras básica para copiar e colar</h2>
           <p>
             Clica em "Copiar lista" e cola direto no WhatsApp ou no bloco de notas. Risca o que
             já tem em casa antes de sair — o que restar é o que você compra.
@@ -411,12 +515,14 @@ export default function ListaBasicaDeCompras() {
               src="https://images.pexels.com/photos/5427305/pexels-photo-5427305.jpeg?auto=compress&cs=tinysrgb&h=380&w=760"
               alt="Família cozinhando juntos na cozinha de casa"
               className="blog-inline-img"
+              width="760"
+              height="380"
               loading="lazy"
             />
             <p className="blog-img-credit">Foto: Amina Filkins / Pexels</p>
           </div>
 
-          <h2 className="img-above">Como adaptar a lista de compras ao seu perfil</h2>
+          <h2 id="perfil" className="img-above">Como adaptar a lista de compras ao seu perfil</h2>
           <p>
             A lista básica é o ponto de partida. O que muda de casa pra casa é principalmente
             quantidade — e alguns ajustes específicos dependendo da rotina.
@@ -503,7 +609,7 @@ export default function ListaBasicaDeCompras() {
           </div>
 
           {/* ORGANIZAR POR CORREDOR */}
-          <h2>Como organizar a lista por corredor do supermercado</h2>
+          <h2 id="por-corredor">Como organizar a lista por corredor do supermercado</h2>
           <p>
             Organizar por corredor economiza tempo dentro do mercado. Em vez de cruzar o
             supermercado duas vezes, você segue uma linha lógica e sai mais rápido.
@@ -518,9 +624,13 @@ export default function ListaBasicaDeCompras() {
             <li><strong>Açougue e peixaria</strong> — carnes frescas.</li>
             <li><strong>Congelados</strong> — sempre por último. Não descongela no carrinho.</li>
           </ul>
+          <p>
+            O <a href="/funcionalidades/lista-de-compras">app de lista de compras do Listinha</a>{' '}
+            organiza seus itens por corredor automaticamente — você não precisa reordenar nada na hora.
+          </p>
 
-          {/* LISTA + DESPENSA + RECEITAS — UNIQUE 1 */}
-          <h2>Por que lista, despensa e receitas precisam estar conectadas</h2>
+          {/* LISTA + DESPENSA + RECEITAS */}
+          <h2 id="lista-despensa">Por que lista, despensa e receitas precisam estar conectadas</h2>
           <p>
             O problema de esquecer o alho não é a lista. É a desconexão entre o que você tem,
             o que vai cozinhar e o que precisa comprar.
@@ -530,18 +640,23 @@ export default function ListaBasicaDeCompras() {
             macarrão aberto de uma marca aleatória que entrou numa promoção, e três tipos de sal.
             O que não tem, você só descobre na hora de cozinhar — não antes de ir ao mercado.{' '}
             <strong>O desperdício médio por domicílio no Brasil é de R$ 1.000–R$ 1.400 por ano
-            em comida jogada fora</strong> (Embrapa, 2023). Grande parte começa aqui: compra
+            em comida jogada fora</strong>{' '}
+            (
+              <a href="https://www.embrapa.br" target="_blank" rel="noopener">Embrapa, 2023</a>
+            ). Grande parte começa aqui: compra
             sem saber o que tem, compra sem saber o que vai fazer.
           </p>
           <p>
             Quem planeja o cardápio da semana antes de fazer a lista compra exatamente o que vai
             usar. Quem faz a lista sem saber o que vai cozinhar compra "o que parece útil" —
             e descobre na sexta que o frango comprado na segunda não combina com nada que está
-            na despensa.
+            na despensa. O <a href="/funcionalidades/cardapio-semanal">plano semanal do Listinha</a>{' '}
+            conecta receita e lista de compras pra resolver exatamente isso.
           </p>
           <p>
             A lista básica resolve o piso. Conectar lista, despensa e receitas — saber o que
-            acabou antes de precisar — resolve o resto.
+            acabou antes de precisar — resolve o resto.{' '}
+            <a href="/funcionalidades">Veja como o Listinha faz essa conexão na prática.</a>
           </p>
 
           {/* DICAS ECONOMIZAR */}
@@ -550,12 +665,14 @@ export default function ListaBasicaDeCompras() {
               src="https://images.pexels.com/photos/9929281/pexels-photo-9929281.jpeg?auto=compress&cs=tinysrgb&h=380&w=760"
               alt="Pessoa calculando gastos do mercado com caderno e caneta"
               className="blog-inline-img"
+              width="760"
+              height="380"
               loading="lazy"
             />
             <p className="blog-img-credit">Foto: Towfiqu barbhuiya / Pexels</p>
           </div>
 
-          <h2 className="img-above">5 dicas pra economizar no mercado</h2>
+          <h2 id="economizar" className="img-above">5 dicas pra economizar no mercado</h2>
 
           <ul className="tip-list">
             <li className="tip-item">
@@ -614,11 +731,13 @@ export default function ListaBasicaDeCompras() {
             </li>
           </ul>
 
-          {/* QUANTO CUSTA — UNIQUE 2 */}
-          <h2>Quanto custa uma lista básica de compras por mês</h2>
+          {/* QUANTO CUSTA */}
+          <h2 id="quanto-custa">Quanto custa uma lista básica de compras por mês</h2>
           <p>
             O custo varia com o tamanho da família e a cidade. As estimativas abaixo são baseadas
-            nos dados do FIPE/IBGE (2024) e refletem os 7 grupos essenciais em supermercados de
+            nos dados do{' '}
+            <a href="https://www.ibge.gov.br" target="_blank" rel="noopener">IBGE</a>{' '}
+            (POF 2024) e refletem os 7 grupos essenciais em supermercados de
             grandes centros urbanos brasileiros.
           </p>
 
@@ -679,7 +798,7 @@ export default function ListaBasicaDeCompras() {
           </p>
 
           {/* FAQ */}
-          <h2>Perguntas frequentes sobre lista de compras de supermercado</h2>
+          <h2 id="faq">Perguntas frequentes sobre lista de compras de supermercado</h2>
 
           <ul className="faq-list">
             <li className="faq-item">
@@ -699,7 +818,7 @@ export default function ListaBasicaDeCompras() {
               <p className="faq-q">Quanto custa uma lista básica de compras por mês?</p>
               <p className="faq-a">
                 Para um casal, a lista básica de supermercado custa entre{' '}
-                <strong>R$ 1.220 e R$ 1.700 por mês</strong> (estimativa baseada em dados FIPE/IBGE,
+                <strong>R$ 1.220 e R$ 1.700 por mês</strong> (estimativa baseada em dados IBGE,
                 2024). Para uma pessoa sozinha, entre R$ 680 e R$ 1.000. Para uma família de 4
                 pessoas, entre R$ 2.150 e R$ 2.890.
               </p>
@@ -742,6 +861,23 @@ export default function ListaBasicaDeCompras() {
             </li>
           </ul>
 
+          {/* AUTHOR */}
+          <div className="blog-author">
+            <div className="blog-author-avatar" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                <circle cx="12" cy="7" r="4" />
+              </svg>
+            </div>
+            <div>
+              <p className="blog-author-name">Gustavo Fino</p>
+              <p className="blog-author-bio">
+                Criador do Listinha. Já esqueceu o alho no mercado mais vezes do que gostaria de
+                admitir — e construiu um app pra resolver isso.
+              </p>
+            </div>
+          </div>
+
           <div className="blog-cta reveal">
             <h2>
               Chega de lista no bloco de notas.<br />
@@ -765,6 +901,14 @@ export default function ListaBasicaDeCompras() {
               </a>
             </div>
           </div>
+
+          <a href="#top" className="back-to-top" aria-label="Voltar ao topo">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+              <path d="M12 19V5M5 12l7-7 7 7" />
+            </svg>
+            Voltar ao topo
+          </a>
+
         </article>
       </main>
 
