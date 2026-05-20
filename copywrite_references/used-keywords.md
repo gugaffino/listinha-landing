@@ -40,6 +40,22 @@ Ao construir um cluster pra uma nova página:
 
 ---
 
+### 2. `app lista de compras gratuito` → `/funcionalidades`
+
+- **Fonte primária:** ✓ CSV (vol 90, KD 46, Transactional)
+- **Usada na página:** `/funcionalidades`
+- **Cluster:**
+
+| Keyword secundária | Fonte |
+|---|---|
+| app de lista de compras compartilhada | ✓ CSV (vol 20) |
+| app cardápio semanal com lista de compras | ✓ CSV (vol 20) |
+| app para criar cardapio semanal | ✓ CSV (vol 20) |
+| app para anotar receitas | ✓ CSV (vol 20) |
+| app de receita com o que tem em casa | ✓ CSV (vol 20) |
+
+---
+
 ## Primárias disponíveis (não usadas ainda)
 
 Do cluster restante em `blog-keywords.csv` — alto volume, baixo KD, ainda sem página:
