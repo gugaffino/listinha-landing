@@ -3,9 +3,9 @@ import './globals.css'
 
 const bricolage = Bricolage_Grotesque({
   subsets: ['latin'],
-  axes: ['opsz'],
   variable: '--font-bricolage',
   display: 'swap',
+  preload: true,
 })
 
 const instrumentSerif = Instrument_Serif({
@@ -14,13 +14,15 @@ const instrumentSerif = Instrument_Serif({
   weight: '400',
   variable: '--font-serif',
   display: 'swap',
+  preload: false,
 })
 
 const jetbrainsMono = JetBrains_Mono({
   subsets: ['latin'],
-  weight: ['400', '500', '600'],
+  weight: ['400'],
   variable: '--font-mono',
   display: 'swap',
+  preload: false,
 })
 
 export const metadata = {
