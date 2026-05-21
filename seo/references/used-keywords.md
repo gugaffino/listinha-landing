@@ -72,6 +72,25 @@ Ao construir um cluster pra uma nova página:
 
 ---
 
+### 4. `como organizar a despensa` → `/blog/como-organizar-a-despensa`
+
+- **Fonte primária:** ✓ CSV (vol 110, KD 9, Informational)
+- **Usada na página:** `/blog/como-organizar-a-despensa`
+- **Cluster:**
+
+| Keyword secundária | Fonte |
+|---|---|
+| organizar geladeira | ✓ CSV (vol 880, KD 19) |
+| como organizar geladeira | ✓ CSV (vol 880, KD 20) |
+| geladeira organizada | ✓ CSV (vol 1.000, KD 29) |
+| organizar despensa | ✓ CSV (vol 170, KD 13) |
+| como organizar despensa | ✓ CSV (vol 170, KD 10) |
+| despensa organização | ✓ CSV (vol 140, KD 11) |
+| como organizar armário de cozinha | (inventado) |
+| organização de alimentos na geladeira | (inventado) |
+
+---
+
 ## Primárias disponíveis (não usadas ainda)
 
 Do cluster restante em `seo/blog-keywords.csv` — alto volume, baixo KD, ainda sem página:

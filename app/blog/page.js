@@ -29,6 +29,16 @@ const posts = [
     date: '2025-04-02',
     dateLabel: 'Abr 2025',
   },
+  {
+    slug: 'como-organizar-a-despensa',
+    tag: 'Organização',
+    title: 'Como organizar a despensa: guia prático em 7 passos',
+    description: '7 passos pra esvaziar, agrupar, rotular e manter organizado — incluindo como organizar a geladeira por zonas.',
+    img: 'https://images.pexels.com/photos/6660254/pexels-photo-6660254.jpeg?auto=compress&cs=tinysrgb&w=800&h=480&fit=crop',
+    imgAlt: 'Despensa organizada com potes transparentes e prateleiras bem distribuídas',
+    date: '2026-05-21',
+    dateLabel: 'Mai 2026',
+  },
 ]
 
 export default function BlogPage() {
