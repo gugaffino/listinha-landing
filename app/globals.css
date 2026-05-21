@@ -127,16 +127,19 @@ h1,h2,h3,h4 {
 .nav-link:hover { color: var(--carvao); background: var(--papel-2); }
 
 /* dropdown */
-.nav-dropdown { position: relative; }
+.nav-dropdown {
+  position: relative;
+  /* estende a área de hover pra baixo, cobrindo o gap até o menu */
+  padding-bottom: 8px;
+  margin-bottom: -8px;
+}
 .nav-dropdown-trigger {
   display: flex; align-items: center; gap: 4px;
   font-size: 14px; font-weight: 500;
   color: var(--carvao-2);
   padding: 6px 12px;
   border-radius: 8px;
-  cursor: default;
   transition: color .15s, background .15s;
-  user-select: none;
 }
 .nav-dropdown-trigger svg { transition: transform .2s; }
 .nav-dropdown:hover .nav-dropdown-trigger,
@@ -147,22 +150,24 @@ h1,h2,h3,h4 {
 .nav-dropdown:focus-within .nav-dropdown-trigger svg { transform: rotate(180deg); }
 .nav-dropdown-menu {
   position: absolute; top: calc(100% + 8px); left: 50%;
-  transform: translateX(-50%);
-  min-width: 220px;
+  min-width: 240px;
   background: var(--papel);
   border: 1px solid var(--linha);
   border-radius: 14px;
   box-shadow: var(--sh-3);
   padding: 6px;
   opacity: 0; pointer-events: none;
-  transform: translateX(-50%) translateY(-6px);
-  transition: opacity .15s, transform .15s;
+  transform: translateX(-50%) translateY(-4px);
+  /* delay ao fechar — dá tempo do cursor chegar ao menu */
+  transition: opacity .15s 120ms, transform .15s 120ms;
   z-index: 100;
 }
 .nav-dropdown:hover .nav-dropdown-menu,
 .nav-dropdown:focus-within .nav-dropdown-menu {
   opacity: 1; pointer-events: auto;
   transform: translateX(-50%) translateY(0);
+  /* abre instantâneo */
+  transition: opacity .12s, transform .12s;
 }
 .nav-dropdown-item {
   display: flex; align-items: center; gap: 12px;

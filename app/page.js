@@ -17,12 +17,12 @@ export default function Home() {
           </a>
           <nav className="nav-links">
             <div className="nav-dropdown">
-              <span className="nav-dropdown-trigger">
+              <a href="/funcionalidades" className="nav-dropdown-trigger">
                 Funcionalidades
                 <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M6 9l6 6 6-6"/>
                 </svg>
-              </span>
+              </a>
               <div className="nav-dropdown-menu">
                 <a href="/funcionalidades/lista-de-compras" className="nav-dropdown-item">
                   <div className="nav-dropdown-ico">
