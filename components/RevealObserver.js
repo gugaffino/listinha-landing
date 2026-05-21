@@ -20,16 +20,9 @@ export default function RevealObserver() {
       },
       { threshold: 0.12 }
     )
-    const vh = window.innerHeight
     reveals.forEach((el, i) => {
-      const rect = el.getBoundingClientRect()
-      if (rect.top < vh) {
-        // Already in viewport on load — show immediately, no delay
-        el.classList.add('visible')
-      } else {
-        el.style.transitionDelay = `${(i % 3) * 70}ms`
-        observer.observe(el)
-      }
+      el.style.transitionDelay = `${(i % 3) * 70}ms`
+      observer.observe(el)
     })
     return () => observer.disconnect()
   }, [])

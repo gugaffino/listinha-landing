@@ -1,0 +1,1849 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Listinha — Design System</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300..800&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+<style>
+/* ─────────── TOKENS ─────────── */
+:root {
+  /* Cores — verde-folha + creme + tomate */
+  --verde-folha:   #2D5F2F;   /* primário, headlines, CTAs */
+  --verde-musgo:   #3E7E40;   /* hover / interativo */
+  --verde-broto:   #B8E89A;   /* accent tonal, badges, check */
+  --verde-claro:   #E8F3DD;   /* fundo de bloco verde */
+
+  --creme:         #F5F1E8;   /* fundo da página */
+  --papel:         #FBF9F2;   /* surface — cards */
+  --papel-2:       #F0EBDE;   /* surface 2 — bloco sutil */
+
+  --carvao:        #1A1D17;   /* texto principal */
+  --carvao-2:      #5C5E55;   /* texto secundário */
+  --carvao-3:      #8E8E82;   /* texto fraco / hint */
+  --linha:         #E5E2D6;   /* borda padrão */
+  --linha-2:       #D4D0BF;   /* borda mais marcada */
+
+  --tomate:        #C8472E;   /* acento — usar com parcimônia, erro, destaque */
+  --tomate-claro:  #FBE8E1;
+  --manteiga:      #E8B547;   /* aviso */
+  --manteiga-claro:#FBF1D8;
+
+  /* Tipografia */
+  --fonte-display: 'Bricolage Grotesque', system-ui, sans-serif;
+  --fonte-texto:   'Bricolage Grotesque', system-ui, sans-serif;
+  --fonte-serif:   'Instrument Serif', Georgia, serif;
+  --fonte-mono:    'JetBrains Mono', ui-monospace, Menlo, monospace;
+
+  /* Escala tipográfica */
+  --t-mega:   clamp(56px, 8vw, 112px);
+  --t-h1:     clamp(40px, 5.5vw, 72px);
+  --t-h2:     clamp(28px, 3.5vw, 44px);
+  --t-h3:     22px;
+  --t-h4:     17px;
+  --t-body:   16px;
+  --t-pe:     14px;  /* pequeno */
+  --t-micro:  12px;
+  --t-eyebrow:11px;
+
+  /* Espaço (base 4) */
+  --s-1: 4px;  --s-2: 8px;  --s-3: 12px; --s-4: 16px;
+  --s-5: 20px; --s-6: 24px; --s-7: 32px; --s-8: 40px;
+  --s-9: 56px; --s-10: 80px; --s-11: 120px;
+
+  /* Raios */
+  --r-xs: 6px; --r-sm: 10px; --r-md: 14px; --r-lg: 20px;
+  --r-xl: 28px; --r-pill: 999px;
+
+  /* Sombras */
+  --sh-0: 0 0 0 1px var(--linha);
+  --sh-1: 0 1px 2px rgba(26,29,23,0.04), 0 1px 0 var(--linha);
+  --sh-2: 0 2px 8px rgba(26,29,23,0.06), 0 1px 2px rgba(26,29,23,0.04);
+  --sh-3: 0 8px 24px rgba(26,29,23,0.08), 0 2px 4px rgba(26,29,23,0.04);
+  --sh-4: 0 20px 60px rgba(26,29,23,0.12), 0 4px 8px rgba(26,29,23,0.04);
+
+  /* Largura */
+  --content: 980px;
+}
+
+/* ─────────── RESET ─────────── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+body {
+  font-family: var(--fonte-texto);
+  font-size: var(--t-body);
+  line-height: 1.55;
+  color: var(--carvao);
+  background: var(--creme);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+button, input, textarea { font-family: inherit; }
+img, svg { display: block; max-width: 100%; }
+a { color: inherit; }
+em { font-style: italic; font-family: var(--fonte-serif); font-weight: 400; }
+
+/* ─────────── LAYOUT ─────────── */
+.shell {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  min-height: 100vh;
+}
+@media (max-width: 880px) { .shell { grid-template-columns: 1fr; } .sidebar { display: none; } }
+
+.sidebar {
+  position: sticky; top: 0;
+  height: 100vh;
+  padding: var(--s-7) var(--s-6);
+  border-right: 1px solid var(--linha);
+  background: var(--papel);
+  display: flex; flex-direction: column;
+  gap: var(--s-6);
+  overflow-y: auto;
+}
+.brand-mini { display: flex; align-items: center; gap: 10px; }
+.brand-mini .mark {
+  width: 30px; height: 30px; border-radius: 8px;
+  background: var(--verde-folha); color: var(--papel);
+  display: grid; place-items: center;
+  font-family: var(--fonte-display);
+  font-weight: 700; font-size: 16px;
+  letter-spacing: -0.04em;
+}
+.brand-mini .name {
+  font-family: var(--fonte-display);
+  font-weight: 600; font-size: 17px;
+  letter-spacing: -0.02em;
+}
+.nav-block { display: flex; flex-direction: column; gap: 2px; }
+.nav-label {
+  font-size: var(--t-eyebrow);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--carvao-3);
+  font-weight: 600;
+  padding: 0 0 6px;
+}
+.nav a {
+  display: block;
+  padding: 6px 10px;
+  border-radius: var(--r-xs);
+  text-decoration: none;
+  color: var(--carvao-2);
+  font-size: var(--t-pe);
+  transition: background .15s, color .15s;
+}
+.nav a:hover { background: var(--papel-2); color: var(--carvao); }
+.sidebar-foot {
+  margin-top: auto;
+  font-size: var(--t-micro);
+  color: var(--carvao-3);
+  line-height: 1.5;
+}
+
+.main { min-width: 0; }
+.section {
+  max-width: var(--content);
+  padding: var(--s-11) var(--s-7);
+  margin: 0 auto;
+  border-bottom: 1px solid var(--linha);
+}
+.section:last-child { border-bottom: none; }
+@media (max-width: 600px) { .section { padding: var(--s-9) var(--s-5); } }
+
+.eyebrow {
+  font-size: var(--t-eyebrow);
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--verde-musgo);
+  margin-bottom: var(--s-3);
+}
+h1, h2, h3, h4 {
+  font-family: var(--fonte-display);
+  font-weight: 600;
+  letter-spacing: -0.025em;
+  line-height: 1.05;
+  text-wrap: balance;
+}
+h1 { font-size: var(--t-h1); }
+h2 { font-size: var(--t-h2); margin-bottom: var(--s-4); }
+h3 { font-size: var(--t-h3); margin-bottom: var(--s-2); letter-spacing: -0.02em; line-height: 1.2; }
+h4 { font-size: var(--t-h4); margin-bottom: var(--s-2); letter-spacing: -0.01em; line-height: 1.3; }
+
+.lede {
+  font-size: 19px;
+  line-height: 1.6;
+  color: var(--carvao-2);
+  max-width: 640px;
+  text-wrap: pretty;
+}
+
+.small { font-size: var(--t-pe); color: var(--carvao-2); }
+.micro { font-size: var(--t-micro); color: var(--carvao-3); letter-spacing: 0.02em; }
+
+.divider { height: 1px; background: var(--linha); margin: var(--s-7) 0; border: none; }
+
+/* ─────────── HERO ─────────── */
+.hero {
+  padding: var(--s-11) var(--s-7) var(--s-10);
+  max-width: var(--content);
+  margin: 0 auto;
+  border-bottom: 1px solid var(--linha);
+}
+.hero-tag {
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 6px 12px;
+  border: 1px solid var(--linha-2);
+  background: var(--papel);
+  border-radius: var(--r-pill);
+  font-size: var(--t-micro);
+  color: var(--carvao-2);
+  margin-bottom: var(--s-5);
+}
+.hero-tag .dot { width: 6px; height: 6px; border-radius: 50%; background: var(--verde-musgo); }
+.hero h1 {
+  font-size: var(--t-mega);
+  letter-spacing: -0.04em;
+  margin-bottom: var(--s-7);
+  font-weight: 600;
+  line-height: 1.15;
+}
+.hero h1 em { color: var(--verde-folha); }
+.hero p { font-size: 20px; max-width: 620px; color: var(--carvao-2); line-height: 1.55; }
+.hero-meta {
+  display: flex; gap: var(--s-7); flex-wrap: wrap;
+  margin-top: var(--s-8);
+  padding-top: var(--s-6);
+  border-top: 1px solid var(--linha);
+}
+.hero-meta div { display: flex; flex-direction: column; gap: 4px; }
+.hero-meta .k { font-size: var(--t-micro); text-transform: uppercase; letter-spacing: 0.1em; color: var(--carvao-3); }
+.hero-meta .v { font-size: 15px; color: var(--carvao); }
+
+/* ─────────── MANIFESTO ─────────── */
+.manifesto {
+  display: grid; grid-template-columns: 1fr 1fr; gap: var(--s-7);
+  align-items: start;
+}
+@media (max-width: 720px) { .manifesto { grid-template-columns: 1fr; } }
+.manifesto-quote {
+  font-family: var(--fonte-serif);
+  font-size: clamp(28px, 4vw, 40px);
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  color: var(--carvao);
+  text-wrap: balance;
+}
+.manifesto-quote span { color: var(--verde-musgo); font-style: italic; }
+.manifesto-list { display: flex; flex-direction: column; gap: var(--s-4); }
+.manifesto-row {
+  display: grid; grid-template-columns: 28px 1fr; gap: var(--s-3);
+  padding: var(--s-3) 0;
+  border-top: 1px solid var(--linha);
+}
+.manifesto-row:first-child { border-top: none; padding-top: 0; }
+.manifesto-row .n { font-family: var(--fonte-mono); font-size: var(--t-micro); color: var(--carvao-3); padding-top: 3px; }
+.manifesto-row .t { font-size: 15px; color: var(--carvao); line-height: 1.5; }
+.manifesto-row .t strong { font-weight: 700; }
+
+/* ─────────── PILLS DE PERSONALIDADE ─────────── */
+.persona {
+  display: flex; flex-wrap: wrap; gap: var(--s-2);
+  margin-top: var(--s-6);
+}
+.persona .yes, .persona .no {
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 8px 14px;
+  border-radius: var(--r-pill);
+  font-size: var(--t-pe);
+  font-weight: 500;
+}
+.persona .yes { background: var(--verde-claro); color: #1F4B22; border: 1px solid #C5DDB1; }
+.persona .no  { background: var(--tomate-claro); color: #842716; border: 1px solid #F4CFC1; text-decoration: line-through; opacity: 0.85; }
+
+/* ─────────── LOGO ─────────── */
+.logo-grid {
+  display: grid; grid-template-columns: repeat(2, 1fr); gap: var(--s-4);
+  margin-top: var(--s-6);
+}
+@media (max-width: 600px) { .logo-grid { grid-template-columns: 1fr; } }
+.logo-card {
+  background: var(--papel);
+  border: 1px solid var(--linha);
+  border-radius: var(--r-md);
+  padding: var(--s-7) var(--s-6);
+  display: flex; flex-direction: column; gap: var(--s-4);
+  min-height: 220px;
+}
+.logo-card.dark { background: var(--carvao); border-color: var(--carvao); color: var(--papel); }
+.logo-card.green { background: var(--verde-folha); border-color: var(--verde-folha); color: var(--papel); }
+.logo-card.broto { background: var(--verde-broto); border-color: #9FCF80; }
+.logo-stage {
+  flex: 1;
+  display: flex; align-items: center; justify-content: center;
+  gap: 14px;
+  min-height: 110px;
+}
+.logo-meta {
+  display: flex; justify-content: space-between; align-items: baseline;
+  border-top: 1px dashed currentColor;
+  border-color: var(--linha);
+  padding-top: var(--s-3);
+  opacity: 0.95;
+}
+.logo-card.dark .logo-meta, .logo-card.green .logo-meta { border-color: rgba(255,255,255,0.18); }
+.logo-meta .lbl { font-family: var(--fonte-mono); font-size: var(--t-micro); }
+.logo-meta .when { font-size: var(--t-micro); opacity: 0.6; text-align: right; }
+
+/* Mark — sacola refinada (escolhida) */
+.mark-sacola {
+  width: 56px; height: 56px;
+  background: var(--verde-folha);
+  border-radius: 14px;
+  display: grid; place-items: center;
+  color: var(--papel);
+  flex-shrink: 0;
+}
+.mark-sacola svg { width: 28px; height: 28px; }
+.mark-sacola.lg { width: 88px; height: 88px; border-radius: 22px; }
+.mark-sacola.lg svg { width: 44px; height: 44px; }
+.mark-sacola.sm { width: 32px; height: 32px; border-radius: 9px; }
+.mark-sacola.sm svg { width: 17px; height: 17px; }
+
+.mark-mono {
+  width: 56px; height: 56px;
+  background: var(--verde-folha); color: var(--papel);
+  border-radius: 14px;
+  display: grid; place-items: center;
+  font-family: var(--fonte-display);
+  font-weight: 700;
+  font-size: 32px;
+  letter-spacing: -0.04em;
+  padding-top: 2px;
+}
+.mark-mono.lg { width: 88px; height: 88px; font-size: 50px; border-radius: 22px; }
+
+.mark-check {
+  width: 56px; height: 56px;
+  background: var(--verde-broto);
+  border: 2px solid var(--verde-folha);
+  border-radius: 14px;
+  display: grid; place-items: center;
+}
+.mark-check::after {
+  content: '';
+  width: 14px; height: 26px;
+  border-right: 4px solid var(--verde-folha);
+  border-bottom: 4px solid var(--verde-folha);
+  transform: rotate(42deg) translate(-1px,-3px);
+}
+
+.wordmark {
+  font-family: var(--fonte-display);
+  font-weight: 600;
+  font-size: 48px;
+  letter-spacing: -0.04em;
+  line-height: 1;
+  color: inherit;
+}
+.wordmark .dot {
+  display: inline-block;
+  width: 8px; height: 8px;
+  border-radius: 50%;
+  background: var(--verde-broto);
+  vertical-align: 14px;
+  margin: 0 1px;
+}
+.wordmark.sm { font-size: 22px; }
+.wordmark.xs { font-size: 17px; }
+
+/* Logo lockups: full vs mini */
+.lockup-grid {
+  display: grid; grid-template-columns: 1fr 1fr 1fr; gap: var(--s-3);
+  margin-top: var(--s-4);
+}
+@media (max-width: 720px) { .lockup-grid { grid-template-columns: 1fr 1fr; } }
+.lockup {
+  background: var(--papel);
+  border: 1px solid var(--linha);
+  border-radius: var(--r-md);
+  padding: var(--s-5);
+  display: flex; align-items: center; justify-content: center;
+  min-height: 100px;
+  gap: 10px;
+}
+.lockup .micro { margin-top: 0; }
+
+.clear-space {
+  background: var(--papel-2);
+  border-radius: var(--r-md);
+  padding: var(--s-7);
+  margin-top: var(--s-4);
+  display: grid; place-items: center;
+  position: relative;
+}
+.clear-space-inner {
+  position: relative;
+  padding: 28px;
+  background: repeating-linear-gradient(45deg, transparent 0 4px, rgba(45,95,47,0.08) 4px 5px);
+  border-radius: var(--r-md);
+}
+.clear-space-inner > * { background: var(--papel-2); padding: 14px; border-radius: 6px; }
+.clear-space-cap { font-size: var(--t-micro); color: var(--carvao-3); margin-top: 10px; text-align: center; }
+
+/* ─────────── TIPOGRAFIA ─────────── */
+.type-pairings {
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--s-4);
+  margin-top: var(--s-6);
+}
+@media (max-width: 880px) { .type-pairings { grid-template-columns: 1fr; } }
+.pairing {
+  background: var(--papel);
+  border: 1px solid var(--linha);
+  border-radius: var(--r-md);
+  padding: var(--s-5);
+  display: flex; flex-direction: column; gap: 10px;
+}
+.pairing.chosen { border: 2px solid var(--verde-folha); background: var(--verde-claro); }
+.pairing-tag {
+  display: inline-flex; align-items: center; gap: 6px;
+  font-size: var(--t-micro);
+  font-family: var(--fonte-mono);
+  color: var(--carvao-3);
+}
+.pairing-tag .chip { padding: 2px 8px; border-radius: var(--r-pill); background: var(--papel-2); }
+.pairing.chosen .pairing-tag .chip { background: var(--verde-folha); color: var(--papel); }
+.pairing-display { font-size: 32px; line-height: 1.0; letter-spacing: -0.03em; font-weight: 600; }
+.pairing-body { font-size: 14px; line-height: 1.5; color: var(--carvao-2); }
+.pairing-note { font-size: var(--t-micro); color: var(--carvao-3); padding-top: 10px; border-top: 1px dashed var(--linha); }
+
+.pf-bri { font-family: 'Bricolage Grotesque', sans-serif; }
+.pf-bri-body { font-family: 'Bricolage Grotesque', sans-serif; font-weight: 400; }
+.pf-ins { font-family: 'Instrument Serif', serif; font-weight: 400; letter-spacing: 0; }
+.pf-mono { font-family: var(--fonte-mono); }
+
+/* Escala */
+.scale {
+  display: flex; flex-direction: column; gap: 0;
+  margin-top: var(--s-6);
+  background: var(--papel);
+  border: 1px solid var(--linha);
+  border-radius: var(--r-md);
+  overflow: hidden;
+}
+.scale-row {
+  display: grid;
+  grid-template-columns: 140px 1fr 220px;
+  align-items: baseline;
+  gap: var(--s-4);
+  padding: var(--s-4) var(--s-5);
+  border-top: 1px solid var(--linha);
+}
+.scale-row:first-child { border-top: none; }
+.scale-row .name { font-family: var(--fonte-mono); font-size: var(--t-micro); color: var(--carvao-3); }
+.scale-row .sample { font-family: var(--fonte-display); font-weight: 600; letter-spacing: -0.025em; color: var(--carvao); line-height: 1.05; }
+.scale-row .meta { font-family: var(--fonte-mono); font-size: var(--t-micro); color: var(--carvao-3); text-align: right; }
+@media (max-width: 720px) {
+  .scale-row { grid-template-columns: 80px 1fr; }
+  .scale-row .meta { grid-column: 1 / -1; text-align: left; padding-left: 0; }
+}
+
+/* ─────────── CORES ─────────── */
+.swatch-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--s-3);
+  margin-top: var(--s-5);
+}
+@media (max-width: 720px) { .swatch-grid { grid-template-columns: repeat(2, 1fr); } }
+.swatch {
+  border-radius: var(--r-md);
+  overflow: hidden;
+  border: 1px solid var(--linha);
+  background: var(--papel);
+}
+.swatch-block { height: 110px; }
+.swatch-meta { padding: 12px 14px; display: flex; flex-direction: column; gap: 2px; }
+.swatch-meta .name { font-size: 14px; font-weight: 600; color: var(--carvao); }
+.swatch-meta .token { font-family: var(--fonte-mono); font-size: var(--t-micro); color: var(--carvao-3); }
+.swatch-meta .hex { font-family: var(--fonte-mono); font-size: var(--t-micro); color: var(--carvao-2); }
+.swatch-meta .use { font-size: var(--t-micro); color: var(--carvao-3); margin-top: 4px; }
+
+.palette-h { margin-top: var(--s-7); }
+.palette-h h3 { margin-bottom: 2px; }
+
+.palette-cap { font-size: var(--t-pe); color: var(--carvao-2); margin-bottom: var(--s-3); }
+
+/* Palette alternatives row */
+.palette-alts {
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--s-4);
+  margin-top: var(--s-6);
+}
+@media (max-width: 880px) { .palette-alts { grid-template-columns: 1fr; } }
+.palette-alt {
+  background: var(--papel);
+  border: 1px solid var(--linha);
+  border-radius: var(--r-md);
+  padding: var(--s-5);
+}
+.palette-alt.chosen { border: 2px solid var(--verde-folha); background: var(--verde-claro); }
+.alt-strip {
+  display: grid; grid-template-columns: repeat(5, 1fr);
+  height: 56px; border-radius: 8px; overflow: hidden;
+  margin: var(--s-3) 0;
+}
+.palette-alt .palette-name { font-weight: 600; font-size: 15px; letter-spacing: -0.01em; }
+.palette-alt .palette-blurb { font-size: 13px; color: var(--carvao-2); margin-top: 4px; line-height: 1.45; }
+.palette-alt .palette-state { font-family: var(--fonte-mono); font-size: var(--t-micro); color: var(--carvao-3); margin-top: var(--s-3); display: block; }
+.palette-alt.chosen .palette-state { color: var(--verde-musgo); font-weight: 600; }
+
+/* Tokens table */
+.token-table {
+  background: var(--papel);
+  border: 1px solid var(--linha);
+  border-radius: var(--r-md);
+  overflow: hidden;
+  margin-top: var(--s-5);
+}
+.token-row {
+  display: grid;
+  grid-template-columns: 24px 200px 100px 1fr;
+  gap: var(--s-3);
+  padding: 12px var(--s-5);
+  align-items: center;
+  border-top: 1px solid var(--linha);
+  font-size: 13px;
+}
+.token-row:first-child { border-top: none; }
+.token-row .dot {
+  width: 18px; height: 18px; border-radius: 5px;
+  border: 1px solid rgba(0,0,0,0.06);
+}
+.token-row .key { font-family: var(--fonte-mono); font-size: 12.5px; color: var(--carvao); }
+.token-row .hex { font-family: var(--fonte-mono); font-size: 12.5px; color: var(--carvao-2); }
+.token-row .use { color: var(--carvao-2); font-size: 13px; }
+@media (max-width: 720px) { .token-row { grid-template-columns: 18px 1fr; } .token-row .hex, .token-row .use { grid-column: 2; } }
+
+/* ─────────── ESPAÇAMENTO ─────────── */
+.space-grid {
+  display: grid; grid-template-columns: repeat(4, 1fr); gap: var(--s-3);
+  margin-top: var(--s-5);
+}
+@media (max-width: 720px) { .space-grid { grid-template-columns: repeat(2, 1fr); } }
+.space-cell {
+  background: var(--papel);
+  border: 1px solid var(--linha);
+  border-radius: var(--r-md);
+  padding: var(--s-4);
+}
+.space-bar {
+  background: var(--verde-broto);
+  height: 14px;
+  border-radius: 3px;
+  margin-bottom: 10px;
+}
+.space-cell .key { font-family: var(--fonte-mono); font-size: var(--t-micro); color: var(--carvao); }
+.space-cell .val { font-family: var(--fonte-mono); font-size: var(--t-micro); color: var(--carvao-3); }
+
+.radius-grid { display: grid; grid-template-columns: repeat(6, 1fr); gap: var(--s-3); margin-top: var(--s-5); }
+@media (max-width: 720px) { .radius-grid { grid-template-columns: repeat(3, 1fr); } }
+.radius-cell {
+  aspect-ratio: 1;
+  background: var(--verde-claro);
+  border: 1.5px solid var(--verde-musgo);
+  display: flex; align-items: flex-end; justify-content: flex-start;
+  padding: 8px;
+  font-family: var(--fonte-mono);
+  font-size: var(--t-micro);
+  color: var(--verde-folha);
+}
+
+/* Sombras */
+.shadow-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: var(--s-4); margin-top: var(--s-5); }
+@media (max-width: 720px) { .shadow-grid { grid-template-columns: repeat(2, 1fr); } }
+.shadow-cell {
+  height: 110px;
+  background: var(--papel);
+  border-radius: var(--r-md);
+  display: flex; align-items: flex-end;
+  padding: var(--s-3);
+  font-family: var(--fonte-mono);
+  font-size: var(--t-micro);
+  color: var(--carvao-3);
+}
+.shadow-cell.s1 { box-shadow: var(--sh-1); }
+.shadow-cell.s2 { box-shadow: var(--sh-2); }
+.shadow-cell.s3 { box-shadow: var(--sh-3); }
+.shadow-cell.s4 { box-shadow: var(--sh-4); }
+
+/* ─────────── ÍCONES ─────────── */
+.icon-grid {
+  display: grid; grid-template-columns: repeat(6, 1fr); gap: var(--s-3);
+  margin-top: var(--s-5);
+}
+@media (max-width: 720px) { .icon-grid { grid-template-columns: repeat(3, 1fr); } }
+.icon-cell {
+  background: var(--papel);
+  border: 1px solid var(--linha);
+  border-radius: var(--r-md);
+  padding: var(--s-4);
+  display: flex; flex-direction: column; align-items: center; gap: 8px;
+  text-align: center;
+}
+.icon-cell svg { width: 24px; height: 24px; color: var(--carvao); }
+.icon-cell .name { font-family: var(--fonte-mono); font-size: var(--t-micro); color: var(--carvao-3); }
+
+.icon-features {
+  display: grid; grid-template-columns: repeat(4, 1fr); gap: var(--s-3);
+  margin-top: var(--s-5);
+}
+@media (max-width: 720px) { .icon-features { grid-template-columns: repeat(2, 1fr); } }
+.icon-feat {
+  background: var(--papel);
+  border: 1px solid var(--linha);
+  border-radius: var(--r-md);
+  padding: var(--s-5) var(--s-4);
+  display: flex; flex-direction: column; align-items: center; gap: 10px;
+  text-align: center;
+}
+.icon-feat .ring {
+  width: 56px; height: 56px;
+  background: var(--verde-claro);
+  border-radius: 16px;
+  display: grid; place-items: center;
+  color: var(--verde-folha);
+}
+.icon-feat .ring svg { width: 28px; height: 28px; }
+.icon-feat .label { font-size: 14px; font-weight: 600; color: var(--carvao); letter-spacing: -0.01em; }
+.icon-feat .slug { font-family: var(--fonte-mono); font-size: var(--t-micro); color: var(--carvao-3); }
+
+.icon-sub {
+  font-size: var(--t-eyebrow);
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--carvao-3);
+  margin-top: var(--s-7);
+  margin-bottom: var(--s-3);
+}
+
+.icon-rules {
+  margin-top: var(--s-5);
+  background: var(--papel-2);
+  border-radius: var(--r-md);
+  padding: var(--s-5);
+  font-size: 14px;
+  line-height: 1.6;
+}
+.icon-rules ul { list-style: none; display: flex; flex-direction: column; gap: 6px; }
+.icon-rules li { padding-left: 20px; position: relative; }
+.icon-rules li::before { content: '·'; position: absolute; left: 6px; top: -3px; font-size: 22px; color: var(--verde-musgo); }
+
+/* ─────────── COMPONENTES ─────────── */
+.comp-block {
+  background: var(--papel);
+  border: 1px solid var(--linha);
+  border-radius: var(--r-md);
+  padding: var(--s-6);
+  margin-top: var(--s-5);
+}
+.comp-block + .comp-block { margin-top: var(--s-3); }
+.comp-title { font-size: 13px; color: var(--carvao-3); font-family: var(--fonte-mono); margin-bottom: var(--s-4); }
+.comp-row { display: flex; flex-wrap: wrap; gap: var(--s-3); align-items: center; }
+
+/* Buttons */
+.btn {
+  display: inline-flex; align-items: center; gap: 8px;
+  height: 44px; padding: 0 22px;
+  border-radius: var(--r-pill);
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 500;
+  border: 1.5px solid transparent;
+  cursor: pointer;
+  letter-spacing: -0.005em;
+  transition: transform .12s, background .15s, border-color .15s, color .15s;
+}
+.btn:active { transform: scale(0.98); }
+.btn-primary { background: var(--verde-folha); color: var(--papel); }
+.btn-primary:hover { background: var(--verde-musgo); }
+.btn-secondary { background: var(--verde-broto); color: #1F4B22; }
+.btn-secondary:hover { background: #A4D984; }
+.btn-ghost { background: transparent; color: var(--verde-folha); border-color: var(--verde-folha); }
+.btn-ghost:hover { background: var(--verde-claro); }
+.btn-quiet { background: transparent; color: var(--carvao-2); }
+.btn-quiet:hover { color: var(--carvao); background: var(--papel-2); }
+.btn-danger { background: var(--tomate); color: var(--papel); }
+.btn-danger:hover { background: #B33A23; }
+.btn-sm { height: 36px; padding: 0 16px; font-size: 13px; }
+.btn-lg { height: 52px; padding: 0 28px; font-size: 16px; }
+.btn-icon { width: 44px; padding: 0; justify-content: center; }
+
+/* Chips */
+.chip {
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 8px 14px;
+  border-radius: var(--r-pill);
+  font-size: 13px;
+  background: var(--papel);
+  border: 1px solid var(--linha-2);
+  color: var(--carvao);
+  cursor: pointer;
+  transition: background .15s, border-color .15s;
+}
+.chip:hover { background: var(--papel-2); }
+.chip.on { background: var(--verde-broto); border-color: var(--verde-folha); color: #1F4B22; font-weight: 600; }
+.chip.off { background: var(--tomate-claro); border-color: #F4CFC1; color: #842716; text-decoration: line-through; opacity: 0.85; }
+.chip.add { background: transparent; border: 1px dashed var(--linha-2); color: var(--carvao-3); }
+
+/* Input */
+.field { display: flex; flex-direction: column; gap: 6px; max-width: 320px; }
+.field label { font-size: var(--t-micro); color: var(--carvao-3); text-transform: uppercase; letter-spacing: 0.08em; font-weight: 600; }
+.input {
+  height: 46px;
+  border-radius: var(--r-md);
+  border: 1.5px solid var(--linha-2);
+  background: var(--papel);
+  padding: 0 14px;
+  font-size: 15px;
+  color: var(--carvao);
+  outline: none;
+  transition: border-color .15s, box-shadow .15s, background .15s;
+}
+.input:focus { border-color: var(--verde-folha); background: #fff; box-shadow: 0 0 0 3px rgba(45,95,47,0.12); }
+.input::placeholder { color: var(--carvao-3); }
+
+/* Cards */
+.card {
+  background: var(--papel);
+  border-radius: var(--r-md);
+  border: 1px solid var(--linha);
+  padding: var(--s-5);
+  display: flex; flex-direction: column; gap: 8px;
+  box-shadow: var(--sh-1);
+  max-width: 360px;
+}
+.card .ttl { font-family: var(--fonte-display); font-size: 17px; font-weight: 600; letter-spacing: -0.01em; }
+.card .body { font-size: 14px; color: var(--carvao-2); line-height: 1.55; }
+.card .foot { display: flex; gap: 8px; margin-top: 6px; }
+
+/* List item (item de lista de compras — ancorado no app) */
+.list-item {
+  display: flex; align-items: center; gap: 12px;
+  padding: 12px 14px;
+  background: var(--papel);
+  border-radius: var(--r-md);
+  border: 1px solid var(--linha);
+}
+.list-item + .list-item { margin-top: 6px; }
+.li-qty {
+  min-width: 34px; height: 34px;
+  background: var(--verde-broto);
+  border-radius: 9px;
+  display: grid; place-items: center;
+  font-weight: 600; font-size: 13px;
+  color: #1F4B22;
+}
+.li-info { flex: 1; min-width: 0; }
+.li-name { font-size: 15px; color: var(--carvao); }
+.li-meta { font-size: 13px; color: var(--carvao-3); display: flex; align-items: center; gap: 6px; }
+.li-meta .dot { width: 7px; height: 7px; border-radius: 50%; background: var(--tomate); }
+.li-check {
+  width: 26px; height: 26px;
+  border-radius: 8px;
+  border: 2px solid var(--linha-2);
+  flex-shrink: 0;
+}
+.li-check.chk { background: var(--verde-folha); border-color: var(--verde-folha); position: relative; }
+.li-check.chk::after { content: ''; position: absolute; inset: 5px 6px 5px 7px; border-right: 2.5px solid var(--papel); border-bottom: 2.5px solid var(--papel); transform: rotate(42deg) translate(0, -2px); }
+.list-item.done .li-name { color: var(--carvao-3); text-decoration: line-through; }
+.list-item.done .li-qty { background: var(--linha); color: var(--carvao-3); }
+
+/* Section header da lista */
+.li-sec {
+  font-family: var(--fonte-mono);
+  font-size: var(--t-micro);
+  color: var(--carvao-3);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 14px 4px 6px;
+  display: flex; align-items: center; gap: 8px;
+}
+.li-sec::after { content: ''; flex: 1; height: 1px; background: var(--linha); }
+
+/* Badge */
+.badge {
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 4px 10px;
+  border-radius: var(--r-pill);
+  font-size: var(--t-micro);
+  font-weight: 600;
+  background: var(--verde-broto);
+  color: #1F4B22;
+}
+.badge.warn { background: var(--manteiga-claro); color: #8A6500; }
+.badge.danger { background: var(--tomate-claro); color: #842716; }
+.badge.quiet { background: var(--papel-2); color: var(--carvao-2); }
+
+/* ─────────── TOM DE VOZ ─────────── */
+.voice-grid {
+  display: grid; grid-template-columns: 1fr 1fr; gap: var(--s-4);
+  margin-top: var(--s-5);
+}
+@media (max-width: 720px) { .voice-grid { grid-template-columns: 1fr; } }
+.voice-col { background: var(--papel); border: 1px solid var(--linha); border-radius: var(--r-md); overflow: hidden; }
+.voice-col-h {
+  display: flex; align-items: center; gap: 8px;
+  padding: 14px 18px;
+  font-family: var(--fonte-mono);
+  font-size: 13px;
+  border-bottom: 1px solid var(--linha);
+}
+.voice-col.do .voice-col-h { background: var(--verde-claro); color: #1F4B22; }
+.voice-col.dont .voice-col-h { background: var(--tomate-claro); color: #842716; }
+.voice-col ul { list-style: none; padding: 8px 0; }
+.voice-col li {
+  padding: 12px 18px;
+  font-size: 15px;
+  line-height: 1.5;
+  color: var(--carvao);
+  border-top: 1px solid var(--linha);
+}
+.voice-col li:first-child { border-top: none; }
+.voice-col li small { display: block; font-size: var(--t-micro); color: var(--carvao-3); margin-top: 4px; font-family: var(--fonte-mono); }
+
+.copy-examples {
+  margin-top: var(--s-6);
+  display: grid; grid-template-columns: 1fr 1fr; gap: var(--s-4);
+}
+@media (max-width: 720px) { .copy-examples { grid-template-columns: 1fr; } }
+.copy-card {
+  background: var(--papel);
+  border: 1px solid var(--linha);
+  border-radius: var(--r-md);
+  padding: var(--s-5);
+}
+.copy-card .ctx { font-family: var(--fonte-mono); font-size: var(--t-micro); color: var(--carvao-3); margin-bottom: 8px; }
+.copy-card .yes { font-size: 16px; color: var(--carvao); margin-bottom: 6px; }
+.copy-card .yes::before { content: '✓ '; color: var(--verde-musgo); font-weight: 700; }
+.copy-card .no { font-size: 14px; color: var(--carvao-3); text-decoration: line-through; }
+.copy-card .no::before { content: '✗ '; color: var(--tomate); font-weight: 700; }
+
+/* ─────────── APLICAÇÕES ─────────── */
+.apps-grid {
+  display: grid; grid-template-columns: 320px 1fr; gap: var(--s-7);
+  margin-top: var(--s-6);
+  align-items: start;
+}
+@media (max-width: 880px) { .apps-grid { grid-template-columns: 1fr; } }
+
+/* Phone mockup */
+.phone {
+  width: 300px;
+  height: 600px;
+  background: var(--carvao);
+  border-radius: 38px;
+  padding: 10px;
+  box-shadow: var(--sh-4);
+  margin: 0 auto;
+}
+.phone-screen {
+  width: 100%; height: 100%;
+  background: var(--creme);
+  border-radius: 30px;
+  overflow: hidden;
+  display: flex; flex-direction: column;
+}
+.ph-top {
+  height: 54px;
+  padding: 0 18px;
+  display: flex; align-items: center; gap: 10px;
+  border-bottom: 1px solid var(--linha);
+  background: var(--papel);
+  flex-shrink: 0;
+}
+.ph-title {
+  flex: 1;
+  font-family: var(--fonte-display);
+  font-weight: 600;
+  font-size: 17px;
+  letter-spacing: -0.02em;
+}
+.ph-badge {
+  padding: 3px 10px;
+  background: var(--verde-broto);
+  color: #1F4B22;
+  font-size: 10px;
+  font-weight: 600;
+  border-radius: var(--r-pill);
+}
+.ph-body { flex: 1; overflow: hidden; padding: 8px 12px; display: flex; flex-direction: column; gap: 0; }
+.ph-sec { font-family: var(--fonte-mono); font-size: 10px; letter-spacing: 0.1em; color: var(--carvao-3); text-transform: uppercase; padding: 14px 4px 6px; }
+.ph-item {
+  display: flex; align-items: center; gap: 10px;
+  padding: 10px 8px;
+  background: var(--papel);
+  border-radius: 10px;
+  margin-bottom: 4px;
+  border: 1px solid var(--linha);
+}
+.ph-qty {
+  min-width: 26px; height: 26px;
+  background: var(--verde-broto);
+  border-radius: 6px;
+  display: grid; place-items: center;
+  font-size: 11px; font-weight: 600; color: #1F4B22;
+}
+.ph-qty.dim { background: var(--linha); color: var(--carvao-3); }
+.ph-nm { flex: 1; font-size: 13px; color: var(--carvao); }
+.ph-item.done .ph-nm { color: var(--carvao-3); text-decoration: line-through; }
+.ph-ck { width: 18px; height: 18px; border-radius: 5px; border: 1.5px solid var(--linha-2); }
+.ph-ck.on { background: var(--verde-folha); border-color: var(--verde-folha); position: relative; }
+.ph-ck.on::after { content: ''; position: absolute; inset: 3px 4px 3px 5px; border-right: 2px solid var(--papel); border-bottom: 2px solid var(--papel); transform: rotate(42deg) translate(0,-2px); }
+.ph-tab {
+  height: 60px;
+  background: var(--papel);
+  border-top: 1px solid var(--linha);
+  display: flex; align-items: center; justify-content: space-around;
+  padding: 0 12px;
+  flex-shrink: 0;
+}
+.ph-tab-i {
+  display: flex; flex-direction: column; align-items: center; gap: 2px;
+  font-size: 9px; color: var(--carvao-3); flex: 1;
+}
+.ph-tab-i.on { color: var(--verde-folha); font-weight: 600; }
+.ph-tab-i .pill { width: 36px; height: 22px; border-radius: 11px; display: grid; place-items: center; }
+.ph-tab-i.on .pill { background: var(--verde-broto); }
+.ph-tab-i svg { width: 16px; height: 16px; }
+
+/* Landing slice */
+.landing-mock {
+  background: var(--papel);
+  border: 1px solid var(--linha);
+  border-radius: var(--r-lg);
+  overflow: hidden;
+  box-shadow: var(--sh-3);
+}
+.lm-nav {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 14px 22px;
+  border-bottom: 1px solid var(--linha);
+  background: var(--papel);
+}
+.lm-hero { padding: var(--s-8) var(--s-7) var(--s-7); display: grid; grid-template-columns: 1.3fr 1fr; gap: var(--s-6); align-items: center; }
+@media (max-width: 720px) { .lm-hero { grid-template-columns: 1fr; } }
+.lm-hero h2 { font-size: 38px; letter-spacing: -0.03em; margin-bottom: var(--s-3); }
+.lm-hero h2 .under { background: linear-gradient(transparent 70%, var(--verde-broto) 70%); padding: 0 2px; }
+.lm-hero p { color: var(--carvao-2); font-size: 15px; margin-bottom: var(--s-4); }
+.lm-actions { display: flex; gap: 12px; align-items: center; }
+.lm-trust { display: inline-flex; align-items: center; gap: 6px; font-size: 12px; color: var(--verde-musgo); margin-bottom: 12px; font-weight: 600; }
+.lm-trust .dot { width: 6px; height: 6px; border-radius: 50%; background: var(--verde-musgo); }
+
+.lm-img {
+  background: var(--papel-2);
+  border-radius: var(--r-md);
+  aspect-ratio: 4/3;
+  background-image: repeating-linear-gradient(45deg, var(--papel-2) 0 8px, var(--creme) 8px 10px);
+  display: grid; place-items: center;
+  font-family: var(--fonte-mono);
+  font-size: 11px;
+  color: var(--carvao-3);
+  text-align: center;
+  padding: 12px;
+  line-height: 1.5;
+}
+.lm-features {
+  display: grid; grid-template-columns: repeat(4, 1fr);
+  border-top: 1px solid var(--linha);
+}
+@media (max-width: 720px) { .lm-features { grid-template-columns: repeat(2, 1fr); } }
+.lm-feat {
+  padding: var(--s-5) var(--s-4);
+  border-left: 1px solid var(--linha);
+  display: flex; flex-direction: column; gap: 6px;
+}
+.lm-feat:first-child { border-left: none; }
+.lm-feat .ico { width: 28px; height: 28px; border-radius: 8px; background: var(--verde-broto); display: grid; place-items: center; color: var(--verde-folha); margin-bottom: 4px; }
+.lm-feat h4 { font-size: 14px; margin: 0; }
+.lm-feat p { font-size: 12px; color: var(--carvao-2); line-height: 1.5; }
+
+/* ─────────── FOOTER ─────────── */
+.foot {
+  padding: var(--s-9) var(--s-7);
+  max-width: var(--content);
+  margin: 0 auto;
+  border-top: 1px solid var(--linha);
+  font-family: var(--fonte-mono);
+  font-size: var(--t-micro);
+  color: var(--carvao-3);
+  display: flex; flex-wrap: wrap; gap: var(--s-4);
+  justify-content: space-between;
+}
+
+/* Two-col helper */
+.two-col { display: grid; grid-template-columns: 1fr 1fr; gap: var(--s-7); align-items: start; }
+@media (max-width: 720px) { .two-col { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+
+<div class="shell">
+
+  <aside class="sidebar">
+    <div class="brand-mini">
+      <div class="mark">L</div>
+      <div class="name">Listinha</div>
+    </div>
+
+    <div class="nav-block">
+      <div class="nav-label">Sistema</div>
+      <nav class="nav">
+        <a href="#manifesto">Manifesto</a>
+        <a href="#personalidade">Personalidade</a>
+        <a href="#logo">Logo</a>
+        <a href="#tipografia">Tipografia</a>
+        <a href="#cores">Cores</a>
+        <a href="#espaco">Espaço &amp; raios</a>
+        <a href="#sombras">Sombras</a>
+        <a href="#icones">Iconografia</a>
+      </nav>
+    </div>
+
+    <div class="nav-block">
+      <div class="nav-label">UI</div>
+      <nav class="nav">
+        <a href="#componentes">Componentes</a>
+        <a href="#tom">Tom de voz</a>
+        <a href="#aplicacoes">Aplicações</a>
+      </nav>
+    </div>
+
+    <div class="sidebar-foot">
+      v1.0 · maio 2026<br/>
+      Sistema vivo. Edite o doc, não recrie.
+    </div>
+  </aside>
+
+  <main class="main">
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-tag"><span class="dot"></span> Listinha · Design System · v1.0</div>
+      <h1>Cozinha organizada,<br/><em>sem frescura.</em></h1>
+      <p>Este é o sistema de design do Listinha. Cores, tipo, componentes, tom — tudo num lugar só, para o app, a landing e o que vier. Curto. Direto. Prático.</p>
+
+      <div class="hero-meta">
+        <div><span class="k">Produto</span><span class="v">App de lista de compras com despensa, receitas e plano semanal</span></div>
+        <div><span class="k">Idioma</span><span class="v">Português (BR)</span></div>
+        <div><span class="k">Plataformas</span><span class="v">PWA · mobile-first · desktop responsivo</span></div>
+        <div><span class="k">Postura</span><span class="v">Prática, direta, anti-frescura</span></div>
+      </div>
+    </section>
+
+    <!-- MANIFESTO -->
+    <section class="section" id="manifesto">
+      <div class="eyebrow">Manifesto</div>
+      <div class="manifesto">
+        <div class="manifesto-quote">
+          O Listinha é o app que <span>entende sua cozinha do jeito que ela é.</span> Sem fotos bonitas atrapalhando, sem onboarding de 12 telas, sem cadastro de cônjuge.
+        </div>
+        <div class="manifesto-list">
+          <div class="manifesto-row"><span class="n">01</span><span class="t"><strong>Lista pronta. Bora?</strong> Toda interação deve caber numa frase curta. Se precisa de explicação, simplifica.</span></div>
+          <div class="manifesto-row"><span class="n">02</span><span class="t"><strong>Cozinha real.</strong> Despensa bagunçada, receita da vó, mercado caro. A gente reflete a vida, não um Pinterest.</span></div>
+          <div class="manifesto-row"><span class="n">03</span><span class="t"><strong>Conversa, não corporativês.</strong> "Esqueceu o alho?" &gt; "Você não adicionou o item alho à sua lista."</span></div>
+          <div class="manifesto-row"><span class="n">04</span><span class="t"><strong>Verde porque comida.</strong> A paleta é de horta, feira, papelão. Nada de SaaS azul-neon.</span></div>
+          <div class="manifesto-row"><span class="n">05</span><span class="t"><strong>Útil ganha de bonito.</strong> Quando bate dúvida, a gente escolhe o que funciona no celular do mercado.</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PERSONALIDADE -->
+    <section class="section" id="personalidade">
+      <div class="eyebrow">Personalidade</div>
+      <h2>Como o Listinha se comporta.</h2>
+      <p class="lede">Imagina um amigo que cozinha bem, que te dá uma força sem falar palavra difícil e nunca encheu o saco. É essa a vibe.</p>
+
+      <div class="persona">
+        <span class="yes">Prático</span>
+        <span class="yes">Direto</span>
+        <span class="yes">Bem-humorado</span>
+        <span class="yes">Caseiro</span>
+        <span class="yes">Confiável</span>
+        <span class="yes">Honesto</span>
+        <span class="no">Fofo demais</span>
+        <span class="no">Corporativo</span>
+        <span class="no">Aspiracional</span>
+        <span class="no">Gourmet</span>
+        <span class="no">Infantil</span>
+        <span class="no">Tech bro</span>
+      </div>
+    </section>
+
+    <!-- LOGO -->
+    <section class="section" id="logo">
+      <div class="eyebrow">Logo</div>
+      <h2>Quatro direções, uma escolha.</h2>
+      <p class="lede">Exploramos 4 caminhos. A escolha é a <strong>sacola refinada + wordmark</strong> — herda o que já estava no app, fica reconhecível, e funciona como ícone de PWA, favicon e header.</p>
+
+      <div class="logo-grid">
+        <!-- Escolhida -->
+        <div class="logo-card">
+          <div class="logo-stage">
+            <div class="mark-sacola lg">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/>
+                <line x1="3" y1="6" x2="21" y2="6"/>
+                <path d="M16 10a4 4 0 01-8 0"/>
+              </svg>
+            </div>
+            <div class="wordmark" style="color:var(--carvao)">Listinha</div>
+          </div>
+          <div class="logo-meta">
+            <span class="lbl">01 · SACOLA + WORDMARK</span>
+            <span class="when" style="color:var(--verde-musgo);font-weight:600">✓ ESCOLHIDA</span>
+          </div>
+        </div>
+
+        <!-- Monograma -->
+        <div class="logo-card">
+          <div class="logo-stage">
+            <div class="mark-mono lg">L</div>
+            <div class="wordmark" style="color:var(--carvao)">Listinha</div>
+          </div>
+          <div class="logo-meta">
+            <span class="lbl">02 · MONOGRAMA L</span>
+            <span class="when">Alternativa — uso técnico apenas</span>
+          </div>
+        </div>
+
+        <!-- Check -->
+        <div class="logo-card">
+          <div class="logo-stage">
+            <div class="mark-check"></div>
+            <div class="wordmark" style="color:var(--carvao)">Listinha</div>
+          </div>
+          <div class="logo-meta">
+            <span class="lbl">03 · CHECKMARK</span>
+            <span class="when">Genérico demais — descartada</span>
+          </div>
+        </div>
+
+        <!-- Wordmark only -->
+        <div class="logo-card">
+          <div class="logo-stage">
+            <div class="wordmark" style="font-size:64px;color:var(--carvao)">Listinha<span class="dot"></span></div>
+          </div>
+          <div class="logo-meta">
+            <span class="lbl">04 · WORDMARK PURO</span>
+            <span class="when">Bom para favicon não funciona — descartada</span>
+          </div>
+        </div>
+      </div>
+
+      <h3 style="margin-top:var(--s-8)">Lockups oficiais</h3>
+      <p class="small">Use somente estas combinações. Nunca recrie ou troque a fonte do wordmark.</p>
+      <div class="lockup-grid">
+        <div class="lockup">
+          <div class="mark-sacola sm">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/>
+            </svg>
+          </div>
+          <div class="wordmark xs" style="color:var(--carvao)">Listinha</div>
+        </div>
+        <div class="lockup" style="background:var(--carvao)">
+          <div class="mark-sacola sm" style="background:var(--verde-broto);color:var(--verde-folha)">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/>
+            </svg>
+          </div>
+          <div class="wordmark xs" style="color:var(--papel)">Listinha</div>
+        </div>
+        <div class="lockup" style="background:var(--verde-folha)">
+          <div class="mark-sacola sm" style="background:var(--papel);color:var(--verde-folha)">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/>
+            </svg>
+          </div>
+          <div class="wordmark xs" style="color:var(--papel)">Listinha</div>
+        </div>
+      </div>
+
+      <h3 style="margin-top:var(--s-8)">Tamanhos mínimos &amp; área de respiro</h3>
+      <p class="small">Mínimo: 24px de altura do mark. Área de respiro: altura do "L" do wordmark em todos os lados.</p>
+      <div class="lockup-grid" style="grid-template-columns:repeat(4,1fr);">
+        <div class="lockup">
+          <div class="mark-sacola" style="width:24px;height:24px;border-radius:6px">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" style="width:14px;height:14px"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+          </div>
+          <span class="micro">24px · mín. mobile</span>
+        </div>
+        <div class="lockup">
+          <div class="mark-sacola sm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg></div>
+          <span class="micro">32px · favicon</span>
+        </div>
+        <div class="lockup">
+          <div class="mark-sacola"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg></div>
+          <span class="micro">56px · app header</span>
+        </div>
+        <div class="lockup">
+          <div class="mark-sacola lg"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg></div>
+          <span class="micro">88px · PWA · login</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- TIPOGRAFIA -->
+    <section class="section" id="tipografia">
+      <div class="eyebrow">Tipografia</div>
+      <h2>Uma família só. Toda a hierarquia.</h2>
+      <p class="lede">Exploramos 3 pares. Escolhemos <strong>Bricolage Grotesque</strong> sozinha para tudo — display, body e UI. Menos peso, menos requests, mesmo caráter. <em>Instrument Serif</em> entra só para sotaque em citações curtas. Mono é <em>JetBrains Mono</em> para código.</p>
+
+      <div class="type-pairings">
+        <div class="pairing chosen">
+          <span class="pairing-tag"><span class="chip">A · ESCOLHIDA</span></span>
+          <div class="pf-bri pairing-display">Lista pronta.</div>
+          <div class="pf-bri-body pairing-body">Despensa, receitas e plano da semana. Tudo numa fonte só, redonda mas com caráter — meio italiana, meio jornal popular. Variável de 300 a 800.</div>
+          <div class="pairing-note">Bricolage Grotesque · Google Fonts · variable · all-weight</div>
+        </div>
+        <div class="pairing">
+          <span class="pairing-tag"><span class="chip">B</span></span>
+          <div class="pf-ins pairing-display"><em>Lista pronta.</em></div>
+          <div class="pf-bri-body pairing-body">Editorial + utilitário. Bonito, mas "frescura" demais para um app de mercado — herda peso visual desnecessário.</div>
+          <div class="pairing-note">Instrument Serif (display) + Bricolage (texto)</div>
+        </div>
+        <div class="pairing">
+          <span class="pairing-tag"><span class="chip">C</span></span>
+          <div class="pf-bri pairing-display" style="font-weight:700;letter-spacing:-0.04em">Lista pronta.</div>
+          <div class="pf-bri-body pairing-body">Mesma família, mais peso. Funciona, mas perde o calor que a opcional "ink-trap" do Bricolage entrega no peso 600.</div>
+          <div class="pairing-note">Bricolage Grotesque 700 (display) + 400 (texto)</div>
+        </div>
+      </div>
+
+      <h3 style="margin-top:var(--s-8)">Escala</h3>
+      <p class="small">Use <code style="font-family:var(--fonte-mono);background:var(--papel-2);padding:1px 6px;border-radius:4px;font-size:12px">letter-spacing: -0.025em</code> em tudo &gt; 22px. Body usa <code style="font-family:var(--fonte-mono);background:var(--papel-2);padding:1px 6px;border-radius:4px;font-size:12px">line-height: 1.55</code>.</p>
+
+      <div class="scale">
+        <div class="scale-row">
+          <span class="name">display / mega</span>
+          <span class="sample" style="font-size:72px;line-height:1.0">Bora?</span>
+          <span class="meta">72–112px · w600 · lh1.05</span>
+        </div>
+        <div class="scale-row">
+          <span class="name">h1</span>
+          <span class="sample" style="font-size:48px">Sua cozinha em ordem.</span>
+          <span class="meta">40–72px · w600 · lh1.1</span>
+        </div>
+        <div class="scale-row">
+          <span class="name">h2</span>
+          <span class="sample" style="font-size:32px">Lista da semana</span>
+          <span class="meta">28–44px · w600 · lh1.15</span>
+        </div>
+        <div class="scale-row">
+          <span class="name">h3</span>
+          <span class="sample" style="font-size:22px">Macarrão ao sugo</span>
+          <span class="meta">22px · w600 · lh1.2</span>
+        </div>
+        <div class="scale-row">
+          <span class="name">h4 / lead</span>
+          <span class="sample" style="font-size:17px;font-weight:600">Azeite extra virgem</span>
+          <span class="meta">17px · w600 · lh1.3</span>
+        </div>
+        <div class="scale-row">
+          <span class="name">body</span>
+          <span class="sample" style="font-size:16px;font-weight:400">Comprou o alho? Adicionou ovos? Tudo aqui no lugar.</span>
+          <span class="meta">16px · w400 · lh1.55</span>
+        </div>
+        <div class="scale-row">
+          <span class="name">small</span>
+          <span class="sample" style="font-size:14px;font-weight:400">2x · corredor 4 · R$ 8,90 no Atacadão</span>
+          <span class="meta">14px · w400 · lh1.5</span>
+        </div>
+        <div class="scale-row">
+          <span class="name">micro / mono</span>
+          <span class="sample pf-mono" style="font-size:12px;font-weight:500;letter-spacing:0.04em">SEG · 12 ITENS · COMPARTILHADO</span>
+          <span class="meta">12px · mono · UPPER · ls0.1em</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- CORES -->
+    <section class="section" id="cores">
+      <div class="eyebrow">Cores</div>
+      <h2>Verde de horta, creme de papelão, tomate maduro.</h2>
+      <p class="lede">Explorei 3 paletas. Fiquei com a <strong>"Feira"</strong> — verde-floresta como base, creme quente como fundo (não branco frio), e o tomate como acento único para destaque/erro. Nada de azul, nada de SaaS-cinza.</p>
+
+      <div class="palette-alts">
+        <div class="palette-alt chosen">
+          <div class="palette-name">A · Feira</div>
+          <div class="palette-blurb">Verde de horta + creme + tomate. Caseiro, alimenta. Sem cor extra.</div>
+          <div class="alt-strip">
+            <div style="background:#2D5F2F"></div>
+            <div style="background:#B8E89A"></div>
+            <div style="background:#F5F1E8"></div>
+            <div style="background:#1A1D17"></div>
+            <div style="background:#C8472E"></div>
+          </div>
+          <span class="palette-state">✓ Escolhida — sistema principal</span>
+        </div>
+        <div class="palette-alt">
+          <div class="palette-name">B · Multicolor (landing atual)</div>
+          <div class="palette-blurb">Verde + azul + amarelo + roxo, um por feature. Vibrante, mas sem foco e difícil de manter.</div>
+          <div class="alt-strip">
+            <div style="background:#386A20"></div>
+            <div style="background:#4F7CFF"></div>
+            <div style="background:#E08C00"></div>
+            <div style="background:#7C3AED"></div>
+            <div style="background:#1A1A2E"></div>
+          </div>
+          <span class="palette-state">✗ Descartada — sem hierarquia</span>
+        </div>
+        <div class="palette-alt">
+          <div class="palette-name">C · Mono verde</div>
+          <div class="palette-blurb">Apenas tons de verde + cinza. Limpíssimo, mas perde o calor humano.</div>
+          <div class="alt-strip">
+            <div style="background:#1F4B22"></div>
+            <div style="background:#386A20"></div>
+            <div style="background:#7AB058"></div>
+            <div style="background:#D4E5C2"></div>
+            <div style="background:#F4F4F1"></div>
+          </div>
+          <span class="palette-state">✗ Descartada — friô demais</span>
+        </div>
+      </div>
+
+      <div class="palette-h">
+        <h3>Verdes — primário e ativos</h3>
+        <p class="palette-cap">O verde-folha é a cor da marca. O broto carrega badges, checks, estados ativos. Use o claro só como fundo.</p>
+      </div>
+      <div class="swatch-grid">
+        <div class="swatch">
+          <div class="swatch-block" style="background:#2D5F2F"></div>
+          <div class="swatch-meta">
+            <span class="name">Verde-folha</span>
+            <span class="token">--verde-folha</span>
+            <span class="hex">#2D5F2F</span>
+            <span class="use">Logo, headlines, CTA primário, links</span>
+          </div>
+        </div>
+        <div class="swatch">
+          <div class="swatch-block" style="background:#3E7E40"></div>
+          <div class="swatch-meta">
+            <span class="name">Verde-musgo</span>
+            <span class="token">--verde-musgo</span>
+            <span class="hex">#3E7E40</span>
+            <span class="use">Hover, eyebrows, ícones secundários</span>
+          </div>
+        </div>
+        <div class="swatch">
+          <div class="swatch-block" style="background:#B8E89A"></div>
+          <div class="swatch-meta">
+            <span class="name">Verde-broto</span>
+            <span class="token">--verde-broto</span>
+            <span class="hex">#B8E89A</span>
+            <span class="use">Badge, ativo, CTA tonal, qty pill</span>
+          </div>
+        </div>
+        <div class="swatch">
+          <div class="swatch-block" style="background:#E8F3DD;border:1px solid var(--linha)"></div>
+          <div class="swatch-meta">
+            <span class="name">Verde-claro</span>
+            <span class="token">--verde-claro</span>
+            <span class="hex">#E8F3DD</span>
+            <span class="use">Fundo de bloco verde sutil</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="palette-h"><h3>Neutros quentes — superfícies e texto</h3>
+        <p class="palette-cap">Tudo neutro tem subtom amarelo-creme. Branco puro só dentro de modal/input em foco.</p>
+      </div>
+      <div class="swatch-grid">
+        <div class="swatch">
+          <div class="swatch-block" style="background:#F5F1E8;border:1px solid var(--linha)"></div>
+          <div class="swatch-meta"><span class="name">Creme</span><span class="token">--creme</span><span class="hex">#F5F1E8</span><span class="use">Fundo da página, app shell</span></div>
+        </div>
+        <div class="swatch">
+          <div class="swatch-block" style="background:#FBF9F2;border:1px solid var(--linha)"></div>
+          <div class="swatch-meta"><span class="name">Papel</span><span class="token">--papel</span><span class="hex">#FBF9F2</span><span class="use">Surface de cards, list items</span></div>
+        </div>
+        <div class="swatch">
+          <div class="swatch-block" style="background:#F0EBDE;border:1px solid var(--linha)"></div>
+          <div class="swatch-meta"><span class="name">Papel 2</span><span class="token">--papel-2</span><span class="hex">#F0EBDE</span><span class="use">Hover surface, bloco sutil</span></div>
+        </div>
+        <div class="swatch">
+          <div class="swatch-block" style="background:#1A1D17"></div>
+          <div class="swatch-meta"><span class="name">Carvão</span><span class="token">--carvao</span><span class="hex">#1A1D17</span><span class="use">Texto principal, footer, dark CTA</span></div>
+        </div>
+        <div class="swatch">
+          <div class="swatch-block" style="background:#5C5E55"></div>
+          <div class="swatch-meta"><span class="name">Carvão 2</span><span class="token">--carvao-2</span><span class="hex">#5C5E55</span><span class="use">Texto secundário, body em cards</span></div>
+        </div>
+        <div class="swatch">
+          <div class="swatch-block" style="background:#8E8E82"></div>
+          <div class="swatch-meta"><span class="name">Carvão 3</span><span class="token">--carvao-3</span><span class="hex">#8E8E82</span><span class="use">Hint, placeholder, micro</span></div>
+        </div>
+        <div class="swatch">
+          <div class="swatch-block" style="background:#E5E2D6;border:1px solid var(--linha)"></div>
+          <div class="swatch-meta"><span class="name">Linha</span><span class="token">--linha</span><span class="hex">#E5E2D6</span><span class="use">Borda padrão, divisor</span></div>
+        </div>
+        <div class="swatch">
+          <div class="swatch-block" style="background:#D4D0BF;border:1px solid var(--linha)"></div>
+          <div class="swatch-meta"><span class="name">Linha 2</span><span class="token">--linha-2</span><span class="hex">#D4D0BF</span><span class="use">Borda de input, chip</span></div>
+        </div>
+      </div>
+
+      <div class="palette-h"><h3>Acentos — semânticos, com parcimônia</h3>
+        <p class="palette-cap">O tomate é o único "vermelho" — usado para erro, delete, alerta forte. Manteiga é avisos macios. Não invente mais cores.</p>
+      </div>
+      <div class="swatch-grid">
+        <div class="swatch">
+          <div class="swatch-block" style="background:#C8472E"></div>
+          <div class="swatch-meta"><span class="name">Tomate</span><span class="token">--tomate</span><span class="hex">#C8472E</span><span class="use">Erro, delete, item esgotado</span></div>
+        </div>
+        <div class="swatch">
+          <div class="swatch-block" style="background:#FBE8E1;border:1px solid var(--linha)"></div>
+          <div class="swatch-meta"><span class="name">Tomate-claro</span><span class="token">--tomate-claro</span><span class="hex">#FBE8E1</span><span class="use">Fundo de erro/badge danger</span></div>
+        </div>
+        <div class="swatch">
+          <div class="swatch-block" style="background:#E8B547"></div>
+          <div class="swatch-meta"><span class="name">Manteiga</span><span class="token">--manteiga</span><span class="hex">#E8B547</span><span class="use">Aviso, "está acabando"</span></div>
+        </div>
+        <div class="swatch">
+          <div class="swatch-block" style="background:#FBF1D8;border:1px solid var(--linha)"></div>
+          <div class="swatch-meta"><span class="name">Manteiga-claro</span><span class="token">--manteiga-claro</span><span class="hex">#FBF1D8</span><span class="use">Sugestão suave, card amarelo</span></div>
+        </div>
+      </div>
+
+      <h3 style="margin-top:var(--s-8)">Tokens prontos para copiar</h3>
+      <div class="token-table">
+        <div class="token-row"><span class="dot" style="background:#2D5F2F"></span><span class="key">--verde-folha</span><span class="hex">#2D5F2F</span><span class="use">primário</span></div>
+        <div class="token-row"><span class="dot" style="background:#3E7E40"></span><span class="key">--verde-musgo</span><span class="hex">#3E7E40</span><span class="use">hover/interativo</span></div>
+        <div class="token-row"><span class="dot" style="background:#B8E89A"></span><span class="key">--verde-broto</span><span class="hex">#B8E89A</span><span class="use">accent / badge / qty</span></div>
+        <div class="token-row"><span class="dot" style="background:#E8F3DD"></span><span class="key">--verde-claro</span><span class="hex">#E8F3DD</span><span class="use">bg verde sutil</span></div>
+        <div class="token-row"><span class="dot" style="background:#F5F1E8"></span><span class="key">--creme</span><span class="hex">#F5F1E8</span><span class="use">page bg</span></div>
+        <div class="token-row"><span class="dot" style="background:#FBF9F2"></span><span class="key">--papel</span><span class="hex">#FBF9F2</span><span class="use">surface</span></div>
+        <div class="token-row"><span class="dot" style="background:#F0EBDE"></span><span class="key">--papel-2</span><span class="hex">#F0EBDE</span><span class="use">surface hover</span></div>
+        <div class="token-row"><span class="dot" style="background:#1A1D17"></span><span class="key">--carvao</span><span class="hex">#1A1D17</span><span class="use">texto principal</span></div>
+        <div class="token-row"><span class="dot" style="background:#5C5E55"></span><span class="key">--carvao-2</span><span class="hex">#5C5E55</span><span class="use">texto secundário</span></div>
+        <div class="token-row"><span class="dot" style="background:#8E8E82"></span><span class="key">--carvao-3</span><span class="hex">#8E8E82</span><span class="use">hint</span></div>
+        <div class="token-row"><span class="dot" style="background:#E5E2D6"></span><span class="key">--linha</span><span class="hex">#E5E2D6</span><span class="use">borda padrão</span></div>
+        <div class="token-row"><span class="dot" style="background:#C8472E"></span><span class="key">--tomate</span><span class="hex">#C8472E</span><span class="use">erro/delete</span></div>
+        <div class="token-row"><span class="dot" style="background:#E8B547"></span><span class="key">--manteiga</span><span class="hex">#E8B547</span><span class="use">aviso</span></div>
+      </div>
+    </section>
+
+    <!-- ESPAÇO -->
+    <section class="section" id="espaco">
+      <div class="eyebrow">Espaço &amp; raios</div>
+      <h2>Base 4. Sem números mágicos.</h2>
+      <p class="lede">Tudo é múltiplo de 4. Se algo precisa de 13px de padding, não precisa.</p>
+
+      <div class="space-grid">
+        <div class="space-cell"><div class="space-bar" style="width:4px"></div><div class="key">--s-1</div><div class="val">4px</div></div>
+        <div class="space-cell"><div class="space-bar" style="width:8px"></div><div class="key">--s-2</div><div class="val">8px</div></div>
+        <div class="space-cell"><div class="space-bar" style="width:12px"></div><div class="key">--s-3</div><div class="val">12px</div></div>
+        <div class="space-cell"><div class="space-bar" style="width:16px"></div><div class="key">--s-4</div><div class="val">16px</div></div>
+        <div class="space-cell"><div class="space-bar" style="width:20px"></div><div class="key">--s-5</div><div class="val">20px</div></div>
+        <div class="space-cell"><div class="space-bar" style="width:24px"></div><div class="key">--s-6</div><div class="val">24px</div></div>
+        <div class="space-cell"><div class="space-bar" style="width:32px"></div><div class="key">--s-7</div><div class="val">32px</div></div>
+        <div class="space-cell"><div class="space-bar" style="width:40px"></div><div class="key">--s-8</div><div class="val">40px</div></div>
+        <div class="space-cell"><div class="space-bar" style="width:56px"></div><div class="key">--s-9</div><div class="val">56px</div></div>
+        <div class="space-cell"><div class="space-bar" style="width:80px"></div><div class="key">--s-10</div><div class="val">80px</div></div>
+        <div class="space-cell"><div class="space-bar" style="width:120px"></div><div class="key">--s-11</div><div class="val">120px</div></div>
+      </div>
+
+      <h3 style="margin-top:var(--s-8)">Raios</h3>
+      <p class="small">Pequenos para chips e checkboxes, médios para cards/inputs, grandes só para modais. Pill para chips e botões redondos.</p>
+      <div class="radius-grid">
+        <div class="radius-cell" style="border-radius:6px">--r-xs<br/>6px</div>
+        <div class="radius-cell" style="border-radius:10px">--r-sm<br/>10px</div>
+        <div class="radius-cell" style="border-radius:14px">--r-md<br/>14px</div>
+        <div class="radius-cell" style="border-radius:20px">--r-lg<br/>20px</div>
+        <div class="radius-cell" style="border-radius:28px">--r-xl<br/>28px</div>
+        <div class="radius-cell" style="border-radius:999px">--r-pill</div>
+      </div>
+    </section>
+
+    <!-- SOMBRAS -->
+    <section class="section" id="sombras">
+      <div class="eyebrow">Sombras</div>
+      <h2>Quatro níveis. Use o mais baixo possível.</h2>
+      <p class="lede">Em fundos creme, sombras precisam ser sutis para não parecer banner de e-commerce ruim.</p>
+      <div class="shadow-grid">
+        <div class="shadow-cell s1">--sh-1</div>
+        <div class="shadow-cell s2">--sh-2</div>
+        <div class="shadow-cell s3">--sh-3</div>
+        <div class="shadow-cell s4">--sh-4</div>
+      </div>
+      <p class="small" style="margin-top:var(--s-4)"><strong>sh-1</strong> cards estáticos · <strong>sh-2</strong> cards em hover · <strong>sh-3</strong> dropdowns e popovers · <strong>sh-4</strong> modais e bottom sheets.</p>
+    </section>
+
+    <!-- ÍCONES -->
+    <section class="section" id="icones">
+      <div class="eyebrow">Iconografia</div>
+      <h2>Linha, 1.8px, ponta redonda. Lucide-style.</h2>
+      <p class="lede">No app, ícones são sempre line, 24×24, stroke 1.8px, color: currentColor. Não invente — use <strong>Lucide</strong>. Em fotos de marketing, fotografia real de mercado/cozinha.</p>
+
+      <div class="icon-sub">As 4 features · um ícone cada</div>
+      <div class="icon-features">
+        <div class="icon-feat">
+          <div class="ring"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg></div>
+          <span class="label">Lista de compras</span>
+          <span class="slug">shopping-cart</span>
+        </div>
+        <div class="icon-feat">
+          <div class="ring"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="5" rx="1"/><path d="M4 9v10a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1V9"/><line x1="10" y1="13" x2="14" y2="13"/></svg></div>
+          <span class="label">Despensa</span>
+          <span class="slug">archive</span>
+        </div>
+        <div class="icon-feat">
+          <div class="ring"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg></div>
+          <span class="label">Receitas</span>
+          <span class="slug">book-open</span>
+        </div>
+        <div class="icon-feat">
+          <div class="ring"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/><path d="M8 14h2M14 14h2M8 18h2M14 18h2"/></svg></div>
+          <span class="label">Plano da semana</span>
+          <span class="slug">calendar-days</span>
+        </div>
+      </div>
+
+      <div class="icon-sub">Sistema · utilitários</div>
+      <div class="icon-grid">
+        <div class="icon-cell"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg><span class="name">shopping-bag (brand)</span></div>
+        <div class="icon-cell"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg><span class="name">check-square</span></div>
+        <div class="icon-cell"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg><span class="name">plus</span></div>
+        <div class="icon-cell"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 6 5 6 21 6"/><path d="M19 6v14a2 2 0 01-2 2H7a2 2 0 01-2-2V6"/><path d="M10 11v6M14 11v6"/></svg><span class="name">trash</span></div>
+        <div class="icon-cell"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg><span class="name">message</span></div>
+        <div class="icon-cell"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg><span class="name">share-2</span></div>
+        <div class="icon-cell"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg><span class="name">search</span></div>
+        <div class="icon-cell"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09a1.65 1.65 0 0 0-1-1.51 1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09a1.65 1.65 0 0 0 1.51-1 1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33h0a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51h0a1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82v0a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg><span class="name">settings</span></div>
+        <div class="icon-cell"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg><span class="name">info</span></div>
+        <div class="icon-cell"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6L6 18M6 6l12 12"/></svg><span class="name">x</span></div>
+        <div class="icon-cell"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span class="name">check</span></div>
+        <div class="icon-cell"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg><span class="name">bookmark</span></div>
+      </div>
+
+      <div class="icon-rules">
+        <ul>
+          <li><strong>Sempre line, nunca filled.</strong> Exceto checks dentro de qty-pills.</li>
+          <li><strong>Stroke 1.8px</strong> a 24px · 2.2px se for usado a 32px+.</li>
+          <li><strong>currentColor</strong> sempre. Cor herda do contexto.</li>
+          <li><strong>Tamanhos: 16, 18, 20, 24, 28, 32.</strong> Nada de 19, 21.</li>
+          <li><strong>Não desenhe ícones do zero.</strong> Use Lucide. Se faltar, peça.</li>
+          <li><strong>Emoji só em headers e ilustração marketing</strong>, nunca como ícone funcional do app.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- COMPONENTES -->
+    <section class="section" id="componentes">
+      <div class="eyebrow">Componentes</div>
+      <h2>Pequenos, consistentes, reusáveis.</h2>
+      <p class="lede">Tudo o que aparece mais de uma vez vira componente. Nada de "esse botão é parecido mas tem outro padding".</p>
+
+      <!-- Botões -->
+      <div class="comp-block">
+        <div class="comp-title">// Botões</div>
+        <div class="comp-row">
+          <button class="btn btn-primary">Comece grátis</button>
+          <button class="btn btn-secondary">Adicionar à lista</button>
+          <button class="btn btn-ghost">Ver despensa</button>
+          <button class="btn btn-quiet">Cancelar</button>
+          <button class="btn btn-danger">Excluir</button>
+        </div>
+        <div class="comp-row" style="margin-top:14px">
+          <button class="btn btn-primary btn-lg">CTA grande</button>
+          <button class="btn btn-primary">Padrão</button>
+          <button class="btn btn-primary btn-sm">Pequeno</button>
+          <button class="btn btn-primary btn-icon" aria-label="Adicionar">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg>
+          </button>
+        </div>
+        <p class="small" style="margin-top:14px"><strong>Regras:</strong> sempre <code style="font-family:var(--fonte-mono);background:var(--papel-2);padding:1px 6px;border-radius:4px;font-size:12px">border-radius: 999px</code>. Apenas 1 primário por tela. Texto sem ponto final ("Comece grátis", não "Comece grátis.").</p>
+      </div>
+
+      <!-- Chips -->
+      <div class="comp-block">
+        <div class="comp-title">// Chips (filtros, tags, despensa)</div>
+        <div class="comp-row">
+          <span class="chip">Alho</span>
+          <span class="chip">Cebola</span>
+          <span class="chip on">✓ Azeite</span>
+          <span class="chip on">✓ Ovos</span>
+          <span class="chip off">Sal</span>
+          <span class="chip off">Farinha</span>
+          <span class="chip add">+ Adicionar</span>
+        </div>
+        <p class="small" style="margin-top:14px"><strong>Estados:</strong> default, on (na despensa), off (acabou — risca + tomate), add (dashed border).</p>
+      </div>
+
+      <!-- Inputs -->
+      <div class="comp-block">
+        <div class="comp-title">// Inputs</div>
+        <div class="comp-row" style="align-items:flex-end">
+          <div class="field">
+            <label>Item</label>
+            <input class="input" placeholder="Ex.: Azeite extra virgem" />
+          </div>
+          <div class="field">
+            <label>Quantidade</label>
+            <input class="input" value="2x · 1L" />
+          </div>
+          <div class="field">
+            <label>Loja</label>
+            <input class="input" placeholder="Atacadão, padaria do Zé…" />
+          </div>
+        </div>
+        <p class="small" style="margin-top:14px"><strong>Foco:</strong> borda verde-folha + glow 12% · placeholder em carvão-3.</p>
+      </div>
+
+      <!-- Cards -->
+      <div class="comp-block">
+        <div class="comp-title">// Cards</div>
+        <div class="comp-row" style="align-items:stretch">
+          <div class="card">
+            <div class="ttl">Macarrão ao sugo</div>
+            <div class="body">5 ingredientes · serve 4 · Instagram</div>
+            <div class="foot"><button class="btn btn-secondary btn-sm">Adicionar à lista</button><button class="btn btn-quiet btn-sm">Abrir</button></div>
+          </div>
+          <div class="card" style="background:var(--verde-claro);border-color:#C5DDB1">
+            <div class="ttl" style="color:#1F4B22">Sugestão da semana</div>
+            <div class="body" style="color:#3F6A30">Você tem 4 dos 6 ingredientes pra <em>frango grelhado com limão</em>.</div>
+            <div class="foot"><button class="btn btn-primary btn-sm">Adicionar 2 itens</button></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Lista item -->
+      <div class="comp-block">
+        <div class="comp-title">// Itens de lista (componente central do app)</div>
+        <div class="li-sec">Hortifruti · 5 itens</div>
+        <div class="list-item">
+          <div class="li-qty">2x</div>
+          <div class="li-info"><div class="li-name">Alho</div><div class="li-meta"><span class="dot"></span>Hortifruti · Atacadão</div></div>
+          <div class="li-check"></div>
+        </div>
+        <div class="list-item">
+          <div class="li-qty">1kg</div>
+          <div class="li-info"><div class="li-name">Tomate italiano</div><div class="li-meta">para o sugo</div></div>
+          <div class="li-check"></div>
+        </div>
+        <div class="list-item done">
+          <div class="li-qty">12un</div>
+          <div class="li-info"><div class="li-name">Ovos</div><div class="li-meta">comprado às 10:42</div></div>
+          <div class="li-check chk"></div>
+        </div>
+      </div>
+
+      <!-- Badges -->
+      <div class="comp-block">
+        <div class="comp-title">// Badges</div>
+        <div class="comp-row">
+          <span class="badge">✓ na despensa</span>
+          <span class="badge warn">acabando</span>
+          <span class="badge danger">esgotado</span>
+          <span class="badge quiet">12 itens</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- TOM DE VOZ -->
+    <section class="section" id="tom">
+      <div class="eyebrow">Tom de voz</div>
+      <h2>Conversa de cozinha.</h2>
+      <p class="lede">Imagine o Listinha como um amigo no zap: direto, com humor seco quando cabe, e sem rodeio. Verbo curto. Pergunta vale mais que afirmação. Brasil de verdade — "bora", "trem", "show", mas sem caricatura.</p>
+
+      <div class="voice-grid">
+        <div class="voice-col do">
+          <div class="voice-col-h">✓ FAÇA ASSIM</div>
+          <ul>
+            <li>"Lista pronta. Bora?"<small>CTA de finalizar a lista</small></li>
+            <li>"Esqueceu o alho de novo? Aqui não."<small>Empty state da despensa</small></li>
+            <li>"Tudo no lugar. Como deveria ser."<small>Hero da landing</small></li>
+            <li>"Sua despensa tá vazia. Hora de fazer mercado."<small>Sugestão</small></li>
+            <li>"4 itens. Faltam 2."<small>Status do plano da semana</small></li>
+          </ul>
+        </div>
+        <div class="voice-col dont">
+          <div class="voice-col-h">✗ EVITE</div>
+          <ul>
+            <li>"Sua experiência culinária organizada."<small>Frescura corporativa</small></li>
+            <li>"Adicione itens à sua lista de compras de forma inteligente."<small>Descrição genérica de SaaS</small></li>
+            <li>"Olá! Que tal organizarmos sua semana?"<small>Tom infantil/forçado</small></li>
+            <li>"⚡ Boost your kitchen game! 🍳"<small>Tech bro / emoji-spam</small></li>
+            <li>"Erro 401: usuário não autenticado."<small>Mensagem técnica não traduzida</small></li>
+          </ul>
+        </div>
+      </div>
+
+      <h3 style="margin-top:var(--s-8)">Reescritas — antes / depois</h3>
+      <div class="copy-examples">
+        <div class="copy-card">
+          <div class="ctx">// Botão de adicionar receita</div>
+          <div class="yes">Salvar receita</div>
+          <div class="no">Adicionar nova receita ao caderno</div>
+        </div>
+        <div class="copy-card">
+          <div class="ctx">// Empty state — lista vazia</div>
+          <div class="yes">Nenhum item. Bora encher?</div>
+          <div class="no">Você ainda não adicionou nenhum item à sua lista.</div>
+        </div>
+        <div class="copy-card">
+          <div class="ctx">// Confirmação de exclusão</div>
+          <div class="yes">Apagar essa receita mesmo?</div>
+          <div class="no">Tem certeza que deseja excluir permanentemente este item?</div>
+        </div>
+        <div class="copy-card">
+          <div class="ctx">// Erro de login</div>
+          <div class="yes">Email ou senha não bateu. Tenta de novo.</div>
+          <div class="no">Credenciais inválidas.</div>
+        </div>
+        <div class="copy-card">
+          <div class="ctx">// Sugestão inteligente</div>
+          <div class="yes">Faltou o alho da sua despensa. Adicionar?</div>
+          <div class="no">Detectamos um item ausente em seu inventário.</div>
+        </div>
+        <div class="copy-card">
+          <div class="ctx">// CTA final landing</div>
+          <div class="yes">Comece grátis →</div>
+          <div class="no">Comece sua jornada culinária hoje mesmo</div>
+        </div>
+      </div>
+
+      <h3 style="margin-top:var(--s-8)">Regrinhas rápidas</h3>
+      <div class="manifesto-list" style="margin-top:var(--s-3)">
+        <div class="manifesto-row"><span class="n">A</span><span class="t"><strong>Sem ponto final em botões e títulos curtos.</strong> "Comece grátis", "Lista da semana" — não "Comece grátis.".</span></div>
+        <div class="manifesto-row"><span class="n">B</span><span class="t"><strong>Pergunta &gt; afirmação</strong> quando cabe. "Bora?" / "Apagar mesmo?" / "Já comprou?".</span></div>
+        <div class="manifesto-row"><span class="n">C</span><span class="t"><strong>Números cardinais sem floreio.</strong> "4 itens" não "Você tem 4 itens na sua lista".</span></div>
+        <div class="manifesto-row"><span class="n">D</span><span class="t"><strong>Emojis: 0 ou 1 por tela.</strong> Eles funcionam em landing e empty states. Nunca em alertas, erros ou listas funcionais.</span></div>
+        <div class="manifesto-row"><span class="n">E</span><span class="t"><strong>Erros falam como gente.</strong> O sistema errou, não o usuário. "Não rolou agora", não "Falha no servidor".</span></div>
+        <div class="manifesto-row"><span class="n">F</span><span class="t"><strong>"Você" sem firula.</strong> Tratamento informal, sempre. Nunca "Sr./Sra." nem "prezado".</span></div>
+      </div>
+    </section>
+
+    <!-- APLICAÇÕES -->
+    <section class="section" id="aplicacoes">
+      <div class="eyebrow">Aplicações</div>
+      <h2>O sistema, em uso.</h2>
+      <p class="lede">App à esquerda, landing à direita. Mesma família, mesmo tom, mesmas regras.</p>
+
+      <div class="apps-grid">
+        <!-- PHONE -->
+        <div class="phone">
+          <div class="phone-screen">
+            <div class="ph-top">
+              <div class="mark-sacola sm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg></div>
+              <div class="ph-title">Lista da semana</div>
+              <span class="ph-badge">2/5</span>
+            </div>
+            <div class="ph-body">
+              <div class="ph-sec">Hortifruti</div>
+              <div class="ph-item">
+                <div class="ph-qty">2x</div>
+                <div class="ph-nm">Alho</div>
+                <div class="ph-ck"></div>
+              </div>
+              <div class="ph-item">
+                <div class="ph-qty">1kg</div>
+                <div class="ph-nm">Tomate italiano</div>
+                <div class="ph-ck"></div>
+              </div>
+
+              <div class="ph-sec">Mercearia</div>
+              <div class="ph-item done">
+                <div class="ph-qty dim">1x</div>
+                <div class="ph-nm">Azeite extra virgem</div>
+                <div class="ph-ck on"></div>
+              </div>
+              <div class="ph-item done">
+                <div class="ph-qty dim">12un</div>
+                <div class="ph-nm">Ovos</div>
+                <div class="ph-ck on"></div>
+              </div>
+              <div class="ph-item">
+                <div class="ph-qty">1kg</div>
+                <div class="ph-nm">Peito de frango</div>
+                <div class="ph-ck"></div>
+              </div>
+            </div>
+            <div class="ph-tab">
+              <div class="ph-tab-i on"><div class="pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg></div>Lista</div>
+              <div class="ph-tab-i"><div class="pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="5" rx="1"/><path d="M4 9v10a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1V9"/><line x1="10" y1="13" x2="14" y2="13"/></svg></div>Despensa</div>
+              <div class="ph-tab-i"><div class="pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg></div>Receitas</div>
+              <div class="ph-tab-i"><div class="pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg></div>Plano</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- LANDING -->
+        <div class="landing-mock">
+          <div class="lm-nav">
+            <div style="display:flex;align-items:center;gap:10px">
+              <div class="mark-sacola sm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg></div>
+              <div class="wordmark xs" style="color:var(--carvao)">Listinha</div>
+            </div>
+            <button class="btn btn-primary btn-sm">Comece grátis →</button>
+          </div>
+          <div class="lm-hero">
+            <div>
+              <div class="lm-trust"><span class="dot"></span>100% grátis · sem cadastro longo</div>
+              <h2>Já foi ao mercado e voltou <span class="under">sem o que precisava?</span></h2>
+              <p>O app que conecta sua despensa, receitas e lista de compras — pra nunca mais faltar nada.</p>
+              <div class="lm-actions">
+                <button class="btn btn-primary">Comece grátis →</button>
+                <a href="#" class="small" style="color:var(--carvao-2)">Ver como funciona</a>
+              </div>
+            </div>
+            <div class="lm-img">[ foto · cozinha real · feira · ingredientes ]</div>
+          </div>
+
+          <div class="lm-features">
+            <div class="lm-feat">
+              <div class="ico"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg></div>
+              <h4>Lista</h4>
+              <p>Por mercado, por corredor. Compartilha no zap.</p>
+            </div>
+            <div class="lm-feat">
+              <div class="ico"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="5" rx="1"/><path d="M4 9v10a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1V9"/><line x1="10" y1="13" x2="14" y2="13"/></svg></div>
+              <h4>Despensa</h4>
+              <p>Sempre tenha o que precisa pra cozinhar.</p>
+            </div>
+            <div class="lm-feat">
+              <div class="ico"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg></div>
+              <h4>Receitas</h4>
+              <p>O caderno que você nunca teve.</p>
+            </div>
+            <div class="lm-feat">
+              <div class="ico"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg></div>
+              <h4>Plano</h4>
+              <p>Semana planejada, lista pronta.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h3 style="margin-top:var(--s-9)">Decisão importante — cor por feature</h3>
+      <p class="lede">A landing atual pinta cada feature de uma cor (azul/amarelo/verde/roxo). <strong>Eu derrubei isso.</strong> No novo sistema, todas as 4 features são verdes — diferenciadas apenas por <strong>ícone</strong> e <strong>nome</strong>. Razões:</p>
+      <div class="manifesto-list" style="margin-top:var(--s-3);max-width:720px">
+        <div class="manifesto-row"><span class="n">·</span><span class="t">A marca é uma só. Quatro cores diluem o reconhecimento.</span></div>
+        <div class="manifesto-row"><span class="n">·</span><span class="t">Roxo e amarelo brigam com o tom "caseiro/feira" da paleta.</span></div>
+        <div class="manifesto-row"><span class="n">·</span><span class="t">Cor semântica fica reservada — broto = ok, manteiga = aviso, tomate = erro. Se Plano da Semana é roxo, o que vira o erro?</span></div>
+      </div>
+    </section>
+
+    <footer class="foot">
+      <span>LISTINHA · DESIGN SYSTEM · v1.0 · maio 2026</span>
+      <span>feito sem frescura — bora?</span>
+    </footer>
+
+  </main>
+</div>
+
+</body>
+</html>

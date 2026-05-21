@@ -1,9 +1,6 @@
-import RevealObserver from '../components/RevealObserver'
-
 export default function Home() {
   return (
     <>
-      <RevealObserver />
 
       {/* NAV */}
       <header className="nav">
