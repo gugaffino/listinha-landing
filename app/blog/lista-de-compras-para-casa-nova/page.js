@@ -94,7 +94,7 @@ const articleSchema = {
   dateModified: '2026-05-21',
   author: {
     '@type': 'Person',
-    name: 'Gustavo Fino',
+    name: 'Gus',
     url: 'https://listinha-landing-delta.vercel.app',
   },
   publisher: {
@@ -252,6 +252,8 @@ export default function ListaDeComprasParaCasaNova() {
 
         <div className="blog-header reveal">
           <div className="blog-meta">
+            <span className="blog-meta-author">Gus</span>
+            <span className="blog-meta-sep">·</span>
             <time className="blog-date" dateTime="2026-05-21">21 mai. 2026</time>
             <span className="blog-meta-sep">·</span>
             <span className="blog-read">8 min de leitura</span>
@@ -738,7 +740,7 @@ export default function ListaDeComprasParaCasaNova() {
               </svg>
             </div>
             <div>
-              <p className="blog-author-name">Gustavo Fino</p>
+              <p className="blog-author-name">Gus</p>
               <p className="blog-author-bio">
                 Criador do Listinha. Já chegou em casa nova sem papel higiênico uma vez. Só precisou acontecer uma vez.
               </p>

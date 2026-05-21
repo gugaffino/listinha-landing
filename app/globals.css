@@ -644,6 +644,7 @@ h1,h2,h3,h4 {
 .blog-meta { display: flex; align-items: center; gap: 10px; margin-bottom: 18px; }
 .blog-date, .blog-read { font-size: 13px; color: var(--carvao-3); font-family: var(--mono); }
 .blog-meta-sep { color: var(--linha-2); font-size: 13px; }
+.blog-meta-author { font-size: 13px; color: var(--carvao-2); font-family: var(--mono); font-weight: 500; }
 .blog-meta-link { font-size: 13px; color: var(--verde-musgo); font-weight: 500; }
 .blog-meta-link:hover { text-decoration: underline; }
 
@@ -839,7 +840,7 @@ h1,h2,h3,h4 {
   max-width: 780px; margin: 0 auto 16px; padding: 0 24px;
 }
 .breadcrumb-nav {
-  display: flex; align-items: center; gap: 6px;
+  display: flex; align-items: center; gap: 6px; flex-wrap: wrap;
   font-size: 12px; font-family: var(--mono); color: var(--carvao-3);
 }
 .breadcrumb-nav a { color: var(--carvao-3); transition: color .15s; }

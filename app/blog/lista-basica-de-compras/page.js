@@ -94,7 +94,7 @@ const articleSchema = {
   dateModified: '2025-05-20',
   author: {
     '@type': 'Person',
-    name: 'Gustavo Fino',
+    name: 'Gus',
     url: 'https://listinha-landing-delta.vercel.app',
   },
   publisher: {
@@ -243,6 +243,8 @@ export default function ListaBasicaDeCompras() {
 
         <div className="blog-header reveal">
           <div className="blog-meta">
+            <span className="blog-meta-author">Gus</span>
+            <span className="blog-meta-sep">·</span>
             <time className="blog-date" dateTime="2025-05-16">16 mai. 2025</time>
             <span className="blog-meta-sep">·</span>
             <span className="blog-read">9 min de leitura</span>
@@ -870,7 +872,7 @@ export default function ListaBasicaDeCompras() {
               </svg>
             </div>
             <div>
-              <p className="blog-author-name">Gustavo Fino</p>
+              <p className="blog-author-name">Gus</p>
               <p className="blog-author-bio">
                 Criador do Listinha. Já esqueceu o alho no mercado mais vezes do que gostaria de
                 admitir — e construiu um app pra resolver isso.
