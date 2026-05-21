@@ -27,7 +27,7 @@ export const metadata = {
   title: 'Listinha — Cozinha organizada, sem frescura.',
   description: 'O app que conecta despensa, receitas e lista de compras. Pra nunca mais faltar nada.',
   verification: {
-    google: 'URl4_B37HMu6Ncx7fH7obFdYTfo185H50c7ibpIM5BM',
+    google: 'YhW2K5hJ2UdND5GjgGfhPogP5MFaybFqoDpbCIlaKIc',
   },
   openGraph: {
     title: 'Listinha — Cozinha organizada, sem frescura.',
