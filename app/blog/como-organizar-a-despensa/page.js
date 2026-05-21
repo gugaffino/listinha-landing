@@ -463,7 +463,7 @@ export default function ComoOrganizarADespensa() {
 
           <div className="blog-cta reveal">
             <p className="blog-cta-text">Despensa organizada. Lista automática. Grátis.</p>
-            <a href="https://listinha-puce.vercel.app" className="btn btn-primary btn-lg" target="_blank" rel="noopener">
+            <a href="https://listinha-puce.vercel.app" className="btn btn-on-dark btn-lg" target="_blank" rel="noopener">
               Abrir o Listinha
               <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M5 12h14M13 5l7 7-7 7" />
