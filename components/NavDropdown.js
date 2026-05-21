@@ -14,6 +14,18 @@ const ITEMS = [
     ),
   },
   {
+    href: '/funcionalidades/despensa',
+    label: 'Despensa',
+    desc: 'Sabe o que falta antes de ir ao mercado',
+    icon: (
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+        <rect x="2" y="4" width="20" height="5" rx="1"/>
+        <path d="M4 9v10a1 1 0 001 1h14a1 1 0 001-1V9"/>
+        <line x1="10" y1="13" x2="14" y2="13"/>
+      </svg>
+    ),
+  },
+  {
     href: '/funcionalidades/receitas',
     label: 'Receitas',
     desc: 'Filtra pelo que tem em casa',

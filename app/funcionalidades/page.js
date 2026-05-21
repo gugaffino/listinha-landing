@@ -26,6 +26,20 @@ const features = [
     tags: ['100% grátis', 'Compartilhada', 'Offline'],
   },
   {
+    href: '/funcionalidades/despensa',
+    eyebrow: 'Despensa',
+    title: 'Sempre tenha o que precisa pra cozinhar.',
+    desc: 'Monta sua despensa ideal uma vez. O que acabou fica marcado — quando for fazer a lista, você já sabe o que comprar.',
+    icon: (
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" width="24" height="24">
+        <rect x="2" y="4" width="20" height="5" rx="1"/>
+        <path d="M4 9v10a1 1 0 001 1h14a1 1 0 001-1V9"/>
+        <line x1="10" y1="13" x2="14" y2="13"/>
+      </svg>
+    ),
+    tags: ['Sugestões automáticas', 'Adiciona à lista', 'Cruza com receitas'],
+  },
+  {
     href: '/funcionalidades/cardapio-semanal',
     eyebrow: 'Plano da semana',
     title: 'Cardápio semanal que gera lista de compras automática.',
@@ -87,11 +101,11 @@ export default function FuncionalidadesPage() {
           <div className="reveal">
             <div className="eyebrow"><span className="dot"></span> Funcionalidades</div>
             <h1 className="svc-hero-h1">
-              Três coisas que funcionam juntas.<br />
+              Quatro ferramentas que funcionam juntas.<br />
               <span className="svc-hero-accent">Grátis.</span>
             </h1>
             <p className="svc-hero-sub">
-              Lista de compras, cardápio semanal e receitas — conectados no mesmo app.
+              Lista de compras, despensa, receitas e cardápio semanal — conectados no mesmo app.
               Cada um resolve um pedaço do problema. Juntos, resolvem a semana.
             </p>
           </div>
