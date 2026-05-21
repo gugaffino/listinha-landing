@@ -5,7 +5,7 @@ export default function Home() {
       {/* NAV */}
       <header className="nav">
         <div className="container nav-inner">
-          <a href="#" className="brand">
+          <a href="/" className="brand">
             <div className="brand-mark">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/>
@@ -15,6 +15,10 @@ export default function Home() {
             </div>
             <span className="brand-name">Listinha</span>
           </a>
+          <nav className="nav-links">
+            <a href="/funcionalidades" className="nav-link">Funcionalidades</a>
+            <a href="/blog" className="nav-link">Blog</a>
+          </nav>
           <a href="https://listinha-puce.vercel.app" className="btn btn-primary btn-sm" target="_blank" rel="noopener">
             Comece grátis
             <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
@@ -402,6 +406,53 @@ export default function Home() {
               </p>
               <div className="founder-name">Gus <span>· Criador do Listinha</span></div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* BLOG */}
+      <section className="section blog-preview">
+        <div className="container">
+          <div className="section-head reveal">
+            <div className="eyebrow"><span className="dot"></span> Blog</div>
+            <h2>Dicas de quem faz lista de verdade</h2>
+          </div>
+          <div className="blog-grid reveal">
+            <a href="/blog/lista-basica-de-compras" className="blog-card">
+              <div className="blog-card-img">
+                <img
+                  src="https://images.pexels.com/photos/11018212/pexels-photo-11018212.jpeg?auto=compress&cs=tinysrgb&w=600&h=360&fit=crop"
+                  alt="Carrinho de compras em supermercado"
+                  width="600" height="360"
+                  loading="lazy"
+                />
+              </div>
+              <div className="blog-card-body">
+                <span className="blog-card-tag">Lista de compras</span>
+                <h3>Lista básica de compras: guia com 80+ itens pra copiar</h3>
+                <p>Os 7 grupos essenciais, quanto custa por mês e dicas pra economizar no supermercado.</p>
+                <span className="blog-card-link">Ler artigo →</span>
+              </div>
+            </a>
+            <a href="/blog/lista-de-compras-para-casa-nova" className="blog-card">
+              <div className="blog-card-img">
+                <img
+                  src="https://images.pexels.com/photos/8730049/pexels-photo-8730049.jpeg?auto=compress&cs=tinysrgb&w=600&h=360&fit=crop"
+                  alt="Mulher entrando em apartamento novo"
+                  width="600" height="360"
+                  loading="lazy"
+                />
+              </div>
+              <div className="blog-card-body">
+                <span className="blog-card-tag">Casa nova</span>
+                <h3>Lista de compras para casa nova: o que não pode faltar</h3>
+                <p>60+ itens por cômodo, o que comprar primeiro e estimativa de custo por perfil.</p>
+                <span className="blog-card-link">Ler artigo →</span>
+              </div>
+            </a>
+          </div>
+          <div className="blog-more reveal">
+            <a href="/blog" className="btn btn-ghost">Ver todos os artigos →</a>
           </div>
         </div>
       </section>
