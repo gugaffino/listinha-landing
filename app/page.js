@@ -1,3 +1,5 @@
+import NavDropdown from '../components/NavDropdown'
+
 export default function Home() {
   return (
     <>
@@ -16,43 +18,7 @@ export default function Home() {
             <span className="brand-name">Listinha</span>
           </a>
           <nav className="nav-links">
-            <div className="nav-dropdown">
-              <a href="/funcionalidades" className="nav-dropdown-trigger">
-                Funcionalidades
-                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M6 9l6 6 6-6"/>
-                </svg>
-              </a>
-              <div className="nav-dropdown-menu">
-                <a href="/funcionalidades/lista-de-compras" className="nav-dropdown-item">
-                  <div className="nav-dropdown-ico">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 002 1.61h9.72a2 2 0 002-1.61L23 6H6"/></svg>
-                  </div>
-                  <div>
-                    <div className="nav-dropdown-label">Lista de compras</div>
-                    <div className="nav-dropdown-desc">Organizada por corredor, offline</div>
-                  </div>
-                </a>
-                <a href="/funcionalidades/receitas" className="nav-dropdown-item">
-                  <div className="nav-dropdown-ico">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z"/><path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z"/></svg>
-                  </div>
-                  <div>
-                    <div className="nav-dropdown-label">Receitas</div>
-                    <div className="nav-dropdown-desc">Filtra pelo que tem em casa</div>
-                  </div>
-                </a>
-                <a href="/funcionalidades/cardapio-semanal" className="nav-dropdown-item">
-                  <div className="nav-dropdown-ico">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/><path d="M8 14h2M14 14h2M8 18h2M14 18h2"/></svg>
-                  </div>
-                  <div>
-                    <div className="nav-dropdown-label">Cardápio semanal</div>
-                    <div className="nav-dropdown-desc">Gera lista de compras automática</div>
-                  </div>
-                </a>
-              </div>
-            </div>
+            <NavDropdown />
             <a href="/blog" className="nav-link">Blog</a>
           </nav>
           <a href="https://listinha-puce.vercel.app" className="btn btn-primary btn-sm" target="_blank" rel="noopener">
