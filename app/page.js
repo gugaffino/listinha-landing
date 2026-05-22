@@ -9,7 +9,7 @@ export default function Home() {
         <div className="container nav-inner">
           <a href="/" className="brand">
             <div className="brand-mark">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+              <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/>
                 <line x1="3" y1="6" x2="21" y2="6"/>
                 <path d="M16 10a4 4 0 01-8 0"/>
@@ -23,7 +23,7 @@ export default function Home() {
           </nav>
           <a href="https://listinha-puce.vercel.app" className="btn btn-primary btn-sm" target="_blank" rel="noopener">
             Comece grátis
-            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+            <svg aria-hidden="true" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
               <path d="M5 12h14M13 5l7 7-7 7"/>
             </svg>
           </a>
@@ -40,7 +40,7 @@ export default function Home() {
             <div className="hero-actions">
               <a href="https://listinha-puce.vercel.app" className="btn btn-primary btn-lg" target="_blank" rel="noopener">
                 Comece grátis
-                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+                <svg aria-hidden="true" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M5 12h14M13 5l7 7-7 7"/>
                 </svg>
               </a>
@@ -49,21 +49,21 @@ export default function Home() {
 
             <div className="hero-meta">
               <div className="item">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+                <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
                 Funciona offline
               </div>
               <div className="item">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+                <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
                 Compartilha no zap
               </div>
               <div className="item">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+                <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
                 Celular e desktop
               </div>
             </div>
           </div>
 
-          <div className="phone-wrap">
+          <div className="phone-wrap" aria-hidden="true">
             <div className="float-card tl reveal">
               <div className="ico">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -176,7 +176,7 @@ export default function Home() {
       </section>
 
       {/* MAIN CONTENT */}
-      <main>
+      <main id="main-content">
 
       {/* DORES */}
       <section className="section pain">
@@ -207,7 +207,7 @@ export default function Home() {
 
           <div className="pain-transition reveal">
             <div className="mark">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+              <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/>
                 <line x1="3" y1="6" x2="21" y2="6"/>
                 <path d="M16 10a4 4 0 01-8 0"/>
@@ -217,7 +217,7 @@ export default function Home() {
               <div className="label">Por isso fizemos o Listinha</div>
               <h3>Um app que entende sua cozinha <em>do jeito que ela é.</em> Sem complicação, sem frescura.</h3>
             </div>
-            <svg className="arrow" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <svg className="arrow" aria-hidden="true" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
               <path d="M5 12h14M13 5l7 7-7 7"/>
             </svg>
           </div>
@@ -373,7 +373,7 @@ export default function Home() {
             <div className="eyebrow"><span className="dot"></span> Como funciona</div>
             <h2>Três passos. Sem onboarding chato.</h2>
             <p>Você não vai precisar de tutorial. Sério.</p>
-            <p style={{ color: 'var(--carvao-2)', lineHeight: 1.65, marginTop: '1rem', maxWidth: '600px', margin: '1rem auto 0', textWrap: 'pretty' }}>
+            <p className="how-prose">
               O Listinha conecta os quatro pilares da rotina de cozinha — despensa, receitas,
               cardápio semanal e lista de compras — num app só. Quando você marca um item como
               esgotado na despensa, ele aparece como sugestão na lista. Quando monta o cardápio
@@ -468,18 +468,18 @@ export default function Home() {
       </section>
 
       {/* CTA FINAL */}
-      <section className="section" style={{paddingTop: 0}}>
+      <section className="section section-pad-0">
         <div className="container">
           <div className="cta-final reveal">
-            <div className="eyebrow" style={{color: 'var(--verde-broto)', justifyContent: 'center', display: 'flex'}}>
-              <span className="dot" style={{background:'var(--verde-broto)'}}></span> Comece hoje
+            <div className="eyebrow eyebrow-centered eyebrow-broto">
+              <span className="dot"></span> Comece hoje
             </div>
             <h2>Cozinha organizada, <em>do seu jeito.</em></h2>
             <p>Grátis. Sem cartão de crédito. Sem cadastro longo. Bora?</p>
             <div className="actions">
               <a href="https://listinha-puce.vercel.app" className="btn btn-on-dark btn-lg" target="_blank" rel="noopener">
                 Comece grátis
-                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+                <svg aria-hidden="true" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M5 12h14M13 5l7 7-7 7"/>
                 </svg>
               </a>
@@ -496,7 +496,7 @@ export default function Home() {
         <div className="container footer-inner">
           <div className="brand">
             <div className="brand-mark">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+              <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/>
                 <line x1="3" y1="6" x2="21" y2="6"/>
                 <path d="M16 10a4 4 0 01-8 0"/>

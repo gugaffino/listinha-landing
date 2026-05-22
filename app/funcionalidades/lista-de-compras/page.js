@@ -82,7 +82,7 @@ export default function ListaDeComprasPage() {
       </header>
 
       {/* HERO */}
-      <section className="svc-hero">
+      <section id="main-content" className="svc-hero">
         <div className="container">
           <div className="reveal">
             <div className="eyebrow"><span className="dot"></span> Lista de compras</div>
@@ -117,17 +117,17 @@ export default function ListaDeComprasPage() {
           <div className="how-grid reveal">
             <div className="how-step">
               <div className="num">1</div>
-              <h4>Monta a lista em casa</h4>
+              <h3>Monta a lista em casa</h3>
               <p>Adiciona os itens, o app organiza por corredor automaticamente. Hortifruti, carnes, mercearia — tudo na ordem certa do supermercado.</p>
             </div>
             <div className="how-step">
               <div className="num">2</div>
-              <h4>Compartilha pelo WhatsApp</h4>
+              <h3>Compartilha pelo WhatsApp</h3>
               <p>Manda o link pra quem vai ao mercado junto. Os dois veem a mesma lista em tempo real — ninguém compra o que o outro já colocou no carrinho.</p>
             </div>
             <div className="how-step">
               <div className="num">3</div>
-              <h4>Vai ao mercado e marca</h4>
+              <h3>Vai ao mercado e marca</h3>
               <p>Funciona offline, com sinal ruim ou sem. Marca cada item conforme coloca no carrinho. Lista zerada na saída do caixa.</p>
             </div>
           </div>
@@ -201,15 +201,15 @@ export default function ListaDeComprasPage() {
                   <span>Lista do mercado</span>
                   <span className="ph-badge">7 itens</span>
                 </div>
-                <div style={{ fontSize: '10px', fontFamily: 'var(--mono)', letterSpacing: '0.1em', textTransform: 'uppercase', color: 'var(--carvao-3)', padding: '8px 0 4px' }}>Hortifruti</div>
+                <div className="vm-section-lbl">Hortifruti</div>
                 <div className="vm-li"><div className="vm-qty">2×</div><span className="vm-nm">Tomate</span><div className="vm-ck"></div></div>
                 <div className="vm-li"><div className="vm-qty">1×</div><span className="vm-nm">Alho</span><div className="vm-ck"></div></div>
                 <div className="vm-li done"><div className="vm-qty">1×</div><span className="vm-nm">Cebola</span><div className="vm-ck on"></div></div>
-                <div style={{ fontSize: '10px', fontFamily: 'var(--mono)', letterSpacing: '0.1em', textTransform: 'uppercase', color: 'var(--carvao-3)', padding: '12px 0 4px' }}>Mercearia</div>
+                <div className="vm-section-lbl">Mercearia</div>
                 <div className="vm-li"><div className="vm-qty">1×</div><span className="vm-nm">Arroz 5 kg</span><div className="vm-ck"></div></div>
                 <div className="vm-li"><div className="vm-qty">2×</div><span className="vm-nm">Feijão carioca</span><div className="vm-ck"></div></div>
                 <div className="vm-li done"><div className="vm-qty">1×</div><span className="vm-nm">Macarrão</span><div className="vm-ck on"></div></div>
-                <div style={{ fontSize: '10px', fontFamily: 'var(--mono)', letterSpacing: '0.1em', textTransform: 'uppercase', color: 'var(--carvao-3)', padding: '12px 0 4px' }}>Limpeza</div>
+                <div className="vm-section-lbl">Limpeza</div>
                 <div className="vm-li"><div className="vm-qty">2×</div><span className="vm-nm">Detergente</span><div className="vm-ck"></div></div>
               </div>
             </div>
@@ -221,20 +221,20 @@ export default function ListaDeComprasPage() {
       {/* POR QUE FUNCIONA */}
       <section className="section" style={{ paddingTop: 0 }}>
         <div className="container">
-          <div className="reveal" style={{ maxWidth: '680px' }}>
+          <div className="text-col svc-feature-text reveal">
             <h2>Por que a organização por corredor faz diferença</h2>
-            <p style={{ color: 'var(--carvao-2)', lineHeight: 1.65, marginBottom: '1rem', textWrap: 'pretty' }}>
+            <p>
               Ir ao mercado sem lista é improviso com custo. Pesquisas de comportamento de consumo
               mostram que compras sem planejamento tendem a gastar entre 20% e 30% a mais — entre
               itens por impulso e repetições daquilo que você já tinha em casa mas não lembrou.
             </p>
-            <p style={{ color: 'var(--carvao-2)', lineHeight: 1.65, marginBottom: '1rem', textWrap: 'pretty' }}>
+            <p>
               Mas uma lista qualquer resolve só metade do problema. Sem organização por corredor,
               você percorre o supermercado de forma aleatória: vai à seção de limpeza, lembra do
               feijão, volta pra mercearia, passa pelo hortifruti de novo. Além de cansativo,
               aumenta a chance de pegar coisa que não estava na lista.
             </p>
-            <p style={{ color: 'var(--carvao-2)', lineHeight: 1.65, textWrap: 'pretty' }}>
+            <p>
               O Listinha agrupa os itens na ordem que você encontra no mercado: hortifruti na
               entrada, carnes e proteínas a seguir, mercearia, limpeza e higiene no fundo. Você
               entra, percorre uma vez, marca tudo e sai com o carrinho certo — sem voltar ao
@@ -251,24 +251,24 @@ export default function ListaDeComprasPage() {
             <div className="eyebrow"><span className="dot"></span> Perguntas diretas</div>
             <h2>O que as pessoas perguntam</h2>
           </div>
-          <div className="svc-faq-list reveal">
+          <dl className="svc-faq-list reveal">
             <div className="svc-faq-item">
-              <div className="svc-faq-q">O app de lista de compras é gratuito?</div>
-              <div className="svc-faq-a">Sim, 100% gratuito. Lista de compras, compartilhamento e organização por corredor funcionam sem pagar nada. Nenhuma funcionalidade essencial está bloqueada atrás de assinatura.</div>
+              <dt className="svc-faq-q">O app de lista de compras é gratuito?</dt>
+              <dd className="svc-faq-a">Sim, 100% gratuito. Lista de compras, compartilhamento e organização por corredor funcionam sem pagar nada. Nenhuma funcionalidade essencial está bloqueada atrás de assinatura.</dd>
             </div>
             <div className="svc-faq-item">
-              <div className="svc-faq-q">Como compartilhar a lista de compras?</div>
-              <div className="svc-faq-a">Você compartilha pelo WhatsApp com um link. Quem receber edita a mesma lista em tempo real — sem precisar instalar nada. Funciona pra casal, família ou qualquer pessoa que divide as compras.</div>
+              <dt className="svc-faq-q">Como compartilhar a lista de compras?</dt>
+              <dd className="svc-faq-a">Você compartilha pelo WhatsApp com um link. Quem receber edita a mesma lista em tempo real — sem precisar instalar nada. Funciona pra casal, família ou qualquer pessoa que divide as compras.</dd>
             </div>
             <div className="svc-faq-item">
-              <div className="svc-faq-q">A lista funciona sem internet dentro do mercado?</div>
-              <div className="svc-faq-a">Sim. O Listinha é um PWA que carrega offline. A lista fica disponível mesmo com sinal ruim ou sem conexão — comum em mercado grande com subsolo.</div>
+              <dt className="svc-faq-q">A lista funciona sem internet dentro do mercado?</dt>
+              <dd className="svc-faq-a">Sim. O Listinha é um PWA que carrega offline. A lista fica disponível mesmo com sinal ruim ou sem conexão — comum em mercado grande com subsolo.</dd>
             </div>
             <div className="svc-faq-item">
-              <div className="svc-faq-q">Como a lista de compras é organizada por corredor?</div>
-              <div className="svc-faq-a">O app agrupa os itens automaticamente — hortifruti, carnes, mercearia, limpeza, higiene — na ordem que você encontra no supermercado. Você percorre os corredores uma vez e marca tudo sem precisar voltar.</div>
+              <dt className="svc-faq-q">Como a lista de compras é organizada por corredor?</dt>
+              <dd className="svc-faq-a">O app agrupa os itens automaticamente — hortifruti, carnes, mercearia, limpeza, higiene — na ordem que você encontra no supermercado. Você percorre os corredores uma vez e marca tudo sem precisar voltar.</dd>
             </div>
-          </div>
+          </dl>
         </div>
       </section>
 

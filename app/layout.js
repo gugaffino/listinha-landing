@@ -25,6 +25,10 @@ const jetbrainsMono = JetBrains_Mono({
   preload: false,
 })
 
+export const viewport = {
+  themeColor: '#F5F1E8',
+}
+
 export const metadata = {
   title: 'Listinha — Cozinha organizada, sem frescura.',
   description: 'O app que conecta despensa, receitas e lista de compras. Pra nunca mais faltar nada.',
@@ -43,6 +47,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="pt-BR">
       <body className={`${bricolage.variable} ${instrumentSerif.variable} ${jetbrainsMono.variable}`}>
+        <a href="#main-content" className="skip-link">Pular para o conteúdo</a>
         {children}
       </body>
     </html>

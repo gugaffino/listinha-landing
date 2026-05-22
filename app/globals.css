@@ -8,6 +8,7 @@
   --manteiga:#E8B547; --manteiga-claro:#FBF1D8;
 
   --content: 1100px;
+  color-scheme: light;
 }
 
 *,*::before,*::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -24,7 +25,7 @@ body {
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }
-button, input, a { font-family: inherit; }
+button, input, a { font-family: inherit; touch-action: manipulation; -webkit-tap-highlight-color: transparent; }
 a { color: inherit; text-decoration: none; }
 img, svg { display: block; max-width: 100%; }
 em { font-style: italic; font-family: var(--serif); font-weight: 400; }
@@ -72,6 +73,70 @@ h1,h2,h3,h4 {
   margin-bottom: 14px;
 }
 .eyebrow .dot { width: 6px; height: 6px; border-radius: 50%; background: var(--verde-musgo); }
+
+/* ─── SKIP LINK ─── */
+.skip-link {
+  position: absolute;
+  top: -48px;
+  left: 16px;
+  background: var(--verde-folha);
+  color: var(--papel);
+  padding: 10px 18px;
+  border-radius: 0 0 10px 10px;
+  font-size: 14px;
+  font-weight: 600;
+  z-index: 9999;
+  text-decoration: none;
+  transition: top .15s;
+}
+.skip-link:focus { top: 0; }
+
+/* ─── FOCUS STATES ─── */
+:focus-visible { outline: 2px solid var(--verde-folha); outline-offset: 2px; }
+.btn:focus-visible {
+  outline: 2px solid var(--verde-folha);
+  outline-offset: 3px;
+  box-shadow: 0 0 0 4px rgba(45,95,47,0.2);
+}
+.nav-link:focus-visible,
+.nav-dropdown-trigger:focus-visible {
+  outline: 2px solid var(--verde-folha);
+  outline-offset: 2px;
+  background: var(--papel-2);
+  color: var(--carvao);
+}
+.blog-card:focus-visible,
+.blog-index-card:focus-visible,
+.nav-dropdown-item:focus-visible,
+.svc-hub-card:focus-visible {
+  outline: 2px solid var(--verde-folha);
+  outline-offset: 2px;
+}
+
+/* ─── ANCHOR SCROLL COMPENSATION ─── */
+#features, #como { scroll-margin-top: 80px; }
+
+/* ─── UTILITY ─── */
+.section-pad-0 { padding-top: 0; }
+.eyebrow-centered { justify-content: center; display: flex; }
+.eyebrow-broto { color: var(--verde-broto); }
+.eyebrow-broto .dot { background: var(--verde-broto); }
+.how-prose {
+  font-size: 17px;
+  color: var(--carvao-2);
+  line-height: 1.65;
+  margin: 1rem auto 0;
+  max-width: 600px;
+  text-wrap: pretty;
+}
+.vm-section-lbl {
+  font-size: 10px;
+  font-family: var(--mono);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--carvao-3);
+  padding: 8px 0 4px;
+}
 
 /* ─── REVEAL ─── */
 @supports (animation-timeline: view()) {
@@ -537,7 +602,7 @@ h1,h2,h3,h4 {
 .vm-li.done .nm { text-decoration: line-through; }
 .vm-qty { min-width: 26px; height: 26px; background: var(--verde-broto); color: #1F4B22; border-radius: 6px; display: grid; place-items: center; font-size: 11px; font-weight: 600; }
 .vm-li.done .vm-qty { background: var(--linha); color: var(--carvao-3); }
-.vm-nm { flex: 1; }
+.vm-nm { flex: 1; min-width: 0; }
 .vm-ck { width: 16px; height: 16px; border-radius: 4px; border: 1.5px solid var(--linha-2); }
 .vm-ck.on { background: var(--verde-folha); border-color: var(--verde-folha); position: relative; }
 .vm-ck.on::after { content:''; position: absolute; inset: 2px 3px 3px 4px; border-right: 1.6px solid var(--papel); border-bottom: 1.6px solid var(--papel); transform: rotate(42deg) translateY(-1px);}
@@ -724,7 +789,7 @@ h1,h2,h3,h4 {
   border: 1px solid var(--linha);
   border-radius: 16px;
   overflow: hidden;
-  transition: box-shadow .2s, transform .2s;
+  transition: transform .2s;
 }
 .blog-index-card:hover { box-shadow: var(--sh-3); transform: translateY(-2px); }
 .blog-index-img { aspect-ratio: 16/9; overflow: hidden; }
@@ -770,7 +835,7 @@ h1,h2,h3,h4 {
   border: 1px solid var(--linha);
   border-radius: 16px;
   overflow: hidden;
-  transition: box-shadow .2s, transform .2s;
+  transition: transform .2s;
 }
 .blog-card:hover {
   box-shadow: var(--sh-3);
@@ -846,6 +911,7 @@ h1,h2,h3,h4 {
 .svc-hero-actions { display: flex; align-items: center; justify-content: center; gap: 16px; flex-wrap: wrap; }
 
 .svc-feature { padding: 80px 0; }
+.text-col { max-width: 680px; }
 .svc-feature-alt {
   background: var(--papel);
   border-top: 1px solid var(--linha);
@@ -922,7 +988,7 @@ h1,h2,h3,h4 {
   border-radius: 20px;
   padding: 28px;
   text-decoration: none;
-  transition: border-color .15s, box-shadow .15s, transform .12s;
+  transition: border-color .15s, transform .12s;
 }
 .svc-hub-card:hover {
   border-color: var(--verde-folha);
