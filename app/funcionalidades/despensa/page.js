@@ -236,7 +236,8 @@ export default function DespensaPage() {
               Com a despensa do Listinha você monta sua lista ideal de estoque uma vez. Depois,
               basta marcar o que acabou no momento em que você percebe — não no dia do mercado,
               quando a memória já falhou. Na hora de ir às compras, a lista já está pré-preenchida
-              com o que falta, sem precisar abrir cada armário pra conferir.
+              com o que falta, sem precisar abrir cada armário pra conferir. Veja também como{' '}
+              <a href="/blog/como-organizar-a-despensa">organizar a despensa do zero em 7 passos</a>.
             </p>
           </div>
         </div>

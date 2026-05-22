@@ -658,6 +658,12 @@ export default function ListaBasicaDeCompras() {
 
           <h2 id="economizar" className="img-above">5 dicas pra economizar no mercado</h2>
 
+          <p>
+            Quer ir fundo no assunto? Temos um guia completo sobre{' '}
+            <a href="/blog/como-economizar-no-mercado">como economizar no mercado</a>{' '}
+            com 12 hábitos que fazem diferença de verdade — antes, durante e depois do supermercado.
+          </p>
+
           <ul className="tip-list">
             <li className="tip-item">
               <span className="tip-num">1</span>
@@ -665,7 +671,9 @@ export default function ListaBasicaDeCompras() {
                 <strong>Confira a despensa antes de sair</strong>
                 <span>
                   5 minutos em casa valem 30 minutos de volta ao mercado pra pegar o que
-                  esqueceu. Veja o que está acabando — não só o que já acabou.
+                  esqueceu. Veja o que está acabando — não só o que já acabou. Se quiser organizar
+                  a despensa de vez,{' '}
+                  <a href="/blog/como-organizar-a-despensa">este guia tem 7 passos pra isso</a>.
                 </span>
               </div>
             </li>

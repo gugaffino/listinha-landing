@@ -365,7 +365,10 @@ export default function ComoOrganizarADespensa() {
           <p>
             O hábito que mais funciona: antes de ir ao mercado, abra a despensa e a geladeira.
             Olhe o que está acabando. Registre. Não confie na memória — ela vai dizer que tem
-            azeite quando não tem. Ela sempre diz que tem azeite.
+            azeite quando não tem. Ela sempre diz que tem azeite. E despensa organizada também
+            é uma das formas mais eficazes de{' '}
+            <a href="/blog/como-economizar-no-mercado">economizar no mercado</a> — você compra
+            só o que falta, não o que acha que falta.
           </p>
           <p>
             No <a href="/funcionalidades/despensa">Listinha</a>, esse processo fica automático. Você

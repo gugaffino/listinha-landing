@@ -265,7 +265,9 @@ export default function ComoEconomizarNoMercado() {
             Parece óbvio, mas poucos fazem. Abra cada armário, olhe a geladeira e o freezer antes de
             sentar pra fazer a lista. Você vai descobrir que tem dois potes de extrato de tomate,
             arroz pra duas semanas e aquele queijo que ainda dá pra usar. Comprar duplicado é
-            o desperdício mais silencioso de todos.
+            o desperdício mais silencioso de todos. Se a sua despensa ainda está bagunçada,
+            vale ler antes o guia de{' '}
+            <a href="/blog/como-organizar-a-despensa">como organizar a despensa em 7 passos</a>.
           </p>
 
           <h3>2. Planeje o cardápio da semana antes de ir</h3>
