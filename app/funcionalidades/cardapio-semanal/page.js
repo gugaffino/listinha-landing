@@ -199,22 +199,22 @@ export default function CardapioSemanalPage() {
       </section>
 
       {/* POR QUE FUNCIONA */}
-      <section className="section" style={{ paddingTop: 0 }}>
+      <section className="section section-pad-0">
         <div className="container">
-          <div className="reveal" style={{ maxWidth: '680px' }}>
+          <div className="text-col svc-feature-text reveal">
             <h2>Por que planejar a semana antes de ir ao mercado</h2>
-            <p style={{ color: 'var(--carvao-2)', lineHeight: 1.65, marginBottom: '1rem', textWrap: 'pretty' }}>
+            <p>
               Quem vai ao mercado sem saber o que vai cozinhar na semana compra por instinto.
               Pega o que parece útil, lembra de algo que estava acabando, joga no carrinho o que
               estava em promoção. O resultado é uma geladeira cheia de itens desconexos e a dúvida
               de quarta-feira: o que faço com isso tudo?
             </p>
-            <p style={{ color: 'var(--carvao-2)', lineHeight: 1.65, marginBottom: '1rem', textWrap: 'pretty' }}>
+            <p>
               Famílias que planejam o cardápio semanal antes de ir ao mercado tendem a gastar
               menos nas compras e desperdiçar menos alimento. O cardápio funciona como filtro:
               você compra o que vai usar, não o que parece que vai usar.
             </p>
-            <p style={{ color: 'var(--carvao-2)', lineHeight: 1.65, textWrap: 'pretty' }}>
+            <p>
               O Listinha conecta o cardápio com a despensa. Você escolhe as receitas da semana,
               o app verifica o que já tem em casa e monta automaticamente a lista dos ingredientes
               que faltam. Uma ação resolve a semana inteira — sem improvisar na quinta, sem

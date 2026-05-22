@@ -224,22 +224,22 @@ export default function ReceitasPage() {
       </section>
 
       {/* POR QUE FUNCIONA */}
-      <section className="section" style={{ paddingTop: 0 }}>
+      <section className="section section-pad-0">
         <div className="container">
-          <div className="reveal" style={{ maxWidth: '680px' }}>
+          <div className="text-col svc-feature-text reveal">
             <h2>Cozinhar com o que tem, não com o que devia ter</h2>
-            <p style={{ color: 'var(--carvao-2)', lineHeight: 1.65, marginBottom: '1rem', textWrap: 'pretty' }}>
+            <p>
               A maioria dos apps de receita tem o mesmo problema: eles mostram o que você poderia
               cozinhar em condições ideais, com todos os ingredientes disponíveis. Na vida real,
               você escolhe uma receita, vai até a cozinha e descobre que faltam três ingredientes.
               Aí ou improvisa ou pede entrega.
             </p>
-            <p style={{ color: 'var(--carvao-2)', lineHeight: 1.65, marginBottom: '1rem', textWrap: 'pretty' }}>
+            <p>
               O Listinha inverte a lógica. Em vez de mostrar receitas e depois você checar o que
               tem em casa, o app filtra as receitas automaticamente pelo conteúdo da sua despensa.
               Aparecem só as que você consegue fazer agora — sem precisar passar no mercado antes.
             </p>
-            <p style={{ color: 'var(--carvao-2)', lineHeight: 1.65, textWrap: 'pretty' }}>
+            <p>
               Para os ingredientes que faltam numa receita que você quer fazer, o app adiciona tudo
               à lista de compras com um toque. Você organiza o cardápio com o que tem, compra só
               o que precisa e entra na cozinha sabendo exatamente o que vai preparar.

@@ -200,7 +200,7 @@ export default function ListaDeComprasPage() {
       </section>
 
       {/* POR QUE FUNCIONA */}
-      <section className="section" style={{ paddingTop: 0 }}>
+      <section className="section section-pad-0">
         <div className="container">
           <div className="text-col svc-feature-text reveal">
             <h2>Por que a organização por corredor faz diferença</h2>
