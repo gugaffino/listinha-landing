@@ -78,7 +78,7 @@ export default function FuncionalidadesPage() {
         <div className="container nav-inner">
           <a href="/" className="brand">
             <div className="brand-mark">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+              <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/>
                 <line x1="3" y1="6" x2="21" y2="6"/>
                 <path d="M16 10a4 4 0 01-8 0"/>
@@ -96,7 +96,7 @@ export default function FuncionalidadesPage() {
       </header>
 
       {/* HERO */}
-      <section className="svc-hero">
+      <section id="main-content" className="svc-hero">
         <div className="container">
           <div className="reveal">
             <div className="eyebrow"><span className="dot"></span> Funcionalidades</div>
@@ -129,7 +129,7 @@ export default function FuncionalidadesPage() {
                 </div>
                 <div className="svc-hub-link">
                   Ver funcionalidade
-                  <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+                  <svg aria-hidden="true" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
                     <path d="M5 12h14M13 5l7 7-7 7"/>
                   </svg>
                 </div>
@@ -140,24 +140,24 @@ export default function FuncionalidadesPage() {
       </section>
 
       {/* COMO TUDO SE CONECTA */}
-      <section className="section" style={{ paddingTop: 0 }}>
+      <section className="section section-pad-0">
         <div className="container">
-          <div className="reveal" style={{ maxWidth: '680px' }}>
+          <div className="text-col svc-feature-text reveal">
             <h2>Como as quatro ferramentas funcionam juntas</h2>
-            <p style={{ color: 'var(--carvao-2)', lineHeight: 1.65, marginBottom: '1rem', textWrap: 'pretty' }}>
+            <p>
               O Listinha não é um app com quatro funções separadas — é um ciclo. Começa pela
               despensa: você monta o estoque ideal da sua casa uma vez. Quando algo acaba, marca
               no app. Na hora de planejar a semana, você escolhe as receitas e o Listinha cruza
               com a despensa — os ingredientes que faltam entram automaticamente na lista de
               compras.
             </p>
-            <p style={{ color: 'var(--carvao-2)', lineHeight: 1.65, marginBottom: '1rem', textWrap: 'pretty' }}>
+            <p>
               Você vai ao mercado, compra exatamente o que precisa e marca na lista conforme
               coloca no carrinho. Na volta, a despensa já está atualizada. Essa conexão resolve
               um problema que apps isolados não resolvem: a lacuna entre saber o que tem em casa,
               planejar o que vai cozinhar e saber o que falta comprar.
             </p>
-            <p style={{ color: 'var(--carvao-2)', lineHeight: 1.65, textWrap: 'pretty' }}>
+            <p>
               Tudo isso sem cadastro obrigatório na largada, sem assinatura, funcionando offline
               dentro do mercado. Você começa a usar antes de criar conta — e as funcionalidades
               essenciais nunca ficam bloqueadas.
@@ -167,7 +167,7 @@ export default function FuncionalidadesPage() {
       </section>
 
       {/* CTA */}
-      <section className="section" style={{ paddingTop: 0 }}>
+      <section className="section section-pad-0">
         <div className="container">
           <div className="cta-final reveal">
             <h2>Começa pela lista.<br /><em>O resto cai no lugar.</em></h2>
@@ -190,7 +190,7 @@ export default function FuncionalidadesPage() {
         <div className="container footer-inner">
           <a href="/" className="brand">
             <div className="brand-mark">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+              <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/>
                 <line x1="3" y1="6" x2="21" y2="6"/>
                 <path d="M16 10a4 4 0 01-8 0"/>
