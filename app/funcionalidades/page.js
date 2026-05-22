@@ -139,6 +139,33 @@ export default function FuncionalidadesPage() {
         </div>
       </section>
 
+      {/* COMO TUDO SE CONECTA */}
+      <section className="section" style={{ paddingTop: 0 }}>
+        <div className="container">
+          <div className="reveal" style={{ maxWidth: '680px' }}>
+            <h2>Como as quatro ferramentas funcionam juntas</h2>
+            <p style={{ color: 'var(--carvao-2)', lineHeight: 1.65, marginBottom: '1rem', textWrap: 'pretty' }}>
+              O Listinha não é um app com quatro funções separadas — é um ciclo. Começa pela
+              despensa: você monta o estoque ideal da sua casa uma vez. Quando algo acaba, marca
+              no app. Na hora de planejar a semana, você escolhe as receitas e o Listinha cruza
+              com a despensa — os ingredientes que faltam entram automaticamente na lista de
+              compras.
+            </p>
+            <p style={{ color: 'var(--carvao-2)', lineHeight: 1.65, marginBottom: '1rem', textWrap: 'pretty' }}>
+              Você vai ao mercado, compra exatamente o que precisa e marca na lista conforme
+              coloca no carrinho. Na volta, a despensa já está atualizada. Essa conexão resolve
+              um problema que apps isolados não resolvem: a lacuna entre saber o que tem em casa,
+              planejar o que vai cozinhar e saber o que falta comprar.
+            </p>
+            <p style={{ color: 'var(--carvao-2)', lineHeight: 1.65, textWrap: 'pretty' }}>
+              Tudo isso sem cadastro obrigatório na largada, sem assinatura, funcionando offline
+              dentro do mercado. Você começa a usar antes de criar conta — e as funcionalidades
+              essenciais nunca ficam bloqueadas.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="section" style={{ paddingTop: 0 }}>
         <div className="container">

@@ -236,6 +236,31 @@ export default function DespensaPage() {
         </div>
       </section>
 
+      {/* POR QUE FUNCIONA */}
+      <section className="section" style={{ paddingTop: 0 }}>
+        <div className="container">
+          <div className="reveal" style={{ maxWidth: '680px' }}>
+            <h2>O custo de não saber o que tem em casa</h2>
+            <p style={{ color: 'var(--carvao-2)', lineHeight: 1.65, marginBottom: '1rem', textWrap: 'pretty' }}>
+              A despensa desorganizada não é só questão estética — é financeira. Quando você não
+              sabe o que tem em casa, compra duas vezes o mesmo produto, deixa itens vencerem
+              no fundo da prateleira e ainda chega ao mercado sem saber o que realmente falta.
+            </p>
+            <p style={{ color: 'var(--carvao-2)', lineHeight: 1.65, marginBottom: '1rem', textWrap: 'pretty' }}>
+              Levantamentos sobre desperdício alimentar mostram que o Brasil descarta cerca de 41 kg
+              de alimento por pessoa por ano — e boa parte desse desperdício começa na compra
+              errada: você compra o que não precisa porque não sabia que ainda tinha.
+            </p>
+            <p style={{ color: 'var(--carvao-2)', lineHeight: 1.65, textWrap: 'pretty' }}>
+              Com a despensa do Listinha você monta sua lista ideal de estoque uma vez. Depois,
+              basta marcar o que acabou no momento em que você percebe — não no dia do mercado,
+              quando a memória já falhou. Na hora de ir às compras, a lista já está pré-preenchida
+              com o que falta, sem precisar abrir cada armário pra conferir.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* FAQ */}
       <section className="svc-faq">
         <div className="container">

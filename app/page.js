@@ -373,6 +373,14 @@ export default function Home() {
             <div className="eyebrow"><span className="dot"></span> Como funciona</div>
             <h2>Três passos. Sem onboarding chato.</h2>
             <p>Você não vai precisar de tutorial. Sério.</p>
+            <p style={{ color: 'var(--carvao-2)', lineHeight: 1.65, marginTop: '1rem', maxWidth: '600px', margin: '1rem auto 0', textWrap: 'pretty' }}>
+              O Listinha conecta os quatro pilares da rotina de cozinha — despensa, receitas,
+              cardápio semanal e lista de compras — num app só. Quando você marca um item como
+              esgotado na despensa, ele aparece como sugestão na lista. Quando monta o cardápio
+              com receitas salvas, os ingredientes que faltam entram direto na lista de compras.
+              Uma ação no app resolve a próxima etapa automaticamente — sem abrir outro app,
+              sem copiar e colar, sem esquecer.
+            </p>
           </div>
 
           <div className="how-grid">

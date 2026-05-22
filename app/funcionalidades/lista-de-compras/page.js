@@ -218,6 +218,32 @@ export default function ListaDeComprasPage() {
         </div>
       </section>
 
+      {/* POR QUE FUNCIONA */}
+      <section className="section" style={{ paddingTop: 0 }}>
+        <div className="container">
+          <div className="reveal" style={{ maxWidth: '680px' }}>
+            <h2>Por que a organização por corredor faz diferença</h2>
+            <p style={{ color: 'var(--carvao-2)', lineHeight: 1.65, marginBottom: '1rem', textWrap: 'pretty' }}>
+              Ir ao mercado sem lista é improviso com custo. Pesquisas de comportamento de consumo
+              mostram que compras sem planejamento tendem a gastar entre 20% e 30% a mais — entre
+              itens por impulso e repetições daquilo que você já tinha em casa mas não lembrou.
+            </p>
+            <p style={{ color: 'var(--carvao-2)', lineHeight: 1.65, marginBottom: '1rem', textWrap: 'pretty' }}>
+              Mas uma lista qualquer resolve só metade do problema. Sem organização por corredor,
+              você percorre o supermercado de forma aleatória: vai à seção de limpeza, lembra do
+              feijão, volta pra mercearia, passa pelo hortifruti de novo. Além de cansativo,
+              aumenta a chance de pegar coisa que não estava na lista.
+            </p>
+            <p style={{ color: 'var(--carvao-2)', lineHeight: 1.65, textWrap: 'pretty' }}>
+              O Listinha agrupa os itens na ordem que você encontra no mercado: hortifruti na
+              entrada, carnes e proteínas a seguir, mercearia, limpeza e higiene no fundo. Você
+              entra, percorre uma vez, marca tudo e sai com o carrinho certo — sem voltar ao
+              mesmo corredor duas vezes.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* FAQ */}
       <section className="svc-faq">
         <div className="container">
