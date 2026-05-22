@@ -470,121 +470,135 @@ export default function ComoEconomizarNoMercado() {
             supermercado nem de cortar categorias — vem de comprar com precisão o que vai ser usado.
           </p>
 
-          <div className="blog-cta-box">
-            <p className="blog-cta-title">Quer testar na prática?</p>
-            <p className="blog-cta-desc">
-              O Listinha conecta lista de compras, despensa e cardápio semanal num só lugar.
-              Você define o que vai cozinhar, o app monta a lista do que falta.
-            </p>
-            <a
-              href="https://listinha-puce.vercel.app"
-              className="btn btn-primary"
-              target="_blank"
-              rel="noopener"
-            >
-              Comece grátis
-              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                <path d="M5 12h14M13 5l7 7-7 7" />
-              </svg>
-            </a>
-          </div>
-
           {/* FAQ */}
           <h2 id="faq">Perguntas frequentes sobre como economizar no mercado</h2>
 
-          <div className="faq-list">
+          <ul className="faq-list">
 
-            <details className="faq-item">
-              <summary className="faq-q">Como economizar no mercado de forma prática?</summary>
-              <div className="faq-a">
-                <p>
-                  A economia começa em casa: checar a despensa antes de montar a lista, planejar o
-                  cardápio da semana e escrever tudo organizado por grupos de corredor. Dentro do
-                  supermercado, comer antes de ir, seguir a lista e comparar o preço por quilo —
-                  não o preço da embalagem. Quem usa lista fixa gasta, em média, 27% menos.
-                </p>
-              </div>
-            </details>
+            <li className="faq-item">
+              <p className="faq-q">Como economizar no mercado de forma prática?</p>
+              <p className="faq-a">
+                A economia começa em casa: checar a despensa antes de montar a lista, planejar o
+                cardápio da semana e escrever tudo organizado por grupos de corredor. Dentro do
+                supermercado, comer antes de ir, seguir a lista e comparar o preço por quilo —
+                não o preço da embalagem. Quem usa lista fixa gasta, em média, <strong>27% menos</strong>.
+              </p>
+            </li>
 
-            <details className="faq-item">
-              <summary className="faq-q">Quanto dá pra economizar por mês fazendo lista de compras?</summary>
-              <div className="faq-a">
-                <p>
-                  Para um casal com gasto mensal de R$ 1.200–1.800, o planejamento pode economizar
-                  entre R$ 320 e R$ 490 por mês — só eliminando compras duplicadas e itens por impulso.
-                  Num ano, a diferença pode passar de R$ 5.000.
-                </p>
-              </div>
-            </details>
+            <li className="faq-item">
+              <p className="faq-q">Quanto dá pra economizar por mês fazendo lista de compras?</p>
+              <p className="faq-a">
+                Para um casal com gasto mensal de R$ 1.200–1.800, o planejamento pode economizar
+                entre <strong>R$ 320 e R$ 490 por mês</strong> — só eliminando compras duplicadas e itens por impulso.
+                Num ano, a diferença pode passar de R$ 5.000.
+              </p>
+            </li>
 
-            <details className="faq-item">
-              <summary className="faq-q">Vale mais a pena ir ao mercado uma vez por semana ou várias vezes?</summary>
-              <div className="faq-a">
-                <p>
-                  Uma vez por semana com lista completa é mais barato. Cada visita extra é uma exposição
-                  a mais às estratégias de venda do varejo — e mais oportunidades de compra por impulso.
-                  Quem concentra as compras tende a gastar menos no total.
-                </p>
-              </div>
-            </details>
+            <li className="faq-item">
+              <p className="faq-q">Vale mais a pena ir ao mercado uma vez por semana ou várias vezes?</p>
+              <p className="faq-a">
+                Uma vez por semana com lista completa é mais barato. Cada visita extra é uma exposição
+                a mais às estratégias de venda do varejo — e mais oportunidades de compra por impulso.
+                Quem concentra as compras tende a gastar menos no total.
+              </p>
+            </li>
 
-            <details className="faq-item">
-              <summary className="faq-q">O que fazer para não gastar mais do que o orçamento no mercado?</summary>
-              <div className="faq-a">
-                <p>
-                  Defina o orçamento antes de montar a lista. Planeje o cardápio primeiro, depois liste
-                  os ingredientes que faltam. Cheque a despensa antes de escrever qualquer coisa. No
-                  mercado, siga a lista e evite corredores que não são da sua rota.
-                </p>
-              </div>
-            </details>
+            <li className="faq-item">
+              <p className="faq-q">O que fazer para não gastar mais do que o orçamento no mercado?</p>
+              <p className="faq-a">
+                Defina o orçamento antes de montar a lista. Planeje o cardápio primeiro, depois liste
+                os ingredientes que faltam. Cheque a despensa antes de escrever qualquer coisa. No
+                mercado, siga a lista e evite corredores que não são da sua rota.
+              </p>
+            </li>
 
-            <details className="faq-item">
-              <summary className="faq-q">Como evitar desperdício de alimentos e economizar?</summary>
-              <div className="faq-a">
-                <p>
-                  O principal causador de desperdício doméstico é comprar sem saber o que já tem em casa.
-                  Com despensa organizada e conectada à lista, você compra só o que vai usar. O Brasil
-                  descarta cerca de 41 kg de alimento por pessoa por ano — boa parte começa no mercado.
-                </p>
-              </div>
-            </details>
+            <li className="faq-item">
+              <p className="faq-q">Como evitar desperdício de alimentos e economizar?</p>
+              <p className="faq-a">
+                O principal causador de desperdício doméstico é comprar sem saber o que já tem em casa.
+                Com despensa organizada e conectada à lista, você compra só o que vai usar. O Brasil
+                descarta cerca de <strong>41 kg de alimento por pessoa por ano</strong> — boa parte começa no mercado.
+              </p>
+            </li>
 
-            <details className="faq-item">
-              <summary className="faq-q">Qual a diferença entre preço por unidade e preço por quilo?</summary>
-              <div className="faq-a">
-                <p>
-                  O preço exibido na etiqueta costuma ser por embalagem. O preço por quilo ou litro é o
-                  que permite comparação real entre marcas e tamanhos. Por lei, ele deve estar na etiqueta
-                  — olhe sempre esse número antes de escolher entre duas opções.
-                </p>
-              </div>
-            </details>
+            <li className="faq-item">
+              <p className="faq-q">Qual a diferença entre preço por unidade e preço por quilo?</p>
+              <p className="faq-a">
+                O preço exibido na etiqueta costuma ser por embalagem. O preço por quilo ou litro é o
+                que permite comparação real entre marcas e tamanhos. Por lei, ele deve estar na etiqueta
+                — olhe sempre esse número antes de escolher entre duas opções.
+              </p>
+            </li>
 
+          </ul>
+
+          {/* AUTHOR */}
+          <div className="blog-author">
+            <div className="blog-author-avatar" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                <circle cx="12" cy="7" r="4" />
+              </svg>
+            </div>
+            <div>
+              <p className="blog-author-name">Gus</p>
+              <p className="blog-author-bio">
+                Criador do Listinha. Faz lista de compras toda semana desde que aprendeu a cozinhar — e ainda assim esquece o alho de vez em quando.
+              </p>
+            </div>
           </div>
+
+          <div className="blog-cta reveal">
+            <h2>
+              Chega de mercado no improviso.<br />
+              <em>Usa o Listinha.</em>
+            </h2>
+            <p>
+              Lista de compras, despensa e cardápio semanal num só lugar.
+              Você define o que vai cozinhar, o app monta a lista do que falta.
+            </p>
+            <div className="actions">
+              <a
+                href="https://listinha-puce.vercel.app"
+                className="btn btn-on-dark btn-lg"
+                target="_blank"
+                rel="noopener"
+              >
+                Comece grátis
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                  <path d="M5 12h14M13 5l7 7-7 7" />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <a href="#top" className="back-to-top" aria-label="Voltar ao topo">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+              <path d="M12 19V5M5 12l7-7 7 7" />
+            </svg>
+            Voltar ao topo
+          </a>
 
         </article>
 
-        <footer className="blog-footer">
-          <div className="blog-footer-author">
-            <div className="blog-footer-avatar" aria-hidden="true">G</div>
-            <div>
-              <p className="blog-footer-name">Gus</p>
-              <p className="blog-footer-bio">Criador do Listinha. Faz lista de compras toda semana desde que aprendeu a cozinhar.</p>
-            </div>
-          </div>
-          <nav className="blog-footer-links" aria-label="Leia também">
-            <p className="blog-footer-links-label">Leia também</p>
-            <ul>
-              <li><a href="/blog/lista-basica-de-compras">Lista básica de compras: guia com 80+ itens pra copiar</a></li>
-              <li><a href="/blog/como-organizar-a-despensa">Como organizar a despensa: guia prático em 7 passos</a></li>
-              <li><a href="/funcionalidades/lista-de-compras">Como funciona a lista do Listinha</a></li>
-              <li><a href="/funcionalidades/despensa">Despensa conectada à lista</a></li>
-            </ul>
-          </nav>
-        </footer>
-
       </main>
+
+      <footer className="footer">
+        <div className="container footer-inner">
+          <a href="/" className="brand">
+            <div className="brand-mark">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z" />
+                <line x1="3" y1="6" x2="21" y2="6" />
+                <path d="M16 10a4 4 0 01-8 0" />
+              </svg>
+            </div>
+            <span className="brand-name">Listinha</span>
+          </a>
+          <span className="footer-copy">© 2026 Listinha</span>
+          <a href="/blog" className="footer-link">Blog</a>
+        </div>
+      </footer>
     </>
   )
 }

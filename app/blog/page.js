@@ -87,7 +87,7 @@ export default function BlogPage() {
             <div className="eyebrow"><span className="dot"></span> Blog</div>
             <h1>Dicas de quem faz lista de verdade</h1>
             <p className="blog-index-sub">Organização de cozinha, supermercado e planejamento semanal — sem frescura.</p>
-            <p className="blog-index-body">
+            <p className="blog-hero-desc">
               Aqui você encontra guias práticos sobre listas de compras, organização de despensa
               e planejamento de refeições. Sem técnicas mirabolantes nem produtos caros — só o
               que funciona pra quem cozinha em casa de verdade. Cada artigo vem com listas pra

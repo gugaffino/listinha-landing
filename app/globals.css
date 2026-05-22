@@ -776,7 +776,7 @@ h1,h2,h3,h4 {
   font-size: 18px; color: var(--carvao-2); max-width: 480px;
   line-height: 1.55; text-wrap: pretty;
 }
-.blog-index-body {
+.blog-hero-desc {
   font-size: 16px; color: var(--carvao-2); max-width: 600px;
   line-height: 1.65; margin-top: 20px; text-wrap: pretty;
 }
