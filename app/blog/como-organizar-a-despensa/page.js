@@ -187,7 +187,7 @@ export default function ComoOrganizarADespensa() {
           </div>
 
           <h1 className="blog-h1">
-            Como organizar a despensa: guia prático em 7 passos
+            Como organizar a despensa do zero (e manter assim em 10 min por semana)
           </h1>
           <p className="blog-desc">
             A maioria das despensas não está bagunçada por falta de espaço. Está bagunçada por falta de sistema. Sete passos resolvem isso — e mantêm organizado sem virar rotina pesada.
@@ -390,8 +390,9 @@ export default function ComoOrganizarADespensa() {
             monta sua despensa ideal no app uma vez — os produtos que sempre precisam ter em casa.
             O que você marca como "acabou" vai direto pra{' '}
             <a href="/funcionalidades/lista-de-compras">lista de compras</a>. Na hora de montar o
-            cardápio da semana, o app cruza com o que tem e já aponta o que falta comprar. É o
-            passo 7 com sistema.
+            cardápio da semana com as suas{' '}
+            <a href="/funcionalidades/receitas">receitas salvas</a>, o app cruza com o que tem e já
+            aponta o que falta comprar. É o passo 7 com sistema.
           </p>
 
           {/* FAQ */}

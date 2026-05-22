@@ -1,0 +1,37 @@
+# Listinha
+
+> App gratuito de lista de compras que conecta despensa, receitas e cardápio semanal.
+
+## O que é
+
+Listinha é um Progressive Web App (PWA) para organizar compras de supermercado.
+Funciona offline, sem cadastro obrigatório, e é 100% gratuito.
+
+## Funcionalidades
+
+- **Lista de compras**: organizada por corredor do supermercado (hortifruti, carnes, mercearia, limpeza, higiene). Compartilhável em tempo real pelo WhatsApp. Funciona offline.
+- **Despensa**: controle do estoque em casa. Marca o que acabou e gera lista de compras automaticamente.
+- **Receitas**: salva receitas e filtra pelo que tem na despensa. Gera lista dos ingredientes que faltam.
+- **Cardápio semanal**: planeja os 7 dias da semana. Cruza com a despensa e joga os ingredientes faltantes direto na lista.
+
+## Público-alvo
+
+Pessoas que cozinham em casa e querem parar de esquecer itens no mercado ou comprar por impulso.
+
+## URLs
+
+- App: https://listinha-puce.vercel.app
+- Landing page: https://listinha-landing-delta.vercel.app
+- Blog: https://listinha-landing-delta.vercel.app/blog
+- Funcionalidades: https://listinha-landing-delta.vercel.app/funcionalidades
+
+## Stack
+
+- PWA: HTML5 + CSS3 + JavaScript vanilla, sem build step
+- Auth e dados: Firebase Auth + Firestore
+- Landing: Next.js 15, App Router, JavaScript
+- Deploy: Vercel
+
+## Idioma
+
+Português (Brasil)

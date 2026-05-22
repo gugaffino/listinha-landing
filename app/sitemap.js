@@ -21,6 +21,12 @@ export default function sitemap() {
       priority: 0.7,
     },
     {
+      url: `${BASE_URL}/funcionalidades/despensa`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
+    {
       url: `${BASE_URL}/funcionalidades/cardapio-semanal`,
       lastModified: new Date(),
       changeFrequency: 'monthly',
@@ -33,7 +39,25 @@ export default function sitemap() {
       priority: 0.7,
     },
     {
+      url: `${BASE_URL}/blog`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 0.6,
+    },
+    {
       url: `${BASE_URL}/blog/lista-basica-de-compras`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.6,
+    },
+    {
+      url: `${BASE_URL}/blog/lista-de-compras-para-casa-nova`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.6,
+    },
+    {
+      url: `${BASE_URL}/blog/como-organizar-a-despensa`,
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 0.6,
