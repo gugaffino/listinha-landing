@@ -39,6 +39,16 @@ const posts = [
     date: '2026-05-21',
     dateLabel: 'Mai 2026',
   },
+  {
+    slug: 'como-economizar-no-mercado',
+    tag: 'Economia',
+    title: 'Como economizar no mercado: 12 hábitos que realmente funcionam',
+    description: 'Economizar no mercado começa antes de sair de casa. Lista, despensa e cardápio conectados cortam até 27% do gasto mensal.',
+    img: 'https://images.pexels.com/photos/3985066/pexels-photo-3985066.jpeg?auto=compress&cs=tinysrgb&w=800&h=480&fit=crop',
+    imgAlt: 'Família fazendo compras no supermercado com lista na mão',
+    date: '2026-05-22',
+    dateLabel: 'Mai 2026',
+  },
 ]
 
 export default function BlogPage() {
@@ -77,7 +87,7 @@ export default function BlogPage() {
             <div className="eyebrow"><span className="dot"></span> Blog</div>
             <h1>Dicas de quem faz lista de verdade</h1>
             <p className="blog-index-sub">Organização de cozinha, supermercado e planejamento semanal — sem frescura.</p>
-            <p style={{ color: 'var(--carvao-2)', lineHeight: 1.65, marginTop: '1.25rem', maxWidth: '600px', textWrap: 'pretty' }}>
+            <p className="blog-index-body">
               Aqui você encontra guias práticos sobre listas de compras, organização de despensa
               e planejamento de refeições. Sem técnicas mirabolantes nem produtos caros — só o
               que funciona pra quem cozinha em casa de verdade. Cada artigo vem com listas pra
