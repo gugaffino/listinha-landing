@@ -8,7 +8,7 @@ export const metadata = {
     title: 'App para Anotar Receitas e Filtrar pelo que Tem em Casa — Listinha',
     description: 'Salva receitas, filtra pelo que tem em casa, gera lista de compras dos ingredientes que faltam. Grátis.',
     type: 'website',
-    url: 'https://listinha-landing-delta.vercel.app/funcionalidades/receitas',
+    url: 'https://www.miseemcasa.com.br/funcionalidades/receitas',
   },
 }
 

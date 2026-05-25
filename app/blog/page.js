@@ -4,7 +4,7 @@ export const metadata = {
   title: 'Blog — Listinha',
   description: 'Dicas de organização de cozinha, listas de compras e planejamento semanal.',
   alternates: {
-    canonical: 'https://listinha-landing-delta.vercel.app/blog',
+    canonical: 'https://www.miseemcasa.com.br/blog',
   },
 }
 

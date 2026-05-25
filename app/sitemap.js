@@ -1,4 +1,4 @@
-const BASE_URL = 'https://listinha-landing-delta.vercel.app'
+const BASE_URL = 'https://www.miseemcasa.com.br'
 
 export default function sitemap() {
   return [

@@ -8,7 +8,7 @@ export const metadata = {
     title: 'App para Criar Cardápio Semanal com Lista de Compras — Listinha',
     description: 'Cardápio semanal que gera lista de compras automática. Integrado com a despensa. Grátis.',
     type: 'website',
-    url: 'https://listinha-landing-delta.vercel.app/funcionalidades/cardapio-semanal',
+    url: 'https://www.miseemcasa.com.br/funcionalidades/cardapio-semanal',
   },
 }
 

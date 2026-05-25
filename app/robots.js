@@ -4,6 +4,6 @@ export default function robots() {
       userAgent: '*',
       allow: '/',
     },
-    sitemap: 'https://listinha-landing-delta.vercel.app/sitemap.xml',
+    sitemap: 'https://www.miseemcasa.com.br/sitemap.xml',
   }
 }

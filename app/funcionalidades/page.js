@@ -8,7 +8,7 @@ export const metadata = {
     title: 'Funcionalidades — Listinha',
     description: 'Lista de compras, cardápio semanal e receitas. Três coisas que funcionam juntas. Grátis.',
     type: 'website',
-    url: 'https://listinha-landing-delta.vercel.app/funcionalidades',
+    url: 'https://www.miseemcasa.com.br/funcionalidades',
   },
 }
 

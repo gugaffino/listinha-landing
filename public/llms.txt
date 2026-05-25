@@ -21,9 +21,9 @@ Pessoas que cozinham em casa e querem parar de esquecer itens no mercado ou comp
 ## URLs
 
 - App: https://listinha-puce.vercel.app
-- Landing page: https://listinha-landing-delta.vercel.app
-- Blog: https://listinha-landing-delta.vercel.app/blog
-- Funcionalidades: https://listinha-landing-delta.vercel.app/funcionalidades
+- Landing page: https://www.miseemcasa.com.br
+- Blog: https://www.miseemcasa.com.br/blog
+- Funcionalidades: https://www.miseemcasa.com.br/funcionalidades
 
 ## Stack
 

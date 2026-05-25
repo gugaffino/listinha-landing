@@ -6,13 +6,13 @@ export const metadata = {
   title: 'Lista básica de compras: guia com 80+ itens pra copiar',
   description: 'Lista básica de compras com os 7 grupos essenciais, 80+ itens pra copiar, como adaptar ao seu perfil, quanto custa por mês e 5 dicas pra economizar no supermercado.',
   alternates: {
-    canonical: 'https://listinha-landing-delta.vercel.app/blog/lista-basica-de-compras',
+    canonical: 'https://www.miseemcasa.com.br/blog/lista-basica-de-compras',
   },
   openGraph: {
     title: 'Lista básica de compras: guia com 80+ itens pra copiar',
     description: 'Os 7 grupos essenciais, 80+ itens pra copiar, perfis de compra e quanto custa por mês.',
     type: 'article',
-    url: 'https://listinha-landing-delta.vercel.app/blog/lista-basica-de-compras',
+    url: 'https://www.miseemcasa.com.br/blog/lista-basica-de-compras',
     images: [
       {
         url: 'https://images.pexels.com/photos/11018212/pexels-photo-11018212.jpeg?auto=compress&cs=tinysrgb&h=630&w=1200',
@@ -96,12 +96,12 @@ const articleSchema = {
   author: {
     '@type': 'Person',
     name: 'Gus',
-    url: 'https://listinha-landing-delta.vercel.app',
+    url: 'https://www.miseemcasa.com.br',
   },
   publisher: {
     '@type': 'Organization',
     name: 'Listinha',
-    url: 'https://listinha-landing-delta.vercel.app',
+    url: 'https://www.miseemcasa.com.br',
     logo: {
       '@type': 'ImageObject',
       url: 'https://listinha-puce.vercel.app/icons/icon-192.png',
@@ -111,7 +111,7 @@ const articleSchema = {
   },
   mainEntityOfPage: {
     '@type': 'WebPage',
-    '@id': 'https://listinha-landing-delta.vercel.app/blog/lista-basica-de-compras',
+    '@id': 'https://www.miseemcasa.com.br/blog/lista-basica-de-compras',
   },
 }
 
@@ -119,9 +119,9 @@ const breadcrumbSchema = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
   itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://listinha-landing-delta.vercel.app' },
-    { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://listinha-landing-delta.vercel.app/blog' },
-    { '@type': 'ListItem', position: 3, name: 'Lista básica de compras', item: 'https://listinha-landing-delta.vercel.app/blog/lista-basica-de-compras' },
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.miseemcasa.com.br' },
+    { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://www.miseemcasa.com.br/blog' },
+    { '@type': 'ListItem', position: 3, name: 'Lista básica de compras', item: 'https://www.miseemcasa.com.br/blog/lista-basica-de-compras' },
   ],
 }
 

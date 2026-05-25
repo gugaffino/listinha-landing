@@ -5,13 +5,13 @@ export const metadata = {
   title: 'Como economizar no mercado: 12 hábitos que realmente funcionam',
   description: 'Como economizar no mercado começa antes de sair de casa. Descubra 12 hábitos práticos sobre lista, despensa e cardápio semanal que cortam o gasto sem sacrificar o que você come.',
   alternates: {
-    canonical: 'https://listinha-landing-delta.vercel.app/blog/como-economizar-no-mercado',
+    canonical: 'https://www.miseemcasa.com.br/blog/como-economizar-no-mercado',
   },
   openGraph: {
     title: 'Como economizar no mercado: 12 hábitos que realmente funcionam',
     description: 'Como economizar no mercado começa antes de sair de casa. Lista, despensa e cardápio conectados cortam até 27% do gasto.',
     type: 'article',
-    url: 'https://listinha-landing-delta.vercel.app/blog/como-economizar-no-mercado',
+    url: 'https://www.miseemcasa.com.br/blog/como-economizar-no-mercado',
     images: [
       {
         url: 'https://images.pexels.com/photos/3985066/pexels-photo-3985066.jpeg?auto=compress&cs=tinysrgb&h=630&w=1200',
@@ -95,12 +95,12 @@ const articleSchema = {
   author: {
     '@type': 'Person',
     name: 'Gus',
-    url: 'https://listinha-landing-delta.vercel.app',
+    url: 'https://www.miseemcasa.com.br',
   },
   publisher: {
     '@type': 'Organization',
     name: 'Listinha',
-    url: 'https://listinha-landing-delta.vercel.app',
+    url: 'https://www.miseemcasa.com.br',
     logo: {
       '@type': 'ImageObject',
       url: 'https://listinha-puce.vercel.app/icons/icon-192.png',
@@ -110,7 +110,7 @@ const articleSchema = {
   },
   mainEntityOfPage: {
     '@type': 'WebPage',
-    '@id': 'https://listinha-landing-delta.vercel.app/blog/como-economizar-no-mercado',
+    '@id': 'https://www.miseemcasa.com.br/blog/como-economizar-no-mercado',
   },
 }
 
@@ -118,9 +118,9 @@ const breadcrumbSchema = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
   itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://listinha-landing-delta.vercel.app' },
-    { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://listinha-landing-delta.vercel.app/blog' },
-    { '@type': 'ListItem', position: 3, name: 'Como economizar no mercado', item: 'https://listinha-landing-delta.vercel.app/blog/como-economizar-no-mercado' },
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.miseemcasa.com.br' },
+    { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://www.miseemcasa.com.br/blog' },
+    { '@type': 'ListItem', position: 3, name: 'Como economizar no mercado', item: 'https://www.miseemcasa.com.br/blog/como-economizar-no-mercado' },
   ],
 }
 

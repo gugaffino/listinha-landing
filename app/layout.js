@@ -30,6 +30,7 @@ export const viewport = {
 }
 
 export const metadata = {
+  metadataBase: new URL('https://www.miseemcasa.com.br'),
   title: 'Listinha — Cozinha organizada, sem frescura.',
   description: 'O app que conecta despensa, receitas e lista de compras. Pra nunca mais faltar nada.',
   verification: {
@@ -39,7 +40,7 @@ export const metadata = {
     title: 'Listinha — Cozinha organizada, sem frescura.',
     description: 'O app que conecta despensa, receitas e lista de compras. Grátis.',
     type: 'website',
-    url: 'https://listinha-landing-delta.vercel.app',
+    url: 'https://www.miseemcasa.com.br',
   },
 }
 

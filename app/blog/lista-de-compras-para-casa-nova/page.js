@@ -6,13 +6,13 @@ export const metadata = {
   title: 'Lista de compras para casa nova: o que não pode faltar',
   description: 'Lista de compras para casa nova: 60+ itens organizados por cômodo, o que comprar no primeiro dia, estimativa de custo por perfil e lista pronta pra copiar.',
   alternates: {
-    canonical: 'https://listinha-landing-delta.vercel.app/blog/lista-de-compras-para-casa-nova',
+    canonical: 'https://www.miseemcasa.com.br/blog/lista-de-compras-para-casa-nova',
   },
   openGraph: {
     title: 'Lista de compras para casa nova: o que não pode faltar',
     description: '60+ itens por cômodo, o que comprar primeiro, estimativa de custo e lista pra copiar.',
     type: 'article',
-    url: 'https://listinha-landing-delta.vercel.app/blog/lista-de-compras-para-casa-nova',
+    url: 'https://www.miseemcasa.com.br/blog/lista-de-compras-para-casa-nova',
     images: [
       {
         url: 'https://images.pexels.com/photos/8730049/pexels-photo-8730049.jpeg?auto=compress&cs=tinysrgb&w=1200&h=630',
@@ -96,12 +96,12 @@ const articleSchema = {
   author: {
     '@type': 'Person',
     name: 'Gus',
-    url: 'https://listinha-landing-delta.vercel.app',
+    url: 'https://www.miseemcasa.com.br',
   },
   publisher: {
     '@type': 'Organization',
     name: 'Listinha',
-    url: 'https://listinha-landing-delta.vercel.app',
+    url: 'https://www.miseemcasa.com.br',
     logo: {
       '@type': 'ImageObject',
       url: 'https://listinha-puce.vercel.app/icons/icon-192.png',
@@ -111,7 +111,7 @@ const articleSchema = {
   },
   mainEntityOfPage: {
     '@type': 'WebPage',
-    '@id': 'https://listinha-landing-delta.vercel.app/blog/lista-de-compras-para-casa-nova',
+    '@id': 'https://www.miseemcasa.com.br/blog/lista-de-compras-para-casa-nova',
   },
 }
 
@@ -119,9 +119,9 @@ const breadcrumbSchema = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
   itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://listinha-landing-delta.vercel.app' },
-    { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://listinha-landing-delta.vercel.app/blog' },
-    { '@type': 'ListItem', position: 3, name: 'Lista de compras para casa nova', item: 'https://listinha-landing-delta.vercel.app/blog/lista-de-compras-para-casa-nova' },
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.miseemcasa.com.br' },
+    { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://www.miseemcasa.com.br/blog' },
+    { '@type': 'ListItem', position: 3, name: 'Lista de compras para casa nova', item: 'https://www.miseemcasa.com.br/blog/lista-de-compras-para-casa-nova' },
   ],
 }
 

@@ -8,7 +8,7 @@ export const metadata = {
     title: 'App de Controle de Despensa — Listinha',
     description: 'Monta sua despensa, marca o que acabou e gera a lista de compras automaticamente. Grátis.',
     type: 'website',
-    url: 'https://listinha-landing-delta.vercel.app/funcionalidades/despensa',
+    url: 'https://www.miseemcasa.com.br/funcionalidades/despensa',
   },
 }
 

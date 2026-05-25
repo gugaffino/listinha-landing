@@ -5,13 +5,13 @@ export const metadata = {
   title: 'Como organizar a despensa: guia prático em 7 passos',
   description: 'Como organizar a despensa do zero: 7 passos pra esvaziar, agrupar, rotular e manter tudo no lugar — com dicas extras pra geladeira organizada.',
   alternates: {
-    canonical: 'https://listinha-landing-delta.vercel.app/blog/como-organizar-a-despensa',
+    canonical: 'https://www.miseemcasa.com.br/blog/como-organizar-a-despensa',
   },
   openGraph: {
     title: 'Como organizar a despensa: guia prático em 7 passos',
     description: 'Como organizar a despensa do zero: 7 passos pra esvaziar, agrupar, rotular e manter tudo no lugar.',
     type: 'article',
-    url: 'https://listinha-landing-delta.vercel.app/blog/como-organizar-a-despensa',
+    url: 'https://www.miseemcasa.com.br/blog/como-organizar-a-despensa',
     images: [
       {
         url: 'https://images.pexels.com/photos/6660254/pexels-photo-6660254.jpeg?auto=compress&cs=tinysrgb&w=1200&h=630',
@@ -95,12 +95,12 @@ const articleSchema = {
   author: {
     '@type': 'Person',
     name: 'Gus',
-    url: 'https://listinha-landing-delta.vercel.app',
+    url: 'https://www.miseemcasa.com.br',
   },
   publisher: {
     '@type': 'Organization',
     name: 'Listinha',
-    url: 'https://listinha-landing-delta.vercel.app',
+    url: 'https://www.miseemcasa.com.br',
     logo: {
       '@type': 'ImageObject',
       url: 'https://listinha-puce.vercel.app/icons/icon-192.png',
@@ -110,7 +110,7 @@ const articleSchema = {
   },
   mainEntityOfPage: {
     '@type': 'WebPage',
-    '@id': 'https://listinha-landing-delta.vercel.app/blog/como-organizar-a-despensa',
+    '@id': 'https://www.miseemcasa.com.br/blog/como-organizar-a-despensa',
   },
 }
 
@@ -118,9 +118,9 @@ const breadcrumbSchema = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
   itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://listinha-landing-delta.vercel.app' },
-    { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://listinha-landing-delta.vercel.app/blog' },
-    { '@type': 'ListItem', position: 3, name: 'Como organizar a despensa', item: 'https://listinha-landing-delta.vercel.app/blog/como-organizar-a-despensa' },
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.miseemcasa.com.br' },
+    { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://www.miseemcasa.com.br/blog' },
+    { '@type': 'ListItem', position: 3, name: 'Como organizar a despensa', item: 'https://www.miseemcasa.com.br/blog/como-organizar-a-despensa' },
   ],
 }
 

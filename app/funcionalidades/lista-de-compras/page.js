@@ -8,7 +8,7 @@ export const metadata = {
     title: 'App de Lista de Compras Gratuito e Compartilhada — Listinha',
     description: 'Lista de compras organizada por corredor, compartilhada pelo WhatsApp, funciona offline. 100% grátis.',
     type: 'website',
-    url: 'https://listinha-landing-delta.vercel.app/funcionalidades/lista-de-compras',
+    url: 'https://www.miseemcasa.com.br/funcionalidades/lista-de-compras',
   },
 }
 
