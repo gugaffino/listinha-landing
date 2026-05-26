@@ -9,13 +9,12 @@ export default function Home() {
         <div className="container nav-inner">
           <a href="/" className="brand">
             <div className="brand-mark">
-              <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/>
-                <line x1="3" y1="6" x2="21" y2="6"/>
-                <path d="M16 10a4 4 0 01-8 0"/>
-              </svg>
+              <svg aria-hidden="true" viewBox="0 0 24 24" fill="none">
+              <path d="M 3 11.5 L 21 11.5 Q 21 20.5 12 20.5 Q 3 20.5 3 11.5 Z" fill="currentColor"/>
+              <circle cx="12" cy="5.5" r="2.4" fill="#B8E89A"/>
+            </svg>
             </div>
-            <span className="brand-name">Listinha</span>
+            <span className="brand-name">Mise</span>
           </a>
           <nav className="nav-links">
             <NavDropdown />
@@ -207,14 +206,13 @@ export default function Home() {
 
           <div className="pain-transition reveal">
             <div className="mark">
-              <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/>
-                <line x1="3" y1="6" x2="21" y2="6"/>
-                <path d="M16 10a4 4 0 01-8 0"/>
-              </svg>
+              <svg aria-hidden="true" viewBox="0 0 24 24" fill="none">
+              <path d="M 3 11.5 L 21 11.5 Q 21 20.5 12 20.5 Q 3 20.5 3 11.5 Z" fill="currentColor"/>
+              <circle cx="12" cy="5.5" r="2.4" fill="#B8E89A"/>
+            </svg>
             </div>
             <div>
-              <div className="label">Por isso fizemos o Listinha</div>
+              <div className="label">Por isso fizemos o Mise</div>
               <h3>Um app que entende sua cozinha <em>do jeito que ela é.</em> Sem complicação, sem frescura.</h3>
             </div>
             <svg className="arrow" aria-hidden="true" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -374,7 +372,7 @@ export default function Home() {
             <h2>Três passos. Sem onboarding chato.</h2>
             <p>Você não vai precisar de tutorial. Sério.</p>
             <p className="how-prose">
-              O Listinha conecta os quatro pilares da rotina de cozinha — despensa, receitas,
+              O Mise conecta os quatro pilares da rotina de cozinha — despensa, receitas,
               cardápio semanal e lista de compras — num app só. Quando você marca um item como
               esgotado na despensa, ele aparece como sugestão na lista. Quando monta o cardápio
               com receitas salvas, os ingredientes que faltam entram direto na lista de compras.
@@ -409,12 +407,12 @@ export default function Home() {
           <div className="founder-block reveal">
             <div className="founder-avatar">G</div>
             <div>
-              <div className="eyebrow"><span className="dot"></span> Por que o Listinha existe</div>
+              <div className="eyebrow"><span className="dot"></span> Por que o Mise existe</div>
               <p className="founder-quote">
                 &ldquo;Eu sempre sofria com algo faltando em casa quando queria cozinhar. E os apps que existiam eram cheios de imagens, planejamento elaborado e função demais — só me faziam perder tempo.<br/><br/>
-                <strong>Então fiz o Listinha:</strong> um jeito fácil de organizar a despensa pra quem gosta de cozinhar.&rdquo;
+                <strong>Então fiz o Mise:</strong> um jeito fácil de organizar a despensa pra quem gosta de cozinhar.&rdquo;
               </p>
-              <div className="founder-name">Gus <span>· Criador do Listinha</span></div>
+              <div className="founder-name">Gus <span>· Criador do Mise</span></div>
             </div>
           </div>
         </div>
@@ -496,13 +494,12 @@ export default function Home() {
         <div className="container footer-inner">
           <div className="brand">
             <div className="brand-mark">
-              <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/>
-                <line x1="3" y1="6" x2="21" y2="6"/>
-                <path d="M16 10a4 4 0 01-8 0"/>
-              </svg>
+              <svg aria-hidden="true" viewBox="0 0 24 24" fill="none">
+              <path d="M 3 11.5 L 21 11.5 Q 21 20.5 12 20.5 Q 3 20.5 3 11.5 Z" fill="currentColor"/>
+              <circle cx="12" cy="5.5" r="2.4" fill="#B8E89A"/>
+            </svg>
             </div>
-            <span className="brand-name">Listinha</span>
+            <span className="brand-name">Mise</span>
           </div>
           <p className="footer-copy">Feito com carinho pra quem gosta de cozinhar.</p>
           <a href="https://listinha-puce.vercel.app" className="footer-link" target="_blank" rel="noopener">Abrir o app →</a>

@@ -99,7 +99,7 @@ const articleSchema = {
   },
   publisher: {
     '@type': 'Organization',
-    name: 'Listinha',
+    name: 'Mise',
     url: 'https://www.miseemcasa.com.br',
     logo: {
       '@type': 'ImageObject',
@@ -279,7 +279,7 @@ export default function ComoEconomizarNoMercado() {
           <p>
             Dedicar 10 minutos pra escolher 5 a 7 refeições da semana transforma a lista em algo
             preciso: você sabe exatamente quais ingredientes precisa e em qual quantidade.
-            O <a href="/funcionalidades/cardapio-semanal">cardápio semanal do Listinha</a> faz isso
+            O <a href="/funcionalidades/cardapio-semanal">cardápio semanal do Mise</a> faz isso
             automaticamente — você escolhe as receitas e o app monta a lista dos ingredientes que faltam.
           </p>
 
@@ -372,7 +372,7 @@ export default function ComoEconomizarNoMercado() {
           </p>
 
           <p>
-            A <a href="/funcionalidades/lista-de-compras">lista de compras do Listinha</a> já organiza
+            A <a href="/funcionalidades/lista-de-compras">lista de compras do Mise</a> já organiza
             os itens por corredor automaticamente. Você adiciona o que precisa, o app agrupa por
             categoria e você sai do mercado mais rápido — e sem sair do orçamento.
           </p>
@@ -423,7 +423,7 @@ export default function ComoEconomizarNoMercado() {
           <p>
             Esse ciclo elimina os dois maiores vilões do gasto no mercado: comprar o que já tem
             (porque não sabia que tinha) e não comprar o que precisa (porque esqueceu de colocar
-            na lista). A <a href="/funcionalidades/despensa">despensa do Listinha</a> funciona
+            na lista). A <a href="/funcionalidades/despensa">despensa do Mise</a> funciona
             como inventário conectado à lista — você sabe o que tem sem precisar abrir cada armário.
           </p>
 
@@ -527,7 +527,7 @@ export default function ComoEconomizarNoMercado() {
             <div>
               <p className="blog-author-name">Gus</p>
               <p className="blog-author-bio">
-                Criador do Listinha. Faz lista de compras toda semana desde que aprendeu a cozinhar — e ainda assim esquece o alho de vez em quando.
+                Criador do Mise. Faz lista de compras toda semana desde que aprendeu a cozinhar — e ainda assim esquece o alho de vez em quando.
               </p>
             </div>
           </div>
@@ -535,7 +535,7 @@ export default function ComoEconomizarNoMercado() {
           <div className="blog-cta reveal">
             <h2>
               Chega de mercado no improviso.<br />
-              <em>Usa o Listinha.</em>
+              <em>Usa o Mise.</em>
             </h2>
             <p>
               Lista de compras, despensa e cardápio semanal num só lugar.
@@ -571,15 +571,14 @@ export default function ComoEconomizarNoMercado() {
         <div className="container footer-inner">
           <a href="/" className="brand">
             <div className="brand-mark">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z" />
-                <line x1="3" y1="6" x2="21" y2="6" />
-                <path d="M16 10a4 4 0 01-8 0" />
-              </svg>
+              <svg aria-hidden="true" viewBox="0 0 24 24" fill="none">
+              <path d="M 3 11.5 L 21 11.5 Q 21 20.5 12 20.5 Q 3 20.5 3 11.5 Z" fill="currentColor"/>
+              <circle cx="12" cy="5.5" r="2.4" fill="#B8E89A"/>
+            </svg>
             </div>
-            <span className="brand-name">Listinha</span>
+            <span className="brand-name">Mise</span>
           </a>
-          <span className="footer-copy">© 2026 Listinha</span>
+          <span className="footer-copy">© 2026 Mise</span>
           <a href="/blog" className="footer-link">Blog</a>
         </div>
       </footer>

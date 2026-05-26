@@ -100,7 +100,7 @@ const articleSchema = {
   },
   publisher: {
     '@type': 'Organization',
-    name: 'Listinha',
+    name: 'Mise',
     url: 'https://www.miseemcasa.com.br',
     logo: {
       '@type': 'ImageObject',
@@ -606,7 +606,7 @@ export default function ListaDeComprasParaCasaNova() {
 
           <p>
             Com a{' '}
-            <a href="/funcionalidades/lista-de-compras">lista de compras do Listinha</a>{' '}
+            <a href="/funcionalidades/lista-de-compras">lista de compras do Mise</a>{' '}
             você organiza as ondas de compra por categorias, compartilha com quem está ajudando na mudança e não compra em dobro.
           </p>
 
@@ -651,7 +651,7 @@ export default function ListaDeComprasParaCasaNova() {
               <a href="https://www.ibge.gov.br" target="_blank" rel="noopener">IBGE/FIPE, 2024</a>
             ).
             Com a{' '}
-            <a href="/funcionalidades/despensa">despensa do Listinha</a>,
+            <a href="/funcionalidades/despensa">despensa do Mise</a>,
             você monitora o que está acabando antes de precisar — e evita comprar o que já tem.
           </p>
 
@@ -724,7 +724,7 @@ export default function ListaDeComprasParaCasaNova() {
             <div>
               <p className="blog-author-name">Gus</p>
               <p className="blog-author-bio">
-                Criador do Listinha. Já chegou em casa nova sem papel higiênico uma vez. Só precisou acontecer uma vez.
+                Criador do Mise. Já chegou em casa nova sem papel higiênico uma vez. Só precisou acontecer uma vez.
               </p>
             </div>
           </div>
@@ -732,7 +732,7 @@ export default function ListaDeComprasParaCasaNova() {
           <div className="blog-cta reveal">
             <h2>
               Casa nova, lista nova.<br />
-              <em>Usa o Listinha.</em>
+              <em>Usa o Mise.</em>
             </h2>
             <p>
               Conecta despensa, receitas e lista de compras num só lugar.
@@ -767,15 +767,14 @@ export default function ListaDeComprasParaCasaNova() {
         <div className="container footer-inner">
           <a href="/" className="brand">
             <div className="brand-mark">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z" />
-                <line x1="3" y1="6" x2="21" y2="6" />
-                <path d="M16 10a4 4 0 01-8 0" />
-              </svg>
+              <svg aria-hidden="true" viewBox="0 0 24 24" fill="none">
+              <path d="M 3 11.5 L 21 11.5 Q 21 20.5 12 20.5 Q 3 20.5 3 11.5 Z" fill="currentColor"/>
+              <circle cx="12" cy="5.5" r="2.4" fill="#B8E89A"/>
+            </svg>
             </div>
-            <span className="brand-name">Listinha</span>
+            <span className="brand-name">Mise</span>
           </a>
-          <span className="footer-copy">© 2026 Listinha</span>
+          <span className="footer-copy">© 2026 Mise</span>
           <a href="/blog" className="footer-link">Blog</a>
         </div>
       </footer>

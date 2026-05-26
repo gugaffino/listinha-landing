@@ -70,7 +70,7 @@ const faqSchema = {
       name: 'Como saber o que está faltando na despensa sem fazer inventário toda semana?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'O hábito mais eficaz é marcar o que acabou no momento em que você usa o último. Não depender de memória para o dia do mercado. Você pode fazer isso com um caderninho dentro da despensa, uma lista no celular, ou um app como o Listinha, que conecta despensa e lista de compras automaticamente.',
+        text: 'O hábito mais eficaz é marcar o que acabou no momento em que você usa o último. Não depender de memória para o dia do mercado. Você pode fazer isso com um caderninho dentro da despensa, uma lista no celular, ou um app como o Mise, que conecta despensa e lista de compras automaticamente.',
       },
     },
     {
@@ -99,7 +99,7 @@ const articleSchema = {
   },
   publisher: {
     '@type': 'Organization',
-    name: 'Listinha',
+    name: 'Mise',
     url: 'https://www.miseemcasa.com.br',
     logo: {
       '@type': 'ImageObject',
@@ -371,7 +371,7 @@ export default function ComoOrganizarADespensa() {
             só o que falta, não o que acha que falta.
           </p>
           <p>
-            No <a href="/funcionalidades/despensa">Listinha</a>, esse processo fica automático. Você
+            No <a href="/funcionalidades/despensa">Mise</a>, esse processo fica automático. Você
             monta sua despensa ideal no app uma vez — os produtos que sempre precisam ter em casa.
             O que você marca como "acabou" vai direto pra{' '}
             <a href="/funcionalidades/lista-de-compras">lista de compras</a>. Na hora de montar o
@@ -414,7 +414,7 @@ export default function ComoOrganizarADespensa() {
               <p className="faq-a">
                 Marque o que acabou no momento em que você usa o último. Não dependa de memória
                 para o dia do mercado. Um caderninho dentro da despensa, uma lista no celular ou
-                um app como o Listinha — o que importa é o registro acontecer na hora, não depois.
+                um app como o Mise — o que importa é o registro acontecer na hora, não depois.
               </p>
             </li>
             <li className="faq-item">
@@ -441,7 +441,7 @@ export default function ComoOrganizarADespensa() {
             <div className="blog-author-info">
               <span className="blog-author-name">Gus</span>
               <span className="blog-author-bio">
-                Criador do Listinha. Cuida da parte de cozinha, lista e despensa no dia a dia —
+                Criador do Mise. Cuida da parte de cozinha, lista e despensa no dia a dia —
                 e escreve sobre o que aprende no processo.
               </span>
             </div>
@@ -454,7 +454,7 @@ export default function ComoOrganizarADespensa() {
             <p>Sem cadastro, sem cartão, funciona offline.</p>
             <div className="actions">
               <a href="https://listinha-puce.vercel.app" className="btn btn-on-dark btn-lg" target="_blank" rel="noopener">
-                Abrir o Listinha
+                Abrir o Mise
                 <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M5 12h14M13 5l7 7-7 7" />
                 </svg>
@@ -476,15 +476,14 @@ export default function ComoOrganizarADespensa() {
         <div className="container footer-inner">
           <a href="/" className="brand">
             <div className="brand-mark">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z" />
-                <line x1="3" y1="6" x2="21" y2="6" />
-                <path d="M16 10a4 4 0 01-8 0" />
-              </svg>
+              <svg aria-hidden="true" viewBox="0 0 24 24" fill="none">
+              <path d="M 3 11.5 L 21 11.5 Q 21 20.5 12 20.5 Q 3 20.5 3 11.5 Z" fill="currentColor"/>
+              <circle cx="12" cy="5.5" r="2.4" fill="#B8E89A"/>
+            </svg>
             </div>
-            <span className="brand-name">Listinha</span>
+            <span className="brand-name">Mise</span>
           </a>
-          <span className="footer-copy">© 2026 Listinha</span>
+          <span className="footer-copy">© 2026 Mise</span>
           <a href="https://listinha-puce.vercel.app" className="footer-link" target="_blank" rel="noopener">Abrir o app</a>
         </div>
       </footer>

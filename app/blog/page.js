@@ -1,7 +1,7 @@
 import NavDropdown from '../../components/NavDropdown'
 
 export const metadata = {
-  title: 'Blog — Listinha',
+  title: 'Blog — Mise',
   description: 'Dicas de organização de cozinha, listas de compras e planejamento semanal.',
   alternates: {
     canonical: 'https://www.miseemcasa.com.br/blog',
@@ -59,13 +59,12 @@ export default function BlogPage() {
         <div className="container nav-inner">
           <a href="/" className="brand">
             <div className="brand-mark">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/>
-                <line x1="3" y1="6" x2="21" y2="6"/>
-                <path d="M16 10a4 4 0 01-8 0"/>
-              </svg>
+              <svg aria-hidden="true" viewBox="0 0 24 24" fill="none">
+              <path d="M 3 11.5 L 21 11.5 Q 21 20.5 12 20.5 Q 3 20.5 3 11.5 Z" fill="currentColor"/>
+              <circle cx="12" cy="5.5" r="2.4" fill="#B8E89A"/>
+            </svg>
             </div>
-            <span className="brand-name">Listinha</span>
+            <span className="brand-name">Mise</span>
           </a>
           <nav className="nav-links">
             <NavDropdown />
@@ -132,7 +131,7 @@ export default function BlogPage() {
             <div className="blog-index-cta-inner">
               <p>Já que você chegou até aqui — testa o app. É grátis.</p>
               <a href="https://listinha-puce.vercel.app" className="btn btn-primary" target="_blank" rel="noopener">
-                Abrir o Listinha →
+                Abrir o Mise →
               </a>
             </div>
           </div>
@@ -144,13 +143,12 @@ export default function BlogPage() {
         <div className="container footer-inner">
           <div className="brand">
             <div className="brand-mark">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/>
-                <line x1="3" y1="6" x2="21" y2="6"/>
-                <path d="M16 10a4 4 0 01-8 0"/>
-              </svg>
+              <svg aria-hidden="true" viewBox="0 0 24 24" fill="none">
+              <path d="M 3 11.5 L 21 11.5 Q 21 20.5 12 20.5 Q 3 20.5 3 11.5 Z" fill="currentColor"/>
+              <circle cx="12" cy="5.5" r="2.4" fill="#B8E89A"/>
+            </svg>
             </div>
-            <span className="brand-name">Listinha</span>
+            <span className="brand-name">Mise</span>
           </div>
           <p className="footer-copy">Feito com carinho pra quem gosta de cozinhar.</p>
           <a href="https://listinha-puce.vercel.app" className="footer-link" target="_blank" rel="noopener">Abrir o app →</a>

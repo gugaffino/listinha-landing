@@ -2,10 +2,10 @@ import RevealObserver from '../../../components/RevealObserver'
 import SiteNav from '../../../components/SiteNav'
 
 export const metadata = {
-  title: 'App de Controle de Despensa — Listinha',
-  description: 'Listinha é o app de controle de despensa que marca o que tá acabando e gera lista de compras automática. Monta sua despensa ideal uma vez e nunca mais esquece o que falta.',
+  title: 'App de Controle de Despensa — Mise',
+  description: 'Mise é o app de controle de despensa que marca o que tá acabando e gera lista de compras automática. Monta sua despensa ideal uma vez e nunca mais esquece o que falta.',
   openGraph: {
-    title: 'App de Controle de Despensa — Listinha',
+    title: 'App de Controle de Despensa — Mise',
     description: 'Monta sua despensa, marca o que acabou e gera a lista de compras automaticamente. Grátis.',
     type: 'website',
     url: 'https://www.miseemcasa.com.br/funcionalidades/despensa',
@@ -21,7 +21,7 @@ const faqSchema = {
       name: 'Como o app controla o que tem na despensa?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Você monta a despensa ideal uma vez — com os itens que sempre tem em casa. Quando algo acaba ou está acabando, marca no app. Na hora de fazer a lista de compras, o Listinha já sabe o que falta.',
+        text: 'Você monta a despensa ideal uma vez — com os itens que sempre tem em casa. Quando algo acaba ou está acabando, marca no app. Na hora de fazer a lista de compras, o Mise já sabe o que falta.',
       },
     },
     {
@@ -45,7 +45,7 @@ const faqSchema = {
       name: 'Preciso montar a despensa do zero?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Não. O Listinha sugere os itens mais comuns — arroz, feijão, azeite, alho — pra você adicionar com um toque. Em dois minutos a despensa já tem o básico da sua casa.',
+        text: 'Não. O Mise sugere os itens mais comuns — arroz, feijão, azeite, alho — pra você adicionar com um toque. Em dois minutos a despensa já tem o básico da sua casa.',
       },
     },
   ],
@@ -124,7 +124,7 @@ export default function DespensaPage() {
               <div className="eyebrow"><span className="dot"></span> O que tem</div>
               <h2>Despensa conectada com lista e receitas.</h2>
               <p>
-                Não é só um inventário. A despensa do Listinha fala com a lista de compras e com as receitas —
+                Não é só um inventário. A despensa do Mise fala com a lista de compras e com as receitas —
                 pra você saber o que falta comprar e o que já dá pra cozinhar hoje.
               </p>
               <div className="svc-points">
@@ -233,7 +233,7 @@ export default function DespensaPage() {
               errada: você compra o que não precisa porque não sabia que ainda tinha.
             </p>
             <p>
-              Com a despensa do Listinha você monta sua lista ideal de estoque uma vez. Depois,
+              Com a despensa do Mise você monta sua lista ideal de estoque uma vez. Depois,
               basta marcar o que acabou no momento em que você percebe — não no dia do mercado,
               quando a memória já falhou. Na hora de ir às compras, a lista já está pré-preenchida
               com o que falta, sem precisar abrir cada armário pra conferir. Veja também como{' '}
@@ -253,7 +253,7 @@ export default function DespensaPage() {
           <div className="svc-faq-list reveal">
             <div className="svc-faq-item">
               <div className="svc-faq-q">Como o app controla o que tem na despensa?</div>
-              <div className="svc-faq-a">Você monta a despensa ideal uma vez — com os itens que sempre tem em casa. Quando algo acaba ou está acabando, marca no app. Na hora de fazer a lista de compras, o Listinha já sabe o que falta.</div>
+              <div className="svc-faq-a">Você monta a despensa ideal uma vez — com os itens que sempre tem em casa. Quando algo acaba ou está acabando, marca no app. Na hora de fazer a lista de compras, o Mise já sabe o que falta.</div>
             </div>
             <div className="svc-faq-item">
               <div className="svc-faq-q">A despensa se conecta com a lista de compras?</div>
@@ -265,7 +265,7 @@ export default function DespensaPage() {
             </div>
             <div className="svc-faq-item">
               <div className="svc-faq-q">Preciso montar a despensa do zero?</div>
-              <div className="svc-faq-a">Não. O Listinha sugere os itens mais comuns — arroz, feijão, azeite, alho — pra você adicionar com um toque. Em dois minutos a despensa já tem o básico da sua casa.</div>
+              <div className="svc-faq-a">Não. O Mise sugere os itens mais comuns — arroz, feijão, azeite, alho — pra você adicionar com um toque. Em dois minutos a despensa já tem o básico da sua casa.</div>
             </div>
           </div>
         </div>
@@ -279,7 +279,7 @@ export default function DespensaPage() {
             <p>Sem cadastro na largada. Começa a usar agora.</p>
             <div className="actions">
               <a href="https://listinha-puce.vercel.app" className="btn btn-on-dark btn-lg" target="_blank" rel="noopener">
-                Abrir o Listinha grátis
+                Abrir o Mise grátis
                 <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M5 12h14M13 5l7 7-7 7"/>
                 </svg>
@@ -295,15 +295,14 @@ export default function DespensaPage() {
         <div className="container footer-inner">
           <a href="/" className="brand">
             <div className="brand-mark">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/>
-                <line x1="3" y1="6" x2="21" y2="6"/>
-                <path d="M16 10a4 4 0 01-8 0"/>
-              </svg>
+              <svg aria-hidden="true" viewBox="0 0 24 24" fill="none">
+              <path d="M 3 11.5 L 21 11.5 Q 21 20.5 12 20.5 Q 3 20.5 3 11.5 Z" fill="currentColor"/>
+              <circle cx="12" cy="5.5" r="2.4" fill="#B8E89A"/>
+            </svg>
             </div>
-            <span className="brand-name">Listinha</span>
+            <span className="brand-name">Mise</span>
           </a>
-          <span className="footer-copy">© 2024 Listinha</span>
+          <span className="footer-copy">© 2024 Mise</span>
           <a href="https://listinha-puce.vercel.app" className="footer-link" target="_blank" rel="noopener">Abrir o app</a>
         </div>
       </footer>

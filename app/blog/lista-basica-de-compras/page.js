@@ -100,7 +100,7 @@ const articleSchema = {
   },
   publisher: {
     '@type': 'Organization',
-    name: 'Listinha',
+    name: 'Mise',
     url: 'https://www.miseemcasa.com.br',
     logo: {
       '@type': 'ImageObject',
@@ -609,7 +609,7 @@ export default function ListaBasicaDeCompras() {
             <li><strong>Congelados</strong> — sempre por último. Não descongela no carrinho.</li>
           </ul>
           <p>
-            O <a href="/funcionalidades/lista-de-compras">app de lista de compras do Listinha</a>{' '}
+            O <a href="/funcionalidades/lista-de-compras">app de lista de compras do Mise</a>{' '}
             organiza seus itens por corredor automaticamente — você não precisa reordenar nada na hora.
           </p>
 
@@ -634,13 +634,13 @@ export default function ListaBasicaDeCompras() {
             Quem planeja o cardápio da semana antes de fazer a lista compra exatamente o que vai
             usar. Quem faz a lista sem saber o que vai cozinhar compra "o que parece útil" —
             e descobre na sexta que o frango comprado na segunda não combina com nada que está
-            na despensa. O <a href="/funcionalidades/cardapio-semanal">plano semanal do Listinha</a>{' '}
+            na despensa. O <a href="/funcionalidades/cardapio-semanal">plano semanal do Mise</a>{' '}
             conecta receita e lista de compras pra resolver exatamente isso.
           </p>
           <p>
             A lista básica resolve o piso. Conectar lista, despensa e receitas — saber o que
             acabou antes de precisar — resolve o resto.{' '}
-            <a href="/funcionalidades">Veja como o Listinha faz essa conexão na prática.</a>
+            <a href="/funcionalidades">Veja como o Mise faz essa conexão na prática.</a>
           </p>
 
           {/* DICAS ECONOMIZAR */}
@@ -864,7 +864,7 @@ export default function ListaBasicaDeCompras() {
             <div>
               <p className="blog-author-name">Gus</p>
               <p className="blog-author-bio">
-                Criador do Listinha. Já esqueceu o alho no mercado mais vezes do que gostaria de
+                Criador do Mise. Já esqueceu o alho no mercado mais vezes do que gostaria de
                 admitir — e construiu um app pra resolver isso.
               </p>
             </div>
@@ -873,7 +873,7 @@ export default function ListaBasicaDeCompras() {
           <div className="blog-cta reveal">
             <h2>
               Chega de lista no bloco de notas.<br />
-              <em>Usa o Listinha.</em>
+              <em>Usa o Mise.</em>
             </h2>
             <p>
               Conecta despensa, receitas e lista de compras num só lugar.
@@ -908,15 +908,14 @@ export default function ListaBasicaDeCompras() {
         <div className="container footer-inner">
           <a href="/" className="brand">
             <div className="brand-mark">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z" />
-                <line x1="3" y1="6" x2="21" y2="6" />
-                <path d="M16 10a4 4 0 01-8 0" />
-              </svg>
+              <svg aria-hidden="true" viewBox="0 0 24 24" fill="none">
+              <path d="M 3 11.5 L 21 11.5 Q 21 20.5 12 20.5 Q 3 20.5 3 11.5 Z" fill="currentColor"/>
+              <circle cx="12" cy="5.5" r="2.4" fill="#B8E89A"/>
+            </svg>
             </div>
-            <span className="brand-name">Listinha</span>
+            <span className="brand-name">Mise</span>
           </a>
-          <span className="footer-copy">© 2025 Listinha</span>
+          <span className="footer-copy">© 2025 Mise</span>
           <a href="/blog" className="footer-link">Blog</a>
         </div>
       </footer>

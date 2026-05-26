@@ -6,13 +6,12 @@ export default function SiteNav() {
       <div className="container nav-inner">
         <a href="/" className="brand">
           <div className="brand-mark">
-            <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
-              <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/>
-              <line x1="3" y1="6" x2="21" y2="6"/>
-              <path d="M16 10a4 4 0 01-8 0"/>
+            <svg aria-hidden="true" viewBox="0 0 24 24" fill="none">
+              <path d="M 3 11.5 L 21 11.5 Q 21 20.5 12 20.5 Q 3 20.5 3 11.5 Z" fill="currentColor"/>
+              <circle cx="12" cy="5.5" r="2.4" fill="#B8E89A"/>
             </svg>
           </div>
-          <span className="brand-name">Listinha</span>
+          <span className="brand-name">Mise</span>
         </a>
         <nav className="nav-links">
           <NavDropdown />

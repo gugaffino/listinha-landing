@@ -2,10 +2,10 @@ import RevealObserver from '../../../components/RevealObserver'
 import SiteNav from '../../../components/SiteNav'
 
 export const metadata = {
-  title: 'App de Lista de Compras Gratuito e Compartilhada — Listinha',
-  description: 'Listinha é o app gratuito de lista de compras organizada por corredor e compartilhada em tempo real. Funciona offline, sem cadastro obrigatório.',
+  title: 'App de Lista de Compras Gratuito e Compartilhada — Mise',
+  description: 'Mise é o app gratuito de lista de compras organizada por corredor e compartilhada em tempo real. Funciona offline, sem cadastro obrigatório.',
   openGraph: {
-    title: 'App de Lista de Compras Gratuito e Compartilhada — Listinha',
+    title: 'App de Lista de Compras Gratuito e Compartilhada — Mise',
     description: 'Lista de compras organizada por corredor, compartilhada pelo WhatsApp, funciona offline. 100% grátis.',
     type: 'website',
     url: 'https://www.miseemcasa.com.br/funcionalidades/lista-de-compras',
@@ -18,7 +18,7 @@ const faqSchema = {
   mainEntity: [
     {
       '@type': 'Question',
-      name: 'O app de lista de compras Listinha é gratuito?',
+      name: 'O app de lista de compras Mise é gratuito?',
       acceptedAnswer: {
         '@type': 'Answer',
         text: 'Sim, 100% gratuito. Lista de compras, compartilhamento e organização por corredor funcionam sem pagar nada e sem cadastro obrigatório.',
@@ -29,7 +29,7 @@ const faqSchema = {
       name: 'Como compartilhar lista de compras pelo app?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'No Listinha você compartilha a lista pelo WhatsApp com um link. Quem receber vê e edita a mesma lista em tempo real — sem instalar nada.',
+        text: 'No Mise você compartilha a lista pelo WhatsApp com um link. Quem receber vê e edita a mesma lista em tempo real — sem instalar nada.',
       },
     },
     {
@@ -37,7 +37,7 @@ const faqSchema = {
       name: 'A lista de compras funciona sem internet?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Sim. O Listinha é um PWA que funciona offline. A lista fica disponível mesmo dentro do mercado com sinal ruim ou sem conexão.',
+        text: 'Sim. O Mise é um PWA que funciona offline. A lista fica disponível mesmo dentro do mercado com sinal ruim ou sem conexão.',
       },
     },
     {
@@ -45,7 +45,7 @@ const faqSchema = {
       name: 'Como organizar a lista de compras por corredor?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'O Listinha organiza os itens automaticamente por corredor — hortifruti, carnes, mercearia, limpeza, higiene — na ordem que você encontra no supermercado. Sem precisar voltar atrás.',
+        text: 'O Mise organiza os itens automaticamente por corredor — hortifruti, carnes, mercearia, limpeza, higiene — na ordem que você encontra no supermercado. Sem precisar voltar atrás.',
       },
     },
   ],
@@ -216,7 +216,7 @@ export default function ListaDeComprasPage() {
               aumenta a chance de pegar coisa que não estava na lista.
             </p>
             <p>
-              O Listinha agrupa os itens na ordem que você encontra no mercado: hortifruti na
+              O Mise agrupa os itens na ordem que você encontra no mercado: hortifruti na
               entrada, carnes e proteínas a seguir, mercearia, limpeza e higiene no fundo. Você
               entra, percorre uma vez, marca tudo e sai com o carrinho certo — sem voltar ao
               mesmo corredor duas vezes.
@@ -243,7 +243,7 @@ export default function ListaDeComprasPage() {
             </div>
             <div className="svc-faq-item">
               <dt className="svc-faq-q">A lista funciona sem internet dentro do mercado?</dt>
-              <dd className="svc-faq-a">Sim. O Listinha é um PWA que carrega offline. A lista fica disponível mesmo com sinal ruim ou sem conexão — comum em mercado grande com subsolo.</dd>
+              <dd className="svc-faq-a">Sim. O Mise é um PWA que carrega offline. A lista fica disponível mesmo com sinal ruim ou sem conexão — comum em mercado grande com subsolo.</dd>
             </div>
             <div className="svc-faq-item">
               <dt className="svc-faq-q">Como a lista de compras é organizada por corredor?</dt>
@@ -261,7 +261,7 @@ export default function ListaDeComprasPage() {
             <p>Sem cadastro na largada. Começa a usar agora.</p>
             <div className="actions">
               <a href="https://listinha-puce.vercel.app" className="btn btn-on-dark btn-lg" target="_blank" rel="noopener">
-                Abrir o Listinha grátis
+                Abrir o Mise grátis
                 <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M5 12h14M13 5l7 7-7 7"/>
                 </svg>
@@ -277,15 +277,14 @@ export default function ListaDeComprasPage() {
         <div className="container footer-inner">
           <a href="/" className="brand">
             <div className="brand-mark">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/>
-                <line x1="3" y1="6" x2="21" y2="6"/>
-                <path d="M16 10a4 4 0 01-8 0"/>
-              </svg>
+              <svg aria-hidden="true" viewBox="0 0 24 24" fill="none">
+              <path d="M 3 11.5 L 21 11.5 Q 21 20.5 12 20.5 Q 3 20.5 3 11.5 Z" fill="currentColor"/>
+              <circle cx="12" cy="5.5" r="2.4" fill="#B8E89A"/>
+            </svg>
             </div>
-            <span className="brand-name">Listinha</span>
+            <span className="brand-name">Mise</span>
           </a>
-          <span className="footer-copy">© 2024 Listinha</span>
+          <span className="footer-copy">© 2024 Mise</span>
           <a href="https://listinha-puce.vercel.app" className="footer-link" target="_blank" rel="noopener">Abrir o app</a>
         </div>
       </footer>

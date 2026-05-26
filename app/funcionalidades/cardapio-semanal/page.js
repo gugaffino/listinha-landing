@@ -2,10 +2,10 @@ import RevealObserver from '../../../components/RevealObserver'
 import SiteNav from '../../../components/SiteNav'
 
 export const metadata = {
-  title: 'App de Cardápio Semanal com Lista de Compras Integrada — Listinha',
-  description: 'Listinha é o app para criar cardápio semanal integrado com lista de compras. Você planeja os 7 dias, o app gera a lista automaticamente com o que falta na despensa.',
+  title: 'App de Cardápio Semanal com Lista de Compras Integrada — Mise',
+  description: 'Mise é o app para criar cardápio semanal integrado com lista de compras. Você planeja os 7 dias, o app gera a lista automaticamente com o que falta na despensa.',
   openGraph: {
-    title: 'App para Criar Cardápio Semanal com Lista de Compras — Listinha',
+    title: 'App para Criar Cardápio Semanal com Lista de Compras — Mise',
     description: 'Cardápio semanal que gera lista de compras automática. Integrado com a despensa. Grátis.',
     type: 'website',
     url: 'https://www.miseemcasa.com.br/funcionalidades/cardapio-semanal',
@@ -21,7 +21,7 @@ const faqSchema = {
       name: 'Como criar um cardápio semanal com lista de compras integrada?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'No Listinha você seleciona receitas para cada dia da semana. O app cruza com o que está na despensa e adiciona automaticamente os ingredientes que faltam na lista de compras.',
+        text: 'No Mise você seleciona receitas para cada dia da semana. O app cruza com o que está na despensa e adiciona automaticamente os ingredientes que faltam na lista de compras.',
       },
     },
     {
@@ -29,7 +29,7 @@ const faqSchema = {
       name: 'O app para criar cardápio semanal é gratuito?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Sim, o Listinha é 100% gratuito. O plano da semana, a integração com lista de compras e a despensa funcionam sem pagar nada.',
+        text: 'Sim, o Mise é 100% gratuito. O plano da semana, a integração com lista de compras e a despensa funcionam sem pagar nada.',
       },
     },
     {
@@ -104,7 +104,7 @@ export default function CardapioSemanalPage() {
             <div className="how-step">
               <div className="num">2</div>
               <h4>App cruza com a despensa</h4>
-              <p>O Listinha verifica o que você já tem em casa e separa só os ingredientes que faltam. Você não compra o que não precisa.</p>
+              <p>O Mise verifica o que você já tem em casa e separa só os ingredientes que faltam. Você não compra o que não precisa.</p>
             </div>
             <div className="how-step">
               <div className="num">3</div>
@@ -215,7 +215,7 @@ export default function CardapioSemanalPage() {
               você compra o que vai usar, não o que parece que vai usar.
             </p>
             <p>
-              O Listinha conecta o cardápio com a despensa. Você escolhe as receitas da semana,
+              O Mise conecta o cardápio com a despensa. Você escolhe as receitas da semana,
               o app verifica o que já tem em casa e monta automaticamente a lista dos ingredientes
               que faltam. Uma ação resolve a semana inteira — sem improvisar na quinta, sem
               volta extra ao mercado na sexta.
@@ -234,7 +234,7 @@ export default function CardapioSemanalPage() {
           <div className="svc-faq-list reveal">
             <div className="svc-faq-item">
               <div className="svc-faq-q">Como criar cardápio semanal com lista de compras integrada?</div>
-              <div className="svc-faq-a">Você seleciona receitas para cada dia da semana. O Listinha cruza com o que tem na despensa e adiciona automaticamente os ingredientes que faltam na lista de compras. Uma ação gera a lista da semana inteira.</div>
+              <div className="svc-faq-a">Você seleciona receitas para cada dia da semana. O Mise cruza com o que tem na despensa e adiciona automaticamente os ingredientes que faltam na lista de compras. Uma ação gera a lista da semana inteira.</div>
             </div>
             <div className="svc-faq-item">
               <div className="svc-faq-q">O app para criar cardápio semanal é gratuito?</div>
@@ -260,7 +260,7 @@ export default function CardapioSemanalPage() {
             <p>Do cardápio à lista em três passos. Grátis.</p>
             <div className="actions">
               <a href="https://listinha-puce.vercel.app" className="btn btn-on-dark btn-lg" target="_blank" rel="noopener">
-                Abrir o Listinha grátis
+                Abrir o Mise grátis
                 <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M5 12h14M13 5l7 7-7 7"/>
                 </svg>
@@ -276,15 +276,14 @@ export default function CardapioSemanalPage() {
         <div className="container footer-inner">
           <a href="/" className="brand">
             <div className="brand-mark">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/>
-                <line x1="3" y1="6" x2="21" y2="6"/>
-                <path d="M16 10a4 4 0 01-8 0"/>
-              </svg>
+              <svg aria-hidden="true" viewBox="0 0 24 24" fill="none">
+              <path d="M 3 11.5 L 21 11.5 Q 21 20.5 12 20.5 Q 3 20.5 3 11.5 Z" fill="currentColor"/>
+              <circle cx="12" cy="5.5" r="2.4" fill="#B8E89A"/>
+            </svg>
             </div>
-            <span className="brand-name">Listinha</span>
+            <span className="brand-name">Mise</span>
           </a>
-          <span className="footer-copy">© 2024 Listinha</span>
+          <span className="footer-copy">© 2024 Mise</span>
           <a href="https://listinha-puce.vercel.app" className="footer-link" target="_blank" rel="noopener">Abrir o app</a>
         </div>
       </footer>

@@ -2,10 +2,10 @@ import RevealObserver from '../../../components/RevealObserver'
 import SiteNav from '../../../components/SiteNav'
 
 export const metadata = {
-  title: 'App para Anotar Receitas e Cozinhar com o que Tem em Casa — Listinha',
-  description: 'Listinha é o app para anotar receitas e filtrar pelo que você tem em casa. Salva as suas receitas, cruza com a despensa e mostra o que dá pra cozinhar hoje.',
+  title: 'App para Anotar Receitas e Cozinhar com o que Tem em Casa — Mise',
+  description: 'Mise é o app para anotar receitas e filtrar pelo que você tem em casa. Salva as suas receitas, cruza com a despensa e mostra o que dá pra cozinhar hoje.',
   openGraph: {
-    title: 'App para Anotar Receitas e Filtrar pelo que Tem em Casa — Listinha',
+    title: 'App para Anotar Receitas e Filtrar pelo que Tem em Casa — Mise',
     description: 'Salva receitas, filtra pelo que tem em casa, gera lista de compras dos ingredientes que faltam. Grátis.',
     type: 'website',
     url: 'https://www.miseemcasa.com.br/funcionalidades/receitas',
@@ -21,7 +21,7 @@ const faqSchema = {
       name: 'Como anotar receitas no app?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'No Listinha você salva qualquer receita com nome, ingredientes, quantidades e modo de preparo. As receitas ficam disponíveis para o cardápio semanal e para o filtro de "o que dá pra fazer hoje".',
+        text: 'No Mise você salva qualquer receita com nome, ingredientes, quantidades e modo de preparo. As receitas ficam disponíveis para o cardápio semanal e para o filtro de "o que dá pra fazer hoje".',
       },
     },
     {
@@ -29,7 +29,7 @@ const faqSchema = {
       name: 'Como encontrar receitas com o que tem em casa?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'O Listinha cruza as receitas salvas com o conteúdo da sua despensa. O filtro "com o que tenho" mostra só as receitas cujos ingredientes você já tem — sem precisar passar no mercado antes.',
+        text: 'O Mise cruza as receitas salvas com o conteúdo da sua despensa. O filtro "com o que tenho" mostra só as receitas cujos ingredientes você já tem — sem precisar passar no mercado antes.',
       },
     },
     {
@@ -45,7 +45,7 @@ const faqSchema = {
       name: 'O app para anotar receitas é gratuito?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Sim, o Listinha é 100% gratuito. Salvar receitas, filtrar por ingredientes e gerar lista de compras funcionam sem pagar nada.',
+        text: 'Sim, o Mise é 100% gratuito. Salvar receitas, filtrar por ingredientes e gerar lista de compras funcionam sem pagar nada.',
       },
     },
   ],
@@ -235,7 +235,7 @@ export default function ReceitasPage() {
               Aí ou improvisa ou pede entrega.
             </p>
             <p>
-              O Listinha inverte a lógica. Em vez de mostrar receitas e depois você checar o que
+              O Mise inverte a lógica. Em vez de mostrar receitas e depois você checar o que
               tem em casa, o app filtra as receitas automaticamente pelo conteúdo da sua despensa.
               Aparecem só as que você consegue fazer agora — sem precisar passar no mercado antes.
             </p>
@@ -262,7 +262,7 @@ export default function ReceitasPage() {
             </div>
             <div className="svc-faq-item">
               <div className="svc-faq-q">Como ver receitas com o que tem em casa?</div>
-              <div className="svc-faq-a">O Listinha cruza as receitas salvas com o conteúdo da sua despensa. O filtro "com o que tenho" mostra só as receitas cujos ingredientes você já tem — sem precisar ir ao mercado antes de cozinhar.</div>
+              <div className="svc-faq-a">O Mise cruza as receitas salvas com o conteúdo da sua despensa. O filtro "com o que tenho" mostra só as receitas cujos ingredientes você já tem — sem precisar ir ao mercado antes de cozinhar.</div>
             </div>
             <div className="svc-faq-item">
               <div className="svc-faq-q">Como gerar lista de compras a partir de uma receita?</div>
@@ -284,7 +284,7 @@ export default function ReceitasPage() {
             <p>Sem precisar passar no mercado antes de cozinhar.</p>
             <div className="actions">
               <a href="https://listinha-puce.vercel.app" className="btn btn-on-dark btn-lg" target="_blank" rel="noopener">
-                Abrir o Listinha grátis
+                Abrir o Mise grátis
                 <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M5 12h14M13 5l7 7-7 7"/>
                 </svg>
@@ -300,15 +300,14 @@ export default function ReceitasPage() {
         <div className="container footer-inner">
           <a href="/" className="brand">
             <div className="brand-mark">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/>
-                <line x1="3" y1="6" x2="21" y2="6"/>
-                <path d="M16 10a4 4 0 01-8 0"/>
-              </svg>
+              <svg aria-hidden="true" viewBox="0 0 24 24" fill="none">
+              <path d="M 3 11.5 L 21 11.5 Q 21 20.5 12 20.5 Q 3 20.5 3 11.5 Z" fill="currentColor"/>
+              <circle cx="12" cy="5.5" r="2.4" fill="#B8E89A"/>
+            </svg>
             </div>
-            <span className="brand-name">Listinha</span>
+            <span className="brand-name">Mise</span>
           </a>
-          <span className="footer-copy">© 2024 Listinha</span>
+          <span className="footer-copy">© 2024 Mise</span>
           <a href="https://listinha-puce.vercel.app" className="footer-link" target="_blank" rel="noopener">Abrir o app</a>
         </div>
       </footer>

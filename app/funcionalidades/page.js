@@ -2,10 +2,10 @@ import RevealObserver from '../../components/RevealObserver'
 import SiteNav from '../../components/SiteNav'
 
 export const metadata = {
-  title: 'Funcionalidades — Listinha',
+  title: 'Funcionalidades — Mise',
   description: 'Lista de compras gratuita e compartilhada, cardápio semanal com lista automática e receitas com o que tem em casa. Tudo conectado no mesmo app.',
   openGraph: {
-    title: 'Funcionalidades — Listinha',
+    title: 'Funcionalidades — Mise',
     description: 'Lista de compras, cardápio semanal e receitas. Três coisas que funcionam juntas. Grátis.',
     type: 'website',
     url: 'https://www.miseemcasa.com.br/funcionalidades',
@@ -126,9 +126,9 @@ export default function FuncionalidadesPage() {
           <div className="text-col svc-feature-text reveal">
             <h2>Como as quatro ferramentas funcionam juntas</h2>
             <p>
-              O Listinha não é um app com quatro funções separadas — é um ciclo. Começa pela
+              O Mise não é um app com quatro funções separadas — é um ciclo. Começa pela
               despensa: você monta o estoque ideal da sua casa uma vez. Quando algo acaba, marca
-              no app. Na hora de planejar a semana, você escolhe as receitas e o Listinha cruza
+              no app. Na hora de planejar a semana, você escolhe as receitas e o Mise cruza
               com a despensa — os ingredientes que faltam entram automaticamente na lista de
               compras.
             </p>
@@ -155,7 +155,7 @@ export default function FuncionalidadesPage() {
             <p>Grátis, sem cadastro na largada, funciona offline.</p>
             <div className="actions">
               <a href="https://listinha-puce.vercel.app" className="btn btn-on-dark btn-lg" target="_blank" rel="noopener">
-                Abrir o Listinha grátis
+                Abrir o Mise grátis
                 <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M5 12h14M13 5l7 7-7 7"/>
                 </svg>
@@ -171,15 +171,14 @@ export default function FuncionalidadesPage() {
         <div className="container footer-inner">
           <a href="/" className="brand">
             <div className="brand-mark">
-              <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/>
-                <line x1="3" y1="6" x2="21" y2="6"/>
-                <path d="M16 10a4 4 0 01-8 0"/>
-              </svg>
+              <svg aria-hidden="true" viewBox="0 0 24 24" fill="none">
+              <path d="M 3 11.5 L 21 11.5 Q 21 20.5 12 20.5 Q 3 20.5 3 11.5 Z" fill="currentColor"/>
+              <circle cx="12" cy="5.5" r="2.4" fill="#B8E89A"/>
+            </svg>
             </div>
-            <span className="brand-name">Listinha</span>
+            <span className="brand-name">Mise</span>
           </a>
-          <span className="footer-copy">© 2024 Listinha</span>
+          <span className="footer-copy">© 2024 Mise</span>
           <a href="https://listinha-puce.vercel.app" className="footer-link" target="_blank" rel="noopener">Abrir o app</a>
         </div>
       </footer>

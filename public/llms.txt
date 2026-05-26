@@ -1,10 +1,10 @@
-# Listinha
+# Mise
 
 > App gratuito de lista de compras que conecta despensa, receitas e cardápio semanal.
 
 ## O que é
 
-Listinha é um Progressive Web App (PWA) para organizar compras de supermercado.
+Mise é um Progressive Web App (PWA) para organizar compras de supermercado.
 Funciona offline, sem cadastro obrigatório, e é 100% gratuito.
 
 ## Funcionalidades

@@ -31,13 +31,13 @@ export const viewport = {
 
 export const metadata = {
   metadataBase: new URL('https://www.miseemcasa.com.br'),
-  title: 'Listinha — Cozinha organizada, sem frescura.',
+  title: 'Mise — Cozinha em paz, do seu jeito.',
   description: 'O app que conecta despensa, receitas e lista de compras. Pra nunca mais faltar nada.',
   verification: {
     google: 'YhW2K5hJ2UdND5GjgGfhPogP5MFaybFqoDpbCIlaKIc',
   },
   openGraph: {
-    title: 'Listinha — Cozinha organizada, sem frescura.',
+    title: 'Mise — Cozinha em paz, do seu jeito.',
     description: 'O app que conecta despensa, receitas e lista de compras. Grátis.',
     type: 'website',
     url: 'https://www.miseemcasa.com.br',
