@@ -91,6 +91,23 @@ Ao construir um cluster pra uma nova página:
 
 ---
 
+### 5. `o que é cranberry` → `/blog/o-que-e-cranberry`
+
+- **Fonte primária:** ✓ CSV (vol 3.600, KD 14, Informational)
+- **Usada na página:** `/blog/o-que-e-cranberry`
+- **Cluster:**
+
+| Keyword secundária | Fonte |
+|---|---|
+| cranberry o que é | ✓ CSV (vol 2.900, KD 16) |
+| o que e cranberries | ✓ CSV (vol 880, KD 17) |
+| para que serve cranberry | (inventado) |
+| cranberry seco como usar | (inventado) |
+| cranberry onde encontrar | (inventado) |
+| cranberry vale a pena comprar | (inventado) |
+
+---
+
 ## Primárias disponíveis (não usadas ainda)
 
 Do cluster restante em `seo/blog-keywords.csv` — alto volume, baixo KD, ainda sem página:
