@@ -49,6 +49,16 @@ const posts = [
     date: '2026-05-22',
     dateLabel: 'Mai 2026',
   },
+  {
+    slug: 'o-que-e-cranberry',
+    tag: 'Ingredientes',
+    title: 'O que é cranberry: para que serve e como usar no dia a dia',
+    description: 'Cranberry é uma fruta vermelha com propriedades antioxidantes. Saiba o que é, para que serve, onde encontrar no Brasil e se vale a pena colocar na lista.',
+    img: 'https://images.pexels.com/photos/29181506/pexels-photo-29181506.jpeg?auto=compress&cs=tinysrgb&w=800&h=480&fit=crop',
+    imgAlt: 'Cranberries frescos em bandejas no mercado — fruta vermelha da América do Norte',
+    date: '2026-05-25',
+    dateLabel: 'Mai 2026',
+  },
 ]
 
 export default function BlogPage() {
