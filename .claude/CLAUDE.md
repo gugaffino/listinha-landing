@@ -1,4 +1,4 @@
-# CLAUDE.md — Listinha (app + landing)
+# CLAUDE.md — Mise (landing)
 
 Contexto pra Claude Code trabalhar neste repo.
 
@@ -109,24 +109,24 @@ listinha/
 ## ⚠️ Antes de editar
 
 1. Leia este CLAUDE.md inteiro.
-2. Abra o sistema visual em [Listinha — Design System.html](https://listinha-puce.vercel.app) (ou local).
+2. Abra o sistema visual em [Mise — Design System.html](./Mise%20%E2%80%94%20Design%20System.html) (ou local).
 3. Use os tokens CSS do bloco abaixo — **nunca invente cor, fonte ou espaçamento**.
 4. Se faltar algo do sistema pra implementar a feature, **pergunte antes de improvisar**.
 
 ---
 
-# 🎨 Listinha — Design System
+# 🎨 Mise — Design System
 
 > Anexe este bloco ao seu `CLAUDE.md` existente em ambos os repos
 > (`listinha` e `listinha-landing`). Sistema completo: marca, cores, tipo,
 > componentes, tom de voz. Referência visual:
-> [Listinha — Design System.html](./Listinha%20%E2%80%94%20Design%20System.html)
+> [Mise — Design System.html](./Mise%20%E2%80%94%20Design%20System.html)
 
 ---
 
 ## 🧠 Filosofia (leia primeiro)
 
-Listinha é um app de lista de compras pra quem cozinha de verdade.
+Mise é um app de lista de compras pra quem cozinha de verdade.
 Tom: **prático, direto, anti-frescura**. Caseiro mas sem ser fofo.
 Bem-humorado mas sem ser palhaço. Brasil de verdade — `Bora?`, `Tá show`.
 
@@ -137,6 +137,86 @@ Bem-humorado mas sem ser palhaço. Brasil de verdade — `Bora?`, `Tá show`.
 - 1 cor primária ganha de 4 cores semânticas
 
 ---
+
+
+## 🎯 Posicionamento
+
+> **A oportunidade real do Mise é reduzir a carga mental alimentar da casa.**
+
+Lista de compras é a tarefa visível. O que o Mise resolve de verdade é a **fadiga de decidir** — o que cozinhar, o que tem em casa, o que falta, o que comprar.
+
+### Dois posicionamentos
+
+| | Frase | Onde aparece |
+|---|---|---|
+| **Pra fora** (público) | "Cozinha em paz, do seu jeito." | Hero, app store, posts, ads |
+| **Pra dentro** (time) | "Cozinha em piloto automático." | Decisões de produto, PRDs, conversas internas |
+
+### Filtro de decisão para qualquer feature
+
+Pergunta nessa ordem:
+1. Isso **elimina** uma decisão? → ✓ priorize
+2. Isso **automatiza** uma decisão recorrente? → ✓ inclua
+3. Isso **pede** uma decisão nova ao usuário? → ✗ corta ou esconde
+4. Isso **adiciona** trabalho manual recorrente? → ✗ descarta
+
+### Frases-âncora (use em blog, posts, copy)
+
+- **A cozinha não devia te custar tanta cabeça.** _(carga mental)_
+- **Menos decisões. Mais comida.** _(economia cognitiva)_
+- **Você não esquece o alho. O sistema esquece.** _(automação assumida)_
+- **Sua cozinha em piloto automático — sem app de IA, sem frescura.** _(anti-hype)_
+- **O sistema operacional da sua cozinha.** _(home OS)_
+- **A despensa lembra. O plano se monta. A lista aparece.** _(features em ritmo)_
+- **Comprar mercado virou planilha. Não devia.** _(contra complexidade)_
+- **Pare de decidir o que comprar. Comece a cozinhar.** _(CTA)_
+
+---
+
+## 🚫 O que o Mise NÃO é
+
+Definir o que não somos protege o produto de bons PRs com más ideias. Quando alguém propõe uma feature da lista abaixo, a resposta é **não**.
+
+- **❌ Rede social de cozinha** — Sem feed, follow, like, comentário, perfil público.
+- **❌ App de IA** — IA usa quando serve (sugestão, autocomplete, scan). Nunca vendemos IA.
+- **❌ Marketplace** — Não vendemos comida, não fazemos delivery.
+- **❌ Gamificação** — Sem streak, badge, ranking. Cozinhar já é a recompensa.
+- **❌ Receita fotogênica** — Foto não importa por padrão. Ingrediente importa.
+- **❌ Coach nutricional** — Não contamos caloria, não julgamos comida.
+
+### Paisagem competitiva (como respondemos)
+
+| Concorrente | O que eles são | O que somos a mais |
+|---|---|---|
+| **Samsung Food** | Completo + IA pesada | Leve, sem login Samsung, sem foto-receita |
+| **Paprika** | Receitas + pantry, foco em chef | Cozinha do dia a dia, não chef de fim de semana |
+| **AnyList** | Listas compartilhadas | Despensa + receitas integradas |
+| **Cooklist** | Pantry + receita + lista | Brasileiro, mais leve, sem feed social |
+| **Mealime** | Planejamento + receita | Despensa é o coração — sem ela, não somos |
+| **Bring!** | Lista rápida + social + marcas | Sem patrocínio, sem marketplace |
+| **Notion** | Customização total | Funciona em 1 minuto, sem montar template |
+
+---
+
+## ⚡ Regras de UX duras
+
+Toda ação central tem que caber em **≤ 3 toques**. Se passar disso, o fluxo precisa ser repensado, não polido.
+
+### 5 regras que valem mais que opinião
+
+1. **≤ 3 toques pra qualquer ação central.** Adicionar item, marcar comprado, gerar lista. Se passar disso, refatora — não adiciona um tutorial.
+2. **Autocomplete sempre.** Toda lista (item, receita, ingrediente, loja) tem autocomplete. Digitar do zero é último recurso.
+3. **Entrada manual é morte.** Se uma feature pede pra o usuário digitar toda semana, está errado. Soluções: sugestão, repetição, scan, voz.
+4. **Automação é religião.** Marcou comprado? Desconta da despensa. Plano feito? Gera lista. Nunca peça "salvar".
+5. **Voz é ambição (V2).** "Acabou o leite" deveria virar item sem abrir o app. Não é V1, mas todo design deve deixar a porta aberta.
+
+### Como testar uma tela antes de merge
+
+1. Em quantos toques o usuário completa a ação principal? *Mais de 3 → volta pra prancheta.*
+2. Tem campo de texto livre obrigatório? *Substitua por autocomplete ou sugestão.*
+3. Eu uso isso TODA semana? *Se sim, tem que ser quase invisível.*
+4. O que acontece se eu não fizer nada? *O Mise sugere, não exige. Inação é estado válido.*
+
 
 ## 🎨 Cores (tokens CSS)
 
@@ -235,6 +315,84 @@ h1, h2, h3, h4 {
 - Nunca use Helvetica, Arial, Inter, Roboto, system-ui sozinha
 
 ---
+
+## 🥣 Logo · cumbuca
+
+Mise tem **dois marks** que dividem o trabalho — não escolha um, use o certo pro contexto.
+
+### Primary mark · cumbuca única
+
+Cumbuca + um ingrediente flutuando acima. Funciona em **qualquer escala**, do favicon ao splash. **Use sempre** que precisar de uma marca compacta.
+
+```html
+<svg viewBox="0 0 24 24" fill="none" width="32" height="32">
+  <path d="M 3 11.5 L 21 11.5 Q 21 20.5 12 20.5 Q 3 20.5 3 11.5 Z" fill="#2D5F2F"/>
+  <circle cx="12" cy="5.5" r="2.4" fill="#B8E89A"/>
+</svg>
+```
+
+### Extended mark · trio (3 cumbucas)
+
+Três cumbucas em fila. **Só use em ≥ 80px de largura** — em tamanhos menores vira pontinhos.
+Reservado pra hero, splash, posters, packaging.
+
+```html
+<svg viewBox="0 0 60 24" fill="none" width="120" height="48">
+  <path d="M 1 11.5 L 17 11.5 Q 17 20.5 9 20.5 Q 1 20.5 1 11.5 Z" fill="#2D5F2F"/>
+  <circle cx="9" cy="5" r="2" fill="#B8E89A"/>
+  <path d="M 22 11.5 L 38 11.5 Q 38 20.5 30 20.5 Q 22 20.5 22 11.5 Z" fill="#2D5F2F"/>
+  <circle cx="30" cy="5" r="2" fill="#B8E89A"/>
+  <path d="M 43 11.5 L 59 11.5 Q 59 20.5 51 20.5 Q 43 20.5 43 11.5 Z" fill="#2D5F2F"/>
+  <circle cx="51" cy="5" r="2" fill="#B8E89A"/>
+</svg>
+```
+
+### Lockup oficial (mark + wordmark)
+
+```html
+<a href="/" class="brand">
+  <div class="brand-mark">
+    <svg viewBox="0 0 24 24" fill="none" width="20" height="20">
+      <path d="M 3 11.5 L 21 11.5 Q 21 20.5 12 20.5 Q 3 20.5 3 11.5 Z" fill="#FBF9F2"/>
+      <circle cx="12" cy="5.5" r="2.4" fill="#B8E89A"/>
+    </svg>
+  </div>
+  <span class="brand-name">Mise</span>
+</a>
+```
+
+```css
+.brand { display: flex; align-items: center; gap: 10px; }
+.brand-mark {
+  width: 32px; height: 32px;
+  background: var(--verde-folha);
+  border-radius: 9px;
+  display: grid; place-items: center;
+}
+.brand-name {
+  font-family: 'Bricolage Grotesque', system-ui, sans-serif;
+  font-weight: 600; font-size: 19px;
+  letter-spacing: -0.025em;
+  color: var(--carvao);
+}
+```
+
+### Quando usar qual
+
+| Tamanho     | Mark           | Contexto                                 |
+| ----------- | -------------- | ---------------------------------------- |
+| **≥ 80px**  | trio           | hero da landing, splash, posters         |
+| **40–80px** | cumbuca única  | app icon, header de tela, nav            |
+| **24–40px** | cumbuca única  | brand dentro de lockup, tab bar          |
+| **16–24px** | cumbuca única  | favicon, badge, mini-lockup              |
+
+### Variações de cor
+
+1. **Primary** — cumbuca `var(--papel)` + ingrediente `var(--verde-broto)` sobre fundo `var(--verde-folha)`
+2. **Inverse** — cumbuca `var(--papel)` + ingrediente `var(--verde-broto)` sobre fundo escuro
+3. **Mono** — cumbuca e ingrediente da mesma cor (impressão, carimbo)
+
+Nunca pinte de outras combinações. Se faltar uma variação, peça.
 
 ## 📐 Espaço, raios, sombras
 
@@ -437,7 +595,7 @@ function Button({ variant = 'primary', size, icon, children, ...props }) {
 | Despensa          | `archive`       | tab, sugestões                 |
 | Receitas          | `book-open`     | tab, modal de receita          |
 | Plano da semana   | `calendar-days` | tab, weekly view               |
-| Marca / brand     | `shopping-bag`  | logo mark, splash, favicon     |
+| **Marca / brand**  | _cumbuca_       | logo mark, splash, favicon — VER §Logo |
 
 ### SVGs prontos (24×24, stroke 1.8):
 
@@ -471,11 +629,20 @@ function Button({ variant = 'primary', size, icon, children, ...props }) {
   <path d="M8 14h2M14 14h2M8 18h2M14 18h2"/>
 </svg>
 
-<!-- shopping-bag (BRAND mark) -->
-<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" width="24" height="24">
-  <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/>
-  <line x1="3" y1="6" x2="21" y2="6"/>
-  <path d="M16 10a4 4 0 01-8 0"/>
+<!-- BRAND mark (cumbuca + ingrediente) -->
+<svg viewBox="0 0 24 24" fill="none" width="24" height="24">
+  <path d="M 3 11.5 L 21 11.5 Q 21 20.5 12 20.5 Q 3 20.5 3 11.5 Z" fill="currentColor"/>
+  <circle cx="12" cy="5.5" r="2.4" fill="#B8E89A"/>
+</svg>
+
+<!-- TRIO (extended, ≥80px wide) -->
+<svg viewBox="0 0 60 24" fill="none" width="60" height="24">
+  <path d="M 1 11.5 L 17 11.5 Q 17 20.5 9 20.5 Q 1 20.5 1 11.5 Z" fill="currentColor"/>
+  <circle cx="9" cy="5" r="2" fill="#B8E89A"/>
+  <path d="M 22 11.5 L 38 11.5 Q 38 20.5 30 20.5 Q 22 20.5 22 11.5 Z" fill="currentColor"/>
+  <circle cx="30" cy="5" r="2" fill="#B8E89A"/>
+  <path d="M 43 11.5 L 59 11.5 Q 59 20.5 51 20.5 Q 43 20.5 43 11.5 Z" fill="currentColor"/>
+  <circle cx="51" cy="5" r="2" fill="#B8E89A"/>
 </svg>
 ```
 
@@ -493,7 +660,7 @@ function Icon({ name, size = 24, ...rest }) {
 
 ## 🗣️ Tom de voz
 
-**Imagina o Listinha como um amigo no zap: direto, com humor seco quando cabe, sem rodeio.**
+**Imagina o Mise como um amigo no zap: direto, com humor seco quando cabe, sem rodeio.**
 
 ### Regras
 
@@ -571,7 +738,7 @@ function Icon({ name, size = 24, ...rest }) {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Listinha — {Página}</title>
+  <title>Mise — {Página}</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300..800&display=swap" rel="stylesheet">
@@ -602,9 +769,10 @@ const tokens = {
 
 ## 📍 Onde tá o quê
 
-- **Sistema visual completo:** [Listinha — Design System.html](./Listinha%20%E2%80%94%20Design%20System.html)
-- **App:** `gugaffino/listinha` · `index.html` (PWA vanilla)
-- **Landing:** `gugaffino/listinha-landing` · `index.html` + `styles.css`
+- **Sistema visual completo:** [Mise — Design System.html](./Mise%20%E2%80%94%20Design%20System.html)
+- **Logo assets:** [Mise — Logo Assets.html](./Mise%20%E2%80%94%20Logo%20Assets.html) (SVGs e PNGs prontos)
+- **App:** `gugaffino/listinha` · `index.html` (PWA vanilla, será renomeado pra `mise`)
+- **Landing:** `gugaffino/listinha-landing` · `index.html` + `styles.css` (será renomeado pra `mise-landing`)
 - **Dados:** `gugaffino/listinha/data/catalog.json` (corredores) e `data/tags.json` (tags de receita)
 
 Quando for alterar UI, **antes leia o sistema visual** e cole os tokens. Se algo do design system não couber, fale — não improvise.
