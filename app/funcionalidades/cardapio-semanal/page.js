@@ -220,6 +220,13 @@ export default function CardapioSemanalPage() {
               que faltam. Uma ação resolve a semana inteira — sem improvisar na quinta, sem
               volta extra ao mercado na sexta.
             </p>
+            <p>
+              Quem experimenta planejar o cardápio antes de ir ao mercado na primeira semana
+              já percebe a diferença na conta e nos improvisos do meio da semana. O hábito de
+              cinco minutos de planejamento no domingo — montar o cardápio com o que tem na
+              despensa e gerar a lista automática — resolve quatro perguntas de "o que a gente
+              come hoje?" e economiza pelo menos uma ida extra ao mercado por semana.
+            </p>
           </div>
         </div>
       </section>

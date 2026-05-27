@@ -221,6 +221,14 @@ export default function ListaDeComprasPage() {
               entra, percorre uma vez, marca tudo e sai com o carrinho certo — sem voltar ao
               mesmo corredor duas vezes.
             </p>
+            <p>
+              A organização por corredor do Mise segue o fluxo real de um supermercado:
+              hortifruti na entrada, carnes e laticínios a seguir, mercearia no meio, limpeza
+              e higiene no fundo. Você entra, percorre uma vez, marca tudo sem voltar ao mesmo
+              corredor duas vezes — e sai em menos tempo do que levaria sem lista. Compartilhar
+              pelo WhatsApp antes de sair de casa garante que quem for junto compre exatamente
+              o que a lista diz, sem ligações no meio do corredor.
+            </p>
           </div>
         </div>
       </section>

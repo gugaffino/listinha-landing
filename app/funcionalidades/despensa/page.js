@@ -239,6 +239,14 @@ export default function DespensaPage() {
               com o que falta, sem precisar abrir cada armário pra conferir. Veja também como{' '}
               <a href="/blog/como-organizar-a-despensa">organizar a despensa do zero em 7 passos</a>.
             </p>
+            <p>
+              A diferença entre uma despensa organizada e uma despensa viva está no hábito de
+              marcar o que acaba no momento em que você percebe — não na semana do mercado,
+              quando você já esqueceu. O Mise torna esse hábito mínimo: um toque quando abre
+              o armário e vê que o sal acabou. Na hora de ir ao mercado, a lista já está
+              pré-preenchida com o que falta. Sem abrir cada armário, sem tentar lembrar o que
+              tinha na última prateleira.
+            </p>
           </div>
         </div>
       </section>

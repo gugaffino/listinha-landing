@@ -244,6 +244,13 @@ export default function ReceitasPage() {
               à lista de compras com um toque. Você organiza o cardápio com o que tem, compra só
               o que precisa e entra na cozinha sabendo exatamente o que vai preparar.
             </p>
+            <p>
+              Manter as receitas que você já faz no app — e não num caderno, numa foto ou numa
+              aba do Chrome que você fecha sem salvar — elimina o "vamos fazer aquele frango
+              mas eu não lembro os ingredientes". Em dois minutos, os ingredientes que faltam
+              estão na lista. Em três toques, a receita está no cardápio da semana. Sem
+              depender de sinal pra acessar site de receita no meio do cozimento.
+            </p>
           </div>
         </div>
       </section>
