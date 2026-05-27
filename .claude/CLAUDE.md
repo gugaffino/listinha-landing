@@ -4,6 +4,43 @@ Contexto pra Claude Code trabalhar neste repo.
 
 ---
 
+## 🖼️ Ícones — use sempre o componente Icon
+
+Nunca adicione SVG inline em páginas. Use o componente `<Icon>`:
+
+```jsx
+import Icon, { BrandIcon } from '@/components/Icon'
+
+// Ícone de feature
+<Icon name="cart" size={24} strokeWidth={1.8} />
+
+// Marca Mise (cumbuca) — tem fills fixos, usa BrandIcon
+<BrandIcon size={24} />
+```
+
+Para adicionar um ícone novo: inclua o `<symbol>` no `components/IconSprite.js` e use `<Icon name="novo-nome">` nos componentes. Consulte o Lucide (lucide.dev) para os paths — stroke, nunca filled.
+
+## 📊 Ratio texto/HTML — obrigatório em páginas novas
+
+Toda página nova (feature, landing, hub) deve ter ratio texto/HTML acima de 10%. Regras:
+
+1. **Mínimo 3 parágrafos de texto corrido** na seção de conteúdo principal (não contar FAQ, listas ou mockups).
+2. **Nunca usar SVG inline** — cada ícone inline infla o HTML sem adicionar texto.
+3. **Testar antes de declarar pronto**: após `npm run build`, verificar se a página tem conteúdo textual suficiente.
+
+**Seções que NÃO contam como texto para o ratio:**
+- FAQ (perguntas/respostas são curtas)
+- Mockups de UI (`.vm`, `.phone-screen` etc.)
+- Tags e chips (`.svc-hub-tag`, `.feat-bullets`)
+- Texto de botões e labels
+
+**Seções que CONTAM:**
+- Parágrafos de "Por que funciona" / "Como funciona"
+- Textos de hero sub e seções editoriais
+- Seções de conteúdo informativo (`.text-col`)
+
+---
+
 ## ✅ Teste antes de declarar pronto
 
 Toda mudança precisa passar por este check antes de dizer "feito":
