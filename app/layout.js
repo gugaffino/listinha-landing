@@ -1,5 +1,6 @@
 import { Bricolage_Grotesque, Instrument_Serif, JetBrains_Mono } from 'next/font/google'
 import './globals.css'
+import IconSprite from '../components/IconSprite'
 
 const bricolage = Bricolage_Grotesque({
   subsets: ['latin'],
@@ -48,6 +49,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="pt-BR">
       <body className={`${bricolage.variable} ${instrumentSerif.variable} ${jetbrainsMono.variable}`}>
+        <IconSprite />
         <a href="#main-content" className="skip-link">Pular para o conteúdo</a>
         {children}
       </body>
