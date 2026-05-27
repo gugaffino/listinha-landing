@@ -169,7 +169,7 @@ export default function OQueECranberry() {
           </div>
 
           <h1 className="blog-h1">
-            O que é cranberry: para que serve e como usar no dia a dia
+            O que é cranberry, para que serve e se vale colocar na lista
           </h1>
           <p className="blog-desc">
             Você vê aquele pacotinho vermelho no mercado, na seção de frutas secas, e nunca sabe bem se compra. Este guia explica o que é cranberry, pra que serve e — mais importante — se vale a pena colocar na lista.

@@ -169,7 +169,7 @@ export default function ComoEconomizarNoMercado() {
           </div>
 
           <h1 className="blog-h1">
-            Como economizar no mercado: 12 hábitos que realmente funcionam
+            12 hábitos para economizar no mercado que realmente funcionam
           </h1>
           <p className="blog-desc">
             Fazer mercado uma vez por semana com lista é mais barato do que ir três vezes rapidinho. A compra rápida é a mais cara. Aqui estão os hábitos que fazem diferença de verdade — antes, durante e depois do supermercado.

@@ -169,7 +169,7 @@ export default function OQueEPistache() {
           </div>
 
           <h1 className="blog-h1">
-            O que é pistache: origem, tipos e se vale colocar na lista
+            O que é pistache: guia de origem, tipos e como escolher no mercado
           </h1>
           <p className="blog-desc">
             Aquela oleaginosa verde que aparece em sorvete, pasta e em todo lugar nos últimos anos. Mas o que é pistache de verdade, quais são os tipos disponíveis no Brasil e — mais importante — como escolher o certo no mercado?
