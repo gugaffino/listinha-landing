@@ -419,9 +419,10 @@ export default function Home() {
       </section>
 
       {/* PARA QUEM É */}
-      <section className="section section-pad-0">
+      <section className="section">
         <div className="container">
-          <div className="text-col">
+          <div className="text-col svc-feature-text reveal">
+            <div className="eyebrow"><span className="dot"></span> Para quem é</div>
             <h2>Para quem é o Mise</h2>
             <p>
               O Mise foi feito para quem cozinha em casa com alguma frequência e já cansou
