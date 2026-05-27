@@ -143,6 +143,16 @@ export default function FuncionalidadesPage() {
               dentro do mercado. Você começa a usar antes de criar conta — e as funcionalidades
               essenciais nunca ficam bloqueadas.
             </p>
+            <p>
+              O resultado prático: uma família que antes fazia três viagens ao mercado por semana
+              pode reduzir para uma, com uma lista completa gerada pelo próprio app. Quem mora
+              sozinho para de comprar por impulso porque sabe exatamente o que falta. Estimativas
+              de comportamento de consumo mostram que compras sem planejamento custam entre 20%
+              e 30% a mais — entre itens duplicados, produtos que vencem antes de usar e
+              ingredientes esquecidos que faziam parte de um plano que não existia. O Mise
+              corta esse desperdício direto na origem, conectando o que você tem com o que vai
+              cozinhar e o que precisa comprar.
+            </p>
           </div>
         </div>
       </section>
