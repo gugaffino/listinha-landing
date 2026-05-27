@@ -12,12 +12,11 @@ export default function Icon({ name, size = 24, strokeWidth, className, style, .
       viewBox="0 0 24 24"
       fill="none"
       stroke="currentColor"
-      strokeWidth={sw}
       strokeLinecap="round"
       strokeLinejoin="round"
       aria-hidden="true"
       className={className}
-      style={style}
+      style={{ strokeWidth: sw, ...style }}
       {...props}
     >
       <use href={`#icon-${name}`} />
@@ -26,7 +25,7 @@ export default function Icon({ name, size = 24, strokeWidth, className, style, .
 }
 
 // Para o brand mark (cumbuca), que tem fills fixos — não usa stroke:
-export function BrandIcon({ size = 24, className, style }) {
+export function BrandIcon({ size = 24, className, style, ...props }) {
   return (
     <svg
       width={size}
@@ -36,6 +35,7 @@ export function BrandIcon({ size = 24, className, style }) {
       aria-hidden="true"
       className={className}
       style={style}
+      {...props}
     >
       <use href="#icon-brand" />
     </svg>
