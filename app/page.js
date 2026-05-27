@@ -418,6 +418,33 @@ export default function Home() {
         </div>
       </section>
 
+      {/* PARA QUEM É */}
+      <section className="section section-pad-0">
+        <div className="container">
+          <div className="text-col">
+            <h2>Para quem é o Mise</h2>
+            <p>
+              O Mise foi feito para quem cozinha em casa com alguma frequência e já cansou
+              de improvisar. Não é para chef, não é para quem quer montar a cozinha perfeita —
+              é para quem quer sair do mercado com o que precisa e entrar na cozinha sabendo
+              o que vai fazer.
+            </p>
+            <p>
+              Funciona bem para casais que dividem as compras, famílias que planejam a semana
+              juntos, quem mora sozinho e tenta não desperdiçar, repúblicas que precisam de
+              lista compartilhada. A lógica é a mesma: saber o que tem em casa, planejar o que
+              vai cozinhar e comprar só o que falta — sem voltar ao mercado no meio da semana.
+            </p>
+            <p>
+              Quem usa o Mise há mais de um mês normalmente reduz de três para uma a quantidade
+              de viagens semanais ao supermercado. A lista gerada pelo cardápio elimina os itens
+              por impulso. A despensa elimina a compra duplicada. O resultado aparece na conta
+              do mercado — não num tutorial de organização que você nunca vai terminar.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* BLOG */}
       <section className="section blog-preview">
         <div className="container">
