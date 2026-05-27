@@ -13,6 +13,16 @@ export default function IconSprite() {
           <circle cx="12" cy="5.5" r="2.4" fill="#B8E89A" stroke="none"/>
         </symbol>
 
+        {/* ── Marca Mise (trio — 3 cumbucas, só em ≥80px de largura) ── */}
+        <symbol id="icon-brand-trio" viewBox="0 0 60 24">
+          <path d="M 1 11.5 L 17 11.5 Q 17 20.5 9 20.5 Q 1 20.5 1 11.5 Z" fill="currentColor" stroke="none"/>
+          <circle cx="9" cy="5" r="2" fill="#B8E89A" stroke="none"/>
+          <path d="M 22 11.5 L 38 11.5 Q 38 20.5 30 20.5 Q 22 20.5 22 11.5 Z" fill="currentColor" stroke="none"/>
+          <circle cx="30" cy="5" r="2" fill="#B8E89A" stroke="none"/>
+          <path d="M 43 11.5 L 59 11.5 Q 59 20.5 51 20.5 Q 43 20.5 43 11.5 Z" fill="currentColor" stroke="none"/>
+          <circle cx="51" cy="5" r="2" fill="#B8E89A" stroke="none"/>
+        </symbol>
+
         {/* ── Navegação e UI ── */}
         <symbol id="icon-arrow-right" viewBox="0 0 24 24">
           <path d="M5 12h14M13 5l7 7-7 7"/>
