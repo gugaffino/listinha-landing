@@ -1,4 +1,5 @@
 import RevealObserver from '../../../components/RevealObserver'
+import { BrandIcon } from '../../../components/Icon'
 import SiteNav from '../../../components/SiteNav'
 
 export const metadata = {
@@ -571,10 +572,7 @@ export default function ComoEconomizarNoMercado() {
         <div className="container footer-inner">
           <a href="/" className="brand">
             <div className="brand-mark">
-              <svg aria-hidden="true" viewBox="0 0 24 24" fill="none">
-              <path d="M 3 11.5 L 21 11.5 Q 21 20.5 12 20.5 Q 3 20.5 3 11.5 Z" fill="currentColor"/>
-              <circle cx="12" cy="5.5" r="2.4" fill="#B8E89A"/>
-            </svg>
+              <BrandIcon size={20} />
             </div>
             <span className="brand-name">Mise</span>
           </a>

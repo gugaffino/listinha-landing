@@ -1,4 +1,5 @@
 import NavDropdown from '../components/NavDropdown'
+import { BrandIcon } from '../components/Icon'
 
 export default function Home() {
   return (
@@ -9,10 +10,7 @@ export default function Home() {
         <div className="container nav-inner">
           <a href="/" className="brand">
             <div className="brand-mark">
-              <svg aria-hidden="true" viewBox="0 0 24 24" fill="none">
-              <path d="M 3 11.5 L 21 11.5 Q 21 20.5 12 20.5 Q 3 20.5 3 11.5 Z" fill="currentColor"/>
-              <circle cx="12" cy="5.5" r="2.4" fill="#B8E89A"/>
-            </svg>
+              <BrandIcon size={20} />
             </div>
             <span className="brand-name">Mise</span>
           </a>
@@ -206,10 +204,7 @@ export default function Home() {
 
           <div className="pain-transition reveal">
             <div className="mark">
-              <svg aria-hidden="true" viewBox="0 0 24 24" fill="none">
-              <path d="M 3 11.5 L 21 11.5 Q 21 20.5 12 20.5 Q 3 20.5 3 11.5 Z" fill="currentColor"/>
-              <circle cx="12" cy="5.5" r="2.4" fill="#B8E89A"/>
-            </svg>
+              <BrandIcon size={20} />
             </div>
             <div>
               <div className="label">Por isso fizemos o Mise</div>
@@ -522,10 +517,7 @@ export default function Home() {
         <div className="container footer-inner">
           <div className="brand">
             <div className="brand-mark">
-              <svg aria-hidden="true" viewBox="0 0 24 24" fill="none">
-              <path d="M 3 11.5 L 21 11.5 Q 21 20.5 12 20.5 Q 3 20.5 3 11.5 Z" fill="currentColor"/>
-              <circle cx="12" cy="5.5" r="2.4" fill="#B8E89A"/>
-            </svg>
+              <BrandIcon size={20} />
             </div>
             <span className="brand-name">Mise</span>
           </div>
