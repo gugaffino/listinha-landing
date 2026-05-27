@@ -108,6 +108,25 @@ Ao construir um cluster pra uma nova página:
 
 ---
 
+### 6. `o que é pistache` → `/blog/o-que-e-pistache`
+
+- **Fonte primária:** ✓ CSV (vol 27.100, KD 25, Informational)
+- **Usada na página:** `/blog/o-que-e-pistache`
+- **Cluster:**
+
+| Keyword secundária | Fonte |
+|---|---|
+| o que e pistache | ✓ CSV (vol 2.400, KD 32) |
+| oque e pistache | ✓ CSV (vol 880, KD 33) |
+| pistache benefícios | ✓ CSV (vol 1.600, KD 23) |
+| beneficios do pistache | ✓ CSV (vol 880, KD 25) |
+| benefícios do pistache | ✓ CSV (vol 720, KD 25) |
+| pistache onde comprar | (inventado) |
+| pistache como usar na cozinha | (inventado) |
+| pistache preço mercado | (inventado) |
+
+---
+
 ## Primárias disponíveis (não usadas ainda)
 
 Do cluster restante em `seo/blog-keywords.csv` — alto volume, baixo KD, ainda sem página:

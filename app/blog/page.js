@@ -59,6 +59,16 @@ const posts = [
     date: '2026-05-25',
     dateLabel: 'Mai 2026',
   },
+  {
+    slug: 'o-que-e-pistache',
+    tag: 'Ingredientes',
+    title: 'O que é pistache: origem, tipos e se vale colocar na lista',
+    description: 'Pistache é uma oleaginosa de casca dura com interior verde e sabor único. Saiba o que é, os tipos disponíveis no Brasil, onde comprar e se vale o preço.',
+    img: 'https://images.pexels.com/photos/27644256/pexels-photo-27644256.jpeg?auto=compress&cs=tinysrgb&w=800&h=480&fit=crop',
+    imgAlt: 'Pistaches frescos com casca entreaberta mostrando o interior verde',
+    date: '2026-05-27',
+    dateLabel: 'Mai 2026',
+  },
 ]
 
 export default function BlogPage() {
