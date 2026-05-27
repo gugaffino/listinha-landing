@@ -1029,3 +1029,40 @@ h1,h2,h3,h4 {
   color: var(--verde-folha);
   margin-top: 4px;
 }
+
+/* ─────────────────────────────────────────────
+   Blog index — temas editoriais
+───────────────────────────────────────────── */
+.blog-index-topics {
+  padding: 56px 0;
+  border-top: 1px solid var(--linha);
+  margin-top: 40px;
+}
+.blog-index-topics-title {
+  font-size: clamp(28px, 3.5vw, 44px);
+  font-weight: 600;
+  letter-spacing: -0.025em;
+  margin-bottom: 40px;
+  color: var(--carvao);
+}
+.blog-index-topics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+}
+.blog-index-topic h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--carvao);
+  margin-bottom: 16px;
+}
+.blog-index-topic p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--carvao-2);
+  margin-bottom: 16px;
+  text-wrap: pretty;
+}
+.blog-index-topic p:last-child {
+  margin-bottom: 0;
+}

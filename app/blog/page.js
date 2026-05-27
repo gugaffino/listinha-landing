@@ -115,6 +115,55 @@ export default function BlogPage() {
           </div>
         </section>
 
+        {/* TEMAS */}
+        <section className="blog-index-topics">
+          <div className="container">
+            <h2 className="blog-index-topics-title">O que você encontra aqui</h2>
+            <div className="blog-index-topics-grid">
+              <div className="blog-index-topic">
+                <h3>Listas de compras</h3>
+                <p>
+                  Guias completos com itens organizados por grupo, estimativas de custo por perfil
+                  de família e dicas práticas para diferentes situações — casa nova, mês apertado,
+                  família grande, casal. Cada lista foi pensada para você copiar e adaptar, não
+                  começar do zero toda semana.
+                </p>
+                <p>
+                  Você vai encontrar desde a lista básica de supermercado com os 80 itens que
+                  quase todo mundo precisa até listas específicas por situação: mudança, festa,
+                  churrasco, cesta básica. Sem itens exóticos que você nunca vai usar.
+                </p>
+              </div>
+              <div className="blog-index-topic">
+                <h3>Organização de despensa e geladeira</h3>
+                <p>
+                  Como organizar a despensa por zonas, que recipientes usar, como rotular, por onde
+                  começar quando está tudo bagunçado — e como manter organizado no dia a dia sem
+                  precisar de um domingo inteiro para reorganizar tudo de novo.
+                </p>
+                <p>
+                  Sem produtos caros, sem estética de revista de decoração. O foco é funcional:
+                  o que vai diminuir o desperdício, facilitar o acesso aos ingredientes mais usados
+                  e fazer a despensa trabalhar pela sua rotina de cozinha.
+                </p>
+              </div>
+              <div className="blog-index-topic">
+                <h3>Planejamento de refeições e economia</h3>
+                <p>
+                  Como montar um cardápio semanal que respeite o tempo disponível e o orçamento,
+                  por que planejar antes de ir ao mercado faz diferença na conta do mês e quais
+                  hábitos simples cortam o gasto sem abrir mão do que você gosta de comer.
+                </p>
+                <p>
+                  Pesquisas de comportamento de consumo mostram que compras sem lista custam entre
+                  20% e 30% a mais. Os artigos aqui explicam como esse dado se traduz na sua
+                  rotina — e o que fazer a respeito.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* POSTS */}
         <section className="blog-index-posts">
           <div className="container">
