@@ -1,5 +1,5 @@
 import RevealObserver from '../../components/RevealObserver'
-import { BrandIcon } from '../../components/Icon'
+import { BrandIcon, BrandTrioIcon } from '../../components/Icon'
 import SiteNav from '../../components/SiteNav'
 
 export const metadata = {
@@ -81,10 +81,13 @@ export default function FuncionalidadesPage() {
       <section id="main-content" className="svc-hero">
         <div className="container">
           <div className="reveal">
+            <div style={{ marginBottom: 20 }}>
+              <BrandTrioIcon width={108} height={44} style={{ color: 'var(--verde-folha)' }} />
+            </div>
             <div className="eyebrow"><span className="dot"></span> Funcionalidades</div>
             <h1 className="svc-hero-h1">
-              Quatro ferramentas que funcionam juntas.<br />
-              <span className="svc-hero-accent">Grátis.</span>
+              A despensa lembra. O plano se monta.<br />
+              <span className="svc-hero-accent">A lista aparece.</span>
             </h1>
             <p className="svc-hero-sub">
               Lista de compras, despensa, receitas e cardápio semanal — conectados no mesmo app.

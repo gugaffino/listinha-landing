@@ -330,6 +330,13 @@ export default function ComoOrganizarADespensa() {
             <p className="blog-img-credit">Foto: Polina Tankilevitch / Pexels</p>
           </div>
 
+          <div className="blog-inline-cta">
+            <p>A despensa lembra. O plano se monta. <em>A lista aparece.</em></p>
+            <a href="https://listinha-puce.vercel.app" className="btn btn-primary" target="_blank" rel="noopener">
+              Comece grátis →
+            </a>
+          </div>
+
           <h2 id="geladeira" className="img-above">Como organizar a geladeira por zonas</h2>
 
           <p>

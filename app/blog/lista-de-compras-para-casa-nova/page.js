@@ -553,6 +553,13 @@ export default function ListaDeComprasParaCasaNova() {
             </div>
           </div>
 
+          <div className="blog-inline-cta">
+            <p>Pare de decidir o que comprar. <em>Comece a cozinhar.</em></p>
+            <a href="https://listinha-puce.vercel.app" className="btn btn-primary" target="_blank" rel="noopener">
+              Comece grátis →
+            </a>
+          </div>
+
           {/* ETAPAS */}
           <h2 id="etapas">O que pode esperar: compras por etapas</h2>
 

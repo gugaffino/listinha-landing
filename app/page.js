@@ -1,5 +1,5 @@
 import NavDropdown from '../components/NavDropdown'
-import { BrandIcon } from '../components/Icon'
+import { BrandIcon, BrandTrioIcon } from '../components/Icon'
 
 export default function Home() {
   return (
@@ -31,9 +31,12 @@ export default function Home() {
       <section className="hero">
         <div className="container hero-inner">
           <div>
+            <div className="hero-brand-trio">
+              <BrandTrioIcon width={108} height={44} style={{ color: 'var(--verde-folha)' }} />
+            </div>
             <div className="hero-trust"><span className="dot"></span> 100% grátis · sem cadastro chato</div>
             <h1>Mercado sem voltar com <span className="under">o que faltava.</span></h1>
-            <p className="hero-sub">O app que conecta despensa, receitas e lista de compras — pra você nunca mais lembrar do alho na volta pra casa.</p>
+            <p className="hero-sub">A cozinha não devia te custar tanta cabeça. Despensa, receitas e lista de compras conectadas — você para de decidir e começa a cozinhar.</p>
             <div className="hero-actions">
               <a href="https://listinha-puce.vercel.app" className="btn btn-primary btn-lg" target="_blank" rel="noopener">
                 Comece grátis

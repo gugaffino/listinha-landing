@@ -426,6 +426,13 @@ export default function ListaBasicaDeCompras() {
             <p className="blog-img-credit">Foto: RDNE Stock project / Pexels</p>
           </div>
 
+          <div className="blog-inline-cta">
+            <p>Comprar mercado virou planilha. <em>Não devia.</em></p>
+            <a href="https://listinha-puce.vercel.app" className="btn btn-primary" target="_blank" rel="noopener">
+              Comece grátis →
+            </a>
+          </div>
+
           <h2 id="lista-pra-copiar" className="img-above">Lista de compras básica para copiar e colar</h2>
           <p>
             Clica em "Copiar lista" e cola direto no WhatsApp ou no bloco de notas. Risca o que

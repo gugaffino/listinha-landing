@@ -41,3 +41,21 @@ export function BrandIcon({ size = 24, className, style, ...props }) {
     </svg>
   )
 }
+
+// Trio mark (3 cumbucas) — só usar em ≥80px de largura (hero, splash, posters):
+export function BrandTrioIcon({ width = 120, height = 48, className, style, ...props }) {
+  return (
+    <svg
+      width={width}
+      height={height}
+      viewBox="0 0 60 24"
+      fill="none"
+      aria-hidden="true"
+      className={className}
+      style={style}
+      {...props}
+    >
+      <use href="#icon-brand-trio" />
+    </svg>
+  )
+}

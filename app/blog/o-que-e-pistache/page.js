@@ -361,6 +361,13 @@ export default function OQueEPistache() {
             Se comprou o natural, toste antes de usar: frigideira seca, fogo médio, 3 a 5 minutos mexendo. O aroma muda completamente. Não deixe escurecer — pistache queimado tem amargor que não some.
           </p>
 
+          <div className="blog-inline-cta">
+            <p>A cozinha não devia te custar tanta cabeça. <em>O Mise resolve.</em></p>
+            <a href="https://listinha-puce.vercel.app" className="btn btn-primary" target="_blank" rel="noopener">
+              Comece grátis →
+            </a>
+          </div>
+
           {/* ONDE COMPRAR */}
           <h2 id="onde-comprar">Onde comprar pistache no Brasil e quanto custa</h2>
 

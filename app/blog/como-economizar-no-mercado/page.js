@@ -357,6 +357,13 @@ export default function ComoEconomizarNoMercado() {
             disponível no intervalo.
           </p>
 
+          <div className="blog-inline-cta">
+            <p>Menos decisões. <em>Mais comida.</em></p>
+            <a href="https://listinha-puce.vercel.app" className="btn btn-primary" target="_blank" rel="noopener">
+              Comece grátis →
+            </a>
+          </div>
+
           {/* LISTA QUE FUNCIONA */}
           <h2 id="lista-que-funciona">A lista de compras que realmente funciona</h2>
 

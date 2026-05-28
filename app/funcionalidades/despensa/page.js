@@ -284,7 +284,7 @@ export default function DespensaPage() {
       <section className="section">
         <div className="container">
           <div className="cta-final reveal">
-            <h2>Despensa pronta. <em>Bora?</em></h2>
+            <h2>A despensa lembra.<br /><em>Você cozinha.</em></h2>
             <p>Sem cadastro na largada. Começa a usar agora.</p>
             <div className="actions">
               <a href="https://listinha-puce.vercel.app" className="btn btn-on-dark btn-lg" target="_blank" rel="noopener">

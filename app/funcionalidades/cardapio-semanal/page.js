@@ -264,7 +264,7 @@ export default function CardapioSemanalPage() {
       <section className="section">
         <div className="container">
           <div className="cta-final reveal">
-            <h2>Semana planejada.<br /><em>Mercado resolvido.</em></h2>
+            <h2>Menos decisões.<br /><em>Mais comida.</em></h2>
             <p>Do cardápio à lista em três passos. Grátis.</p>
             <div className="actions">
               <a href="https://listinha-puce.vercel.app" className="btn btn-on-dark btn-lg" target="_blank" rel="noopener">

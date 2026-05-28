@@ -324,6 +324,13 @@ export default function OQueECranberry() {
             Quantidade prática: uma a duas colheres de sopa do cranberry seco por refeição já é suficiente. Não precisa de muito pra ter sabor — e o açúcar da versão desidratada some rápido se você exagerar.
           </p>
 
+          <div className="blog-inline-cta">
+            <p>Você não esquece o alho. <em>O sistema esquece.</em></p>
+            <a href="https://listinha-puce.vercel.app" className="btn btn-primary" target="_blank" rel="noopener">
+              Comece grátis →
+            </a>
+          </div>
+
           {/* VALE A PENA */}
           <h2 id="vale-a-pena">Vale a pena colocar na lista</h2>
 

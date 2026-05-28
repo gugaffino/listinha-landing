@@ -288,8 +288,8 @@ export default function ReceitasPage() {
       <section className="section">
         <div className="container">
           <div className="cta-final reveal">
-            <h2>Suas receitas. <em>Com o que você tem.</em></h2>
-            <p>Sem precisar passar no mercado antes de cozinhar.</p>
+            <h2>Você não esquece o alho.<br /><em>O sistema esquece.</em></h2>
+            <p>Receitas filtradas pelo que tem em casa. Sem passar no mercado.</p>
             <div className="actions">
               <a href="https://listinha-puce.vercel.app" className="btn btn-on-dark btn-lg" target="_blank" rel="noopener">
                 Abrir o Mise grátis

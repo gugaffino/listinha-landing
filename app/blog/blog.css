@@ -135,6 +135,38 @@
 }
 .blog-cta .actions { position: relative; display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; }
 
+/* ─── BLOG: INLINE CTA (mid-article) ─── */
+.blog-inline-cta {
+  background: var(--verde-claro);
+  border: 1.5px solid var(--verde-folha);
+  border-radius: 16px;
+  padding: 22px 28px;
+  margin: 40px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.blog-inline-cta p {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--carvao);
+  margin: 0;
+  flex: 1;
+  min-width: 180px;
+  line-height: 1.4;
+}
+.blog-inline-cta em {
+  font-family: var(--fonte-serif);
+  font-style: italic;
+  color: var(--verde-folha);
+  font-weight: 400;
+}
+@media (max-width: 600px) {
+  .blog-inline-cta { flex-direction: column; }
+}
+
 /* ─── BLOG: EXTENSIONS ─── */
 .answer-box {
   background: var(--verde-claro);
