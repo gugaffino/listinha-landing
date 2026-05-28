@@ -223,9 +223,9 @@ export default function Home() {
       <section className="section" id="features">
         <div className="container">
           <div className="section-head reveal">
-            <div className="eyebrow"><span className="dot"></span> Tudo que você precisa</div>
-            <h2>Quatro ferramentas que se conversam.</h2>
-            <p>Lista, despensa, receitas e plano — uma coisa só, sem perder tempo trocando de app.</p>
+            <div className="eyebrow"><span className="dot"></span> Funcionalidades</div>
+            <h2>A despensa lembra. O plano se monta. A lista aparece.</h2>
+            <p>Cada um resolve um pedaço do problema. Juntos, resolvem a semana.</p>
           </div>
 
           <div className="features-grid">
