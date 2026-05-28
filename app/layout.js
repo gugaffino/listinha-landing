@@ -1,4 +1,5 @@
 import { Bricolage_Grotesque, Instrument_Serif, JetBrains_Mono } from 'next/font/google'
+import Script from 'next/script'
 import './globals.css'
 import IconSprite from '../components/IconSprite'
 
@@ -48,20 +49,19 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="pt-BR">
-      <head>
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-4FY46XVV1X" />
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'G-4FY46XVV1X');
-            `,
-          }}
-        />
-      </head>
       <body className={`${bricolage.variable} ${instrumentSerif.variable} ${jetbrainsMono.variable}`}>
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-4FY46XVV1X"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-4FY46XVV1X');
+          `}
+        </Script>
         <IconSprite />
         <a href="#main-content" className="skip-link">Pular para o conteúdo</a>
         {children}
