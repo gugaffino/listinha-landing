@@ -48,6 +48,19 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="pt-BR">
+      <head>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-4FY46XVV1X" />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-4FY46XVV1X');
+            `,
+          }}
+        />
+      </head>
       <body className={`${bricolage.variable} ${instrumentSerif.variable} ${jetbrainsMono.variable}`}>
         <IconSprite />
         <a href="#main-content" className="skip-link">Pular para o conteúdo</a>
