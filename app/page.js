@@ -34,8 +34,7 @@ export default function Home() {
             <div className="hero-brand-trio">
               <BrandTrioIcon width={108} height={44} style={{ color: 'var(--verde-folha)' }} />
             </div>
-            <div className="hero-trust"><span className="dot"></span> 100% grátis · sem cadastro chato</div>
-            <h1>Mercado sem voltar com <span className="under">o que faltava.</span></h1>
+            <h1>Cozinha em paz, <span className="under">do seu jeito.</span></h1>
             <p className="hero-sub">A cozinha não devia te custar tanta cabeça. Despensa, receitas e lista de compras conectadas — você para de decidir e começa a cozinhar.</p>
             <div className="hero-actions">
               <a href="https://listinha-puce.vercel.app" className="btn btn-primary btn-lg" target="_blank" rel="noopener">
