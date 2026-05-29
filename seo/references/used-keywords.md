@@ -127,6 +127,58 @@ Ao construir um cluster pra uma nova página:
 
 ---
 
+### 7. `o que é amido de milho` → `/blog/o-que-e-amido-de-milho`
+
+- **Fonte primária:** ✓ CSV (vol 3.600, KD 16, Informational)
+- **Usada na página:** `/blog/o-que-e-amido-de-milho`
+- **Cluster:**
+
+| Keyword secundária | Fonte |
+|---|---|
+| amido de milho o que é | ✓ CSV (vol 1.900, KD 10) |
+| o que amido de milho | ✓ CSV (vol 1.600, KD 10) |
+| o que é o amido de milho | ✓ CSV (vol 1.900, KD 19) |
+| amido de milho é a mesma coisa que maisena | (inventado) |
+| amido de milho para que serve na cozinha | (inventado) |
+| amido de milho como usar em receitas | (inventado) |
+
+---
+
+### 8. `para que serve óleo de linhaça` → `/blog/para-que-serve-oleo-de-linhaca`
+
+- **Fonte primária:** ✓ CSV (vol 5.400, KD 14, Informational)
+- **Usada na página:** `/blog/para-que-serve-oleo-de-linhaca`
+- **Cluster:**
+
+| Keyword secundária | Fonte |
+|---|---|
+| oleo de linhaça quais os beneficios | ✓ CSV (vol 1.000, KD 15) |
+| óleo de linhaça na cozinha como usar | (inventado) |
+| semente ou óleo de linhaça qual é melhor | (inventado) |
+| óleo de linhaça onde comprar | (inventado) |
+| óleo de linhaça como guardar | (inventado) |
+| óleo de linhaça ponto de fumaça | (inventado) |
+
+---
+
+### 9. `caderno de receitas` → `/blog/caderno-de-receitas`
+
+- **Fonte primária:** ✓ CSV (vol 3.600, KD 10, Informational)
+- **Usada na página:** `/blog/caderno-de-receitas`
+- **Cluster:**
+
+| Keyword secundária | Fonte |
+|---|---|
+| livrinho de receitas | ✓ CSV (vol 1.000, KD 14) |
+| livro de receita | ✓ CSV (vol 1.000, KD 24) |
+| caderno de receitas personalizado | ✓ CSV (vol 720, KD 5) |
+| caderno de receitas personalizados | ✓ CSV (vol 590, KD 5) |
+| como organizar caderno de receitas | (inventado) |
+| caderno de receitas digital | (inventado) |
+| aplicativo para caderno de receitas | (inventado) |
+
+---
+
 ## Primárias disponíveis (não usadas ainda)
 
 Do cluster restante em `seo/blog-keywords.csv` — alto volume, baixo KD, ainda sem página:

@@ -71,6 +71,16 @@ const posts = [
     dateLabel: 'Mai 2026',
   },
   {
+    slug: 'caderno-de-receitas',
+    tag: 'Organização',
+    title: 'Caderno de receitas: como organizar e não perder a que funciona',
+    description: 'Caderno de receitas é onde você guarda as que realmente fazem parte da sua cozinha. Saiba o que incluir, como organizar por categorias e quando vale ir pro digital.',
+    img: 'https://images.pexels.com/photos/8715616/pexels-photo-8715616.jpeg?auto=compress&cs=tinysrgb&w=800&h=480&fit=crop',
+    imgAlt: 'Caderno de receitas aberto com escrita à mão sobre mesa de madeira com ingredientes ao redor',
+    date: '2026-05-28',
+    dateLabel: 'Mai 2026',
+  },
+  {
     slug: 'para-que-serve-oleo-de-linhaca',
     tag: 'Ingredientes',
     title: 'Óleo de linhaça: para que serve e como usar na cozinha',
