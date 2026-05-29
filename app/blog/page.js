@@ -70,6 +70,16 @@ const posts = [
     date: '2026-05-27',
     dateLabel: 'Mai 2026',
   },
+  {
+    slug: 'para-que-serve-oleo-de-linhaca',
+    tag: 'Ingredientes',
+    title: 'Óleo de linhaça: para que serve e como usar na cozinha',
+    description: 'Óleo de linhaça serve para saúde cardiovascular, controle de inflamação e pele. Saiba como usar sem errar, a diferença da semente e como guardar do jeito certo.',
+    img: 'https://images.pexels.com/photos/7420868/pexels-photo-7420868.jpeg?auto=compress&cs=tinysrgb&w=800&h=480&fit=crop',
+    imgAlt: 'Frasco de óleo de linhaça ao lado de sementes de linhaça douradas sobre superfície de madeira',
+    date: '2026-05-28',
+    dateLabel: 'Mai 2026',
+  },
 ]
 
 export default function BlogPage() {
