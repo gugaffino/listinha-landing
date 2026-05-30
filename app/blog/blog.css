@@ -308,3 +308,15 @@
   font-weight: 500;
 }
 .prose a:hover { color: var(--verde-musgo); text-decoration-color: var(--verde-musgo); }
+/* buttons inside prose must not inherit link color */
+.prose .btn { text-decoration: none; }
+.prose .btn-primary { color: var(--papel); }
+.prose .btn-on-dark { color: #1F4B22; }
+
+/* ─── PROSE LISTS ─── */
+.prose ul, .prose ol { padding-left: 24px; margin-bottom: 24px; }
+.prose ul li, .prose ol li {
+  font-size: 17px; line-height: 1.7; color: var(--carvao-2);
+  margin-bottom: 6px; text-wrap: pretty;
+}
+.prose ul li strong, .prose ol li strong { color: var(--carvao); font-weight: 600; }
