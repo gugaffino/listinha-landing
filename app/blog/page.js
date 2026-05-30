@@ -120,6 +120,16 @@ const posts = [
     date: '2026-05-30',
     dateLabel: 'Mai 2026',
   },
+  {
+    slug: 'alimentos-ricos-em-magnesio',
+    tag: 'Ingredientes',
+    title: 'Alimentos ricos em magnésio: lista completa e dicas práticas',
+    description: 'Magnésio está em sementes, oleaginosas e feijão. Veja 12 fontes com as quantidades por porção e como incluir mais na sua semana sem precisar de suplemento.',
+    img: 'https://images.pexels.com/photos/7420982/pexels-photo-7420982.jpeg?auto=compress&cs=tinysrgb&w=800&h=480&fit=crop',
+    imgAlt: 'Flatlay de amêndoas, sementes, lentilhas e nozes em tigelas de porcelana sobre superfície de madeira',
+    date: '2026-05-30',
+    dateLabel: 'Mai 2026',
+  },
 ]
 
 export default function BlogPage() {

@@ -237,6 +237,27 @@ Ao construir um cluster pra uma nova página:
 
 ---
 
+### 13. `alimentos ricos em magnésio` → `/blog/alimentos-ricos-em-magnesio`
+
+- **Fonte primária:** ✓ CSV (vol 8.100, KD 24, Informational)
+- **Score:** 8100 / 24 = 337
+- **Usada na página:** `/blog/alimentos-ricos-em-magnesio`
+- **Cluster:**
+
+| Keyword secundária | Fonte |
+|---|---|
+| alimentos com magnesio | ✓ CSV (vol 4.400, KD 18) |
+| alimentos ricos em magnesio | ✓ CSV (vol 2.900, KD 15) |
+| alimentos que contém magnésio | ✓ CSV (vol 2.400, KD 21) |
+| quais alimentos tem magnesio | ✓ CSV (vol 1.600, KD 17) |
+| qual alimento tem magnesio | ✓ CSV (vol 880, KD 15) |
+| alimento rico em magnésio | ✓ CSV (vol 720, KD 18) |
+| magnésio para que serve na alimentação | (inventado) |
+| como incluir magnésio na dieta sem suplemento | (inventado) |
+| deficiência de magnésio sintomas o que comer | (inventado) |
+
+---
+
 ## Primárias disponíveis (não usadas ainda)
 
 Do cluster restante em `seo/blog-keywords.csv` — alto volume, baixo KD, ainda sem página:
