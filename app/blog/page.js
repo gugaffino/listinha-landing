@@ -110,6 +110,16 @@ const posts = [
     date: '2026-05-29',
     dateLabel: 'Mai 2026',
   },
+  {
+    slug: 'lista-de-compras-do-mes',
+    tag: 'Lista de compras',
+    title: 'Lista de compras do mês: quantidades e como gastar menos',
+    description: 'Organize a compra mensal por categoria, estime as quantidades certas por tamanho de família e evite as idas extras ao mercado no meio da semana.',
+    img: 'https://images.pexels.com/photos/4971951/pexels-photo-4971951.jpeg?auto=compress&cs=tinysrgb&w=800&h=480&fit=crop',
+    imgAlt: 'Mulher empurrando carrinho de compras em corredor de supermercado com frutas e verduras',
+    date: '2026-05-30',
+    dateLabel: 'Mai 2026',
+  },
 ]
 
 export default function BlogPage() {
