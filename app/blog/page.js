@@ -90,6 +90,26 @@ const posts = [
     date: '2026-05-28',
     dateLabel: 'Mai 2026',
   },
+  {
+    slug: 'o-que-e-chia',
+    tag: 'Ingredientes',
+    title: 'Chia tem proteína? O que é, para que serve e como usar',
+    description: 'Chia é uma semente com ômega-3, fibras e proteína. Veja o que é, para que serve, como fazer o gel e o pudim, e quando vale mais que a linhaça.',
+    img: 'https://images.pexels.com/photos/27468397/pexels-photo-27468397.jpeg?auto=compress&cs=tinysrgb&w=800&h=480&fit=crop',
+    imgAlt: 'Sementes de chia pretas em close-up sobre superfície branca — textura detalhada',
+    date: '2026-05-29',
+    dateLabel: 'Mai 2026',
+  },
+  {
+    slug: 'o-que-e-curcuma',
+    tag: 'Ingredientes',
+    title: 'O que é cúrcuma: benefícios, como usar e onde comprar',
+    description: 'Cúrcuma é o tempero amarelo do curry e do arroz. Saiba o que é, para que serve a curcumina, por que precisa de pimenta preta e como guardar na despensa.',
+    img: 'https://images.pexels.com/photos/877220/pexels-photo-877220.jpeg?auto=compress&cs=tinysrgb&w=800&h=480&fit=crop',
+    imgAlt: 'Pó de cúrcuma amarelo-alaranjado em colher de madeira sobre superfície escura',
+    date: '2026-05-29',
+    dateLabel: 'Mai 2026',
+  },
 ]
 
 export default function BlogPage() {

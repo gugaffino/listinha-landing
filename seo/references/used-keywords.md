@@ -179,6 +179,42 @@ Ao construir um cluster pra uma nova página:
 
 ---
 
+### 10. `chia tem proteina` → `/blog/o-que-e-chia`
+
+- **Fonte primária:** ✓ CSV (vol 1.300, KD 25, Informational)
+- **Usada na página:** `/blog/o-que-e-chia`
+- **Cluster:**
+
+| Keyword secundária | Fonte |
+|---|---|
+| o que é chia | (inventado — não estava no CSV, mas é o tema central) |
+| semente de chia | (inventado) |
+| chia beneficios | (inventado) |
+| chia como consumir | (inventado) |
+| chia vs linhaça | (inventado) |
+| chia gel como fazer | (inventado) |
+| chia pudim receita | (inventado) |
+
+---
+
+### 11. `o que é cúrcuma` → `/blog/o-que-e-curcuma`
+
+- **Fonte primária:** (inventado — não estava no CSV; usuário solicitou explicitamente)
+- **Usada na página:** `/blog/o-que-e-curcuma`
+- **Cluster:**
+
+| Keyword secundária | Fonte |
+|---|---|
+| para que serve cúrcuma | (inventado) |
+| cúrcuma açafrão da terra | (inventado) |
+| curcumina o que é | (inventado) |
+| cúrcuma como usar na cozinha | (inventado) |
+| cúrcuma com pimenta preta | (inventado) |
+| cúrcuma beneficios | (inventado) |
+| cúrcuma onde comprar | (inventado) |
+
+---
+
 ## Primárias disponíveis (não usadas ainda)
 
 Do cluster restante em `seo/blog-keywords.csv` — alto volume, baixo KD, ainda sem página:
