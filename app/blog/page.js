@@ -140,6 +140,16 @@ const posts = [
     date: '2026-05-31',
     dateLabel: 'Mai 2026',
   },
+  {
+    slug: 'para-que-serve-noz-moscada',
+    tag: 'Ingredientes',
+    title: 'Para que serve noz-moscada: usos e como usar na cozinha',
+    description: 'Noz-moscada serve para arredondar sabores em pratos cremosos e doces. Saiba o que é, em quais receitas usar, a dose certa e como guardar sem perder o aroma.',
+    img: 'https://images.pexels.com/photos/678414/pexels-photo-678414.jpeg?auto=compress&cs=tinysrgb&w=800&h=480&fit=crop',
+    imgAlt: 'Especiarias aromáticas em tigelas de cerâmica branca sobre superfície de madeira',
+    date: '2026-05-31',
+    dateLabel: 'Mai 2026',
+  },
 ]
 
 export default function BlogPage() {

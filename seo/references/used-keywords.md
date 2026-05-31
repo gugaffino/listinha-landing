@@ -277,6 +277,25 @@ Ao construir um cluster pra uma nova página:
 
 ---
 
+### 15. `noz moscada para que serve` → `/blog/para-que-serve-noz-moscada`
+
+- **Fonte primária:** ✓ CSV (vol 5.400, KD 25, Informational)
+- **Score:** 5400 / 25 = 216
+- **Usada na página:** `/blog/para-que-serve-noz-moscada`
+- **Cluster:**
+
+| Keyword secundária | Fonte |
+|---|---|
+| noz moscado para que serve | ✓ CSV (vol 2.400, KD 21) |
+| o que é noz moscada | ✓ CSV (vol 720, KD 24) |
+| noz moscada beneficios | ✓ CSV (vol 720, KD 22) |
+| noz-moscada benefícios | ✓ CSV (vol 720, KD 23) |
+| noz moscada quanto usar na receita | (inventado) |
+| noz moscada onde comprar | (inventado) |
+| noz moscada como guardar | (inventado) |
+
+---
+
 ## Primárias disponíveis (não usadas ainda)
 
 Do cluster restante em `seo/blog-keywords.csv` — alto volume, baixo KD, ainda sem página:
