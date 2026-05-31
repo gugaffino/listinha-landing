@@ -130,6 +130,16 @@ const posts = [
     date: '2026-05-30',
     dateLabel: 'Mai 2026',
   },
+  {
+    slug: 'cardapio-semanal-simples-caseiro',
+    tag: 'Organização',
+    title: 'Cardápio semanal simples caseiro: como montar do zero',
+    description: 'Como montar um cardápio da semana: exemplo de 7 dias, como transformar em lista de compras e dicas pra não abandonar.',
+    img: 'https://images.pexels.com/photos/3807332/pexels-photo-3807332.jpeg?auto=compress&cs=tinysrgb&w=800&h=480&fit=crop',
+    imgAlt: 'Família cozinhando juntos na cozinha de casa — cardápio semanal simples caseiro',
+    date: '2026-05-31',
+    dateLabel: 'Mai 2026',
+  },
 ]
 
 export default function BlogPage() {

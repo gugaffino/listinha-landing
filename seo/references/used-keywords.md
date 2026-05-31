@@ -258,6 +258,25 @@ Ao construir um cluster pra uma nova página:
 
 ---
 
+### 14. `cardápio semanal simples caseiro` → `/blog/cardapio-semanal-simples-caseiro`
+
+- **Fonte primária:** ✓ CSV (vol 3.600, KD 24, Informational)
+- **Score:** 3600 / 24 = 150
+- **Usada na página:** `/blog/cardapio-semanal-simples-caseiro`
+- **Cluster:**
+
+| Keyword secundária | Fonte |
+|---|---|
+| cardapio semanal | ✓ CSV (vol 3.600, KD 27) |
+| cardapio da semana | ✓ CSV (vol 2.400, KD 22) |
+| cardapio para semana | ✓ CSV (vol 2.400, KD 26) |
+| cardapio semana | ✓ CSV (vol 1.600, KD 29) |
+| como montar cardápio semanal | (inventado) |
+| cardápio semanal simples e barato | (inventado) |
+| planejar refeições da semana | (inventado) |
+
+---
+
 ## Primárias disponíveis (não usadas ainda)
 
 Do cluster restante em `seo/blog-keywords.csv` — alto volume, baixo KD, ainda sem página:
