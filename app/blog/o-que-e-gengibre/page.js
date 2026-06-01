@@ -15,7 +15,7 @@ export const metadata = {
     url: 'https://www.miseemcasa.com.br/blog/o-que-e-gengibre',
     images: [
       {
-        url: 'https://images.pexels.com/photos/161556/pexels-photo-161556.jpeg?auto=compress&cs=tinysrgb&w=1200&h=630',
+        url: 'https://images.pexels.com/photos/161556/ginger-plant-asia-rhizome-161556.jpeg?auto=compress&cs=tinysrgb&w=1200&h=630',
         width: 1200,
         height: 630,
         alt: 'Raízes de gengibre fresco ao lado de pó de gengibre em recipiente metálico',
@@ -26,7 +26,7 @@ export const metadata = {
     card: 'summary_large_image',
     title: 'O que é gengibre: tipos, usos na cozinha e como guardar',
     description: 'Gengibre é um rizoma de sabor picante e aroma intenso. Saiba o que é, a diferença entre fresco e em pó, como usar nas receitas e como guardar sem perder.',
-    images: ['https://images.pexels.com/photos/161556/pexels-photo-161556.jpeg?auto=compress&cs=tinysrgb&w=1200&h=630'],
+    images: ['https://images.pexels.com/photos/161556/ginger-plant-asia-rhizome-161556.jpeg?auto=compress&cs=tinysrgb&w=1200&h=630'],
   },
 }
 
@@ -90,7 +90,7 @@ const articleSchema = {
   '@type': 'Article',
   headline: 'O que é gengibre: tipos, usos na cozinha e como guardar',
   description: 'Gengibre é um rizoma de sabor picante e aroma intenso. Saiba o que é, a diferença entre fresco e em pó, como usar nas receitas e como guardar sem perder.',
-  image: 'https://images.pexels.com/photos/161556/pexels-photo-161556.jpeg?auto=compress&cs=tinysrgb&w=1200&h=630',
+  image: 'https://images.pexels.com/photos/161556/ginger-plant-asia-rhizome-161556.jpeg?auto=compress&cs=tinysrgb&w=1200&h=630',
   datePublished: '2026-06-01',
   dateModified: '2026-06-01',
   author: {
@@ -185,7 +185,7 @@ export default function OQueEGengibre() {
           </div>
 
           <img
-            src="https://images.pexels.com/photos/161556/pexels-photo-161556.jpeg?auto=compress&cs=tinysrgb&w=1200&h=630"
+            src="https://images.pexels.com/photos/161556/ginger-plant-asia-rhizome-161556.jpeg?auto=compress&cs=tinysrgb&w=1200&h=630"
             alt="Raízes de gengibre fresco ao lado de pó de gengibre em recipiente metálico"
             className="blog-hero-img"
             width="1200"
