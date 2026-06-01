@@ -160,6 +160,16 @@ const posts = [
     date: '2026-06-01',
     dateLabel: 'Jun 2026',
   },
+  {
+    slug: 'o-que-e-pomelo',
+    tag: 'Ingredientes',
+    title: 'O que é pomelo: diferença da toranja e como comer',
+    description: 'Pomelo é a maior fruta cítrica do mundo. Saiba o que é, a diferença pra toranja, como comer, onde comprar no Brasil e se vale colocar na lista.',
+    img: 'https://images.pexels.com/photos/1411677/pexels-photo-1411677.jpeg?auto=compress&cs=tinysrgb&w=800&h=480&fit=crop',
+    imgAlt: 'Fatias de frutas cítricas dispostas em mármore branco — limão, laranja e toranja em flatlay',
+    date: '2026-06-01',
+    dateLabel: 'Jun 2026',
+  },
 ]
 
 export default function BlogPage() {

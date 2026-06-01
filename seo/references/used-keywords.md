@@ -315,6 +315,28 @@ Ao construir um cluster pra uma nova página:
 
 ---
 
+### 17. `o que é pomelo` → `/blog/o-que-e-pomelo`
+
+- **Fonte primária:** ✓ CSV (vol 8.100, KD 34, Informational)
+- **Score:** 8100 / 34 = 238
+- **Usada na página:** `/blog/o-que-e-pomelo`
+- **Cluster:**
+
+| Keyword secundária | Fonte |
+|---|---|
+| o que e pomelo | ✓ CSV (vol 1.600, KD 30) |
+| o que é toranja | ✓ CSV (vol 2.900, KD 30) |
+| toranja o que é | ✓ CSV (vol 1.600, KD 32) |
+| o'que é toranja | ✓ CSV (vol 1.600, KD 30) |
+| o que e toranja | ✓ CSV (vol 1.900, KD 36) |
+| pomelo sabor | ✓ CSV (vol 880, KD 28) |
+| toranjas o que é | ✓ CSV (vol 1.000, KD 33) |
+| pomelo como comer | (inventado) |
+| pomelo diferença toranja | (inventado) |
+| pomelo onde comprar | (inventado) |
+
+---
+
 ## Primárias disponíveis (não usadas ainda)
 
 Do cluster restante em `seo/blog-keywords.csv` — alto volume, baixo KD, ainda sem página:
