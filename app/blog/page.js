@@ -150,6 +150,16 @@ const posts = [
     date: '2026-05-31',
     dateLabel: 'Mai 2026',
   },
+  {
+    slug: 'o-que-e-gengibre',
+    tag: 'Ingredientes',
+    title: 'O que é gengibre: tipos, usos na cozinha e como guardar',
+    description: 'Gengibre é um rizoma de sabor picante e aroma intenso. Saiba o que é, a diferença entre fresco e em pó, como usar nas receitas e como guardar sem perder.',
+    img: 'https://images.pexels.com/photos/161556/pexels-photo-161556.jpeg?auto=compress&cs=tinysrgb&w=800&h=480&fit=crop',
+    imgAlt: 'Raízes de gengibre fresco ao lado de pó de gengibre em recipiente metálico',
+    date: '2026-06-01',
+    dateLabel: 'Jun 2026',
+  },
 ]
 
 export default function BlogPage() {

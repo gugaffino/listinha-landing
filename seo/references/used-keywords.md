@@ -296,6 +296,25 @@ Ao construir um cluster pra uma nova página:
 
 ---
 
+### 16. `gengibre` → `/blog/o-que-e-gengibre`
+
+- **Fonte primária:** ✓ CSV (vol 60.500, KD 35, Informational)
+- **Score:** 60500 / 35 = 1729
+- **Usada na página:** `/blog/o-que-e-gengibre`
+- **Cluster:**
+
+| Keyword secundária | Fonte |
+|---|---|
+| para que serve gengibre | (inventado) |
+| gengibre benefícios | (inventado) |
+| gengibre como usar na cozinha | (inventado) |
+| gengibre fresco como guardar | (inventado) |
+| gengibre em pó diferença fresco | (inventado) |
+| gengibre onde comprar | (inventado) |
+| quanto gengibre usar em receita | (inventado) |
+
+---
+
 ## Primárias disponíveis (não usadas ainda)
 
 Do cluster restante em `seo/blog-keywords.csv` — alto volume, baixo KD, ainda sem página:
