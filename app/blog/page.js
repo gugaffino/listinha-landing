@@ -170,6 +170,16 @@ const posts = [
     date: '2026-06-01',
     dateLabel: 'Jun 2026',
   },
+  {
+    slug: 'o-que-e-granola',
+    tag: 'Ingredientes',
+    title: 'O que é granola: composição, tipos e como escolher',
+    description: 'Granola é mistura de cereais torrados com oleaginosas e frutas secas. Saiba o que é, tipos, como consumir e como escolher no mercado.',
+    img: 'https://images.pexels.com/photos/3872369/pexels-photo-3872369.jpeg?auto=compress&cs=tinysrgb&w=800&h=480&fit=crop',
+    imgAlt: 'Granola com aveia, sementes e frutas secas em close-up — textura detalhada',
+    date: '2026-06-02',
+    dateLabel: 'Jun 2026',
+  },
 ]
 
 export default function BlogPage() {

@@ -337,6 +337,24 @@ Ao construir um cluster pra uma nova página:
 
 ---
 
+### 18. `o que é granola` → `/blog/o-que-e-granola`
+
+- **Fonte primária:** ✓ CSV (vol 2.400, KD 18, Informational)
+- **Score:** 2400 / 18 = 133
+- **Usada na página:** `/blog/o-que-e-granola`
+- **Cluster:**
+
+| Keyword secundária | Fonte |
+|---|---|
+| granola o que é | ✓ CSV (vol 1.600, KD 22) |
+| granola benefícios | (inventado) |
+| como comer granola | (inventado) |
+| granola caseira ou industrial | (inventado) |
+| tipos de granola | (inventado) |
+| granola como escolher no mercado | (inventado) |
+
+---
+
 ## Primárias disponíveis (não usadas ainda)
 
 Do cluster restante em `seo/blog-keywords.csv` — alto volume, baixo KD, ainda sem página:
