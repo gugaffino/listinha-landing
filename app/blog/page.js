@@ -190,6 +190,16 @@ const posts = [
     date: '2026-06-03',
     dateLabel: 'Jun 2026',
   },
+  {
+    slug: 'dieta-low-carb-cardapio',
+    tag: 'Organização',
+    title: 'Cardápio low carb para 7 dias: refeições prontas pra copiar',
+    description: '7 dias de refeições low carb do café ao jantar, com lista de compras pronta e dicas para não abandonar na quarta-feira.',
+    img: 'https://images.pexels.com/photos/1660027/pexels-photo-1660027.jpeg?auto=compress&cs=tinysrgb&w=800&h=480&fit=crop',
+    imgAlt: 'Flat-lay de alimentos low carb: abacate, folhas verdes, oleaginosas e vegetais frescos',
+    date: '2026-06-03',
+    dateLabel: 'Jun 2026',
+  },
 ]
 
 export default function BlogPage() {

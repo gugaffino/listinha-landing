@@ -374,6 +374,25 @@ Ao construir um cluster pra uma nova página:
 
 ---
 
+### 20. `dieta low carb cardápio` → `/blog/dieta-low-carb-cardapio`
+
+- **Fonte primária:** ✓ CSV (vol 2.400, KD 11, Informational)
+- **Score:** 2400 / 11 = 218
+- **Usada na página:** `/blog/dieta-low-carb-cardapio`
+- **Cluster:**
+
+| Keyword secundária | Fonte |
+|---|---|
+| cardapio da dieta low carb | ✓ CSV (vol 1.300, KD 15) |
+| cardapio dieta low carb | ✓ CSV (vol 1.300, KD 12) |
+| lista de compras low carb | ✓ CSV (vol 110, KD 20) |
+| cardápio semanal low carb simples | (inventado) |
+| o que comer na dieta low carb | (inventado) |
+| alimentos permitidos no low carb | (inventado) |
+| low carb receitas simples | (inventado) |
+
+---
+
 ## Primárias disponíveis (não usadas ainda)
 
 Do cluster restante em `seo/blog-keywords.csv` — alto volume, baixo KD, ainda sem página:
