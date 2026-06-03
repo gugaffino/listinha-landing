@@ -180,6 +180,16 @@ const posts = [
     date: '2026-06-02',
     dateLabel: 'Jun 2026',
   },
+  {
+    slug: 'oleo-de-canola',
+    tag: 'Ingredientes',
+    title: 'Óleo de canola: o que é, para que serve e como usar',
+    description: 'O que é óleo de canola, se faz mal, qual o ponto de fumaça e quando usar no lugar do azeite — guia direto ao ponto.',
+    img: 'https://images.pexels.com/photos/4910236/pexels-photo-4910236.jpeg?auto=compress&cs=tinysrgb&w=800&h=480&fit=crop',
+    imgAlt: 'Óleo vegetal sendo vertido em frigideira durante cozimento em cozinha doméstica',
+    date: '2026-06-03',
+    dateLabel: 'Jun 2026',
+  },
 ]
 
 export default function BlogPage() {

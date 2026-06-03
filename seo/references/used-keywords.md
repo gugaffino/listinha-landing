@@ -355,6 +355,25 @@ Ao construir um cluster pra uma nova página:
 
 ---
 
+### 19. `oleo de canola` → `/blog/oleo-de-canola`
+
+- **Fonte primária:** ✓ CSV (vol 8.100, KD 20, Informational)
+- **Score:** 8100 / 20 = 405
+- **Usada na página:** `/blog/oleo-de-canola`
+- **Cluster:**
+
+| Keyword secundária | Fonte |
+|---|---|
+| o que é óleo vegetal | ✓ CSV (vol 1.600, KD 15) |
+| o'que é oleo vegetal | ✓ CSV (vol 1.000, KD 21) |
+| oleo de canola para que serve | (inventado) |
+| oleo de canola faz mal | (inventado) |
+| oleo de canola ou azeite qual melhor | (inventado) |
+| oleo de canola ponto de fumaça | (inventado) |
+| óleo de canola como guardar | (inventado) |
+
+---
+
 ## Primárias disponíveis (não usadas ainda)
 
 Do cluster restante em `seo/blog-keywords.csv` — alto volume, baixo KD, ainda sem página:
