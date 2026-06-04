@@ -393,6 +393,26 @@ Ao construir um cluster pra uma nova página:
 
 ---
 
+### 21. `bicarbonato de sódio` → `/blog/bicarbonato-de-sodio`
+
+- **Fonte primária:** ✓ CSV (vol 60.500, KD 36, Informational)
+- **Score:** 60500 / 36 = 1681
+- **Usada na página:** `/blog/bicarbonato-de-sodio`
+- **Cluster:**
+
+| Keyword secundária | Fonte |
+|---|---|
+| bicarbonato de sodio | ✓ CSV (vol 9.900, KD 36) |
+| para que serve bicarbonato de sódio | ✓ CSV (vol 6.600, KD 42) |
+| para que serve o bicarbonato de sódio | ✓ CSV (vol 4.400, KD 41) |
+| bicarbonato de sódio é sal | ✓ CSV (vol 720, KD 22) |
+| bicarbonato de sódio e fermento em pó diferença | (inventado) |
+| como usar bicarbonato de sódio na cozinha | (inventado) |
+| bicarbonato de sódio no feijão para que serve | (inventado) |
+| bicarbonato de sódio amaciar carne | (inventado) |
+
+---
+
 ## Primárias disponíveis (não usadas ainda)
 
 Do cluster restante em `seo/blog-keywords.csv` — alto volume, baixo KD, ainda sem página:

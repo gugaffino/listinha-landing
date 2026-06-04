@@ -200,6 +200,16 @@ const posts = [
     date: '2026-06-03',
     dateLabel: 'Jun 2026',
   },
+  {
+    slug: 'bicarbonato-de-sodio',
+    tag: 'Ingredientes',
+    title: 'Bicarbonato de sódio: o que é, usos na cozinha e dicas',
+    description: 'Bicarbonato de sódio serve para fermentar massas, amaciar carne, cozinhar feijão e limpar panelas. Saiba a diferença do fermento e como usar certo.',
+    img: 'https://images.pexels.com/photos/6996335/pexels-photo-6996335.jpeg?auto=compress&cs=tinysrgb&w=800&h=480&fit=crop',
+    imgAlt: 'Vista de cima de tigela com ingredientes de confeitaria em superfície branca',
+    date: '2026-06-04',
+    dateLabel: 'Jun 2026',
+  },
 ]
 
 export default function BlogPage() {
