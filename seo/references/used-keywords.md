@@ -413,6 +413,27 @@ Ao construir um cluster pra uma nova página:
 
 ---
 
+### 22. `lista de compras saudavel` → `/blog/lista-de-compras-saudavel`
+
+- **Fonte primária:** ✓ CSV (vol 590, KD 12, Informational)
+- **Score:** 590 / 12 = 49.2
+- **Usada na página:** `/blog/lista-de-compras-saudavel`
+- **Cluster:**
+
+| Keyword secundária | Fonte |
+|---|---|
+| lista de compras saudaveis | ✓ CSV (vol 170, KD 9) |
+| lista de compras saudável | ✓ CSV (vol 140, KD 11) |
+| lista de compras fitness | ✓ CSV (vol 260, KD 12) |
+| lista de compras fit | ✓ CSV (vol 140, KD 18) |
+| lista de compras para dieta | ✓ CSV (vol 140, KD 15) |
+| lista de compras saudavel e barata | ✓ CSV (vol 110, KD 12) |
+| lista de compras saudável e barata | ✓ CSV (vol 110, KD 17) |
+| como montar lista de compras saudável | (inventado) |
+| alimentos saudáveis para lista de compras | (inventado) |
+
+---
+
 ## Primárias disponíveis (não usadas ainda)
 
 Do cluster restante em `seo/blog-keywords.csv` — alto volume, baixo KD, ainda sem página:

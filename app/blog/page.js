@@ -210,6 +210,16 @@ const posts = [
     date: '2026-06-04',
     dateLabel: 'Jun 2026',
   },
+  {
+    slug: 'lista-de-compras-saudavel',
+    tag: 'Lista de compras',
+    title: 'Lista de compras saudável: guia completo e o que incluir',
+    description: 'O que colocar na lista de compras saudável por grupo alimentar, quanto custa por mês e dicas práticas para não sair do plano no mercado.',
+    img: 'https://images.pexels.com/photos/8844888/pexels-photo-8844888.jpeg?auto=compress&cs=tinysrgb&w=800&h=480&fit=crop',
+    imgAlt: 'Verduras e frutas frescas dispostas sobre mesa — vista de cima para lista de compras saudável',
+    date: '2026-06-04',
+    dateLabel: 'Jun 2026',
+  },
 ]
 
 export default function BlogPage() {
