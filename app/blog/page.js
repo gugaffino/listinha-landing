@@ -230,6 +230,16 @@ const posts = [
     date: '2026-06-05',
     dateLabel: 'Jun 2026',
   },
+  {
+    slug: 'batata-doce',
+    tag: 'Ingredientes',
+    title: 'Batata doce: o que é, valor nutricional e como usar',
+    description: 'Batata doce é um tubérculo com betacaroteno, fibras e carboidratos de baixo IG. Tipos, como escolher no mercado e como usar de verdade na cozinha.',
+    img: 'https://images.pexels.com/photos/6060223/pexels-photo-6060223.jpeg?auto=compress&cs=tinysrgb&w=800&h=480&fit=crop',
+    imgAlt: 'Batatas doces laranjas frescas em close-up sobre superfície escura',
+    date: '2026-06-05',
+    dateLabel: 'Jun 2026',
+  },
 ]
 
 export default function BlogPage() {

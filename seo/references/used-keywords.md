@@ -454,6 +454,27 @@ Ao construir um cluster pra uma nova página:
 
 ---
 
+### 24. `batata doce` → `/blog/batata-doce`
+
+- **Fonte primária:** ✓ CSV (vol 40.500, KD 37, Informational)
+- **Score:** 40500 / 37 = 1094.6
+- **Usada na página:** `/blog/batata-doce`
+- **Cluster:**
+
+| Keyword secundária | Fonte |
+|---|---|
+| batata-doce | ✓ CSV (vol 4.400, KD 36) |
+| batata doce carboidrato | ✓ CSV (vol 4.400, KD 34) |
+| calorias da batata doce | ✓ CSV (vol 2.400, KD 30) |
+| batata doce nutrientes | ✓ CSV (vol 590, KD 24) |
+| batata doce é carboidrato ou proteína | (inventado) |
+| batata doce como guardar em casa | (inventado) |
+| batata doce índice glicêmico | (inventado) |
+| tipos de batata doce Brasil | (inventado) |
+
+---
+
+
 ## Primárias disponíveis (não usadas ainda)
 
 Do cluster restante em `seo/blog-keywords.csv` — alto volume, baixo KD, ainda sem página:
