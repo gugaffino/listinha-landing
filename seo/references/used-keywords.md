@@ -434,6 +434,26 @@ Ao construir um cluster pra uma nova página:
 
 ---
 
+### 23. `dieta carnivora` → `/blog/dieta-carnivora`
+
+- **Fonte primária:** ✓ CSV (vol 9.900, KD 28, Informational)
+- **Score:** 9900 / 28 = 353
+- **Usada na página:** `/blog/dieta-carnivora`
+- **Cluster:**
+
+| Keyword secundária | Fonte |
+|---|---|
+| dieta carnívora | ✓ CSV (vol 1.900, KD 25) |
+| dieta sem carboidratos | ✓ CSV (vol 3.600, KD 25) |
+| dieta sem carboidrato | ✓ CSV (vol 1.900, KD 24) |
+| dieta cetogênica alimentos | ✓ CSV (vol 720, KD 20) |
+| alimentos dieta cetogenica | ✓ CSV (vol 590, KD 22) |
+| dieta carnivora o que é | (inventado) |
+| dieta carnivora cardápio semana | (inventado) |
+| o que comer na dieta carnivora | (inventado) |
+
+---
+
 ## Primárias disponíveis (não usadas ainda)
 
 Do cluster restante em `seo/blog-keywords.csv` — alto volume, baixo KD, ainda sem página:

@@ -220,6 +220,16 @@ const posts = [
     date: '2026-06-04',
     dateLabel: 'Jun 2026',
   },
+  {
+    slug: 'dieta-carnivora',
+    tag: 'Organização',
+    title: 'Dieta carnívora: o que é, alimentos e como começar',
+    description: 'A dieta carnívora elimina plantas e mantém só alimentos de origem animal. Veja o que comer, o que cortar, cardápio de 7 dias e os riscos que precisa conhecer.',
+    img: 'https://images.pexels.com/photos/675951/pexels-photo-675951.jpeg?auto=compress&cs=tinysrgb&w=800&h=480&fit=crop',
+    imgAlt: 'Bife suculento grelhado com molho em prato — dieta carnívora',
+    date: '2026-06-05',
+    dateLabel: 'Jun 2026',
+  },
 ]
 
 export default function BlogPage() {
