@@ -240,6 +240,16 @@ const posts = [
     date: '2026-06-05',
     dateLabel: 'Jun 2026',
   },
+  {
+    slug: 'beneficios-do-rabanete',
+    tag: 'Ingredientes',
+    title: 'Benefícios do rabanete: o que é e como usar na cozinha',
+    description: 'Rabanete tem vitamina C, fibra e apenas 16 kcal por 100g. Veja os benefícios, o valor nutricional e como usar esse legume barato sem desperdício.',
+    img: 'https://images.pexels.com/photos/1656663/pexels-photo-1656663.jpeg?auto=compress&cs=tinysrgb&w=800&h=480&fit=crop',
+    imgAlt: 'Rabanetes vermelhos frescos ao lado de cenouras sobre superfície de madeira',
+    date: '2026-06-06',
+    dateLabel: 'Jun 2026',
+  },
 ]
 
 export default function BlogPage() {

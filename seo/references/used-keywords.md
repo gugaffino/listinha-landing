@@ -474,6 +474,25 @@ Ao construir um cluster pra uma nova página:
 
 ---
 
+### 25. `benefícios do rabanete` → `/blog/beneficios-do-rabanete`
+
+- **Fonte primária:** ✓ CSV (vol 3.600, KD 18, Informational)
+- **Score:** 3600 / 18 = 200
+- **Usada na página:** `/blog/beneficios-do-rabanete`
+- **Cluster:**
+
+| Keyword secundária | Fonte |
+|---|---|
+| rabanete é bom para que | ✓ CSV (vol 720, KD 14) |
+| o que é rabanete | ✓ CSV (vol 1.000, KD 32) |
+| beneficios do rabanete | ✓ CSV (vol 3.600, KD 18) |
+| rabanete para que serve | (inventado) |
+| rabanete como usar na cozinha | (inventado) |
+| rabanete como guardar | (inventado) |
+| rabanete nutrientes | (inventado) |
+
+---
+
 
 ## Primárias disponíveis (não usadas ainda)
 
