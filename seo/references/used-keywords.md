@@ -494,6 +494,25 @@ Ao construir um cluster pra uma nova página:
 ---
 
 
+### 26. `espinafre beneficios` → `/blog/espinafre-beneficios`
+
+- **Fonte primária:** ✓ CSV (vol 3.600, KD 22, Informational)
+- **Score:** 3600 / 22 = 163.6
+- **Usada na página:** `/blog/espinafre-beneficios`
+- **Cluster:**
+
+| Keyword secundária | Fonte |
+|---|---|
+| espinafre benefícios | ✓ CSV (vol 1.600, KD 29) |
+| benefícios do espinafre | ✓ CSV (vol 2.900, KD 26) |
+| beneficios do espinafre | ✓ CSV (vol 2.900, KD 26) |
+| espinafre é bom para quê | ✓ CSV (vol 1.300, KD 32) |
+| espinafre valor nutricional | (inventado) |
+| espinafre como usar na cozinha | (inventado) |
+| espinafre cru ou cozido qual é melhor | (inventado) |
+
+---
+
 ## Primárias disponíveis (não usadas ainda)
 
 Do cluster restante em `seo/blog-keywords.csv` — alto volume, baixo KD, ainda sem página:

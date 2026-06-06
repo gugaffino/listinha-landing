@@ -250,6 +250,16 @@ const posts = [
     date: '2026-06-06',
     dateLabel: 'Jun 2026',
   },
+  {
+    slug: 'espinafre-beneficios',
+    tag: 'Ingredientes',
+    title: 'Espinafre: benefícios, valor nutricional e como usar',
+    description: 'Espinafre tem 23 kcal e vitamina K acima de 400% do VD. Veja os benefícios, o que muda entre cru e cozido e como usar na cozinha sem perder os nutrientes.',
+    img: 'https://images.pexels.com/photos/7195272/pexels-photo-7195272.jpeg?auto=compress&cs=tinysrgb&w=800&h=480&fit=crop',
+    imgAlt: 'Folhas frescas de espinafre sobre fundo verde — close-up detalhado',
+    date: '2026-06-06',
+    dateLabel: 'Jun 2026',
+  },
 ]
 
 export default function BlogPage() {
