@@ -260,6 +260,16 @@ const posts = [
     date: '2026-06-06',
     dateLabel: 'Jun 2026',
   },
+  {
+    slug: 'alcaparras',
+    tag: 'Ingredientes',
+    title: 'Alcaparras: o que são, como usar e onde comprar no Brasil',
+    description: 'Alcaparras são os botões florais do Mediterrâneo, conservados em salmoura ou sal grosso. Saiba o que são, como usar em receitas e onde encontrar no Brasil.',
+    img: 'https://images.pexels.com/photos/18661674/pexels-photo-18661674.jpeg?auto=compress&cs=tinysrgb&w=800&h=480&fit=crop',
+    imgAlt: 'Alcaparras em pote de vidro — botões florais conservados em salmoura',
+    date: '2026-06-07',
+    dateLabel: 'Jun 2026',
+  },
 ]
 
 export default function BlogPage() {

@@ -513,6 +513,25 @@ Ao construir um cluster pra uma nova página:
 
 ---
 
+### 27. `alcaparras` → `/blog/alcaparras`
+
+- **Fonte primária:** ✓ CSV (vol 22.200, KD 24, Informational+Transactional)
+- **Score:** 22200 / 24 = 925
+- **Usada na página:** `/blog/alcaparras`
+- **Cluster:**
+
+| Keyword secundária | Fonte |
+|---|---|
+| o que é alcaparras | ✓ CSV (vol 1.600, KD 31) |
+| alcaparras o que é | ✓ CSV (vol 1.300, KD 29) |
+| o que e alcaparras | ✓ CSV (vol 720, KD 31) |
+| alcaparra o que é | ✓ CSV (vol 590, KD 25) |
+| alcaparras para que serve | (inventado) |
+| alcaparras como usar em receitas | (inventado) |
+| alcaparras onde comprar no brasil | (inventado) |
+
+---
+
 ## Primárias disponíveis (não usadas ainda)
 
 Do cluster restante em `seo/blog-keywords.csv` — alto volume, baixo KD, ainda sem página:
