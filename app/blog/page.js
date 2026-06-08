@@ -280,6 +280,16 @@ const posts = [
     date: '2026-06-08',
     dateLabel: 'Jun 2026',
   },
+  {
+    slug: 'o-que-e-cream-cheese',
+    tag: 'Ingredientes',
+    title: 'O que é cream cheese: tipos, usos e diferença do requeijão',
+    description: 'Cream cheese é um queijo fresco macio com sabor ácido e textura firme. Saiba o que é, tipos, como usar na cozinha e como ele difere do requeijão.',
+    img: 'https://images.pexels.com/photos/6858663/pexels-photo-6858663.jpeg?auto=compress&cs=tinysrgb&w=800&h=480&fit=crop',
+    imgAlt: 'Sanduíche com cream cheese e tomates — queijo cremoso macio sobre pão',
+    date: '2026-06-08',
+    dateLabel: 'Jun 2026',
+  },
 ]
 
 export default function BlogPage() {

@@ -551,6 +551,26 @@ Ao construir um cluster pra uma nova página:
 
 ---
 
+### 29. `o que é cream cheese` → `/blog/o-que-e-cream-cheese`
+
+- **Fonte primária:** ✓ CSV (vol 5.400, KD 31, Informational)
+- **Score:** 5400 / 31 = 174.2
+- **Usada na página:** `/blog/o-que-e-cream-cheese`
+- **Cluster:**
+
+| Keyword secundária | Fonte |
+|---|---|
+| cream cheese o que é | ✓ CSV (vol 2.900, KD 21) |
+| o que e cream cheese | ✓ CSV (vol 2.400, KD 30) |
+| o que é o cream cheese | ✓ CSV (vol 2.400, KD 27) |
+| cream cheese o que e | ✓ CSV (vol 1.600, KD 17) |
+| cream cheese para que serve | (inventado) |
+| cream cheese diferença requeijão | (inventado) |
+| cream cheese como guardar | (inventado) |
+| cream cheese como usar em receitas | (inventado) |
+
+---
+
 ## Primárias disponíveis (não usadas ainda)
 
 Do cluster restante em `seo/blog-keywords.csv` — alto volume, baixo KD, ainda sem página:
