@@ -270,6 +270,16 @@ const posts = [
     date: '2026-06-07',
     dateLabel: 'Jun 2026',
   },
+  {
+    slug: 'kiwi-beneficios',
+    tag: 'Ingredientes',
+    title: 'Kiwi: benefícios, nutrientes e como escolher no mercado',
+    description: 'Kiwi tem mais vitamina C que a laranja, actinidina para digestão e 61 kcal por 100g. Veja os benefícios, os tipos disponíveis no Brasil e como guardar.',
+    img: 'https://images.pexels.com/photos/867349/pexels-photo-867349.jpeg?auto=compress&cs=tinysrgb&w=800&h=480&fit=crop',
+    imgAlt: 'Kiwis frescos fatiados ao meio mostrando o interior verde com sementes pretas',
+    date: '2026-06-08',
+    dateLabel: 'Jun 2026',
+  },
 ]
 
 export default function BlogPage() {

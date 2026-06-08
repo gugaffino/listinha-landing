@@ -532,6 +532,25 @@ Ao construir um cluster pra uma nova página:
 
 ---
 
+### 28. `kiwi benefícios` → `/blog/kiwi-beneficios`
+
+- **Fonte primária:** ✓ CSV (vol 5.400, KD 31, Informational)
+- **Score:** 5400 / 31 = 174.2
+- **Usada na página:** `/blog/kiwi-beneficios`
+- **Cluster:**
+
+| Keyword secundária | Fonte |
+|---|---|
+| kiwi benefícios | ✓ CSV (vol 1.600, KD 29) |
+| kiwi para que serve | (inventado) |
+| kiwi vitamina C benefício | (inventado) |
+| kiwi valor nutricional | (inventado) |
+| kiwi amarelo ou verde diferença | (inventado) |
+| como comer kiwi | (inventado) |
+| kiwi casca pode comer | (inventado) |
+
+---
+
 ## Primárias disponíveis (não usadas ainda)
 
 Do cluster restante em `seo/blog-keywords.csv` — alto volume, baixo KD, ainda sem página:
