@@ -571,6 +571,25 @@ Ao construir um cluster pra uma nova página:
 
 ---
 
+### 30. `o que é mirtilo` → `/blog/o-que-e-mirtilo`
+
+- **Fonte primária:** ✓ CSV (vol 5.400, KD 32, Informational)
+- **Score:** 5400 / 32 = 168.75
+- **Usada na página:** `/blog/o-que-e-mirtilo`
+- **Cluster:**
+
+| Keyword secundária | Fonte |
+|---|---|
+| o que mirtilo | ✓ CSV (vol 2.900, KD 29) |
+| mirtilo o que é | ✓ CSV (vol 2.400, KD 29) |
+| quais são as frutas vermelhas | ✓ CSV (vol 1.900, KD 24) |
+| mirtilo benefícios | (inventado) |
+| mirtilo congelado vale a pena | (inventado) |
+| mirtilo onde comprar no brasil | (inventado) |
+| mirtilo preço supermercado | (inventado) |
+
+---
+
 ## Primárias disponíveis (não usadas ainda)
 
 Do cluster restante em `seo/blog-keywords.csv` — alto volume, baixo KD, ainda sem página:

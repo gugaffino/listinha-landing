@@ -290,6 +290,16 @@ const posts = [
     date: '2026-06-08',
     dateLabel: 'Jun 2026',
   },
+  {
+    slug: 'o-que-e-mirtilo',
+    tag: 'Ingredientes',
+    title: 'O que é mirtilo: tipos, benefícios e se vale o preço',
+    description: 'Mirtilo é o blueberry europeu — pequeno, azul e rico em antioxidantes. Saiba o que é, os benefícios comprovados, como usar na cozinha e onde comprar no Brasil.',
+    img: 'https://images.pexels.com/photos/1395958/pexels-photo-1395958.jpeg?auto=compress&cs=tinysrgb&w=800&h=480&fit=crop',
+    imgAlt: 'Mirtilos frescos em close-up — fruta azul-arroxeada rica em antocianinas',
+    date: '2026-06-09',
+    dateLabel: 'Jun 2026',
+  },
 ]
 
 export default function BlogPage() {
