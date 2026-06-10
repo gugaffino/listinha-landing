@@ -609,6 +609,26 @@ Ao construir um cluster pra uma nova página:
 
 ---
 
+### 32. `arroz parboilizado` → `/blog/o-que-e-arroz-parboilizado`
+
+- **Fonte primária:** ✓ CSV (vol 27.100, KD 24, Informational)
+- **Score:** 27100 / 24 = 1129.2
+- **Usada na página:** `/blog/o-que-e-arroz-parboilizado`
+- **Cluster:**
+
+| Keyword secundária | Fonte |
+|---|---|
+| o que é arroz parboilizado | ✓ CSV (vol 2.900, KD 30) |
+| arroz parboilizado o que é | ✓ CSV (vol 1.900, KD 33) |
+| parboilizado arroz | ✓ CSV (vol 4.400, KD 36) |
+| arroz parboilizado faz mal | ✓ CSV (vol 590, KD 27) |
+| arroz parboilizado é bom | ✓ CSV (vol 590, KD 28) |
+| diferença arroz branco e arroz parboilizado | (inventado) |
+| arroz parboilizado como cozinhar | (inventado) |
+| arroz parboilizado índice glicêmico | (inventado) |
+
+---
+
 ## Primárias disponíveis (não usadas ainda)
 
 Do cluster restante em `seo/blog-keywords.csv` — alto volume, baixo KD, ainda sem página:

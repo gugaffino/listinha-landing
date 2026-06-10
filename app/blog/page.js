@@ -310,6 +310,16 @@ const posts = [
     date: '2026-06-10',
     dateLabel: 'Jun 2026',
   },
+  {
+    slug: 'o-que-e-arroz-parboilizado',
+    tag: 'Ingredientes',
+    title: 'Arroz parboilizado: o que é, diferenças e como cozinhar',
+    description: 'Arroz parboilizado passa por um pré-cozimento que preserva nutrientes do grão. Veja a diferença do branco e integral, como cozinhar e quando vale comprar.',
+    img: 'https://images.pexels.com/photos/1311771/pexels-photo-1311771.jpeg?auto=compress&cs=tinysrgb&w=800&h=480&fit=crop',
+    imgAlt: 'Bowl de arroz cozido com grãos soltos sobre superfície de madeira clara',
+    date: '2026-06-10',
+    dateLabel: 'Jun 2026',
+  },
 ]
 
 export default function BlogPage() {
