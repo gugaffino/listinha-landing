@@ -300,6 +300,16 @@ const posts = [
     date: '2026-06-09',
     dateLabel: 'Jun 2026',
   },
+  {
+    slug: 'o-que-e-maca',
+    tag: 'Ingredientes',
+    title: 'O que é maçã: tipos, calorias e como usar na cozinha',
+    description: 'Fuji, gala ou verde: cada tipo tem uso diferente na cozinha. Veja calorias, benefícios e como escolher no mercado.',
+    img: 'https://images.pexels.com/photos/89434/pexels-photo-89434.jpeg?auto=compress&cs=tinysrgb&w=800&h=480&fit=crop',
+    imgAlt: 'Maçã vermelha fresca em close-up sobre superfície escura — fruta da variedade gala',
+    date: '2026-06-10',
+    dateLabel: 'Jun 2026',
+  },
 ]
 
 export default function BlogPage() {

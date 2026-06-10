@@ -590,6 +590,25 @@ Ao construir um cluster pra uma nova página:
 
 ---
 
+### 31. `maça` → `/blog/o-que-e-maca`
+
+- **Fonte primária:** ✓ CSV (vol 40.500, KD 38, Informational)
+- **Score:** 40500 / 38 = 1065.79
+- **Usada na página:** `/blog/o-que-e-maca`
+- **Cluster:**
+
+| Keyword secundária | Fonte |
+|---|---|
+| o que é maçã | (inventado) |
+| tipos de maçã | (inventado) |
+| maçã calorias | (inventado) |
+| maçã fuji vs gala | (inventado) |
+| maçã verde benefícios | (inventado) |
+| como guardar maçã | (inventado) |
+| maçã pode comer com casca | (inventado) |
+
+---
+
 ## Primárias disponíveis (não usadas ainda)
 
 Do cluster restante em `seo/blog-keywords.csv` — alto volume, baixo KD, ainda sem página:
