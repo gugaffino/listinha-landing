@@ -629,6 +629,25 @@ Ao construir um cluster pra uma nova página:
 
 ---
 
+### 33. `azeite de oliva quais os beneficios` → `/blog/azeite-de-oliva`
+
+- **Fonte primária:** ✓ CSV (vol 2.900, KD 19, Informational)
+- **Score:** 2900 / 19 = 152.6
+- **Usada na página:** `/blog/azeite-de-oliva`
+- **Cluster:**
+
+| Keyword secundária | Fonte |
+|---|---|
+| azeite de oliva quais os beneficios | ✓ CSV (vol 2.900, KD 19) |
+| azeite de oliva como usar na cozinha | (inventado) |
+| azeite de oliva extra virgem diferença | (inventado) |
+| azeite de oliva ponto de fumaça | (inventado) |
+| azeite de oliva pode fritar | (inventado) |
+| azeite de oliva como guardar | (inventado) |
+| benefícios do azeite de oliva extra virgem | (inventado) |
+
+---
+
 ## Primárias disponíveis (não usadas ainda)
 
 Do cluster restante em `seo/blog-keywords.csv` — alto volume, baixo KD, ainda sem página:

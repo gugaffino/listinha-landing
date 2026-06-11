@@ -320,6 +320,16 @@ const posts = [
     date: '2026-06-10',
     dateLabel: 'Jun 2026',
   },
+  {
+    slug: 'azeite-de-oliva',
+    tag: 'Ingredientes',
+    title: 'Azeite de oliva: benefícios, tipos e como usar na cozinha',
+    description: 'Extra virgem, virgem ou refinado: saiba a diferença, quais os benefícios comprovados, se pode fritar e como guardar sem perder a qualidade.',
+    img: 'https://images.pexels.com/photos/6094524/pexels-photo-6094524.jpeg?auto=compress&cs=tinysrgb&w=800&h=480&fit=crop',
+    imgAlt: 'Pessoa despejando azeite de oliva extra virgem sobre salada fresca com tomates',
+    date: '2026-06-11',
+    dateLabel: 'Jun 2026',
+  },
 ]
 
 export default function BlogPage() {
