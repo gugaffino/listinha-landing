@@ -648,6 +648,25 @@ Ao construir um cluster pra uma nova página:
 
 ---
 
+### 34. `alho` → `/blog/o-que-e-alho`
+
+- **Fonte primária:** ✓ CSV (vol 22.200, KD 42, Informational)
+- **Score:** 22200 / 42 = 528.6
+- **Usada na página:** `/blog/o-que-e-alho`
+- **Cluster:**
+
+| Keyword secundária | Fonte |
+|---|---|
+| para que serve alho | (inventado) |
+| benefícios do alho | (inventado) |
+| alho cru ou cozido qual é melhor | (inventado) |
+| como guardar alho em casa | (inventado) |
+| quantos dentes de alho por dia | (inventado) |
+| tipos de alho no brasil | (inventado) |
+| alho em pó diferença alho fresco | (inventado) |
+
+---
+
 ## Primárias disponíveis (não usadas ainda)
 
 Do cluster restante em `seo/blog-keywords.csv` — alto volume, baixo KD, ainda sem página:

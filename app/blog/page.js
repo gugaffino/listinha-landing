@@ -330,6 +330,16 @@ const posts = [
     date: '2026-06-11',
     dateLabel: 'Jun 2026',
   },
+  {
+    slug: 'o-que-e-alho',
+    tag: 'Ingredientes',
+    title: 'Alho: o que é, benefícios e como usar na cozinha',
+    description: 'Saiba o que é alho, os tipos disponíveis, como usar cru ou cozido, os benefícios comprovados e como guardar sem perder o aroma.',
+    img: 'https://images.pexels.com/photos/1392585/pexels-photo-1392585.jpeg?auto=compress&cs=tinysrgb&w=800&h=480&fit=crop',
+    imgAlt: 'Cabeças de alho sobre superfície marrom — bulbos inteiros com dentes visíveis',
+    date: '2026-06-12',
+    dateLabel: 'Jun 2026',
+  },
 ]
 
 export default function BlogPage() {
