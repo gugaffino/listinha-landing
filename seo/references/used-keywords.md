@@ -667,6 +667,25 @@ Ao construir um cluster pra uma nova página:
 
 ---
 
+### 35. `benefícios do pepino` → `/blog/beneficios-do-pepino`
+
+- **Fonte primária:** ✓ CSV (vol 6.600, KD 44, Informational)
+- **Score:** 6600 / 44 = 150
+- **Usada na página:** `/blog/beneficios-do-pepino`
+- **Cluster:**
+
+| Keyword secundária | Fonte |
+|---|---|
+| beneficios do pepino | ✓ CSV (vol 3.600, KD 35) |
+| pepino beneficios | ✓ CSV (vol 1.900, KD 36) |
+| benefícios do pepino para saúde | ✓ CSV (vol 880, KD 30) |
+| pepino o que é | (inventado) |
+| pepino como usar na cozinha | (inventado) |
+| pepino valor nutricional | (inventado) |
+| pepino como guardar em casa | (inventado) |
+
+---
+
 ## Primárias disponíveis (não usadas ainda)
 
 Do cluster restante em `seo/blog-keywords.csv` — alto volume, baixo KD, ainda sem página:

@@ -340,6 +340,16 @@ const posts = [
     date: '2026-06-12',
     dateLabel: 'Jun 2026',
   },
+  {
+    slug: 'beneficios-do-pepino',
+    tag: 'Ingredientes',
+    title: 'Benefícios do pepino: tabela nutricional e como usar',
+    description: 'Pepino tem 16 kcal por 100g e 95% de água. Veja os benefícios para saúde, o valor nutricional, os tipos disponíveis no Brasil e como usar na cozinha.',
+    img: 'https://images.pexels.com/photos/2329440/pexels-photo-2329440.jpeg?auto=compress&cs=tinysrgb&w=800&h=480&fit=crop',
+    imgAlt: 'Pepinos frescos inteiros empilhados em close-up — vegetais verdes brilhantes',
+    date: '2026-06-13',
+    dateLabel: 'Jun 2026',
+  },
 ]
 
 export default function BlogPage() {
