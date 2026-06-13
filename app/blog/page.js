@@ -350,6 +350,16 @@ const posts = [
     date: '2026-06-13',
     dateLabel: 'Jun 2026',
   },
+  {
+    slug: 'o-que-e-ricota',
+    tag: 'Ingredientes',
+    title: 'Ricota: o que é, diferença do cottage e como usar',
+    description: 'Ricota é feita do soro do leite, não do leite em si. Saiba o que é, a diferença do cottage e requeijão, o valor nutricional e como usar na cozinha.',
+    img: 'https://images.pexels.com/photos/4109946/pexels-photo-4109946.jpeg?auto=compress&cs=tinysrgb&w=800&h=480&fit=crop',
+    imgAlt: 'Close-up de queijo fresco branco e cremoso — ricota fresca para receitas',
+    date: '2026-06-13',
+    dateLabel: 'Jun 2026',
+  },
 ]
 
 export default function BlogPage() {

@@ -686,6 +686,24 @@ Ao construir um cluster pra uma nova página:
 
 ---
 
+### 36. `ricota é queijo` → `/blog/o-que-e-ricota`
+
+- **Fonte primária:** ✓ CSV (vol 3.600, KD 26, Informational)
+- **Score:** 3600 / 26 = 138.5
+- **Usada na página:** `/blog/o-que-e-ricota`
+- **Cluster:**
+
+| Keyword secundária | Fonte |
+|---|---|
+| o que é ricota | ✓ CSV (vol 2.400, KD 24) |
+| ricota diferença cottage | (inventado) |
+| ricota diferença requeijão | (inventado) |
+| ricota como usar na cozinha | (inventado) |
+| ricota engorda | (inventado) |
+| ricota onde comprar | (inventado) |
+
+---
+
 ## Primárias disponíveis (não usadas ainda)
 
 Do cluster restante em `seo/blog-keywords.csv` — alto volume, baixo KD, ainda sem página:
