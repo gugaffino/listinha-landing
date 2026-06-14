@@ -370,6 +370,16 @@ const posts = [
     date: '2026-06-14',
     dateLabel: 'Jun 2026',
   },
+  {
+    slug: 'o-que-e-cavala',
+    tag: 'Ingredientes',
+    title: 'O que é cavala: o peixe com mais ômega-3 que o salmão',
+    description: 'Cavala é um peixe azul com 5.100mg de ômega-3 por 100g — mais que o salmão e o atum em conserva. Saiba o que é, onde comprar e como preparar.',
+    img: 'https://images.pexels.com/photos/14616737/pexels-photo-14616737.jpeg?auto=compress&cs=tinysrgb&w=800&h=480&fit=crop',
+    imgAlt: 'Cavala azul fresca sobre gelo em peixaria — peixe inteiro com coloração azul metálica',
+    date: '2026-06-14',
+    dateLabel: 'Jun 2026',
+  },
 ]
 
 export default function BlogPage() {

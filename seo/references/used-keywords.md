@@ -724,6 +724,25 @@ Ao construir um cluster pra uma nova página:
 
 ---
 
+### 38. `cavala` → `/blog/o-que-e-cavala`
+
+- **Fonte primária:** ✓ CSV (vol 8.100, KD 28, Informational)
+- **Score:** 8100 / 28 = 289.3
+- **Usada na página:** `/blog/o-que-e-cavala`
+- **Cluster:**
+
+| Keyword secundária | Fonte |
+|---|---|
+| o que é cavala peixe | (inventado) |
+| cavala benefícios | (inventado) |
+| cavala ômega-3 | (inventado) |
+| como preparar cavala | (inventado) |
+| cavala grelhada receita | (inventado) |
+| cavala em conserva | (inventado) |
+| cavala diferença atum salmão | (inventado) |
+
+---
+
 ## Primárias disponíveis (não usadas ainda)
 
 Do cluster restante em `seo/blog-keywords.csv` — alto volume, baixo KD, ainda sem página:
