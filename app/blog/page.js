@@ -360,6 +360,16 @@ const posts = [
     date: '2026-06-13',
     dateLabel: 'Jun 2026',
   },
+  {
+    slug: 'lista-de-compras-mercado',
+    tag: 'Lista de compras',
+    title: 'Lista de compras mercado: como organizar e gastar menos',
+    description: 'Lista de compras para o mercado por categoria: hortifruti, carnes, laticínios, limpeza. Guia completo com dicas para gastar menos no supermercado.',
+    img: 'https://images.pexels.com/photos/3985094/pexels-photo-3985094.jpeg?auto=compress&cs=tinysrgb&w=800&h=480&fit=crop',
+    imgAlt: 'Família fazendo compras no supermercado com lista de compras na mão',
+    date: '2026-06-14',
+    dateLabel: 'Jun 2026',
+  },
 ]
 
 export default function BlogPage() {

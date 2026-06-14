@@ -704,6 +704,26 @@ Ao construir um cluster pra uma nova página:
 
 ---
 
+### 37. `lista de compras mercado` → `/blog/lista-de-compras-mercado`
+
+- **Fonte primária:** ✓ CSV (vol 12.100, KD 23, Informational)
+- **Score:** 12100 / 23 = 526
+- **Usada na página:** `/blog/lista-de-compras-mercado`
+- **Cluster:**
+
+| Keyword secundária | Fonte |
+|---|---|
+| lista de compras supermercado | ✓ CSV (vol 9.900, KD 21) |
+| lista de mercado | ✓ CSV (vol 6.600, KD 18) |
+| lista de mercado completa | ✓ CSV (vol 2.900, KD 18) |
+| lista de compras de mercado | ✓ CSV (vol 4.400, KD 25) |
+| lista de compras supermercado completa | ✓ CSV (vol 4.400, KD 17) |
+| lista completa de compras supermercado | ✓ CSV (vol 880, KD 11) |
+| lista de compra de mercado | ✓ CSV (vol 480, KD 17) |
+| como organizar lista de compras por corredor | (inventado) |
+
+---
+
 ## Primárias disponíveis (não usadas ainda)
 
 Do cluster restante em `seo/blog-keywords.csv` — alto volume, baixo KD, ainda sem página:
