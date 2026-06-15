@@ -380,6 +380,16 @@ const posts = [
     date: '2026-06-14',
     dateLabel: 'Jun 2026',
   },
+  {
+    slug: 'alimentos-ricos-em-proteinas',
+    tag: 'Ingredientes',
+    title: '10 alimentos ricos em proteínas para o dia a dia',
+    description: 'Os 10 alimentos mais práticos em proteína: ovos, frango, feijão, atum. Quantidade por porção e como incluir sem suplemento na rotina.',
+    img: 'https://images.pexels.com/photos/5966434/pexels-photo-5966434.jpeg?auto=compress&cs=tinysrgb&w=800&h=480&fit=crop',
+    imgAlt: 'Flatlay de alimentos nutritivos variados — fontes de proteínas incluindo ovos e nozes',
+    date: '2026-06-15',
+    dateLabel: 'Jun 2026',
+  },
 ]
 
 export default function BlogPage() {

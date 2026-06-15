@@ -743,6 +743,24 @@ Ao construir um cluster pra uma nova página:
 
 ---
 
+### 39. `10 alimentos ricos em proteínas` → `/blog/alimentos-ricos-em-proteinas`
+
+- **Fonte primária:** ✓ CSV (vol 2.900, KD 21, Informational)
+- **Score:** 2900 / 21 = 138.1
+- **Usada na página:** `/blog/alimentos-ricos-em-proteinas`
+- **Cluster:**
+
+| Keyword secundária | Fonte |
+|---|---|
+| lista de proteínas | ✓ CSV (vol 880, KD 24) |
+| 50 alimentos que saciam e não engordam | ✓ CSV (vol 1.300, KD 11) |
+| alimentos ricos em proteína vegetal | (inventado) |
+| quanto de proteína por dia | (inventado) |
+| fontes de proteína para o dia a dia | (inventado) |
+| proteína sem carne | (inventado) |
+
+---
+
 ## Primárias disponíveis (não usadas ainda)
 
 Do cluster restante em `seo/blog-keywords.csv` — alto volume, baixo KD, ainda sem página:
