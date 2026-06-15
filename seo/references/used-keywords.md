@@ -761,6 +761,25 @@ Ao construir um cluster pra uma nova página:
 
 ---
 
+### 40. `margarina` → `/blog/o-que-e-margarina`
+
+- **Fonte primária:** ✓ CSV (vol 22.200, KD 26, Informational)
+- **Score:** 22200 / 26 = 853.8
+- **Usada na página:** `/blog/o-que-e-margarina`
+- **Cluster:**
+
+| Keyword secundária | Fonte |
+|---|---|
+| margarina o que é | (inventado) |
+| margarina diferença manteiga | (inventado) |
+| margarina faz mal | (inventado) |
+| margarina tem gordura trans | (inventado) |
+| margarina ou manteiga qual usar na receita | (inventado) |
+| tipos de margarina | (inventado) |
+| margarina vegana | (inventado) |
+
+---
+
 ## Primárias disponíveis (não usadas ainda)
 
 Do cluster restante em `seo/blog-keywords.csv` — alto volume, baixo KD, ainda sem página:

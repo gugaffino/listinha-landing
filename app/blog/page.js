@@ -390,6 +390,16 @@ const posts = [
     date: '2026-06-15',
     dateLabel: 'Jun 2026',
   },
+  {
+    slug: 'o-que-e-margarina',
+    tag: 'Ingredientes',
+    title: 'Margarina: o que é, diferença da manteiga e quando usar',
+    description: 'Margarina é feita de óleos vegetais hidrogenados. Saiba a diferença da manteiga, os tipos disponíveis e quando usar cada uma em receitas.',
+    img: 'https://images.pexels.com/photos/4577371/pexels-photo-4577371.jpeg?auto=compress&cs=tinysrgb&w=800&h=480&fit=crop',
+    imgAlt: 'Pessoa espalhando manteiga ou margarina sobre fatia de pão — spread cremoso no café da manhã',
+    date: '2026-06-15',
+    dateLabel: 'Jun 2026',
+  },
 ]
 
 export default function BlogPage() {
