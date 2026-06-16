@@ -400,6 +400,16 @@ const posts = [
     date: '2026-06-15',
     dateLabel: 'Jun 2026',
   },
+  {
+    slug: 'frutas-citricas',
+    tag: 'Ingredientes',
+    title: 'Frutas cítricas: quais são, benefícios e como usar',
+    description: 'Laranja, limão, tangerina, pomelo: guia completo das frutas cítricas com benefícios da vitamina C e dicas para escolher no mercado.',
+    img: 'https://images.pexels.com/photos/1002778/pexels-photo-1002778.jpeg?auto=compress&cs=tinysrgb&w=800&h=480&fit=crop',
+    imgAlt: 'Fatias de laranja fresca em close-up mostrando o interior suculento e segmentos cítricos',
+    date: '2026-06-16',
+    dateLabel: 'Jun 2026',
+  },
 ]
 
 export default function BlogPage() {

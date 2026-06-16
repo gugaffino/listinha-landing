@@ -780,6 +780,25 @@ Ao construir um cluster pra uma nova página:
 
 ---
 
+### 41. `frutas citricas` → `/blog/frutas-citricas`
+
+- **Fonte primária:** ✓ CSV (vol 9.900, KD 22, Informational)
+- **Score:** 9900 / 22 = 450
+- **Usada na página:** `/blog/frutas-citricas`
+- **Cluster:**
+
+| Keyword secundária | Fonte |
+|---|---|
+| frutas cítricas | ✓ CSV (vol 4.400, KD 23) |
+| frutas cítricas quais são | ✓ CSV (vol 1.600, KD 28) |
+| quais frutas são citricas | ✓ CSV (vol 1.000, KD 20) |
+| quais são as frutas vermelhas | ✓ CSV (vol 1.900, KD 24) |
+| frutas cítricas benefícios | (inventado) |
+| lista de frutas cítricas | (inventado) |
+| como usar frutas cítricas na cozinha | (inventado) |
+
+---
+
 ## Primárias disponíveis (não usadas ainda)
 
 Do cluster restante em `seo/blog-keywords.csv` — alto volume, baixo KD, ainda sem página:
