@@ -816,6 +816,22 @@ Ao construir um cluster pra uma nova página:
 | lista de frutas cítricas | (inventado) |
 | como usar frutas cítricas na cozinha | (inventado) |
 
+### 43. `alimentos sem glúten` → `/blog/alimentos-sem-gluten`
+
+- **Fonte primária:** ✓ CSV (vol 5.400, KD 21, Informational)
+- **Score:** 5400 / 21 = 257.1
+- **Usada na página:** `/blog/alimentos-sem-gluten`
+- **Cluster:**
+
+| Keyword secundária | Fonte |
+|---|---|
+| alimentos que não contém glúten | ✓ CSV (vol 1.300, KD 13) |
+| o que é glúten | (inventado) |
+| farinha sem glúten quais são | (inventado) |
+| lista de compras sem glúten | (inventado) |
+| o que tem glúten no supermercado | (inventado) |
+| dieta sem glúten o que pode comer | (inventado) |
+
 ---
 
 ## Primárias disponíveis (não usadas ainda)

@@ -420,6 +420,16 @@ const posts = [
     date: '2026-06-17',
     dateLabel: 'Jun 2026',
   },
+  {
+    slug: 'alimentos-sem-gluten',
+    tag: 'Alimentação',
+    title: 'Alimentos sem glúten: lista completa para o mercado',
+    description: 'Arroz, milho, batata e carnes frescas são sem glúten. Veja lista completa, o que evitar e como ler o rótulo na hora da compra.',
+    img: 'https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=800&h=480&fit=crop',
+    imgAlt: 'Tigelas coloridas com arroz, quinoa e vegetais frescos — alimentos naturalmente sem glúten',
+    date: '2026-06-17',
+    dateLabel: 'Jun 2026',
+  },
 ]
 
 export default function BlogPage() {
