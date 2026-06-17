@@ -780,6 +780,25 @@ Ao construir um cluster pra uma nova página:
 
 ---
 
+### 42. `amêndoas` → `/blog/o-que-e-amendoa`
+
+- **Fonte primária:** ✓ CSV (vol 6.600, KD 35, Informational)
+- **Score:** 6600 / 35 = 188.6
+- **Usada na página:** `/blog/o-que-e-amendoa`
+- **Cluster:**
+
+| Keyword secundária | Fonte |
+|---|---|
+| amendoas beneficios | ✓ CSV (vol 2.900, KD 27) |
+| amêndoa para que serve | (inventado) |
+| amêndoa torrada ou crua diferença | (inventado) |
+| amêndoa quantas por dia | (inventado) |
+| amêndoa como guardar em casa | (inventado) |
+| amêndoa onde comprar | (inventado) |
+| amêndoa tem lactose ou glúten | (inventado) |
+
+---
+
 ### 41. `frutas citricas` → `/blog/frutas-citricas`
 
 - **Fonte primária:** ✓ CSV (vol 9.900, KD 22, Informational)

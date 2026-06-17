@@ -410,6 +410,16 @@ const posts = [
     date: '2026-06-16',
     dateLabel: 'Jun 2026',
   },
+  {
+    slug: 'o-que-e-amendoa',
+    tag: 'Ingredientes',
+    title: 'Amêndoa: o que é, benefícios e como usar na cozinha',
+    description: 'O que é amêndoa, para que serve, quantas comer por dia, a diferença entre crua e torrada e como guardar em casa.',
+    img: 'https://images.pexels.com/photos/4051132/pexels-photo-4051132.jpeg?auto=compress&cs=tinysrgb&w=800&h=480&fit=crop',
+    imgAlt: 'Amêndoas cruas espalhadas em close, mostrando a textura natural da semente',
+    date: '2026-06-17',
+    dateLabel: 'Jun 2026',
+  },
 ]
 
 export default function BlogPage() {
