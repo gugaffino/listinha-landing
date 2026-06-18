@@ -851,6 +851,22 @@ Ao construir um cluster pra uma nova página:
 | o que substituir o açúcar na dieta | (inventado) |
 | quanto tempo para perder o vício em açúcar | (inventado) |
 
+### 45. `pão branco` → `/blog/o-que-e-pao-branco`
+
+- **Fonte primária:** ✓ CSV (vol 2900, KD 20, Score = 145.0, Informational)
+- **Usada na página:** `/blog/o-que-e-pao-branco`
+- **Cluster:**
+
+| Keyword secundária | Fonte |
+|---|---|
+| pães brancos | ✓ CSV (vol 2900, KD 23) |
+| o que é pão branco | ✓ CSV (vol 880, KD 25) |
+| pão branco versus integral diferença | (inventado) |
+| pão branco engorda | (inventado) |
+| quantas calorias tem pão branco | (inventado) |
+| como escolher pão no supermercado | (inventado) |
+| pão branco como armazenar | (inventado) |
+
 ---
 
 ## Primárias disponíveis (não usadas ainda)

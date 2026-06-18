@@ -440,6 +440,16 @@ const posts = [
     date: '2026-06-18',
     dateLabel: 'Jun 2026',
   },
+  {
+    slug: 'o-que-e-pao-branco',
+    tag: 'Alimentação',
+    title: 'Pão branco: o que é, calorias e como escolher no mercado',
+    description: 'Pão branco é feito de farinha refinada — menos fibra, índice glicêmico mais alto. Saiba o que muda em relação ao integral e como ler o rótulo.',
+    img: 'https://images.pexels.com/photos/5566227/pexels-photo-5566227.jpeg?auto=compress&cs=tinysrgb&w=800&h=480&fit=crop',
+    imgAlt: 'Fatias de pão branco sobre prato branco',
+    date: '2026-06-18',
+    dateLabel: 'Jun 2026',
+  },
 ]
 
 export default function BlogPage() {
