@@ -834,6 +834,25 @@ Ao construir um cluster pra uma nova página:
 
 ---
 
+### 44. `dieta sem açúcar` → `/blog/dieta-sem-acucar`
+
+- **Fonte primária:** ✓ CSV (vol 2.400, KD 16, Informational)
+- **Score:** 2400 / 16 = 150
+- **Usada na página:** `/blog/dieta-sem-acucar`
+- **Cluster:**
+
+| Keyword secundária | Fonte |
+|---|---|
+| alimentos sem açúcar | ✓ CSV (vol 590, KD 9) |
+| como fazer dieta sem açúcar | (inventado) |
+| cardápio dieta sem açúcar | (inventado) |
+| dieta sem açúcar o que comer | (inventado) |
+| dieta sem açúcar emagrece | (inventado) |
+| o que substituir o açúcar na dieta | (inventado) |
+| quanto tempo para perder o vício em açúcar | (inventado) |
+
+---
+
 ## Primárias disponíveis (não usadas ainda)
 
 Do cluster restante em `seo/blog-keywords.csv` — alto volume, baixo KD, ainda sem página:

@@ -430,6 +430,16 @@ const posts = [
     date: '2026-06-17',
     dateLabel: 'Jun 2026',
   },
+  {
+    slug: 'dieta-sem-acucar',
+    tag: 'Alimentação',
+    title: 'Dieta sem açúcar: o que comer, evitar e como fazer',
+    description: 'O que é a dieta sem açúcar, alimentos permitidos, onde o açúcar se esconde no mercado e como começar sem sofrimento.',
+    img: 'https://images.pexels.com/photos/3621169/pexels-photo-3621169.jpeg?auto=compress&cs=tinysrgb&w=800&h=480&fit=crop',
+    imgAlt: 'Mesa com alimentos naturais sem açúcar adicionado — frutas frescas, legumes e grãos integrais',
+    date: '2026-06-18',
+    dateLabel: 'Jun 2026',
+  },
 ]
 
 export default function BlogPage() {
