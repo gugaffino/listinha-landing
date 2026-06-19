@@ -869,6 +869,27 @@ Ao construir um cluster pra uma nova página:
 
 ---
 
+### 46. `nabo` → `/blog/o-que-e-nabo`
+
+- **Fonte primária:** ✓ CSV (vol 33.100, KD 31, Informational/Transactional)
+- **Score:** 33100 / 31 = 1068.4
+- **Usada na página:** `/blog/o-que-e-nabo`
+- **Cluster:**
+
+| Keyword secundária | Fonte |
+|---|---|
+| nabo é fruta | ✓ CSV (vol 1.900, KD 21) |
+| o que é um nabo | ✓ CSV (vol 720, KD 25) |
+| nabo benefícios | (inventado) |
+| nabo como cozinhar | (inventado) |
+| nabo para que serve | (inventado) |
+| nabo valor nutricional | (inventado) |
+| nabo cru ou cozido | (inventado) |
+| folha de nabo pode comer | (inventado) |
+| nabo como guardar em casa | (inventado) |
+
+---
+
 ## Primárias disponíveis (não usadas ainda)
 
 Do cluster restante em `seo/blog-keywords.csv` — alto volume, baixo KD, ainda sem página:

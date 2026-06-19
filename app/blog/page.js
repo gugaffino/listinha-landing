@@ -450,6 +450,16 @@ const posts = [
     date: '2026-06-18',
     dateLabel: 'Jun 2026',
   },
+  {
+    slug: 'o-que-e-nabo',
+    tag: 'Ingredientes',
+    title: 'Nabo: o que é, para que serve e como usar na cozinha',
+    description: 'Nabo é um legume raiz com 35 calorias por 100g, vitamina C e fibras. Aprenda o que é, como usar em sopas, purês e assados — e quando vale a pena comprar.',
+    img: 'https://images.pexels.com/photos/5758690/pexels-photo-5758690.jpeg?auto=compress&cs=tinysrgb&w=800&h=480&fit=crop',
+    imgAlt: 'Nabo fresco com casca branco-arroxeada sobre superfície clara',
+    date: '2026-06-19',
+    dateLabel: 'Jun 2026',
+  },
 ]
 
 export default function BlogPage() {
