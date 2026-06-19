@@ -890,6 +890,25 @@ Ao construir um cluster pra uma nova página:
 
 ---
 
+### 47. `vinagre balsamico` → `/blog/vinagre-balsamico`
+
+- **Fonte primária:** ✓ CSV (vol 8.100, KD 21, Informational)
+- **Score:** 8100 / 21 = 385.7
+- **Usada na página:** `/blog/vinagre-balsamico`
+- **Cluster:**
+
+| Keyword secundária | Fonte |
+|---|---|
+| vinagre balsâmico o que é | (inventado) |
+| vinagre balsâmico como usar na cozinha | (inventado) |
+| vinagre balsâmico vs vinagre comum | (inventado) |
+| tipos de vinagre balsâmico | (inventado) |
+| vinagre balsâmico onde comprar | (inventado) |
+| redução de vinagre balsâmico receita | (inventado) |
+| glaze balsâmico como fazer | (inventado) |
+
+---
+
 ## Primárias disponíveis (não usadas ainda)
 
 Do cluster restante em `seo/blog-keywords.csv` — alto volume, baixo KD, ainda sem página:

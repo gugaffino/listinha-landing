@@ -460,6 +460,16 @@ const posts = [
     date: '2026-06-19',
     dateLabel: 'Jun 2026',
   },
+  {
+    slug: 'vinagre-balsamico',
+    tag: 'Ingredientes',
+    title: 'Vinagre balsâmico: o que é, como usar e o que vale comprar',
+    description: 'Não é vinagre de vinho com corante. Entenda o que diferencia o balsâmico, como usar em saladas, carnes e morangos — e o que olhar no rótulo antes de comprar.',
+    img: 'https://images.pexels.com/photos/18754796/pexels-photo-18754796.jpeg?auto=compress&cs=tinysrgb&w=800&h=480&fit=crop',
+    imgAlt: 'Mesa com culinária italiana — ingredientes mediterrâneos, vinagre e azeite',
+    date: '2026-06-19',
+    dateLabel: 'Jun 2026',
+  },
 ]
 
 export default function BlogPage() {
