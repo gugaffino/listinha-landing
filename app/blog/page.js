@@ -480,6 +480,16 @@ const posts = [
     date: '2026-06-20',
     dateLabel: 'Jun 2026',
   },
+  {
+    slug: 'quinoa-para-que-serve',
+    tag: 'Nutrição',
+    title: 'Quinoa: para que serve, benefícios e como cozinhar',
+    description: 'O pseudocereal com proteína vegetal completa. Tudo sobre benefícios, como cozinhar sem amargar e quando faz sentido substituir o arroz.',
+    img: 'https://images.pexels.com/photos/17597408/pexels-photo-17597408.jpeg?auto=compress&cs=tinysrgb&w=800&h=480&fit=crop',
+    imgAlt: 'Bowl colorido com quinoa, abacate, grão-de-bico e legumes frescos vistos de cima',
+    date: '2026-06-20',
+    dateLabel: 'Jun 2026',
+  },
 ]
 
 export default function BlogPage() {

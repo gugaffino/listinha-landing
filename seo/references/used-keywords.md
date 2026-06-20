@@ -909,6 +909,26 @@ Ao construir um cluster pra uma nova página:
 
 ---
 
+### 49. `quinoa para que serve` → `/blog/quinoa-para-que-serve`
+
+- **Fonte primária:** ✓ CSV (vol 5.400, KD 40, Informational)
+- **Score:** 5400 / 40 = 135
+- **Usada na página:** `/blog/quinoa-para-que-serve`
+- **Cluster:**
+
+| Keyword secundária | Fonte |
+|---|---|
+| quinoa beneficios | ✓ CSV (vol 1.900, KD 39) |
+| quinoa benefícios e malefícios | ✓ CSV (vol 1.000, KD 23) |
+| quinoa carboidrato | ✓ CSV (vol 720, KD 19) |
+| quinoa como cozinhar | (inventado) |
+| quinoa vs arroz | (inventado) |
+| onde comprar quinoa | (inventado) |
+| quinoa receitas simples | (inventado) |
+| quinoa tem glúten | (inventado) |
+
+---
+
 ### 48. `atum` → `/blog/atum`
 
 - **Fonte primária:** ✓ CSV (vol 40.500, KD 36, Informational)
