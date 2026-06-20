@@ -470,6 +470,16 @@ const posts = [
     date: '2026-06-19',
     dateLabel: 'Jun 2026',
   },
+  {
+    slug: 'atum',
+    tag: 'Ingredientes',
+    title: 'Atum: o que é, valor nutricional e como usar na cozinha',
+    description: 'Atum tem 26g de proteína por 100g e ômega-3 de verdade. Saiba a diferença entre sólido e ralado, em óleo ou água, e como usar em casa.',
+    img: 'https://images.pexels.com/photos/3296394/pexels-photo-3296394.jpeg?auto=compress&cs=tinysrgb&w=800&h=480&fit=crop',
+    imgAlt: 'Mão fatiando atum fresco em tábua de corte — preparação de peixe na cozinha',
+    date: '2026-06-20',
+    dateLabel: 'Jun 2026',
+  },
 ]
 
 export default function BlogPage() {

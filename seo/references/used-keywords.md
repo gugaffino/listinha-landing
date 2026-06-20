@@ -909,6 +909,26 @@ Ao construir um cluster pra uma nova página:
 
 ---
 
+### 48. `atum` → `/blog/atum`
+
+- **Fonte primária:** ✓ CSV (vol 40.500, KD 36, Informational)
+- **Score:** 40500 / 36 = 1125
+- **Usada na página:** `/blog/atum`
+- **Cluster:**
+
+| Keyword secundária | Fonte |
+|---|---|
+| o que é atum | ✓ CSV (vol 880, KD 29) |
+| atum é proteina | ✓ CSV (vol 590, KD 32) |
+| atum em lata | (inventado) |
+| atum em óleo ou água | (inventado) |
+| atum sólido ou ralado | (inventado) |
+| atum calorias | (inventado) |
+| atum ômega-3 | (inventado) |
+| como usar atum na cozinha | (inventado) |
+
+---
+
 ## Primárias disponíveis (não usadas ainda)
 
 Do cluster restante em `seo/blog-keywords.csv` — alto volume, baixo KD, ainda sem página:
