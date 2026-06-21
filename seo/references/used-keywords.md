@@ -949,6 +949,26 @@ Ao construir um cluster pra uma nova página:
 
 ---
 
+### 50. `tahine o que é` → `/blog/o-que-e-tahine`
+
+- **Fonte primária:** ✓ CSV (vol 2.900, KD 23, Informational)
+- **Score:** 2900 / 23 = 126.1
+- **Usada na página:** `/blog/o-que-e-tahine`
+- **Cluster:**
+
+| Keyword secundária | Fonte |
+|---|---|
+| o que é tahine | ✓ CSV (vol 1.900, KD 30) |
+| tahine pasta de gergelim | (inventado) |
+| tahine branco ou preto diferença | (inventado) |
+| tahine como usar na cozinha | (inventado) |
+| tahine onde comprar no brasil | (inventado) |
+| tahine para homus receita | (inventado) |
+| tahine valor nutricional | (inventado) |
+| tahine conservar depois de aberto | (inventado) |
+
+---
+
 ## Primárias disponíveis (não usadas ainda)
 
 Do cluster restante em `seo/blog-keywords.csv` — alto volume, baixo KD, ainda sem página:

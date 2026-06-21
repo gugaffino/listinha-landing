@@ -490,6 +490,16 @@ const posts = [
     date: '2026-06-20',
     dateLabel: 'Jun 2026',
   },
+  {
+    slug: 'o-que-e-tahine',
+    tag: 'Ingredientes',
+    title: 'Tahine: o que é, tipos e como usar na cozinha',
+    description: 'Tahine é pasta de gergelim puro — ingrediente base do homus e babaganoush. Saiba a diferença entre branco e preto, como usar em molhos e onde comprar.',
+    img: 'https://images.pexels.com/photos/6252678/pexels-photo-6252678.jpeg?auto=compress&cs=tinysrgb&w=800&h=480&fit=crop',
+    imgAlt: 'Tigelas de homus cremoso com azeite e ervas — tahine é o ingrediente base da receita',
+    date: '2026-06-21',
+    dateLabel: 'Jun 2026',
+  },
 ]
 
 export default function BlogPage() {
