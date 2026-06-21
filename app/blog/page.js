@@ -500,6 +500,16 @@ const posts = [
     date: '2026-06-21',
     dateLabel: 'Jun 2026',
   },
+  {
+    slug: 'o-que-e-raiz-forte',
+    tag: 'Ingredientes',
+    title: 'Raiz forte: o que é, para que serve e como usar',
+    description: 'Raiz forte é a raiz picante usada ralada em molho com carnes e peixes defumados. Saiba a diferença do wasabi, como usar na cozinha e onde comprar no Brasil.',
+    img: 'https://images.pexels.com/photos/4173471/pexels-photo-4173471.jpeg?auto=compress&cs=tinysrgb&w=800&h=480&fit=crop',
+    imgAlt: 'Planta de raiz forte com folhas verdes largas — Armoracia rusticana no campo',
+    date: '2026-06-21',
+    dateLabel: 'Jun 2026',
+  },
 ]
 
 export default function BlogPage() {

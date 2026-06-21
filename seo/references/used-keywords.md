@@ -969,6 +969,25 @@ Ao construir um cluster pra uma nova página:
 
 ---
 
+### 51. `raiz forte` → `/blog/o-que-e-raiz-forte`
+
+- **Fonte primária:** ✓ CSV (vol 3.600, KD 14, Informational+Transactional)
+- **Score:** 3600 / 14 = 257.1
+- **Usada na página:** `/blog/o-que-e-raiz-forte`
+- **Cluster:**
+
+| Keyword secundária | Fonte |
+|---|---|
+| o que é raiz forte | (inventado) |
+| raiz forte para que serve | (inventado) |
+| raiz forte como usar na cozinha | (inventado) |
+| raiz forte onde comprar no brasil | (inventado) |
+| raiz forte benefícios | (inventado) |
+| raiz forte diferença rábano | (inventado) |
+| raiz forte conservar em casa | (inventado) |
+
+---
+
 ## Primárias disponíveis (não usadas ainda)
 
 Do cluster restante em `seo/blog-keywords.csv` — alto volume, baixo KD, ainda sem página:
