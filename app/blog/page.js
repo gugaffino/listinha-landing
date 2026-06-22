@@ -510,6 +510,16 @@ const posts = [
     date: '2026-06-21',
     dateLabel: 'Jun 2026',
   },
+  {
+    slug: 'feijao-preto-beneficios',
+    tag: 'Ingredientes',
+    title: 'Feijão preto: benefícios, nutrição e como usar toda semana',
+    description: 'Feijão preto tem proteína vegetal, ferro e fibras numa porção só. Veja benefícios reais e como sempre ter na despensa.',
+    img: 'https://images.pexels.com/photos/7772002/pexels-photo-7772002.jpeg?auto=compress&cs=tinysrgb&w=800&h=480&fit=crop',
+    imgAlt: 'Feijão preto seco em close-up — grãos escuros e brilhantes sobre superfície rústica',
+    date: '2026-06-22',
+    dateLabel: 'Jun 2026',
+  },
 ]
 
 export default function BlogPage() {

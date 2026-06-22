@@ -988,6 +988,25 @@ Ao construir um cluster pra uma nova página:
 
 ---
 
+### 52. `feijão preto beneficios` → `/blog/feijao-preto-beneficios`
+
+- **Fonte primária:** ✓ CSV (vol 2.400, KD 21, Informational)
+- **Score:** 2400 / 21 = 114.3
+- **Usada na página:** `/blog/feijao-preto-beneficios`
+- **Cluster:**
+
+| Keyword secundária | Fonte |
+|---|---|
+| feijão preto valor nutricional | (inventado) |
+| feijão preto proteína | (inventado) |
+| feijão preto calorias | (inventado) |
+| feijão preto engorda | (inventado) |
+| feijão preto vs feijão carioca diferença | (inventado) |
+| feijão preto como cozinhar | (inventado) |
+| benefícios do feijão preto para saúde | (inventado) |
+
+---
+
 ## Primárias disponíveis (não usadas ainda)
 
 Do cluster restante em `seo/blog-keywords.csv` — alto volume, baixo KD, ainda sem página:
