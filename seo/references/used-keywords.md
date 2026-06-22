@@ -1007,6 +1007,26 @@ Ao construir um cluster pra uma nova página:
 
 ---
 
+### 53. `benefícios da cebola roxa` → `/blog/beneficios-da-cebola-roxa`
+
+- **Fonte primária:** ✓ CSV (vol 2.400, KD 21, Informational)
+- **Score:** 2400 / 21 = 114.3
+- **Usada na página:** `/blog/beneficios-da-cebola-roxa`
+- **Cluster:**
+
+| Keyword secundária | Fonte |
+|---|---|
+| beneficios da cebola roxa | ✓ CSV (vol 1.300, KD 20) |
+| cebola roxa é bom para quê | ✓ CSV (vol 880, KD 26) |
+| para que serve a cebola roxa | ✓ CSV (vol 880, KD 14) |
+| quais os benefícios da cebola roxa | ✓ CSV (vol 880, KD 31) |
+| cebola roxa para que serve | ✓ CSV (vol 720, KD 23) |
+| benefícios da cebola branca | ✓ CSV (vol 720, KD 23) |
+| cebola roxa crua ou cozida qual é melhor | (inventado) |
+| cebola roxa como guardar em casa | (inventado) |
+
+---
+
 ## Primárias disponíveis (não usadas ainda)
 
 Do cluster restante em `seo/blog-keywords.csv` — alto volume, baixo KD, ainda sem página:

@@ -520,6 +520,16 @@ const posts = [
     date: '2026-06-22',
     dateLabel: 'Jun 2026',
   },
+  {
+    slug: 'beneficios-da-cebola-roxa',
+    tag: 'Ingredientes',
+    title: 'Benefícios da cebola roxa: nutrientes e como usar na cozinha',
+    description: 'Cebola roxa tem antocianinas e quercetina que a cebola amarela não tem. Veja os benefícios e como usar mais nas receitas.',
+    img: 'https://images.pexels.com/photos/10159434/pexels-photo-10159434.jpeg?auto=compress&cs=tinysrgb&w=800&h=480&fit=crop',
+    imgAlt: 'Cebolas roxas cortadas ao meio mostrando as camadas e a cor intensa — hortaliça rica em antocianinas',
+    date: '2026-06-22',
+    dateLabel: 'Jun 2026',
+  },
 ]
 
 export default function BlogPage() {
