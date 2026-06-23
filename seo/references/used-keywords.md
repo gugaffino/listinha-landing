@@ -1027,6 +1027,25 @@ Ao construir um cluster pra uma nova página:
 
 ---
 
+### 54. `o que e stevia` → `/blog/o-que-e-stevia`
+
+- **Fonte primária:** ✓ CSV (vol 1.600, KD 13, Informational)
+- **Score:** 1600 / 13 = 123.1
+- **Usada na página:** `/blog/o-que-e-stevia`
+- **Cluster:**
+
+| Keyword secundária | Fonte |
+|---|---|
+| stevia adoçante | (inventado) |
+| stevia benefícios | (inventado) |
+| stevia vs açúcar | (inventado) |
+| stevia faz mal | (inventado) |
+| stevia como usar na culinária | (inventado) |
+| stevia é natural ou artificial | (inventado) |
+| stevia onde comprar | (inventado) |
+
+---
+
 ## Primárias disponíveis (não usadas ainda)
 
 Do cluster restante em `seo/blog-keywords.csv` — alto volume, baixo KD, ainda sem página:

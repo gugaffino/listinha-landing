@@ -530,6 +530,16 @@ const posts = [
     date: '2026-06-22',
     dateLabel: 'Jun 2026',
   },
+  {
+    slug: 'o-que-e-stevia',
+    tag: 'Ingredientes',
+    title: 'O que é stevia: o adoçante natural da planta Stevia rebaudiana',
+    description: 'Stevia é um adoçante natural 200 vezes mais doce que o açúcar, com zero calorias. Saiba o que é, de onde vem e como usar na cozinha.',
+    img: 'https://images.pexels.com/photos/4198755/pexels-photo-4198755.jpeg?auto=compress&cs=tinysrgb&w=800&h=480&fit=crop',
+    imgAlt: 'Planta de stevia rebaudiana com folhas verdes ovais — arbusto adoçante natural nativo do Paraguai',
+    date: '2026-06-23',
+    dateLabel: 'Jun 2026',
+  },
 ]
 
 export default function BlogPage() {
