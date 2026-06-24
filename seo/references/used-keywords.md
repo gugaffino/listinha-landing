@@ -1046,6 +1046,23 @@ Ao construir um cluster pra uma nova página:
 
 ---
 
+### 55. `para que serve o orégano` → `/blog/para-que-serve-o-oregano`
+
+- **Fonte primária:** ✓ CSV (vol 3.600, KD 32, Informational)
+- **Score:** 3600 / 32 = 112.5
+- **Usada na página:** `/blog/para-que-serve-o-oregano`
+- **Cluster:**
+
+| Keyword secundária | Fonte |
+|---|---|
+| oregano fresco | ✓ CSV (vol 720, KD 14) |
+| para que serve o orégano na culinária | (inventado) |
+| orégano seco como usar | (inventado) |
+| quantidade de orégano na receita | (inventado) |
+| orégano benefícios e usos | (inventado) |
+
+---
+
 ## Primárias disponíveis (não usadas ainda)
 
 Do cluster restante em `seo/blog-keywords.csv` — alto volume, baixo KD, ainda sem página:

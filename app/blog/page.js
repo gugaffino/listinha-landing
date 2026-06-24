@@ -540,6 +540,16 @@ const posts = [
     date: '2026-06-23',
     dateLabel: 'Jun 2026',
   },
+  {
+    slug: 'para-que-serve-o-oregano',
+    tag: 'Ingredientes',
+    title: 'Para que serve o orégano: usos, fresco, seco e como guardar',
+    description: 'Para que serve o orégano além da pizza? Diferença entre fresco e seco, quanto usar em cada receita e como guardar em casa sem perder o aroma.',
+    img: 'https://images.pexels.com/photos/4099241/pexels-photo-4099241.jpeg?auto=compress&cs=tinysrgb&w=800&h=480&fit=crop',
+    imgAlt: 'Ramos de orégano fresco com folhas verdes sobre superfície rústica de madeira',
+    date: '2026-06-24',
+    dateLabel: 'Jun 2026',
+  },
 ]
 
 export default function BlogPage() {
