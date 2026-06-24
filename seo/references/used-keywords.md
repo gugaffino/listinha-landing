@@ -1063,6 +1063,25 @@ Ao construir um cluster pra uma nova página:
 
 ---
 
+### 56. `abobrinha calorias` → `/blog/abobrinha-calorias`
+
+- **Fonte primária:** ✓ CSV (vol 2.400, KD 18, Informational)
+- **Score:** 2400 / 18 = 133.3
+- **Usada na página:** `/blog/abobrinha-calorias`
+- **Cluster:**
+
+| Keyword secundária | Fonte |
+|---|---|
+| benefícios da abobrinha | ✓ CSV (vol 2.400, KD 31) |
+| beneficios da abobrinha | ✓ CSV (vol 1.900, KD 23) |
+| como escolher abobrinha | ✓ CSV (vol 720, KD 29) |
+| abobrinha é carboidrato ou proteína | (inventado) |
+| abobrinha valor nutricional | (inventado) |
+| abobrinha como guardar em casa | (inventado) |
+| tipos de abobrinha no brasil | (inventado) |
+
+---
+
 ## Primárias disponíveis (não usadas ainda)
 
 Do cluster restante em `seo/blog-keywords.csv` — alto volume, baixo KD, ainda sem página:

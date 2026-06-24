@@ -550,6 +550,16 @@ const posts = [
     date: '2026-06-24',
     dateLabel: 'Jun 2026',
   },
+  {
+    slug: 'abobrinha-calorias',
+    tag: 'Ingredientes',
+    title: 'Abobrinha: calorias, valor nutricional e benefícios',
+    description: 'Abobrinha tem 17 kcal por 100g, baixo carboidrato e é uma das hortaliças mais versáteis da cozinha brasileira. Tabela nutricional, tipos e como guardar.',
+    img: 'https://images.pexels.com/photos/4750381/pexels-photo-4750381.jpeg?auto=compress&cs=tinysrgb&w=800&h=480&fit=crop',
+    imgAlt: 'Abobrinha italiana verde crescendo com flores amarelas no jardim',
+    date: '2026-06-24',
+    dateLabel: 'Jun 2026',
+  },
 ]
 
 export default function BlogPage() {
