@@ -560,6 +560,16 @@ const posts = [
     date: '2026-06-24',
     dateLabel: 'Jun 2026',
   },
+  {
+    slug: 'arenque',
+    tag: 'Ingredientes',
+    title: 'Arenque: o que é, benefícios e como usar o defumado',
+    description: 'Arenque é primo da sardinha, mas com mais ômega-3 e vitamina D. O que é, onde comprar no Brasil, como usar o defumado e a diferença pra sardinha.',
+    img: 'https://images.pexels.com/photos/1510714/pexels-photo-1510714.jpeg?auto=compress&cs=tinysrgb&w=800&h=480&fit=crop',
+    imgAlt: 'Filé de peixe grelhado com legumes em prato sobre mesa',
+    date: '2026-06-25',
+    dateLabel: 'Jun 2026',
+  },
 ]
 
 export default function BlogPage() {

@@ -1082,6 +1082,25 @@ Ao construir um cluster pra uma nova página:
 
 ---
 
+### 57. `arenque` → `/blog/arenque`
+
+- **Fonte primária:** ✓ CSV (vol 8.100, KD 36, Informational)
+- **Score:** 8100 / 36 = 225
+- **Usada na página:** `/blog/arenque`
+- **Cluster:**
+
+| Keyword secundária | Fonte |
+|---|---|
+| o que é arenque | (inventado) |
+| arenque peixe benefícios | (inventado) |
+| arenque ômega-3 | (inventado) |
+| como preparar arenque | (inventado) |
+| arenque defumado como usar | (inventado) |
+| arenque onde comprar no brasil | (inventado) |
+| diferença arenque sardinha | (inventado) |
+
+---
+
 ## Primárias disponíveis (não usadas ainda)
 
 Do cluster restante em `seo/blog-keywords.csv` — alto volume, baixo KD, ainda sem página:
