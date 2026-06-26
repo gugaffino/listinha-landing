@@ -1121,6 +1121,26 @@ Ao construir um cluster pra uma nova página:
 
 ---
 
+### 59. `cardamomo para que serve` → `/blog/cardamomo-para-que-serve`
+
+- **Fonte primária:** ✓ CSV (vol 2.900, KD 28, Informational)
+- **Score:** 2900 / 28 = 103.6
+- **Usada na página:** `/blog/cardamomo-para-que-serve`
+- **Cluster:**
+
+| Keyword secundária | Fonte |
+|---|---|
+| cardamomo benefícios | ✓ CSV (vol 1.600, KD 22) |
+| o que é cardamomo | (inventado) |
+| cardamomo na culinária como usar | (inventado) |
+| cardamomo chá receita | (inventado) |
+| cardamomo verde vs preto diferença | (inventado) |
+| cardamomo onde comprar no brasil | (inventado) |
+| cardamomo valor nutricional | (inventado) |
+| cardamomo substituto na receita | (inventado) |
+
+---
+
 ## Primárias disponíveis (não usadas ainda)
 
 Do cluster restante em `seo/blog-keywords.csv` — alto volume, baixo KD, ainda sem página:

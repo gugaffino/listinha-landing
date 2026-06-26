@@ -580,6 +580,16 @@ const posts = [
     date: '2026-06-26',
     dateLabel: 'Jun 2026',
   },
+  {
+    slug: 'cardamomo-para-que-serve',
+    tag: 'Ingredientes',
+    title: 'Cardamomo para que serve: tipos, usos e benefícios',
+    description: 'Cardamomo é uma especiaria de aroma floral e sabor único, usada em chás, doces e pratos árabes. Veja os tipos, como usar e onde comprar no Brasil.',
+    img: 'https://images.pexels.com/photos/9142634/pexels-photo-9142634.jpeg?auto=compress&cs=tinysrgb&w=800&h=480&fit=crop',
+    imgAlt: 'Vagens de cardamomo verde sobre mesa de madeira rústica',
+    date: '2026-06-26',
+    dateLabel: 'Jun 2026',
+  },
 ]
 
 export default function BlogPage() {
