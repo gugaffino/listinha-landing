@@ -1101,6 +1101,26 @@ Ao construir um cluster pra uma nova página:
 
 ---
 
+### 58. `benefícios do cuscuz` → `/blog/beneficios-do-cuscuz`
+
+- **Fonte primária:** ✓ CSV (vol 2.900, KD 26, Informational)
+- **Score:** 2900 / 26 = 111.5
+- **Usada na página:** `/blog/beneficios-do-cuscuz`
+- **Cluster:**
+
+| Keyword secundária | Fonte |
+|---|---|
+| beneficios do cuscuz | ✓ CSV (vol 1.600, KD 21) |
+| cuscuz faz bem para saúde | ✓ CSV (vol 720, KD 23) |
+| beneficios do cuzcuz | ✓ CSV (vol 590, KD 21) |
+| cuscuz nordestino benefícios | (inventado) |
+| cuscuz é proteína ou carboidrato | (inventado) |
+| cuscuz de milho valor nutricional | (inventado) |
+| cuscuz engorda | (inventado) |
+| cuscuz sem glúten | (inventado) |
+
+---
+
 ## Primárias disponíveis (não usadas ainda)
 
 Do cluster restante em `seo/blog-keywords.csv` — alto volume, baixo KD, ainda sem página:

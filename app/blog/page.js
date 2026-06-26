@@ -570,6 +570,16 @@ const posts = [
     date: '2026-06-25',
     dateLabel: 'Jun 2026',
   },
+  {
+    slug: 'beneficios-do-cuscuz',
+    tag: 'Ingredientes',
+    title: 'Benefícios do Cuscuz: Nutrição e Como Incluir na Rotina',
+    description: 'Cuscuz de milho tem fibras, selênio e ferro — e custa menos de R$ 5 o quilo. Veja o que ele oferece e como incluir na semana sem complicar.',
+    img: 'https://images.pexels.com/photos/1438540/pexels-photo-1438540.jpeg?auto=compress&cs=tinysrgb&w=800&h=480&fit=crop',
+    imgAlt: 'Pimentão verde recheado com cuscuz sobre superfície rústica',
+    date: '2026-06-26',
+    dateLabel: 'Jun 2026',
+  },
 ]
 
 export default function BlogPage() {
