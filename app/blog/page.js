@@ -600,6 +600,16 @@ const posts = [
     date: '2026-06-27',
     dateLabel: 'Jun 2026',
   },
+  {
+    slug: 'pimenta-vermelha',
+    tag: 'Ingredientes',
+    title: 'Pimenta vermelha: tipos, benefícios e como usar na cozinha',
+    description: 'Pimenta vermelha cobre desde o pimentão doce até a caiena e a malagueta. Conheça os tipos, os benefícios da capsaicina e como usar cada variedade.',
+    img: 'https://images.pexels.com/photos/1435904/pexels-photo-1435904.jpeg?auto=compress&cs=tinysrgb&w=800&h=480&fit=crop',
+    imgAlt: 'Pimentões vermelhos frescos sobre tábua de madeira — variedades de pimenta vermelha madura',
+    date: '2026-06-27',
+    dateLabel: 'Jun 2026',
+  },
 ]
 
 export default function BlogPage() {

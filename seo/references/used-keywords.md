@@ -1160,6 +1160,26 @@ Ao construir um cluster pra uma nova página:
 
 ---
 
+### 61. `pimenta vermelha` → `/blog/pimenta-vermelha`
+
+- **Fonte primária:** ✓ CSV (vol 2.400, KD 18, Informational)
+- **Score:** 2400 / 18 = 133.3
+- **Usada na página:** `/blog/pimenta-vermelha`
+- **Cluster:**
+
+| Keyword secundária | Fonte |
+|---|---|
+| pimenta verde | ✓ CSV (vol 4.400, KD 42) |
+| pimenta caiena benefícios | ✓ CSV (vol 1.600, KD 28) |
+| pimenta preta benefícios | ✓ CSV (vol 880, KD 18) |
+| beneficios da pimenta preta | ✓ CSV (vol 720, KD 21) |
+| pimenta vermelha como usar na cozinha | (inventado) |
+| tipos de pimenta vermelha | (inventado) |
+| pimenta vermelha vs páprica diferença | (inventado) |
+| pimenta vermelha valor nutricional | (inventado) |
+
+---
+
 ## Primárias disponíveis (não usadas ainda)
 
 Do cluster restante em `seo/blog-keywords.csv` — alto volume, baixo KD, ainda sem página:
