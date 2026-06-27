@@ -590,6 +590,16 @@ const posts = [
     date: '2026-06-26',
     dateLabel: 'Jun 2026',
   },
+  {
+    slug: 'oleo-de-gergelim',
+    tag: 'Ingredientes',
+    title: 'Óleo de gergelim: benefícios e como usar na cozinha',
+    description: 'Óleo de gergelim tem benefícios para coração, pele e inflamação. Entenda a diferença entre cru e torrado, como comprar e como usar na cozinha sem errar.',
+    img: 'https://images.pexels.com/photos/3682190/pexels-photo-3682190.jpeg?auto=compress&cs=tinysrgb&w=800&h=480&fit=crop',
+    imgAlt: 'Sementes de gergelim douradas espalhadas — base do óleo de gergelim',
+    date: '2026-06-27',
+    dateLabel: 'Jun 2026',
+  },
 ]
 
 export default function BlogPage() {

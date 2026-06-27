@@ -1141,6 +1141,25 @@ Ao construir um cluster pra uma nova página:
 
 ---
 
+### 60. `oleo de gergelim beneficios` → `/blog/oleo-de-gergelim`
+
+- **Fonte primária:** ✓ CSV (vol 1.000, KD 9, Informational)
+- **Score:** 1000 / 9 = 111.1
+- **Usada na página:** `/blog/oleo-de-gergelim`
+- **Cluster:**
+
+| Keyword secundária | Fonte |
+|---|---|
+| óleo de gergelim torrado para que serve | ✓ CSV (vol 590, KD 10) |
+| óleo de gergelim na cozinha | (inventado) |
+| óleo de gergelim como usar | (inventado) |
+| óleo de gergelim diferença torrado cru | (inventado) |
+| óleo de gergelim onde comprar | (inventado) |
+| óleo de gergelim como guardar | (inventado) |
+| óleo de gergelim substituição receita | (inventado) |
+
+---
+
 ## Primárias disponíveis (não usadas ainda)
 
 Do cluster restante em `seo/blog-keywords.csv` — alto volume, baixo KD, ainda sem página:
