@@ -1180,6 +1180,25 @@ Ao construir um cluster pra uma nova página:
 
 ---
 
+### 62. `aveia em flocos beneficios` → `/blog/aveia-em-flocos-beneficios`
+
+- **Fonte primária:** ✓ CSV (vol 2.400, KD 26, Informational)
+- **Score:** 2400 / 26 = 92.3
+- **Usada na página:** `/blog/aveia-em-flocos-beneficios`
+- **Cluster:**
+
+| Keyword secundária | Fonte |
+|---|---|
+| beneficios aveia flocos | ✓ CSV (vol 1.900, KD 23) |
+| beneficios da aveia em flocos | ✓ CSV (vol 1.900, KD 24) |
+| benefícios aveia em flocos | ✓ CSV (vol 1.300, KD 23) |
+| aveia em flocos como usar na cozinha | (inventado) |
+| aveia em flocos valor nutricional | (inventado) |
+| aveia em flocos engorda | (inventado) |
+| aveia em flocos quantidade por dia | (inventado) |
+
+---
+
 ## Primárias disponíveis (não usadas ainda)
 
 Do cluster restante em `seo/blog-keywords.csv` — alto volume, baixo KD, ainda sem página:

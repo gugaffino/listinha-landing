@@ -610,6 +610,16 @@ const posts = [
     date: '2026-06-27',
     dateLabel: 'Jun 2026',
   },
+  {
+    slug: 'aveia-em-flocos-beneficios',
+    tag: 'Ingredientes',
+    title: 'Aveia em flocos: benefícios e como usar na cozinha',
+    description: 'Aveia em flocos tem betaglucana, fibra que reduz colesterol LDL e controla glicemia. Saiba os benefícios e como incluir aveia na rotina semanal.',
+    img: 'https://images.pexels.com/photos/6133456/pexels-photo-6133456.jpeg?auto=compress&cs=tinysrgb&w=800&h=480&fit=crop',
+    imgAlt: 'Tigela com aveia em flocos servida no café da manhã com frutas frescas',
+    date: '2026-06-28',
+    dateLabel: 'Jun 2026',
+  },
 ]
 
 export default function BlogPage() {
