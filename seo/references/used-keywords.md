@@ -1199,6 +1199,26 @@ Ao construir um cluster pra uma nova página:
 
 ---
 
+### 63. `o que e avelã` → `/blog/o-que-e-avela`
+
+- **Fonte primária:** ✓ CSV (vol 880, KD 7, Informational)
+- **Score:** 880 / 7 = 125.7
+- **Usada na página:** `/blog/o-que-e-avela`
+- **Cluster:**
+
+| Keyword secundária | Fonte |
+|---|---|
+| avelã o que é | (inventado) |
+| avelã benefícios | (inventado) |
+| avelã para que serve | (inventado) |
+| avelã como usar na cozinha | (inventado) |
+| avelã onde comprar no brasil | (inventado) |
+| avelã vs amêndoa diferença | (inventado) |
+| pasta de avelã caseira | (inventado) |
+| quantas avelãs por dia | (inventado) |
+
+---
+
 ## Primárias disponíveis (não usadas ainda)
 
 Do cluster restante em `seo/blog-keywords.csv` — alto volume, baixo KD, ainda sem página:

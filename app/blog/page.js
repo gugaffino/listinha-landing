@@ -620,6 +620,16 @@ const posts = [
     date: '2026-06-28',
     dateLabel: 'Jun 2026',
   },
+  {
+    slug: 'o-que-e-avela',
+    tag: 'Ingredientes',
+    title: 'Avelã: o que é, para que serve e como usar na cozinha',
+    description: 'A oleaginosa por trás do Nutella. O que é de verdade, benefícios, quantas comer por dia e como usar na cozinha.',
+    img: 'https://images.pexels.com/photos/1295572/pexels-photo-1295572.jpeg?auto=compress&cs=tinysrgb&w=800&h=480&fit=crop',
+    imgAlt: 'Avelãs inteiras numa tigela de madeira, mostrando a textura e cor natural da oleaginosa',
+    date: '2026-06-28',
+    dateLabel: 'Jun 2026',
+  },
 ]
 
 export default function BlogPage() {
