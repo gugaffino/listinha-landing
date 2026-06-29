@@ -630,6 +630,16 @@ const posts = [
     date: '2026-06-28',
     dateLabel: 'Jun 2026',
   },
+  {
+    slug: 'damascos-secos',
+    tag: 'Ingredientes',
+    title: 'Damascos secos: o que são, benefícios e como usar na cozinha',
+    description: 'Damasco seco é o damasco fresco desidratado — concentra ferro, potássio e betacaroteno. Veja o que é, os benefícios reais e como usar além do chazinho.',
+    img: 'https://images.pexels.com/photos/10111994/pexels-photo-10111994.jpeg?auto=compress&cs=tinysrgb&w=800&h=480&fit=crop',
+    imgAlt: 'Damascos secos laranjas em close-up mostrando a textura e cor características da fruta desidratada',
+    date: '2026-06-29',
+    dateLabel: 'Jun 2026',
+  },
 ]
 
 export default function BlogPage() {

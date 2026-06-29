@@ -1219,6 +1219,25 @@ Ao construir um cluster pra uma nova página:
 
 ---
 
+### 64. `damascos secos` → `/blog/damascos-secos`
+
+- **Fonte primária:** ✓ CSV (vol 2.400, KD 19, Informational)
+- **Score:** 2400 / 19 = 126.3
+- **Usada na página:** `/blog/damascos-secos`
+- **Cluster:**
+
+| Keyword secundária | Fonte |
+|---|---|
+| damasco seco benefícios | (inventado) |
+| o que é damasco seco | (inventado) |
+| damasco seco como usar | (inventado) |
+| damasco seco valor nutricional | (inventado) |
+| damasco seco vs fresco diferença | (inventado) |
+| damasco seco quantos por dia | (inventado) |
+| damasco seco como guardar | (inventado) |
+
+---
+
 ## Primárias disponíveis (não usadas ainda)
 
 Do cluster restante em `seo/blog-keywords.csv` — alto volume, baixo KD, ainda sem página:
