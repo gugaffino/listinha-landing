@@ -7,7 +7,7 @@ Status: aprovado para planejamento
 
 A landing page (`listinha-landing`, Next.js 15 App Router) é hoje 100%
 português (BR), com texto hardcoded em JSX espalhado pela home
-(`app/page.js`), 4 páginas de `/funcionalidades`, e 17 posts de blog
+(`app/page.js`), 4 páginas de `/funcionalidades`, e 16 posts de blog
 otimizados para keywords de busca em PT-BR. Todo o tráfego orgânico atual
 depende desse conteúdo PT-BR indexado.
 
@@ -21,7 +21,7 @@ sem estado de usuário/login.
 
 ## Decisão de faseamento (decomposição de escopo)
 
-O volume total (17 posts × 2 idiomas novos = 34 posts, cada um exigindo
+O volume total (16 posts × 2 idiomas novos = 32 posts, cada um exigindo
 pesquisa de keyword própria em EN/ES, como cada post PT-BR já exigiu) é
 grande demais para uma única spec/plano de implementação. Este documento
 cobre apenas a **Fase 1**:
@@ -30,7 +30,7 @@ cobre apenas a **Fase 1**:
 - Tradução completa da home (`app/page.js`).
 - Tradução completa das 4 páginas de `/funcionalidades` + índice.
 - Tradução da UI/estrutura do blog (índice `/blog`, layout, nav) — **não**
-  dos 17 posts individuais.
+  dos 16 posts individuais.
 
 Tradução dos posts de blog vira trabalho incremental separado, pós-Fase 1,
 priorizado post a post (provavelmente via extensão do skill `blog-post`
@@ -137,7 +137,7 @@ Fase 1) — mostra um empty state ("New posts coming soon in English" /
 design system. Sem posts fantasma, sem link quebrado, sem mistura de
 idioma na mesma página.
 
-Os 17 posts continuam existindo só em `/pt/blog/<slug>` — sem rotas
+Os 16 posts continuam existindo só em `/pt/blog/<slug>` — sem rotas
 `/en/blog/<slug>` / `/es/blog/<slug>` ainda. Quando um post for traduzido
 (trabalho futuro), ele aparece automaticamente na listagem filtrada do
 idioma correspondente.
@@ -151,7 +151,7 @@ idioma correspondente.
   emitir as entradas de home/funcionalidades nos 3 idiomas
   (`/pt/`, `/en/`, `/es/`, etc.) e as entradas de blog só em `/pt/blog/*`
   (únicos que existem). Aproveitamento: como parte desta task, corrigir
-  também a lacuna já existente no sitemap atual (só lista 4 dos 17 posts).
+  também a lacuna já existente no sitemap atual (só lista 4 dos 16 posts).
 - `app/robots.js` não muda — continua global, sem lógica de idioma.
 
 ## Erros e casos de borda
@@ -181,7 +181,7 @@ depois de implementado:
 3. Acessar `/en/blog` e `/es/blog` diretamente — confirmar empty state
    (nenhum post PT vazando misturado).
 4. `npm run build` limpo, checar `sitemap.xml` gerado tem as 3 variantes de
-   home/funcionalidades e as entradas de blog corretas (17 posts, só PT).
+   home/funcionalidades e as entradas de blog corretas (16 posts, só PT).
 5. Inspecionar `<head>` de uma página em cada idioma — hreflang alternates
    presentes e apontando pros locais certos, `x-default` → `/pt/`.
 6. Ratio texto/HTML das páginas traduzidas (regra do `CLAUDE.md` deste
@@ -190,7 +190,7 @@ depois de implementado:
 
 ## Fora de escopo desta feature (Fase 1)
 
-- Tradução dos 17 posts de blog individuais para EN/ES — trabalho
+- Tradução dos 16 posts de blog individuais para EN/ES — trabalho
   incremental separado, pós-Fase 1.
 - Pesquisa de keywords EN/ES para os posts (parte do trabalho acima,
   quando chegar a vez de cada post).
