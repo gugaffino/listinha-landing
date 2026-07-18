@@ -412,45 +412,47 @@ export default async function Home() {
       <section className="section blog-preview">
         <div className="container">
           <div className="section-head reveal">
-            <div className="eyebrow"><span className="dot"></span> Blog</div>
-            <h2>Dicas de quem faz lista de verdade</h2>
+            <div className="eyebrow"><span className="dot"></span> {t('blog.eyebrow')}</div>
+            <h2>{t('blog.title')}</h2>
           </div>
-          <div className="blog-grid reveal">
-            <a href="/blog/lista-basica-de-compras" className="blog-card">
-              <div className="blog-card-img">
-                <img
-                  src="https://images.pexels.com/photos/11018212/pexels-photo-11018212.jpeg?auto=compress&cs=tinysrgb&w=600&h=360&fit=crop"
-                  alt="Carrinho de compras em supermercado"
-                  width="600" height="360"
-                  loading="lazy"
-                />
-              </div>
-              <div className="blog-card-body">
-                <span className="blog-card-tag">Lista de compras</span>
-                <h3>Lista básica de compras: guia com 80+ itens pra copiar</h3>
-                <p>Os 7 grupos essenciais, quanto custa por mês e dicas pra economizar no supermercado.</p>
-                <span className="blog-card-link">Ler artigo →</span>
-              </div>
-            </a>
-            <a href="/blog/lista-de-compras-para-casa-nova" className="blog-card">
-              <div className="blog-card-img">
-                <img
-                  src="https://images.pexels.com/photos/8730049/pexels-photo-8730049.jpeg?auto=compress&cs=tinysrgb&w=600&h=360&fit=crop"
-                  alt="Mulher entrando em apartamento novo"
-                  width="600" height="360"
-                  loading="lazy"
-                />
-              </div>
-              <div className="blog-card-body">
-                <span className="blog-card-tag">Casa nova</span>
-                <h3>Lista de compras para casa nova: o que não pode faltar</h3>
-                <p>60+ itens por cômodo, o que comprar primeiro e estimativa de custo por perfil.</p>
-                <span className="blog-card-link">Ler artigo →</span>
-              </div>
-            </a>
-          </div>
+          {locale === 'pt' && (
+            <div className="blog-grid reveal">
+              <a href="/blog/lista-basica-de-compras" className="blog-card">
+                <div className="blog-card-img">
+                  <img
+                    src="https://images.pexels.com/photos/11018212/pexels-photo-11018212.jpeg?auto=compress&cs=tinysrgb&w=600&h=360&fit=crop"
+                    alt="Carrinho de compras em supermercado"
+                    width="600" height="360"
+                    loading="lazy"
+                  />
+                </div>
+                <div className="blog-card-body">
+                  <span className="blog-card-tag">{t('blog.post1Tag')}</span>
+                  <h3>{t('blog.post1Title')}</h3>
+                  <p>{t('blog.post1Desc')}</p>
+                  <span className="blog-card-link">{tc('readArticle')}</span>
+                </div>
+              </a>
+              <a href="/blog/lista-de-compras-para-casa-nova" className="blog-card">
+                <div className="blog-card-img">
+                  <img
+                    src="https://images.pexels.com/photos/8730049/pexels-photo-8730049.jpeg?auto=compress&cs=tinysrgb&w=600&h=360&fit=crop"
+                    alt="Mulher entrando em apartamento novo"
+                    width="600" height="360"
+                    loading="lazy"
+                  />
+                </div>
+                <div className="blog-card-body">
+                  <span className="blog-card-tag">{t('blog.post2Tag')}</span>
+                  <h3>{t('blog.post2Title')}</h3>
+                  <p>{t('blog.post2Desc')}</p>
+                  <span className="blog-card-link">{tc('readArticle')}</span>
+                </div>
+              </a>
+            </div>
+          )}
           <div className="blog-more reveal">
-            <a href="/blog" className="btn btn-ghost">Ver todos os artigos →</a>
+            <Link href="/blog" className="btn btn-ghost">{t('blog.seeAll')}</Link>
           </div>
         </div>
       </section>
@@ -460,19 +462,19 @@ export default async function Home() {
         <div className="container">
           <div className="cta-final reveal">
             <div className="eyebrow eyebrow-centered eyebrow-broto">
-              <span className="dot"></span> Comece hoje
+              <span className="dot"></span> {t('cta.eyebrow')}
             </div>
-            <h2>Cozinha organizada, <em>do seu jeito.</em></h2>
-            <p>Grátis. Sem cartão de crédito. Sem cadastro longo. Bora?</p>
+            <h2>{t.rich('cta.title', { em: (chunks) => <em>{chunks}</em> })}</h2>
+            <p>{t('cta.sub')}</p>
             <div className="actions">
               <a href="https://listinha-puce.vercel.app" className="btn btn-on-dark btn-lg" target="_blank" rel="noopener">
-                Comece grátis
+                {tc('ctaSmall')}
                 <svg aria-hidden="true" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M5 12h14M13 5l7 7-7 7"/>
                 </svg>
               </a>
             </div>
-            <div className="footnote">CELULAR · TABLET · DESKTOP · OFFLINE</div>
+            <div className="footnote">{tc('footnoteChannels')}</div>
           </div>
         </div>
       </section>
@@ -488,8 +490,8 @@ export default async function Home() {
             </div>
             <span className="brand-name">Mise</span>
           </div>
-          <p className="footer-copy">Feito com carinho pra quem gosta de cozinhar.</p>
-          <a href="https://listinha-puce.vercel.app" className="footer-link" target="_blank" rel="noopener">Abrir o app →</a>
+          <p className="footer-copy">{tc('footerCopy')}</p>
+          <a href="https://listinha-puce.vercel.app" className="footer-link" target="_blank" rel="noopener">{tc('openAppArrow')}</a>
         </div>
       </footer>
     </>
