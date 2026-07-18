@@ -1,7 +1,12 @@
+import { getTranslations, getLocale } from 'next-intl/server'
 import { BrandIcon, BrandTrioIcon } from '../../components/Icon'
 import SiteNav from '../../components/SiteNav'
+import { Link } from '../../i18n/navigation'
 
-export default function Home() {
+export default async function Home() {
+  const t = await getTranslations('home')
+  const tc = await getTranslations('common')
+  const locale = await getLocale()
   return (
     <>
 
@@ -14,30 +19,30 @@ export default function Home() {
             <div className="hero-brand-trio">
               <BrandTrioIcon width={108} height={44} style={{ color: 'var(--verde-folha)' }} />
             </div>
-            <h1>Cozinha em paz, <span className="under">do seu jeito.</span></h1>
-            <p className="hero-sub">A cozinha não devia te custar tanta cabeça. Despensa, receitas e lista de compras conectadas — você para de decidir e começa a cozinhar.</p>
+            <h1>{t.rich('hero.title', { accent: (chunks) => <span className="under">{chunks}</span> })}</h1>
+            <p className="hero-sub">{t('hero.sub')}</p>
             <div className="hero-actions">
               <a href="https://listinha-puce.vercel.app" className="btn btn-primary btn-lg" target="_blank" rel="noopener">
-                Comece grátis
+                {tc('ctaSmall')}
                 <svg aria-hidden="true" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M5 12h14M13 5l7 7-7 7"/>
                 </svg>
               </a>
-              <a href="#como" className="btn btn-quiet">Ver como funciona ↓</a>
+              <a href="#como" className="btn btn-quiet">{t('hero.ctaHow')}</a>
             </div>
 
             <div className="hero-meta">
               <div className="item">
                 <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
-                Funciona offline
+                {t('hero.meta1')}
               </div>
               <div className="item">
                 <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
-                Compartilha no zap
+                {t('hero.meta2')}
               </div>
               <div className="item">
                 <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
-                Celular e desktop
+                {t('hero.meta3')}
               </div>
             </div>
           </div>
@@ -52,43 +57,43 @@ export default function Home() {
                 </svg>
               </div>
               <div>
-                <div className="label">Acabou o alho</div>
-                <div className="sub">na despensa</div>
+                <div className="label">{t('hero.float1Label')}</div>
+                <div className="sub">{t('hero.float1Sub')}</div>
               </div>
             </div>
 
             <div className="phone">
               <div className="phone-screen">
                 <div className="ph-top">
-                  <div className="ph-title">Lista da semana</div>
+                  <div className="ph-title">{t('hero.phoneTitle')}</div>
                   <span className="ph-badge">2/5</span>
                 </div>
                 <div className="ph-body">
-                  <div className="ph-sec">Hortifruti</div>
+                  <div className="ph-sec">{t('hero.phoneSec1')}</div>
                   <div className="ph-item">
                     <div className="ph-qty">2x</div>
-                    <div className="ph-nm">Alho</div>
+                    <div className="ph-nm">{t('hero.phoneItemAlho')}</div>
                     <div className="ph-ck"></div>
                   </div>
                   <div className="ph-item">
                     <div className="ph-qty">1kg</div>
-                    <div className="ph-nm">Tomate italiano</div>
+                    <div className="ph-nm">{t('hero.phoneItemTomate')}</div>
                     <div className="ph-ck"></div>
                   </div>
-                  <div className="ph-sec">Mercearia</div>
+                  <div className="ph-sec">{t('hero.phoneSec2')}</div>
                   <div className="ph-item done">
                     <div className="ph-qty dim">1x</div>
-                    <div className="ph-nm">Azeite extra virgem</div>
+                    <div className="ph-nm">{t('hero.phoneItemAzeite')}</div>
                     <div className="ph-ck on"></div>
                   </div>
                   <div className="ph-item done">
                     <div className="ph-qty dim">12un</div>
-                    <div className="ph-nm">Ovos</div>
+                    <div className="ph-nm">{t('hero.phoneItemOvos')}</div>
                     <div className="ph-ck on"></div>
                   </div>
                   <div className="ph-item">
                     <div className="ph-qty">1kg</div>
-                    <div className="ph-nm">Peito de frango</div>
+                    <div className="ph-nm">{t('hero.phoneItemFrango')}</div>
                     <div className="ph-ck"></div>
                   </div>
                 </div>
@@ -100,7 +105,7 @@ export default function Home() {
                         <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
                       </svg>
                     </div>
-                    Lista
+                    {t('hero.tabLista')}
                   </div>
                   <div className="ph-tab-i">
                     <div className="pill">
@@ -110,7 +115,7 @@ export default function Home() {
                         <line x1="10" y1="13" x2="14" y2="13"/>
                       </svg>
                     </div>
-                    Despensa
+                    {t('hero.tabDespensa')}
                   </div>
                   <div className="ph-tab-i">
                     <div className="pill">
@@ -119,7 +124,7 @@ export default function Home() {
                         <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
                       </svg>
                     </div>
-                    Receitas
+                    {t('hero.tabReceitas')}
                   </div>
                   <div className="ph-tab-i">
                     <div className="pill">
@@ -131,7 +136,7 @@ export default function Home() {
                         <path d="M8 14h2M14 14h2M8 18h2M14 18h2"/>
                       </svg>
                     </div>
-                    Plano
+                    {t('hero.tabPlano')}
                   </div>
                 </div>
               </div>
@@ -146,8 +151,8 @@ export default function Home() {
                 </svg>
               </div>
               <div>
-                <div className="label">Compartilhada</div>
-                <div className="sub">com a casa toda</div>
+                <div className="label">{t('hero.float2Label')}</div>
+                <div className="sub">{t('hero.float2Sub')}</div>
               </div>
             </div>
           </div>
@@ -161,26 +166,26 @@ export default function Home() {
       <section className="section pain">
         <div className="container">
           <div className="section-head reveal">
-            <div className="eyebrow"><span className="dot"></span> Você já passou por isso</div>
-            <h2>A cozinha perfeita existe.<br/>Só que ela nunca tem o que precisa.</h2>
-            <p>Não é falta de organização. É que nada te ajuda na sua rotina de verdade.</p>
+            <div className="eyebrow"><span className="dot"></span> {t('pain.eyebrow')}</div>
+            <h2>{t.rich('pain.title', { br: () => <br /> })}</h2>
+            <p>{t('pain.sub')}</p>
           </div>
 
           <div className="pain-grid">
             <div className="pain-card reveal">
               <span className="n">01</span>
-              <h3>Voltou do mercado sem o alho.</h3>
-              <p>De novo. Você olha a gôndola, tenta lembrar de cabeça, compra o que acha que precisa. Chega em casa e <em>falta exatamente aquilo.</em></p>
+              <h3>{t('pain.card1Title')}</h3>
+              <p>{t.rich('pain.card1Desc', { em: (chunks) => <em>{chunks}</em> })}</p>
             </div>
             <div className="pain-card reveal">
               <span className="n">02</span>
-              <h3>&ldquo;É essa marca aqui mesmo?&rdquo;</h3>
-              <p>Alguém manda foto de 3 marcas. Você para tudo, responde. <em>Compram a errada assim mesmo.</em></p>
+              <h3>{t('pain.card2Title')}</h3>
+              <p>{t.rich('pain.card2Desc', { em: (chunks) => <em>{chunks}</em> })}</p>
             </div>
             <div className="pain-card reveal">
               <span className="n">03</span>
-              <h3>App de lista virou planilha.</h3>
-              <p>Cheio de função que você não usa. Na hora da pressa, você ainda abre o bloco de notas. <em>Algo tá errado.</em></p>
+              <h3>{t('pain.card3Title')}</h3>
+              <p>{t.rich('pain.card3Desc', { em: (chunks) => <em>{chunks}</em> })}</p>
             </div>
           </div>
 
@@ -189,8 +194,8 @@ export default function Home() {
               <BrandIcon size={20} />
             </div>
             <div>
-              <div className="label">Por isso fizemos o Mise</div>
-              <h3>Um app que entende sua cozinha <em>do jeito que ela é.</em> Sem complicação, sem frescura.</h3>
+              <div className="label">{t('pain.transitionLabel')}</div>
+              <h3>{t.rich('pain.transitionTitle', { em: (chunks) => <em>{chunks}</em> })}</h3>
             </div>
             <svg className="arrow" aria-hidden="true" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
               <path d="M5 12h14M13 5l7 7-7 7"/>
