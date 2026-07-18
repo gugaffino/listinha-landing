@@ -1,37 +1,26 @@
 'use client'
 import { useState, useRef } from 'react'
+import { useTranslations } from 'next-intl'
 import Icon from './Icon'
+import { Link } from '../i18n/navigation'
 
-const ITEMS = [
-  {
-    href: '/funcionalidades/lista-de-compras',
-    label: 'Lista de compras',
-    desc: 'Organizada por corredor, offline',
-    iconName: 'cart',
-  },
-  {
-    href: '/funcionalidades/despensa',
-    label: 'Despensa',
-    desc: 'Sabe o que falta antes de ir ao mercado',
-    iconName: 'archive',
-  },
-  {
-    href: '/funcionalidades/receitas',
-    label: 'Receitas',
-    desc: 'Filtra pelo que tem em casa',
-    iconName: 'book',
-  },
-  {
-    href: '/funcionalidades/cardapio-semanal',
-    label: 'Cardápio semanal',
-    desc: 'Gera lista de compras automática',
-    iconName: 'calendar',
-  },
+const ITEM_DEFS = [
+  { href: '/funcionalidades/lista-de-compras', key: 'lista', iconName: 'cart' },
+  { href: '/funcionalidades/despensa', key: 'despensa', iconName: 'archive' },
+  { href: '/funcionalidades/receitas', key: 'receitas', iconName: 'book' },
+  { href: '/funcionalidades/cardapio-semanal', key: 'cardapio', iconName: 'calendar' },
 ]
 
 const MENU_ID = 'nav-features-menu'
 
 export default function NavDropdown() {
+  const t = useTranslations('nav')
+  const ITEMS = ITEM_DEFS.map((d) => ({
+    href: d.href,
+    iconName: d.iconName,
+    label: t(`dropdown.${d.key}.label`),
+    desc: t(`dropdown.${d.key}.desc`),
+  }))
   const [open, setOpen] = useState(false)
   const closeTimer = useRef(null)
   const menuRef = useRef(null)
@@ -77,7 +66,7 @@ export default function NavDropdown() {
       onFocus={enter}
       onBlur={leave}
     >
-      <a
+      <Link
         href="/funcionalidades"
         className="nav-dropdown-trigger"
         aria-expanded={open}
@@ -85,7 +74,7 @@ export default function NavDropdown() {
         aria-controls={MENU_ID}
         onKeyDown={handleTriggerKeyDown}
       >
-        Funcionalidades
+        {t('features')}
         <Icon
           name="chevron-down"
           size={14}
@@ -97,7 +86,7 @@ export default function NavDropdown() {
             transformOrigin: 'center',
           }}
         />
-      </a>
+      </Link>
       <div
         id={MENU_ID}
         ref={menuRef}
@@ -106,7 +95,7 @@ export default function NavDropdown() {
         onKeyDown={handleMenuKeyDown}
       >
         {ITEMS.map((item) => (
-          <a key={item.href} href={item.href} className="nav-dropdown-item" role="menuitem">
+          <Link key={item.href} href={item.href} className="nav-dropdown-item" role="menuitem">
             <div className="nav-dropdown-ico" aria-hidden="true">
               <Icon name={item.iconName} size={20} strokeWidth={1.8} />
             </div>
@@ -114,7 +103,7 @@ export default function NavDropdown() {
               <div className="nav-dropdown-label">{item.label}</div>
               <div className="nav-dropdown-desc">{item.desc}</div>
             </div>
-          </a>
+          </Link>
         ))}
       </div>
     </div>
