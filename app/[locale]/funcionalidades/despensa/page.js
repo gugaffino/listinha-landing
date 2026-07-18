@@ -16,6 +16,15 @@ export async function generateMetadata({ params }) {
       type: 'website',
       url: `https://www.miseemcasa.com.br/${locale}/funcionalidades/despensa`,
     },
+    alternates: {
+      canonical: `https://www.miseemcasa.com.br/${locale}/funcionalidades/despensa`,
+      languages: {
+        pt: 'https://www.miseemcasa.com.br/pt/funcionalidades/despensa',
+        en: 'https://www.miseemcasa.com.br/en/funcionalidades/despensa',
+        es: 'https://www.miseemcasa.com.br/es/funcionalidades/despensa',
+        'x-default': 'https://www.miseemcasa.com.br/pt/funcionalidades/despensa',
+      },
+    },
   }
 }
 

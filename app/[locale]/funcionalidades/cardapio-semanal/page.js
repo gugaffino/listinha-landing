@@ -16,6 +16,15 @@ export async function generateMetadata({ params }) {
       type: 'website',
       url: `https://www.miseemcasa.com.br/${locale}/funcionalidades/cardapio-semanal`,
     },
+    alternates: {
+      canonical: `https://www.miseemcasa.com.br/${locale}/funcionalidades/cardapio-semanal`,
+      languages: {
+        pt: 'https://www.miseemcasa.com.br/pt/funcionalidades/cardapio-semanal',
+        en: 'https://www.miseemcasa.com.br/en/funcionalidades/cardapio-semanal',
+        es: 'https://www.miseemcasa.com.br/es/funcionalidades/cardapio-semanal',
+        'x-default': 'https://www.miseemcasa.com.br/pt/funcionalidades/cardapio-semanal',
+      },
+    },
   }
 }
 

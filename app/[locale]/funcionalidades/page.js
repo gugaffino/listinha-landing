@@ -16,6 +16,15 @@ export async function generateMetadata({ params }) {
       type: 'website',
       url: `https://www.miseemcasa.com.br/${locale}/funcionalidades`,
     },
+    alternates: {
+      canonical: `https://www.miseemcasa.com.br/${locale}/funcionalidades`,
+      languages: {
+        pt: 'https://www.miseemcasa.com.br/pt/funcionalidades',
+        en: 'https://www.miseemcasa.com.br/en/funcionalidades',
+        es: 'https://www.miseemcasa.com.br/es/funcionalidades',
+        'x-default': 'https://www.miseemcasa.com.br/pt/funcionalidades',
+      },
+    },
   }
 }
 

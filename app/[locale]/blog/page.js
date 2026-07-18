@@ -11,6 +11,12 @@ export async function generateMetadata({ params }) {
     description: t('description'),
     alternates: {
       canonical: `https://www.miseemcasa.com.br/${locale}/blog`,
+      languages: {
+        pt: 'https://www.miseemcasa.com.br/pt/blog',
+        en: 'https://www.miseemcasa.com.br/en/blog',
+        es: 'https://www.miseemcasa.com.br/es/blog',
+        'x-default': 'https://www.miseemcasa.com.br/pt/blog',
+      },
     },
   }
 }

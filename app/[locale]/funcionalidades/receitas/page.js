@@ -16,6 +16,15 @@ export async function generateMetadata({ params }) {
       type: 'website',
       url: `https://www.miseemcasa.com.br/${locale}/funcionalidades/receitas`,
     },
+    alternates: {
+      canonical: `https://www.miseemcasa.com.br/${locale}/funcionalidades/receitas`,
+      languages: {
+        pt: 'https://www.miseemcasa.com.br/pt/funcionalidades/receitas',
+        en: 'https://www.miseemcasa.com.br/en/funcionalidades/receitas',
+        es: 'https://www.miseemcasa.com.br/es/funcionalidades/receitas',
+        'x-default': 'https://www.miseemcasa.com.br/pt/funcionalidades/receitas',
+      },
+    },
   }
 }
 

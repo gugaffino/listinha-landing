@@ -16,6 +16,15 @@ export async function generateMetadata({ params }) {
       type: 'website',
       url: `https://www.miseemcasa.com.br/${locale}/funcionalidades/lista-de-compras`,
     },
+    alternates: {
+      canonical: `https://www.miseemcasa.com.br/${locale}/funcionalidades/lista-de-compras`,
+      languages: {
+        pt: 'https://www.miseemcasa.com.br/pt/funcionalidades/lista-de-compras',
+        en: 'https://www.miseemcasa.com.br/en/funcionalidades/lista-de-compras',
+        es: 'https://www.miseemcasa.com.br/es/funcionalidades/lista-de-compras',
+        'x-default': 'https://www.miseemcasa.com.br/pt/funcionalidades/lista-de-compras',
+      },
+    },
   }
 }
 
