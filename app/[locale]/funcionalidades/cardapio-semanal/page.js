@@ -1,58 +1,38 @@
+import { getTranslations } from 'next-intl/server'
 import RevealObserver from '../../../../components/RevealObserver'
 import { BrandIcon } from '../../../../components/Icon'
 import SiteNav from '../../../../components/SiteNav'
+import { Link } from '../../../../i18n/navigation'
 
-export const metadata = {
-  title: 'App de Cardápio Semanal com Lista de Compras Integrada — Mise',
-  description: 'Mise é o app para criar cardápio semanal integrado com lista de compras. Você planeja os 7 dias, o app gera a lista automaticamente com o que falta na despensa.',
-  openGraph: {
-    title: 'App para Criar Cardápio Semanal com Lista de Compras — Mise',
-    description: 'Cardápio semanal que gera lista de compras automática. Integrado com a despensa. Grátis.',
-    type: 'website',
-    url: 'https://www.miseemcasa.com.br/funcionalidades/cardapio-semanal',
-  },
+export async function generateMetadata({ params }) {
+  const { locale } = await params
+  const t = await getTranslations({ locale, namespace: 'svcCardapioSemanal.meta' })
+  return {
+    title: t('title'),
+    description: t('description'),
+    openGraph: {
+      title: t('ogTitle'),
+      description: t('ogDescription'),
+      type: 'website',
+      url: `https://www.miseemcasa.com.br/${locale}/funcionalidades/cardapio-semanal`,
+    },
+  }
 }
 
-const faqSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'FAQPage',
-  mainEntity: [
-    {
-      '@type': 'Question',
-      name: 'Como criar um cardápio semanal com lista de compras integrada?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'No Mise você seleciona receitas para cada dia da semana. O app cruza com o que está na despensa e adiciona automaticamente os ingredientes que faltam na lista de compras.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'O app para criar cardápio semanal é gratuito?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Sim, o Mise é 100% gratuito. O plano da semana, a integração com lista de compras e a despensa funcionam sem pagar nada.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'Como o cardápio semanal ajuda a economizar no mercado?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Quem planeja o cardápio antes de ir ao mercado compra só o que vai usar — sem itens por impulso. Quem vai sem lista gasta em média 27% a mais por compra.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'O plano semanal funciona para família?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Sim. A lista gerada pelo cardápio é compartilhável pelo WhatsApp. Todo mundo vê o plano da semana e a lista de compras em tempo real no mesmo lugar.',
-      },
-    },
-  ],
-}
+export default async function CardapioSemanalPage() {
+  const t = await getTranslations('svcCardapioSemanal')
+  const tc = await getTranslations('common')
 
-export default function CardapioSemanalPage() {
+  const faqSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [1, 2, 3, 4].map((n) => ({
+      '@type': 'Question',
+      name: t(`faq.q${n}`),
+      acceptedAnswer: { '@type': 'Answer', text: t(`faq.a${n}`) },
+    })),
+  }
+
   return (
     <>
       <script
@@ -67,23 +47,22 @@ export default function CardapioSemanalPage() {
       <section className="svc-hero">
         <div className="container">
           <div className="reveal">
-            <div className="eyebrow"><span className="dot"></span> Plano da semana</div>
+            <div className="eyebrow"><span className="dot"></span> {t('hero.eyebrow')}</div>
             <h1 className="svc-hero-h1">
-              App de cardápio semanal que gera<br />
-              <span className="svc-hero-accent">lista de compras automática.</span>
+              {t.rich('hero.title', {
+                br: () => <br />,
+                accent: (chunks) => <span className="svc-hero-accent">{chunks}</span>,
+              })}
             </h1>
-            <p className="svc-hero-sub">
-              Você monta o cardápio de segunda a domingo. O app cruza com o que tem na despensa
-              e adiciona os ingredientes que faltam direto na lista. Acabou a surpresa de sexta-feira.
-            </p>
+            <p className="svc-hero-sub">{t('hero.sub')}</p>
             <div className="svc-hero-actions">
               <a href="https://listinha-puce.vercel.app" className="btn btn-primary btn-lg" target="_blank" rel="noopener">
-                Abrir o app grátis
+                {tc('ctaOpenAppFree')}
                 <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M5 12h14M13 5l7 7-7 7"/>
                 </svg>
               </a>
-              <a href="/funcionalidades" className="btn btn-quiet">← Todas as funcionalidades</a>
+              <Link href="/funcionalidades" className="btn btn-quiet">{tc('allFeatures')}</Link>
             </div>
           </div>
         </div>
@@ -93,24 +72,24 @@ export default function CardapioSemanalPage() {
       <section className="section how">
         <div className="container">
           <div className="section-head reveal">
-            <div className="eyebrow"><span className="dot"></span> Como funciona</div>
-            <h2>Do cardápio à lista em três passos.</h2>
+            <div className="eyebrow"><span className="dot"></span> {t('how.eyebrow')}</div>
+            <h2>{t('how.title')}</h2>
           </div>
           <div className="how-grid reveal">
             <div className="how-step">
               <div className="num">1</div>
-              <h4>Escolhe as receitas da semana</h4>
-              <p>Seleciona o que vai cozinhar de segunda a domingo usando as receitas salvas no app. Pode deixar dias livres sem problema.</p>
+              <h4>{t('how.step1Title')}</h4>
+              <p>{t('how.step1Desc')}</p>
             </div>
             <div className="how-step">
               <div className="num">2</div>
-              <h4>App cruza com a despensa</h4>
-              <p>O Mise verifica o que você já tem em casa e separa só os ingredientes que faltam. Você não compra o que não precisa.</p>
+              <h4>{t('how.step2Title')}</h4>
+              <p>{t('how.step2Desc')}</p>
             </div>
             <div className="how-step">
               <div className="num">3</div>
-              <h4>Lista gerada, mercado resolvido</h4>
-              <p>Uma ida ao mercado cobre a semana inteira. Sem improvisar na quinta porque faltou um ingrediente da receita de sexta.</p>
+              <h4>{t('how.step3Title')}</h4>
+              <p>{t('how.step3Desc')}</p>
             </div>
           </div>
         </div>
@@ -122,12 +101,9 @@ export default function CardapioSemanalPage() {
           <div className="svc-feature-inner svc-feature-flip reveal">
 
             <div className="svc-feature-text">
-              <div className="eyebrow"><span className="dot"></span> O que tem</div>
-              <h2>Planejamento que conecta cardápio, despensa e lista.</h2>
-              <p>
-                Não é só um calendário de refeições. É um sistema que elimina o espaço entre
-                "o que vou cozinhar" e "o que preciso comprar".
-              </p>
+              <div className="eyebrow"><span className="dot"></span> {t('feature.eyebrow')}</div>
+              <h2>{t('feature.title')}</h2>
+              <p>{t('feature.desc')}</p>
               <div className="svc-points">
                 <div className="svc-point">
                   <div className="svc-point-ico">
@@ -138,8 +114,8 @@ export default function CardapioSemanalPage() {
                     </svg>
                   </div>
                   <div className="svc-point-body">
-                    <div className="svc-point-title">7 dias de uma vez</div>
-                    <div className="svc-point-desc">Planeja toda a semana antes de ir ao mercado. Uma viagem. Sem improvisos no meio da semana.</div>
+                    <div className="svc-point-title">{t('feature.point1Title')}</div>
+                    <div className="svc-point-desc">{t('feature.point1Desc')}</div>
                   </div>
                 </div>
                 <div className="svc-point">
@@ -150,8 +126,8 @@ export default function CardapioSemanalPage() {
                     </svg>
                   </div>
                   <div className="svc-point-body">
-                    <div className="svc-point-title">Lista gerada automaticamente</div>
-                    <div className="svc-point-desc">Os ingredientes que faltam entram na lista de compras sem precisar anotar um por um.</div>
+                    <div className="svc-point-title">{t('feature.point2Title')}</div>
+                    <div className="svc-point-desc">{t('feature.point2Desc')}</div>
                   </div>
                 </div>
                 <div className="svc-point">
@@ -161,8 +137,8 @@ export default function CardapioSemanalPage() {
                     </svg>
                   </div>
                   <div className="svc-point-body">
-                    <div className="svc-point-title">Integrado com a despensa</div>
-                    <div className="svc-point-desc">O que você já tem em casa não entra na lista. Só compra o que realmente precisa.</div>
+                    <div className="svc-point-title">{t('feature.point3Title')}</div>
+                    <div className="svc-point-desc">{t('feature.point3Desc')}</div>
                   </div>
                 </div>
                 <div className="svc-point">
@@ -172,8 +148,8 @@ export default function CardapioSemanalPage() {
                     </svg>
                   </div>
                   <div className="svc-point-body">
-                    <div className="svc-point-title">Menos desperdício</div>
-                    <div className="svc-point-desc">Você compra o que vai usar — não o que parece útil na hora. O frango fica na geladeira certo prazo.</div>
+                    <div className="svc-point-title">{t('feature.point4Title')}</div>
+                    <div className="svc-point-desc">{t('feature.point4Desc')}</div>
                   </div>
                 </div>
               </div>
@@ -182,16 +158,16 @@ export default function CardapioSemanalPage() {
             <div className="svc-visual">
               <div className="vm">
                 <div className="vm-hdr">
-                  <span>Plano da semana</span>
-                  <span className="ph-badge">5 refeições</span>
+                  <span>{t('feature.vmTitle')}</span>
+                  <span className="ph-badge">{t('feature.vmCount')}</span>
                 </div>
-                <div className="vm-day"><span className="vm-day-lbl">SEG</span><span>Frango grelhado com arroz</span></div>
-                <div className="vm-day"><span className="vm-day-lbl">TER</span><span>Macarrão ao sugo</span></div>
-                <div className="vm-day"><span className="vm-day-lbl">QUA</span><span>Omelete de legumes</span></div>
-                <div className="vm-day"><span className="vm-day-lbl">QUI</span><span>Feijão tropeiro</span></div>
-                <div className="vm-day"><span className="vm-day-lbl">SEX</span><span>Peixe assado</span></div>
-                <div className="vm-day"><span className="vm-day-lbl">SAB</span><span className="vm-day-empty">— livre —</span></div>
-                <div className="vm-day"><span className="vm-day-lbl">DOM</span><span className="vm-day-empty">— livre —</span></div>
+                <div className="vm-day"><span className="vm-day-lbl">{t('feature.day1Lbl')}</span><span>{t('feature.day1')}</span></div>
+                <div className="vm-day"><span className="vm-day-lbl">{t('feature.day2Lbl')}</span><span>{t('feature.day2')}</span></div>
+                <div className="vm-day"><span className="vm-day-lbl">{t('feature.day3Lbl')}</span><span>{t('feature.day3')}</span></div>
+                <div className="vm-day"><span className="vm-day-lbl">{t('feature.day4Lbl')}</span><span>{t('feature.day4')}</span></div>
+                <div className="vm-day"><span className="vm-day-lbl">{t('feature.day5Lbl')}</span><span>{t('feature.day5')}</span></div>
+                <div className="vm-day"><span className="vm-day-lbl">{t('feature.day6Lbl')}</span><span className="vm-day-empty">{t('feature.day6Empty')}</span></div>
+                <div className="vm-day"><span className="vm-day-lbl">{t('feature.day7Lbl')}</span><span className="vm-day-empty">{t('feature.day7Empty')}</span></div>
               </div>
             </div>
 
@@ -203,31 +179,11 @@ export default function CardapioSemanalPage() {
       <section className="section section-pad-0">
         <div className="container">
           <div className="text-col svc-feature-text reveal">
-            <h2>Por que planejar a semana antes de ir ao mercado</h2>
-            <p>
-              Quem vai ao mercado sem saber o que vai cozinhar na semana compra por instinto.
-              Pega o que parece útil, lembra de algo que estava acabando, joga no carrinho o que
-              estava em promoção. O resultado é uma geladeira cheia de itens desconexos e a dúvida
-              de quarta-feira: o que faço com isso tudo?
-            </p>
-            <p>
-              Famílias que planejam o cardápio semanal antes de ir ao mercado tendem a gastar
-              menos nas compras e desperdiçar menos alimento. O cardápio funciona como filtro:
-              você compra o que vai usar, não o que parece que vai usar.
-            </p>
-            <p>
-              O Mise conecta o cardápio com a despensa. Você escolhe as receitas da semana,
-              o app verifica o que já tem em casa e monta automaticamente a lista dos ingredientes
-              que faltam. Uma ação resolve a semana inteira — sem improvisar na quinta, sem
-              volta extra ao mercado na sexta.
-            </p>
-            <p>
-              Quem experimenta planejar o cardápio antes de ir ao mercado na primeira semana
-              já percebe a diferença na conta e nos improvisos do meio da semana. O hábito de
-              cinco minutos de planejamento no domingo — montar o cardápio com o que tem na
-              despensa e gerar a lista automática — resolve quatro perguntas de "o que a gente
-              come hoje?" e economiza pelo menos uma ida extra ao mercado por semana.
-            </p>
+            <h2>{t('why.title')}</h2>
+            <p>{t('why.p1')}</p>
+            <p>{t('why.p2')}</p>
+            <p>{t('why.p3')}</p>
+            <p>{t('why.p4')}</p>
           </div>
         </div>
       </section>
@@ -236,26 +192,16 @@ export default function CardapioSemanalPage() {
       <section className="svc-faq">
         <div className="container">
           <div className="section-head reveal">
-            <div className="eyebrow"><span className="dot"></span> Perguntas diretas</div>
-            <h2>O que as pessoas perguntam</h2>
+            <div className="eyebrow"><span className="dot"></span> {t('faq.eyebrow')}</div>
+            <h2>{t('faq.title')}</h2>
           </div>
           <div className="svc-faq-list reveal">
-            <div className="svc-faq-item">
-              <div className="svc-faq-q">Como criar cardápio semanal com lista de compras integrada?</div>
-              <div className="svc-faq-a">Você seleciona receitas para cada dia da semana. O Mise cruza com o que tem na despensa e adiciona automaticamente os ingredientes que faltam na lista de compras. Uma ação gera a lista da semana inteira.</div>
-            </div>
-            <div className="svc-faq-item">
-              <div className="svc-faq-q">O app para criar cardápio semanal é gratuito?</div>
-              <div className="svc-faq-a">Sim, 100% gratuito. O plano da semana, a integração com lista e a despensa funcionam sem pagar nada e sem cadastro obrigatório.</div>
-            </div>
-            <div className="svc-faq-item">
-              <div className="svc-faq-q">Como o cardápio semanal ajuda a economizar no mercado?</div>
-              <div className="svc-faq-a">Quem planeja antes de ir ao mercado compra só o que vai usar. Quem vai sem planejamento gasta em média 27% a mais — são itens por impulso e ingredientes que ficam na geladeira até virar lixo.</div>
-            </div>
-            <div className="svc-faq-item">
-              <div className="svc-faq-q">Funciona para família ou casal?</div>
-              <div className="svc-faq-a">Sim. A lista gerada pelo cardápio é compartilhável pelo WhatsApp. Todos veem o plano da semana e a lista em tempo real no mesmo lugar — sem grupo de texto bagunçado.</div>
-            </div>
+            {[1, 2, 3, 4].map((n) => (
+              <div className="svc-faq-item" key={n}>
+                <div className="svc-faq-q">{t(`faq.q${n}`)}</div>
+                <div className="svc-faq-a">{t(`faq.a${n}`)}</div>
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -264,17 +210,17 @@ export default function CardapioSemanalPage() {
       <section className="section">
         <div className="container">
           <div className="cta-final reveal">
-            <h2>Menos decisões.<br /><em>Mais comida.</em></h2>
-            <p>Do cardápio à lista em três passos. Grátis.</p>
+            <h2>{t.rich('cta.title', { br: () => <br />, em: (chunks) => <em>{chunks}</em> })}</h2>
+            <p>{t('cta.sub')}</p>
             <div className="actions">
               <a href="https://listinha-puce.vercel.app" className="btn btn-on-dark btn-lg" target="_blank" rel="noopener">
-                Abrir o Mise grátis
+                {tc('ctaOpenMiseFree')}
                 <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M5 12h14M13 5l7 7-7 7"/>
                 </svg>
               </a>
             </div>
-            <p className="footnote">sem cadastro · sem cartão · funciona offline</p>
+            <p className="footnote">{tc('footnoteNoSignup')}</p>
           </div>
         </div>
       </section>
@@ -282,14 +228,14 @@ export default function CardapioSemanalPage() {
       {/* FOOTER */}
       <footer className="footer">
         <div className="container footer-inner">
-          <a href="/" className="brand">
+          <Link href="/" className="brand">
             <div className="brand-mark">
               <BrandIcon size={20} />
             </div>
             <span className="brand-name">Mise</span>
-          </a>
-          <span className="footer-copy">© 2024 Mise</span>
-          <a href="https://listinha-puce.vercel.app" className="footer-link" target="_blank" rel="noopener">Abrir o app</a>
+          </Link>
+          <span className="footer-copy">{tc('footerCopyright')}</span>
+          <a href="https://listinha-puce.vercel.app" className="footer-link" target="_blank" rel="noopener">{tc('openApp')}</a>
         </div>
       </footer>
     </>
