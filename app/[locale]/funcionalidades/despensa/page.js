@@ -1,58 +1,39 @@
+import { getTranslations, getLocale } from 'next-intl/server'
 import RevealObserver from '../../../../components/RevealObserver'
 import { BrandIcon } from '../../../../components/Icon'
 import SiteNav from '../../../../components/SiteNav'
+import { Link } from '../../../../i18n/navigation'
 
-export const metadata = {
-  title: 'App de Controle de Despensa — Mise',
-  description: 'Mise é o app de controle de despensa que marca o que tá acabando e gera lista de compras automática. Monta sua despensa ideal uma vez e nunca mais esquece o que falta.',
-  openGraph: {
-    title: 'App de Controle de Despensa — Mise',
-    description: 'Monta sua despensa, marca o que acabou e gera a lista de compras automaticamente. Grátis.',
-    type: 'website',
-    url: 'https://www.miseemcasa.com.br/funcionalidades/despensa',
-  },
+export async function generateMetadata({ params }) {
+  const { locale } = await params
+  const t = await getTranslations({ locale, namespace: 'svcDespensa.meta' })
+  return {
+    title: t('title'),
+    description: t('description'),
+    openGraph: {
+      title: t('ogTitle'),
+      description: t('ogDescription'),
+      type: 'website',
+      url: `https://www.miseemcasa.com.br/${locale}/funcionalidades/despensa`,
+    },
+  }
 }
 
-const faqSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'FAQPage',
-  mainEntity: [
-    {
-      '@type': 'Question',
-      name: 'Como o app controla o que tem na despensa?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Você monta a despensa ideal uma vez — com os itens que sempre tem em casa. Quando algo acaba ou está acabando, marca no app. Na hora de fazer a lista de compras, o Mise já sabe o que falta.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'A despensa se conecta com a lista de compras?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Sim. O que está marcado como esgotado ou acabando na despensa aparece como sugestão na lista de compras com um toque. Sem precisar lembrar de nada.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'A despensa funciona com as receitas também?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Sim. O app cruza a despensa com as receitas salvas e mostra o que dá pra cozinhar hoje sem passar no mercado. Os ingredientes que faltam vão direto pra lista.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'Preciso montar a despensa do zero?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Não. O Mise sugere os itens mais comuns — arroz, feijão, azeite, alho — pra você adicionar com um toque. Em dois minutos a despensa já tem o básico da sua casa.',
-      },
-    },
-  ],
-}
+export default async function DespensaPage() {
+  const t = await getTranslations('svcDespensa')
+  const tc = await getTranslations('common')
+  const locale = await getLocale()
 
-export default function DespensaPage() {
+  const faqSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [1, 2, 3, 4].map((n) => ({
+      '@type': 'Question',
+      name: t(`faq.q${n}`),
+      acceptedAnswer: { '@type': 'Answer', text: t(`faq.a${n}`) },
+    })),
+  }
+
   return (
     <>
       <script
@@ -67,23 +48,22 @@ export default function DespensaPage() {
       <section className="svc-hero">
         <div className="container">
           <div className="reveal">
-            <div className="eyebrow"><span className="dot"></span> Despensa</div>
+            <div className="eyebrow"><span className="dot"></span> {t('hero.eyebrow')}</div>
             <h1 className="svc-hero-h1">
-              Sempre tenha o que<br />
-              precisa pra <span className="svc-hero-accent">cozinhar.</span>
+              {t.rich('hero.title', {
+                br: () => <br />,
+                accent: (chunks) => <span className="svc-hero-accent">{chunks}</span>,
+              })}
             </h1>
-            <p className="svc-hero-sub">
-              Monta sua despensa ideal uma vez. O que acabou fica marcado —
-              quando for fazer a lista, você já sabe o que comprar sem precisar abrir a geladeira.
-            </p>
+            <p className="svc-hero-sub">{t('hero.sub')}</p>
             <div className="svc-hero-actions">
               <a href="https://listinha-puce.vercel.app" className="btn btn-primary btn-lg" target="_blank" rel="noopener">
-                Abrir o app grátis
+                {tc('ctaOpenAppFree')}
                 <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M5 12h14M13 5l7 7-7 7"/>
                 </svg>
               </a>
-              <a href="/funcionalidades" className="btn btn-quiet">← Todas as funcionalidades</a>
+              <Link href="/funcionalidades" className="btn btn-quiet">{tc('allFeatures')}</Link>
             </div>
           </div>
         </div>
@@ -93,24 +73,24 @@ export default function DespensaPage() {
       <section className="section how">
         <div className="container">
           <div className="section-head reveal">
-            <div className="eyebrow"><span className="dot"></span> Como funciona</div>
-            <h2>Monta uma vez. Usa pra sempre.</h2>
+            <div className="eyebrow"><span className="dot"></span> {t('how.eyebrow')}</div>
+            <h2>{t('how.title')}</h2>
           </div>
           <div className="how-grid reveal">
             <div className="how-step">
               <div className="num">1</div>
-              <h4>Monta a despensa ideal</h4>
-              <p>Adiciona os itens que sempre tem em casa — o app sugere os básicos. Arroz, feijão, azeite, alho, cebola. Em dois minutos, sua despensa está pronta.</p>
+              <h4>{t('how.step1Title')}</h4>
+              <p>{t('how.step1Desc')}</p>
             </div>
             <div className="how-step">
               <div className="num">2</div>
-              <h4>Marca o que acabou</h4>
-              <p>Usou o último azeite? Um toque e tá marcado como esgotado. Tá quase acabando? Marca como "acabando". O app lembra por você.</p>
+              <h4>{t('how.step2Title')}</h4>
+              <p>{t('how.step2Desc')}</p>
             </div>
             <div className="how-step">
               <div className="num">3</div>
-              <h4>Gera a lista automaticamente</h4>
-              <p>Na hora de ir ao mercado, o que está esgotado ou acabando vira sugestão de lista com um toque. Sem abrir a geladeira, sem esquecer nada.</p>
+              <h4>{t('how.step3Title')}</h4>
+              <p>{t('how.step3Desc')}</p>
             </div>
           </div>
         </div>
@@ -122,12 +102,9 @@ export default function DespensaPage() {
           <div className="svc-feature-inner reveal">
 
             <div className="svc-feature-text">
-              <div className="eyebrow"><span className="dot"></span> O que tem</div>
-              <h2>Despensa conectada com lista e receitas.</h2>
-              <p>
-                Não é só um inventário. A despensa do Mise fala com a lista de compras e com as receitas —
-                pra você saber o que falta comprar e o que já dá pra cozinhar hoje.
-              </p>
+              <div className="eyebrow"><span className="dot"></span> {t('feature.eyebrow')}</div>
+              <h2>{t('feature.title')}</h2>
+              <p>{t('feature.desc')}</p>
               <div className="svc-points">
                 <div className="svc-point">
                   <div className="svc-point-ico">
@@ -138,8 +115,8 @@ export default function DespensaPage() {
                     </svg>
                   </div>
                   <div className="svc-point-body">
-                    <div className="svc-point-title">Sugestões pra montar a despensa completa</div>
-                    <div className="svc-point-desc">O app sugere os itens mais comuns pra você adicionar com um toque — sem começar do zero.</div>
+                    <div className="svc-point-title">{t('feature.point1Title')}</div>
+                    <div className="svc-point-desc">{t('feature.point1Desc')}</div>
                   </div>
                 </div>
                 <div className="svc-point">
@@ -150,8 +127,8 @@ export default function DespensaPage() {
                     </svg>
                   </div>
                   <div className="svc-point-body">
-                    <div className="svc-point-title">Adiciona à lista num toque</div>
-                    <div className="svc-point-desc">O que está esgotado vai direto pra lista de compras. Sem copiar, sem digitar de novo.</div>
+                    <div className="svc-point-title">{t('feature.point2Title')}</div>
+                    <div className="svc-point-desc">{t('feature.point2Desc')}</div>
                   </div>
                 </div>
                 <div className="svc-point">
@@ -162,8 +139,8 @@ export default function DespensaPage() {
                     </svg>
                   </div>
                   <div className="svc-point-body">
-                    <div className="svc-point-title">Cruza com suas receitas</div>
-                    <div className="svc-point-desc">O app mostra quais receitas dá pra fazer com o que tem na despensa — sem ir ao mercado primeiro.</div>
+                    <div className="svc-point-title">{t('feature.point3Title')}</div>
+                    <div className="svc-point-desc">{t('feature.point3Desc')}</div>
                   </div>
                 </div>
                 <div className="svc-point">
@@ -175,8 +152,8 @@ export default function DespensaPage() {
                     </svg>
                   </div>
                   <div className="svc-point-body">
-                    <div className="svc-point-title">Marca o que tá acabando</div>
-                    <div className="svc-point-desc">Não precisa esperar acabar pra lembrar. Marca como "acabando" e o app já inclui nas próximas compras.</div>
+                    <div className="svc-point-title">{t('feature.point4Title')}</div>
+                    <div className="svc-point-desc">{t('feature.point4Desc')}</div>
                   </div>
                 </div>
               </div>
@@ -185,29 +162,29 @@ export default function DespensaPage() {
             <div className="svc-visual">
               <div className="vm">
                 <div className="vm-hdr">
-                  <span>Minha despensa</span>
-                  <span className="ph-badge">8 itens</span>
+                  <span>{t('feature.vmTitle')}</span>
+                  <span className="ph-badge">{t('feature.vmCount')}</span>
                 </div>
                 <div className="vm-chips">
-                  <span className="vm-chip">Alho</span>
-                  <span className="vm-chip">Cebola</span>
-                  <span className="vm-chip">Azeite</span>
-                  <span className="vm-chip">Arroz</span>
-                  <span className="vm-chip">Feijão</span>
-                  <span className="vm-chip out">Sal</span>
-                  <span className="vm-chip out">Leite</span>
-                  <span className="vm-chip">Ovos</span>
+                  <span className="vm-chip">{t('feature.chip1')}</span>
+                  <span className="vm-chip">{t('feature.chip2')}</span>
+                  <span className="vm-chip">{t('feature.chip3')}</span>
+                  <span className="vm-chip">{t('feature.chip4')}</span>
+                  <span className="vm-chip">{t('feature.chip5')}</span>
+                  <span className="vm-chip out">{t('feature.chip6')}</span>
+                  <span className="vm-chip out">{t('feature.chip7')}</span>
+                  <span className="vm-chip">{t('feature.chip8')}</span>
                 </div>
                 <div style={{ marginTop: '16px', padding: '12px', background: 'var(--tomate-claro)', borderRadius: '10px', border: '1px solid #F4CFC1' }}>
-                  <div style={{ fontSize: '11px', fontWeight: 700, color: 'var(--tomate)', letterSpacing: '0.08em', textTransform: 'uppercase', marginBottom: '8px' }}>Acabou</div>
+                  <div style={{ fontSize: '11px', fontWeight: 700, color: 'var(--tomate)', letterSpacing: '0.08em', textTransform: 'uppercase', marginBottom: '8px' }}>{t('feature.outLabel')}</div>
                   <div style={{ display: 'flex', flexDirection: 'column', gap: '6px' }}>
                     <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', fontSize: '13px', color: 'var(--carvao)' }}>
-                      <span>Sal</span>
-                      <span style={{ fontSize: '11px', fontWeight: 600, color: 'var(--verde-folha)', cursor: 'pointer' }}>+ lista</span>
+                      <span>{t('feature.outItem1')}</span>
+                      <span style={{ fontSize: '11px', fontWeight: 600, color: 'var(--verde-folha)', cursor: 'pointer' }}>{t('feature.addToList')}</span>
                     </div>
                     <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', fontSize: '13px', color: 'var(--carvao)' }}>
-                      <span>Leite</span>
-                      <span style={{ fontSize: '11px', fontWeight: 600, color: 'var(--verde-folha)', cursor: 'pointer' }}>+ lista</span>
+                      <span>{t('feature.outItem2')}</span>
+                      <span style={{ fontSize: '11px', fontWeight: 600, color: 'var(--verde-folha)', cursor: 'pointer' }}>{t('feature.addToList')}</span>
                     </div>
                   </div>
                 </div>
@@ -222,32 +199,19 @@ export default function DespensaPage() {
       <section className="section section-pad-0">
         <div className="container">
           <div className="text-col svc-feature-text reveal">
-            <h2>O custo de não saber o que tem em casa</h2>
+            <h2>{t('why.title')}</h2>
+            <p>{t('why.p1')}</p>
+            <p>{t('why.p2')}</p>
             <p>
-              A despensa desorganizada não é só questão estética — é financeira. Quando você não
-              sabe o que tem em casa, compra duas vezes o mesmo produto, deixa itens vencerem
-              no fundo da prateleira e ainda chega ao mercado sem saber o que realmente falta.
+              {t('why.p3')}
+              {locale === 'pt' && (
+                <>
+                  {' '}Veja também como{' '}
+                  <a href="/pt/blog/como-organizar-a-despensa">organizar a despensa do zero em 7 passos</a>.
+                </>
+              )}
             </p>
-            <p>
-              Levantamentos sobre desperdício alimentar mostram que o Brasil descarta cerca de 41 kg
-              de alimento por pessoa por ano — e boa parte desse desperdício começa na compra
-              errada: você compra o que não precisa porque não sabia que ainda tinha.
-            </p>
-            <p>
-              Com a despensa do Mise você monta sua lista ideal de estoque uma vez. Depois,
-              basta marcar o que acabou no momento em que você percebe — não no dia do mercado,
-              quando a memória já falhou. Na hora de ir às compras, a lista já está pré-preenchida
-              com o que falta, sem precisar abrir cada armário pra conferir. Veja também como{' '}
-              <a href="/blog/como-organizar-a-despensa">organizar a despensa do zero em 7 passos</a>.
-            </p>
-            <p>
-              A diferença entre uma despensa organizada e uma despensa viva está no hábito de
-              marcar o que acaba no momento em que você percebe — não na semana do mercado,
-              quando você já esqueceu. O Mise torna esse hábito mínimo: um toque quando abre
-              o armário e vê que o sal acabou. Na hora de ir ao mercado, a lista já está
-              pré-preenchida com o que falta. Sem abrir cada armário, sem tentar lembrar o que
-              tinha na última prateleira.
-            </p>
+            <p>{t('why.p4')}</p>
           </div>
         </div>
       </section>
@@ -256,26 +220,16 @@ export default function DespensaPage() {
       <section className="svc-faq">
         <div className="container">
           <div className="section-head reveal">
-            <div className="eyebrow"><span className="dot"></span> Perguntas diretas</div>
-            <h2>O que as pessoas perguntam</h2>
+            <div className="eyebrow"><span className="dot"></span> {t('faq.eyebrow')}</div>
+            <h2>{t('faq.title')}</h2>
           </div>
           <div className="svc-faq-list reveal">
-            <div className="svc-faq-item">
-              <div className="svc-faq-q">Como o app controla o que tem na despensa?</div>
-              <div className="svc-faq-a">Você monta a despensa ideal uma vez — com os itens que sempre tem em casa. Quando algo acaba ou está acabando, marca no app. Na hora de fazer a lista de compras, o Mise já sabe o que falta.</div>
-            </div>
-            <div className="svc-faq-item">
-              <div className="svc-faq-q">A despensa se conecta com a lista de compras?</div>
-              <div className="svc-faq-a">Sim. O que está marcado como esgotado ou acabando na despensa aparece como sugestão na lista de compras com um toque. Sem precisar lembrar de nada.</div>
-            </div>
-            <div className="svc-faq-item">
-              <div className="svc-faq-q">A despensa funciona com as receitas também?</div>
-              <div className="svc-faq-a">Sim. O app cruza a despensa com as receitas salvas e mostra o que dá pra cozinhar hoje sem passar no mercado. Os ingredientes que faltam vão direto pra lista.</div>
-            </div>
-            <div className="svc-faq-item">
-              <div className="svc-faq-q">Preciso montar a despensa do zero?</div>
-              <div className="svc-faq-a">Não. O Mise sugere os itens mais comuns — arroz, feijão, azeite, alho — pra você adicionar com um toque. Em dois minutos a despensa já tem o básico da sua casa.</div>
-            </div>
+            {[1, 2, 3, 4].map((n) => (
+              <div className="svc-faq-item" key={n}>
+                <div className="svc-faq-q">{t(`faq.q${n}`)}</div>
+                <div className="svc-faq-a">{t(`faq.a${n}`)}</div>
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -284,17 +238,17 @@ export default function DespensaPage() {
       <section className="section">
         <div className="container">
           <div className="cta-final reveal">
-            <h2>A despensa lembra.<br /><em>Você cozinha.</em></h2>
-            <p>Sem cadastro na largada. Começa a usar agora.</p>
+            <h2>{t.rich('cta.title', { br: () => <br />, em: (chunks) => <em>{chunks}</em> })}</h2>
+            <p>{t('cta.sub')}</p>
             <div className="actions">
               <a href="https://listinha-puce.vercel.app" className="btn btn-on-dark btn-lg" target="_blank" rel="noopener">
-                Abrir o Mise grátis
+                {tc('ctaOpenMiseFree')}
                 <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M5 12h14M13 5l7 7-7 7"/>
                 </svg>
               </a>
             </div>
-            <p className="footnote">sem cadastro · sem cartão · funciona offline</p>
+            <p className="footnote">{tc('footnoteNoSignup')}</p>
           </div>
         </div>
       </section>
@@ -302,14 +256,14 @@ export default function DespensaPage() {
       {/* FOOTER */}
       <footer className="footer">
         <div className="container footer-inner">
-          <a href="/" className="brand">
+          <Link href="/" className="brand">
             <div className="brand-mark">
               <BrandIcon size={20} />
             </div>
             <span className="brand-name">Mise</span>
-          </a>
-          <span className="footer-copy">© 2024 Mise</span>
-          <a href="https://listinha-puce.vercel.app" className="footer-link" target="_blank" rel="noopener">Abrir o app</a>
+          </Link>
+          <span className="footer-copy">{tc('footerCopyright')}</span>
+          <a href="https://listinha-puce.vercel.app" className="footer-link" target="_blank" rel="noopener">{tc('openApp')}</a>
         </div>
       </footer>
     </>
