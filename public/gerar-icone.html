@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Gerar ícone Mise</title>
+  <style>
+    body { font-family: sans-serif; display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 100vh; background: #F5F1E8; gap: 24px; }
+    button { padding: 12px 28px; background: #2D5F2F; color: white; border: none; border-radius: 999px; font-size: 16px; cursor: pointer; }
+    button:hover { background: #3E7E40; }
+    canvas { border-radius: 20px; box-shadow: 0 8px 24px rgba(0,0,0,0.12); }
+  </style>
+</head>
+<body>
+  <canvas id="canvas" width="240" height="240"></canvas>
+  <button onclick="baixar()">Baixar PNG 240×240</button>
+  <script>
+    const canvas = document.getElementById('canvas');
+    const ctx = canvas.getContext('2d');
+
+    const svg = `<svg viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg" width="240" height="240">
+      <rect width="240" height="240" rx="52" fill="#2D5F2F"/>
+      <path d="M 48 116 L 192 116 Q 192 188 120 188 Q 48 188 48 116 Z" fill="#FBF9F2"/>
+      <circle cx="120" cy="68" r="19.2" fill="#B8E89A"/>
+    </svg>`;
+
+    const blob = new Blob([svg], { type: 'image/svg+xml' });
+    const url = URL.createObjectURL(blob);
+    const img = new Image();
+    img.onload = () => { ctx.drawImage(img, 0, 0); URL.revokeObjectURL(url); };
+    img.src = url;
+
+    function baixar() {
+      const link = document.createElement('a');
+      link.download = 'mise-icon-240.png';
+      link.href = canvas.toDataURL('image/png');
+      link.click();
+    }
+  </script>
+</body>
+</html>
