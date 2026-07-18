@@ -208,9 +208,9 @@ export default async function Home() {
       <section className="section" id="features">
         <div className="container">
           <div className="section-head reveal">
-            <div className="eyebrow"><span className="dot"></span> Funcionalidades</div>
-            <h2>A despensa lembra. O plano se monta. A lista aparece.</h2>
-            <p>Cada um resolve um pedaço do problema. Juntos, resolvem a semana.</p>
+            <div className="eyebrow"><span className="dot"></span> {t('features.eyebrow')}</div>
+            <h2>{t('features.title')}</h2>
+            <p>{t('features.sub')}</p>
           </div>
 
           <div className="features-grid">
@@ -219,11 +219,11 @@ export default async function Home() {
             <div className="feat reveal">
               <div className="feat-visual">
                 <div className="vm">
-                  <div className="vm-hdr"><span>Lista da semana</span><span style={{color:'var(--verde-musgo)'}}>2/5</span></div>
-                  <div className="vm-li done"><div className="vm-qty">2x</div><div className="vm-nm">Leite integral</div><div className="vm-ck on"></div></div>
-                  <div className="vm-li done"><div className="vm-qty">12un</div><div className="vm-nm">Ovos</div><div className="vm-ck on"></div></div>
-                  <div className="vm-li"><div className="vm-qty">1x</div><div className="vm-nm">Azeite</div><div className="vm-ck"></div></div>
-                  <div className="vm-li"><div className="vm-qty">1kg</div><div className="vm-nm">Peito de frango</div><div className="vm-ck"></div></div>
+                  <div className="vm-hdr"><span>{t('features.lista.vmTitle')}</span><span style={{color:'var(--verde-musgo)'}}>2/5</span></div>
+                  <div className="vm-li done"><div className="vm-qty">2x</div><div className="vm-nm">{t('features.lista.vmItem1')}</div><div className="vm-ck on"></div></div>
+                  <div className="vm-li done"><div className="vm-qty">12un</div><div className="vm-nm">{t('features.lista.vmItem2')}</div><div className="vm-ck on"></div></div>
+                  <div className="vm-li"><div className="vm-qty">1x</div><div className="vm-nm">{t('features.lista.vmItem3')}</div><div className="vm-ck"></div></div>
+                  <div className="vm-li"><div className="vm-qty">1kg</div><div className="vm-nm">{t('features.lista.vmItem4')}</div><div className="vm-ck"></div></div>
                 </div>
               </div>
               <div className="feat-body">
@@ -232,14 +232,14 @@ export default async function Home() {
                     <circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/>
                     <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
                   </svg>
-                  Lista de compras
+                  {t('features.lista.tag')}
                 </div>
-                <h3>Compartilhe num toque. Comprem certo.</h3>
-                <p>Organize por mercado ou corredor, mande pelo zap, e quem for às compras vê exatamente o que pegar.</p>
+                <h3>{t('features.lista.title')}</h3>
+                <p>{t('features.lista.desc')}</p>
                 <ul className="feat-bullets">
-                  <li>Por loja ou por corredor</li>
-                  <li>Compartilhada via WhatsApp</li>
-                  <li>Histórico do que você já comprou</li>
+                  <li>{t('features.lista.b1')}</li>
+                  <li>{t('features.lista.b2')}</li>
+                  <li>{t('features.lista.b3')}</li>
                 </ul>
               </div>
             </div>
@@ -248,16 +248,16 @@ export default async function Home() {
             <div className="feat reveal">
               <div className="feat-visual">
                 <div className="vm">
-                  <div className="vm-hdr"><span>Minha despensa</span><span style={{color:'var(--carvao-3)'}}>7 itens</span></div>
+                  <div className="vm-hdr"><span>{t('features.despensa.vmTitle')}</span><span style={{color:'var(--carvao-3)'}}>{t('features.despensa.vmCount')}</span></div>
                   <div className="vm-chips">
-                    <span className="vm-chip">Alho</span>
-                    <span className="vm-chip">Cebola</span>
-                    <span className="vm-chip">Azeite</span>
-                    <span className="vm-chip out">Sal</span>
-                    <span className="vm-chip">Ovos</span>
-                    <span className="vm-chip out">Farinha</span>
-                    <span className="vm-chip">Tomate</span>
-                    <span className="vm-chip add">+ Adicionar</span>
+                    <span className="vm-chip">{t('features.despensa.chip1')}</span>
+                    <span className="vm-chip">{t('features.despensa.chip2')}</span>
+                    <span className="vm-chip">{t('features.despensa.chip3')}</span>
+                    <span className="vm-chip out">{t('features.despensa.chip4')}</span>
+                    <span className="vm-chip">{t('features.despensa.chip5')}</span>
+                    <span className="vm-chip out">{t('features.despensa.chip6')}</span>
+                    <span className="vm-chip">{t('features.despensa.chip7')}</span>
+                    <span className="vm-chip add">{t('features.despensa.chipAdd')}</span>
                   </div>
                 </div>
               </div>
@@ -268,14 +268,14 @@ export default async function Home() {
                     <path d="M4 9v10a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1V9"/>
                     <line x1="10" y1="13" x2="14" y2="13"/>
                   </svg>
-                  Despensa
+                  {t('features.despensa.tag')}
                 </div>
-                <h3>Sempre tenha o que precisa pra cozinhar.</h3>
-                <p>Monta sua despensa ideal uma vez. O que acabou fica marcado — quando for fazer a lista, você já sabe o que comprar.</p>
+                <h3>{t('features.despensa.title')}</h3>
+                <p>{t('features.despensa.desc')}</p>
                 <ul className="feat-bullets">
-                  <li>Sugestões pra montar a despensa completa</li>
-                  <li>Adiciona à lista num toque</li>
-                  <li>Marca o que tá acabando, automaticamente</li>
+                  <li>{t('features.despensa.b1')}</li>
+                  <li>{t('features.despensa.b2')}</li>
+                  <li>{t('features.despensa.b3')}</li>
                 </ul>
               </div>
             </div>
@@ -284,11 +284,11 @@ export default async function Home() {
             <div className="feat reveal">
               <div className="feat-visual">
                 <div className="vm">
-                  <div className="vm-hdr"><span>Minhas receitas</span><span style={{color:'var(--carvao-3)'}}>12 salvas</span></div>
-                  <div className="vm-recipe"><span>Macarrão ao sugo</span><span className="vm-source">INSTAGRAM</span></div>
-                  <div className="vm-recipe"><span>Frango grelhado com limão</span><span className="vm-source">YOUTUBE</span></div>
-                  <div className="vm-recipe"><span>Bolo de cenoura da vovó</span><span className="vm-source">MANUAL</span></div>
-                  <div className="vm-recipe"><span>Salada caesar</span><span className="vm-source">GOOGLE</span></div>
+                  <div className="vm-hdr"><span>{t('features.receitas.vmTitle')}</span><span style={{color:'var(--carvao-3)'}}>{t('features.receitas.vmCount')}</span></div>
+                  <div className="vm-recipe"><span>{t('features.receitas.recipe1')}</span><span className="vm-source">INSTAGRAM</span></div>
+                  <div className="vm-recipe"><span>{t('features.receitas.recipe2')}</span><span className="vm-source">YOUTUBE</span></div>
+                  <div className="vm-recipe"><span>{t('features.receitas.recipe3')}</span><span className="vm-source">MANUAL</span></div>
+                  <div className="vm-recipe"><span>{t('features.receitas.recipe4')}</span><span className="vm-source">GOOGLE</span></div>
                 </div>
               </div>
               <div className="feat-body">
@@ -297,14 +297,14 @@ export default async function Home() {
                     <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/>
                     <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
                   </svg>
-                  Receitas
+                  {t('features.receitas.tag')}
                 </div>
-                <h3>O caderno de receitas que você nunca teve.</h3>
-                <p>Salva de qualquer lugar — Instagram, YouTube, Google, ou na mão. Sem foto bonita pra atrapalhar. Só o que importa: nome e ingredientes.</p>
+                <h3>{t('features.receitas.title')}</h3>
+                <p>{t('features.receitas.desc')}</p>
                 <ul className="feat-bullets">
-                  <li>Captura com um link de qualquer site</li>
-                  <li>Ingredientes integrados com a lista</li>
-                  <li>Visual limpo, sem distração</li>
+                  <li>{t('features.receitas.b1')}</li>
+                  <li>{t('features.receitas.b2')}</li>
+                  <li>{t('features.receitas.b3')}</li>
                 </ul>
               </div>
             </div>
@@ -313,12 +313,12 @@ export default async function Home() {
             <div className="feat reveal">
               <div className="feat-visual">
                 <div className="vm">
-                  <div className="vm-hdr"><span>Plano da semana</span><span style={{color:'var(--verde-musgo)'}}>→ Gerar lista</span></div>
-                  <div className="vm-day"><span className="vm-day-lbl">SEG</span><span>Frango grelhado com limão</span></div>
-                  <div className="vm-day"><span className="vm-day-lbl">TER</span><span>Macarrão ao sugo</span></div>
-                  <div className="vm-day"><span className="vm-day-lbl">QUA</span><span className="vm-day-empty">Sem plano</span></div>
-                  <div className="vm-day"><span className="vm-day-lbl">QUI</span><span>Salada caesar</span></div>
-                  <div className="vm-day"><span className="vm-day-lbl">SEX</span><span>Omelete de legumes</span></div>
+                  <div className="vm-hdr"><span>{t('features.plano.vmTitle')}</span><span style={{color:'var(--verde-musgo)'}}>{t('features.plano.vmGenerate')}</span></div>
+                  <div className="vm-day"><span className="vm-day-lbl">SEG</span><span>{t('features.plano.day1')}</span></div>
+                  <div className="vm-day"><span className="vm-day-lbl">TER</span><span>{t('features.plano.day2')}</span></div>
+                  <div className="vm-day"><span className="vm-day-lbl">QUA</span><span className="vm-day-empty">{t('features.plano.day3Empty')}</span></div>
+                  <div className="vm-day"><span className="vm-day-lbl">QUI</span><span>{t('features.plano.day4')}</span></div>
+                  <div className="vm-day"><span className="vm-day-lbl">SEX</span><span>{t('features.plano.day5')}</span></div>
                 </div>
               </div>
               <div className="feat-body">
@@ -330,14 +330,14 @@ export default async function Home() {
                     <line x1="3" y1="10" x2="21" y2="10"/>
                     <path d="M8 14h2M14 14h2M8 18h2M14 18h2"/>
                   </svg>
-                  Plano da semana
+                  {t('features.plano.tag')}
                 </div>
-                <h3>Semana planejada, lista pronta.</h3>
-                <p>Monte o cardápio da semana com suas receitas. Num toque, o que falta vai direto pra lista de compras.</p>
+                <h3>{t('features.plano.title')}</h3>
+                <p>{t('features.plano.desc')}</p>
                 <ul className="feat-bullets">
-                  <li>Integrado com suas receitas</li>
-                  <li>Gera a lista automaticamente</li>
-                  <li>Evita o &ldquo;de novo macarrão hoje?&rdquo;</li>
+                  <li>{t('features.plano.b1')}</li>
+                  <li>{t('features.plano.b2')}</li>
+                  <li>{t('features.plano.b3')}</li>
                 </ul>
               </div>
             </div>
