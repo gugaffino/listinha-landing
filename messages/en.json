@@ -59,7 +59,7 @@
       "sub": "It's not that you're disorganized. Nothing actually helps with your real routine.",
       "card1Title": "Got back from the store without the garlic.",
       "card1Desc": "Again. You scan the shelf, try to remember from memory, buy what feels right. You get home and <em>that's exactly what's missing.</em>",
-      "card2Title": "\"Is this the right brand?\"",
+      "card2Title": "“Is this the right brand?”",
       "card2Desc": "Someone sends a photo of 3 brands. You stop everything to answer. <em>They still buy the wrong one.</em>",
       "card3Title": "Your list app turned into a spreadsheet.",
       "card3Desc": "Full of features you never use. When you're in a rush, you still open Notes instead. <em>Something's off.</em>",
@@ -114,7 +114,7 @@
         "desc": "Build the week's menu with your recipes. In one tap, whatever's missing goes straight to the shopping list.",
         "b1": "Synced with your recipes",
         "b2": "Generates the list automatically",
-        "b3": "No more \"pasta again tonight?\"",
+        "b3": "No more “pasta again tonight?”",
         "vmTitle": "Weekly plan",
         "vmGenerate": "→ Generate list",
         "day1": "Grilled lemon chicken",
@@ -138,7 +138,7 @@
     },
     "founder": {
       "eyebrow": "Why Mise exists",
-      "quote": "\"I always struggled with something missing at home when I wanted to cook. And the apps out there were full of photos, elaborate planning and too many features — they just wasted my time.<br></br><br></br><strong>So I built Mise:</strong> an easy way to keep a pantry for people who actually like to cook.\"",
+      "quote": "“I always struggled with something missing at home when I wanted to cook. And the apps out there were full of photos, elaborate planning and too many features — they just wasted my time.<br></br><br></br><strong>So I built Mise:</strong> an easy way to keep a pantry for people who actually like to cook.”",
       "name": "Gus",
       "role": "· Mise's creator"
     },

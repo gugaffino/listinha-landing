@@ -59,7 +59,7 @@
       "sub": "Não é falta de organização. É que nada te ajuda na sua rotina de verdade.",
       "card1Title": "Voltou do mercado sem o alho.",
       "card1Desc": "De novo. Você olha a gôndola, tenta lembrar de cabeça, compra o que acha que precisa. Chega em casa e <em>falta exatamente aquilo.</em>",
-      "card2Title": "\"É essa marca aqui mesmo?\"",
+      "card2Title": "“É essa marca aqui mesmo?”",
       "card2Desc": "Alguém manda foto de 3 marcas. Você para tudo, responde. <em>Compram a errada assim mesmo.</em>",
       "card3Title": "App de lista virou planilha.",
       "card3Desc": "Cheio de função que você não usa. Na hora da pressa, você ainda abre o bloco de notas. <em>Algo tá errado.</em>",
@@ -114,7 +114,7 @@
         "desc": "Monte o cardápio da semana com suas receitas. Num toque, o que falta vai direto pra lista de compras.",
         "b1": "Integrado com suas receitas",
         "b2": "Gera a lista automaticamente",
-        "b3": "Evita o \"de novo macarrão hoje?\"",
+        "b3": "Evita o “de novo macarrão hoje?”",
         "vmTitle": "Plano da semana",
         "vmGenerate": "→ Gerar lista",
         "day1": "Frango grelhado com limão",
@@ -138,7 +138,7 @@
     },
     "founder": {
       "eyebrow": "Por que o Mise existe",
-      "quote": "\"Eu sempre sofria com algo faltando em casa quando queria cozinhar. E os apps que existiam eram cheios de imagens, planejamento elaborado e função demais — só me faziam perder tempo.<br></br><br></br><strong>Então fiz o Mise:</strong> um jeito fácil de organizar a despensa pra quem gosta de cozinhar.\"",
+      "quote": "“Eu sempre sofria com algo faltando em casa quando queria cozinhar. E os apps que existiam eram cheios de imagens, planejamento elaborado e função demais — só me faziam perder tempo.<br></br><br></br><strong>Então fiz o Mise:</strong> um jeito fácil de organizar a despensa pra quem gosta de cozinhar.”",
       "name": "Gus",
       "role": "· Criador do Mise"
     },

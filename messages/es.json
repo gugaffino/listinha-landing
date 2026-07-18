@@ -59,7 +59,7 @@
       "sub": "No es falta de organización. Es que nada te ayuda en tu rutina real.",
       "card1Title": "Volviste del mercado sin el ajo.",
       "card1Desc": "De nuevo. Miras la góndola, tratas de recordar de memoria, compras lo que crees que necesitas. Llegas a casa y <em>falta justo eso.</em>",
-      "card2Title": "\"¿Es esta la marca?\"",
+      "card2Title": "“¿Es esta la marca?”",
       "card2Desc": "Alguien manda foto de 3 marcas. Dejas todo para responder. <em>Igual compran la equivocada.</em>",
       "card3Title": "Tu app de lista se volvió una planilla.",
       "card3Desc": "Llena de funciones que no usas. Cuando tienes apuro, terminas abriendo las notas del celular. <em>Algo está mal.</em>",
@@ -114,7 +114,7 @@
         "desc": "Arma el menú de la semana con tus recetas. En un toque, lo que falta va directo a la lista de compras.",
         "b1": "Integrado con tus recetas",
         "b2": "Genera la lista automáticamente",
-        "b3": "Se acabó el \"¿otra vez pasta hoy?\"",
+        "b3": "Se acabó el “¿otra vez pasta hoy?”",
         "vmTitle": "Plan semanal",
         "vmGenerate": "→ Generar lista",
         "day1": "Pollo a la plancha con limón",
@@ -138,7 +138,7 @@
     },
     "founder": {
       "eyebrow": "Por qué existe Mise",
-      "quote": "\"Siempre sufría porque me faltaba algo en casa cuando quería cocinar. Y las apps que existían estaban llenas de fotos, planificación elaborada y demasiadas funciones — solo me hacían perder tiempo.<br></br><br></br><strong>Entonces creé Mise:</strong> una forma fácil de organizar la despensa para quien de verdad le gusta cocinar.\"",
+      "quote": "“Siempre sufría porque me faltaba algo en casa cuando quería cocinar. Y las apps que existían estaban llenas de fotos, planificación elaborada y demasiadas funciones — solo me hacían perder tiempo.<br></br><br></br><strong>Entonces creé Mise:</strong> una forma fácil de organizar la despensa para quien de verdad le gusta cocinar.”",
       "name": "Gus",
       "role": "· Creador de Mise"
     },
