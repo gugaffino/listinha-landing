@@ -840,6 +840,14 @@ h1,h2,h3,h4 {
   text-wrap: balance;
 }
 .blog-index-body p { font-size: 14px; color: var(--carvao-2); line-height: 1.6; flex: 1; text-wrap: pretty; }
+.blog-index-empty {
+  text-align: center;
+  padding: var(--s-10) var(--s-4);
+  color: var(--carvao-2);
+}
+.blog-index-empty h2 {
+  margin-bottom: var(--s-2);
+}
 .blog-index-cta { padding: 0 0 80px; }
 .blog-index-cta-inner {
   display: flex; align-items: center; justify-content: space-between; gap: 24px;

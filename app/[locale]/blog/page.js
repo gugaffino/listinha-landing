@@ -1,12 +1,18 @@
-import NavDropdown from '../../../components/NavDropdown'
+import { getTranslations } from 'next-intl/server'
+import SiteNav from '../../../components/SiteNav'
+import { Link } from '../../../i18n/navigation'
 import { BrandIcon } from '../../../components/Icon'
 
-export const metadata = {
-  title: 'Blog — Mise',
-  description: 'Dicas de organização de cozinha, listas de compras e planejamento semanal.',
-  alternates: {
-    canonical: 'https://www.miseemcasa.com.br/blog',
-  },
+export async function generateMetadata({ params }) {
+  const { locale } = await params
+  const t = await getTranslations({ locale, namespace: 'blogIndex.meta' })
+  return {
+    title: t('title'),
+    description: t('description'),
+    alternates: {
+      canonical: `https://www.miseemcasa.com.br/${locale}/blog`,
+    },
+  }
 }
 
 const posts = [
@@ -19,6 +25,7 @@ const posts = [
     imgAlt: 'Carrinho de compras em supermercado',
     date: '2025-03-10',
     dateLabel: 'Mar 2025',
+    locales: ['pt'],
   },
   {
     slug: 'lista-de-compras-para-casa-nova',
@@ -29,6 +36,7 @@ const posts = [
     imgAlt: 'Mulher carregando caixa ao entrar em apartamento novo',
     date: '2025-04-02',
     dateLabel: 'Abr 2025',
+    locales: ['pt'],
   },
   {
     slug: 'como-organizar-a-despensa',
@@ -39,6 +47,7 @@ const posts = [
     imgAlt: 'Despensa organizada com potes transparentes e prateleiras bem distribuídas',
     date: '2026-05-21',
     dateLabel: 'Mai 2026',
+    locales: ['pt'],
   },
   {
     slug: 'como-economizar-no-mercado',
@@ -49,6 +58,7 @@ const posts = [
     imgAlt: 'Família fazendo compras no supermercado com lista na mão',
     date: '2026-05-22',
     dateLabel: 'Mai 2026',
+    locales: ['pt'],
   },
   {
     slug: 'o-que-e-cranberry',
@@ -59,6 +69,7 @@ const posts = [
     imgAlt: 'Cranberries frescos em bandejas no mercado — fruta vermelha da América do Norte',
     date: '2026-05-25',
     dateLabel: 'Mai 2026',
+    locales: ['pt'],
   },
   {
     slug: 'o-que-e-pistache',
@@ -69,6 +80,7 @@ const posts = [
     imgAlt: 'Pistaches frescos com casca entreaberta mostrando o interior verde',
     date: '2026-05-27',
     dateLabel: 'Mai 2026',
+    locales: ['pt'],
   },
   {
     slug: 'caderno-de-receitas',
@@ -79,6 +91,7 @@ const posts = [
     imgAlt: 'Caderno de receitas aberto com escrita à mão sobre mesa de madeira com ingredientes ao redor',
     date: '2026-05-28',
     dateLabel: 'Mai 2026',
+    locales: ['pt'],
   },
   {
     slug: 'para-que-serve-oleo-de-linhaca',
@@ -89,6 +102,7 @@ const posts = [
     imgAlt: 'Frasco de óleo de linhaça ao lado de sementes de linhaça douradas sobre superfície de madeira',
     date: '2026-05-28',
     dateLabel: 'Mai 2026',
+    locales: ['pt'],
   },
   {
     slug: 'o-que-e-chia',
@@ -99,6 +113,7 @@ const posts = [
     imgAlt: 'Sementes de chia pretas em close-up sobre superfície branca — textura detalhada',
     date: '2026-05-29',
     dateLabel: 'Mai 2026',
+    locales: ['pt'],
   },
   {
     slug: 'o-que-e-curcuma',
@@ -109,6 +124,7 @@ const posts = [
     imgAlt: 'Pó de cúrcuma amarelo-alaranjado em colher de madeira sobre superfície escura',
     date: '2026-05-29',
     dateLabel: 'Mai 2026',
+    locales: ['pt'],
   },
   {
     slug: 'lista-de-compras-do-mes',
@@ -119,6 +135,7 @@ const posts = [
     imgAlt: 'Mulher empurrando carrinho de compras em corredor de supermercado com frutas e verduras',
     date: '2026-05-30',
     dateLabel: 'Mai 2026',
+    locales: ['pt'],
   },
   {
     slug: 'alimentos-ricos-em-magnesio',
@@ -129,6 +146,7 @@ const posts = [
     imgAlt: 'Flatlay de amêndoas, sementes, lentilhas e nozes em tigelas de porcelana sobre superfície de madeira',
     date: '2026-05-30',
     dateLabel: 'Mai 2026',
+    locales: ['pt'],
   },
   {
     slug: 'cardapio-semanal-simples-caseiro',
@@ -139,6 +157,7 @@ const posts = [
     imgAlt: 'Família cozinhando juntos na cozinha de casa — cardápio semanal simples caseiro',
     date: '2026-05-31',
     dateLabel: 'Mai 2026',
+    locales: ['pt'],
   },
   {
     slug: 'para-que-serve-noz-moscada',
@@ -149,6 +168,7 @@ const posts = [
     imgAlt: 'Especiarias aromáticas em tigelas de cerâmica branca sobre superfície de madeira',
     date: '2026-05-31',
     dateLabel: 'Mai 2026',
+    locales: ['pt'],
   },
   {
     slug: 'o-que-e-gengibre',
@@ -159,6 +179,7 @@ const posts = [
     imgAlt: 'Raízes de gengibre fresco ao lado de pó de gengibre em recipiente metálico',
     date: '2026-06-01',
     dateLabel: 'Jun 2026',
+    locales: ['pt'],
   },
   {
     slug: 'o-que-e-pomelo',
@@ -169,94 +190,50 @@ const posts = [
     imgAlt: 'Fatias de frutas cítricas dispostas em mármore branco — limão, laranja e toranja em flatlay',
     date: '2026-06-01',
     dateLabel: 'Jun 2026',
+    locales: ['pt'],
   },
 ]
 
-export default function BlogPage() {
+export default async function BlogPage({ params }) {
+  const { locale } = await params
+  const t = await getTranslations('blogIndex')
+  const tc = await getTranslations('common')
+  const localePosts = posts.filter((p) => p.locales.includes(locale))
+
   return (
     <>
-      {/* NAV */}
-      <header className="nav">
-        <div className="container nav-inner">
-          <a href="/" className="brand">
-            <div className="brand-mark">
-              <BrandIcon size={20} />
-            </div>
-            <span className="brand-name">Mise</span>
-          </a>
-          <nav className="nav-links">
-            <NavDropdown />
-            <a href="/blog" className="nav-link" style={{color: 'var(--carvao)'}}>Blog</a>
-          </nav>
-          <a href="https://listinha-puce.vercel.app" className="btn btn-primary btn-sm" target="_blank" rel="noopener">
-            Comece grátis
-            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
-              <path d="M5 12h14M13 5l7 7-7 7"/>
-            </svg>
-          </a>
-        </div>
-      </header>
+      <SiteNav />
 
       <main>
         {/* HERO DO BLOG */}
         <section className="blog-index-hero">
           <div className="container">
             <div className="eyebrow"><span className="dot"></span> Blog</div>
-            <h1>Dicas de quem faz lista de verdade</h1>
-            <p className="blog-index-sub">Organização de cozinha, supermercado e planejamento semanal — sem frescura.</p>
-            <p className="blog-hero-desc">
-              Aqui você encontra guias práticos sobre listas de compras, organização de despensa
-              e planejamento de refeições. Sem técnicas mirabolantes nem produtos caros — só o
-              que funciona pra quem cozinha em casa de verdade. Cada artigo vem com listas pra
-              copiar, estimativas de custo e respostas diretas às dúvidas mais comuns.
-            </p>
+            <h1>{t('hero.title')}</h1>
+            <p className="blog-index-sub">{t('hero.sub')}</p>
+            <p className="blog-hero-desc">{t('hero.desc')}</p>
           </div>
         </section>
 
         {/* TEMAS */}
         <section className="blog-index-topics">
           <div className="container">
-            <h2 className="blog-index-topics-title">O que você encontra aqui</h2>
+            <h2 className="blog-index-topics-title">{t('topics.title')}</h2>
             <div className="blog-index-topics-grid">
               <div className="blog-index-topic">
-                <h3>Listas de compras</h3>
-                <p>
-                  Guias completos com itens organizados por grupo, estimativas de custo por perfil
-                  de família e dicas práticas para diferentes situações — casa nova, mês apertado,
-                  família grande, casal. Cada lista foi pensada para você copiar e adaptar, não
-                  começar do zero toda semana.
-                </p>
-                <p>
-                  Você vai encontrar desde a lista básica de supermercado com os 80 itens que
-                  quase todo mundo precisa até listas específicas por situação: mudança, festa,
-                  churrasco, cesta básica. Sem itens exóticos que você nunca vai usar.
-                </p>
+                <h3>{t('topics.t1Title')}</h3>
+                <p>{t('topics.t1P1')}</p>
+                <p>{t('topics.t1P2')}</p>
               </div>
               <div className="blog-index-topic">
-                <h3>Organização de despensa e geladeira</h3>
-                <p>
-                  Como organizar a despensa por zonas, que recipientes usar, como rotular, por onde
-                  começar quando está tudo bagunçado — e como manter organizado no dia a dia sem
-                  precisar de um domingo inteiro para reorganizar tudo de novo.
-                </p>
-                <p>
-                  Sem produtos caros, sem estética de revista de decoração. O foco é funcional:
-                  o que vai diminuir o desperdício, facilitar o acesso aos ingredientes mais usados
-                  e fazer a despensa trabalhar pela sua rotina de cozinha.
-                </p>
+                <h3>{t('topics.t2Title')}</h3>
+                <p>{t('topics.t2P1')}</p>
+                <p>{t('topics.t2P2')}</p>
               </div>
               <div className="blog-index-topic">
-                <h3>Planejamento de refeições e economia</h3>
-                <p>
-                  Como montar um cardápio semanal que respeite o tempo disponível e o orçamento,
-                  por que planejar antes de ir ao mercado faz diferença na conta do mês e quais
-                  hábitos simples cortam o gasto sem abrir mão do que você gosta de comer.
-                </p>
-                <p>
-                  Pesquisas de comportamento de consumo mostram que compras sem lista custam entre
-                  20% e 30% a mais. Os artigos aqui explicam como esse dado se traduz na sua
-                  rotina — e o que fazer a respeito.
-                </p>
+                <h3>{t('topics.t3Title')}</h3>
+                <p>{t('topics.t3P1')}</p>
+                <p>{t('topics.t3P2')}</p>
               </div>
             </div>
           </div>
@@ -265,30 +242,37 @@ export default function BlogPage() {
         {/* POSTS */}
         <section className="blog-index-posts">
           <div className="container">
-            <div className="blog-index-grid">
-              {posts.map((post) => (
-                <a key={post.slug} href={`/blog/${post.slug}`} className="blog-index-card">
-                  <div className="blog-index-img">
-                    <img
-                      src={post.img}
-                      alt={post.imgAlt}
-                      width="800"
-                      height="480"
-                      loading="lazy"
-                    />
-                  </div>
-                  <div className="blog-index-body">
-                    <div className="blog-index-meta">
-                      <span className="blog-card-tag">{post.tag}</span>
-                      <span className="blog-index-date">{post.dateLabel}</span>
+            {localePosts.length > 0 ? (
+              <div className="blog-index-grid">
+                {localePosts.map((post) => (
+                  <Link key={post.slug} href={`/blog/${post.slug}`} className="blog-index-card">
+                    <div className="blog-index-img">
+                      <img
+                        src={post.img}
+                        alt={post.imgAlt}
+                        width="800"
+                        height="480"
+                        loading="lazy"
+                      />
                     </div>
-                    <h2>{post.title}</h2>
-                    <p>{post.description}</p>
-                    <span className="blog-card-link">Ler artigo →</span>
-                  </div>
-                </a>
-              ))}
-            </div>
+                    <div className="blog-index-body">
+                      <div className="blog-index-meta">
+                        <span className="blog-card-tag">{post.tag}</span>
+                        <span className="blog-index-date">{post.dateLabel}</span>
+                      </div>
+                      <h2>{post.title}</h2>
+                      <p>{post.description}</p>
+                      <span className="blog-card-link">{tc('readArticle')}</span>
+                    </div>
+                  </Link>
+                ))}
+              </div>
+            ) : (
+              <div className="blog-index-empty">
+                <h2>{t('empty.title')}</h2>
+                <p>{t('empty.desc')}</p>
+              </div>
+            )}
           </div>
         </section>
 
@@ -296,9 +280,9 @@ export default function BlogPage() {
         <section className="blog-index-cta">
           <div className="container">
             <div className="blog-index-cta-inner">
-              <p>Já que você chegou até aqui — testa o app. É grátis.</p>
+              <p>{t('cta.text')}</p>
               <a href="https://listinha-puce.vercel.app" className="btn btn-primary" target="_blank" rel="noopener">
-                Abrir o Mise →
+                {t('cta.button')}
               </a>
             </div>
           </div>
@@ -314,8 +298,8 @@ export default function BlogPage() {
             </div>
             <span className="brand-name">Mise</span>
           </div>
-          <p className="footer-copy">Feito com carinho pra quem gosta de cozinhar.</p>
-          <a href="https://listinha-puce.vercel.app" className="footer-link" target="_blank" rel="noopener">Abrir o app →</a>
+          <p className="footer-copy">{tc('footerCopy')}</p>
+          <a href="https://listinha-puce.vercel.app" className="footer-link" target="_blank" rel="noopener">{tc('openAppArrow')}</a>
         </div>
       </footer>
     </>
