@@ -1,58 +1,38 @@
+import { getTranslations } from 'next-intl/server'
 import RevealObserver from '../../../../components/RevealObserver'
 import { BrandIcon } from '../../../../components/Icon'
 import SiteNav from '../../../../components/SiteNav'
+import { Link } from '../../../../i18n/navigation'
 
-export const metadata = {
-  title: 'App de Lista de Compras Gratuito e Compartilhada — Mise',
-  description: 'Mise é o app gratuito de lista de compras organizada por corredor e compartilhada em tempo real. Funciona offline, sem cadastro obrigatório.',
-  openGraph: {
-    title: 'App de Lista de Compras Gratuito e Compartilhada — Mise',
-    description: 'Lista de compras organizada por corredor, compartilhada pelo WhatsApp, funciona offline. 100% grátis.',
-    type: 'website',
-    url: 'https://www.miseemcasa.com.br/funcionalidades/lista-de-compras',
-  },
+export async function generateMetadata({ params }) {
+  const { locale } = await params
+  const t = await getTranslations({ locale, namespace: 'svcListaDeCompras.meta' })
+  return {
+    title: t('title'),
+    description: t('description'),
+    openGraph: {
+      title: t('ogTitle'),
+      description: t('ogDescription'),
+      type: 'website',
+      url: `https://www.miseemcasa.com.br/${locale}/funcionalidades/lista-de-compras`,
+    },
+  }
 }
 
-const faqSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'FAQPage',
-  mainEntity: [
-    {
-      '@type': 'Question',
-      name: 'O app de lista de compras Mise é gratuito?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Sim, 100% gratuito. Lista de compras, compartilhamento e organização por corredor funcionam sem pagar nada e sem cadastro obrigatório.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'Como compartilhar lista de compras pelo app?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'No Mise você compartilha a lista pelo WhatsApp com um link. Quem receber vê e edita a mesma lista em tempo real — sem instalar nada.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'A lista de compras funciona sem internet?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Sim. O Mise é um PWA que funciona offline. A lista fica disponível mesmo dentro do mercado com sinal ruim ou sem conexão.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'Como organizar a lista de compras por corredor?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'O Mise organiza os itens automaticamente por corredor — hortifruti, carnes, mercearia, limpeza, higiene — na ordem que você encontra no supermercado. Sem precisar voltar atrás.',
-      },
-    },
-  ],
-}
+export default async function ListaDeComprasPage() {
+  const t = await getTranslations('svcListaDeCompras')
+  const tc = await getTranslations('common')
 
-export default function ListaDeComprasPage() {
+  const faqSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [1, 2, 3, 4].map((n) => ({
+      '@type': 'Question',
+      name: t(`faq.q${n}`),
+      acceptedAnswer: { '@type': 'Answer', text: t(`faq.a${n}`) },
+    })),
+  }
+
   return (
     <>
       <script
@@ -67,23 +47,22 @@ export default function ListaDeComprasPage() {
       <section id="main-content" className="svc-hero">
         <div className="container">
           <div className="reveal">
-            <div className="eyebrow"><span className="dot"></span> Lista de compras</div>
+            <div className="eyebrow"><span className="dot"></span> {t('hero.eyebrow')}</div>
             <h1 className="svc-hero-h1">
-              App de lista de compras<br />
-              gratuito e <span className="svc-hero-accent">compartilhada.</span>
+              {t.rich('hero.title', {
+                br: () => <br />,
+                accent: (chunks) => <span className="svc-hero-accent">{chunks}</span>,
+              })}
             </h1>
-            <p className="svc-hero-sub">
-              Você cria a lista em casa, compartilha pelo zap e vai ao mercado seguindo a ordem dos corredores.
-              Sem voltar pro início porque lembrou do papel higiênico na última gôndola.
-            </p>
+            <p className="svc-hero-sub">{t('hero.sub')}</p>
             <div className="svc-hero-actions">
               <a href="https://listinha-puce.vercel.app" className="btn btn-primary btn-lg" target="_blank" rel="noopener">
-                Abrir o app grátis
+                {tc('ctaOpenAppFree')}
                 <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M5 12h14M13 5l7 7-7 7"/>
                 </svg>
               </a>
-              <a href="/funcionalidades" className="btn btn-quiet">← Todas as funcionalidades</a>
+              <Link href="/funcionalidades" className="btn btn-quiet">{tc('allFeatures')}</Link>
             </div>
           </div>
         </div>
@@ -93,24 +72,24 @@ export default function ListaDeComprasPage() {
       <section className="section how">
         <div className="container">
           <div className="section-head reveal">
-            <div className="eyebrow"><span className="dot"></span> Como funciona</div>
-            <h2>Três passos. Nada mais.</h2>
+            <div className="eyebrow"><span className="dot"></span> {t('how.eyebrow')}</div>
+            <h2>{t('how.title')}</h2>
           </div>
           <div className="how-grid reveal">
             <div className="how-step">
               <div className="num">1</div>
-              <h3>Monta a lista em casa</h3>
-              <p>Adiciona os itens, o app organiza por corredor automaticamente. Hortifruti, carnes, mercearia — tudo na ordem certa do supermercado.</p>
+              <h3>{t('how.step1Title')}</h3>
+              <p>{t('how.step1Desc')}</p>
             </div>
             <div className="how-step">
               <div className="num">2</div>
-              <h3>Compartilha pelo WhatsApp</h3>
-              <p>Manda o link pra quem vai ao mercado junto. Os dois veem a mesma lista em tempo real — ninguém compra o que o outro já colocou no carrinho.</p>
+              <h3>{t('how.step2Title')}</h3>
+              <p>{t('how.step2Desc')}</p>
             </div>
             <div className="how-step">
               <div className="num">3</div>
-              <h3>Vai ao mercado e marca</h3>
-              <p>Funciona offline, com sinal ruim ou sem. Marca cada item conforme coloca no carrinho. Lista zerada na saída do caixa.</p>
+              <h3>{t('how.step3Title')}</h3>
+              <p>{t('how.step3Desc')}</p>
             </div>
           </div>
         </div>
@@ -122,12 +101,9 @@ export default function ListaDeComprasPage() {
           <div className="svc-feature-inner reveal">
 
             <div className="svc-feature-text">
-              <div className="eyebrow"><span className="dot"></span> O que tem</div>
-              <h2>Tudo que uma lista de compras precisa ter.</h2>
-              <p>
-                Sem funcionalidade desnecessária. Sem cadastro obrigatório antes de poder usar.
-                Só o que resolve o problema de sair de casa sem esquecer nada.
-              </p>
+              <div className="eyebrow"><span className="dot"></span> {t('feature.eyebrow')}</div>
+              <h2>{t('feature.title')}</h2>
+              <p>{t('feature.desc')}</p>
               <div className="svc-points">
                 <div className="svc-point">
                   <div className="svc-point-ico">
@@ -137,8 +113,8 @@ export default function ListaDeComprasPage() {
                     </svg>
                   </div>
                   <div className="svc-point-body">
-                    <div className="svc-point-title">Organizada por corredor</div>
-                    <div className="svc-point-desc">Hortifruti, carnes, mercearia, limpeza e higiene — agrupados na ordem do supermercado.</div>
+                    <div className="svc-point-title">{t('feature.point1Title')}</div>
+                    <div className="svc-point-desc">{t('feature.point1Desc')}</div>
                   </div>
                 </div>
                 <div className="svc-point">
@@ -148,8 +124,8 @@ export default function ListaDeComprasPage() {
                     </svg>
                   </div>
                   <div className="svc-point-body">
-                    <div className="svc-point-title">Lista compartilhada em tempo real</div>
-                    <div className="svc-point-desc">Link pelo WhatsApp. Dois celulares, uma lista. O que um adiciona aparece pro outro na hora.</div>
+                    <div className="svc-point-title">{t('feature.point2Title')}</div>
+                    <div className="svc-point-desc">{t('feature.point2Desc')}</div>
                   </div>
                 </div>
                 <div className="svc-point">
@@ -159,8 +135,8 @@ export default function ListaDeComprasPage() {
                     </svg>
                   </div>
                   <div className="svc-point-body">
-                    <div className="svc-point-title">Funciona offline</div>
-                    <div className="svc-point-desc">Dentro do mercado, no subsolo, sem sinal. A lista não some.</div>
+                    <div className="svc-point-title">{t('feature.point3Title')}</div>
+                    <div className="svc-point-desc">{t('feature.point3Desc')}</div>
                   </div>
                 </div>
                 <div className="svc-point">
@@ -170,8 +146,8 @@ export default function ListaDeComprasPage() {
                     </svg>
                   </div>
                   <div className="svc-point-body">
-                    <div className="svc-point-title">100% gratuito, sem cadastro na largada</div>
-                    <div className="svc-point-desc">Começa a usar antes de criar conta. Nenhuma função essencial bloqueada.</div>
+                    <div className="svc-point-title">{t('feature.point4Title')}</div>
+                    <div className="svc-point-desc">{t('feature.point4Desc')}</div>
                   </div>
                 </div>
               </div>
@@ -180,19 +156,19 @@ export default function ListaDeComprasPage() {
             <div className="svc-visual">
               <div className="vm">
                 <div className="vm-hdr">
-                  <span>Lista do mercado</span>
-                  <span className="ph-badge">7 itens</span>
+                  <span>{t('feature.vmTitle')}</span>
+                  <span className="ph-badge">{t('feature.vmCount')}</span>
                 </div>
-                <div className="vm-section-lbl">Hortifruti</div>
-                <div className="vm-li"><div className="vm-qty">2×</div><span className="vm-nm">Tomate</span><div className="vm-ck"></div></div>
-                <div className="vm-li"><div className="vm-qty">1×</div><span className="vm-nm">Alho</span><div className="vm-ck"></div></div>
-                <div className="vm-li done"><div className="vm-qty">1×</div><span className="vm-nm">Cebola</span><div className="vm-ck on"></div></div>
-                <div className="vm-section-lbl">Mercearia</div>
-                <div className="vm-li"><div className="vm-qty">1×</div><span className="vm-nm">Arroz 5 kg</span><div className="vm-ck"></div></div>
-                <div className="vm-li"><div className="vm-qty">2×</div><span className="vm-nm">Feijão carioca</span><div className="vm-ck"></div></div>
-                <div className="vm-li done"><div className="vm-qty">1×</div><span className="vm-nm">Macarrão</span><div className="vm-ck on"></div></div>
-                <div className="vm-section-lbl">Limpeza</div>
-                <div className="vm-li"><div className="vm-qty">2×</div><span className="vm-nm">Detergente</span><div className="vm-ck"></div></div>
+                <div className="vm-section-lbl">{t('feature.vmSec1')}</div>
+                <div className="vm-li"><div className="vm-qty">2×</div><span className="vm-nm">{t('feature.vmItem1')}</span><div className="vm-ck"></div></div>
+                <div className="vm-li"><div className="vm-qty">1×</div><span className="vm-nm">{t('feature.vmItem2')}</span><div className="vm-ck"></div></div>
+                <div className="vm-li done"><div className="vm-qty">1×</div><span className="vm-nm">{t('feature.vmItem3')}</span><div className="vm-ck on"></div></div>
+                <div className="vm-section-lbl">{t('feature.vmSec2')}</div>
+                <div className="vm-li"><div className="vm-qty">1×</div><span className="vm-nm">{t('feature.vmItem4')}</span><div className="vm-ck"></div></div>
+                <div className="vm-li"><div className="vm-qty">2×</div><span className="vm-nm">{t('feature.vmItem5')}</span><div className="vm-ck"></div></div>
+                <div className="vm-li done"><div className="vm-qty">1×</div><span className="vm-nm">{t('feature.vmItem6')}</span><div className="vm-ck on"></div></div>
+                <div className="vm-section-lbl">{t('feature.vmSec3')}</div>
+                <div className="vm-li"><div className="vm-qty">2×</div><span className="vm-nm">{t('feature.vmItem7')}</span><div className="vm-ck"></div></div>
               </div>
             </div>
 
@@ -204,32 +180,11 @@ export default function ListaDeComprasPage() {
       <section className="section section-pad-0">
         <div className="container">
           <div className="text-col svc-feature-text reveal">
-            <h2>Por que a organização por corredor faz diferença</h2>
-            <p>
-              Ir ao mercado sem lista é improviso com custo. Pesquisas de comportamento de consumo
-              mostram que compras sem planejamento tendem a gastar entre 20% e 30% a mais — entre
-              itens por impulso e repetições daquilo que você já tinha em casa mas não lembrou.
-            </p>
-            <p>
-              Mas uma lista qualquer resolve só metade do problema. Sem organização por corredor,
-              você percorre o supermercado de forma aleatória: vai à seção de limpeza, lembra do
-              feijão, volta pra mercearia, passa pelo hortifruti de novo. Além de cansativo,
-              aumenta a chance de pegar coisa que não estava na lista.
-            </p>
-            <p>
-              O Mise agrupa os itens na ordem que você encontra no mercado: hortifruti na
-              entrada, carnes e proteínas a seguir, mercearia, limpeza e higiene no fundo. Você
-              entra, percorre uma vez, marca tudo e sai com o carrinho certo — sem voltar ao
-              mesmo corredor duas vezes.
-            </p>
-            <p>
-              A organização por corredor do Mise segue o fluxo real de um supermercado:
-              hortifruti na entrada, carnes e laticínios a seguir, mercearia no meio, limpeza
-              e higiene no fundo. Você entra, percorre uma vez, marca tudo sem voltar ao mesmo
-              corredor duas vezes — e sai em menos tempo do que levaria sem lista. Compartilhar
-              pelo WhatsApp antes de sair de casa garante que quem for junto compre exatamente
-              o que a lista diz, sem ligações no meio do corredor.
-            </p>
+            <h2>{t('why.title')}</h2>
+            <p>{t('why.p1')}</p>
+            <p>{t('why.p2')}</p>
+            <p>{t('why.p3')}</p>
+            <p>{t('why.p4')}</p>
           </div>
         </div>
       </section>
@@ -238,26 +193,16 @@ export default function ListaDeComprasPage() {
       <section className="svc-faq">
         <div className="container">
           <div className="section-head reveal">
-            <div className="eyebrow"><span className="dot"></span> Perguntas diretas</div>
-            <h2>O que as pessoas perguntam</h2>
+            <div className="eyebrow"><span className="dot"></span> {t('faq.eyebrow')}</div>
+            <h2>{t('faq.title')}</h2>
           </div>
           <dl className="svc-faq-list reveal">
-            <div className="svc-faq-item">
-              <dt className="svc-faq-q">O app de lista de compras é gratuito?</dt>
-              <dd className="svc-faq-a">Sim, 100% gratuito. Lista de compras, compartilhamento e organização por corredor funcionam sem pagar nada. Nenhuma funcionalidade essencial está bloqueada atrás de assinatura.</dd>
-            </div>
-            <div className="svc-faq-item">
-              <dt className="svc-faq-q">Como compartilhar a lista de compras?</dt>
-              <dd className="svc-faq-a">Você compartilha pelo WhatsApp com um link. Quem receber edita a mesma lista em tempo real — sem precisar instalar nada. Funciona pra casal, família ou qualquer pessoa que divide as compras.</dd>
-            </div>
-            <div className="svc-faq-item">
-              <dt className="svc-faq-q">A lista funciona sem internet dentro do mercado?</dt>
-              <dd className="svc-faq-a">Sim. O Mise é um PWA que carrega offline. A lista fica disponível mesmo com sinal ruim ou sem conexão — comum em mercado grande com subsolo.</dd>
-            </div>
-            <div className="svc-faq-item">
-              <dt className="svc-faq-q">Como a lista de compras é organizada por corredor?</dt>
-              <dd className="svc-faq-a">O app agrupa os itens automaticamente — hortifruti, carnes, mercearia, limpeza, higiene — na ordem que você encontra no supermercado. Você percorre os corredores uma vez e marca tudo sem precisar voltar.</dd>
-            </div>
+            {[1, 2, 3, 4].map((n) => (
+              <div className="svc-faq-item" key={n}>
+                <dt className="svc-faq-q">{t(`faq.q${n}`)}</dt>
+                <dd className="svc-faq-a">{t(`faq.a${n}`)}</dd>
+              </div>
+            ))}
           </dl>
         </div>
       </section>
@@ -266,17 +211,17 @@ export default function ListaDeComprasPage() {
       <section className="section">
         <div className="container">
           <div className="cta-final reveal">
-            <h2>Pare de decidir o que comprar.<br /><em>Comece a cozinhar.</em></h2>
-            <p>Sem cadastro na largada. Começa a usar agora.</p>
+            <h2>{t.rich('cta.title', { br: () => <br />, em: (chunks) => <em>{chunks}</em> })}</h2>
+            <p>{t('cta.sub')}</p>
             <div className="actions">
               <a href="https://listinha-puce.vercel.app" className="btn btn-on-dark btn-lg" target="_blank" rel="noopener">
-                Abrir o Mise grátis
+                {tc('ctaOpenMiseFree')}
                 <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M5 12h14M13 5l7 7-7 7"/>
                 </svg>
               </a>
             </div>
-            <p className="footnote">sem cadastro · sem cartão · funciona offline</p>
+            <p className="footnote">{tc('footnoteNoSignup')}</p>
           </div>
         </div>
       </section>
@@ -284,14 +229,14 @@ export default function ListaDeComprasPage() {
       {/* FOOTER */}
       <footer className="footer">
         <div className="container footer-inner">
-          <a href="/" className="brand">
+          <Link href="/" className="brand">
             <div className="brand-mark">
               <BrandIcon size={20} />
             </div>
             <span className="brand-name">Mise</span>
-          </a>
-          <span className="footer-copy">© 2024 Mise</span>
-          <a href="https://listinha-puce.vercel.app" className="footer-link" target="_blank" rel="noopener">Abrir o app</a>
+          </Link>
+          <span className="footer-copy">{tc('footerCopyright')}</span>
+          <a href="https://listinha-puce.vercel.app" className="footer-link" target="_blank" rel="noopener">{tc('openApp')}</a>
         </div>
       </footer>
     </>
