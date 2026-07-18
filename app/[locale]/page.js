@@ -350,34 +350,27 @@ export default async function Home() {
       <section className="section how" id="como">
         <div className="container">
           <div className="section-head reveal">
-            <div className="eyebrow"><span className="dot"></span> Como funciona</div>
-            <h2>Três passos. Sem onboarding chato.</h2>
-            <p>Você não vai precisar de tutorial. Sério.</p>
-            <p className="how-prose">
-              O Mise conecta os quatro pilares da rotina de cozinha — despensa, receitas,
-              cardápio semanal e lista de compras — num app só. Quando você marca um item como
-              esgotado na despensa, ele aparece como sugestão na lista. Quando monta o cardápio
-              com receitas salvas, os ingredientes que faltam entram direto na lista de compras.
-              Uma ação no app resolve a próxima etapa automaticamente — sem abrir outro app,
-              sem copiar e colar, sem esquecer.
-            </p>
+            <div className="eyebrow"><span className="dot"></span> {t('how.eyebrow')}</div>
+            <h2>{t('how.title')}</h2>
+            <p>{t('how.sub')}</p>
+            <p className="how-prose">{t('how.prose')}</p>
           </div>
 
           <div className="how-grid">
             <div className="how-step reveal">
               <div className="num">1</div>
-              <h3>Monta sua despensa</h3>
-              <p>Em 2 minutos, você adiciona os básicos que sempre tem em casa. Pode usar as sugestões do app — não precisa começar do zero.</p>
+              <h3>{t('how.step1Title')}</h3>
+              <p>{t('how.step1Desc')}</p>
             </div>
             <div className="how-step reveal">
               <div className="num">2</div>
-              <h3>Cria a lista de mercado</h3>
-              <p>Digita os itens, escolhe um corredor ou loja, e compartilha pelo zap. Quem for às compras vê tudo organizado.</p>
+              <h3>{t('how.step2Title')}</h3>
+              <p>{t('how.step2Desc')}</p>
             </div>
             <div className="how-step reveal">
               <div className="num">3</div>
-              <h3>Marca o que comprou</h3>
-              <p>No corredor do mercado, vai marcando o que pegou. A despensa atualiza sozinha. Pronto, bora cozinhar.</p>
+              <h3>{t('how.step3Title')}</h3>
+              <p>{t('how.step3Desc')}</p>
             </div>
           </div>
         </div>
@@ -389,12 +382,14 @@ export default async function Home() {
           <div className="founder-block reveal">
             <div className="founder-avatar">G</div>
             <div>
-              <div className="eyebrow"><span className="dot"></span> Por que o Mise existe</div>
+              <div className="eyebrow"><span className="dot"></span> {t('founder.eyebrow')}</div>
               <p className="founder-quote">
-                &ldquo;Eu sempre sofria com algo faltando em casa quando queria cozinhar. E os apps que existiam eram cheios de imagens, planejamento elaborado e função demais — só me faziam perder tempo.<br/><br/>
-                <strong>Então fiz o Mise:</strong> um jeito fácil de organizar a despensa pra quem gosta de cozinhar.&rdquo;
+                {t.rich('founder.quote', {
+                  br: () => <br />,
+                  strong: (chunks) => <strong>{chunks}</strong>,
+                })}
               </p>
-              <div className="founder-name">Gus <span>· Criador do Mise</span></div>
+              <div className="founder-name">{t('founder.name')} <span>{t('founder.role')}</span></div>
             </div>
           </div>
         </div>
@@ -404,26 +399,11 @@ export default async function Home() {
       <section className="section">
         <div className="container">
           <div className="section-head reveal">
-            <div className="eyebrow"><span className="dot"></span> Para quem é</div>
-            <h2>Para quem é o Mise</h2>
-            <p className="how-prose">
-              O Mise foi feito para quem cozinha em casa com alguma frequência e já cansou
-              de improvisar. Não é para chef, não é para quem quer montar a cozinha perfeita —
-              é para quem quer sair do mercado com o que precisa e entrar na cozinha sabendo
-              o que vai fazer.
-            </p>
-            <p className="how-prose">
-              Funciona bem para casais que dividem as compras, famílias que planejam a semana
-              juntos, quem mora sozinho e tenta não desperdiçar, repúblicas que precisam de
-              lista compartilhada. A lógica é a mesma: saber o que tem em casa, planejar o que
-              vai cozinhar e comprar só o que falta — sem voltar ao mercado no meio da semana.
-            </p>
-            <p className="how-prose">
-              Quem usa o Mise há mais de um mês normalmente reduz de três para uma a quantidade
-              de viagens semanais ao supermercado. A lista gerada pelo cardápio elimina os itens
-              por impulso. A despensa elimina a compra duplicada. O resultado aparece na conta
-              do mercado — não num tutorial de organização que você nunca vai terminar.
-            </p>
+            <div className="eyebrow"><span className="dot"></span> {t('who.eyebrow')}</div>
+            <h2>{t('who.title')}</h2>
+            <p className="how-prose">{t('who.p1')}</p>
+            <p className="how-prose">{t('who.p2')}</p>
+            <p className="how-prose">{t('who.p3')}</p>
           </div>
         </div>
       </section>
