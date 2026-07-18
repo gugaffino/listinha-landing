@@ -1,1 +1,316 @@
-{}
+{
+  "site": {
+    "title": "Mise — Cook in peace, your way.",
+    "description": "The app that connects your pantry, recipes and shopping list. So you never run out again.",
+    "ogDescription": "The app that connects your pantry, recipes and shopping list. Free."
+  },
+  "nav": {
+    "features": "Features",
+    "blog": "Blog",
+    "dropdown": {
+      "lista": { "label": "Shopping list", "desc": "Organized by aisle, works offline" },
+      "despensa": { "label": "Pantry", "desc": "Know what's missing before you shop" },
+      "receitas": { "label": "Recipes", "desc": "Filtered by what you have at home" },
+      "cardapio": { "label": "Weekly plan", "desc": "Generates your shopping list automatically" }
+    }
+  },
+  "common": {
+    "skipLink": "Skip to content",
+    "ctaSmall": "Get started free",
+    "ctaOpenAppFree": "Open the app for free",
+    "ctaOpenMiseFree": "Open Mise for free",
+    "allFeatures": "← All features",
+    "readArticle": "Read article →",
+    "openApp": "Open the app",
+    "openAppArrow": "Open the app →",
+    "footerCopy": "Made with care for people who love to cook.",
+    "footerCopyright": "© 2024 Mise",
+    "footnoteChannels": "PHONE · TABLET · DESKTOP · OFFLINE",
+    "footnoteNoSignup": "no signup · no card · works offline"
+  },
+  "home": {
+    "hero": {
+      "title": "Cook in peace, <accent>your way.</accent>",
+      "sub": "The kitchen shouldn't take up this much headspace. Pantry, recipes and shopping list, all connected — you stop deciding and start cooking.",
+      "ctaHow": "See how it works ↓",
+      "meta1": "Works offline",
+      "meta2": "Share it on WhatsApp",
+      "meta3": "Phone and desktop",
+      "float1Label": "Out of garlic",
+      "float1Sub": "in the pantry",
+      "float2Label": "Shared",
+      "float2Sub": "with the whole house",
+      "phoneTitle": "This week's list",
+      "phoneSec1": "Produce",
+      "phoneItemAlho": "Garlic",
+      "phoneItemTomate": "Roma tomatoes",
+      "phoneSec2": "Pantry staples",
+      "phoneItemAzeite": "Extra virgin olive oil",
+      "phoneItemOvos": "Eggs",
+      "phoneItemFrango": "Chicken breast",
+      "tabLista": "List",
+      "tabDespensa": "Pantry",
+      "tabReceitas": "Recipes",
+      "tabPlano": "Plan"
+    },
+    "pain": {
+      "eyebrow": "You've been there",
+      "title": "The perfect kitchen exists.<br></br>It just never has what you need.",
+      "sub": "It's not that you're disorganized. Nothing actually helps with your real routine.",
+      "card1Title": "Got back from the store without the garlic.",
+      "card1Desc": "Again. You scan the shelf, try to remember from memory, buy what feels right. You get home and <em>that's exactly what's missing.</em>",
+      "card2Title": "\"Is this the right brand?\"",
+      "card2Desc": "Someone sends a photo of 3 brands. You stop everything to answer. <em>They still buy the wrong one.</em>",
+      "card3Title": "Your list app turned into a spreadsheet.",
+      "card3Desc": "Full of features you never use. When you're in a rush, you still open Notes instead. <em>Something's off.</em>",
+      "transitionLabel": "So we built Mise",
+      "transitionTitle": "An app that gets your kitchen <em>exactly as it is.</em> No complications, no fuss."
+    },
+    "features": {
+      "eyebrow": "Features",
+      "title": "The pantry remembers. The plan comes together. The list appears.",
+      "sub": "Each one solves a piece of the problem. Together, they solve the week.",
+      "lista": {
+        "tag": "Shopping list",
+        "title": "Share it in one tap. Get the right stuff.",
+        "desc": "Organize by store or aisle, send it over WhatsApp, and whoever's shopping sees exactly what to grab.",
+        "b1": "By store or by aisle",
+        "b2": "Shared over WhatsApp",
+        "b3": "History of what you've already bought",
+        "vmTitle": "This week's list",
+        "vmItem1": "Whole milk",
+        "vmItem2": "Eggs",
+        "vmItem3": "Olive oil",
+        "vmItem4": "Chicken breast"
+      },
+      "despensa": {
+        "tag": "Pantry",
+        "title": "Always have what you need to cook.",
+        "desc": "Set up your ideal pantry once. What runs out gets flagged — by the time you build the list, you already know what to buy.",
+        "b1": "Suggestions to build a complete pantry",
+        "b2": "Adds to the list in one tap",
+        "b3": "Flags what's running low, automatically",
+        "vmTitle": "My pantry",
+        "vmCount": "7 items",
+        "chip1": "Garlic", "chip2": "Onion", "chip3": "Olive oil", "chip4": "Salt", "chip5": "Eggs", "chip6": "Flour", "chip7": "Tomato", "chipAdd": "+ Add"
+      },
+      "receitas": {
+        "tag": "Recipes",
+        "title": "The recipe book you never had.",
+        "desc": "Save from anywhere — Instagram, YouTube, Google, or by hand. No pretty photos in the way. Just what matters: name and ingredients.",
+        "b1": "Capture with a link from any site",
+        "b2": "Ingredients synced with the list",
+        "b3": "Clean layout, no distractions",
+        "vmTitle": "My recipes",
+        "vmCount": "12 saved",
+        "recipe1": "Spaghetti al sugo",
+        "recipe2": "Grilled lemon chicken",
+        "recipe3": "Grandma's carrot cake",
+        "recipe4": "Caesar salad"
+      },
+      "plano": {
+        "tag": "Weekly plan",
+        "title": "Week planned, list ready.",
+        "desc": "Build the week's menu with your recipes. In one tap, whatever's missing goes straight to the shopping list.",
+        "b1": "Synced with your recipes",
+        "b2": "Generates the list automatically",
+        "b3": "No more \"pasta again tonight?\"",
+        "vmTitle": "Weekly plan",
+        "vmGenerate": "→ Generate list",
+        "day1": "Grilled lemon chicken",
+        "day2": "Spaghetti al sugo",
+        "day3Empty": "No plan",
+        "day4": "Caesar salad",
+        "day5": "Veggie omelet"
+      }
+    },
+    "how": {
+      "eyebrow": "How it works",
+      "title": "Three steps. No annoying onboarding.",
+      "sub": "You won't need a tutorial. Seriously.",
+      "prose": "Mise connects the four pillars of the kitchen routine — pantry, recipes, weekly plan and shopping list — in one app. Mark an item as out in the pantry, and it shows up as a suggestion on the list. Build the week's plan with saved recipes, and the missing ingredients go straight to the shopping list. One action in the app handles the next step automatically — no switching apps, no copy-pasting, no forgetting.",
+      "step1Title": "Set up your pantry",
+      "step1Desc": "In 2 minutes, add the basics you always have at home. Use the app's suggestions — no need to start from scratch.",
+      "step2Title": "Build the shopping list",
+      "step2Desc": "Type in the items, pick an aisle or store, and share it over WhatsApp. Whoever's shopping sees everything organized.",
+      "step3Title": "Check off what you bought",
+      "step3Desc": "In the aisle, check off each item as you grab it. The pantry updates itself. Done — time to cook."
+    },
+    "founder": {
+      "eyebrow": "Why Mise exists",
+      "quote": "\"I always struggled with something missing at home when I wanted to cook. And the apps out there were full of photos, elaborate planning and too many features — they just wasted my time.<br></br><br></br><strong>So I built Mise:</strong> an easy way to keep a pantry for people who actually like to cook.\"",
+      "name": "Gus",
+      "role": "· Mise's creator"
+    },
+    "who": {
+      "eyebrow": "Who it's for",
+      "title": "Who Mise is for",
+      "p1": "Mise is built for people who cook at home fairly often and are tired of winging it. It's not for chefs, and it's not for people chasing the perfect kitchen setup — it's for people who want to leave the store with what they need and walk into the kitchen already knowing what they're making.",
+      "p2": "It works well for couples splitting the shopping, families planning the week together, people living alone trying not to waste food, and roommates who need a shared list. The logic is the same: know what's at home, plan what you're cooking, and buy only what's missing — without an extra trip to the store mid-week.",
+      "p3": "People who've used Mise for more than a month typically go from three grocery runs a week down to one. The list generated from the weekly plan cuts out impulse items. The pantry cuts out duplicate purchases. The result shows up in the grocery bill — not in an organizing tutorial you'll never finish."
+    },
+    "blog": {
+      "eyebrow": "Blog",
+      "title": "Tips from people who actually make lists",
+      "post1Tag": "Shopping list",
+      "post1Title": "Basic shopping list: a guide with 80+ items to copy",
+      "post1Desc": "The 7 essential groups, monthly cost estimates, and tips to save money at the store.",
+      "post2Tag": "New home",
+      "post2Title": "Shopping list for a new home: what you can't skip",
+      "post2Desc": "60+ items by room, what to buy first, and cost estimates by household type.",
+      "seeAll": "See all articles →"
+    },
+    "cta": {
+      "eyebrow": "Start today",
+      "title": "An organized kitchen, <em>your way.</em>",
+      "sub": "Free. No credit card. No long signup. Ready?"
+    }
+  },
+  "funcionalidadesHub": {
+    "meta": {
+      "title": "Features — Mise",
+      "description": "Free, shared shopping list, weekly plan with an automatic list, and recipes based on what you have at home. All connected in one app.",
+      "ogTitle": "Features — Mise",
+      "ogDescription": "Shopping list, weekly plan and recipes. Three things that work together. Free."
+    },
+    "hero": {
+      "eyebrow": "Features",
+      "title": "The pantry remembers. The plan comes together.<br></br><accent>The list appears.</accent>",
+      "sub": "Shopping list, pantry, recipes and weekly plan — connected in one app. Each one solves a piece of the problem. Together, they solve the week."
+    },
+    "cards": {
+      "lista": { "eyebrow": "Shopping list", "title": "Organized by aisle. Shared. Free.", "desc": "Build the list at home, share it over WhatsApp, and shop the store in aisle order. Works offline.", "tag1": "100% free", "tag2": "Shared", "tag3": "Offline" },
+      "despensa": { "eyebrow": "Pantry", "title": "Always have what you need to cook.", "desc": "Set up your ideal pantry once. What runs out gets flagged — by the time you build the list, you already know what to buy.", "tag1": "Automatic suggestions", "tag2": "Adds to the list", "tag3": "Cross-checks with recipes" },
+      "cardapio": { "eyebrow": "Weekly plan", "title": "A weekly plan that generates the shopping list automatically.", "desc": "Plan Monday through Sunday. The app checks it against your pantry and drops the missing ingredients straight into the list.", "tag1": "7 days", "tag2": "Automatic list", "tag3": "Less waste" },
+      "receitas": { "eyebrow": "Recipes", "title": "Your recipes. Filtered by what you have at home.", "desc": "Save the recipes you already make. The app shows what you can cook today — no store run needed.", "tag1": "Save recipes", "tag2": "Filter by ingredients", "tag3": "List from a recipe" },
+      "cardLink": "See feature"
+    },
+    "connect": {
+      "title": "How the four tools work together",
+      "p1": "Mise isn't an app with four separate features — it's a cycle. It starts with the pantry: you set up your ideal stock once. When something runs out, you flag it. When it's time to plan the week, you pick recipes and Mise checks them against the pantry — missing ingredients go straight into the shopping list.",
+      "p2": "You go to the store, buy exactly what you need, and check things off the list as you put them in the cart. By the time you're home, the pantry is already updated. That connection solves a problem standalone apps don't: the gap between knowing what's at home, planning what you'll cook, and knowing what's left to buy.",
+      "p3": "All of this without a mandatory signup up front, without a subscription, working offline inside the store. You start using it before creating an account — and the essential features are never locked behind one.",
+      "p4": "The practical result: a family that used to make three grocery runs a week can cut that down to one, with a complete list generated by the app itself. People living alone stop buying on impulse because they know exactly what's missing. Consumer behavior estimates show unplanned shopping trips cost 20% to 30% more — between duplicate items, products that expire before they're used, and forgotten ingredients that were part of a plan that never existed. Mise cuts that waste at the source, connecting what you have with what you'll cook and what you need to buy."
+    },
+    "cta": {
+      "title": "Start with the list.<br></br><em>Everything else falls into place.</em>",
+      "sub": "Free, no signup up front, works offline."
+    }
+  },
+  "svcListaDeCompras": {
+    "meta": {
+      "title": "Free, Shared Shopping List App — Mise",
+      "description": "Mise is the free shopping list app organized by aisle and shared in real time. Works offline, no signup required.",
+      "ogTitle": "Free, Shared Shopping List App — Mise",
+      "ogDescription": "Shopping list organized by aisle, shared over WhatsApp, works offline. 100% free."
+    },
+    "hero": {
+      "eyebrow": "Shopping list",
+      "title": "A free, <accent>shared</accent><br></br>shopping list app.",
+      "sub": "You build the list at home, share it over WhatsApp, and shop the store in aisle order. No backtracking because you remembered the toilet paper on the last aisle."
+    },
+    "how": {
+      "eyebrow": "How it works",
+      "title": "Three steps. Nothing else.",
+      "step1Title": "Build the list at home",
+      "step1Desc": "Add the items, the app sorts them by aisle automatically. Produce, meat, pantry staples — all in the store's real order.",
+      "step2Title": "Share it over WhatsApp",
+      "step2Desc": "Send the link to whoever's shopping with you. You both see the same list in real time — no one buys what the other already put in the cart.",
+      "step3Title": "Shop and check things off",
+      "step3Desc": "Works offline, with bad signal or none. Check off each item as you grab it. List's empty by the time you hit checkout."
+    },
+    "feature": {
+      "eyebrow": "What's included",
+      "title": "Everything a shopping list needs — and nothing it doesn't.",
+      "desc": "No unnecessary features. No mandatory signup before you can use it. Just what solves the problem of leaving home without forgetting something.",
+      "point1Title": "Organized by aisle",
+      "point1Desc": "Produce, meat, pantry staples, cleaning and personal care — grouped in the store's real order.",
+      "point2Title": "Shared in real time",
+      "point2Desc": "One link over WhatsApp. Two phones, one list. What one person adds shows up for the other instantly.",
+      "point3Title": "Works offline",
+      "point3Desc": "Inside the store, in the basement, no signal. The list doesn't disappear.",
+      "point4Title": "100% free, no signup up front",
+      "point4Desc": "Start using it before you create an account. No essential feature locked.",
+      "vmTitle": "Grocery list",
+      "vmCount": "7 items",
+      "vmSec1": "Produce",
+      "vmItem1": "Tomato",
+      "vmItem2": "Garlic",
+      "vmItem3": "Onion",
+      "vmSec2": "Pantry staples",
+      "vmItem4": "Rice, 5 kg",
+      "vmItem5": "Pinto beans",
+      "vmItem6": "Pasta",
+      "vmSec3": "Cleaning",
+      "vmItem7": "Dish soap"
+    },
+    "why": {
+      "title": "Why aisle organization makes a difference",
+      "p1": "Going to the store without a list is improvising at a cost. Consumer behavior research shows unplanned shopping trips tend to run 20% to 30% more expensive — between impulse items and buying doubles of things you already had at home but forgot about.",
+      "p2": "But any old list only solves half the problem. Without aisle organization, you wander the store at random: hit the cleaning aisle, remember the beans, head back to pantry staples, pass produce again. Besides being tiring, it raises the odds you'll grab something that wasn't on the list.",
+      "p3": "Mise groups items in the order you actually find them in the store: produce at the entrance, meat and protein next, pantry staples, cleaning and personal care at the back. You walk in, go through once, check everything off, and leave with the right cart — no doubling back to the same aisle twice.",
+      "p4": "Mise's aisle organization follows a real supermarket's layout: produce at the entrance, meat and dairy next, pantry staples in the middle, cleaning and personal care at the back. You walk in, go through once, check everything off without doubling back — and get out faster than you would without a list. Sharing it over WhatsApp before you leave the house makes sure whoever's shopping with you buys exactly what the list says, no phone calls from the middle of an aisle."
+    },
+    "faq": {
+      "eyebrow": "Straight answers",
+      "title": "What people ask",
+      "q1": "Is the shopping list app free?",
+      "a1": "Yes, 100% free. Shopping list, sharing and aisle organization all work without paying anything. No essential feature is locked behind a subscription.",
+      "q2": "How do I share the shopping list?",
+      "a2": "You share it over WhatsApp with a link. Whoever receives it edits the same list in real time — nothing to install. Works for couples, families, or anyone splitting the shopping.",
+      "q3": "Does the list work without internet inside the store?",
+      "a3": "Yes. Mise is a PWA that loads offline. The list stays available even with bad signal or no connection — common in big stores with a basement level.",
+      "q4": "How is the shopping list organized by aisle?",
+      "a4": "The app groups items automatically — produce, meat, pantry staples, cleaning, personal care — in the order you find them in the store. You go through the aisles once and check everything off without backtracking."
+    },
+    "cta": {
+      "title": "Stop deciding what to buy.<br></br><em>Start cooking.</em>",
+      "sub": "No signup up front. Start using it right now."
+    }
+  },
+  "svcDespensa": {
+    "meta": { "title": "Pantry Tracking App — Mise", "description": "Mise is the pantry app that flags what's running low and generates your shopping list automatically. Set up your ideal pantry once and never forget what's missing again.", "ogTitle": "Pantry Tracking App — Mise", "ogDescription": "Set up your pantry, flag what ran out, and get your shopping list generated automatically. Free." },
+    "hero": { "eyebrow": "Pantry", "title": "Always have what<br></br>you need to <accent>cook.</accent>", "sub": "Set up your ideal pantry once. What runs out gets flagged — by the time you build the list, you already know what to buy without opening the fridge." },
+    "how": { "eyebrow": "How it works", "title": "Set it up once. Use it forever.", "step1Title": "Set up your ideal pantry", "step1Desc": "Add the items you always have at home — the app suggests the basics. Rice, beans, olive oil, garlic, onion. In two minutes, your pantry is ready.", "step2Title": "Flag what ran out", "step2Desc": "Used the last of the olive oil? One tap and it's flagged as out. Running low? Mark it \"running low.\" The app remembers for you.", "step3Title": "Get the list automatically", "step3Desc": "When it's time to shop, anything out or running low becomes a list suggestion with one tap. No opening the fridge, nothing forgotten." },
+    "feature": { "eyebrow": "What's included", "title": "A pantry connected to your list and recipes.", "desc": "It's not just an inventory. Mise's pantry talks to the shopping list and to your recipes — so you know what to buy and what you can already cook today.", "point1Title": "Suggestions to build a complete pantry", "point1Desc": "The app suggests the most common items for you to add in one tap — no starting from scratch.", "point2Title": "Adds to the list in one tap", "point2Desc": "What's out goes straight to the shopping list. No copying, no retyping.", "point3Title": "Cross-checks with your recipes", "point3Desc": "The app shows which recipes you can make with what's in the pantry — no store run first.", "point4Title": "Flags what's running low", "point4Desc": "No need to wait until it's gone to remember. Mark it \"running low\" and the app already includes it in the next shop.", "vmTitle": "My pantry", "vmCount": "8 items", "chip1": "Garlic", "chip2": "Onion", "chip3": "Olive oil", "chip4": "Rice", "chip5": "Beans", "chip6": "Salt", "chip7": "Milk", "chip8": "Eggs", "outLabel": "Out", "outItem1": "Salt", "outItem2": "Milk", "addToList": "+ list" },
+    "why": { "title": "The cost of not knowing what's at home", "p1": "A disorganized pantry isn't just an aesthetic issue — it's a financial one. When you don't know what's at home, you buy the same product twice, let items expire at the back of the shelf, and still show up at the store unsure of what you actually need.", "p2": "Food waste studies show a striking share of household waste starts with the wrong purchase: buying something you didn't need because you didn't realize you already had it.", "p3": "With Mise's pantry, you set up your ideal stock list once. After that, you just flag what ran out the moment you notice — not on shopping day, when memory's already failed. When it's time to shop, the list is already pre-filled with what's missing, no opening every cabinet to check.", "p4": "The difference between an organized pantry and a living one comes down to the habit of flagging what runs out the moment you notice — not shopping week, when you've already forgotten. Mise makes that habit minimal: one tap when you open the cabinet and see the salt is gone. When it's time to shop, the list is already pre-filled with what's missing. No opening every cabinet, no trying to remember what was on the back shelf." },
+    "faq": { "eyebrow": "Straight answers", "title": "What people ask", "q1": "How does the app track what's in my pantry?", "a1": "You set up your ideal pantry once — with the items you always have at home. When something runs out or is running low, you flag it in the app. By the time you build the shopping list, Mise already knows what's missing.", "q2": "Does the pantry connect to the shopping list?", "a2": "Yes. Anything flagged as out or running low in the pantry shows up as a shopping list suggestion with one tap. Nothing to remember.", "q3": "Does the pantry work with recipes too?", "a3": "Yes. The app cross-checks the pantry with your saved recipes and shows what you can cook today without a store run. Missing ingredients go straight to the list.", "q4": "Do I need to set up the pantry from scratch?", "a4": "No. Mise suggests the most common items — rice, beans, olive oil, garlic — for you to add in one tap. In two minutes, your pantry already has your household's basics." },
+    "cta": { "title": "The pantry remembers.<br></br><em>You cook.</em>", "sub": "No signup up front. Start using it right now." }
+  },
+  "svcCardapioSemanal": {
+    "meta": { "title": "Weekly Meal Plan App with Built-in Shopping List — Mise", "description": "Mise is the app for building a weekly meal plan integrated with your shopping list. Plan all 7 days, and the app generates the list automatically with what's missing from the pantry.", "ogTitle": "Weekly Meal Plan App with Shopping List — Mise", "ogDescription": "A weekly plan that generates the shopping list automatically. Integrated with your pantry. Free." },
+    "hero": { "eyebrow": "Weekly plan", "title": "A weekly meal plan app that generates<br></br><accent>the shopping list automatically.</accent>", "sub": "You plan Monday through Sunday. The app checks it against your pantry and adds the missing ingredients straight to the list. No more Friday surprises." },
+    "how": { "eyebrow": "How it works", "title": "From plan to list in three steps.", "step1Title": "Pick the week's recipes", "step1Desc": "Choose what you're cooking Monday through Sunday using the recipes saved in the app. Leaving days open is fine.", "step2Title": "The app checks it against the pantry", "step2Desc": "Mise checks what you already have at home and separates out only the missing ingredients. You don't buy what you don't need.", "step3Title": "List generated, shopping solved", "step3Desc": "One trip to the store covers the whole week. No improvising on Thursday because Friday's recipe was missing an ingredient." },
+    "feature": { "eyebrow": "What's included", "title": "Planning that connects your meal plan, pantry and list.", "desc": "It's not just a meal calendar. It's a system that closes the gap between \"what am I cooking\" and \"what do I need to buy.\"", "point1Title": "All 7 days at once", "point1Desc": "Plan the whole week before you shop. One trip. No improvising midweek.", "point2Title": "List generated automatically", "point2Desc": "Missing ingredients go into the shopping list without writing them down one by one.", "point3Title": "Integrated with the pantry", "point3Desc": "What you already have at home doesn't make it onto the list. You only buy what you actually need.", "point4Title": "Less waste", "point4Desc": "You buy what you'll actually use — not what seems useful in the moment. The chicken stays in the fridge the right amount of time.", "vmTitle": "Weekly plan", "vmCount": "5 meals", "day1Lbl": "MON", "day1": "Grilled chicken with rice", "day2Lbl": "TUE", "day2": "Spaghetti al sugo", "day3Lbl": "WED", "day3": "Veggie omelet", "day4Lbl": "THU", "day4": "Bean and pork stew", "day5Lbl": "FRI", "day5": "Baked fish", "day6Lbl": "SAT", "day6Empty": "— open —", "day7Lbl": "SUN", "day7Empty": "— open —" },
+    "why": { "title": "Why plan the week before you shop", "p1": "Whoever goes shopping without knowing what they're cooking that week buys on instinct. Grabs whatever looks useful, remembers something was running low, tosses in whatever's on sale. The result is a fridge full of disconnected items and the Wednesday question: what do I even do with all this?", "p2": "Families who plan their weekly meals before shopping tend to spend less on groceries and waste less food. The meal plan works as a filter: you buy what you'll use, not what looks like you'll use.", "p3": "Mise connects the meal plan to the pantry. You pick the week's recipes, the app checks what you already have at home, and automatically builds a list of the missing ingredients. One action handles the whole week — no improvising Thursday, no extra store run Friday.", "p4": "People who try planning the meal plan before shopping notice the difference in the bill and the midweek scrambling within the first week. The five-minute habit of planning on Sunday — building the meal plan with what's in the pantry and generating the list automatically — answers four \"what are we eating tonight?\" questions and saves at least one extra store trip a week." },
+    "faq": { "eyebrow": "Straight answers", "title": "What people ask", "q1": "How do I create a weekly meal plan with a built-in shopping list?", "a1": "You select recipes for each day of the week. Mise checks them against your pantry and automatically adds the missing ingredients to the shopping list. One action generates the whole week's list.", "q2": "Is the weekly meal plan app free?", "a2": "Yes, 100% free. The weekly plan, the shopping list integration and the pantry all work without paying anything and without a mandatory signup.", "q3": "How does a weekly meal plan help save money at the store?", "a3": "Whoever plans before shopping buys only what they'll use. Whoever shops without a plan spends 27% more on average — impulse items and ingredients that sit in the fridge until they become trash.", "q4": "Does it work for a family or couple?", "a4": "Yes. The list generated from the meal plan is shareable over WhatsApp. Everyone sees the weekly plan and the list in real time in the same place — no messy group chat." },
+    "cta": { "title": "Fewer decisions.<br></br><em>More food.</em>", "sub": "From plan to list in three steps. Free." }
+  },
+  "svcReceitas": {
+    "meta": { "title": "App to Save Recipes and Cook with What You Have at Home — Mise", "description": "Mise is the app for saving recipes and filtering by what you have at home. Save your recipes, cross-check them with your pantry, and see what you can cook today.", "ogTitle": "App to Save Recipes and Filter by What You Have at Home — Mise", "ogDescription": "Save recipes, filter by what you have at home, generate a shopping list for what's missing. Free." },
+    "hero": { "eyebrow": "Recipes", "title": "An app to save recipes and<br></br><accent>cook with what you have at home.</accent>", "sub": "Save the recipes you already make. The app filters by what's in your pantry and shows what you can cook today — no store run needed first." },
+    "how": { "eyebrow": "How it works", "title": "From recipe to plate, no improvising.", "step1Title": "Save your recipes", "step1Desc": "Save the recipes you already make with ingredients, quantities and instructions. Yours — not some influencer's recipe you'll never actually make.", "step2Title": "Filter by what's at home", "step2Desc": "The app cross-checks your saved recipes with what's in the pantry and shows what you can cook today — no store run first.", "step3Title": "Missing ingredients go to the list", "step3Desc": "Picked a recipe that's missing an ingredient? One tap, and what's missing goes straight to the shopping list." },
+    "feature": { "eyebrow": "What's included", "title": "Recipes that work with what you have. Not with what you should have.", "desc": "The problem isn't a shortage of recipes online. It's knowing which one you can actually make today, with what's at home, without a store run.", "point1Title": "Save any recipe", "point1Desc": "Name, ingredients with quantities, and instructions. Your recipes in the app, always at hand.", "point2Title": "Recipes based on what's at home", "point2Desc": "Cross-checked with the pantry, showing only what you can make right now — no store run.", "point3Title": "List generated from a recipe", "point3Desc": "Missing ingredients go into the shopping list with one tap. No writing them down one by one.", "point4Title": "Integrated with the weekly plan", "point4Desc": "Saved recipes feed the weekly plan. Everything connected in one place.", "vmTitle": "My recipes", "vmBadge": "What I have", "recipe1": "Kung pao chicken", "recipe1Chip1": "Chicken", "recipe1Chip2": "Bell pepper", "recipe1Chip3": "Soy sauce", "recipe1Chip4": "Cashews", "recipe2": "Veggie omelet", "recipe2Chip1": "Eggs", "recipe2Chip2": "Onion", "recipe2Chip3": "Tomato", "recipe3": "Mushroom risotto", "recipe3Chip1": "Mushrooms", "recipe3Chip2": "White wine", "addToList": "+ list" },
+    "why": { "title": "Cooking with what you have, not what you should have", "p1": "Most recipe apps have the same problem: they show what you could cook under ideal conditions, with every ingredient on hand. In real life, you pick a recipe, head to the kitchen and find out three ingredients are missing. Then you either improvise or order delivery.", "p2": "Mise flips the logic. Instead of showing recipes and making you check what's at home afterward, the app filters recipes automatically by what's in your pantry. Only the ones you can make right now show up — no store run first.", "p3": "For the ingredients missing from a recipe you want to make, the app adds everything to the shopping list with one tap. You plan the week with what you have, buy only what you need, and walk into the kitchen knowing exactly what you're making.", "p4": "Keeping the recipes you actually make inside the app — not in a notebook, a photo, or a Chrome tab you close without saving — kills the \"let's make that chicken thing, wait, I don't remember the ingredients\" moment. In two minutes, the missing ingredients are on the list. In three taps, the recipe is on the weekly plan. No relying on signal to load a recipe site mid-cook." },
+    "faq": { "eyebrow": "Straight answers", "title": "What people ask", "q1": "How do I save recipes in the app?", "a1": "You save any recipe with a name, ingredients, quantities and instructions. Recipes stay in the app and feed the weekly plan and the \"what can I make today\" filter.", "q2": "How do I see recipes based on what I have at home?", "a2": "Mise cross-checks your saved recipes with what's in your pantry. The \"what I have\" filter shows only the recipes whose ingredients you already have — no store run before you cook.", "q3": "How do I generate a shopping list from a recipe?", "a3": "With one tap on a recipe, the ingredients not in your pantry go automatically into the shopping list. No copying them one by one.", "q4": "Is the recipe app free?", "a4": "Yes, 100% free. Saving recipes, filtering by ingredients and generating a shopping list all work without paying anything and without a mandatory signup." },
+    "cta": { "title": "You don't forget the garlic.<br></br><em>The system does.</em>", "sub": "Recipes filtered by what's at home. No store run." }
+  },
+  "blogIndex": {
+    "meta": { "title": "Blog — Mise", "description": "Tips on kitchen organization, shopping lists and weekly meal planning." },
+    "hero": { "title": "Tips from people who actually make lists", "sub": "Kitchen organization, groceries and weekly planning — no fuss.", "desc": "Here you'll find practical guides on shopping lists, pantry organization and meal planning. No gimmicky techniques or expensive products — just what actually works for people who cook at home for real. Every article comes with lists to copy, cost estimates and straight answers to the most common questions." },
+    "topics": {
+      "title": "What you'll find here",
+      "t1Title": "Shopping lists",
+      "t1P1": "Complete guides with items organized by group, cost estimates by household type, and practical tips for different situations — a new home, a tight month, a big family, a couple. Every list is built for you to copy and adapt, not start from scratch every week.",
+      "t1P2": "You'll find everything from the basic grocery list with the 80 items almost everyone needs to situation-specific lists: moving, a party, a barbecue, a basic pantry basket. No exotic items you'll never use.",
+      "t2Title": "Pantry and fridge organization",
+      "t2P1": "How to organize the pantry by zone, which containers to use, how to label things, where to start when everything's a mess — and how to keep it organized day to day without needing a whole Sunday to redo it all again.",
+      "t2P2": "No expensive products, no home-magazine aesthetics. The focus is functional: what actually cuts waste, makes the most-used ingredients easier to reach, and gets the pantry working for your real cooking routine.",
+      "t3Title": "Meal planning and saving money",
+      "t3P1": "How to build a weekly meal plan that respects your available time and budget, why planning before you shop makes a real difference in the monthly bill, and which simple habits cut spending without giving up what you like to eat.",
+      "t3P2": "Consumer behavior research shows shopping without a list costs 20% to 30% more. The articles here explain how that plays out in your routine — and what to do about it."
+    },
+    "empty": { "title": "New posts coming soon", "desc": "We're translating the blog articles. In the meantime, check out the Portuguese version." },
+    "cta": { "text": "Since you made it this far — try the app. It's free.", "button": "Open Mise →" }
+  }
+}

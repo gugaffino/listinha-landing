@@ -1,1 +1,316 @@
-{}
+{
+  "site": {
+    "title": "Mise — Cocina en paz, a tu manera.",
+    "description": "La app que conecta tu despensa, tus recetas y tu lista de compras. Para que nunca te falte nada.",
+    "ogDescription": "La app que conecta tu despensa, tus recetas y tu lista de compras. Gratis."
+  },
+  "nav": {
+    "features": "Funciones",
+    "blog": "Blog",
+    "dropdown": {
+      "lista": { "label": "Lista de compras", "desc": "Organizada por pasillo, funciona sin conexión" },
+      "despensa": { "label": "Despensa", "desc": "Sabe qué falta antes de ir al mercado" },
+      "receitas": { "label": "Recetas", "desc": "Filtra por lo que tienes en casa" },
+      "cardapio": { "label": "Plan semanal", "desc": "Genera tu lista de compras automáticamente" }
+    }
+  },
+  "common": {
+    "skipLink": "Saltar al contenido",
+    "ctaSmall": "Empieza gratis",
+    "ctaOpenAppFree": "Abrir la app gratis",
+    "ctaOpenMiseFree": "Abrir Mise gratis",
+    "allFeatures": "← Todas las funciones",
+    "readArticle": "Leer artículo →",
+    "openApp": "Abrir la app",
+    "openAppArrow": "Abrir la app →",
+    "footerCopy": "Hecho con cariño para quienes aman cocinar.",
+    "footerCopyright": "© 2024 Mise",
+    "footnoteChannels": "CELULAR · TABLET · ESCRITORIO · SIN CONEXIÓN",
+    "footnoteNoSignup": "sin registro · sin tarjeta · funciona sin conexión"
+  },
+  "home": {
+    "hero": {
+      "title": "Cocina en paz, <accent>a tu manera.</accent>",
+      "sub": "La cocina no debería costarte tanta cabeza. Despensa, recetas y lista de compras conectadas — dejas de decidir y empiezas a cocinar.",
+      "ctaHow": "Ver cómo funciona ↓",
+      "meta1": "Funciona sin conexión",
+      "meta2": "Se comparte por WhatsApp",
+      "meta3": "Celular y computadora",
+      "float1Label": "Se acabó el ajo",
+      "float1Sub": "en la despensa",
+      "float2Label": "Compartida",
+      "float2Sub": "con toda la casa",
+      "phoneTitle": "Lista de la semana",
+      "phoneSec1": "Frutas y verduras",
+      "phoneItemAlho": "Ajo",
+      "phoneItemTomate": "Tomate perita",
+      "phoneSec2": "Despensa",
+      "phoneItemAzeite": "Aceite de oliva extra virgen",
+      "phoneItemOvos": "Huevos",
+      "phoneItemFrango": "Pechuga de pollo",
+      "tabLista": "Lista",
+      "tabDespensa": "Despensa",
+      "tabReceitas": "Recetas",
+      "tabPlano": "Plan"
+    },
+    "pain": {
+      "eyebrow": "Seguro te pasó",
+      "title": "La cocina perfecta existe.<br></br>Solo que nunca tiene lo que necesitas.",
+      "sub": "No es falta de organización. Es que nada te ayuda en tu rutina real.",
+      "card1Title": "Volviste del mercado sin el ajo.",
+      "card1Desc": "De nuevo. Miras la góndola, tratas de recordar de memoria, compras lo que crees que necesitas. Llegas a casa y <em>falta justo eso.</em>",
+      "card2Title": "\"¿Es esta la marca?\"",
+      "card2Desc": "Alguien manda foto de 3 marcas. Dejas todo para responder. <em>Igual compran la equivocada.</em>",
+      "card3Title": "Tu app de lista se volvió una planilla.",
+      "card3Desc": "Llena de funciones que no usas. Cuando tienes apuro, terminas abriendo las notas del celular. <em>Algo está mal.</em>",
+      "transitionLabel": "Por eso creamos Mise",
+      "transitionTitle": "Una app que entiende tu cocina <em>tal como es.</em> Sin complicación, sin vueltas."
+    },
+    "features": {
+      "eyebrow": "Funciones",
+      "title": "La despensa recuerda. El plan se arma. La lista aparece.",
+      "sub": "Cada una resuelve una parte del problema. Juntas, resuelven la semana.",
+      "lista": {
+        "tag": "Lista de compras",
+        "title": "Comparte en un toque. Compren lo correcto.",
+        "desc": "Organiza por tienda o pasillo, envíala por WhatsApp, y quien vaya al mercado ve exactamente qué llevar.",
+        "b1": "Por tienda o por pasillo",
+        "b2": "Compartida por WhatsApp",
+        "b3": "Historial de lo que ya compraste",
+        "vmTitle": "Lista de la semana",
+        "vmItem1": "Leche entera",
+        "vmItem2": "Huevos",
+        "vmItem3": "Aceite de oliva",
+        "vmItem4": "Pechuga de pollo"
+      },
+      "despensa": {
+        "tag": "Despensa",
+        "title": "Siempre ten lo que necesitas para cocinar.",
+        "desc": "Arma tu despensa ideal una sola vez. Lo que se acaba queda marcado — cuando hagas la lista, ya sabes qué comprar.",
+        "b1": "Sugerencias para armar la despensa completa",
+        "b2": "Agrega a la lista en un toque",
+        "b3": "Marca lo que se está acabando, automáticamente",
+        "vmTitle": "Mi despensa",
+        "vmCount": "7 artículos",
+        "chip1": "Ajo", "chip2": "Cebolla", "chip3": "Aceite", "chip4": "Sal", "chip5": "Huevos", "chip6": "Harina", "chip7": "Tomate", "chipAdd": "+ Agregar"
+      },
+      "receitas": {
+        "tag": "Recetas",
+        "title": "El cuaderno de recetas que nunca tuviste.",
+        "desc": "Guarda desde cualquier lugar — Instagram, YouTube, Google, o a mano. Sin foto bonita que estorbe. Solo lo que importa: nombre e ingredientes.",
+        "b1": "Captura con un link de cualquier sitio",
+        "b2": "Ingredientes integrados con la lista",
+        "b3": "Visual limpio, sin distracciones",
+        "vmTitle": "Mis recetas",
+        "vmCount": "12 guardadas",
+        "recipe1": "Espagueti a la boloñesa",
+        "recipe2": "Pollo a la plancha con limón",
+        "recipe3": "Torta de zanahoria de la abuela",
+        "recipe4": "Ensalada césar"
+      },
+      "plano": {
+        "tag": "Plan semanal",
+        "title": "Semana planeada, lista lista.",
+        "desc": "Arma el menú de la semana con tus recetas. En un toque, lo que falta va directo a la lista de compras.",
+        "b1": "Integrado con tus recetas",
+        "b2": "Genera la lista automáticamente",
+        "b3": "Se acabó el \"¿otra vez pasta hoy?\"",
+        "vmTitle": "Plan semanal",
+        "vmGenerate": "→ Generar lista",
+        "day1": "Pollo a la plancha con limón",
+        "day2": "Espagueti a la boloñesa",
+        "day3Empty": "Sin plan",
+        "day4": "Ensalada césar",
+        "day5": "Omelette de verduras"
+      }
+    },
+    "how": {
+      "eyebrow": "Cómo funciona",
+      "title": "Tres pasos. Sin onboarding pesado.",
+      "sub": "No vas a necesitar un tutorial. En serio.",
+      "prose": "Mise conecta los cuatro pilares de la rutina de cocina — despensa, recetas, plan semanal y lista de compras — en una sola app. Cuando marcas un artículo como agotado en la despensa, aparece como sugerencia en la lista. Cuando armas el menú con recetas guardadas, los ingredientes que faltan entran directo a la lista de compras. Una acción en la app resuelve el siguiente paso automáticamente — sin abrir otra app, sin copiar y pegar, sin olvidos.",
+      "step1Title": "Arma tu despensa",
+      "step1Desc": "En 2 minutos agregas lo básico que siempre tienes en casa. Puedes usar las sugerencias de la app — no hace falta empezar de cero.",
+      "step2Title": "Crea la lista del mercado",
+      "step2Desc": "Escribe los artículos, elige un pasillo o tienda, y comparte por WhatsApp. Quien vaya al mercado ve todo organizado.",
+      "step3Title": "Marca lo que compraste",
+      "step3Desc": "En el pasillo del mercado, vas marcando lo que llevas. La despensa se actualiza sola. Listo, a cocinar."
+    },
+    "founder": {
+      "eyebrow": "Por qué existe Mise",
+      "quote": "\"Siempre sufría porque me faltaba algo en casa cuando quería cocinar. Y las apps que existían estaban llenas de fotos, planificación elaborada y demasiadas funciones — solo me hacían perder tiempo.<br></br><br></br><strong>Entonces creé Mise:</strong> una forma fácil de organizar la despensa para quien de verdad le gusta cocinar.\"",
+      "name": "Gus",
+      "role": "· Creador de Mise"
+    },
+    "who": {
+      "eyebrow": "Para quién es",
+      "title": "Para quién es Mise",
+      "p1": "Mise está hecho para quienes cocinan en casa con cierta frecuencia y ya se cansaron de improvisar. No es para chefs, ni para quien quiere armar la cocina perfecta — es para quien quiere salir del mercado con lo que necesita y entrar a la cocina sabiendo qué va a hacer.",
+      "p2": "Funciona bien para parejas que se reparten las compras, familias que planean la semana juntas, quien vive solo y trata de no desperdiciar, y quienes comparten casa y necesitan una lista compartida. La lógica es la misma: saber qué hay en casa, planear qué vas a cocinar y comprar solo lo que falta — sin una vuelta extra al mercado a mitad de semana.",
+      "p3": "Quienes usan Mise hace más de un mes suelen pasar de tres a una visita semanal al supermercado. La lista generada por el plan elimina las compras por impulso. La despensa elimina la compra duplicada. El resultado se nota en el gasto del mercado — no en un tutorial de organización que nunca vas a terminar."
+    },
+    "blog": {
+      "eyebrow": "Blog",
+      "title": "Consejos de quien hace lista de verdad",
+      "post1Tag": "Lista de compras",
+      "post1Title": "Lista básica de compras: guía con más de 80 artículos para copiar",
+      "post1Desc": "Los 7 grupos esenciales, cuánto cuesta por mes y consejos para ahorrar en el supermercado.",
+      "post2Tag": "Casa nueva",
+      "post2Title": "Lista de compras para casa nueva: lo que no puede faltar",
+      "post2Desc": "Más de 60 artículos por ambiente, qué comprar primero y estimación de costo por perfil.",
+      "seeAll": "Ver todos los artículos →"
+    },
+    "cta": {
+      "eyebrow": "Empieza hoy",
+      "title": "Cocina organizada, <em>a tu manera.</em>",
+      "sub": "Gratis. Sin tarjeta de crédito. Sin registro largo. ¿Vamos?"
+    }
+  },
+  "funcionalidadesHub": {
+    "meta": {
+      "title": "Funciones — Mise",
+      "description": "Lista de compras gratuita y compartida, plan semanal con lista automática y recetas con lo que tienes en casa. Todo conectado en la misma app.",
+      "ogTitle": "Funciones — Mise",
+      "ogDescription": "Lista de compras, plan semanal y recetas. Tres cosas que funcionan juntas. Gratis."
+    },
+    "hero": {
+      "eyebrow": "Funciones",
+      "title": "La despensa recuerda. El plan se arma.<br></br><accent>La lista aparece.</accent>",
+      "sub": "Lista de compras, despensa, recetas y plan semanal — conectados en la misma app. Cada una resuelve una parte del problema. Juntas, resuelven la semana."
+    },
+    "cards": {
+      "lista": { "eyebrow": "Lista de compras", "title": "Organizada por pasillo. Compartida. Gratis.", "desc": "Arma la lista en casa, compártela por WhatsApp y recorre el mercado en el orden de los pasillos. Funciona sin conexión.", "tag1": "100% gratis", "tag2": "Compartida", "tag3": "Sin conexión" },
+      "despensa": { "eyebrow": "Despensa", "title": "Siempre ten lo que necesitas para cocinar.", "desc": "Arma tu despensa ideal una sola vez. Lo que se acaba queda marcado — cuando hagas la lista, ya sabes qué comprar.", "tag1": "Sugerencias automáticas", "tag2": "Agrega a la lista", "tag3": "Se cruza con recetas" },
+      "cardapio": { "eyebrow": "Plan semanal", "title": "Un plan semanal que genera la lista de compras automáticamente.", "desc": "Arma el menú de lunes a domingo. La app lo cruza con la despensa y agrega los ingredientes que faltan directo a la lista.", "tag1": "7 días", "tag2": "Lista automática", "tag3": "Menos desperdicio" },
+      "receitas": { "eyebrow": "Recetas", "title": "Tus recetas. Filtradas por lo que tienes en casa.", "desc": "Guarda las recetas que ya haces. La app muestra qué puedes cocinar hoy — sin pasar antes por el mercado.", "tag1": "Anotar recetas", "tag2": "Filtro por ingredientes", "tag3": "Lista de la receta" },
+      "cardLink": "Ver función"
+    },
+    "connect": {
+      "title": "Cómo funcionan juntas las cuatro herramientas",
+      "p1": "Mise no es una app con cuatro funciones separadas — es un ciclo. Empieza por la despensa: armas el stock ideal de tu casa una sola vez. Cuando algo se acaba, lo marcas en la app. A la hora de planear la semana, eliges las recetas y Mise las cruza con la despensa — los ingredientes que faltan entran automáticamente a la lista de compras.",
+      "p2": "Vas al mercado, compras exactamente lo que necesitas y marcas en la lista a medida que lo pones en el carrito. Al volver, la despensa ya está actualizada. Esa conexión resuelve un problema que las apps aisladas no resuelven: la brecha entre saber qué hay en casa, planear qué vas a cocinar y saber qué falta comprar.",
+      "p3": "Todo esto sin registro obligatorio de entrada, sin suscripción, funcionando sin conexión dentro del mercado. Empiezas a usarla antes de crear una cuenta — y las funciones esenciales nunca quedan bloqueadas.",
+      "p4": "El resultado práctico: una familia que antes hacía tres viajes al mercado por semana puede reducirlo a uno, con una lista completa generada por la propia app. Quien vive solo deja de comprar por impulso porque sabe exactamente qué falta. Estimaciones de comportamiento de consumo muestran que las compras sin planificación cuestan entre 20% y 30% más — entre artículos duplicados, productos que vencen antes de usarse e ingredientes olvidados que eran parte de un plan que no existía. Mise corta ese desperdicio desde el origen, conectando lo que tienes con lo que vas a cocinar y lo que necesitas comprar."
+    },
+    "cta": {
+      "title": "Empieza por la lista.<br></br><em>El resto se acomoda solo.</em>",
+      "sub": "Gratis, sin registro de entrada, funciona sin conexión."
+    }
+  },
+  "svcListaDeCompras": {
+    "meta": {
+      "title": "App de Lista de Compras Gratuita y Compartida — Mise",
+      "description": "Mise es la app gratuita de lista de compras organizada por pasillo y compartida en tiempo real. Funciona sin conexión, sin registro obligatorio.",
+      "ogTitle": "App de Lista de Compras Gratuita y Compartida — Mise",
+      "ogDescription": "Lista de compras organizada por pasillo, compartida por WhatsApp, funciona sin conexión. 100% gratis."
+    },
+    "hero": {
+      "eyebrow": "Lista de compras",
+      "title": "App de lista de compras<br></br>gratuita y <accent>compartida.</accent>",
+      "sub": "Creas la lista en casa, la compartes por WhatsApp y recorres el mercado siguiendo el orden de los pasillos. Sin volver al inicio porque te acordaste del papel higiénico en la última góndola."
+    },
+    "how": {
+      "eyebrow": "Cómo funciona",
+      "title": "Tres pasos. Nada más.",
+      "step1Title": "Arma la lista en casa",
+      "step1Desc": "Agregas los artículos, la app los organiza por pasillo automáticamente. Frutas y verduras, carnes, despensa — todo en el orden correcto del supermercado.",
+      "step2Title": "Comparte por WhatsApp",
+      "step2Desc": "Envía el link a quien va al mercado contigo. Los dos ven la misma lista en tiempo real — nadie compra lo que el otro ya puso en el carrito.",
+      "step3Title": "Vas al mercado y marcas",
+      "step3Desc": "Funciona sin conexión, con mala señal o sin nada. Marcas cada artículo a medida que lo llevas. Lista en cero al llegar a la caja."
+    },
+    "feature": {
+      "eyebrow": "Qué incluye",
+      "title": "Todo lo que una lista de compras necesita tener.",
+      "desc": "Sin funciones innecesarias. Sin registro obligatorio antes de poder usarla. Solo lo que resuelve el problema de salir de casa sin olvidar nada.",
+      "point1Title": "Organizada por pasillo",
+      "point1Desc": "Frutas y verduras, carnes, despensa, limpieza e higiene — agrupados en el orden del supermercado.",
+      "point2Title": "Lista compartida en tiempo real",
+      "point2Desc": "Un link por WhatsApp. Dos celulares, una lista. Lo que uno agrega aparece para el otro al instante.",
+      "point3Title": "Funciona sin conexión",
+      "point3Desc": "Dentro del mercado, en el subsuelo, sin señal. La lista no desaparece.",
+      "point4Title": "100% gratis, sin registro de entrada",
+      "point4Desc": "Empiezas a usarla antes de crear una cuenta. Ninguna función esencial está bloqueada.",
+      "vmTitle": "Lista del mercado",
+      "vmCount": "7 artículos",
+      "vmSec1": "Frutas y verduras",
+      "vmItem1": "Tomate",
+      "vmItem2": "Ajo",
+      "vmItem3": "Cebolla",
+      "vmSec2": "Despensa",
+      "vmItem4": "Arroz 5 kg",
+      "vmItem5": "Frijoles",
+      "vmItem6": "Pasta",
+      "vmSec3": "Limpieza",
+      "vmItem7": "Detergente"
+    },
+    "why": {
+      "title": "Por qué la organización por pasillo hace la diferencia",
+      "p1": "Ir al mercado sin lista es improvisar con costo. Estudios de comportamiento de consumo muestran que las compras sin planificación suelen costar entre 20% y 30% más — entre artículos por impulso y repeticiones de algo que ya tenías en casa pero no recordabas.",
+      "p2": "Pero cualquier lista resuelve solo la mitad del problema. Sin organización por pasillo, recorres el supermercado al azar: vas a limpieza, te acuerdas de los frijoles, vuelves a despensa, pasas de nuevo por frutas y verduras. Además de cansador, aumenta la chance de llevar algo que no estaba en la lista.",
+      "p3": "Mise agrupa los artículos en el orden en que los encuentras en el mercado: frutas y verduras en la entrada, carnes y proteínas después, despensa, limpieza e higiene al fondo. Entras, recorres una vez, marcas todo y sales con el carrito correcto — sin volver al mismo pasillo dos veces.",
+      "p4": "La organización por pasillo de Mise sigue el flujo real de un supermercado: frutas y verduras en la entrada, carnes y lácteos después, despensa en el medio, limpieza e higiene al fondo. Entras, recorres una vez, marcas todo sin volver al mismo pasillo dos veces — y sales en menos tiempo del que tomaría sin lista. Compartirla por WhatsApp antes de salir de casa asegura que quien te acompañe compre exactamente lo que dice la lista, sin llamadas a mitad de pasillo."
+    },
+    "faq": {
+      "eyebrow": "Preguntas directas",
+      "title": "Lo que la gente pregunta",
+      "q1": "¿La app de lista de compras es gratuita?",
+      "a1": "Sí, 100% gratuita. Lista de compras, compartir y organización por pasillo funcionan sin pagar nada. Ninguna función esencial está bloqueada detrás de una suscripción.",
+      "q2": "¿Cómo comparto la lista de compras?",
+      "a2": "La compartes por WhatsApp con un link. Quien la reciba edita la misma lista en tiempo real — sin instalar nada. Funciona para parejas, familias o cualquiera que reparta las compras.",
+      "q3": "¿La lista funciona sin internet dentro del mercado?",
+      "a3": "Sí. Mise es una PWA que carga sin conexión. La lista sigue disponible incluso con mala señal o sin conexión — común en mercados grandes con subsuelo.",
+      "q4": "¿Cómo se organiza la lista de compras por pasillo?",
+      "a4": "La app agrupa los artículos automáticamente — frutas y verduras, carnes, despensa, limpieza, higiene — en el orden en que los encuentras en el supermercado. Recorres los pasillos una vez y marcas todo sin volver atrás."
+    },
+    "cta": {
+      "title": "Deja de decidir qué comprar.<br></br><em>Empieza a cocinar.</em>",
+      "sub": "Sin registro de entrada. Empieza a usarla ahora."
+    }
+  },
+  "svcDespensa": {
+    "meta": { "title": "App de Control de Despensa — Mise", "description": "Mise es la app de control de despensa que marca lo que se está acabando y genera la lista de compras automáticamente. Arma tu despensa ideal una sola vez y nunca más olvides lo que falta.", "ogTitle": "App de Control de Despensa — Mise", "ogDescription": "Arma tu despensa, marca lo que se acabó y genera la lista de compras automáticamente. Gratis." },
+    "hero": { "eyebrow": "Despensa", "title": "Siempre ten lo que<br></br>necesitas para <accent>cocinar.</accent>", "sub": "Arma tu despensa ideal una sola vez. Lo que se acaba queda marcado — cuando hagas la lista, ya sabes qué comprar sin abrir el refrigerador." },
+    "how": { "eyebrow": "Cómo funciona", "title": "La armas una vez. La usas para siempre.", "step1Title": "Arma la despensa ideal", "step1Desc": "Agregas los artículos que siempre tienes en casa — la app sugiere lo básico. Arroz, frijoles, aceite, ajo, cebolla. En dos minutos, tu despensa está lista.", "step2Title": "Marca lo que se acabó", "step2Desc": "¿Usaste el último aceite? Un toque y queda marcado como agotado. ¿Se está por acabar? Márcalo como \"por acabarse\". La app se acuerda por ti.", "step3Title": "Genera la lista automáticamente", "step3Desc": "A la hora de ir al mercado, lo que está agotado o por acabarse se convierte en sugerencia de lista con un toque. Sin abrir el refrigerador, sin olvidos." },
+    "feature": { "eyebrow": "Qué incluye", "title": "Despensa conectada con la lista y las recetas.", "desc": "No es solo un inventario. La despensa de Mise habla con la lista de compras y con las recetas — para que sepas qué falta comprar y qué puedes cocinar hoy mismo.", "point1Title": "Sugerencias para armar la despensa completa", "point1Desc": "La app sugiere los artículos más comunes para que los agregues en un toque — sin empezar de cero.", "point2Title": "Agrega a la lista en un toque", "point2Desc": "Lo que está agotado va directo a la lista de compras. Sin copiar, sin escribir de nuevo.", "point3Title": "Se cruza con tus recetas", "point3Desc": "La app muestra qué recetas puedes hacer con lo que tienes en la despensa — sin ir antes al mercado.", "point4Title": "Marca lo que se está acabando", "point4Desc": "No hace falta esperar a que se acabe para acordarte. Márcalo como \"por acabarse\" y la app ya lo incluye en la próxima compra.", "vmTitle": "Mi despensa", "vmCount": "8 artículos", "chip1": "Ajo", "chip2": "Cebolla", "chip3": "Aceite", "chip4": "Arroz", "chip5": "Frijoles", "chip6": "Sal", "chip7": "Leche", "chip8": "Huevos", "outLabel": "Se acabó", "outItem1": "Sal", "outItem2": "Leche", "addToList": "+ lista" },
+    "why": { "title": "El costo de no saber qué tienes en casa", "p1": "Una despensa desorganizada no es solo un tema estético — es financiero. Cuando no sabes qué tienes en casa, compras dos veces el mismo producto, dejas que artículos venzan al fondo de la repisa y aun así llegas al mercado sin saber qué te falta de verdad.", "p2": "Estudios sobre desperdicio de alimentos muestran que buena parte de ese desperdicio empieza con la compra equivocada: compras algo que no necesitabas porque no sabías que ya lo tenías.", "p3": "Con la despensa de Mise armas tu lista ideal de stock una sola vez. Después, solo tienes que marcar lo que se acabó en el momento en que lo notas — no el día del mercado, cuando ya se te olvidó. A la hora de ir de compras, la lista ya está prellenada con lo que falta, sin abrir cada alacena para revisar.", "p4": "La diferencia entre una despensa organizada y una despensa viva está en el hábito de marcar lo que se acaba en el momento en que lo notas — no en la semana del mercado, cuando ya lo olvidaste. Mise hace ese hábito mínimo: un toque cuando abres la alacena y ves que se acabó la sal. A la hora de ir al mercado, la lista ya está prellenada con lo que falta. Sin abrir cada alacena, sin tratar de recordar qué había en la última repisa." },
+    "faq": { "eyebrow": "Preguntas directas", "title": "Lo que la gente pregunta", "q1": "¿Cómo controla la app lo que tengo en la despensa?", "a1": "Armas la despensa ideal una sola vez — con los artículos que siempre tienes en casa. Cuando algo se acaba o está por acabarse, lo marcas en la app. A la hora de hacer la lista de compras, Mise ya sabe qué falta.", "q2": "¿La despensa se conecta con la lista de compras?", "a2": "Sí. Lo que está marcado como agotado o por acabarse en la despensa aparece como sugerencia en la lista de compras con un toque. Sin tener que acordarte de nada.", "q3": "¿La despensa también funciona con las recetas?", "a3": "Sí. La app cruza la despensa con las recetas guardadas y muestra qué puedes cocinar hoy sin pasar por el mercado. Los ingredientes que faltan van directo a la lista.", "q4": "¿Necesito armar la despensa desde cero?", "a4": "No. Mise sugiere los artículos más comunes — arroz, frijoles, aceite, ajo — para que los agregues en un toque. En dos minutos tu despensa ya tiene lo básico de tu casa." },
+    "cta": { "title": "La despensa recuerda.<br></br><em>Tú cocinas.</em>", "sub": "Sin registro de entrada. Empieza a usarla ahora." }
+  },
+  "svcCardapioSemanal": {
+    "meta": { "title": "App de Plan Semanal con Lista de Compras Integrada — Mise", "description": "Mise es la app para crear un plan semanal integrado con la lista de compras. Planeas los 7 días, la app genera la lista automáticamente con lo que falta en la despensa.", "ogTitle": "App para Crear Plan Semanal con Lista de Compras — Mise", "ogDescription": "Un plan semanal que genera la lista de compras automáticamente. Integrado con la despensa. Gratis." },
+    "hero": { "eyebrow": "Plan semanal", "title": "App de plan semanal que genera<br></br><accent>la lista de compras automáticamente.</accent>", "sub": "Armas el menú de lunes a domingo. La app lo cruza con lo que tienes en la despensa y agrega los ingredientes que faltan directo a la lista. Se acabó la sorpresa del viernes." },
+    "how": { "eyebrow": "Cómo funciona", "title": "Del plan a la lista en tres pasos.", "step1Title": "Eliges las recetas de la semana", "step1Desc": "Seleccionas qué vas a cocinar de lunes a domingo usando las recetas guardadas en la app. Puedes dejar días libres sin problema.", "step2Title": "La app lo cruza con la despensa", "step2Desc": "Mise verifica qué ya tienes en casa y separa solo los ingredientes que faltan. No compras lo que no necesitas.", "step3Title": "Lista generada, mercado resuelto", "step3Desc": "Un solo viaje al mercado cubre toda la semana. Sin improvisar el jueves porque faltó un ingrediente de la receta del viernes." },
+    "feature": { "eyebrow": "Qué incluye", "title": "Planificación que conecta el menú, la despensa y la lista.", "desc": "No es solo un calendario de comidas. Es un sistema que elimina el espacio entre \"qué voy a cocinar\" y \"qué necesito comprar\".", "point1Title": "7 días de una vez", "point1Desc": "Planeas toda la semana antes de ir al mercado. Un solo viaje. Sin improvisos a mitad de semana.", "point2Title": "Lista generada automáticamente", "point2Desc": "Los ingredientes que faltan entran a la lista de compras sin anotarlos uno por uno.", "point3Title": "Integrado con la despensa", "point3Desc": "Lo que ya tienes en casa no entra a la lista. Solo compras lo que realmente necesitas.", "point4Title": "Menos desperdicio", "point4Desc": "Compras lo que vas a usar — no lo que parece útil en el momento. El pollo se queda en el refrigerador el tiempo justo.", "vmTitle": "Plan semanal", "vmCount": "5 comidas", "day1Lbl": "LUN", "day1": "Pollo a la plancha con arroz", "day2Lbl": "MAR", "day2": "Espagueti a la boloñesa", "day3Lbl": "MIÉ", "day3": "Omelette de verduras", "day4Lbl": "JUE", "day4": "Guiso de frijoles con cerdo", "day5Lbl": "VIE", "day5": "Pescado al horno", "day6Lbl": "SÁB", "day6Empty": "— libre —", "day7Lbl": "DOM", "day7Empty": "— libre —" },
+    "why": { "title": "Por qué planear la semana antes de ir al mercado", "p1": "Quien va al mercado sin saber qué va a cocinar esa semana compra por instinto. Lleva lo que parece útil, recuerda algo que se estaba acabando, mete al carrito lo que estaba en oferta. El resultado es un refrigerador lleno de artículos sueltos y la duda del miércoles: ¿y ahora qué hago con todo esto?", "p2": "Las familias que planean el menú semanal antes de ir al mercado suelen gastar menos en las compras y desperdiciar menos comida. El menú funciona como filtro: compras lo que vas a usar, no lo que parece que vas a usar.", "p3": "Mise conecta el menú con la despensa. Eliges las recetas de la semana, la app verifica qué ya tienes en casa y arma automáticamente la lista de los ingredientes que faltan. Una acción resuelve toda la semana — sin improvisar el jueves, sin vuelta extra al mercado el viernes.", "p4": "Quien prueba planear el menú antes de ir al mercado nota la diferencia en la cuenta y en los improvisos de mitad de semana ya en la primera semana. El hábito de cinco minutos de planificación el domingo — armar el menú con lo que hay en la despensa y generar la lista automática — resuelve cuatro preguntas de \"¿qué comemos hoy?\" y ahorra al menos un viaje extra al mercado por semana." },
+    "faq": { "eyebrow": "Preguntas directas", "title": "Lo que la gente pregunta", "q1": "¿Cómo creo un plan semanal con lista de compras integrada?", "a1": "Seleccionas recetas para cada día de la semana. Mise las cruza con lo que tienes en la despensa y agrega automáticamente los ingredientes que faltan a la lista de compras. Una acción genera la lista de toda la semana.", "q2": "¿La app para crear el plan semanal es gratuita?", "a2": "Sí, 100% gratuita. El plan semanal, la integración con la lista y la despensa funcionan sin pagar nada y sin registro obligatorio.", "q3": "¿Cómo ayuda el plan semanal a ahorrar en el mercado?", "a3": "Quien planea antes de ir al mercado compra solo lo que va a usar. Quien va sin planificación gasta en promedio 27% más — son artículos por impulso e ingredientes que quedan en el refrigerador hasta convertirse en basura.", "q4": "¿Funciona para familia o pareja?", "a4": "Sí. La lista generada por el menú se puede compartir por WhatsApp. Todos ven el plan de la semana y la lista en tiempo real en el mismo lugar — sin grupo de chat desordenado." },
+    "cta": { "title": "Menos decisiones.<br></br><em>Más comida.</em>", "sub": "Del menú a la lista en tres pasos. Gratis." }
+  },
+  "svcReceitas": {
+    "meta": { "title": "App para Anotar Recetas y Cocinar con lo que Tienes en Casa — Mise", "description": "Mise es la app para anotar recetas y filtrar por lo que tienes en casa. Guarda tus recetas, las cruza con la despensa y muestra qué puedes cocinar hoy.", "ogTitle": "App para Anotar Recetas y Filtrar por lo que Tienes en Casa — Mise", "ogDescription": "Guarda recetas, filtra por lo que tienes en casa, genera la lista de compras de los ingredientes que faltan. Gratis." },
+    "hero": { "eyebrow": "Recetas", "title": "Una app para anotar recetas y<br></br><accent>cocinar con lo que tienes en casa.</accent>", "sub": "Guarda las recetas que ya haces. La app filtra por lo que tienes en la despensa y muestra qué puedes cocinar hoy — sin pasar antes por el mercado." },
+    "how": { "eyebrow": "Cómo funciona", "title": "De la receta al plato sin improvisar.", "step1Title": "Anota tus recetas", "step1Desc": "Guarda las recetas que ya haces con ingredientes, cantidades y modo de preparación. Las tuyas, no las de un influencer que nunca vas a hacer.", "step2Title": "Filtra por lo que tienes en casa", "step2Desc": "La app cruza las recetas guardadas con el contenido de la despensa y muestra qué puedes cocinar hoy — sin ir antes al mercado.", "step3Title": "Los ingredientes que faltan van a la lista", "step3Desc": "¿Elegiste una receta a la que le falta un ingrediente? Con un toque, lo que falta entra directo a la lista de compras." },
+    "feature": { "eyebrow": "Qué incluye", "title": "Recetas que funcionan con lo que tienes. No con lo que deberías tener.", "desc": "El problema no es falta de recetas en internet. Es saber cuál puedes hacer hoy, con lo que tienes en casa, sin pasar por el mercado.", "point1Title": "App para anotar cualquier receta", "point1Desc": "Nombre, ingredientes con cantidades y modo de preparación. Tus recetas en la app, siempre a mano.", "point2Title": "Recetas con lo que tienes en casa", "point2Desc": "Se cruza con la despensa y muestra solo lo que puedes hacer ahora — sin ir al mercado.", "point3Title": "Lista generada desde la receta", "point3Desc": "Los ingredientes que faltan entran a la lista de compras con un toque. Sin anotarlos uno por uno.", "point4Title": "Integrado con el plan semanal", "point4Desc": "Las recetas guardadas alimentan el plan de la semana. Todo conectado en el mismo lugar.", "vmTitle": "Mis recetas", "vmBadge": "Con lo que tengo", "recipe1": "Pollo con verduras al wok", "recipe1Chip1": "Pollo", "recipe1Chip2": "Pimiento", "recipe1Chip3": "Salsa de soya", "recipe1Chip4": "Anacardos", "recipe2": "Omelette de verduras", "recipe2Chip1": "Huevos", "recipe2Chip2": "Cebolla", "recipe2Chip3": "Tomate", "recipe3": "Risotto de champiñones", "recipe3Chip1": "Champiñones", "recipe3Chip2": "Vino blanco", "addToList": "+ lista" },
+    "why": { "title": "Cocinar con lo que tienes, no con lo que deberías tener", "p1": "La mayoría de las apps de recetas tienen el mismo problema: muestran lo que podrías cocinar en condiciones ideales, con todos los ingredientes disponibles. En la vida real, eliges una receta, vas a la cocina y descubres que faltan tres ingredientes. Ahí improvisas o pides comida a domicilio.", "p2": "Mise invierte la lógica. En vez de mostrar recetas y que después revises qué tienes en casa, la app filtra las recetas automáticamente según el contenido de tu despensa. Aparecen solo las que puedes hacer ahora — sin pasar antes por el mercado.", "p3": "Para los ingredientes que le faltan a una receta que quieres hacer, la app agrega todo a la lista de compras con un toque. Organizas el menú con lo que tienes, compras solo lo que necesitas y entras a la cocina sabiendo exactamente qué vas a preparar.", "p4": "Tener las recetas que realmente haces en la app — y no en un cuaderno, una foto o una pestaña de Chrome que cierras sin guardar — elimina el \"hagamos ese pollo, pero no me acuerdo de los ingredientes\". En dos minutos, los ingredientes que faltan están en la lista. En tres toques, la receta está en el plan de la semana. Sin depender de señal para entrar a un sitio de recetas a mitad de la cocinada." },
+    "faq": { "eyebrow": "Preguntas directas", "title": "Lo que la gente pregunta", "q1": "¿Cómo anoto recetas en la app?", "a1": "Guardas cualquier receta con nombre, ingredientes, cantidades y modo de preparación. Las recetas quedan en la app y están disponibles para el plan semanal y para el filtro de \"qué puedo hacer hoy\".", "q2": "¿Cómo veo recetas con lo que tengo en casa?", "a2": "Mise cruza las recetas guardadas con el contenido de tu despensa. El filtro \"con lo que tengo\" muestra solo las recetas cuyos ingredientes ya tienes — sin ir al mercado antes de cocinar.", "q3": "¿Cómo genero la lista de compras desde una receta?", "a3": "Con un toque en la receta, los ingredientes que no están en tu despensa entran automáticamente a la lista de compras. No hace falta copiarlos uno por uno.", "q4": "¿La app para anotar recetas es gratuita?", "a4": "Sí, 100% gratuita. Guardar recetas, filtrar por ingredientes y generar la lista de compras funcionan sin pagar nada y sin registro obligatorio." },
+    "cta": { "title": "Tú no te olvidas del ajo.<br></br><em>El sistema se acuerda.</em>", "sub": "Recetas filtradas por lo que tienes en casa. Sin pasar por el mercado." }
+  },
+  "blogIndex": {
+    "meta": { "title": "Blog — Mise", "description": "Consejos de organización de cocina, listas de compras y planificación semanal." },
+    "hero": { "title": "Consejos de quien hace lista de verdad", "sub": "Organización de cocina, mercado y planificación semanal — sin vueltas.", "desc": "Aquí encuentras guías prácticas sobre listas de compras, organización de despensa y planificación de comidas. Sin técnicas rebuscadas ni productos caros — solo lo que funciona para quien cocina en casa de verdad. Cada artículo trae listas para copiar, estimaciones de costo y respuestas directas a las dudas más comunes." },
+    "topics": {
+      "title": "Qué vas a encontrar aquí",
+      "t1Title": "Listas de compras",
+      "t1P1": "Guías completas con artículos organizados por grupo, estimaciones de costo por tipo de familia y consejos prácticos para distintas situaciones — casa nueva, mes ajustado, familia grande, pareja. Cada lista está pensada para que la copies y adaptes, no para empezar de cero cada semana.",
+      "t1P2": "Vas a encontrar desde la lista básica de supermercado con los 80 artículos que casi todo el mundo necesita hasta listas específicas por situación: mudanza, fiesta, parrillada, canasta básica. Sin artículos exóticos que nunca vas a usar.",
+      "t2Title": "Organización de despensa y refrigerador",
+      "t2P1": "Cómo organizar la despensa por zonas, qué recipientes usar, cómo etiquetar, por dónde empezar cuando todo está desordenado — y cómo mantenerlo organizado en el día a día sin necesitar un domingo entero para volver a acomodar todo.",
+      "t2P2": "Sin productos caros, sin estética de revista de decoración. El enfoque es funcional: qué reduce el desperdicio, facilita el acceso a los ingredientes más usados y hace que la despensa trabaje para tu rutina real de cocina.",
+      "t3Title": "Planificación de comidas y ahorro",
+      "t3P1": "Cómo armar un menú semanal que respete el tiempo disponible y el presupuesto, por qué planear antes de ir al mercado hace la diferencia en la cuenta del mes y qué hábitos simples reducen el gasto sin renunciar a lo que te gusta comer.",
+      "t3P2": "Estudios de comportamiento de consumo muestran que comprar sin lista cuesta entre 20% y 30% más. Los artículos de aquí explican cómo se traduce ese dato en tu rutina — y qué hacer al respecto."
+    },
+    "empty": { "title": "Nuevos artículos muy pronto", "desc": "Estamos traduciendo los artículos del blog. Mientras tanto, revisa la versión en portugués." },
+    "cta": { "text": "Ya que llegaste hasta aquí — prueba la app. Es gratis.", "button": "Abrir Mise →" }
+  }
+}
