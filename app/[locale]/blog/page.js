@@ -207,6 +207,7 @@ const posts = [
     imgAlt: 'Granola com aveia, sementes e frutas secas em close-up — textura detalhada',
     date: '2026-06-02',
     dateLabel: 'Jun 2026',
+    locales: ['pt'],
   },
   {
     slug: 'oleo-de-canola',
@@ -217,6 +218,7 @@ const posts = [
     imgAlt: 'Óleo vegetal sendo vertido em frigideira durante cozimento em cozinha doméstica',
     date: '2026-06-03',
     dateLabel: 'Jun 2026',
+    locales: ['pt'],
   },
   {
     slug: 'dieta-low-carb-cardapio',
@@ -227,6 +229,7 @@ const posts = [
     imgAlt: 'Flat-lay de alimentos low carb: abacate, folhas verdes, oleaginosas e vegetais frescos',
     date: '2026-06-03',
     dateLabel: 'Jun 2026',
+    locales: ['pt'],
   },
   {
     slug: 'bicarbonato-de-sodio',
@@ -237,6 +240,7 @@ const posts = [
     imgAlt: 'Vista de cima de tigela com ingredientes de confeitaria em superfície branca',
     date: '2026-06-04',
     dateLabel: 'Jun 2026',
+    locales: ['pt'],
   },
   {
     slug: 'lista-de-compras-saudavel',
@@ -247,6 +251,7 @@ const posts = [
     imgAlt: 'Verduras e frutas frescas dispostas sobre mesa — vista de cima para lista de compras saudável',
     date: '2026-06-04',
     dateLabel: 'Jun 2026',
+    locales: ['pt'],
   },
   {
     slug: 'dieta-carnivora',
@@ -257,6 +262,7 @@ const posts = [
     imgAlt: 'Bife suculento grelhado com molho em prato — dieta carnívora',
     date: '2026-06-05',
     dateLabel: 'Jun 2026',
+    locales: ['pt'],
   },
   {
     slug: 'batata-doce',
@@ -267,6 +273,7 @@ const posts = [
     imgAlt: 'Batatas doces laranjas frescas em close-up sobre superfície escura',
     date: '2026-06-05',
     dateLabel: 'Jun 2026',
+    locales: ['pt'],
   },
   {
     slug: 'beneficios-do-rabanete',
@@ -277,6 +284,7 @@ const posts = [
     imgAlt: 'Rabanetes vermelhos frescos ao lado de cenouras sobre superfície de madeira',
     date: '2026-06-06',
     dateLabel: 'Jun 2026',
+    locales: ['pt'],
   },
   {
     slug: 'espinafre-beneficios',
@@ -287,6 +295,7 @@ const posts = [
     imgAlt: 'Folhas frescas de espinafre sobre fundo verde — close-up detalhado',
     date: '2026-06-06',
     dateLabel: 'Jun 2026',
+    locales: ['pt'],
   },
   {
     slug: 'alcaparras',
@@ -297,6 +306,7 @@ const posts = [
     imgAlt: 'Alcaparras em pote de vidro — botões florais conservados em salmoura',
     date: '2026-06-07',
     dateLabel: 'Jun 2026',
+    locales: ['pt'],
   },
   {
     slug: 'kiwi-beneficios',
@@ -307,6 +317,7 @@ const posts = [
     imgAlt: 'Kiwis frescos fatiados ao meio mostrando o interior verde com sementes pretas',
     date: '2026-06-08',
     dateLabel: 'Jun 2026',
+    locales: ['pt'],
   },
   {
     slug: 'o-que-e-cream-cheese',
@@ -317,6 +328,7 @@ const posts = [
     imgAlt: 'Sanduíche com cream cheese e tomates — queijo cremoso macio sobre pão',
     date: '2026-06-08',
     dateLabel: 'Jun 2026',
+    locales: ['pt'],
   },
   {
     slug: 'o-que-e-mirtilo',
@@ -327,6 +339,7 @@ const posts = [
     imgAlt: 'Mirtilos frescos em close-up — fruta azul-arroxeada rica em antocianinas',
     date: '2026-06-09',
     dateLabel: 'Jun 2026',
+    locales: ['pt'],
   },
   {
     slug: 'o-que-e-maca',
@@ -337,6 +350,7 @@ const posts = [
     imgAlt: 'Maçã vermelha fresca em close-up sobre superfície escura — fruta da variedade gala',
     date: '2026-06-10',
     dateLabel: 'Jun 2026',
+    locales: ['pt'],
   },
   {
     slug: 'o-que-e-arroz-parboilizado',
@@ -347,6 +361,7 @@ const posts = [
     imgAlt: 'Bowl de arroz cozido com grãos soltos sobre superfície de madeira clara',
     date: '2026-06-10',
     dateLabel: 'Jun 2026',
+    locales: ['pt'],
   },
   {
     slug: 'azeite-de-oliva',
@@ -357,6 +372,7 @@ const posts = [
     imgAlt: 'Pessoa despejando azeite de oliva extra virgem sobre salada fresca com tomates',
     date: '2026-06-11',
     dateLabel: 'Jun 2026',
+    locales: ['pt'],
   },
   {
     slug: 'o-que-e-alho',
@@ -367,6 +383,7 @@ const posts = [
     imgAlt: 'Cabeças de alho sobre superfície marrom — bulbos inteiros com dentes visíveis',
     date: '2026-06-12',
     dateLabel: 'Jun 2026',
+    locales: ['pt'],
   },
   {
     slug: 'beneficios-do-pepino',
@@ -377,6 +394,7 @@ const posts = [
     imgAlt: 'Pepinos frescos inteiros empilhados em close-up — vegetais verdes brilhantes',
     date: '2026-06-13',
     dateLabel: 'Jun 2026',
+    locales: ['pt'],
   },
   {
     slug: 'o-que-e-ricota',
@@ -387,6 +405,7 @@ const posts = [
     imgAlt: 'Close-up de queijo fresco branco e cremoso — ricota fresca para receitas',
     date: '2026-06-13',
     dateLabel: 'Jun 2026',
+    locales: ['pt'],
   },
   {
     slug: 'lista-de-compras-mercado',
@@ -397,6 +416,7 @@ const posts = [
     imgAlt: 'Família fazendo compras no supermercado com lista de compras na mão',
     date: '2026-06-14',
     dateLabel: 'Jun 2026',
+    locales: ['pt'],
   },
   {
     slug: 'o-que-e-cavala',
@@ -407,6 +427,7 @@ const posts = [
     imgAlt: 'Cavala azul fresca sobre gelo em peixaria — peixe inteiro com coloração azul metálica',
     date: '2026-06-14',
     dateLabel: 'Jun 2026',
+    locales: ['pt'],
   },
   {
     slug: 'alimentos-ricos-em-proteinas',
@@ -417,6 +438,7 @@ const posts = [
     imgAlt: 'Flatlay de alimentos nutritivos variados — fontes de proteínas incluindo ovos e nozes',
     date: '2026-06-15',
     dateLabel: 'Jun 2026',
+    locales: ['pt'],
   },
   {
     slug: 'o-que-e-margarina',
@@ -427,6 +449,7 @@ const posts = [
     imgAlt: 'Pessoa espalhando manteiga ou margarina sobre fatia de pão — spread cremoso no café da manhã',
     date: '2026-06-15',
     dateLabel: 'Jun 2026',
+    locales: ['pt'],
   },
   {
     slug: 'frutas-citricas',
@@ -437,6 +460,7 @@ const posts = [
     imgAlt: 'Fatias de laranja fresca em close-up mostrando o interior suculento e segmentos cítricos',
     date: '2026-06-16',
     dateLabel: 'Jun 2026',
+    locales: ['pt'],
   },
   {
     slug: 'o-que-e-amendoa',
@@ -447,6 +471,7 @@ const posts = [
     imgAlt: 'Amêndoas cruas espalhadas em close, mostrando a textura natural da semente',
     date: '2026-06-17',
     dateLabel: 'Jun 2026',
+    locales: ['pt'],
   },
   {
     slug: 'alimentos-sem-gluten',
@@ -457,6 +482,7 @@ const posts = [
     imgAlt: 'Tigelas coloridas com arroz, quinoa e vegetais frescos — alimentos naturalmente sem glúten',
     date: '2026-06-17',
     dateLabel: 'Jun 2026',
+    locales: ['pt'],
   },
   {
     slug: 'dieta-sem-acucar',
@@ -467,6 +493,7 @@ const posts = [
     imgAlt: 'Mesa com alimentos naturais sem açúcar adicionado — frutas frescas, legumes e grãos integrais',
     date: '2026-06-18',
     dateLabel: 'Jun 2026',
+    locales: ['pt'],
   },
   {
     slug: 'o-que-e-pao-branco',
@@ -477,6 +504,7 @@ const posts = [
     imgAlt: 'Fatias de pão branco sobre prato branco',
     date: '2026-06-18',
     dateLabel: 'Jun 2026',
+    locales: ['pt'],
   },
   {
     slug: 'o-que-e-nabo',
@@ -487,6 +515,7 @@ const posts = [
     imgAlt: 'Nabo fresco com casca branco-arroxeada sobre superfície clara',
     date: '2026-06-19',
     dateLabel: 'Jun 2026',
+    locales: ['pt'],
   },
   {
     slug: 'vinagre-balsamico',
@@ -497,6 +526,7 @@ const posts = [
     imgAlt: 'Mesa com culinária italiana — ingredientes mediterrâneos, vinagre e azeite',
     date: '2026-06-19',
     dateLabel: 'Jun 2026',
+    locales: ['pt'],
   },
   {
     slug: 'atum',
@@ -507,6 +537,7 @@ const posts = [
     imgAlt: 'Mão fatiando atum fresco em tábua de corte — preparação de peixe na cozinha',
     date: '2026-06-20',
     dateLabel: 'Jun 2026',
+    locales: ['pt'],
   },
   {
     slug: 'quinoa-para-que-serve',
@@ -517,6 +548,7 @@ const posts = [
     imgAlt: 'Bowl colorido com quinoa, abacate, grão-de-bico e legumes frescos vistos de cima',
     date: '2026-06-20',
     dateLabel: 'Jun 2026',
+    locales: ['pt'],
   },
   {
     slug: 'o-que-e-tahine',
@@ -527,6 +559,7 @@ const posts = [
     imgAlt: 'Tigelas de homus cremoso com azeite e ervas — tahine é o ingrediente base da receita',
     date: '2026-06-21',
     dateLabel: 'Jun 2026',
+    locales: ['pt'],
   },
   {
     slug: 'o-que-e-raiz-forte',
@@ -537,6 +570,7 @@ const posts = [
     imgAlt: 'Planta de raiz forte com folhas verdes largas — Armoracia rusticana no campo',
     date: '2026-06-21',
     dateLabel: 'Jun 2026',
+    locales: ['pt'],
   },
   {
     slug: 'feijao-preto-beneficios',
@@ -547,6 +581,7 @@ const posts = [
     imgAlt: 'Feijão preto seco em close-up — grãos escuros e brilhantes sobre superfície rústica',
     date: '2026-06-22',
     dateLabel: 'Jun 2026',
+    locales: ['pt'],
   },
   {
     slug: 'beneficios-da-cebola-roxa',
@@ -557,6 +592,7 @@ const posts = [
     imgAlt: 'Cebolas roxas cortadas ao meio mostrando as camadas e a cor intensa — hortaliça rica em antocianinas',
     date: '2026-06-22',
     dateLabel: 'Jun 2026',
+    locales: ['pt'],
   },
   {
     slug: 'o-que-e-stevia',
@@ -567,6 +603,7 @@ const posts = [
     imgAlt: 'Planta de stevia rebaudiana com folhas verdes ovais — arbusto adoçante natural nativo do Paraguai',
     date: '2026-06-23',
     dateLabel: 'Jun 2026',
+    locales: ['pt'],
   },
   {
     slug: 'para-que-serve-o-oregano',
@@ -577,6 +614,7 @@ const posts = [
     imgAlt: 'Ramos de orégano fresco com folhas verdes sobre superfície rústica de madeira',
     date: '2026-06-24',
     dateLabel: 'Jun 2026',
+    locales: ['pt'],
   },
   {
     slug: 'abobrinha-calorias',
@@ -587,6 +625,7 @@ const posts = [
     imgAlt: 'Abobrinha italiana verde crescendo com flores amarelas no jardim',
     date: '2026-06-24',
     dateLabel: 'Jun 2026',
+    locales: ['pt'],
   },
   {
     slug: 'arenque',
@@ -597,6 +636,7 @@ const posts = [
     imgAlt: 'Filé de peixe grelhado com legumes em prato sobre mesa',
     date: '2026-06-25',
     dateLabel: 'Jun 2026',
+    locales: ['pt'],
   },
   {
     slug: 'beneficios-do-cuscuz',
@@ -607,6 +647,7 @@ const posts = [
     imgAlt: 'Pimentão verde recheado com cuscuz sobre superfície rústica',
     date: '2026-06-26',
     dateLabel: 'Jun 2026',
+    locales: ['pt'],
   },
   {
     slug: 'cardamomo-para-que-serve',
@@ -617,6 +658,7 @@ const posts = [
     imgAlt: 'Vagens de cardamomo verde sobre mesa de madeira rústica',
     date: '2026-06-26',
     dateLabel: 'Jun 2026',
+    locales: ['pt'],
   },
   {
     slug: 'oleo-de-gergelim',
@@ -627,6 +669,7 @@ const posts = [
     imgAlt: 'Sementes de gergelim douradas espalhadas — base do óleo de gergelim',
     date: '2026-06-27',
     dateLabel: 'Jun 2026',
+    locales: ['pt'],
   },
   {
     slug: 'pimenta-vermelha',
@@ -637,6 +680,7 @@ const posts = [
     imgAlt: 'Pimentões vermelhos frescos sobre tábua de madeira — variedades de pimenta vermelha madura',
     date: '2026-06-27',
     dateLabel: 'Jun 2026',
+    locales: ['pt'],
   },
   {
     slug: 'aveia-em-flocos-beneficios',
@@ -647,6 +691,7 @@ const posts = [
     imgAlt: 'Tigela com aveia em flocos servida no café da manhã com frutas frescas',
     date: '2026-06-28',
     dateLabel: 'Jun 2026',
+    locales: ['pt'],
   },
   {
     slug: 'o-que-e-avela',
@@ -657,6 +702,7 @@ const posts = [
     imgAlt: 'Avelãs inteiras numa tigela de madeira, mostrando a textura e cor natural da oleaginosa',
     date: '2026-06-28',
     dateLabel: 'Jun 2026',
+    locales: ['pt'],
   },
   {
     slug: 'damascos-secos',
@@ -667,6 +713,7 @@ const posts = [
     imgAlt: 'Damascos secos laranjas em close-up mostrando a textura e cor características da fruta desidratada',
     date: '2026-06-29',
     dateLabel: 'Jun 2026',
+    locales: ['pt'],
   },
 ]
 
