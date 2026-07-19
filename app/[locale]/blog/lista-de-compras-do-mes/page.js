@@ -120,7 +120,7 @@ const articleSchema = {
   },
   mainEntityOfPage: {
     '@type': 'WebPage',
-    '@id': 'https://www.miseemcasa.com.br/blog/lista-de-compras-do-mes',
+    '@id': 'https://www.miseemcasa.com.br/pt/blog/lista-de-compras-do-mes',
   },
 }
 
@@ -129,8 +129,8 @@ const breadcrumbSchema = {
   '@type': 'BreadcrumbList',
   itemListElement: [
     { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.miseemcasa.com.br' },
-    { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://www.miseemcasa.com.br/blog' },
-    { '@type': 'ListItem', position: 3, name: 'Lista de compras do mês', item: 'https://www.miseemcasa.com.br/blog/lista-de-compras-do-mes' },
+    { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://www.miseemcasa.com.br/pt/blog' },
+    { '@type': 'ListItem', position: 3, name: 'Lista de compras do mês', item: 'https://www.miseemcasa.com.br/pt/blog/lista-de-compras-do-mes' },
   ],
 }
 

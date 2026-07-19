@@ -112,7 +112,7 @@ const articleSchema = {
   },
   mainEntityOfPage: {
     '@type': 'WebPage',
-    '@id': 'https://www.miseemcasa.com.br/blog/o-que-e-pistache',
+    '@id': 'https://www.miseemcasa.com.br/pt/blog/o-que-e-pistache',
   },
 }
 
@@ -121,8 +121,8 @@ const breadcrumbSchema = {
   '@type': 'BreadcrumbList',
   itemListElement: [
     { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.miseemcasa.com.br' },
-    { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://www.miseemcasa.com.br/blog' },
-    { '@type': 'ListItem', position: 3, name: 'O que é pistache', item: 'https://www.miseemcasa.com.br/blog/o-que-e-pistache' },
+    { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://www.miseemcasa.com.br/pt/blog' },
+    { '@type': 'ListItem', position: 3, name: 'O que é pistache', item: 'https://www.miseemcasa.com.br/pt/blog/o-que-e-pistache' },
   ],
 }
 

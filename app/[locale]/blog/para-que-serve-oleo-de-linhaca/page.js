@@ -112,7 +112,7 @@ const articleSchema = {
   },
   mainEntityOfPage: {
     '@type': 'WebPage',
-    '@id': 'https://www.miseemcasa.com.br/blog/para-que-serve-oleo-de-linhaca',
+    '@id': 'https://www.miseemcasa.com.br/pt/blog/para-que-serve-oleo-de-linhaca',
   },
 }
 
@@ -121,8 +121,8 @@ const breadcrumbSchema = {
   '@type': 'BreadcrumbList',
   itemListElement: [
     { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.miseemcasa.com.br' },
-    { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://www.miseemcasa.com.br/blog' },
-    { '@type': 'ListItem', position: 3, name: 'Óleo de linhaça', item: 'https://www.miseemcasa.com.br/blog/para-que-serve-oleo-de-linhaca' },
+    { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://www.miseemcasa.com.br/pt/blog' },
+    { '@type': 'ListItem', position: 3, name: 'Óleo de linhaça', item: 'https://www.miseemcasa.com.br/pt/blog/para-que-serve-oleo-de-linhaca' },
   ],
 }
 

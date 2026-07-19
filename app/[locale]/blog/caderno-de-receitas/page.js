@@ -112,7 +112,7 @@ const articleSchema = {
   },
   mainEntityOfPage: {
     '@type': 'WebPage',
-    '@id': 'https://www.miseemcasa.com.br/blog/caderno-de-receitas',
+    '@id': 'https://www.miseemcasa.com.br/pt/blog/caderno-de-receitas',
   },
 }
 
@@ -121,8 +121,8 @@ const breadcrumbSchema = {
   '@type': 'BreadcrumbList',
   itemListElement: [
     { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.miseemcasa.com.br' },
-    { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://www.miseemcasa.com.br/blog' },
-    { '@type': 'ListItem', position: 3, name: 'Caderno de receitas', item: 'https://www.miseemcasa.com.br/blog/caderno-de-receitas' },
+    { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://www.miseemcasa.com.br/pt/blog' },
+    { '@type': 'ListItem', position: 3, name: 'Caderno de receitas', item: 'https://www.miseemcasa.com.br/pt/blog/caderno-de-receitas' },
   ],
 }
 
