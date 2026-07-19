@@ -7,13 +7,13 @@ export const metadata = {
   title: 'O que é pistache: origem, tipos e se vale colocar na lista',
   description: 'Pistache é uma oleaginosa de casca dura com interior verde e sabor único. Saiba o que é, os tipos disponíveis no Brasil, onde comprar e se vale o preço.',
   alternates: {
-    canonical: 'https://www.miseemcasa.com.br/blog/o-que-e-pistache',
+    canonical: 'https://www.miseemcasa.com.br/pt/blog/o-que-e-pistache',
   },
   openGraph: {
     title: 'O que é pistache: origem, tipos e se vale colocar na lista',
     description: 'Pistache é uma oleaginosa de casca dura com interior verde e sabor único. Saiba o que é, os tipos disponíveis no Brasil, onde comprar e se vale o preço.',
     type: 'article',
-    url: 'https://www.miseemcasa.com.br/blog/o-que-e-pistache',
+    url: 'https://www.miseemcasa.com.br/pt/blog/o-que-e-pistache',
     images: [
       {
         url: 'https://images.pexels.com/photos/27644256/pexels-photo-27644256.jpeg?auto=compress&cs=tinysrgb&w=1200&h=630',

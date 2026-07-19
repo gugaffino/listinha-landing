@@ -7,13 +7,13 @@ export const metadata = {
   title: 'O que é pomelo: diferença da toranja e como comer',
   description: 'Pomelo é a maior fruta cítrica do mundo e ancestral da grapefruit. Saiba o que é, o que a diferencia da toranja, como comer e onde encontrar no Brasil.',
   alternates: {
-    canonical: 'https://www.miseemcasa.com.br/blog/o-que-e-pomelo',
+    canonical: 'https://www.miseemcasa.com.br/pt/blog/o-que-e-pomelo',
   },
   openGraph: {
     title: 'O que é pomelo: diferença da toranja e como comer',
     description: 'Pomelo é a maior fruta cítrica do mundo e ancestral da grapefruit. Saiba o que é, o que a diferencia da toranja, como comer e onde encontrar no Brasil.',
     type: 'article',
-    url: 'https://www.miseemcasa.com.br/blog/o-que-e-pomelo',
+    url: 'https://www.miseemcasa.com.br/pt/blog/o-que-e-pomelo',
     images: [
       {
         url: 'https://images.pexels.com/photos/1411677/pexels-photo-1411677.jpeg?auto=compress&cs=tinysrgb&w=1200&h=630',

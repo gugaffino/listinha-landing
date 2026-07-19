@@ -7,13 +7,13 @@ export const metadata = {
   title: 'Alimentos ricos em magnésio: lista completa e dicas práticas',
   description: 'Magnésio está em sementes, oleaginosas e feijão. Veja 12 fontes com as quantidades por porção e como incluir mais na sua semana sem precisar de suplemento.',
   alternates: {
-    canonical: 'https://www.miseemcasa.com.br/blog/alimentos-ricos-em-magnesio',
+    canonical: 'https://www.miseemcasa.com.br/pt/blog/alimentos-ricos-em-magnesio',
   },
   openGraph: {
     title: 'Alimentos ricos em magnésio: lista completa e dicas práticas',
     description: 'Magnésio está em sementes, oleaginosas e feijão. Veja 12 fontes com as quantidades por porção e como incluir mais na sua semana sem precisar de suplemento.',
     type: 'article',
-    url: 'https://www.miseemcasa.com.br/blog/alimentos-ricos-em-magnesio',
+    url: 'https://www.miseemcasa.com.br/pt/blog/alimentos-ricos-em-magnesio',
     images: [
       {
         url: 'https://images.pexels.com/photos/7420982/pexels-photo-7420982.jpeg?auto=compress&cs=tinysrgb&w=1200&h=630',

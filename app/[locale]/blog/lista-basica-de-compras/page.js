@@ -8,13 +8,13 @@ export const metadata = {
   title: 'Lista básica de compras: guia com 80+ itens pra copiar',
   description: 'Lista básica de compras com os 7 grupos essenciais, 80+ itens pra copiar, como adaptar ao seu perfil, quanto custa por mês e 5 dicas pra economizar no supermercado.',
   alternates: {
-    canonical: 'https://www.miseemcasa.com.br/blog/lista-basica-de-compras',
+    canonical: 'https://www.miseemcasa.com.br/pt/blog/lista-basica-de-compras',
   },
   openGraph: {
     title: 'Lista básica de compras: guia com 80+ itens pra copiar',
     description: 'Os 7 grupos essenciais, 80+ itens pra copiar, perfis de compra e quanto custa por mês.',
     type: 'article',
-    url: 'https://www.miseemcasa.com.br/blog/lista-basica-de-compras',
+    url: 'https://www.miseemcasa.com.br/pt/blog/lista-basica-de-compras',
     images: [
       {
         url: 'https://images.pexels.com/photos/11018212/pexels-photo-11018212.jpeg?auto=compress&cs=tinysrgb&h=630&w=1200',

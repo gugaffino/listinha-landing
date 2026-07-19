@@ -7,13 +7,13 @@ export const metadata = {
   title: 'Cardápio semanal simples caseiro: como montar do zero',
   description: 'Cardápio semanal simples caseiro: exemplo prático de 7 dias com almoço e jantar, como transformar em lista de compras e dicas pra manter funcionando toda semana.',
   alternates: {
-    canonical: 'https://www.miseemcasa.com.br/blog/cardapio-semanal-simples-caseiro',
+    canonical: 'https://www.miseemcasa.com.br/pt/blog/cardapio-semanal-simples-caseiro',
   },
   openGraph: {
     title: 'Cardápio semanal simples caseiro: como montar do zero',
     description: 'Cardápio semanal simples caseiro: exemplo prático de 7 dias com almoço e jantar, como transformar em lista de compras e dicas pra manter funcionando toda semana.',
     type: 'article',
-    url: 'https://www.miseemcasa.com.br/blog/cardapio-semanal-simples-caseiro',
+    url: 'https://www.miseemcasa.com.br/pt/blog/cardapio-semanal-simples-caseiro',
     images: [
       {
         url: 'https://images.pexels.com/photos/3807332/pexels-photo-3807332.jpeg?auto=compress&cs=tinysrgb&w=1200&h=630',

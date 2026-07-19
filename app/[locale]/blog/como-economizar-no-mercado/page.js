@@ -7,13 +7,13 @@ export const metadata = {
   title: 'Como economizar no mercado: 12 hábitos que realmente funcionam',
   description: 'Como economizar no mercado começa antes de sair de casa. Descubra 12 hábitos práticos sobre lista, despensa e cardápio semanal que cortam o gasto sem sacrificar o que você come.',
   alternates: {
-    canonical: 'https://www.miseemcasa.com.br/blog/como-economizar-no-mercado',
+    canonical: 'https://www.miseemcasa.com.br/pt/blog/como-economizar-no-mercado',
   },
   openGraph: {
     title: 'Como economizar no mercado: 12 hábitos que realmente funcionam',
     description: 'Como economizar no mercado começa antes de sair de casa. Lista, despensa e cardápio conectados cortam até 27% do gasto.',
     type: 'article',
-    url: 'https://www.miseemcasa.com.br/blog/como-economizar-no-mercado',
+    url: 'https://www.miseemcasa.com.br/pt/blog/como-economizar-no-mercado',
     images: [
       {
         url: 'https://images.pexels.com/photos/3985066/pexels-photo-3985066.jpeg?auto=compress&cs=tinysrgb&h=630&w=1200',

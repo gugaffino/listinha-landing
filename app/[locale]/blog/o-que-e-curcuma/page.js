@@ -7,13 +7,13 @@ export const metadata = {
   title: 'O que é cúrcuma: benefícios, como usar e onde comprar',
   description: 'Cúrcuma é o tempero amarelo que colore curry, arroz e sopas. Saiba o que é, para que serve a curcumina, como absorver melhor e onde comprar no Brasil.',
   alternates: {
-    canonical: 'https://www.miseemcasa.com.br/blog/o-que-e-curcuma',
+    canonical: 'https://www.miseemcasa.com.br/pt/blog/o-que-e-curcuma',
   },
   openGraph: {
     title: 'O que é cúrcuma: benefícios, como usar e onde comprar',
     description: 'Cúrcuma é o tempero amarelo que colore curry, arroz e sopas. Saiba o que é, para que serve a curcumina, como absorver melhor e onde comprar no Brasil.',
     type: 'article',
-    url: 'https://www.miseemcasa.com.br/blog/o-que-e-curcuma',
+    url: 'https://www.miseemcasa.com.br/pt/blog/o-que-e-curcuma',
     images: [
       {
         url: 'https://images.pexels.com/photos/877220/pexels-photo-877220.jpeg?auto=compress&cs=tinysrgb&w=1200&h=630',

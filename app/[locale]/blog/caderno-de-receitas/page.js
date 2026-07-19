@@ -7,13 +7,13 @@ export const metadata = {
   title: 'Caderno de receitas: como organizar e não perder a que funciona',
   description: 'Caderno de receitas é onde você guarda as que realmente fazem parte da sua cozinha. Saiba o que incluir, como organizar por categorias e quando vale ir pro digital.',
   alternates: {
-    canonical: 'https://www.miseemcasa.com.br/blog/caderno-de-receitas',
+    canonical: 'https://www.miseemcasa.com.br/pt/blog/caderno-de-receitas',
   },
   openGraph: {
     title: 'Caderno de receitas: como organizar e não perder a que funciona',
     description: 'Caderno de receitas é onde você guarda as que realmente fazem parte da sua cozinha. Saiba o que incluir, como organizar por categorias e quando vale ir pro digital.',
     type: 'article',
-    url: 'https://www.miseemcasa.com.br/blog/caderno-de-receitas',
+    url: 'https://www.miseemcasa.com.br/pt/blog/caderno-de-receitas',
     images: [
       {
         url: 'https://images.pexels.com/photos/8715616/pexels-photo-8715616.jpeg?auto=compress&cs=tinysrgb&w=1200&h=630',

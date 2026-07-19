@@ -7,13 +7,13 @@ export const metadata = {
   title: 'Como organizar a despensa: guia prático em 7 passos',
   description: 'Como organizar a despensa do zero: 7 passos pra esvaziar, agrupar, rotular e manter tudo no lugar — com dicas extras pra geladeira organizada.',
   alternates: {
-    canonical: 'https://www.miseemcasa.com.br/blog/como-organizar-a-despensa',
+    canonical: 'https://www.miseemcasa.com.br/pt/blog/como-organizar-a-despensa',
   },
   openGraph: {
     title: 'Como organizar a despensa: guia prático em 7 passos',
     description: 'Como organizar a despensa do zero: 7 passos pra esvaziar, agrupar, rotular e manter tudo no lugar.',
     type: 'article',
-    url: 'https://www.miseemcasa.com.br/blog/como-organizar-a-despensa',
+    url: 'https://www.miseemcasa.com.br/pt/blog/como-organizar-a-despensa',
     images: [
       {
         url: 'https://images.pexels.com/photos/6660254/pexels-photo-6660254.jpeg?auto=compress&cs=tinysrgb&w=1200&h=630',

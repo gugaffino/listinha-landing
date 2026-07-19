@@ -7,13 +7,13 @@ export const metadata = {
   title: 'Chia tem proteína? O que é, para que serve e como usar',
   description: 'Chia é uma semente pequena com muito ômega-3, fibras e proteína. Entenda o que é, para que serve, como fazer o gel, e quando vale mais que a linhaça.',
   alternates: {
-    canonical: 'https://www.miseemcasa.com.br/blog/o-que-e-chia',
+    canonical: 'https://www.miseemcasa.com.br/pt/blog/o-que-e-chia',
   },
   openGraph: {
     title: 'Chia tem proteína? O que é, para que serve e como usar',
     description: 'Chia é uma semente pequena com muito ômega-3, fibras e proteína. Entenda o que é, para que serve, como fazer o gel, e quando vale mais que a linhaça.',
     type: 'article',
-    url: 'https://www.miseemcasa.com.br/blog/o-que-e-chia',
+    url: 'https://www.miseemcasa.com.br/pt/blog/o-que-e-chia',
     images: [
       {
         url: 'https://images.pexels.com/photos/27468397/pexels-photo-27468397.jpeg?auto=compress&cs=tinysrgb&w=1200&h=630',

@@ -7,13 +7,13 @@ export const metadata = {
   title: 'Lista de compras do mês: quantidades e como gastar menos',
   description: 'Lista de compras do mês com quantidades por perfil de família, itens essenciais por categoria e dicas práticas para não estourar o orçamento no supermercado.',
   alternates: {
-    canonical: 'https://www.miseemcasa.com.br/blog/lista-de-compras-do-mes',
+    canonical: 'https://www.miseemcasa.com.br/pt/blog/lista-de-compras-do-mes',
   },
   openGraph: {
     title: 'Lista de compras do mês: quantidades e como gastar menos',
     description: 'Lista de compras do mês com quantidades por perfil de família, itens essenciais por categoria e dicas práticas para não estourar o orçamento no supermercado.',
     type: 'article',
-    url: 'https://www.miseemcasa.com.br/blog/lista-de-compras-do-mes',
+    url: 'https://www.miseemcasa.com.br/pt/blog/lista-de-compras-do-mes',
     images: [
       {
         url: 'https://images.pexels.com/photos/4971951/pexels-photo-4971951.jpeg?auto=compress&cs=tinysrgb&w=1200&h=630',

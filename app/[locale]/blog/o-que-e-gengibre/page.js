@@ -7,13 +7,13 @@ export const metadata = {
   title: 'O que é gengibre: tipos, usos na cozinha e como guardar',
   description: 'Gengibre é um rizoma de sabor picante e aroma intenso. Saiba o que é, a diferença entre fresco e em pó, como usar nas receitas e como guardar sem perder.',
   alternates: {
-    canonical: 'https://www.miseemcasa.com.br/blog/o-que-e-gengibre',
+    canonical: 'https://www.miseemcasa.com.br/pt/blog/o-que-e-gengibre',
   },
   openGraph: {
     title: 'O que é gengibre: tipos, usos na cozinha e como guardar',
     description: 'Gengibre é um rizoma de sabor picante e aroma intenso. Saiba o que é, a diferença entre fresco e em pó, como usar nas receitas e como guardar sem perder.',
     type: 'article',
-    url: 'https://www.miseemcasa.com.br/blog/o-que-e-gengibre',
+    url: 'https://www.miseemcasa.com.br/pt/blog/o-que-e-gengibre',
     images: [
       {
         url: 'https://images.pexels.com/photos/161556/ginger-plant-asia-rhizome-161556.jpeg?auto=compress&cs=tinysrgb&w=1200&h=630',

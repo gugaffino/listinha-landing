@@ -7,13 +7,13 @@ export const metadata = {
   title: 'O que é cranberry: para que serve e como usar no dia a dia',
   description: 'Cranberry é uma fruta vermelha com propriedades antioxidantes. Saiba o que é, para que serve, onde encontrar no Brasil e se vale a pena colocar na lista.',
   alternates: {
-    canonical: 'https://www.miseemcasa.com.br/blog/o-que-e-cranberry',
+    canonical: 'https://www.miseemcasa.com.br/pt/blog/o-que-e-cranberry',
   },
   openGraph: {
     title: 'O que é cranberry: para que serve e como usar no dia a dia',
     description: 'Cranberry é uma fruta vermelha com propriedades antioxidantes. Saiba o que é, para que serve, onde encontrar no Brasil e se vale a pena colocar na lista.',
     type: 'article',
-    url: 'https://www.miseemcasa.com.br/blog/o-que-e-cranberry',
+    url: 'https://www.miseemcasa.com.br/pt/blog/o-que-e-cranberry',
     images: [
       {
         url: 'https://images.pexels.com/photos/29181506/pexels-photo-29181506.jpeg?auto=compress&cs=tinysrgb&w=1200&h=630',

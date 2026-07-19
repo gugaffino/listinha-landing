@@ -7,13 +7,13 @@ export const metadata = {
   title: 'Para que serve noz-moscada: usos e como usar na cozinha',
   description: 'Noz-moscada serve para arredondar sabores em pratos cremosos e doces. Saiba o que é, em quais receitas usar, a dose certa e como guardar sem perder o aroma.',
   alternates: {
-    canonical: 'https://www.miseemcasa.com.br/blog/para-que-serve-noz-moscada',
+    canonical: 'https://www.miseemcasa.com.br/pt/blog/para-que-serve-noz-moscada',
   },
   openGraph: {
     title: 'Para que serve noz-moscada: usos e como usar na cozinha',
     description: 'Noz-moscada serve para arredondar sabores em pratos cremosos e doces. Saiba o que é, em quais receitas usar, a dose certa e como guardar sem perder o aroma.',
     type: 'article',
-    url: 'https://www.miseemcasa.com.br/blog/para-que-serve-noz-moscada',
+    url: 'https://www.miseemcasa.com.br/pt/blog/para-que-serve-noz-moscada',
     images: [
       {
         url: 'https://images.pexels.com/photos/678414/pexels-photo-678414.jpeg?auto=compress&cs=tinysrgb&w=1200&h=630',

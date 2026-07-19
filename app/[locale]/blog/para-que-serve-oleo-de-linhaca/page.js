@@ -7,13 +7,13 @@ export const metadata = {
   title: 'Óleo de linhaça: para que serve e como usar na cozinha',
   description: 'Óleo de linhaça serve para saúde cardiovascular, controle de inflamação e pele. Saiba os benefícios, como usar na cozinha sem perder os nutrientes e onde comprar.',
   alternates: {
-    canonical: 'https://www.miseemcasa.com.br/blog/para-que-serve-oleo-de-linhaca',
+    canonical: 'https://www.miseemcasa.com.br/pt/blog/para-que-serve-oleo-de-linhaca',
   },
   openGraph: {
     title: 'Óleo de linhaça: para que serve e como usar na cozinha',
     description: 'Óleo de linhaça serve para saúde cardiovascular, controle de inflamação e pele. Saiba os benefícios, como usar na cozinha sem perder os nutrientes e onde comprar.',
     type: 'article',
-    url: 'https://www.miseemcasa.com.br/blog/para-que-serve-oleo-de-linhaca',
+    url: 'https://www.miseemcasa.com.br/pt/blog/para-que-serve-oleo-de-linhaca',
     images: [
       {
         url: 'https://images.pexels.com/photos/7420868/pexels-photo-7420868.jpeg?auto=compress&cs=tinysrgb&w=1200&h=630',
