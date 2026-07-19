@@ -4,6 +4,25 @@ Contexto pra Claude Code trabalhar neste repo.
 
 ---
 
+## 🌐 i18n — PT/EN/ES (next-intl)
+
+O site é multi-idioma via `next-intl`, com roteamento por prefixo sempre presente (`/pt/...`, `/en/...`, `/es/...` — inclusive PT). URLs antigas sem prefixo redirecionam (301) pra `/pt/...` em `next.config.js`, nunca pra `/en/`.
+
+**Regras obrigatórias em qualquer página/componente sob `app/[locale]/`:**
+
+1. **Nunca `<a href="/...">` pra rota interna** — sempre `<Link href="/...">` de `i18n/navigation.js` (não `next/link`). O `Link` do next-intl já resolve o locale atual no href. `<a>` só pra links externos (ex: `listinha-puce.vercel.app`).
+2. **Nunca `useRouter`/`usePathname`/`redirect` de `next/navigation`** — sempre de `i18n/navigation.js`.
+3. **Todo texto visível vem de `messages/{pt,en,es}.json`**, consumido via `getTranslations` (server component) ou `useTranslations` (client component, `'use client'`). Nunca hardcode string em PT numa página nova — adicione a chave nos 3 dicionários.
+4. **Strings com tags embutidas** (itálico, negrito, quebra de linha, trecho destacado) usam `t.rich('chave', { tag: (chunks) => <jsx>{chunks}</jsx> })`, não `t()`.
+5. **Namespace compartilhado**: strings repetidas entre páginas (ex: "Comece grátis") ficam em `common.*`, não duplicadas por página — pegue um segundo tradutor com `getTranslations('common')`.
+6. **Marca "Mise" nunca é traduzida** — fica hardcoded, nunca vira chave de dicionário.
+7. **FAQ com JSON-LD**: quando uma página tem `faqSchema` (structured data) junto de FAQ visível, os dois devem consumir as MESMAS chaves de tradução (nunca duplicar texto entre o schema e o `<dl>`/lista visível).
+8. **Chave ausente num idioma** cai automaticamente pro texto em `pt` (fallback configurado em `i18n/request.js`) — nunca deixa em branco, mas se aparecer texto cru tipo `home.hero.title` na tela, é sinal de chave faltando nos 3 JSONs.
+
+Posts de blog individuais (`app/[locale]/blog/<slug>/page.js`) existem só em `pt` por enquanto — têm guarda `if (locale !== 'pt') notFound()`. Traduzir posts é trabalho incremental separado (ver `docs/superpowers/specs/2026-07-17-landing-i18n-idiomas-design.md`).
+
+---
+
 ## 🖼️ Ícones — use sempre o componente Icon
 
 Nunca adicione SVG inline em páginas. Use o componente `<Icon>`:
