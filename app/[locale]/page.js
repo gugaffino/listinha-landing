@@ -1,6 +1,7 @@
 import { getTranslations, getLocale } from 'next-intl/server'
 import { BrandIcon, BrandTrioIcon } from '../../components/Icon'
 import SiteNav from '../../components/SiteNav'
+import LanguageSwitcher from '../../components/LanguageSwitcher'
 import { Link } from '../../i18n/navigation'
 
 export default async function Home() {
@@ -492,6 +493,7 @@ export default async function Home() {
           </div>
           <p className="footer-copy">{tc('footerCopy')}</p>
           <a href="https://listinha-puce.vercel.app" className="footer-link" target="_blank" rel="noopener">{tc('openAppArrow')}</a>
+          <LanguageSwitcher />
         </div>
       </footer>
     </>

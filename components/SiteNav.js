@@ -1,6 +1,5 @@
 import { getTranslations } from 'next-intl/server'
 import NavDropdown from './NavDropdown'
-import LanguageSwitcher from './LanguageSwitcher'
 import { BrandIcon } from './Icon'
 import { Link } from '../i18n/navigation'
 
@@ -20,7 +19,6 @@ export default async function SiteNav() {
           <NavDropdown />
           <Link href="/blog" className="nav-link">{t('blog')}</Link>
         </nav>
-        <LanguageSwitcher />
         <a href="https://listinha-puce.vercel.app" className="btn btn-primary btn-sm" target="_blank" rel="noopener">
           {tc('ctaSmall')}
           <svg aria-hidden="true" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">

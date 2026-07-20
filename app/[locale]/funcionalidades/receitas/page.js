@@ -2,6 +2,7 @@ import { getTranslations } from 'next-intl/server'
 import RevealObserver from '../../../../components/RevealObserver'
 import { BrandIcon } from '../../../../components/Icon'
 import SiteNav from '../../../../components/SiteNav'
+import LanguageSwitcher from '../../../../components/LanguageSwitcher'
 import { Link } from '../../../../i18n/navigation'
 
 export async function generateMetadata({ params }) {
@@ -270,6 +271,7 @@ export default async function ReceitasPage() {
           </Link>
           <span className="footer-copy">{tc('footerCopyright')}</span>
           <a href="https://listinha-puce.vercel.app" className="footer-link" target="_blank" rel="noopener">{tc('openApp')}</a>
+          <LanguageSwitcher />
         </div>
       </footer>
     </>

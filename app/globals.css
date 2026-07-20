@@ -49,6 +49,7 @@ h1,h2,h3,h4 {
   border: 1.5px solid transparent;
   cursor: pointer;
   letter-spacing: -0.005em;
+  white-space: nowrap;
   transition: transform .12s, background .15s, border-color .15s, color .15s;
 }
 .btn:active { transform: scale(0.98); }
@@ -260,7 +261,6 @@ h1,h2,h3,h4 {
 .lang-switcher {
   display: flex;
   gap: 6px;
-  margin-left: 12px;
 }
 
 .lang-switcher .chip {
