@@ -179,14 +179,22 @@ const posts = [
   },
   {
     slug: 'o-que-e-gengibre',
-    tag: 'Ingredientes',
-    title: 'O que é gengibre: tipos, usos na cozinha e como guardar',
-    description: 'Gengibre é um rizoma de sabor picante e aroma intenso. Saiba o que é, a diferença entre fresco e em pó, como usar nas receitas e como guardar sem perder.',
+    tag: { pt: 'Ingredientes', en: 'Ingredients', es: 'Ingredientes' },
+    title: {
+      pt: 'O que é gengibre: tipos, usos na cozinha e como guardar',
+      en: 'Ginger 101: Fresh vs Ground, Uses, and How to Store It',
+      es: 'Jengibre: fresco o en polvo, usos en la cocina y cómo conservarlo',
+    },
+    description: {
+      pt: 'Gengibre é um rizoma de sabor picante e aroma intenso. Saiba o que é, a diferença entre fresco e em pó, como usar nas receitas e como guardar sem perder.',
+      en: 'Ginger is a spicy, fragrant rhizome used fresh, dried, or ground. See the real difference between fresh and ground ginger, how to cook with it, and how to store it.',
+      es: 'El jengibre es un rizoma de sabor picante y aroma intenso. La diferencia real entre fresco y en polvo, cómo usarlo en tus recetas y cómo guardarlo sin que se eche a perder.',
+    },
     img: 'https://images.pexels.com/photos/161556/pexels-photo-161556.jpeg?auto=compress&cs=tinysrgb&w=800&h=480&fit=crop',
     imgAlt: 'Raízes de gengibre fresco ao lado de pó de gengibre em recipiente metálico',
     date: '2026-06-01',
     dateLabel: 'Jun 2026',
-    locales: ['pt'],
+    locales: ['pt', 'en', 'es'],
   },
   {
     slug: 'o-que-e-pomelo',
@@ -234,14 +242,22 @@ const posts = [
   },
   {
     slug: 'bicarbonato-de-sodio',
-    tag: 'Ingredientes',
-    title: 'Bicarbonato de sódio: o que é, usos na cozinha e dicas',
-    description: 'Bicarbonato de sódio serve para fermentar massas, amaciar carne, cozinhar feijão e limpar panelas. Saiba a diferença do fermento e como usar certo.',
+    tag: { pt: 'Ingredientes', en: 'Ingredients', es: 'Ingredientes' },
+    title: {
+      pt: 'Bicarbonato de sódio: o que é, usos na cozinha e dicas',
+      en: 'Baking Soda: Kitchen Uses, Storage & Substitution Tips',
+      es: 'Bicarbonato de sodio: para qué sirve y cómo usarlo',
+    },
+    description: {
+      pt: 'Bicarbonato de sódio serve para fermentar massas, amaciar carne, cozinhar feijão e limpar panelas. Saiba a diferença do fermento e como usar certo.',
+      en: 'Baking soda leavens batter, tenderizes meat, speeds up bean cooking, and scrubs pots. Learn how it differs from baking powder and how long it actually lasts.',
+      es: 'El bicarbonato de sodio leuda masas, ablanda carne, acelera la cocción de frijoles y limpia ollas. Aprende la diferencia con el polvo de hornear y cómo guardarlo.',
+    },
     img: 'https://images.pexels.com/photos/6996335/pexels-photo-6996335.jpeg?auto=compress&cs=tinysrgb&w=800&h=480&fit=crop',
     imgAlt: 'Vista de cima de tigela com ingredientes de confeitaria em superfície branca',
     date: '2026-06-04',
     dateLabel: 'Jun 2026',
-    locales: ['pt'],
+    locales: ['pt', 'en', 'es'],
   },
   {
     slug: 'lista-de-compras-saudavel',
@@ -267,14 +283,22 @@ const posts = [
   },
   {
     slug: 'batata-doce',
-    tag: 'Ingredientes',
-    title: 'Batata doce: o que é, valor nutricional e como usar',
-    description: 'Batata doce é um tubérculo com betacaroteno, fibras e carboidratos de baixo IG. Tipos, como escolher no mercado e como usar de verdade na cozinha.',
+    tag: { pt: 'Ingredientes', en: 'Ingredients', es: 'Ingredientes' },
+    title: {
+      pt: 'Batata doce: o que é, valor nutricional e como usar',
+      en: 'Sweet Potato: Nutrition Facts, Types, and How to Cook It',
+      es: 'Camote: información nutricional, tipos y cómo cocinarlo',
+    },
+    description: {
+      pt: 'Batata doce é um tubérculo com betacaroteno, fibras e carboidratos de baixo IG. Tipos, como escolher no mercado e como usar de verdade na cozinha.',
+      en: 'Sweet potatoes pack beta-carotene, fiber, and slow-digesting carbs. See the nutrition breakdown, main varieties, and how to store and cook them without waste.',
+      es: 'El camote (batata, boniato) aporta betacaroteno, fibra y carbohidratos de absorción lenta. Descubre su valor nutricional, variedades y cómo guardarlo y cocinarlo sin desperdiciar nada.',
+    },
     img: 'https://images.pexels.com/photos/6060223/pexels-photo-6060223.jpeg?auto=compress&cs=tinysrgb&w=800&h=480&fit=crop',
     imgAlt: 'Batatas doces laranjas frescas em close-up sobre superfície escura',
     date: '2026-06-05',
     dateLabel: 'Jun 2026',
-    locales: ['pt'],
+    locales: ['pt', 'en', 'es'],
   },
   {
     slug: 'beneficios-do-rabanete',
@@ -355,14 +379,22 @@ const posts = [
   },
   {
     slug: 'o-que-e-arroz-parboilizado',
-    tag: 'Ingredientes',
-    title: 'Arroz parboilizado: o que é, diferenças e como cozinhar',
-    description: 'Arroz parboilizado passa por um pré-cozimento que preserva nutrientes do grão. Veja a diferença do branco e integral, como cozinhar e quando vale comprar.',
+    tag: { pt: 'Ingredientes', en: 'Ingredients', es: 'Ingredientes' },
+    title: {
+      pt: 'Arroz parboilizado: o que é, diferenças e como cozinhar',
+      en: 'Parboiled Rice: What It Is, Benefits, and How to Cook It',
+      es: 'Arroz parbolizado: qué es, beneficios y cómo cocinarlo',
+    },
+    description: {
+      pt: 'Arroz parboilizado passa por um pré-cozimento que preserva nutrientes do grão. Veja a diferença do branco e integral, como cozinhar e quando vale comprar.',
+      en: 'Parboiled rice is steamed under pressure before milling, which keeps more nutrients than white rice. See how it compares to brown rice and how to cook it right.',
+      es: 'El arroz parbolizado se cocina al vapor con cáscara antes de pulirse, lo que conserva más nutrientes que el arroz blanco. Diferencias con el integral y cómo prepararlo.',
+    },
     img: 'https://images.pexels.com/photos/1311771/pexels-photo-1311771.jpeg?auto=compress&cs=tinysrgb&w=800&h=480&fit=crop',
     imgAlt: 'Bowl de arroz cozido com grãos soltos sobre superfície de madeira clara',
     date: '2026-06-10',
     dateLabel: 'Jun 2026',
-    locales: ['pt'],
+    locales: ['pt', 'en', 'es'],
   },
   {
     slug: 'azeite-de-oliva',
@@ -531,14 +563,22 @@ const posts = [
   },
   {
     slug: 'atum',
-    tag: 'Ingredientes',
-    title: 'Atum: o que é, valor nutricional e como usar na cozinha',
-    description: 'Atum tem 26g de proteína por 100g e ômega-3 de verdade. Saiba a diferença entre sólido e ralado, em óleo ou água, e como usar em casa.',
+    tag: { pt: 'Ingredientes', en: 'Ingredients', es: 'Ingredientes' },
+    title: {
+      pt: 'Atum: o que é, valor nutricional e como usar na cozinha',
+      en: 'Tuna: Nutrition Facts, Canned vs Fresh, and How to Cook It',
+      es: 'Atún: valor nutricional, fresco vs en lata y cómo usarlo en la cocina',
+    },
+    description: {
+      pt: 'Atum tem 26g de proteína por 100g e ômega-3 de verdade. Saiba a diferença entre sólido e ralado, em óleo ou água, e como usar em casa.',
+      en: 'Canned tuna packs 24g of protein per 100g and real omega-3s. Learn the difference between fresh and canned, oil vs water, chunk vs flaked, and how to cook it.',
+      es: 'El atún en lata tiene 25g de proteína por cada 100g y omega-3 de verdad. La diferencia entre fresco y enlatado, en aceite o en agua, en trozos o desmenuzado, y cómo usarlo.',
+    },
     img: 'https://images.pexels.com/photos/3296394/pexels-photo-3296394.jpeg?auto=compress&cs=tinysrgb&w=800&h=480&fit=crop',
     imgAlt: 'Mão fatiando atum fresco em tábua de corte — preparação de peixe na cozinha',
     date: '2026-06-20',
     dateLabel: 'Jun 2026',
-    locales: ['pt'],
+    locales: ['pt', 'en', 'es'],
   },
   {
     slug: 'quinoa-para-que-serve',
@@ -723,6 +763,7 @@ export default async function BlogPage({ params }) {
   const t = await getTranslations('blogIndex')
   const tc = await getTranslations('common')
   const localePosts = posts.filter((p) => p.locales.includes(locale))
+  const localize = (field, loc) => (typeof field === 'object' ? field[loc] ?? field.pt : field)
 
   return (
     <>
@@ -781,11 +822,11 @@ export default async function BlogPage({ params }) {
                     </div>
                     <div className="blog-index-body">
                       <div className="blog-index-meta">
-                        <span className="blog-card-tag">{post.tag}</span>
+                        <span className="blog-card-tag">{localize(post.tag, locale)}</span>
                         <span className="blog-index-date">{post.dateLabel}</span>
                       </div>
-                      <h2>{post.title}</h2>
-                      <p>{post.description}</p>
+                      <h2>{localize(post.title, locale)}</h2>
+                      <p>{localize(post.description, locale)}</p>
                       <span className="blog-card-link">{tc('readArticle')}</span>
                     </div>
                   </Link>
