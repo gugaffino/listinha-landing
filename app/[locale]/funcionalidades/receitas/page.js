@@ -54,7 +54,7 @@ export default async function ReceitasPage() {
       <SiteNav />
 
       {/* HERO */}
-      <section className="svc-hero">
+      <section id="main-content" className="svc-hero">
         <div className="container">
           <div className="reveal">
             <div className="eyebrow"><span className="dot"></span> {t('hero.eyebrow')}</div>
