@@ -157,7 +157,7 @@ export default function OQueECurcuma({ params }) {
           <ol className="breadcrumb-nav">
             <li><a href="/">Home</a></li>
             <li aria-hidden="true" className="breadcrumb-sep">/</li>
-            <li><a href="/blog">Blog</a></li>
+            <li><a href="/pt/blog">Blog</a></li>
             <li aria-hidden="true" className="breadcrumb-sep">/</li>
             <li className="breadcrumb-current" aria-current="page">O que é cúrcuma</li>
           </ol>
@@ -171,7 +171,7 @@ export default function OQueECurcuma({ params }) {
             <span className="blog-meta-sep">·</span>
             <span className="blog-read">8 min de leitura</span>
             <span className="blog-meta-sep">·</span>
-            <a href="/blog" className="blog-meta-link">Blog</a>
+            <a href="/pt/blog" className="blog-meta-link">Blog</a>
           </div>
 
           <h1 className="blog-h1">
@@ -438,7 +438,7 @@ export default function OQueECurcuma({ params }) {
           </a>
           <p className="footer-copy">© 2026 Mise. Feito com cuidado no Brasil.</p>
           <nav className="footer-links" aria-label="Links do rodapé">
-            <a href="/blog" className="footer-link">Blog</a>
+            <a href="/pt/blog" className="footer-link">Blog</a>
             <a href="/funcionalidades" className="footer-link">Funcionalidades</a>
           </nav>
         </div>

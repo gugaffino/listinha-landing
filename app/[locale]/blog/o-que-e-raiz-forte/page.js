@@ -165,7 +165,7 @@ export default function OQueERaizForte({ params }) {
           <ol className="breadcrumb-nav">
             <li><a href="/">Home</a></li>
             <li aria-hidden="true" className="breadcrumb-sep">/</li>
-            <li><a href="/blog">Blog</a></li>
+            <li><a href="/pt/blog">Blog</a></li>
             <li aria-hidden="true" className="breadcrumb-sep">/</li>
             <li className="breadcrumb-current" aria-current="page">O que é raiz forte</li>
           </ol>
@@ -179,7 +179,7 @@ export default function OQueERaizForte({ params }) {
             <span className="blog-meta-sep">·</span>
             <span className="blog-read">8 min de leitura</span>
             <span className="blog-meta-sep">·</span>
-            <a href="/blog" className="blog-meta-link">Blog</a>
+            <a href="/pt/blog" className="blog-meta-link">Blog</a>
           </div>
 
           <h1 className="blog-h1">
@@ -324,7 +324,7 @@ export default function OQueERaizForte({ params }) {
           </p>
           <p>
             Outro ponto: o calor mata o pungente. Não cozinhe a raiz forte se quiser manter o sabor. Adicione sempre cru ou no final, depois do fogo apagado.{' '}
-            <a href="/blog/o-que-e-gengibre">O gengibre</a> tem comportamento parecido — os compostos aromáticos se degradam com calor prolongado. Com raiz forte, o efeito é mais rápido e mais drástico.
+            <a href="/pt/blog/o-que-e-gengibre">O gengibre</a> tem comportamento parecido — os compostos aromáticos se degradam com calor prolongado. Com raiz forte, o efeito é mais rápido e mais drástico.
           </p>
 
           <div className="blog-inline-cta">
@@ -351,7 +351,7 @@ export default function OQueERaizForte({ params }) {
           </p>
           <p>
             Na{' '}
-            <a href="/blog/lista-basica-de-compras">lista básica de compras</a>
+            <a href="/pt/blog/lista-basica-de-compras">lista básica de compras</a>
             {', '}raiz forte não entra. É ingrediente de uso específico — você vai lembrar de colocar na lista quando tiver uma receita em mente, não como item de reposição regular. Para não esquecer quando precisar, vale registrar na{' '}
             <a href="/funcionalidades/despensa">despensa</a>
             {' '}e configurar um alerta de reposição.
@@ -371,7 +371,7 @@ export default function OQueERaizForte({ params }) {
           </p>
           <p>
             Um ponto sobre desperdício: raiz forte, por ser ingrediente de uso esporádico, às vezes some na gaveta da geladeira por semanas até virar lixo. Se você comprou uma raiz grande, rale tudo de uma vez, misture com vinagre e congele em porções menores — assim usa quando precisar sem desperdiçar.{' '}
-            <a href="/blog/alcaparras">Alcaparras</a> têm o mesmo problema: compra-se para uma receita, fica o pote pela metade.
+            <a href="/pt/blog/alcaparras">Alcaparras</a> têm o mesmo problema: compra-se para uma receita, fica o pote pela metade.
           </p>
 
           {/* FAQ */}
@@ -485,7 +485,7 @@ export default function OQueERaizForte({ params }) {
             <span className="brand-name">Mise</span>
           </a>
           <span className="footer-copy">© 2026 Mise</span>
-          <a href="/blog" className="footer-link">Blog</a>
+          <a href="/pt/blog" className="footer-link">Blog</a>
         </div>
       </footer>
     </>

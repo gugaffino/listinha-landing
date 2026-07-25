@@ -157,7 +157,7 @@ export default function CardamomoParaQueServe({ params }) {
           <ol className="breadcrumb-nav">
             <li><a href="/">Home</a></li>
             <li aria-hidden="true" className="breadcrumb-sep">/</li>
-            <li><a href="/blog">Blog</a></li>
+            <li><a href="/pt/blog">Blog</a></li>
             <li aria-hidden="true" className="breadcrumb-sep">/</li>
             <li className="breadcrumb-current" aria-current="page">Cardamomo para que serve</li>
           </ol>
@@ -171,7 +171,7 @@ export default function CardamomoParaQueServe({ params }) {
             <span className="blog-meta-sep">·</span>
             <span className="blog-read">8 min de leitura</span>
             <span className="blog-meta-sep">·</span>
-            <a href="/blog" className="blog-meta-link">Blog</a>
+            <a href="/pt/blog" className="blog-meta-link">Blog</a>
           </div>
 
           <h1 className="blog-h1">
@@ -447,7 +447,7 @@ export default function CardamomoParaQueServe({ params }) {
             Se você for comprar online, veja se a loja informa a data de colheita ou validade:
             especiaria antiga vendida como nova é problema mais comum do que parece.
             A mesma atenção que você teria com qualquer{' '}
-            <a href="/blog/lista-basica-de-compras">item da lista</a>
+            <a href="/pt/blog/lista-basica-de-compras">item da lista</a>
             {' '}vale aqui — saber o que está comprando antes de sair de casa faz diferença.
           </p>
 
@@ -469,7 +469,7 @@ export default function CardamomoParaQueServe({ params }) {
               <p className="faq-a">
                 Não tem substituto direto — o aroma é único. Se não tiver, a aproximação mais próxima
                 é uma pitada de gengibre em pó com uma pitada de{' '}
-                <a href="/blog/para-que-serve-noz-moscada">noz-moscada</a>,
+                <a href="/pt/blog/para-que-serve-noz-moscada">noz-moscada</a>,
                 {' '}mas o resultado é diferente. Para pratos onde o cardamomo é protagonista,
                 o substituto não fecha o mesmo.
               </p>
@@ -567,7 +567,7 @@ export default function CardamomoParaQueServe({ params }) {
             <span className="brand-name">Mise</span>
           </a>
           <span className="footer-copy">© 2026 Mise</span>
-          <a href="/blog" className="footer-link">Blog</a>
+          <a href="/pt/blog" className="footer-link">Blog</a>
         </div>
       </footer>
     </>

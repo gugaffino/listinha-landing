@@ -157,7 +157,7 @@ export default function AlcaparrasPost({ params }) {
           <ol className="breadcrumb-nav">
             <li><a href="/">Home</a></li>
             <li aria-hidden="true" className="breadcrumb-sep">/</li>
-            <li><a href="/blog">Blog</a></li>
+            <li><a href="/pt/blog">Blog</a></li>
             <li aria-hidden="true" className="breadcrumb-sep">/</li>
             <li className="breadcrumb-current" aria-current="page">Alcaparras</li>
           </ol>
@@ -171,7 +171,7 @@ export default function AlcaparrasPost({ params }) {
             <span className="blog-meta-sep">·</span>
             <span className="blog-read">8 min de leitura</span>
             <span className="blog-meta-sep">·</span>
-            <a href="/blog" className="blog-meta-link">Blog</a>
+            <a href="/pt/blog" className="blog-meta-link">Blog</a>
           </div>
 
           <h1 className="blog-h1">
@@ -366,7 +366,7 @@ export default function AlcaparrasPost({ params }) {
             Não são um superalimento. São um condimento com nutrientes interessantes — como a maioria dos temperos mediterrâneos.
             A diferença é que a alcaparra carrega sabor suficiente pra usar pouco, e usar pouco é a forma certa de usar.
             Esse princípio vale pra qualquer tempero na{' '}
-            <a href="/blog/como-organizar-a-despensa">despensa bem organizada</a>
+            <a href="/pt/blog/como-organizar-a-despensa">despensa bem organizada</a>
             {': '}compra uma vez, dura meses, tempera dezenas de receitas.
           </p>
 
@@ -505,7 +505,7 @@ export default function AlcaparrasPost({ params }) {
             <span className="brand-name">Mise</span>
           </a>
           <span className="footer-copy">© 2026 Mise</span>
-          <a href="/blog" className="footer-link">Blog</a>
+          <a href="/pt/blog" className="footer-link">Blog</a>
         </div>
       </footer>
     </>

@@ -157,7 +157,7 @@ export default function Atum({ params }) {
           <ol className="breadcrumb-nav">
             <li><a href="/">Home</a></li>
             <li aria-hidden="true" className="breadcrumb-sep">/</li>
-            <li><a href="/blog">Blog</a></li>
+            <li><a href="/pt/blog">Blog</a></li>
             <li aria-hidden="true" className="breadcrumb-sep">/</li>
             <li className="breadcrumb-current" aria-current="page">Atum</li>
           </ol>
@@ -171,7 +171,7 @@ export default function Atum({ params }) {
             <span className="blog-meta-sep">·</span>
             <span className="blog-read">8 min de leitura</span>
             <span className="blog-meta-sep">·</span>
-            <a href="/blog" className="blog-meta-link">Blog</a>
+            <a href="/pt/blog" className="blog-meta-link">Blog</a>
           </div>
 
           <h1 className="blog-h1">
@@ -270,7 +270,7 @@ export default function Atum({ params }) {
           </p>
           <p>
             Se você procura{' '}
-            <a href="/blog/alimentos-ricos-em-proteinas">alimentos ricos em proteínas</a>{' '}
+            <a href="/pt/blog/alimentos-ricos-em-proteinas">alimentos ricos em proteínas</a>{' '}
             de baixo custo, atum em lata é difícil de bater.
           </p>
 
@@ -369,7 +369,7 @@ export default function Atum({ params }) {
           <h3>Em saladas</h3>
           <p>
             Com folhas, tomate, ovos cozidos e azeitona, vira uma refeição completa sem cozinhar nada. O atum em água absorve melhor o tempero da salada. Uma{' '}
-            <a href="/blog/lista-basica-de-compras">lista básica de compras</a>{' '}
+            <a href="/pt/blog/lista-basica-de-compras">lista básica de compras</a>{' '}
             com esses ingredientes resolve o almoço de vários dias.
           </p>
 
@@ -389,7 +389,7 @@ export default function Atum({ params }) {
           </p>
           <p>
             E veja bem: o{' '}
-            <a href="/blog/o-que-e-cavala">atum não é o único peixe que funciona assim</a>.
+            <a href="/pt/blog/o-que-e-cavala">atum não é o único peixe que funciona assim</a>.
             A cavala, menos conhecida e geralmente mais barata, tem preparo similar e um perfil nutricional competitivo.
           </p>
 
@@ -525,7 +525,7 @@ export default function Atum({ params }) {
             <span className="brand-name">Mise</span>
           </a>
           <span className="footer-copy">© 2026 Mise</span>
-          <a href="/blog" className="footer-link">Blog</a>
+          <a href="/pt/blog" className="footer-link">Blog</a>
         </div>
       </footer>
     </>

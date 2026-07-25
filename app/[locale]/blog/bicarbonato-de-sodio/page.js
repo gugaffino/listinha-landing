@@ -157,7 +157,7 @@ export default function BicarbonataoDeSodio({ params }) {
           <ol className="breadcrumb-nav">
             <li><a href="/">Home</a></li>
             <li aria-hidden="true" className="breadcrumb-sep">/</li>
-            <li><a href="/blog">Blog</a></li>
+            <li><a href="/pt/blog">Blog</a></li>
             <li aria-hidden="true" className="breadcrumb-sep">/</li>
             <li className="breadcrumb-current" aria-current="page">Bicarbonato de sódio</li>
           </ol>
@@ -171,7 +171,7 @@ export default function BicarbonataoDeSodio({ params }) {
             <span className="blog-meta-sep">·</span>
             <span className="blog-read">7 min de leitura</span>
             <span className="blog-meta-sep">·</span>
-            <a href="/blog" className="blog-meta-link">Blog</a>
+            <a href="/pt/blog" className="blog-meta-link">Blog</a>
           </div>
 
           <h1 className="blog-h1">
@@ -328,7 +328,7 @@ export default function BicarbonataoDeSodio({ params }) {
           </p>
           <p>
             Guarda em pote fechado, longe da geladeira e do fogão. Uma prateleira seca na{' '}
-            <a href="/blog/como-organizar-a-despensa">despensa organizada</a>{' '}
+            <a href="/pt/blog/como-organizar-a-despensa">despensa organizada</a>{' '}
             funciona bem. Não precisa de temperatura especial.
           </p>
           <p>
@@ -336,7 +336,7 @@ export default function BicarbonataoDeSodio({ params }) {
           </p>
           <p>
             É um item que pertence à{' '}
-            <a href="/blog/lista-basica-de-compras">lista básica de compras</a>{' '}
+            <a href="/pt/blog/lista-basica-de-compras">lista básica de compras</a>{' '}
             de qualquer cozinha. Custa pouco, dura muito e tem pelo menos sete usos. O único problema era não saber o que fazer com ele — e isso acabou de ser resolvido.
           </p>
 
@@ -442,7 +442,7 @@ export default function BicarbonataoDeSodio({ params }) {
             <span className="brand-name">Mise</span>
           </a>
           <span className="footer-copy">© 2026 Mise</span>
-          <a href="/blog" className="footer-link">Blog</a>
+          <a href="/pt/blog" className="footer-link">Blog</a>
         </div>
       </footer>
     </>

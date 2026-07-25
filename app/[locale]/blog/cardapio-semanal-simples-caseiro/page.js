@@ -157,7 +157,7 @@ export default function CardapioSemanalSimplesCaseiro({ params }) {
           <ol className="breadcrumb-nav">
             <li><a href="/">Home</a></li>
             <li aria-hidden="true" className="breadcrumb-sep">/</li>
-            <li><a href="/blog">Blog</a></li>
+            <li><a href="/pt/blog">Blog</a></li>
             <li aria-hidden="true" className="breadcrumb-sep">/</li>
             <li className="breadcrumb-current" aria-current="page">Cardápio semanal simples caseiro</li>
           </ol>
@@ -171,7 +171,7 @@ export default function CardapioSemanalSimplesCaseiro({ params }) {
             <span className="blog-meta-sep">·</span>
             <span className="blog-read">8 min de leitura</span>
             <span className="blog-meta-sep">·</span>
-            <a href="/blog" className="blog-meta-link">Blog</a>
+            <a href="/pt/blog" className="blog-meta-link">Blog</a>
           </div>
 
           <h1 className="blog-h1">
@@ -251,7 +251,7 @@ export default function CardapioSemanalSimplesCaseiro({ params }) {
           </p>
           <p>
             Além disso, o cardápio semanal torna as idas ao mercado menos frequentes. A média brasileira é de 2 a 3 visitas por semana (ABRAS, 2023) — boa parte delas pra buscar um ingrediente esquecido ou porque não havia plano. Com um cardápio claro e uma{' '}
-            <a href="/blog/lista-de-compras-do-mes">lista de compras bem feita</a>,
+            <a href="/pt/blog/lista-de-compras-do-mes">lista de compras bem feita</a>,
             {' '}uma ida semanal é suficiente.
           </p>
 
@@ -532,7 +532,7 @@ export default function CardapioSemanalSimplesCaseiro({ params }) {
             <span className="brand-name">Mise</span>
           </a>
           <span className="footer-copy">© 2026 Mise</span>
-          <a href="/blog" className="footer-link">Blog</a>
+          <a href="/pt/blog" className="footer-link">Blog</a>
         </div>
       </footer>
     </>

@@ -198,7 +198,7 @@ export default function OQueEAvela({ params }) {
               /
             </li>
             <li>
-              <a href="/blog">Blog</a>
+              <a href="/pt/blog">Blog</a>
             </li>
             <li aria-hidden="true" className="breadcrumb-sep">
               /
@@ -219,7 +219,7 @@ export default function OQueEAvela({ params }) {
             <span className="blog-meta-sep">·</span>
             <span className="blog-read">6 min de leitura</span>
             <span className="blog-meta-sep">·</span>
-            <a href="/blog" className="blog-meta-link">
+            <a href="/pt/blog" className="blog-meta-link">
               Blog
             </a>
           </div>
@@ -295,7 +295,7 @@ export default function OQueEAvela({ params }) {
 
           <p>
             Botanicamente, avelã pertence ao grupo das oleaginosas — parente de{' '}
-            <a href="/blog/o-que-e-amendoa">amêndoa</a>, nozes e
+            <a href="/pt/blog/o-que-e-amendoa">amêndoa</a>, nozes e
             castanha-do-pará. O que todas têm em comum: casca dura, semente rica
             em gordura boa e nenhuma relação com as frutas tropicais da feira.
           </p>
@@ -740,7 +740,7 @@ export default function OQueEAvela({ params }) {
             <span className="brand-name">Mise</span>
           </a>
           <span className="footer-copy">© 2026 Mise</span>
-          <a href="/blog" className="footer-link">
+          <a href="/pt/blog" className="footer-link">
             Blog
           </a>
         </div>

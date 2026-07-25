@@ -157,7 +157,7 @@ export default function OQueEMargarina({ params }) {
           <ol className="breadcrumb-nav">
             <li><a href="/">Home</a></li>
             <li aria-hidden="true" className="breadcrumb-sep">/</li>
-            <li><a href="/blog">Blog</a></li>
+            <li><a href="/pt/blog">Blog</a></li>
             <li aria-hidden="true" className="breadcrumb-sep">/</li>
             <li className="breadcrumb-current" aria-current="page">O que é margarina</li>
           </ol>
@@ -171,7 +171,7 @@ export default function OQueEMargarina({ params }) {
             <span className="blog-meta-sep">·</span>
             <span className="blog-read">5 min de leitura</span>
             <span className="blog-meta-sep">·</span>
-            <a href="/blog" className="blog-meta-link">Blog</a>
+            <a href="/pt/blog" className="blog-meta-link">Blog</a>
           </div>
 
           <h1 className="blog-h1">
@@ -330,7 +330,7 @@ export default function OQueEMargarina({ params }) {
             <li><strong>Passar no pão:</strong> creme vegetal ou margarina cremosa. Textura fácil de espalhar, sem rasgar o pão. Manteiga gelada racha tudo.</li>
             <li><strong>Bolo simples:</strong> margarina culinária (80%) funciona bem. O resultado é parecido com manteiga, com custo menor.</li>
             <li><strong>Biscoito amanteigado, croissant, folhado:</strong> manteiga. O sabor é parte do prato. Margarina não reproduz.</li>
-            <li><strong>Refogar cebola e alho:</strong> qualquer um dos dois, ou{' '}<a href="/blog/azeite-de-oliva">azeite</a>. Sem diferença relevante no resultado final.</li>
+            <li><strong>Refogar cebola e alho:</strong> qualquer um dos dois, ou{' '}<a href="/pt/blog/azeite-de-oliva">azeite</a>. Sem diferença relevante no resultado final.</li>
             <li><strong>Finalizar massa ou arroz:</strong> manteiga, se quiser o sabor. Margarina culinária, se só quiser a gordura e brilho.</li>
             <li><strong>Receita que pede "manteiga ou margarina":</strong> margarina culinária (80%), nunca creme vegetal.</li>
           </ul>
@@ -480,7 +480,7 @@ export default function OQueEMargarina({ params }) {
             <span className="brand-name">Mise</span>
           </a>
           <span className="footer-copy">© 2026 Mise</span>
-          <a href="/blog" className="footer-link">Blog</a>
+          <a href="/pt/blog" className="footer-link">Blog</a>
         </div>
       </footer>
     </>

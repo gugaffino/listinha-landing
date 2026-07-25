@@ -157,7 +157,7 @@ export default function OQueEArrozParboilizado({ params }) {
           <ol className="breadcrumb-nav">
             <li><a href="/">Home</a></li>
             <li aria-hidden="true" className="breadcrumb-sep">/</li>
-            <li><a href="/blog">Blog</a></li>
+            <li><a href="/pt/blog">Blog</a></li>
             <li aria-hidden="true" className="breadcrumb-sep">/</li>
             <li className="breadcrumb-current" aria-current="page">O que é arroz parboilizado</li>
           </ol>
@@ -171,7 +171,7 @@ export default function OQueEArrozParboilizado({ params }) {
             <span className="blog-meta-sep">·</span>
             <span className="blog-read">7 min de leitura</span>
             <span className="blog-meta-sep">·</span>
-            <a href="/blog" className="blog-meta-link">Blog</a>
+            <a href="/pt/blog" className="blog-meta-link">Blog</a>
           </div>
 
           <h1 className="blog-h1">
@@ -426,7 +426,7 @@ export default function OQueEArrozParboilizado({ params }) {
             Se você come arroz todo dia e quer melhorar a qualidade sem mudar a rotina, o parboilizado é a troca mais direta disponível.
             Custa em média R$ 1 a R$ 2 a mais por pacote de 5kg em relação ao branco comum — e entrega grãos mais nutritivos, mais soltos e mais resistentes a empapar.
             Para uma{' '}
-            <a href="/blog/lista-basica-de-compras">lista básica de compras</a>
+            <a href="/pt/blog/lista-basica-de-compras">lista básica de compras</a>
             {' '}de quem come arroz regularmente, a troca faz sentido direto.
           </p>
           <p>
@@ -440,10 +440,10 @@ export default function OQueEArrozParboilizado({ params }) {
             {', '}dura até 2 anos em pote fechado — mais que o branco comum.
             É um item que dá pra comprar em quantidade maior sem risco de perder.
             Se você estiver montando um{' '}
-            <a href="/blog/cardapio-semanal-simples-caseiro">cardápio semanal</a>
+            <a href="/pt/blog/cardapio-semanal-simples-caseiro">cardápio semanal</a>
             {', '}entra em praticamente qualquer refeição sem precisar ajustar a receita.
             E se montar a{' '}
-            <a href="/blog/lista-de-compras-do-mes">lista do mês</a>
+            <a href="/pt/blog/lista-de-compras-do-mes">lista do mês</a>
             {', '}um pacote de 5kg costuma fechar bem pra uma família de duas pessoas.
           </p>
           <p>
@@ -551,7 +551,7 @@ export default function OQueEArrozParboilizado({ params }) {
             <span className="brand-name">Mise</span>
           </a>
           <span className="footer-copy">© 2026 Mise</span>
-          <a href="/blog" className="footer-link">Blog</a>
+          <a href="/pt/blog" className="footer-link">Blog</a>
         </div>
       </footer>
     </>

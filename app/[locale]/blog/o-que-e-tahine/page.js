@@ -157,7 +157,7 @@ export default function OQueETahine({ params }) {
           <ol className="breadcrumb-nav">
             <li><a href="/">Home</a></li>
             <li aria-hidden="true" className="breadcrumb-sep">/</li>
-            <li><a href="/blog">Blog</a></li>
+            <li><a href="/pt/blog">Blog</a></li>
             <li aria-hidden="true" className="breadcrumb-sep">/</li>
             <li className="breadcrumb-current" aria-current="page">O que é tahine</li>
           </ol>
@@ -171,7 +171,7 @@ export default function OQueETahine({ params }) {
             <span className="blog-meta-sep">·</span>
             <span className="blog-read">8 min de leitura</span>
             <span className="blog-meta-sep">·</span>
-            <a href="/blog" className="blog-meta-link">Blog</a>
+            <a href="/pt/blog" className="blog-meta-link">Blog</a>
           </div>
 
           <h1 className="blog-h1">
@@ -280,7 +280,7 @@ export default function OQueETahine({ params }) {
           </p>
           <p>
             Para quem quer aumentar a ingestão de cálcio sem laticínios, tahine é uma das opções vegetais com quantidade relevante. Não chega a um copo de leite por porção, mas comparado a outras pastas vegetais, se destaca. O mesmo vale para o{' '}
-            <a href="/blog/alimentos-ricos-em-proteinas">perfil de proteína</a>
+            <a href="/pt/blog/alimentos-ricos-em-proteinas">perfil de proteína</a>
             {' '}— não é alto como ovos ou frango, mas para uma pasta, 5g por colher de sopa é bom.
           </p>
           <p>
@@ -349,7 +349,7 @@ export default function OQueETahine({ params }) {
           <h3>Online</h3>
           <p>
             O maior volume de opções e marcas. Compare sempre o preço por grama — embalagens de 200g a 500g têm diferença significativa no custo por uso. O frete pode inviabilizar compra pequena, então vale combinar com outros itens da{' '}
-            <a href="/blog/lista-de-compras-mercado">lista de compras</a>
+            <a href="/pt/blog/lista-de-compras-mercado">lista de compras</a>
             {' '}numa compra maior.
           </p>
 
@@ -476,7 +476,7 @@ export default function OQueETahine({ params }) {
             <span className="brand-name">Mise</span>
           </a>
           <span className="footer-copy">© 2026 Mise</span>
-          <a href="/blog" className="footer-link">Blog</a>
+          <a href="/pt/blog" className="footer-link">Blog</a>
         </div>
       </footer>
     </>

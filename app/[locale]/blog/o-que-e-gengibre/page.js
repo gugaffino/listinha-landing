@@ -157,7 +157,7 @@ export default function OQueEGengibre({ params }) {
           <ol className="breadcrumb-nav">
             <li><a href="/">Home</a></li>
             <li aria-hidden="true" className="breadcrumb-sep">/</li>
-            <li><a href="/blog">Blog</a></li>
+            <li><a href="/pt/blog">Blog</a></li>
             <li aria-hidden="true" className="breadcrumb-sep">/</li>
             <li className="breadcrumb-current" aria-current="page">O que é gengibre</li>
           </ol>
@@ -171,7 +171,7 @@ export default function OQueEGengibre({ params }) {
             <span className="blog-meta-sep">·</span>
             <span className="blog-read">8 min de leitura</span>
             <span className="blog-meta-sep">·</span>
-            <a href="/blog" className="blog-meta-link">Blog</a>
+            <a href="/pt/blog" className="blog-meta-link">Blog</a>
           </div>
 
           <h1 className="blog-h1">
@@ -306,7 +306,7 @@ export default function OQueEGengibre({ params }) {
           <h3>Em chás e bebidas</h3>
           <p>
             O uso mais imediato. Uma fatia de 2 cm de gengibre fresco em 300 ml de água quente já faz um chá funcional. Com limão e mel é o clássico de quando você está resfriado — e funciona. Para latte dourado, combina gengibre em pó com{' '}
-            <a href="/blog/o-que-e-curcuma">cúrcuma</a>{' '}
+            <a href="/pt/blog/o-que-e-curcuma">cúrcuma</a>{' '}
             e pimenta preta em leite vegetal quente.
           </p>
 
@@ -381,7 +381,7 @@ export default function OQueEGengibre({ params }) {
           </p>
           <p>
             Para quem quer estruturar melhor a despensa, gengibre entra junto com alho, cebola, azeite, vinagre e os temperos secos básicos. É a base que faz qualquer refeição de segunda-feira funcionar sem precisar pensar muito. Para montar uma{' '}
-            <a href="/blog/lista-basica-de-compras">lista básica de compras</a>{' '}
+            <a href="/pt/blog/lista-basica-de-compras">lista básica de compras</a>{' '}
             que funcione de verdade, esses ingredientes de base são o primeiro passo.
           </p>
           <p>
@@ -425,7 +425,7 @@ export default function OQueEGengibre({ params }) {
             <li className="faq-item">
               <p className="faq-q">Gengibre e cúrcuma combinam juntos?</p>
               <p className="faq-a">
-                Sim — é uma das combinações mais clássicas da culinária asiática. Os sabores são complementares: gengibre é picante e cítrico, <a href="/blog/o-que-e-curcuma">cúrcuma</a> é terrosa e levemente amarga. Funcionam juntos em chás, caldos e marinadas. No latte dourado — gengibre, cúrcuma, pimenta preta e leite vegetal — a combinação é o prato.
+                Sim — é uma das combinações mais clássicas da culinária asiática. Os sabores são complementares: gengibre é picante e cítrico, <a href="/pt/blog/o-que-e-curcuma">cúrcuma</a> é terrosa e levemente amarga. Funcionam juntos em chás, caldos e marinadas. No latte dourado — gengibre, cúrcuma, pimenta preta e leite vegetal — a combinação é o prato.
               </p>
             </li>
           </ul>
@@ -489,7 +489,7 @@ export default function OQueEGengibre({ params }) {
             <span className="brand-name">Mise</span>
           </a>
           <span className="footer-copy">© 2026 Mise</span>
-          <a href="/blog" className="footer-link">Blog</a>
+          <a href="/pt/blog" className="footer-link">Blog</a>
         </div>
       </footer>
     </>

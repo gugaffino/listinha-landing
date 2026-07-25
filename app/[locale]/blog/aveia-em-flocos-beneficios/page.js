@@ -157,7 +157,7 @@ export default function AveiaEmFlocosPage({ params }) {
           <ol className="breadcrumb-nav">
             <li><a href="/">Home</a></li>
             <li aria-hidden="true" className="breadcrumb-sep">/</li>
-            <li><a href="/blog">Blog</a></li>
+            <li><a href="/pt/blog">Blog</a></li>
             <li aria-hidden="true" className="breadcrumb-sep">/</li>
             <li className="breadcrumb-current" aria-current="page">Aveia em flocos: benefícios</li>
           </ol>
@@ -171,7 +171,7 @@ export default function AveiaEmFlocosPage({ params }) {
             <span className="blog-meta-sep">·</span>
             <span className="blog-read">8 min de leitura</span>
             <span className="blog-meta-sep">·</span>
-            <a href="/blog" className="blog-meta-link">Blog</a>
+            <a href="/pt/blog" className="blog-meta-link">Blog</a>
           </div>
 
           <h1 className="blog-h1">
@@ -286,7 +286,7 @@ export default function AveiaEmFlocosPage({ params }) {
           <h3>Pressão arterial e outros ativos</h3>
           <p>
             O consumo regular de aveia está associado a pequenas reduções na pressão sistólica. Além da betaglucana, o grão tem avenantramidas — antioxidantes exclusivos da aveia com ação anti-inflamatória. Tem também magnésio, ferro, zinco e vitaminas do complexo B. Aveia é um dos{' '}
-            <a href="/blog/alimentos-ricos-em-magnesio">alimentos ricos em magnésio</a>{' '}
+            <a href="/pt/blog/alimentos-ricos-em-magnesio">alimentos ricos em magnésio</a>{' '}
             que você consegue comprar em qualquer mercado por poucos reais.
           </p>
 
@@ -349,7 +349,7 @@ export default function AveiaEmFlocosPage({ params }) {
           <h3>Granola caseira</h3>
           <p>
             Aveia flocos misturada com mel, azeite, nozes e coco ralado, espalhada em assadeira e assada por 20 minutos a 180°C. O resultado é muito melhor do que granola de caixinha — e você controla o açúcar. Se quiser o passo a passo completo, tem o guia de{' '}
-            <a href="/blog/o-que-e-granola">granola caseira</a>{' '}
+            <a href="/pt/blog/o-que-e-granola">granola caseira</a>{' '}
             com proporções e variações.
           </p>
 
@@ -397,17 +397,17 @@ export default function AveiaEmFlocosPage({ params }) {
           </p>
           <p>
             O único problema é que você só percebe que acabou no momento em que vai usar. Segunda de manhã, sem aveia pra fazer overnight oats. Aveia deveria ser item fixo na lista — daqueles que você repõe antes de acabar. A{' '}
-            <a href="/blog/lista-de-compras-saudavel">lista de compras saudável</a>{' '}
+            <a href="/pt/blog/lista-de-compras-saudavel">lista de compras saudável</a>{' '}
             tem outros itens que funcionam da mesma forma: presença discreta na despensa, uso frequente, consequência grande quando falta.
           </p>
           <p>
             Para guardar bem: aveia em flocos em pote fechado, fora da geladeira, dura até 12 meses. Depois de aberta, verifique se não tem cheiro rançoso — sinal de oxidação. Se quiser organizar os cereais e grãos de casa de forma mais sistemática, o guia de{' '}
-            <a href="/blog/como-organizar-a-despensa">como organizar a despensa</a>{' '}
+            <a href="/pt/blog/como-organizar-a-despensa">como organizar a despensa</a>{' '}
             cobre exatamente isso.
           </p>
           <p>
             Junto com outros grãos funcionais como{' '}
-            <a href="/blog/quinoa-para-que-serve">quinoa</a>
+            <a href="/pt/blog/quinoa-para-que-serve">quinoa</a>
             , aveia compõe o estoque básico de uma cozinha que funciona na semana. A diferença é que aveia tem mais usos no café da manhã — e custa muito menos por kilo.
           </p>
 
@@ -511,7 +511,7 @@ export default function AveiaEmFlocosPage({ params }) {
             <span className="brand-name">Mise</span>
           </a>
           <span className="footer-copy">© 2026 Mise</span>
-          <a href="/blog" className="footer-link">Blog</a>
+          <a href="/pt/blog" className="footer-link">Blog</a>
         </div>
       </footer>
     </>

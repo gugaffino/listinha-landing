@@ -157,7 +157,7 @@ export default function FeijaoPreto({ params }) {
           <ol className="breadcrumb-nav">
             <li><a href="/">Home</a></li>
             <li aria-hidden="true" className="breadcrumb-sep">/</li>
-            <li><a href="/blog">Blog</a></li>
+            <li><a href="/pt/blog">Blog</a></li>
             <li aria-hidden="true" className="breadcrumb-sep">/</li>
             <li className="breadcrumb-current" aria-current="page">Feijão preto: benefícios</li>
           </ol>
@@ -171,7 +171,7 @@ export default function FeijaoPreto({ params }) {
             <span className="blog-meta-sep">·</span>
             <span className="blog-read">8 min de leitura</span>
             <span className="blog-meta-sep">·</span>
-            <a href="/blog" className="blog-meta-link">Blog</a>
+            <a href="/pt/blog" className="blog-meta-link">Blog</a>
           </div>
 
           <h1 className="blog-h1">
@@ -309,7 +309,7 @@ export default function FeijaoPreto({ params }) {
             Cerca de 8g por 100g cozido. Numa porção de 200g, são 16g de proteína.
             Não é frango, mas é muito mais do que a maioria das pessoas imagina.
             Quem busca{' '}
-            <a href="/blog/alimentos-ricos-em-proteinas">alimentos ricos em proteína</a>{' '}
+            <a href="/pt/blog/alimentos-ricos-em-proteinas">alimentos ricos em proteína</a>{' '}
             geralmente ignora o feijão — e paga mais caro por opções piores.
           </p>
 
@@ -532,7 +532,7 @@ export default function FeijaoPreto({ params }) {
             </h2>
             <p>
               O Mise conecta despensa, receitas e{' '}
-              <a href="/blog/lista-basica-de-compras" className="cta-link">lista de compras</a>{' '}
+              <a href="/pt/blog/lista-basica-de-compras" className="cta-link">lista de compras</a>{' '}
               num só lugar. Você compra o que vai usar — e nunca descobre que acabou no meio da semana.
             </p>
             <div className="actions">
@@ -569,7 +569,7 @@ export default function FeijaoPreto({ params }) {
             <span className="brand-name">Mise</span>
           </a>
           <span className="footer-copy">© 2026 Mise</span>
-          <a href="/blog" className="footer-link">Blog</a>
+          <a href="/pt/blog" className="footer-link">Blog</a>
         </div>
       </footer>
     </>

@@ -165,7 +165,7 @@ export default function OQueEAlho({ params }) {
           <ol className="breadcrumb-nav">
             <li><a href="/">Home</a></li>
             <li aria-hidden="true" className="breadcrumb-sep">/</li>
-            <li><a href="/blog">Blog</a></li>
+            <li><a href="/pt/blog">Blog</a></li>
             <li aria-hidden="true" className="breadcrumb-sep">/</li>
             <li className="breadcrumb-current" aria-current="page">O que é alho</li>
           </ol>
@@ -179,7 +179,7 @@ export default function OQueEAlho({ params }) {
             <span className="blog-meta-sep">·</span>
             <span className="blog-read">8 min de leitura</span>
             <span className="blog-meta-sep">·</span>
-            <a href="/blog" className="blog-meta-link">Blog</a>
+            <a href="/pt/blog" className="blog-meta-link">Blog</a>
           </div>
 
           <h1 className="blog-h1">
@@ -495,7 +495,7 @@ export default function OQueEAlho({ params }) {
           </p>
           <p>
             O alho está na{' '}
-            <a href="/blog/lista-basica-de-compras">lista básica de compras</a>{' '}
+            <a href="/pt/blog/lista-basica-de-compras">lista básica de compras</a>{' '}
             de qualquer cozinha. Junto com cebola, é o ingrediente que aparece em quase
             tudo que você vai cozinhar na semana. Falta um, a receita muda. Faltam os
             dois, você improvisa — e improviso nem sempre funciona.
@@ -639,7 +639,7 @@ export default function OQueEAlho({ params }) {
             <span className="brand-name">Mise</span>
           </a>
           <span className="footer-copy">© 2026 Mise</span>
-          <a href="/blog" className="footer-link">Blog</a>
+          <a href="/pt/blog" className="footer-link">Blog</a>
         </div>
       </footer>
     </>

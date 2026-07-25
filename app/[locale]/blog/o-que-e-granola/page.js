@@ -157,7 +157,7 @@ export default function OQueEGranola({ params }) {
           <ol className="breadcrumb-nav">
             <li><a href="/">Home</a></li>
             <li aria-hidden="true" className="breadcrumb-sep">/</li>
-            <li><a href="/blog">Blog</a></li>
+            <li><a href="/pt/blog">Blog</a></li>
             <li aria-hidden="true" className="breadcrumb-sep">/</li>
             <li className="breadcrumb-current" aria-current="page">O que é granola</li>
           </ol>
@@ -171,7 +171,7 @@ export default function OQueEGranola({ params }) {
             <span className="blog-meta-sep">·</span>
             <span className="blog-read">6 min de leitura</span>
             <span className="blog-meta-sep">·</span>
-            <a href="/blog" className="blog-meta-link">Blog</a>
+            <a href="/pt/blog" className="blog-meta-link">Blog</a>
           </div>
 
           <h1 className="blog-h1">
@@ -298,7 +298,7 @@ export default function OQueEGranola({ params }) {
             A contribuição real da granola é a fibra — especialmente da aveia, que tem beta-glucana, uma fibra solúvel
             associada à saciedade e ao controle do colesterol.
             As oleaginosas entram com gordura boa e micronutrientes como{' '}
-            <a href="/blog/alimentos-ricos-em-magnesio">magnésio</a>, zinco e vitamina E.
+            <a href="/pt/blog/alimentos-ricos-em-magnesio">magnésio</a>, zinco e vitamina E.
             As frutas secas adicionam antioxidantes e, também, açúcar — é o balanço que importa.
           </p>
           <p>
@@ -361,7 +361,7 @@ export default function OQueEGranola({ params }) {
             Controle total: tipo de açúcar, quantidade de oleaginosas, sem conservantes.
             O trabalho é baixo — 20 a 25 minutos no forno a 160°C, mexendo de vez em quando.
             É uma boa opção para encaixar no{' '}
-            <a href="/blog/cardapio-semanal-simples-caseiro">cardápio semanal</a>{' '}
+            <a href="/pt/blog/cardapio-semanal-simples-caseiro">cardápio semanal</a>{' '}
             do fim de semana.
           </p>
 
@@ -452,7 +452,7 @@ export default function OQueEGranola({ params }) {
           <p>
             Quando acabar — o que acontece antes do esperado — é só adicionar na{' '}
             <a href="/funcionalidades/lista-de-compras">lista de compras</a> antes de ir ao mercado.
-            Ou na sua <a href="/blog/lista-basica-de-compras">lista básica de supermercado</a> de uma vez, como item fixo.
+            Ou na sua <a href="/pt/blog/lista-basica-de-compras">lista básica de supermercado</a> de uma vez, como item fixo.
           </p>
           <p>
             Granola boa começa no rótulo, não no nome do produto.
@@ -560,7 +560,7 @@ export default function OQueEGranola({ params }) {
             <span className="brand-name">Mise</span>
           </a>
           <span className="footer-copy">© 2026 Mise</span>
-          <a href="/blog" className="footer-link">Blog</a>
+          <a href="/pt/blog" className="footer-link">Blog</a>
         </div>
       </footer>
     </>

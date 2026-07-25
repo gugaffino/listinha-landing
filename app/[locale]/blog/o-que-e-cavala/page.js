@@ -157,7 +157,7 @@ export default function OQueECavala({ params }) {
           <ol className="breadcrumb-nav">
             <li><a href="/">Home</a></li>
             <li aria-hidden="true" className="breadcrumb-sep">/</li>
-            <li><a href="/blog">Blog</a></li>
+            <li><a href="/pt/blog">Blog</a></li>
             <li aria-hidden="true" className="breadcrumb-sep">/</li>
             <li className="breadcrumb-current" aria-current="page">O que é cavala</li>
           </ol>
@@ -171,7 +171,7 @@ export default function OQueECavala({ params }) {
             <span className="blog-meta-sep">·</span>
             <span className="blog-read">5 min de leitura</span>
             <span className="blog-meta-sep">·</span>
-            <a href="/blog" className="blog-meta-link">Blog</a>
+            <a href="/pt/blog" className="blog-meta-link">Blog</a>
           </div>
 
           <h1 className="blog-h1">
@@ -288,7 +288,7 @@ export default function OQueECavala({ params }) {
           </p>
           <p>
             Defumada aparece em delicatessens e lojas especializadas. Boa para servir em tostadas, com{' '}
-            <a href="/blog/o-que-e-cream-cheese">cream cheese</a>
+            <a href="/pt/blog/o-que-e-cream-cheese">cream cheese</a>
             {' '}ou em receitas de patê. É um produto de uso pontual, não de despensa semanal.
           </p>
 
@@ -337,7 +337,7 @@ export default function OQueECavala({ params }) {
           </p>
           <p>
             Cavala em lata é um item que não devia faltar em nenhuma{' '}
-            <a href="/blog/lista-basica-de-compras">lista básica de compras</a>
+            <a href="/pt/blog/lista-basica-de-compras">lista básica de compras</a>
             {' '}— proteína, ômega-3 e prateleira, tudo junto. Simples assim.
           </p>
 
@@ -440,7 +440,7 @@ export default function OQueECavala({ params }) {
             <span className="brand-name">Mise</span>
           </a>
           <span className="footer-copy">© 2026 Mise</span>
-          <a href="/blog" className="footer-link">Blog</a>
+          <a href="/pt/blog" className="footer-link">Blog</a>
         </div>
       </footer>
     </>

@@ -157,7 +157,7 @@ export default function OQueEPaoBranco({ params }) {
           <ol className="breadcrumb-nav">
             <li><a href="/">Home</a></li>
             <li aria-hidden="true" className="breadcrumb-sep">/</li>
-            <li><a href="/blog">Blog</a></li>
+            <li><a href="/pt/blog">Blog</a></li>
             <li aria-hidden="true" className="breadcrumb-sep">/</li>
             <li className="breadcrumb-current" aria-current="page">O que é pão branco</li>
           </ol>
@@ -171,7 +171,7 @@ export default function OQueEPaoBranco({ params }) {
             <span className="blog-meta-sep">·</span>
             <span className="blog-read">7 min de leitura</span>
             <span className="blog-meta-sep">·</span>
-            <a href="/blog" className="blog-meta-link">Blog</a>
+            <a href="/pt/blog" className="blog-meta-link">Blog</a>
           </div>
 
           <h1 className="blog-h1">
@@ -325,7 +325,7 @@ export default function OQueEPaoBranco({ params }) {
           </p>
           <p>
             Para quem segue uma{' '}
-            <a href="/blog/dieta-sem-acucar">dieta com controle de açúcar</a>
+            <a href="/pt/blog/dieta-sem-acucar">dieta com controle de açúcar</a>
             , o índice glicêmico do pão branco é um ponto de atenção — mas não necessariamente um motivo pra cortar completamente. Depende da quantidade e do que você come junto.
           </p>
 
@@ -346,7 +346,7 @@ export default function OQueEPaoBranco({ params }) {
 
           <p>
             O rótulo do pão é onde a maioria das confusões acontece. Quatro pontos pra checar antes de colocar na{' '}
-            <a href="/blog/lista-basica-de-compras">lista de compras</a>
+            <a href="/pt/blog/lista-basica-de-compras">lista de compras</a>
             :
           </p>
 
@@ -412,7 +412,7 @@ export default function OQueEPaoBranco({ params }) {
           </p>
           <p>
             Pão branco tem lugar na{' '}
-            <a href="/blog/lista-basica-de-compras">lista básica de compras</a>
+            <a href="/pt/blog/lista-basica-de-compras">lista básica de compras</a>
             {' '}de muita gente. Não é erro nem concessão — é a realidade de como a maioria dos brasileiros come. O que muda com a informação é comprar sabendo o que está escolhendo.
           </p>
 
@@ -521,7 +521,7 @@ export default function OQueEPaoBranco({ params }) {
             <span className="brand-name">Mise</span>
           </a>
           <span className="footer-copy">© 2026 Mise</span>
-          <a href="/blog" className="footer-link">Blog</a>
+          <a href="/pt/blog" className="footer-link">Blog</a>
         </div>
       </footer>
     </>

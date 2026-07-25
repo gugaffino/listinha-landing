@@ -85,8 +85,9 @@ o ranking orgânico atual — 100% conteúdo PT-BR. Deixar a negociação de
 arriscado: um crawler sem sinal claro cairia no default `en`, arriscando o
 Google indexar/servir conteúdo errado numa URL com histórico PT.
 
-Por isso, essas URLs legadas recebem **redirect 301 determinístico direto
-para `/pt/...`**, configurado em `redirects()` no `next.config.js` — não
+Por isso, essas URLs legadas recebem **redirect permanente (308, via
+`permanent: true`) determinístico direto para `/pt/...`**, configurado em
+`redirects()` no `next.config.js` — não
 passa pela negociação de idioma do middleware. O fallback `en` da
 negociação só vale para tráfego em caminhos sem histórico (ex.: alguém
 acessando `/en/...` ou `/es/...` diretamente, ou uma página nova futura sem
@@ -172,12 +173,12 @@ idioma correspondente.
 Sem suite automatizada de i18n neste projeto ainda. Verificação manual
 depois de implementado:
 
-1. Trocar entre os 3 idiomas no seletor do header em cada página no escopo
+1. Trocar entre os 3 idiomas no seletor do footer em cada página no escopo
    (home, funcionalidades × 4, blog index) — conteúdo muda, URL atualiza
    com o prefixo certo, nenhum texto em branco ou chave crua aparecendo.
 2. Acessar as URLs antigas sem prefixo (`/`, `/blog/o-que-e-chia`,
-   `/funcionalidades/despensa`) e confirmar redirect 301 para a versão
-   `/pt/...` correspondente — não para `/en/...`.
+   `/funcionalidades/despensa`) e confirmar redirect permanente (308) para
+   a versão `/pt/...` correspondente — não para `/en/...`.
 3. Acessar `/en/blog` e `/es/blog` diretamente — confirmar empty state
    (nenhum post PT vazando misturado).
 4. `npm run build` limpo, checar `sitemap.xml` gerado tem as 3 variantes de

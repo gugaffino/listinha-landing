@@ -173,7 +173,7 @@ export default function OQueEStevia({ params }) {
           <ol className="breadcrumb-nav">
             <li><a href="/">Home</a></li>
             <li aria-hidden="true" className="breadcrumb-sep">/</li>
-            <li><a href="/blog">Blog</a></li>
+            <li><a href="/pt/blog">Blog</a></li>
             <li aria-hidden="true" className="breadcrumb-sep">/</li>
             <li className="breadcrumb-current" aria-current="page">O que é stevia</li>
           </ol>
@@ -187,7 +187,7 @@ export default function OQueEStevia({ params }) {
             <span className="blog-meta-sep">·</span>
             <span className="blog-read">8 min de leitura</span>
             <span className="blog-meta-sep">·</span>
-            <a href="/blog" className="blog-meta-link">Blog</a>
+            <a href="/pt/blog" className="blog-meta-link">Blog</a>
           </div>
 
           <h1 className="blog-h1">
@@ -328,7 +328,7 @@ export default function OQueEStevia({ params }) {
           </p>
           <p>
             Quem quer{' '}
-            <a href="/blog/dieta-sem-acucar">reduzir açúcar na alimentação</a>{' '}
+            <a href="/pt/blog/dieta-sem-acucar">reduzir açúcar na alimentação</a>{' '}
             encontra na stevia uma ferramenta útil — mas não uma troca idêntica em tudo.
           </p>
 
@@ -590,7 +590,7 @@ export default function OQueEStevia({ params }) {
             <span className="brand-name">Mise</span>
           </a>
           <span className="footer-copy">© 2026 Mise</span>
-          <a href="/blog" className="footer-link">Blog</a>
+          <a href="/pt/blog" className="footer-link">Blog</a>
         </div>
       </footer>
     </>

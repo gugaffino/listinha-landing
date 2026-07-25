@@ -157,7 +157,7 @@ export default function OleoDeLinhaca({ params }) {
           <ol className="breadcrumb-nav">
             <li><a href="/">Home</a></li>
             <li aria-hidden="true" className="breadcrumb-sep">/</li>
-            <li><a href="/blog">Blog</a></li>
+            <li><a href="/pt/blog">Blog</a></li>
             <li aria-hidden="true" className="breadcrumb-sep">/</li>
             <li className="breadcrumb-current" aria-current="page">Óleo de linhaça</li>
           </ol>
@@ -171,7 +171,7 @@ export default function OleoDeLinhaca({ params }) {
             <span className="blog-meta-sep">·</span>
             <span className="blog-read">8 min de leitura</span>
             <span className="blog-meta-sep">·</span>
-            <a href="/blog" className="blog-meta-link">Blog</a>
+            <a href="/pt/blog" className="blog-meta-link">Blog</a>
           </div>
 
           <h1 className="blog-h1">
@@ -372,7 +372,7 @@ export default function OleoDeLinhaca({ params }) {
           </p>
           <p>
             Tem um uso definido antes da compra? Coloca na{' '}
-            <a href="/blog/lista-basica-de-compras">lista de compras</a>.
+            <a href="/pt/blog/lista-basica-de-compras">lista de compras</a>.
             Não tem? Começa pela semente moída — é mais fácil de incluir no dia a dia, mais difícil de desperdiçar e você aprende se o hábito fica antes de investir no óleo.
           </p>
           <p>
@@ -481,7 +481,7 @@ export default function OleoDeLinhaca({ params }) {
             <span className="brand-name">Mise</span>
           </a>
           <span className="footer-copy">© 2026 Mise</span>
-          <a href="/blog" className="footer-link">Blog</a>
+          <a href="/pt/blog" className="footer-link">Blog</a>
         </div>
       </footer>
     </>

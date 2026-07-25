@@ -157,7 +157,7 @@ export default function BeneficiosDoCuscuz({ params }) {
           <ol className="breadcrumb-nav">
             <li><a href="/">Home</a></li>
             <li aria-hidden="true" className="breadcrumb-sep">/</li>
-            <li><a href="/blog">Blog</a></li>
+            <li><a href="/pt/blog">Blog</a></li>
             <li aria-hidden="true" className="breadcrumb-sep">/</li>
             <li className="breadcrumb-current" aria-current="page">Benefícios do cuscuz</li>
           </ol>
@@ -171,7 +171,7 @@ export default function BeneficiosDoCuscuz({ params }) {
             <span className="blog-meta-sep">·</span>
             <span className="blog-read">6 min de leitura</span>
             <span className="blog-meta-sep">·</span>
-            <a href="/blog" className="blog-meta-link">Blog</a>
+            <a href="/pt/blog" className="blog-meta-link">Blog</a>
           </div>
 
           <h1 className="blog-h1">
@@ -343,7 +343,7 @@ export default function BeneficiosDoCuscuz({ params }) {
             No almoço: substitui o arroz em dias que você quer variar.
             Funciona bem com feijão, proteína grelhada e salada — a mesma lógica do prato tradicional brasileiro.
             O{' '}
-            <a href="/blog/feijao-preto-beneficios">feijão preto</a>
+            <a href="/pt/blog/feijao-preto-beneficios">feijão preto</a>
             {' '}combina especialmente bem, tanto em sabor quanto em perfil nutricional complementar.
           </p>
           <p>
@@ -353,9 +353,9 @@ export default function BeneficiosDoCuscuz({ params }) {
           </p>
           <p>
             Para organizar os itens fixos da semana e não chegar ao mercado sem saber o que falta, ver a{' '}
-            <a href="/blog/lista-de-compras-mercado">lista de mercado com os básicos</a>
+            <a href="/pt/blog/lista-de-compras-mercado">lista de mercado com os básicos</a>
             {' '}e a{' '}
-            <a href="/blog/lista-basica-de-compras">lista básica de compras</a>
+            <a href="/pt/blog/lista-basica-de-compras">lista básica de compras</a>
             {' '}com mais de 80 itens organizados por categoria.
           </p>
 
@@ -369,7 +369,7 @@ export default function BeneficiosDoCuscuz({ params }) {
                 É principalmente um carboidrato. Em 100g de cuscuz de milho cozido há cerca de 16g de carboidratos e 1,8g de proteína.
                 A proteína existe, mas em quantidade pequena.
                 Para aumentar o valor proteico da refeição, combine com ovo, queijo branco ou{' '}
-                <a href="/blog/alimentos-ricos-em-proteinas">alimentos ricos em proteína</a>.
+                <a href="/pt/blog/alimentos-ricos-em-proteinas">alimentos ricos em proteína</a>.
               </p>
             </li>
             <li className="faq-item">
@@ -472,7 +472,7 @@ export default function BeneficiosDoCuscuz({ params }) {
             <span className="brand-name">Mise</span>
           </a>
           <span className="footer-copy">© 2026 Mise</span>
-          <a href="/blog" className="footer-link">Blog</a>
+          <a href="/pt/blog" className="footer-link">Blog</a>
         </div>
       </footer>
     </>

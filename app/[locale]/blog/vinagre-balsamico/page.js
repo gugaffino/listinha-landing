@@ -166,7 +166,7 @@ export default function VinagereBalsamico({ params }) {
           <ol className="breadcrumb-nav">
             <li><a href="/">Home</a></li>
             <li aria-hidden="true" className="breadcrumb-sep">/</li>
-            <li><a href="/blog">Blog</a></li>
+            <li><a href="/pt/blog">Blog</a></li>
             <li aria-hidden="true" className="breadcrumb-sep">/</li>
             <li className="breadcrumb-current" aria-current="page">Vinagre balsâmico</li>
           </ol>
@@ -180,7 +180,7 @@ export default function VinagereBalsamico({ params }) {
             <span className="blog-meta-sep">·</span>
             <span className="blog-read">7 min de leitura</span>
             <span className="blog-meta-sep">·</span>
-            <a href="/blog" className="blog-meta-link">Blog</a>
+            <a href="/pt/blog" className="blog-meta-link">Blog</a>
           </div>
           <h1 className="blog-h1">Vinagre balsâmico na cozinha: o que é, para que serve e o que vale comprar</h1>
           <p className="blog-desc">Não é vinagre de vinho com corante. Entenda o que diferencia o balsâmico dos outros vinagres, como usar em saladas, carnes e morangos — e o que olhar no rótulo antes de comprar.</p>
@@ -262,7 +262,7 @@ export default function VinagereBalsamico({ params }) {
           <p>As combinações que funcionam sempre na cozinha doméstica:</p>
 
           <ul className="item-list">
-            <li><strong>Salada verde</strong> — azeite extravirgem, sal, pimenta e balsâmico. Com folhas amargas como rúcula ou radicchio, melhor ainda — o dulçor do balsâmico equilibra o amargor. Saiba <a href="/blog/azeite-de-oliva">como escolher o azeite certo</a> para essa combinação funcionar de verdade.</li>
+            <li><strong>Salada verde</strong> — azeite extravirgem, sal, pimenta e balsâmico. Com folhas amargas como rúcula ou radicchio, melhor ainda — o dulçor do balsâmico equilibra o amargor. Saiba <a href="/pt/blog/azeite-de-oliva">como escolher o azeite certo</a> para essa combinação funcionar de verdade.</li>
             <li><strong>Caprese</strong> — tomate fatiado, muçarela fresca, manjericão, sal grosso, azeite e balsâmico. Com um tomate bom, esse é um dos pratos mais simples e satisfatórios que existem.</li>
             <li><strong>Carnes</strong> — frango grelhado, porco, carne bovina. Uma colher de chá sobre o filé já pronto, fora do fogo. O calor residual da carne aquece o balsâmico sem destruí-lo.</li>
             <li><strong>Morangos</strong> — parece estranho. Funciona muito bem. Morango fatiado, uma pitada de açúcar e umas gotas de balsâmico. Descansa 15 minutos. O suco que solta misturado ao balsâmico vira uma calda natural.</li>
@@ -302,9 +302,9 @@ export default function VinagereBalsamico({ params }) {
 
           <p>Marcas que aparecem no Brasil com qualidade consistente: Borges, Marvini, Mattarello, Ponti. Preço médio para um IGP decente: R$ 15 a R$ 35 pelo frasco de 250 ml.</p>
 
-          <p>Guardar é simples — tampado, longe da luz direta, em temperatura ambiente. Não precisa ir à geladeira. A acidez elevada funciona como conservante natural. Se você tiver dúvida sobre onde guardar condimentos como esse, <a href="/blog/como-organizar-a-despensa">temos um guia completo sobre como organizar a despensa</a>.</p>
+          <p>Guardar é simples — tampado, longe da luz direta, em temperatura ambiente. Não precisa ir à geladeira. A acidez elevada funciona como conservante natural. Se você tiver dúvida sobre onde guardar condimentos como esse, <a href="/pt/blog/como-organizar-a-despensa">temos um guia completo sobre como organizar a despensa</a>.</p>
 
-          <p>Assim como as <a href="/blog/alcaparras">alcaparras</a> — outro condimento mediterrâneo que assusta na primeira compra e vira imprescindível depois —, o balsâmico é daqueles ingredientes que parecem demais para o cotidiano até você parar de ter medo dele.</p>
+          <p>Assim como as <a href="/pt/blog/alcaparras">alcaparras</a> — outro condimento mediterrâneo que assusta na primeira compra e vira imprescindível depois —, o balsâmico é daqueles ingredientes que parecem demais para o cotidiano até você parar de ter medo dele.</p>
 
           <h2 id="faq">Perguntas frequentes sobre vinagre balsâmico</h2>
           <ul className="faq-list">
@@ -383,7 +383,7 @@ export default function VinagereBalsamico({ params }) {
             <span className="brand-name">Mise</span>
           </a>
           <span className="footer-copy">© 2026 Mise</span>
-          <a href="/blog" className="footer-link">Blog</a>
+          <a href="/pt/blog" className="footer-link">Blog</a>
         </div>
       </footer>
     </>

@@ -165,7 +165,7 @@ export default function OQueEMirtilo({ params }) {
           <ol className="breadcrumb-nav">
             <li><a href="/">Home</a></li>
             <li aria-hidden="true" className="breadcrumb-sep">/</li>
-            <li><a href="/blog">Blog</a></li>
+            <li><a href="/pt/blog">Blog</a></li>
             <li aria-hidden="true" className="breadcrumb-sep">/</li>
             <li className="breadcrumb-current" aria-current="page">O que é mirtilo</li>
           </ol>
@@ -179,7 +179,7 @@ export default function OQueEMirtilo({ params }) {
             <span className="blog-meta-sep">·</span>
             <span className="blog-read">8 min de leitura</span>
             <span className="blog-meta-sep">·</span>
-            <a href="/blog" className="blog-meta-link">Blog</a>
+            <a href="/pt/blog" className="blog-meta-link">Blog</a>
           </div>
 
           <h1 className="blog-h1">
@@ -289,7 +289,7 @@ export default function OQueEMirtilo({ params }) {
           </p>
           <p>
             Para quem já inclui{' '}
-            <a href="/blog/alimentos-ricos-em-magnesio">alimentos ricos em magnésio</a>
+            <a href="/pt/blog/alimentos-ricos-em-magnesio">alimentos ricos em magnésio</a>
             {' '}na alimentação, como castanhas e sementes, o mirtilo complementa com antocianinas que essas fontes não têm. São compostos diferentes com efeitos complementares.
           </p>
 
@@ -411,7 +411,7 @@ export default function OQueEMirtilo({ params }) {
           </p>
           <p>
             Uma alternativa para quem quer o mesmo perfil antioxidante gastando menos: amora, jabuticaba e açaí têm concentrações de antocianinas comparáveis. A jabuticaba é brasileira, tem safra abundante e custa menos. Antes de colocar mirtilo na{' '}
-            <a href="/blog/lista-basica-de-compras">lista de compras</a>
+            <a href="/pt/blog/lista-basica-de-compras">lista de compras</a>
             {' '}toda semana, vale ver se já tem outra fruta roxa que você come com regularidade.
           </p>
           <p>
@@ -525,7 +525,7 @@ export default function OQueEMirtilo({ params }) {
             <span className="brand-name">Mise</span>
           </a>
           <span className="footer-copy">© 2026 Mise</span>
-          <a href="/blog" className="footer-link">Blog</a>
+          <a href="/pt/blog" className="footer-link">Blog</a>
         </div>
       </footer>
     </>

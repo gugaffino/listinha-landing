@@ -157,7 +157,7 @@ export default function AzeiteDeOliva({ params }) {
           <ol className="breadcrumb-nav">
             <li><a href="/">Home</a></li>
             <li aria-hidden="true" className="breadcrumb-sep">/</li>
-            <li><a href="/blog">Blog</a></li>
+            <li><a href="/pt/blog">Blog</a></li>
             <li aria-hidden="true" className="breadcrumb-sep">/</li>
             <li className="breadcrumb-current" aria-current="page">Azeite de oliva</li>
           </ol>
@@ -171,7 +171,7 @@ export default function AzeiteDeOliva({ params }) {
             <span className="blog-meta-sep">·</span>
             <span className="blog-read">8 min de leitura</span>
             <span className="blog-meta-sep">·</span>
-            <a href="/blog" className="blog-meta-link">Blog</a>
+            <a href="/pt/blog" className="blog-meta-link">Blog</a>
           </div>
 
           <h1 className="blog-h1">
@@ -279,7 +279,7 @@ export default function AzeiteDeOliva({ params }) {
           </p>
           <p>
             Uma observação necessária: os benefícios vêm do consumo regular dentro de uma{' '}
-            <a href="/blog/cardapio-semanal-simples-caseiro">alimentação variada ao longo da semana</a>.
+            <a href="/pt/blog/cardapio-semanal-simples-caseiro">alimentação variada ao longo da semana</a>.
             Dois colheres de sopa por dia é o que os estudos associam a resultados. Não é o único alimento que importa — é um componente de um padrão alimentar mais amplo.
           </p>
 
@@ -339,7 +339,7 @@ export default function AzeiteDeOliva({ params }) {
           </p>
           <p>
             O único motivo real para não usar azeite extra virgem em fritura é financeiro: é caro para usar em volume. Para frituras frequentes,{' '}
-            <a href="/blog/oleo-de-canola">óleo de canola</a>{' '}
+            <a href="/pt/blog/oleo-de-canola">óleo de canola</a>{' '}
             ou um azeite refinado resolve a mesma função com muito menos custo. Guarde o extra virgem bom para o cru e a finalização.
           </p>
 
@@ -379,7 +379,7 @@ export default function AzeiteDeOliva({ params }) {
           </p>
           <p>
             Para quem está montando uma{' '}
-            <a href="/blog/lista-basica-de-compras">lista básica de compras</a>,
+            <a href="/pt/blog/lista-basica-de-compras">lista básica de compras</a>,
             {' '}o azeite extra virgem entra na categoria de itens que vale ter sempre — não como luxo, mas como base. Um frasco de 500 ml dura semanas se você usar com inteligência: extra virgem cru e para finalizar, virgem ou outro óleo para cozinhar em volume.
           </p>
           <p>
@@ -487,7 +487,7 @@ export default function AzeiteDeOliva({ params }) {
             <span className="brand-name">Mise</span>
           </a>
           <span className="footer-copy">© 2026 Mise</span>
-          <a href="/blog" className="footer-link">Blog</a>
+          <a href="/pt/blog" className="footer-link">Blog</a>
         </div>
       </footer>
     </>

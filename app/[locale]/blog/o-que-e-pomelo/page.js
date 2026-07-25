@@ -165,7 +165,7 @@ export default function OQueEPomelo({ params }) {
           <ol className="breadcrumb-nav">
             <li><a href="/">Home</a></li>
             <li aria-hidden="true" className="breadcrumb-sep">/</li>
-            <li><a href="/blog">Blog</a></li>
+            <li><a href="/pt/blog">Blog</a></li>
             <li aria-hidden="true" className="breadcrumb-sep">/</li>
             <li className="breadcrumb-current" aria-current="page">O que é pomelo</li>
           </ol>
@@ -179,7 +179,7 @@ export default function OQueEPomelo({ params }) {
             <span className="blog-meta-sep">·</span>
             <span className="blog-read">7 min de leitura</span>
             <span className="blog-meta-sep">·</span>
-            <a href="/blog" className="blog-meta-link">Blog</a>
+            <a href="/pt/blog" className="blog-meta-link">Blog</a>
           </div>
 
           <h1 className="blog-h1">
@@ -320,7 +320,7 @@ export default function OQueEPomelo({ params }) {
           </p>
           <p>
             Se você está montando um{' '}
-            <a href="/blog/cardapio-semanal-simples-caseiro">cardápio semanal</a>
+            <a href="/pt/blog/cardapio-semanal-simples-caseiro">cardápio semanal</a>
             {' '}e quer incluir mais frutas no café da manhã, pomelo na temporada é uma boa variação — diferente o suficiente pra não entediar, mas prático de preparar.
           </p>
 
@@ -378,7 +378,7 @@ export default function OQueEPomelo({ params }) {
           </p>
           <p>
             Não é item de{' '}
-            <a href="/blog/lista-basica-de-compras">lista básica de compras</a>
+            <a href="/pt/blog/lista-basica-de-compras">lista básica de compras</a>
             {' '}— mas quando estiver na temporada (maio a outubro) e o preço estiver justo, vale a tentativa. É uma das poucas frutas cítricas que ainda surpreende quem prova pela primeira vez.
           </p>
           <p>
@@ -492,7 +492,7 @@ export default function OQueEPomelo({ params }) {
             <span className="brand-name">Mise</span>
           </a>
           <span className="footer-copy">© 2026 Mise</span>
-          <a href="/blog" className="footer-link">Blog</a>
+          <a href="/pt/blog" className="footer-link">Blog</a>
         </div>
       </footer>
     </>

@@ -182,7 +182,7 @@ export default function OQueEAmendoaPage({ params }) {
               /
             </li>
             <li>
-              <a href="/blog">Blog</a>
+              <a href="/pt/blog">Blog</a>
             </li>
             <li aria-hidden="true" className="breadcrumb-sep">
               /
@@ -203,7 +203,7 @@ export default function OQueEAmendoaPage({ params }) {
             <span className="blog-meta-sep">·</span>
             <span className="blog-read">7 min de leitura</span>
             <span className="blog-meta-sep">·</span>
-            <a href="/blog" className="blog-meta-link">
+            <a href="/pt/blog" className="blog-meta-link">
               Blog
             </a>
           </div>
@@ -367,7 +367,7 @@ export default function OQueEAmendoaPage({ params }) {
           <p>
             <strong>Proteínas vegetais.</strong> Com 6g por porção, a amêndoa entra bem numa dieta
             que tenta reduzir carne. Se você quer explorar mais{' '}
-            <a href="/blog/alimentos-ricos-em-proteinas">alimentos ricos em proteína</a>, tem um
+            <a href="/pt/blog/alimentos-ricos-em-proteinas">alimentos ricos em proteína</a>, tem um
             guia completo no blog.
           </p>
           <p>
@@ -422,7 +422,7 @@ export default function OQueEAmendoaPage({ params }) {
           </p>
           <p>
             A amêndoa se parece com o{' '}
-            <a href="/blog/o-que-e-pistache">pistache</a> nesse ponto: são oleaginosas que rendem
+            <a href="/pt/blog/o-que-e-pistache">pistache</a> nesse ponto: são oleaginosas que rendem
             mais quando você cria o hábito do que quando come de vez em quando.
           </p>
 
@@ -639,7 +639,7 @@ export default function OQueEAmendoaPage({ params }) {
             <span className="brand-name">Mise</span>
           </a>
           <span className="footer-copy">© 2026 Mise</span>
-          <a href="/blog" className="footer-link">
+          <a href="/pt/blog" className="footer-link">
             Blog
           </a>
         </div>

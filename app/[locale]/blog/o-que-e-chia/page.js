@@ -157,7 +157,7 @@ export default function OQueEChia({ params }) {
           <ol className="breadcrumb-nav">
             <li><a href="/">Home</a></li>
             <li aria-hidden="true" className="breadcrumb-sep">/</li>
-            <li><a href="/blog">Blog</a></li>
+            <li><a href="/pt/blog">Blog</a></li>
             <li aria-hidden="true" className="breadcrumb-sep">/</li>
             <li className="breadcrumb-current" aria-current="page">O que é chia</li>
           </ol>
@@ -171,7 +171,7 @@ export default function OQueEChia({ params }) {
             <span className="blog-meta-sep">·</span>
             <span className="blog-read">8 min de leitura</span>
             <span className="blog-meta-sep">·</span>
-            <a href="/blog" className="blog-meta-link">Blog</a>
+            <a href="/pt/blog" className="blog-meta-link">Blog</a>
           </div>
 
           <h1 className="blog-h1">
@@ -306,7 +306,7 @@ export default function OQueEChia({ params }) {
             <strong>Linhaça:</strong> precisa ser moída para absorver os nutrientes — a casca da linhaça inteira passa pelo intestino quase sem ser digerida. Tem sabor levemente amendoado. Funciona melhor em pão, bolo e tempero de salada, onde a textura e o sabor contribuem.
           </p>
           <p>
-            Se você vai escolher uma só: chia é mais prática no cotidiano. Você polvilha, hidrata e vai embora. Sem moedor, sem preparação extra. Se você já usa linhaça e quer diversificar, as duas se complementam bem — e <a href="/blog/para-que-serve-oleo-de-linhaca">o óleo de linhaça</a> é outra forma de pegar o ômega-3 sem a textura de semente.
+            Se você vai escolher uma só: chia é mais prática no cotidiano. Você polvilha, hidrata e vai embora. Sem moedor, sem preparação extra. Se você já usa linhaça e quer diversificar, as duas se complementam bem — e <a href="/pt/blog/para-que-serve-oleo-de-linhaca">o óleo de linhaça</a> é outra forma de pegar o ômega-3 sem a textura de semente.
           </p>
           <p>
             Nutricionalmente, chia tem mais fibra e mais cálcio. Linhaça tem mais lignanas (compostos com ação estrogênica leve) e o sabor que adiciona algo à receita. A escolha é de conveniência, não de superioridade técnica.
@@ -438,7 +438,7 @@ export default function OQueEChia({ params }) {
           </a>
           <p className="footer-copy">© 2026 Mise. Feito com cuidado no Brasil.</p>
           <nav className="footer-links" aria-label="Links do rodapé">
-            <a href="/blog" className="footer-link">Blog</a>
+            <a href="/pt/blog" className="footer-link">Blog</a>
             <a href="/funcionalidades" className="footer-link">Funcionalidades</a>
           </nav>
         </div>

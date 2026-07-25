@@ -157,7 +157,7 @@ export default function OleoDeGergelim({ params }) {
           <ol className="breadcrumb-nav">
             <li><a href="/">Home</a></li>
             <li aria-hidden="true" className="breadcrumb-sep">/</li>
-            <li><a href="/blog">Blog</a></li>
+            <li><a href="/pt/blog">Blog</a></li>
             <li aria-hidden="true" className="breadcrumb-sep">/</li>
             <li className="breadcrumb-current" aria-current="page">Óleo de gergelim</li>
           </ol>
@@ -171,7 +171,7 @@ export default function OleoDeGergelim({ params }) {
             <span className="blog-meta-sep">·</span>
             <span className="blog-read">8 min de leitura</span>
             <span className="blog-meta-sep">·</span>
-            <a href="/blog" className="blog-meta-link">Blog</a>
+            <a href="/pt/blog" className="blog-meta-link">Blog</a>
           </div>
 
           <h1 className="blog-h1">
@@ -330,7 +330,7 @@ export default function OleoDeGergelim({ params }) {
           <h3>Marinadas</h3>
           <p>
             Misture com shoyu, alho e{' '}
-            <a href="/blog/o-que-e-gengibre">gengibre</a>{' '}
+            <a href="/pt/blog/o-que-e-gengibre">gengibre</a>{' '}
             para marinar frango, peixe ou tofu. O óleo de gergelim traz profundidade sem precisar de muitos ingredientes. Para churrasco no estilo nikkei, é o que diferencia uma marinada comum de uma que as pessoas pedem receita.
           </p>
 
@@ -342,7 +342,7 @@ export default function OleoDeGergelim({ params }) {
           <h3>Saladas e bowls</h3>
           <p>
             Em salada de pepino no estilo sunomono, o óleo de gergelim entra junto com vinagre de arroz e shoyu. Em bowls frios com legumes crus e proteína, uma ou duas colheres de chá no molho fazem a diferença entre uma salada genérica e um prato que parece elaborado. É o mesmo princípio de usar{' '}
-            <a href="/blog/o-que-e-amendoa">oleaginosas</a>{' '}
+            <a href="/pt/blog/o-que-e-amendoa">oleaginosas</a>{' '}
             como acabamento — um elemento de sabor concentrado que eleva tudo ao redor.
           </p>
 
@@ -368,7 +368,7 @@ export default function OleoDeGergelim({ params }) {
           </p>
           <p>
             Vale ter o óleo de gergelim na{' '}
-            <a href="/blog/o-que-e-chia">despensa de especiarias</a>{' '}
+            <a href="/pt/blog/o-que-e-chia">despensa de especiarias</a>{' '}
             como você tem azeite — não em grande quantidade, mas sempre disponível. Uma garrafa pequena (100ml) dura meses porque você usa em colheres de chá, não em copos.
           </p>
 
@@ -473,7 +473,7 @@ export default function OleoDeGergelim({ params }) {
             <span className="brand-name">Mise</span>
           </a>
           <span className="footer-copy">© 2026 Mise</span>
-          <a href="/blog" className="footer-link">Blog</a>
+          <a href="/pt/blog" className="footer-link">Blog</a>
         </div>
       </footer>
     </>

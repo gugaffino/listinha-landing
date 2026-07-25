@@ -157,7 +157,7 @@ export default function ComoOrganizarADespensa({ params }) {
           <ol className="breadcrumb-nav">
             <li><a href="/">Home</a></li>
             <li aria-hidden="true" className="breadcrumb-sep">/</li>
-            <li><a href="/blog">Blog</a></li>
+            <li><a href="/pt/blog">Blog</a></li>
             <li aria-hidden="true" className="breadcrumb-sep">/</li>
             <li className="breadcrumb-current" aria-current="page">Como organizar a despensa</li>
           </ol>
@@ -171,7 +171,7 @@ export default function ComoOrganizarADespensa({ params }) {
             <span className="blog-meta-sep">·</span>
             <span className="blog-read">6 min de leitura</span>
             <span className="blog-meta-sep">·</span>
-            <a href="/blog" className="blog-meta-link">Blog</a>
+            <a href="/pt/blog" className="blog-meta-link">Blog</a>
           </div>
 
           <h1 className="blog-h1">
@@ -380,7 +380,7 @@ export default function ComoOrganizarADespensa({ params }) {
             Olhe o que está acabando. Registre. Não confie na memória — ela vai dizer que tem
             azeite quando não tem. Ela sempre diz que tem azeite. E despensa organizada também
             é uma das formas mais eficazes de{' '}
-            <a href="/blog/como-economizar-no-mercado">economizar no mercado</a> — você compra
+            <a href="/pt/blog/como-economizar-no-mercado">economizar no mercado</a> — você compra
             só o que falta, não o que acha que falta.
           </p>
           <p>

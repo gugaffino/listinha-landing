@@ -165,7 +165,7 @@ export default function DietaLowCarbCardapio({ params }) {
           <ol className="breadcrumb-nav">
             <li><a href="/">Home</a></li>
             <li aria-hidden="true" className="breadcrumb-sep">/</li>
-            <li><a href="/blog">Blog</a></li>
+            <li><a href="/pt/blog">Blog</a></li>
             <li aria-hidden="true" className="breadcrumb-sep">/</li>
             <li className="breadcrumb-current" aria-current="page">Cardápio low carb para 7 dias</li>
           </ol>
@@ -179,7 +179,7 @@ export default function DietaLowCarbCardapio({ params }) {
             <span className="blog-meta-sep">·</span>
             <span className="blog-read">8 min de leitura</span>
             <span className="blog-meta-sep">·</span>
-            <a href="/blog" className="blog-meta-link">Blog</a>
+            <a href="/pt/blog" className="blog-meta-link">Blog</a>
           </div>
 
           <h1 className="blog-h1">
@@ -521,7 +521,7 @@ export default function DietaLowCarbCardapio({ params }) {
                 <strong>Monte a lista antes de ir ao mercado</strong>
                 <span>
                   62% dos brasileiros vão ao mercado sem lista (Nielsen, 2022). Ir com a{' '}
-                  <a href="/blog/lista-basica-de-compras">lista de compras</a>{' '}
+                  <a href="/pt/blog/lista-basica-de-compras">lista de compras</a>{' '}
                   da semana montada evita decisões por impulso — e evita chegar em casa
                   sem nenhum vegetal e com três pacotes de biscoito.
                 </span>
@@ -531,7 +531,7 @@ export default function DietaLowCarbCardapio({ params }) {
 
           <p>
             Para conectar o{' '}
-            <a href="/blog/cardapio-semanal-simples-caseiro">cardápio semanal</a>{' '}
+            <a href="/pt/blog/cardapio-semanal-simples-caseiro">cardápio semanal</a>{' '}
             à lista de compras de forma automática, o Mise faz isso: você monta o cardápio
             e a lista sai pronta, com os ingredientes agrupados por categoria. Sem copiar
             item por item de um papel amassado.
@@ -670,7 +670,7 @@ export default function DietaLowCarbCardapio({ params }) {
             <span className="brand-name">Mise</span>
           </a>
           <span className="footer-copy">© 2026 Mise</span>
-          <a href="/blog" className="footer-link">Blog</a>
+          <a href="/pt/blog" className="footer-link">Blog</a>
         </div>
       </footer>
     </>

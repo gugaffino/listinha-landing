@@ -157,7 +157,7 @@ export default function AlimentosRicosEmMagnesio({ params }) {
           <ol className="breadcrumb-nav">
             <li><a href="/">Home</a></li>
             <li aria-hidden="true" className="breadcrumb-sep">/</li>
-            <li><a href="/blog">Blog</a></li>
+            <li><a href="/pt/blog">Blog</a></li>
             <li aria-hidden="true" className="breadcrumb-sep">/</li>
             <li className="breadcrumb-current" aria-current="page">Alimentos ricos em magnésio</li>
           </ol>
@@ -171,7 +171,7 @@ export default function AlimentosRicosEmMagnesio({ params }) {
             <span className="blog-meta-sep">·</span>
             <span className="blog-read">8 min de leitura</span>
             <span className="blog-meta-sep">·</span>
-            <a href="/blog" className="blog-meta-link">Blog</a>
+            <a href="/pt/blog" className="blog-meta-link">Blog</a>
           </div>
 
           <h1 className="blog-h1">
@@ -342,7 +342,7 @@ export default function AlimentosRicosEmMagnesio({ params }) {
           </p>
           <p>
             Se você está pensando em suplementar porque "come mal", a resposta prática é resolver o que compra antes de adicionar uma cápsula. Atualizar dois ou três itens da{' '}
-            <a href="/blog/lista-basica-de-compras">lista básica de compras</a>{' '}
+            <a href="/pt/blog/lista-basica-de-compras">lista básica de compras</a>{' '}
             — trocar arroz branco por integral, adicionar oleaginosas — já gera diferença real ao longo do mês.
           </p>
 
@@ -485,7 +485,7 @@ export default function AlimentosRicosEmMagnesio({ params }) {
             <span className="brand-name">Mise</span>
           </a>
           <span className="footer-copy">© 2026 Mise</span>
-          <a href="/blog" className="footer-link">Blog</a>
+          <a href="/pt/blog" className="footer-link">Blog</a>
         </div>
       </footer>
     </>

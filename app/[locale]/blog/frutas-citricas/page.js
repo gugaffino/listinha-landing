@@ -165,7 +165,7 @@ export default function FrutasCitricas({ params }) {
           <ol className="breadcrumb-nav">
             <li><a href="/">Home</a></li>
             <li aria-hidden="true" className="breadcrumb-sep">/</li>
-            <li><a href="/blog">Blog</a></li>
+            <li><a href="/pt/blog">Blog</a></li>
             <li aria-hidden="true" className="breadcrumb-sep">/</li>
             <li className="breadcrumb-current" aria-current="page">Frutas cítricas</li>
           </ol>
@@ -179,7 +179,7 @@ export default function FrutasCitricas({ params }) {
             <span className="blog-meta-sep">·</span>
             <span className="blog-read">8 min de leitura</span>
             <span className="blog-meta-sep">·</span>
-            <a href="/blog" className="blog-meta-link">Blog</a>
+            <a href="/pt/blog" className="blog-meta-link">Blog</a>
           </div>
 
           <h1 className="blog-h1">
@@ -278,7 +278,7 @@ export default function FrutasCitricas({ params }) {
           <h3>Pomelo e toranja</h3>
           <p>
             O pomelo é a maior fruta do gênero <em>Citrus</em>. A toranja (ou grapefruit) é menor, mais amarga, e conhecida por interagir com alguns medicamentos — incluindo estatinas e alguns anti-hipertensivos. Para um guia mais completo sobre pomelo e suas diferenças em relação à toranja,{' '}
-            <a href="/blog/o-que-e-pomelo">tem uma página específica</a>.
+            <a href="/pt/blog/o-que-e-pomelo">tem uma página específica</a>.
           </p>
 
           <h3>Lima-da-pérsia, cidra e outros</h3>
@@ -406,7 +406,7 @@ export default function FrutasCitricas({ params }) {
           </p>
           <p>
             Para um guia mais completo do que vai na lista do mercado toda semana, tem referência em{' '}
-            <a href="/blog/lista-basica-de-compras">lista básica de compras</a>.
+            <a href="/pt/blog/lista-basica-de-compras">lista básica de compras</a>.
             {' '}O Mise conecta a{' '}
             <a href="/funcionalidades/lista-de-compras">lista de compras</a>{' '}
             com a{' '}
@@ -524,7 +524,7 @@ export default function FrutasCitricas({ params }) {
             <span className="brand-name">Mise</span>
           </a>
           <span className="footer-copy">© 2026 Mise</span>
-          <a href="/blog" className="footer-link">Blog</a>
+          <a href="/pt/blog" className="footer-link">Blog</a>
         </div>
       </footer>
     </>

@@ -157,7 +157,7 @@ export default function AlimentosSemGluten({ params }) {
           <ol className="breadcrumb-nav">
             <li><a href="/">Home</a></li>
             <li aria-hidden="true" className="breadcrumb-sep">/</li>
-            <li><a href="/blog">Blog</a></li>
+            <li><a href="/pt/blog">Blog</a></li>
             <li aria-hidden="true" className="breadcrumb-sep">/</li>
             <li className="breadcrumb-current" aria-current="page">Alimentos sem glúten</li>
           </ol>
@@ -171,7 +171,7 @@ export default function AlimentosSemGluten({ params }) {
             <span className="blog-meta-sep">·</span>
             <span className="blog-read">8 min de leitura</span>
             <span className="blog-meta-sep">·</span>
-            <a href="/blog" className="blog-meta-link">Blog</a>
+            <a href="/pt/blog" className="blog-meta-link">Blog</a>
           </div>
 
           <h1 className="blog-h1">
@@ -525,7 +525,7 @@ export default function AlimentosSemGluten({ params }) {
           </p>
 
           <p>
-            Se você quer uma <a href="/blog/lista-de-compras-saudavel">lista de compras saudável</a> que
+            Se você quer uma <a href="/pt/blog/lista-de-compras-saudavel">lista de compras saudável</a> que
             já leve em conta restrições alimentares, o ponto de partida é sempre o mesmo: defina
             o que é fixo na sua dieta, quais marcas são seguras e organize por corredor. Menos
             imprevisto no mercado, menos chance de erro.
@@ -642,7 +642,7 @@ export default function AlimentosSemGluten({ params }) {
             <span>Mise</span>
           </a>
           <nav className="blog-footer-nav" aria-label="Navegação do rodapé">
-            <a href="/blog">Blog</a>
+            <a href="/pt/blog">Blog</a>
             <a href="/funcionalidades">Funcionalidades</a>
             <a href="https://listinha-puce.vercel.app" rel="noopener">Abrir o app</a>
           </nav>

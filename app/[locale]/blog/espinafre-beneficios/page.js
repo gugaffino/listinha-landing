@@ -165,7 +165,7 @@ export default function EspinafreBeneficios({ params }) {
           <ol className="breadcrumb-nav">
             <li><a href="/">Home</a></li>
             <li aria-hidden="true" className="breadcrumb-sep">/</li>
-            <li><a href="/blog">Blog</a></li>
+            <li><a href="/pt/blog">Blog</a></li>
             <li aria-hidden="true" className="breadcrumb-sep">/</li>
             <li className="breadcrumb-current" aria-current="page">Benefícios do espinafre</li>
           </ol>
@@ -179,7 +179,7 @@ export default function EspinafreBeneficios({ params }) {
             <span className="blog-meta-sep">·</span>
             <span className="blog-read">6 min de leitura</span>
             <span className="blog-meta-sep">·</span>
-            <a href="/blog" className="blog-meta-link">Blog</a>
+            <a href="/pt/blog" className="blog-meta-link">Blog</a>
           </div>
 
           <h1 className="blog-h1">
@@ -337,7 +337,7 @@ export default function EspinafreBeneficios({ params }) {
 
           <p>
             O espinafre tem uma propriedade útil: desaparece. Em smoothies, sopas e omeletes, ele some visualmente e quase some no sabor. Isso facilita incluir no dia a dia sem precisar fazer uma salada toda vez. Para quem está montando um{' '}
-            <a href="/blog/cardapio-semanal-simples-caseiro">cardápio semanal</a>
+            <a href="/pt/blog/cardapio-semanal-simples-caseiro">cardápio semanal</a>
             {' '}e quer mais folhosa sem complicar, é o ponto de entrada mais fácil.
           </p>
 
@@ -410,7 +410,7 @@ export default function EspinafreBeneficios({ params }) {
           </p>
           <p>
             Um alimento que vai pra{' '}
-            <a href="/blog/lista-basica-de-compras">lista básica de compras</a>
+            <a href="/pt/blog/lista-basica-de-compras">lista básica de compras</a>
             {' '}sem precisar de argumento. É raro isso acontecer com algo que também é barato.
           </p>
 
@@ -522,7 +522,7 @@ export default function EspinafreBeneficios({ params }) {
             <span className="brand-name">Mise</span>
           </a>
           <span className="footer-copy">© 2026 Mise</span>
-          <a href="/blog" className="footer-link">Blog</a>
+          <a href="/pt/blog" className="footer-link">Blog</a>
         </div>
       </footer>
     </>

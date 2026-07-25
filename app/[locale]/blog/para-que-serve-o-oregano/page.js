@@ -157,7 +157,7 @@ export default function ParaQueServeOOregano({ params }) {
           <ol className="breadcrumb-nav">
             <li><a href="/">Home</a></li>
             <li aria-hidden="true" className="breadcrumb-sep">/</li>
-            <li><a href="/blog">Blog</a></li>
+            <li><a href="/pt/blog">Blog</a></li>
             <li aria-hidden="true" className="breadcrumb-sep">/</li>
             <li className="breadcrumb-current" aria-current="page">Para que serve o orégano</li>
           </ol>
@@ -171,7 +171,7 @@ export default function ParaQueServeOOregano({ params }) {
             <span className="blog-meta-sep">·</span>
             <span className="blog-read">8 min de leitura</span>
             <span className="blog-meta-sep">·</span>
-            <a href="/blog" className="blog-meta-link">Blog</a>
+            <a href="/pt/blog" className="blog-meta-link">Blog</a>
           </div>
 
           <h1 className="blog-h1">
@@ -360,7 +360,7 @@ export default function ParaQueServeOOregano({ params }) {
           </p>
           <p>
             É diferente de açafrão, que custa caro e vai em pratos específicos. Ou de curry em pasta, que entra quando tem plano. Orégano entra na{' '}
-            <a href="/blog/lista-de-compras-mercado">lista de compras</a>{' '}
+            <a href="/pt/blog/lista-de-compras-mercado">lista de compras</a>{' '}
             junto com sal, pimenta e alho — você não pensa duas vezes.
           </p>
           <p>
@@ -371,7 +371,7 @@ export default function ParaQueServeOOregano({ params }) {
           </p>
           <p>
             O orégano seco está na{' '}
-            <a href="/blog/lista-basica-de-compras">lista básica de compras</a>.
+            <a href="/pt/blog/lista-basica-de-compras">lista básica de compras</a>.
             O fresco entra quando tem receita com ele. Nessa ordem.
           </p>
 
@@ -476,7 +476,7 @@ export default function ParaQueServeOOregano({ params }) {
             <span className="brand-name">Mise</span>
           </a>
           <span className="footer-copy">© 2026 Mise</span>
-          <a href="/blog" className="footer-link">Blog</a>
+          <a href="/pt/blog" className="footer-link">Blog</a>
         </div>
       </footer>
     </>

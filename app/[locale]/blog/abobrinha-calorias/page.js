@@ -163,7 +163,7 @@ export default function AbobrinhaCaloriasPage({ params }) {
           <ol className="breadcrumb-nav">
             <li><a href="/">Home</a></li>
             <li aria-hidden="true" className="breadcrumb-sep">/</li>
-            <li><a href="/blog">Blog</a></li>
+            <li><a href="/pt/blog">Blog</a></li>
             <li aria-hidden="true" className="breadcrumb-sep">/</li>
             <li className="breadcrumb-current" aria-current="page">Abobrinha: calorias e valor nutricional</li>
           </ol>
@@ -177,7 +177,7 @@ export default function AbobrinhaCaloriasPage({ params }) {
             <span className="blog-meta-sep">·</span>
             <span className="blog-read">7 min de leitura</span>
             <span className="blog-meta-sep">·</span>
-            <a href="/blog" className="blog-meta-link">Blog</a>
+            <a href="/pt/blog" className="blog-meta-link">Blog</a>
           </div>
 
           <h1 className="blog-h1">
@@ -220,7 +220,7 @@ export default function AbobrinhaCaloriasPage({ params }) {
           </nav>
 
           <p>
-            Abobrinha tem 17 calorias por 100 gramas. Isso coloca ela entre os legumes mais leves que você encontra no mercado — junto com <a href="/blog/beneficios-do-pepino">pepino</a> e alface. O que chama atenção não é só a caloria baixa: é a combinação de água, fibra e vitaminas que faz a abobrinha valer o espaço na <a href="/funcionalidades/despensa">despensa</a> toda semana.
+            Abobrinha tem 17 calorias por 100 gramas. Isso coloca ela entre os legumes mais leves que você encontra no mercado — junto com <a href="/pt/blog/beneficios-do-pepino">pepino</a> e alface. O que chama atenção não é só a caloria baixa: é a combinação de água, fibra e vitaminas que faz a abobrinha valer o espaço na <a href="/funcionalidades/despensa">despensa</a> toda semana.
           </p>
           <p>
             Ela é barata, fácil de cozinhar e entra em praticamente qualquer receita. Refogada, grelhada, no forno, crua em salada ou como espaguete. É o tipo de ingrediente que trabalha mais do que parece.
@@ -394,7 +394,7 @@ export default function AbobrinhaCaloriasPage({ params }) {
             funciona bem para isso — você define o menu antes de ir ao mercado e compra exatamente o que vai usar. Sem desperdício e sem comprar o mesmo legume que você já tem em casa.
           </p>
           <p>
-            Para comparação: o <a href="/blog/espinafre-beneficios">espinafre</a> também tem perfil nutricional parecido (23 kcal/100g) e costuma entrar na mesma semana de compras. Os dois juntos são uma boa base de hortaliças verdes para a semana.
+            Para comparação: o <a href="/pt/blog/espinafre-beneficios">espinafre</a> também tem perfil nutricional parecido (23 kcal/100g) e costuma entrar na mesma semana de compras. Os dois juntos são uma boa base de hortaliças verdes para a semana.
           </p>
 
           <h2 id="faq">Perguntas frequentes</h2>
@@ -490,7 +490,7 @@ export default function AbobrinhaCaloriasPage({ params }) {
             <span className="brand-name">Mise</span>
           </a>
           <span className="footer-copy">© 2026 Mise</span>
-          <a href="/blog" className="footer-link">Blog</a>
+          <a href="/pt/blog" className="footer-link">Blog</a>
         </div>
       </footer>
     </>

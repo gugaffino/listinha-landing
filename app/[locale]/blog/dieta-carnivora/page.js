@@ -165,7 +165,7 @@ export default function DietaCarnivora({ params }) {
           <ol className="breadcrumb-nav">
             <li><a href="/">Home</a></li>
             <li aria-hidden="true" className="breadcrumb-sep">/</li>
-            <li><a href="/blog">Blog</a></li>
+            <li><a href="/pt/blog">Blog</a></li>
             <li aria-hidden="true" className="breadcrumb-sep">/</li>
             <li className="breadcrumb-current" aria-current="page">Dieta carnívora</li>
           </ol>
@@ -179,7 +179,7 @@ export default function DietaCarnivora({ params }) {
             <span className="blog-meta-sep">·</span>
             <span className="blog-read">8 min de leitura</span>
             <span className="blog-meta-sep">·</span>
-            <a href="/blog" className="blog-meta-link">Blog</a>
+            <a href="/pt/blog" className="blog-meta-link">Blog</a>
           </div>
 
           <h1 className="blog-h1">
@@ -243,7 +243,7 @@ export default function DietaCarnivora({ params }) {
             A <strong>dieta carnívora</strong> é um padrão alimentar que elimina todo alimento de origem vegetal. Quem segue come exclusivamente produtos animais: carne bovina, frango, porco, peixe, frutos do mar, ovos e alguns laticínios. Nada de frutas, nada de vegetais, nada de grãos ou leguminosas.
           </p>
           <p>
-            É uma versão radical da dieta sem carboidratos. Enquanto o <a href="/blog/dieta-low-carb-cardapio">low carb</a> reduz carboidratos mas mantém vegetais, a dieta carnívora elimina a categoria inteira. A premissa é que o corpo humano pode funcionar usando apenas proteína e gordura como combustível — e que muitos problemas de saúde modernos vêm de compostos presentes em plantas.
+            É uma versão radical da dieta sem carboidratos. Enquanto o <a href="/pt/blog/dieta-low-carb-cardapio">low carb</a> reduz carboidratos mas mantém vegetais, a dieta carnívora elimina a categoria inteira. A premissa é que o corpo humano pode funcionar usando apenas proteína e gordura como combustível — e que muitos problemas de saúde modernos vêm de compostos presentes em plantas.
           </p>
           <p>
             A popularização da dieta é recente — ganhou força nos últimos anos principalmente em comunidades de fitness e emagrecimento nos Estados Unidos e chegou ao Brasil principalmente pelo YouTube e redes sociais. Não tem respaldo na maioria das diretrizes nutricionais oficiais, mas tem uma base significativa de praticantes que relatam resultados.
@@ -420,7 +420,7 @@ export default function DietaCarnivora({ params }) {
             Se você tem uma condição específica — resistência à insulina, doença inflamatória intestinal, sensibilidade a alimentos vegetais — e está considerando a dieta com acompanhamento médico, faz sentido explorar. Há relatos consistentes de melhora em condições autoimunes e inflamatórias, embora a evidência seja preliminar.
           </p>
           <p>
-            Se o objetivo é perder peso sem contar calorias, existem formas menos restritivas de chegar lá — como o low carb ou uma <a href="/blog/lista-de-compras-saudavel">lista de compras saudável</a> bem estruturada — com menos riscos e mais sustentabilidade no dia a dia. A dieta carnívora funciona para algumas pessoas porque elimina decisões e reduz o apetite. Mas o mesmo efeito pode ser conseguido com uma dieta menos extrema.
+            Se o objetivo é perder peso sem contar calorias, existem formas menos restritivas de chegar lá — como o low carb ou uma <a href="/pt/blog/lista-de-compras-saudavel">lista de compras saudável</a> bem estruturada — com menos riscos e mais sustentabilidade no dia a dia. A dieta carnívora funciona para algumas pessoas porque elimina decisões e reduz o apetite. Mas o mesmo efeito pode ser conseguido com uma dieta menos extrema.
           </p>
           <p>
             O que a dieta carnívora ensina de válido: proteína saciante, menos ultraprocessados, menos açúcar, cortes integrais em vez de produtos processados. Esses princípios funcionam dentro de qualquer padrão alimentar, sem precisar cortar tudo que cresce na terra.
@@ -533,7 +533,7 @@ export default function DietaCarnivora({ params }) {
             <span className="brand-name">Mise</span>
           </a>
           <span className="footer-copy">© 2026 Mise</span>
-          <a href="/blog" className="footer-link">Blog</a>
+          <a href="/pt/blog" className="footer-link">Blog</a>
         </div>
       </footer>
     </>

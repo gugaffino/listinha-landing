@@ -165,7 +165,7 @@ export default function AlimentosRicosEmProteinas({ params }) {
           <ol className="breadcrumb-nav">
             <li><a href="/">Home</a></li>
             <li aria-hidden="true" className="breadcrumb-sep">/</li>
-            <li><a href="/blog">Blog</a></li>
+            <li><a href="/pt/blog">Blog</a></li>
             <li aria-hidden="true" className="breadcrumb-sep">/</li>
             <li className="breadcrumb-current" aria-current="page">10 alimentos ricos em proteínas</li>
           </ol>
@@ -179,7 +179,7 @@ export default function AlimentosRicosEmProteinas({ params }) {
             <span className="blog-meta-sep">·</span>
             <span className="blog-read">8 min de leitura</span>
             <span className="blog-meta-sep">·</span>
-            <a href="/blog" className="blog-meta-link">Blog</a>
+            <a href="/pt/blog" className="blog-meta-link">Blog</a>
           </div>
 
           <h1 className="blog-h1">
@@ -306,7 +306,7 @@ export default function AlimentosRicosEmProteinas({ params }) {
 
           <h3>10. Feijão — ~8g por 100g cozido</h3>
           <p>
-            O clássico. Feijão carioca ou preto cozido tem cerca de 8g de proteína por 100g. Não é o número mais alto, mas feijão entra em todas as refeições sem esforço — o que significa que a quantidade total no dia soma rápido. Junto com arroz, o perfil de aminoácidos melhora bastante. A <a href="/blog/lista-basica-de-compras">lista básica de compras</a> sem feijão está incompleta.
+            O clássico. Feijão carioca ou preto cozido tem cerca de 8g de proteína por 100g. Não é o número mais alto, mas feijão entra em todas as refeições sem esforço — o que significa que a quantidade total no dia soma rápido. Junto com arroz, o perfil de aminoácidos melhora bastante. A <a href="/pt/blog/lista-basica-de-compras">lista básica de compras</a> sem feijão está incompleta.
           </p>
 
           {/* QUANTO POR DIA */}
@@ -477,7 +477,7 @@ export default function AlimentosRicosEmProteinas({ params }) {
             <span className="brand-name">Mise</span>
           </a>
           <span className="footer-copy">© 2026 Mise</span>
-          <a href="/blog" className="footer-link">Blog</a>
+          <a href="/pt/blog" className="footer-link">Blog</a>
         </div>
       </footer>
     </>

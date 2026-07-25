@@ -165,7 +165,7 @@ export default function OQueECreamCheese({ params }) {
           <ol className="breadcrumb-nav">
             <li><a href="/">Home</a></li>
             <li aria-hidden="true" className="breadcrumb-sep">/</li>
-            <li><a href="/blog">Blog</a></li>
+            <li><a href="/pt/blog">Blog</a></li>
             <li aria-hidden="true" className="breadcrumb-sep">/</li>
             <li className="breadcrumb-current" aria-current="page">O que é cream cheese</li>
           </ol>
@@ -179,7 +179,7 @@ export default function OQueECreamCheese({ params }) {
             <span className="blog-meta-sep">·</span>
             <span className="blog-read">8 min de leitura</span>
             <span className="blog-meta-sep">·</span>
-            <a href="/blog" className="blog-meta-link">Blog</a>
+            <a href="/pt/blog" className="blog-meta-link">Blog</a>
           </div>
 
           <h1 className="blog-h1">
@@ -367,7 +367,7 @@ export default function OQueECreamCheese({ params }) {
 
           <p>
             Para quem organiza as receitas da semana antecipadamente, vale incluir cream cheese no{' '}
-            <a href="/blog/cardapio-semanal-simples-caseiro">cardápio semanal</a>{' '}
+            <a href="/pt/blog/cardapio-semanal-simples-caseiro">cardápio semanal</a>{' '}
             quando tiver pelo menos dois usos planejados. Embalagem aberta sem uso claro some antes do prazo.
           </p>
 
@@ -404,12 +404,12 @@ export default function OQueECreamCheese({ params }) {
           </p>
           <p>
             Se você cozinha receitas variadas com frequência, faz sentido ter sempre um no fundo da geladeira. Cream cheese entra em molhos, recheios e sobremesas sem precisar de muito planejamento — desde que você saiba que ele está lá. Para quem salva receitas com frequência, um{' '}
-            <a href="/blog/caderno-de-receitas">caderno de receitas</a>{' '}
+            <a href="/pt/blog/caderno-de-receitas">caderno de receitas</a>{' '}
             com os ingredientes anotados ajuda a não comprar errado.
           </p>
           <p>
             Não é item da{' '}
-            <a href="/blog/lista-basica-de-compras">lista básica de compras</a>
+            <a href="/pt/blog/lista-basica-de-compras">lista básica de compras</a>
             {' '}— mas tem espaço garantido quando tem receita esperando por ele. Cream cheese não entra na lista por hábito. Entra com destino.
           </p>
 
@@ -520,7 +520,7 @@ export default function OQueECreamCheese({ params }) {
             <span className="brand-name">Mise</span>
           </a>
           <span className="footer-copy">© 2026 Mise</span>
-          <a href="/blog" className="footer-link">Blog</a>
+          <a href="/pt/blog" className="footer-link">Blog</a>
         </div>
       </footer>
     </>

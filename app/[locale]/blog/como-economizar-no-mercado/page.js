@@ -157,7 +157,7 @@ export default function ComoEconomizarNoMercado({ params }) {
           <ol className="breadcrumb-nav">
             <li><a href="/">Home</a></li>
             <li aria-hidden="true" className="breadcrumb-sep">/</li>
-            <li><a href="/blog">Blog</a></li>
+            <li><a href="/pt/blog">Blog</a></li>
             <li aria-hidden="true" className="breadcrumb-sep">/</li>
             <li className="breadcrumb-current" aria-current="page">Como economizar no mercado</li>
           </ol>
@@ -171,7 +171,7 @@ export default function ComoEconomizarNoMercado({ params }) {
             <span className="blog-meta-sep">·</span>
             <span className="blog-read">10 min de leitura</span>
             <span className="blog-meta-sep">·</span>
-            <a href="/blog" className="blog-meta-link">Blog</a>
+            <a href="/pt/blog" className="blog-meta-link">Blog</a>
           </div>
 
           <h1 className="blog-h1">
@@ -273,7 +273,7 @@ export default function ComoEconomizarNoMercado({ params }) {
             arroz pra duas semanas e aquele queijo que ainda dá pra usar. Comprar duplicado é
             o desperdício mais silencioso de todos. Se a sua despensa ainda está bagunçada,
             vale ler antes o guia de{' '}
-            <a href="/blog/como-organizar-a-despensa">como organizar a despensa em 7 passos</a>.
+            <a href="/pt/blog/como-organizar-a-despensa">como organizar a despensa em 7 passos</a>.
           </p>
 
           <h3>2. Planeje o cardápio da semana antes de ir</h3>
@@ -294,7 +294,7 @@ export default function ComoEconomizarNoMercado({ params }) {
             Lista por grupos (hortifruti, carnes, laticínios, mercearia, limpeza, higiene) cobre
             todos os corredores sem deixar buracos. Quando você escreve por memória, esquece categorias
             inteiras — e aí faz uma segunda viagem no meio da semana. Se precisar de um ponto de partida,
-            veja a <a href="/blog/lista-basica-de-compras">lista básica de compras com 80+ itens pra copiar</a>.
+            veja a <a href="/pt/blog/lista-basica-de-compras">lista básica de compras com 80+ itens pra copiar</a>.
           </p>
 
           <h3>4. Defina o orçamento antes de ir</h3>
@@ -589,7 +589,7 @@ export default function ComoEconomizarNoMercado({ params }) {
             <span className="brand-name">Mise</span>
           </a>
           <span className="footer-copy">© 2026 Mise</span>
-          <a href="/blog" className="footer-link">Blog</a>
+          <a href="/pt/blog" className="footer-link">Blog</a>
         </div>
       </footer>
     </>

@@ -223,7 +223,7 @@ export default function ListaBasicaDeCompras({ params }) {
           <ol className="breadcrumb-nav">
             <li><a href="/">Home</a></li>
             <li aria-hidden="true" className="breadcrumb-sep">/</li>
-            <li><a href="/blog">Blog</a></li>
+            <li><a href="/pt/blog">Blog</a></li>
             <li aria-hidden="true" className="breadcrumb-sep">/</li>
             <li className="breadcrumb-current" aria-current="page">Lista básica de compras</li>
           </ol>
@@ -241,7 +241,7 @@ export default function ListaBasicaDeCompras({ params }) {
               Atualizado <time dateTime="2025-05-20">20 mai. 2025</time>
             </span>
             <span className="blog-meta-sep">·</span>
-            <a href="/blog" className="blog-meta-link">Blog</a>
+            <a href="/pt/blog" className="blog-meta-link">Blog</a>
           </div>
 
           <h1 className="blog-h1">
@@ -673,7 +673,7 @@ export default function ListaBasicaDeCompras({ params }) {
 
           <p>
             Quer ir fundo no assunto? Temos um guia completo sobre{' '}
-            <a href="/blog/como-economizar-no-mercado">como economizar no mercado</a>{' '}
+            <a href="/pt/blog/como-economizar-no-mercado">como economizar no mercado</a>{' '}
             com 12 hábitos que fazem diferença de verdade — antes, durante e depois do supermercado.
           </p>
 
@@ -686,7 +686,7 @@ export default function ListaBasicaDeCompras({ params }) {
                   5 minutos em casa valem 30 minutos de volta ao mercado pra pegar o que
                   esqueceu. Veja o que está acabando — não só o que já acabou. Se quiser organizar
                   a despensa de vez,{' '}
-                  <a href="/blog/como-organizar-a-despensa">este guia tem 7 passos pra isso</a>.
+                  <a href="/pt/blog/como-organizar-a-despensa">este guia tem 7 passos pra isso</a>.
                 </span>
               </div>
             </li>
@@ -926,7 +926,7 @@ export default function ListaBasicaDeCompras({ params }) {
             <span className="brand-name">Mise</span>
           </a>
           <span className="footer-copy">© 2025 Mise</span>
-          <a href="/blog" className="footer-link">Blog</a>
+          <a href="/pt/blog" className="footer-link">Blog</a>
         </div>
       </footer>
     </>

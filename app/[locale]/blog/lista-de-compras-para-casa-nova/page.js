@@ -232,7 +232,7 @@ export default function ListaDeComprasParaCasaNova({ params }) {
           <ol className="breadcrumb-nav">
             <li><a href="/">Home</a></li>
             <li aria-hidden="true" className="breadcrumb-sep">/</li>
-            <li><a href="/blog">Blog</a></li>
+            <li><a href="/pt/blog">Blog</a></li>
             <li aria-hidden="true" className="breadcrumb-sep">/</li>
             <li className="breadcrumb-current" aria-current="page">Lista de compras para casa nova</li>
           </ol>
@@ -246,7 +246,7 @@ export default function ListaDeComprasParaCasaNova({ params }) {
             <span className="blog-meta-sep">·</span>
             <span className="blog-read">8 min de leitura</span>
             <span className="blog-meta-sep">·</span>
-            <a href="/blog" className="blog-meta-link">Blog</a>
+            <a href="/pt/blog" className="blog-meta-link">Blog</a>
           </div>
 
           <h1 className="blog-h1">
@@ -379,7 +379,7 @@ export default function ListaDeComprasParaCasaNova({ params }) {
           <p>
             Não é a compra do mês inteiro — é o mínimo pra ter o que comer enquanto você ainda está desembalando caixas.
             Quando a cozinha estiver funcionando, aí sim você faz a{' '}
-            <a href="/blog/lista-basica-de-compras">lista básica de compras completa</a>.
+            <a href="/pt/blog/lista-basica-de-compras">lista básica de compras completa</a>.
           </p>
           <ul className="item-list">
             <li>Azeite ou óleo, sal e pimenta</li>
@@ -785,7 +785,7 @@ export default function ListaDeComprasParaCasaNova({ params }) {
             <span className="brand-name">Mise</span>
           </a>
           <span className="footer-copy">© 2026 Mise</span>
-          <a href="/blog" className="footer-link">Blog</a>
+          <a href="/pt/blog" className="footer-link">Blog</a>
         </div>
       </footer>
     </>

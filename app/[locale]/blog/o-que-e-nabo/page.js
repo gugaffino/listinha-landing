@@ -173,7 +173,7 @@ export default function OQueENabo({ params }) {
           <ol className="breadcrumb-nav">
             <li><a href="/">Home</a></li>
             <li aria-hidden="true" className="breadcrumb-sep">/</li>
-            <li><a href="/blog">Blog</a></li>
+            <li><a href="/pt/blog">Blog</a></li>
             <li aria-hidden="true" className="breadcrumb-sep">/</li>
             <li className="breadcrumb-current" aria-current="page">O que é nabo</li>
           </ol>
@@ -187,7 +187,7 @@ export default function OQueENabo({ params }) {
             <span className="blog-meta-sep">·</span>
             <span className="blog-read">8 min de leitura</span>
             <span className="blog-meta-sep">·</span>
-            <a href="/blog" className="blog-meta-link">Blog</a>
+            <a href="/pt/blog" className="blog-meta-link">Blog</a>
           </div>
 
           <h1 className="blog-h1">
@@ -385,7 +385,7 @@ export default function OQueENabo({ params }) {
           </p>
           <p>
             Para quem monta um{' '}
-            <a href="/blog/cardapio-semanal-simples-caseiro">cardápio semanal</a>
+            <a href="/pt/blog/cardapio-semanal-simples-caseiro">cardápio semanal</a>
             {' '}com sopa de quarta ou quinta, nabo é um ingrediente que varia o caldo sem complicar.
           </p>
 
@@ -461,7 +461,7 @@ export default function OQueENabo({ params }) {
           <p>
             Se você nunca experimentou e não sabe ainda o que vai fazer com ele, o risco é comprar, não usar, e jogar fora.
             Antes de colocar na{' '}
-            <a href="/blog/lista-de-compras-mercado">lista de compras</a>
+            <a href="/pt/blog/lista-de-compras-mercado">lista de compras</a>
             , tenha um uso em mente — mesmo que seja só "vou colocar na sopa de quarta".
             Um ingrediente novo só entra na rotina quando tem um destino antes da compra.
           </p>
@@ -591,7 +591,7 @@ export default function OQueENabo({ params }) {
             <span className="brand-name">Mise</span>
           </a>
           <span className="footer-copy">© 2026 Mise</span>
-          <a href="/blog" className="footer-link">Blog</a>
+          <a href="/pt/blog" className="footer-link">Blog</a>
         </div>
       </footer>
     </>

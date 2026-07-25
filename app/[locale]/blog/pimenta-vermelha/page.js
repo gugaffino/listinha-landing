@@ -157,7 +157,7 @@ export default function PimentaVermelha({ params }) {
           <ol className="breadcrumb-nav">
             <li><a href="/">Home</a></li>
             <li aria-hidden="true" className="breadcrumb-sep">/</li>
-            <li><a href="/blog">Blog</a></li>
+            <li><a href="/pt/blog">Blog</a></li>
             <li aria-hidden="true" className="breadcrumb-sep">/</li>
             <li className="breadcrumb-current" aria-current="page">Pimenta vermelha</li>
           </ol>
@@ -171,7 +171,7 @@ export default function PimentaVermelha({ params }) {
             <span className="blog-meta-sep">·</span>
             <span className="blog-read">9 min de leitura</span>
             <span className="blog-meta-sep">·</span>
-            <a href="/blog" className="blog-meta-link">Blog</a>
+            <a href="/pt/blog" className="blog-meta-link">Blog</a>
           </div>
 
           <h1 className="blog-h1">
@@ -360,7 +360,7 @@ export default function PimentaVermelha({ params }) {
           <h3>Pimentão vermelho</h3>
           <p>
             Assado diretamente na chama do fogão e descascado, vira um molho robusto. Refogado com{' '}
-            <a href="/blog/beneficios-da-cebola-roxa">cebola</a>
+            <a href="/pt/blog/beneficios-da-cebola-roxa">cebola</a>
             {' '}e alho, é a base de inúmeros pratos brasileiros. Cru em tiras vai bem em saladas e como acompanhamento. Recheado com arroz e carne é prato completo com pouco esforço.
           </p>
 
@@ -412,7 +412,7 @@ export default function PimentaVermelha({ params }) {
           </p>
           <p>
             Uma boa despensa tem os dois. Páprica doce pra cor e sabor de fundo, pimenta calabresa pra ardência pontual. É a mesma lógica de ter{' '}
-            <a href="/blog/para-que-serve-o-oregano">orégano</a>
+            <a href="/pt/blog/para-que-serve-o-oregano">orégano</a>
             {' '}e tomilho — mesma família, funções diferentes no prato.
           </p>
 
@@ -424,7 +424,7 @@ export default function PimentaVermelha({ params }) {
           </p>
           <p>
             <strong>Pimentão vermelho:</strong> sim, é item de{' '}
-            <a href="/blog/lista-basica-de-compras">lista básica de compras</a>.
+            <a href="/pt/blog/lista-basica-de-compras">lista básica de compras</a>.
             Faz parte da base aromática de muitos pratos brasileiros. Versátil o suficiente pra funcionar em refogados, saladas, recheios e molhos. Custo acessível. Quem cozinha regularmente vai usar antes de estragar.
           </p>
           <p>
@@ -540,7 +540,7 @@ export default function PimentaVermelha({ params }) {
             <span className="brand-name">Mise</span>
           </a>
           <span className="footer-copy">© 2026 Mise</span>
-          <a href="/blog" className="footer-link">Blog</a>
+          <a href="/pt/blog" className="footer-link">Blog</a>
         </div>
       </footer>
     </>

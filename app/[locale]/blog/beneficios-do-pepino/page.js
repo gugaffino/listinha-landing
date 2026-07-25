@@ -165,7 +165,7 @@ export default function BeneficiosDoPepino({ params }) {
           <ol className="breadcrumb-nav">
             <li><a href="/">Home</a></li>
             <li aria-hidden="true" className="breadcrumb-sep">/</li>
-            <li><a href="/blog">Blog</a></li>
+            <li><a href="/pt/blog">Blog</a></li>
             <li aria-hidden="true" className="breadcrumb-sep">/</li>
             <li className="breadcrumb-current" aria-current="page">Benefícios do pepino</li>
           </ol>
@@ -179,7 +179,7 @@ export default function BeneficiosDoPepino({ params }) {
             <span className="blog-meta-sep">·</span>
             <span className="blog-read">7 min de leitura</span>
             <span className="blog-meta-sep">·</span>
-            <a href="/blog" className="blog-meta-link">Blog</a>
+            <a href="/pt/blog" className="blog-meta-link">Blog</a>
           </div>
 
           <h1 className="blog-h1">
@@ -434,7 +434,7 @@ export default function BeneficiosDoPepino({ params }) {
           </p>
           <p>
             Pepino entra bem como item fixo da{' '}
-            <a href="/blog/lista-basica-de-compras">lista básica de compras</a>
+            <a href="/pt/blog/lista-basica-de-compras">lista básica de compras</a>
             {' '}de quem cozinha durante a semana. É daqueles vegetais que servem pra várias refeições diferentes sem esforço extra.
           </p>
           <p>
@@ -558,7 +558,7 @@ export default function BeneficiosDoPepino({ params }) {
             <span className="brand-name">Mise</span>
           </a>
           <span className="footer-copy">© 2026 Mise</span>
-          <a href="/blog" className="footer-link">Blog</a>
+          <a href="/pt/blog" className="footer-link">Blog</a>
         </div>
       </footer>
     </>

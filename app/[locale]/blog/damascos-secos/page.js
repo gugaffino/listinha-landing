@@ -157,7 +157,7 @@ export default function DamascosSecos({ params }) {
           <ol className="breadcrumb-nav">
             <li><a href="/">Home</a></li>
             <li aria-hidden="true" className="breadcrumb-sep">/</li>
-            <li><a href="/blog">Blog</a></li>
+            <li><a href="/pt/blog">Blog</a></li>
             <li aria-hidden="true" className="breadcrumb-sep">/</li>
             <li className="breadcrumb-current" aria-current="page">Damascos secos</li>
           </ol>
@@ -171,7 +171,7 @@ export default function DamascosSecos({ params }) {
             <span className="blog-meta-sep">·</span>
             <span className="blog-read">8 min de leitura</span>
             <span className="blog-meta-sep">·</span>
-            <a href="/blog" className="blog-meta-link">Blog</a>
+            <a href="/pt/blog" className="blog-meta-link">Blog</a>
           </div>
 
           <h1 className="blog-h1">
@@ -350,7 +350,7 @@ export default function DamascosSecos({ params }) {
           <h3>Com iogurte e granola</h3>
           <p>
             Picado grosso, vai bem com{' '}
-            <a href="/blog/o-que-e-granola">granola</a>{' '}
+            <a href="/pt/blog/o-que-e-granola">granola</a>{' '}
             e iogurte natural. A doçura do damasco dispensa mel — o conjunto já tem equilíbrio de sabor. É um café da manhã que não precisa de receita.
           </p>
 
@@ -408,7 +408,7 @@ export default function DamascosSecos({ params }) {
             Se você usa damasco seco com frequência, vale deixar na{' '}
             <a href="/funcionalidades/despensa">despensa do Mise</a>{' '}
             e na{' '}
-            <a href="/blog/lista-basica-de-compras">lista básica de compras</a>.
+            <a href="/pt/blog/lista-basica-de-compras">lista básica de compras</a>.
             Assim você sabe quando está acabando antes de chegar na quinta-feira pra fazer frango com damascos e descobrir que a embalagem tá vazia.
           </p>
 
@@ -513,7 +513,7 @@ export default function DamascosSecos({ params }) {
             <span className="brand-name">Mise</span>
           </a>
           <span className="footer-copy">© 2026 Mise</span>
-          <a href="/blog" className="footer-link">Blog</a>
+          <a href="/pt/blog" className="footer-link">Blog</a>
         </div>
       </footer>
     </>

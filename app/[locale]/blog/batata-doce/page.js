@@ -165,7 +165,7 @@ export default function BatataDoce({ params }) {
           <ol className="breadcrumb-nav">
             <li><a href="/">Home</a></li>
             <li aria-hidden="true" className="breadcrumb-sep">/</li>
-            <li><a href="/blog">Blog</a></li>
+            <li><a href="/pt/blog">Blog</a></li>
             <li aria-hidden="true" className="breadcrumb-sep">/</li>
             <li className="breadcrumb-current" aria-current="page">Batata doce</li>
           </ol>
@@ -179,7 +179,7 @@ export default function BatataDoce({ params }) {
             <span className="blog-meta-sep">·</span>
             <span className="blog-read">10 min de leitura</span>
             <span className="blog-meta-sep">·</span>
-            <a href="/blog" className="blog-meta-link">Blog</a>
+            <a href="/pt/blog" className="blog-meta-link">Blog</a>
           </div>
 
           <h1 className="blog-h1">
@@ -364,7 +364,7 @@ export default function BatataDoce({ params }) {
           </p>
           <p>
             A{' '}
-            <a href="/blog/lista-basica-de-compras">lista básica de compras</a>{' '}
+            <a href="/pt/blog/lista-basica-de-compras">lista básica de compras</a>{' '}
             de quem cozinha regularmente tem batata doce como item fixo.
             Ela aguenta bem a semana — diferente de folhas ou frutas mais delicadas.
           </p>
@@ -444,7 +444,7 @@ export default function BatataDoce({ params }) {
           <p>
             Corta em cubos com casca, tempera com azeite, sal, alho e alecrim, assa a 200°C por 25 a 30 minutos.
             Fica crocante por fora, macio por dentro. Serve como acompanhamento de carne, frango ou ovo — entra no{' '}
-            <a href="/blog/cardapio-semanal-simples-caseiro">cardápio semanal</a>{' '}
+            <a href="/pt/blog/cardapio-semanal-simples-caseiro">cardápio semanal</a>{' '}
             sem trabalho extra.
           </p>
 
@@ -476,7 +476,7 @@ export default function BatataDoce({ params }) {
 
           <p>
             Se quiser organizar quais ingredientes usar primeiro, o{' '}
-            <a href="/blog/como-organizar-a-despensa">guia de organização de despensa</a>{' '}
+            <a href="/pt/blog/como-organizar-a-despensa">guia de organização de despensa</a>{' '}
             ajuda a criar esse hábito sem complicar.
           </p>
 
@@ -605,7 +605,7 @@ export default function BatataDoce({ params }) {
             <span className="brand-name">Mise</span>
           </a>
           <span className="footer-copy">© 2026 Mise</span>
-          <a href="/blog" className="footer-link">Blog</a>
+          <a href="/pt/blog" className="footer-link">Blog</a>
         </div>
       </footer>
     </>

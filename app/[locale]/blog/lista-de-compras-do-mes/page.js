@@ -165,7 +165,7 @@ export default function ListaDeComprasDoMes({ params }) {
           <ol className="breadcrumb-nav">
             <li><a href="/">Home</a></li>
             <li aria-hidden="true" className="breadcrumb-sep">/</li>
-            <li><a href="/blog">Blog</a></li>
+            <li><a href="/pt/blog">Blog</a></li>
             <li aria-hidden="true" className="breadcrumb-sep">/</li>
             <li className="breadcrumb-current" aria-current="page">Lista de compras do mês</li>
           </ol>
@@ -179,7 +179,7 @@ export default function ListaDeComprasDoMes({ params }) {
             <span className="blog-meta-sep">·</span>
             <span className="blog-read">7 min de leitura</span>
             <span className="blog-meta-sep">·</span>
-            <a href="/blog" className="blog-meta-link">Blog</a>
+            <a href="/pt/blog" className="blog-meta-link">Blog</a>
           </div>
 
           <h1 className="blog-h1">
@@ -376,7 +376,7 @@ export default function ListaDeComprasDoMes({ params }) {
           </ul>
           <p>
             Esses itens formam o núcleo da{' '}
-            <a href="/blog/lista-basica-de-compras">lista básica de compras</a>.
+            <a href="/pt/blog/lista-basica-de-compras">lista básica de compras</a>.
             Se a sua lista mensal começa por eles e avança para o que é específico da sua rotina, você já elimina os espaços em branco que causam as idas extras ao mercado.
           </p>
 
@@ -413,7 +413,7 @@ export default function ListaDeComprasDoMes({ params }) {
             com a{' '}
             <a href="/funcionalidades/despensa">despensa</a>{' '}
             faz exatamente isso: quando você sabe o que está acabando em casa, compra o que falta — não o que acha que falta. Mais sobre como economizar está no guia de{' '}
-            <a href="/blog/como-economizar-no-mercado">como economizar no mercado</a>.
+            <a href="/pt/blog/como-economizar-no-mercado">como economizar no mercado</a>.
           </p>
           <p>
             A lista de compras do mês não resolve tudo. Mas resolve a terça-feira sem papel higiênico.
@@ -526,7 +526,7 @@ export default function ListaDeComprasDoMes({ params }) {
             <span className="brand-name">Mise</span>
           </a>
           <span className="footer-copy">© 2026 Mise</span>
-          <a href="/blog" className="footer-link">Blog</a>
+          <a href="/pt/blog" className="footer-link">Blog</a>
         </div>
       </footer>
     </>

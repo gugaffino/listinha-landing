@@ -165,7 +165,7 @@ export default function ListaDeComprasSaudavel({ params }) {
           <ol className="breadcrumb-nav">
             <li><a href="/">Home</a></li>
             <li aria-hidden="true" className="breadcrumb-sep">/</li>
-            <li><a href="/blog">Blog</a></li>
+            <li><a href="/pt/blog">Blog</a></li>
             <li aria-hidden="true" className="breadcrumb-sep">/</li>
             <li className="breadcrumb-current" aria-current="page">Lista de compras saudável</li>
           </ol>
@@ -179,7 +179,7 @@ export default function ListaDeComprasSaudavel({ params }) {
             <span className="blog-meta-sep">·</span>
             <span className="blog-read">8 min de leitura</span>
             <span className="blog-meta-sep">·</span>
-            <a href="/blog" className="blog-meta-link">Blog</a>
+            <a href="/pt/blog" className="blog-meta-link">Blog</a>
           </div>
 
           <h1 className="blog-h1">
@@ -252,7 +252,7 @@ export default function ListaDeComprasSaudavel({ params }) {
           <h2 id="categorias">Categorias essenciais: o que vai na lista</h2>
 
           <p>
-            Organizar a <a href="/blog/lista-basica-de-compras">lista de compras</a> por grupo alimentar garante variedade nutricional sem precisar checar cada item do zero toda semana. Com os grupos certos, você varia os itens dentro de cada categoria conforme o que está na estação — ou o que estava em promoção.
+            Organizar a <a href="/pt/blog/lista-basica-de-compras">lista de compras</a> por grupo alimentar garante variedade nutricional sem precisar checar cada item do zero toda semana. Com os grupos certos, você varia os itens dentro de cada categoria conforme o que está na estação — ou o que estava em promoção.
           </p>
 
           <h3>Verduras e legumes</h3>
@@ -394,7 +394,7 @@ export default function ListaDeComprasSaudavel({ params }) {
           </p>
           <p>
             Se quiser um exemplo de como estruturar isso, veja o guia de{' '}
-            <a href="/blog/cardapio-semanal-simples-caseiro">cardápio semanal simples caseiro</a>.
+            <a href="/pt/blog/cardapio-semanal-simples-caseiro">cardápio semanal simples caseiro</a>.
           </p>
 
           <h3>4. Priorize a fruta da estação</h3>
@@ -518,7 +518,7 @@ export default function ListaDeComprasSaudavel({ params }) {
             <span className="brand-name">Mise</span>
           </a>
           <span className="footer-copy">© 2026 Mise</span>
-          <a href="/blog" className="footer-link">Blog</a>
+          <a href="/pt/blog" className="footer-link">Blog</a>
         </div>
       </footer>
     </>

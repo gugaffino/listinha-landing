@@ -165,7 +165,7 @@ export default function KiwiBeneficios({ params }) {
           <ol className="breadcrumb-nav">
             <li><a href="/">Home</a></li>
             <li aria-hidden="true" className="breadcrumb-sep">/</li>
-            <li><a href="/blog">Blog</a></li>
+            <li><a href="/pt/blog">Blog</a></li>
             <li aria-hidden="true" className="breadcrumb-sep">/</li>
             <li className="breadcrumb-current" aria-current="page">Kiwi: benefícios e nutrientes</li>
           </ol>
@@ -179,7 +179,7 @@ export default function KiwiBeneficios({ params }) {
             <span className="blog-meta-sep">·</span>
             <span className="blog-read">8 min de leitura</span>
             <span className="blog-meta-sep">·</span>
-            <a href="/blog" className="blog-meta-link">Blog</a>
+            <a href="/pt/blog" className="blog-meta-link">Blog</a>
           </div>
 
           <h1 className="blog-h1">
@@ -287,7 +287,7 @@ export default function KiwiBeneficios({ params }) {
           </p>
           <p>
             Para quem já leu sobre{' '}
-            <a href="/blog/alimentos-ricos-em-magnesio">alimentos ricos em magnésio</a>:
+            <a href="/pt/blog/alimentos-ricos-em-magnesio">alimentos ricos em magnésio</a>:
             {' '}kiwi tem magnésio também, mas em quantidade modesta (17mg/100g). Não é a fonte principal, mas contribui dentro de uma alimentação variada.
           </p>
 
@@ -411,7 +411,7 @@ export default function KiwiBeneficios({ params }) {
             Kiwi é uma fruta pra ter na{' '}
             <a href="/funcionalidades/despensa">despensa</a>{' '}
             com frequência. Dura bem, é versátil e entra em qualquer{' '}
-            <a href="/blog/lista-basica-de-compras">lista de compras</a>{' '}
+            <a href="/pt/blog/lista-basica-de-compras">lista de compras</a>{' '}
             sem ocupar espaço de cabeça. A dificuldade é lembrar de colocar na lista quando o kiwi da semana anterior acabou sem que você percebesse.
           </p>
 
@@ -523,7 +523,7 @@ export default function KiwiBeneficios({ params }) {
             <span className="brand-name">Mise</span>
           </a>
           <span className="footer-copy">© 2026 Mise</span>
-          <a href="/blog" className="footer-link">Blog</a>
+          <a href="/pt/blog" className="footer-link">Blog</a>
         </div>
       </footer>
     </>

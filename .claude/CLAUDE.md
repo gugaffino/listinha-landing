@@ -6,7 +6,7 @@ Contexto pra Claude Code trabalhar neste repo.
 
 ## 🌐 i18n — PT/EN/ES (next-intl)
 
-O site é multi-idioma via `next-intl`, com roteamento por prefixo sempre presente (`/pt/...`, `/en/...`, `/es/...` — inclusive PT). URLs antigas sem prefixo redirecionam (301) pra `/pt/...` em `next.config.js`, nunca pra `/en/`.
+O site é multi-idioma via `next-intl`, com roteamento por prefixo sempre presente (`/pt/...`, `/en/...`, `/es/...` — inclusive PT). URLs antigas sem prefixo redirecionam (308, via `permanent: true`) pra `/pt/...` em `next.config.js`, nunca pra `/en/`.
 
 **Regras obrigatórias em qualquer página/componente sob `app/[locale]/`:**
 

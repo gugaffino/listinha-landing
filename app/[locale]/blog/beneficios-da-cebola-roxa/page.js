@@ -157,7 +157,7 @@ export default function BeneficiosDaCebolaRoxa({ params }) {
           <ol className="breadcrumb-nav">
             <li><a href="/">Home</a></li>
             <li aria-hidden="true" className="breadcrumb-sep">/</li>
-            <li><a href="/blog">Blog</a></li>
+            <li><a href="/pt/blog">Blog</a></li>
             <li aria-hidden="true" className="breadcrumb-sep">/</li>
             <li className="breadcrumb-current" aria-current="page">Benefícios da cebola roxa</li>
           </ol>
@@ -171,7 +171,7 @@ export default function BeneficiosDaCebolaRoxa({ params }) {
             <span className="blog-meta-sep">·</span>
             <span className="blog-read">7 min de leitura</span>
             <span className="blog-meta-sep">·</span>
-            <a href="/blog" className="blog-meta-link">Blog</a>
+            <a href="/pt/blog" className="blog-meta-link">Blog</a>
           </div>
 
           <h1 className="blog-h1">
@@ -311,7 +311,7 @@ export default function BeneficiosDaCebolaRoxa({ params }) {
 
           <p>
             A distinção importa porque muda a decisão de compra. Se você compra cebola roxa só pra refogar, está pagando mais por algo que vai perder a principal vantagem no fogão. Faz mais sentido ter as duas na{' '}
-            <a href="/blog/lista-basica-de-compras">lista de compras</a> e usar cada uma no lugar certo.
+            <a href="/pt/blog/lista-basica-de-compras">lista de compras</a> e usar cada uma no lugar certo.
           </p>
 
           {/* COMO USAR */}
@@ -379,7 +379,7 @@ export default function BeneficiosDaCebolaRoxa({ params }) {
           </p>
           <p>
             A cebola roxa é uma das hortaliças mais fáceis de controlar na{' '}
-            <a href="/blog/como-organizar-a-despensa">despensa organizada</a>
+            <a href="/pt/blog/como-organizar-a-despensa">despensa organizada</a>
             {' '}— você vê quando está acabando antes de acabar. Diferente do alho, que some sem deixar rastro e só faz falta quando você já está na frente do fogão.
           </p>
 
@@ -484,7 +484,7 @@ export default function BeneficiosDaCebolaRoxa({ params }) {
             <span className="brand-name">Mise</span>
           </a>
           <span className="footer-copy">© 2026 Mise</span>
-          <a href="/blog" className="footer-link">Blog</a>
+          <a href="/pt/blog" className="footer-link">Blog</a>
         </div>
       </footer>
     </>

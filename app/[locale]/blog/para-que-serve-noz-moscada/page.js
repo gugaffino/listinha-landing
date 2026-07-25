@@ -165,7 +165,7 @@ export default function ParaQueServeNozMoscada({ params }) {
           <ol className="breadcrumb-nav">
             <li><a href="/">Home</a></li>
             <li aria-hidden="true" className="breadcrumb-sep">/</li>
-            <li><a href="/blog">Blog</a></li>
+            <li><a href="/pt/blog">Blog</a></li>
             <li aria-hidden="true" className="breadcrumb-sep">/</li>
             <li className="breadcrumb-current" aria-current="page">Para que serve noz-moscada</li>
           </ol>
@@ -179,7 +179,7 @@ export default function ParaQueServeNozMoscada({ params }) {
             <span className="blog-meta-sep">·</span>
             <span className="blog-read">8 min de leitura</span>
             <span className="blog-meta-sep">·</span>
-            <a href="/blog" className="blog-meta-link">Blog</a>
+            <a href="/pt/blog" className="blog-meta-link">Blog</a>
           </div>
 
           <h1 className="blog-h1">
@@ -388,7 +388,7 @@ export default function ParaQueServeNozMoscada({ params }) {
           </p>
           <p>
             Na próxima vez que montar a{' '}
-            <a href="/blog/lista-basica-de-compras">lista de compras</a>
+            <a href="/pt/blog/lista-basica-de-compras">lista de compras</a>
             , vale conferir a noz-moscada antes de sair. É o tipo de item que você descobre que acabou no momento errado — quando o molho já está pronto e a pitada que faltava estava no fundo do pote vazio.
           </p>
 
@@ -499,7 +499,7 @@ export default function ParaQueServeNozMoscada({ params }) {
             <span className="brand-name">Mise</span>
           </a>
           <span className="footer-copy">© 2026 Mise</span>
-          <a href="/blog" className="footer-link">Blog</a>
+          <a href="/pt/blog" className="footer-link">Blog</a>
         </div>
       </footer>
     </>

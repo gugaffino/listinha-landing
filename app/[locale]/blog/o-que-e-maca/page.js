@@ -165,7 +165,7 @@ export default function OQueEMaca({ params }) {
           <ol className="breadcrumb-nav">
             <li><a href="/">Home</a></li>
             <li aria-hidden="true" className="breadcrumb-sep">/</li>
-            <li><a href="/blog">Blog</a></li>
+            <li><a href="/pt/blog">Blog</a></li>
             <li aria-hidden="true" className="breadcrumb-sep">/</li>
             <li className="breadcrumb-current" aria-current="page">O que é maçã</li>
           </ol>
@@ -179,7 +179,7 @@ export default function OQueEMaca({ params }) {
             <span className="blog-meta-sep">·</span>
             <span className="blog-read">8 min de leitura</span>
             <span className="blog-meta-sep">·</span>
-            <a href="/blog" className="blog-meta-link">Blog</a>
+            <a href="/pt/blog" className="blog-meta-link">Blog</a>
           </div>
 
           <h1 className="blog-h1">
@@ -330,7 +330,7 @@ export default function OQueEMaca({ params }) {
             Os polifenóis da casca têm atividade antioxidante relevante. A quercetina, presente principalmente na casca, está associada a efeito anti-inflamatório em estudos laboratoriais. É mais um argumento pra comer com casca, não pra tomar suplemento de quercetina.
           </p>
           <p>
-            Na prática do dia a dia, o maior benefício da maçã é pragmático: é uma fruta barata, disponível o ano inteiro, fácil de carregar, que não precisa de preparo e que a maioria das pessoas gosta. Para quem tenta comer mais fruta sem mudar muito a rotina, é um ponto de entrada razoável. Mas incluir maçã numa <a href="/blog/lista-de-compras-saudavel">lista de compras saudável</a> só faz sentido se ela de fato for consumida — fruta na fruteira que vira lixo não tem benefício nenhum.
+            Na prática do dia a dia, o maior benefício da maçã é pragmático: é uma fruta barata, disponível o ano inteiro, fácil de carregar, que não precisa de preparo e que a maioria das pessoas gosta. Para quem tenta comer mais fruta sem mudar muito a rotina, é um ponto de entrada razoável. Mas incluir maçã numa <a href="/pt/blog/lista-de-compras-saudavel">lista de compras saudável</a> só faz sentido se ela de fato for consumida — fruta na fruteira que vira lixo não tem benefício nenhum.
           </p>
 
           <div className="blog-inline-cta">
@@ -389,7 +389,7 @@ export default function OQueEMaca({ params }) {
             Fuji é a escolha certa. Mantém a forma depois de assada, não vira purê, e o sabor aprofunda com o calor. Maçã assada com canela e aveia é um dos poucos sobremesas que leva 10 minutos e convence qualquer pessoa. Para tortas e crumbles, use fuji ou verde — nunca gala, que amolece demais e deixa o recheio aguado.
           </p>
           <p>
-            Para um <a href="/blog/cardapio-semanal-simples-caseiro">cardápio semanal</a> que inclua sobremesa simples, maçã assada entra fácil: não precisa de habilidade técnica e a maioria das pessoas tem canela em casa.
+            Para um <a href="/pt/blog/cardapio-semanal-simples-caseiro">cardápio semanal</a> que inclua sobremesa simples, maçã assada entra fácil: não precisa de habilidade técnica e a maioria das pessoas tem canela em casa.
           </p>
 
           <h3>Em saladas e pratos salgados</h3>

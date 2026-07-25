@@ -165,7 +165,7 @@ export default function OQueERicota({ params }) {
           <ol className="breadcrumb-nav">
             <li><a href="/">Home</a></li>
             <li aria-hidden="true" className="breadcrumb-sep">/</li>
-            <li><a href="/blog">Blog</a></li>
+            <li><a href="/pt/blog">Blog</a></li>
             <li aria-hidden="true" className="breadcrumb-sep">/</li>
             <li className="breadcrumb-current" aria-current="page">O que é ricota</li>
           </ol>
@@ -179,7 +179,7 @@ export default function OQueERicota({ params }) {
             <span className="blog-meta-sep">·</span>
             <span className="blog-read">8 min de leitura</span>
             <span className="blog-meta-sep">·</span>
-            <a href="/blog" className="blog-meta-link">Blog</a>
+            <a href="/pt/blog" className="blog-meta-link">Blog</a>
           </div>
 
           <h1 className="blog-h1">
@@ -430,7 +430,7 @@ export default function OQueERicota({ params }) {
           </p>
           <p>
             Em <strong>cheesecake</strong>, ricota pode substituir parte do cream cheese — o resultado é menos denso e mais ácido. Quem prefere cheesecake mais leve considera uma vantagem. Veja mais sobre a diferença entre os dois no{' '}
-            <a href="/blog/o-que-e-cream-cheese">guia de cream cheese</a>.
+            <a href="/pt/blog/o-que-e-cream-cheese">guia de cream cheese</a>.
           </p>
 
           <h3>No café da manhã</h3>
@@ -466,7 +466,7 @@ export default function OQueERicota({ params }) {
           </p>
           <p>
             Ricota na{' '}
-            <a href="/blog/lista-basica-de-compras">lista básica de compras</a>{' '}
+            <a href="/pt/blog/lista-basica-de-compras">lista básica de compras</a>{' '}
             é opcional — entra quando você tem receita em mente. Sem uso definido, vai estragar antes de virar lasanha.
           </p>
 
@@ -578,7 +578,7 @@ export default function OQueERicota({ params }) {
             <span className="brand-name">Mise</span>
           </a>
           <span className="footer-copy">© 2026 Mise</span>
-          <a href="/blog" className="footer-link">Blog</a>
+          <a href="/pt/blog" className="footer-link">Blog</a>
         </div>
       </footer>
     </>

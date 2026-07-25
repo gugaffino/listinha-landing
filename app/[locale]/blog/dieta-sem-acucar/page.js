@@ -146,7 +146,7 @@ export default function DietaSemAcucar({ params }) {
           <ol className="breadcrumb-nav">
             <li><a href="/">Home</a></li>
             <li aria-hidden="true" className="breadcrumb-sep">/</li>
-            <li><a href="/blog">Blog</a></li>
+            <li><a href="/pt/blog">Blog</a></li>
             <li aria-hidden="true" className="breadcrumb-sep">/</li>
             <li className="breadcrumb-current" aria-current="page">Dieta sem açúcar</li>
           </ol>
@@ -160,7 +160,7 @@ export default function DietaSemAcucar({ params }) {
             <span className="blog-meta-sep">·</span>
             <span className="blog-read">8 min de leitura</span>
             <span className="blog-meta-sep">·</span>
-            <a href="/blog" className="blog-meta-link">Blog</a>
+            <a href="/pt/blog" className="blog-meta-link">Blog</a>
           </div>
 
           <h1 className="blog-h1">
@@ -211,7 +211,7 @@ export default function DietaSemAcucar({ params }) {
             O problema do açúcar adicionado é que ele não sacia. Uma lata de refrigerante tem entre 35–40g de açúcar. Você bebe, insulina sobe, glicemia cai, fome aparece de novo em uma hora. E quase sempre não é a única fonte do dia — provavelmente veio junto com um suco de caixinha, um iogurte de morango e um pão de forma industrial no café da manhã.
           </p>
           <p>
-            A ideia central é simples: <strong>comer alimentos que não precisam de rótulo para você entender o que contêm</strong>. Feijão é feijão. Frango é frango. Maçã é maçã. Quando um produto tem dez ingredientes e três deles são variações de xarope, você já perdeu o fio. Se quiser ir além daqui, o guia de <a href="/blog/dieta-low-carb-cardapio">dieta low carb</a> cobre a restrição de carboidratos em geral — o sem açúcar é o passo anterior.
+            A ideia central é simples: <strong>comer alimentos que não precisam de rótulo para você entender o que contêm</strong>. Feijão é feijão. Frango é frango. Maçã é maçã. Quando um produto tem dez ingredientes e três deles são variações de xarope, você já perdeu o fio. Se quiser ir além daqui, o guia de <a href="/pt/blog/dieta-low-carb-cardapio">dieta low carb</a> cobre a restrição de carboidratos em geral — o sem açúcar é o passo anterior.
           </p>
 
           {/* O QUE COMER */}
@@ -242,7 +242,7 @@ export default function DietaSemAcucar({ params }) {
             <li><strong>Gorduras de qualidade</strong> — azeite de oliva, abacate, castanhas sem cobertura de chocolate ou mel.</li>
           </ul>
           <p>
-            Isso cobre café da manhã, almoço, jantar e lanche sem passar fome. O desafio não é falta de opção — é hábito e planejamento. Uma <a href="/blog/lista-de-compras-saudavel">lista de compras saudável</a> já ajuda a estruturar o que comprar antes de sair de casa.
+            Isso cobre café da manhã, almoço, jantar e lanche sem passar fome. O desafio não é falta de opção — é hábito e planejamento. Uma <a href="/pt/blog/lista-de-compras-saudavel">lista de compras saudável</a> já ajuda a estruturar o que comprar antes de sair de casa.
           </p>
 
           {/* O QUE EVITAR */}
@@ -409,7 +409,7 @@ export default function DietaSemAcucar({ params }) {
             <span className="brand-name">Mise</span>
           </a>
           <span className="footer-copy">© 2026 Mise</span>
-          <a href="/blog" className="footer-link">Blog</a>
+          <a href="/pt/blog" className="footer-link">Blog</a>
         </div>
       </footer>
     </>

@@ -165,7 +165,7 @@ export default function BeneficiosDoRabanete({ params }) {
           <ol className="breadcrumb-nav">
             <li><a href="/">Home</a></li>
             <li aria-hidden="true" className="breadcrumb-sep">/</li>
-            <li><a href="/blog">Blog</a></li>
+            <li><a href="/pt/blog">Blog</a></li>
             <li aria-hidden="true" className="breadcrumb-sep">/</li>
             <li className="breadcrumb-current" aria-current="page">Benefícios do rabanete</li>
           </ol>
@@ -179,7 +179,7 @@ export default function BeneficiosDoRabanete({ params }) {
             <span className="blog-meta-sep">·</span>
             <span className="blog-read">8 min de leitura</span>
             <span className="blog-meta-sep">·</span>
-            <a href="/blog" className="blog-meta-link">Blog</a>
+            <a href="/pt/blog" className="blog-meta-link">Blog</a>
           </div>
 
           <h1 className="blog-h1">
@@ -270,7 +270,7 @@ export default function BeneficiosDoRabanete({ params }) {
             O número que mais importa é esse 95% de água. Rabanete hidrata, sacia e praticamente não pesa na conta calórica. É um dos legumes com melhor relação volume-caloria que você encontra no hortifruti — mais do que pepino, mais do que abobrinha.
           </p>
           <p>
-            Os <a href="/blog/alimentos-ricos-em-magnesio">micronutrientes</a> não são espetaculares individualmente, mas a combinação de vitamina C, potássio e compostos fitoquímicos próprios das crucíferas é o que diferencia o rabanete de um vegetal qualquer.
+            Os <a href="/pt/blog/alimentos-ricos-em-magnesio">micronutrientes</a> não são espetaculares individualmente, mas a combinação de vitamina C, potássio e compostos fitoquímicos próprios das crucíferas é o que diferencia o rabanete de um vegetal qualquer.
           </p>
 
           {/* BENEFÍCIOS */}
@@ -389,7 +389,7 @@ export default function BeneficiosDoRabanete({ params }) {
           <p>Depende do que você já come.</p>
           <p>
             Se você já tem o hábito de comprar cenoura, pepino ou abobrinha para a semana, rabanete entra na mesma lógica — vegetal cru, fácil, sem cozinhar necessariamente. O perfil nutricional é bom, o preço é baixo e encontra em qualquer hortifruti. Não é item de{' '}
-            <a href="/blog/lista-basica-de-compras">lista básica de compras</a>{' '}
+            <a href="/pt/blog/lista-basica-de-compras">lista básica de compras</a>{' '}
             — mas cabe bem numa compra semanal se você já tem o hábito de comer legumes crus.
           </p>
           <p>
@@ -400,7 +400,7 @@ export default function BeneficiosDoRabanete({ params }) {
           </p>
           <p>
             Se você está montando um{' '}
-            <a href="/blog/cardapio-semanal-simples-caseiro">cardápio semanal</a>
+            <a href="/pt/blog/cardapio-semanal-simples-caseiro">cardápio semanal</a>
             {' '}e quer variar os legumes sem gastar mais, rabanete é uma escolha que funciona. Entra na{' '}
             <a href="/funcionalidades/lista-de-compras">lista de compras</a>
             {' '}junto com o que você já compra — sem precisar de uma seção especial.
@@ -516,7 +516,7 @@ export default function BeneficiosDoRabanete({ params }) {
             <span className="brand-name">Mise</span>
           </a>
           <span className="footer-copy">© 2026 Mise</span>
-          <a href="/blog" className="footer-link">Blog</a>
+          <a href="/pt/blog" className="footer-link">Blog</a>
         </div>
       </footer>
     </>

@@ -177,7 +177,7 @@ export default function QuinoaParaQueServe({ params }) {
               <a href="/">Home</a>
             </li>
             <li>
-              <a href="/blog">Blog</a>
+              <a href="/pt/blog">Blog</a>
             </li>
             <li aria-current="page">Quinoa: para que serve</li>
           </ol>
@@ -427,7 +427,7 @@ export default function QuinoaParaQueServe({ params }) {
           </p>
           <p>
             Se você quer colocar quinoa na rotina sem ter que planejar tudo do zero, a{' '}
-            <a href="/blog/lista-de-compras-saudavel">lista de compras saudável</a> é um bom ponto de partida — ela já traz grãos como alternativas ao arroz refinado com o contexto de por que vale a troca.
+            <a href="/pt/blog/lista-de-compras-saudavel">lista de compras saudável</a> é um bom ponto de partida — ela já traz grãos como alternativas ao arroz refinado com o contexto de por que vale a troca.
           </p>
 
           <h2 id="faq">Perguntas frequentes sobre quinoa</h2>
@@ -550,7 +550,7 @@ export default function QuinoaParaQueServe({ params }) {
             <span className="brand-name">Mise</span>
           </a>
           <span className="footer-copy">© 2026 Mise</span>
-          <a href="/blog" className="footer-link">
+          <a href="/pt/blog" className="footer-link">
             Blog
           </a>
         </div>

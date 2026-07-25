@@ -165,7 +165,7 @@ export default function Arenque({ params }) {
           <ol className="breadcrumb-nav">
             <li><a href="/">Home</a></li>
             <li aria-hidden="true" className="breadcrumb-sep">/</li>
-            <li><a href="/blog">Blog</a></li>
+            <li><a href="/pt/blog">Blog</a></li>
             <li aria-hidden="true" className="breadcrumb-sep">/</li>
             <li className="breadcrumb-current" aria-current="page">Arenque</li>
           </ol>
@@ -179,7 +179,7 @@ export default function Arenque({ params }) {
             <span className="blog-meta-sep">·</span>
             <span className="blog-read">8 min de leitura</span>
             <span className="blog-meta-sep">·</span>
-            <a href="/blog" className="blog-meta-link">Blog</a>
+            <a href="/pt/blog" className="blog-meta-link">Blog</a>
           </div>
 
           <h1 className="blog-h1">
@@ -387,7 +387,7 @@ export default function Arenque({ params }) {
           </p>
           <p>
             Sardinha em lata está em todo mercado do Brasil. Custa entre R$4 e R$12 a unidade. Tem ômega-3, proteína e cálcio dos ossos. É um dos alimentos mais completos e acessíveis da{' '}
-            <a href="/blog/lista-basica-de-compras">lista básica de compras</a>.
+            <a href="/pt/blog/lista-basica-de-compras">lista básica de compras</a>.
             Arenque defumado custa mais, é mais difícil de encontrar e tem sabor mais intenso — o que limita os contextos de uso.
           </p>
 
@@ -524,7 +524,7 @@ export default function Arenque({ params }) {
             <span className="brand-name">Mise</span>
           </a>
           <span className="footer-copy">© 2026 Mise</span>
-          <a href="/blog" className="footer-link">Blog</a>
+          <a href="/pt/blog" className="footer-link">Blog</a>
         </div>
       </footer>
     </>

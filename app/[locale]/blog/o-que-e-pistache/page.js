@@ -157,7 +157,7 @@ export default function OQueEPistache({ params }) {
           <ol className="breadcrumb-nav">
             <li><a href="/">Home</a></li>
             <li aria-hidden="true" className="breadcrumb-sep">/</li>
-            <li><a href="/blog">Blog</a></li>
+            <li><a href="/pt/blog">Blog</a></li>
             <li aria-hidden="true" className="breadcrumb-sep">/</li>
             <li className="breadcrumb-current" aria-current="page">O que é pistache</li>
           </ol>
@@ -171,7 +171,7 @@ export default function OQueEPistache({ params }) {
             <span className="blog-meta-sep">·</span>
             <span className="blog-read">9 min de leitura</span>
             <span className="blog-meta-sep">·</span>
-            <a href="/blog" className="blog-meta-link">Blog</a>
+            <a href="/pt/blog" className="blog-meta-link">Blog</a>
           </div>
 
           <h1 className="blog-h1">
@@ -402,7 +402,7 @@ export default function OQueEPistache({ params }) {
 
           <p>
             Uma dica simples: quando encontrar pistache por um preço bom, anote onde. Preço de oleaginosa muda com câmbio e safra — o que estava barato em março pode não estar em julho. Guardar o fornecedor certo é tão útil quanto guardar a{' '}
-            <a href="/blog/lista-basica-de-compras">lista de compras</a>.
+            <a href="/pt/blog/lista-basica-de-compras">lista de compras</a>.
           </p>
 
           {/* VALE A PENA */}
@@ -422,7 +422,7 @@ export default function OQueEPistache({ params }) {
           </p>
           <p>
             Não é item de{' '}
-            <a href="/blog/lista-basica-de-compras">lista básica de compras</a>
+            <a href="/pt/blog/lista-basica-de-compras">lista básica de compras</a>
             {' '}— mas se você cozinha com variedade ou tem pelo menos um uso em mente, vale a pena entrar na lista quando o preço estiver bom.
           </p>
           <p>
@@ -530,7 +530,7 @@ export default function OQueEPistache({ params }) {
             <span className="brand-name">Mise</span>
           </a>
           <span className="footer-copy">© 2026 Mise</span>
-          <a href="/blog" className="footer-link">Blog</a>
+          <a href="/pt/blog" className="footer-link">Blog</a>
         </div>
       </footer>
     </>

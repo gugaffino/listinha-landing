@@ -165,7 +165,7 @@ export default function OleoDeCanola({ params }) {
           <ol className="breadcrumb-nav">
             <li><a href="/">Home</a></li>
             <li aria-hidden="true" className="breadcrumb-sep">/</li>
-            <li><a href="/blog">Blog</a></li>
+            <li><a href="/pt/blog">Blog</a></li>
             <li aria-hidden="true" className="breadcrumb-sep">/</li>
             <li className="breadcrumb-current" aria-current="page">Óleo de canola</li>
           </ol>
@@ -179,7 +179,7 @@ export default function OleoDeCanola({ params }) {
             <span className="blog-meta-sep">·</span>
             <span className="blog-read">8 min de leitura</span>
             <span className="blog-meta-sep">·</span>
-            <a href="/blog" className="blog-meta-link">Blog</a>
+            <a href="/pt/blog" className="blog-meta-link">Blog</a>
           </div>
 
           <h1 className="blog-h1">
@@ -290,7 +290,7 @@ export default function OleoDeCanola({ params }) {
           </p>
           <p>
             A presença de ômega-3 em quantidade relevante diferencia o canola de outros óleos de cozinha. É um ácido graxo essencial — o corpo não produz, precisa vir da alimentação. Não é a mesma forma de ômega-3 do peixe (EPA e DHA), mas o ALA presente no canola é convertível em pequenas quantidades. Se você quer se aprofundar na diferença entre tipos de gordura vegetal, veja o que explicamos no post sobre{' '}
-            <a href="/blog/para-que-serve-oleo-de-linhaca">óleo de linhaça</a>, que tem concentração ainda maior de ALA.
+            <a href="/pt/blog/para-que-serve-oleo-de-linhaca">óleo de linhaça</a>, que tem concentração ainda maior de ALA.
           </p>
           <p>
             O óleo de canola refinado também tem vitamina E (tocoferol) em pequena quantidade — um antioxidante que ajuda a estabilizar o óleo durante o armazenamento.
@@ -436,7 +436,7 @@ export default function OleoDeCanola({ params }) {
           </p>
           <p>
             Se você está montando uma{' '}
-            <a href="/blog/lista-basica-de-compras">lista básica de compras</a>{' '}
+            <a href="/pt/blog/lista-basica-de-compras">lista básica de compras</a>{' '}
             ou reorganizando a despensa, o óleo de canola entra na categoria de itens que nunca devem faltar. Junto com o azeite para finalização, você cobre 90% das necessidades de gordura de uma cozinha doméstica.
           </p>
           <p>
@@ -555,7 +555,7 @@ export default function OleoDeCanola({ params }) {
             <span className="brand-name">Mise</span>
           </a>
           <span className="footer-copy">© 2026 Mise</span>
-          <a href="/blog" className="footer-link">Blog</a>
+          <a href="/pt/blog" className="footer-link">Blog</a>
         </div>
       </footer>
     </>
