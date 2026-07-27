@@ -49,13 +49,13 @@ const BLOG_POSTS = [
   { slug: 'dieta-sem-acucar', locales: ['pt'] },
   { slug: 'espinafre-beneficios', locales: ['pt'] },
   { slug: 'feijao-preto-beneficios', locales: ['pt'] },
-  { slug: 'frutas-citricas', locales: ['pt'] },
+  { slug: 'frutas-citricas', locales: ['pt', 'en', 'es'] },
   { slug: 'kiwi-beneficios', locales: ['pt'] },
-  { slug: 'lista-de-compras-mercado', locales: ['pt'] },
+  { slug: 'lista-de-compras-mercado', locales: ['pt', 'en', 'es'] },
   { slug: 'lista-de-compras-saudavel', locales: ['pt'] },
-  { slug: 'oleo-de-canola', locales: ['pt'] },
+  { slug: 'oleo-de-canola', locales: ['pt', 'en', 'es'] },
   { slug: 'oleo-de-gergelim', locales: ['pt'] },
-  { slug: 'o-que-e-alho', locales: ['pt'] },
+  { slug: 'o-que-e-alho', locales: ['pt', 'en', 'es'] },
   { slug: 'o-que-e-amendoa', locales: ['pt'] },
   { slug: 'o-que-e-arroz-parboilizado', locales: ['pt', 'en', 'es'] },
   { slug: 'o-que-e-avela', locales: ['pt'] },
@@ -74,7 +74,7 @@ const BLOG_POSTS = [
   { slug: 'para-que-serve-o-oregano', locales: ['pt'] },
   { slug: 'pimenta-vermelha', locales: ['pt'] },
   { slug: 'quinoa-para-que-serve', locales: ['pt'] },
-  { slug: 'vinagre-balsamico', locales: ['pt'] },
+  { slug: 'vinagre-balsamico', locales: ['pt', 'en', 'es'] },
 ]
 
 export default function sitemap() {
