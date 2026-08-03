@@ -1258,6 +1258,25 @@ Ao construir um cluster pra uma nova página:
 
 ---
 
+### 66. `dieta mediterrânea cardápio` → `/blog/dieta-mediterranea-cardapio`
+
+- **Fonte primária:** ✓ CSV (vol 2.900, KD 37, Informational)
+- **Score:** 2900 / 37 = 78.4
+- **Usada na página:** `/blog/dieta-mediterranea-cardapio`
+- **Cluster:**
+
+| Keyword secundária | Fonte |
+|---|---|
+| cardápio da dieta do mediterrâneo | ✓ CSV (vol 1.300, KD 38) |
+| cardapio dieta mediterranea | ✓ CSV (vol 880, KD 33) |
+| cardápio dieta mediterrânea | ✓ CSV (vol 720, KD 29) |
+| dieta mediterrânea o que é | (inventado) |
+| dieta mediterrânea alimentos permitidos | (inventado) |
+| dieta mediterrânea cardápio semanal 7 dias | (inventado) |
+| dieta mediterrânea benefícios | (inventado) |
+
+---
+
 ## Primárias disponíveis (não usadas ainda)
 
 Do cluster restante em `seo/blog-keywords.csv` — alto volume, baixo KD, ainda sem página:

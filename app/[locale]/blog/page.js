@@ -927,6 +927,17 @@ const posts = [
     dateLabel: 'Ago 2026',
     locales: ['pt'],
   },
+  {
+    slug: 'dieta-mediterranea-cardapio',
+    tag: 'Organização',
+    title: 'Dieta mediterrânea cardápio: 7 dias prontos pra copiar',
+    description: 'Dieta mediterrânea cardápio pra 7 dias com azeite, peixe, grãos integrais e vegetais. Veja o que comer, o que evitar e como montar a lista de compras certa.',
+    img: 'https://images.pexels.com/photos/1640771/pexels-photo-1640771.jpeg?auto=compress&cs=tinysrgb&w=800&h=480&fit=crop',
+    imgAlt: 'Marmitas com grão-de-bico, falafel, arroz e vegetais coloridos — refeições no estilo da dieta mediterrânea',
+    date: '2026-08-03',
+    dateLabel: 'Ago 2026',
+    locales: ['pt'],
+  },
 ]
 
 export default async function BlogPage({ params }) {
