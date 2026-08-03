@@ -1,0 +1,525 @@
+{
+  "_readme": "Banco de imagens Pexels pre-validadas (todas verificadas com HEAD request retornando 200 em 2026-08-03). Use quando a rede do sandbox bloquear fetch direto ao Pexels. Para montar a URL: https://images.pexels.com/photos/{id}/pexels-photo-{id}.jpeg?auto=compress&cs=tinysrgb&w={W}&h={H} (hero: w=1200&h=630, inline: w=760&h=380). Credito: Foto: {photographer} / Pexels. Escolha a categoria mais proxima do tema do post; dentro da categoria, escolha a foto cujo alt_hint combina melhor com o assunto especifico.",
+  "categories": {
+    "frutas-frescas": [
+      {
+        "id": 6658686,
+        "photographer": "Outside Chance",
+        "query": "fresh fruit variety",
+        "alt_hint": "A vibrant display of bananas, pomegranates, and various fruits at an outdoor market. Fresh and healthy selection."
+      },
+      {
+        "id": 30740199,
+        "photographer": "Th2city Santana",
+        "query": "fresh fruit variety",
+        "alt_hint": "A colorful arrangement of assorted tropical fruits including bananas, apples, pineapples, and citrus."
+      },
+      {
+        "id": 12265856,
+        "photographer": "Markus Winkler",
+        "query": "fresh fruit variety",
+        "alt_hint": "Vibrant selection of fresh fruits at a local market stand, featuring watermelons, mangoes, and dragon fruit."
+      }
+    ],
+    "frutas-secas-e-oleaginosas": [
+      {
+        "id": 37978583,
+        "photographer": "MAG Photography",
+        "query": "dried fruit nuts bowl",
+        "alt_hint": "A vibrant bowl filled with mixed nuts and dried fruits on a patterned table."
+      },
+      {
+        "id": 32282191,
+        "photographer": "Joel Camelot",
+        "query": "dried fruit nuts bowl",
+        "alt_hint": "A vibrant assortment of dried fruits and nuts displayed in black bowls on a wooden table."
+      },
+      {
+        "id": 31896555,
+        "photographer": "Joel Camelot",
+        "query": "dried fruit nuts bowl",
+        "alt_hint": "A vibrant collection of dried fruits and nuts in bowls, ideal for nutrition and healthy eating concepts."
+      }
+    ],
+    "vegetais-e-legumes": [
+      {
+        "id": 37321079,
+        "photographer": "Muhamad Guruh Budi Hartono",
+        "query": "fresh vegetables market",
+        "alt_hint": "Colorful assortment of fresh vegetables in a local market setting."
+      },
+      {
+        "id": 33214226,
+        "photographer": "阿凯 AARONK",
+        "query": "fresh vegetables market",
+        "alt_hint": "Lush green vegetables misted in indoor supermarket setting. Healthy produce shopping."
+      },
+      {
+        "id": 12955498,
+        "photographer": "Atlantic Ambience",
+        "query": "fresh vegetables market",
+        "alt_hint": "Close-up of various fresh vegetables including lettuce and beets at a market."
+      }
+    ],
+    "verduras-e-folhas": [
+      {
+        "id": 36285423,
+        "photographer": "Victoria Bowers",
+        "query": "leafy greens salad",
+        "alt_hint": "Detailed close-up image of fresh green lettuce leaves, perfect for healthy eating concepts."
+      },
+      {
+        "id": 6109104,
+        "photographer": "Karl Solano",
+        "query": "leafy greens salad",
+        "alt_hint": "Vibrant and healthy fresh salad with mixed greens and vegetables in a glass bowl."
+      },
+      {
+        "id": 4869359,
+        "photographer": "ROMAN ODINTSOV",
+        "query": "leafy greens salad",
+        "alt_hint": "Close-up of a vibrant green salad with walnuts and cheese for a healthy meal."
+      }
+    ],
+    "graos-e-cereais": [
+      {
+        "id": 8963981,
+        "photographer": "RDNE Stock project",
+        "query": "grains cereal bowl",
+        "alt_hint": "Close-up of a bowl of multi-grain cereal with milk, offering a tasty and healthy breakfast option."
+      },
+      {
+        "id": 12449963,
+        "photographer": "Towfiqu barbhuiya",
+        "query": "grains cereal bowl",
+        "alt_hint": "Bright cereal breakfast with milk in a yellow bowl, ideal for healthy starts."
+      },
+      {
+        "id": 12940674,
+        "photographer": "Atlantic Ambience",
+        "query": "grains cereal bowl",
+        "alt_hint": "Top view of a nutritious breakfast bowl with blueberries, blackberries, and cereal on a rustic wooden table."
+      }
+    ],
+    "leguminosas": [
+      {
+        "id": 36021103,
+        "photographer": "Mustafa Akın",
+        "query": "beans lentils legumes",
+        "alt_hint": "High-resolution image showing a textured background of green lentils in detail."
+      },
+      {
+        "id": 34940649,
+        "photographer": "Anshu Kumar",
+        "query": "beans lentils legumes",
+        "alt_hint": "High-resolution close-up of a large pile of dried red lentils, perfect for cooking inspiration."
+      },
+      {
+        "id": 13612369,
+        "photographer": "Engin Akyurt",
+        "query": "beans lentils legumes",
+        "alt_hint": "Close-up of pinto beans, lentils, and other grains in burlap sacks in a market setting."
+      }
+    ],
+    "laticinios": [
+      {
+        "id": 37377279,
+        "photographer": "Matvei",
+        "query": "dairy milk products",
+        "alt_hint": "A rustic still life featuring bread, cheese, egg, milk, and cottage cheese on a wooden table."
+      },
+      {
+        "id": 20489330,
+        "photographer": "fajri nugroho",
+        "query": "dairy milk products",
+        "alt_hint": "Vibrant shelves of diverse dairy products in a West Java supermarket."
+      },
+      {
+        "id": 7451957,
+        "photographer": "Nothing Ahead",
+        "query": "dairy milk products",
+        "alt_hint": "Various colorful boxes of milk placed on shelves with prices in modern supermarket"
+      }
+    ],
+    "queijos": [
+      {
+        "id": 34278817,
+        "photographer": "Justin Agyarko",
+        "query": "cheese board",
+        "alt_hint": "A gourmet artisanal cheese board featuring assorted cheeses, fruits, and crackers in an elegant indoor setting."
+      },
+      {
+        "id": 10560868,
+        "photographer": "Radu Daniel ( MRD )",
+        "query": "cheese board",
+        "alt_hint": "A rustic cheese platter with assorted cheeses, nuts, and grapes on a wooden board."
+      },
+      {
+        "id": 543733,
+        "photographer": "Foodie Factor",
+        "query": "cheese board",
+        "alt_hint": "A delectable cheese platter featuring various cheeses, crackers, and olives on a slate background."
+      }
+    ],
+    "carnes": [
+      {
+        "id": 618775,
+        "photographer": "Lukas Blazek",
+        "query": "raw meat cutting board",
+        "alt_hint": "Raw beef steak seasoned with spices on a wooden chopping board. Perfect for cooking enthusiasts."
+      },
+      {
+        "id": 8112380,
+        "photographer": "Rachel Claire",
+        "query": "raw meat cutting board",
+        "alt_hint": "Slices of raw meat on a wooden cutting board in a dimly lit kitchen setting."
+      },
+      {
+        "id": 7333261,
+        "photographer": "Evgeniy Alekseyev",
+        "query": "raw meat cutting board",
+        "alt_hint": "Raw pork chop with seasoning, herbs, and tomatoes on a wooden board."
+      }
+    ],
+    "peixes-e-frutos-do-mar": [
+      {
+        "id": 20121107,
+        "photographer": "Nadine Ginzel",
+        "query": "fresh fish seafood market",
+        "alt_hint": "A variety of fresh mackerel on display at an open-air market. Perfect for culinary and fish cuisine themes."
+      },
+      {
+        "id": 8351649,
+        "photographer": "Kindel Media",
+        "query": "fresh fish seafood market",
+        "alt_hint": "A vivid and bustling seafood market with fresh fish in trays and a scale."
+      },
+      {
+        "id": 8352344,
+        "photographer": "Kindel Media",
+        "query": "fresh fish seafood market",
+        "alt_hint": "A vibrant display of fresh fish and seafood at a market, with various fish and crustaceans on ice."
+      }
+    ],
+    "ovos": [
+      {
+        "id": 17903969,
+        "photographer": "Teun Nijn",
+        "query": "eggs carton kitchen",
+        "alt_hint": "Fresh white eggs in a cardboard carton on a kitchen counter."
+      },
+      {
+        "id": 6287232,
+        "photographer": "Klaus Nielsen",
+        "query": "eggs carton kitchen",
+        "alt_hint": "Eggs in carton container placed on table near chef cooking food in kitchen"
+      },
+      {
+        "id": 7489007,
+        "photographer": "Gustavo Fring",
+        "query": "eggs carton kitchen",
+        "alt_hint": "Brown eggs, flour, and a rolling pin on a kitchen table ready for baking."
+      }
+    ],
+    "temperos-e-especiarias": [
+      {
+        "id": 32281706,
+        "photographer": "Joel Camelot",
+        "query": "spices herbs kitchen",
+        "alt_hint": "Colorful assortment of spices in bowls with cinnamon sticks on a wooden surface."
+      },
+      {
+        "id": 531446,
+        "photographer": "Pixabay",
+        "query": "spices herbs kitchen",
+        "alt_hint": "Close-up of assorted spice jars with various herbs on a kitchen shelf, showcasing colorful culinary ingredients."
+      },
+      {
+        "id": 68563,
+        "photographer": "Miguel Á. Padriñán",
+        "query": "spices herbs kitchen",
+        "alt_hint": "Close-up of wooden spoons on a table filled with aromatic spices."
+      }
+    ],
+    "oleos-e-azeites": [
+      {
+        "id": 4910159,
+        "photographer": "RDNE Stock project",
+        "query": "olive oil bottle kitchen",
+        "alt_hint": "Positive ethnic woman wearing headscarf showing glass bottles of organic olive or sunflower oil while cooking in modern kitchen"
+      },
+      {
+        "id": 10054918,
+        "photographer": "Ron Lach",
+        "query": "olive oil bottle kitchen",
+        "alt_hint": "Fresh ingredients including olive oil, tomatoes, and a pepper mill on a kitchen table."
+      },
+      {
+        "id": 5737246,
+        "photographer": "RDNE Stock project",
+        "query": "olive oil bottle kitchen",
+        "alt_hint": "A focused image showing olive oil being poured from a bottle into a pan during cooking."
+      }
+    ],
+    "paes-e-massas": [
+      {
+        "id": 7543099,
+        "photographer": "Daniel Dan",
+        "query": "bread bakery fresh",
+        "alt_hint": "A close-up view showcasing a pile of freshly baked bread rolls with golden crusts."
+      },
+      {
+        "id": 11570705,
+        "photographer": "Gamroth Joerg",
+        "query": "bread bakery fresh",
+        "alt_hint": "Close-up of a basket filled with assorted freshly baked artisan breads including seeded varieties."
+      },
+      {
+        "id": 36319681,
+        "photographer": "Jonathan Borba",
+        "query": "bread bakery fresh",
+        "alt_hint": "Detailed close-up of white bread texture showing porous structure and crust."
+      }
+    ],
+    "doces-e-sobremesas": [
+      {
+        "id": 31132630,
+        "photographer": "James Collington",
+        "query": "dessert sweets bakery",
+        "alt_hint": "Delicious display of lemon bars and brownies in a bakery with price tags."
+      },
+      {
+        "id": 35661532,
+        "photographer": "Anderson Alves",
+        "query": "dessert sweets bakery",
+        "alt_hint": "A variety of colorful donuts and pastries on display in a bakery case, enticing and delicious."
+      },
+      {
+        "id": 17543263,
+        "photographer": "Renan Almeida",
+        "query": "dessert sweets bakery",
+        "alt_hint": "Contemporary bakery showcasing an array of colorful pastries and desserts in a sleek interior."
+      }
+    ],
+    "bebidas-quentes": [
+      {
+        "id": 2127830,
+        "photographer": "Gül Işık",
+        "query": "coffee tea hot drink",
+        "alt_hint": "Woman enjoying a relaxing morning with a hot beverage, milk, and smartphone."
+      },
+      {
+        "id": 2011264,
+        "photographer": "Samer Daboul",
+        "query": "coffee tea hot drink",
+        "alt_hint": "Black and white image of hot coffee cups on a tray, emitting steam, in an outdoor setting."
+      },
+      {
+        "id": 32597885,
+        "photographer": "Sóc Năng Động",
+        "query": "coffee tea hot drink",
+        "alt_hint": "A stylish arrangement of coffee, tea, and flowers on a dark wooden tray."
+      }
+    ],
+    "bebidas-frias-e-refrigerantes": [
+      {
+        "id": 8880742,
+        "photographer": "Ron Lach",
+        "query": "cold soda drink glass",
+        "alt_hint": "Cooling beverage with fizzy bubbles and ice cubes in a clear glass."
+      },
+      {
+        "id": 12987271,
+        "photographer": "Srattha Nualsate",
+        "query": "cold soda drink glass",
+        "alt_hint": "Close-up of a refreshing yellow fizzy drink in a glass with ice cubes, perfect for summer refreshment."
+      },
+      {
+        "id": 4113653,
+        "photographer": "alleksana",
+        "query": "cold soda drink glass",
+        "alt_hint": "Two cans of soda with ice-filled glasses on a minimalistic background."
+      }
+    ],
+    "bebidas-alcoolicas": [
+      {
+        "id": 8551435,
+        "photographer": "Dasha Klimova",
+        "query": "cocktail bar drink",
+        "alt_hint": "Three crafted cocktails with lemon wedges and flowers, perfect for a vibrant night out."
+      },
+      {
+        "id": 36630828,
+        "photographer": "Mohamed  Olwy",
+        "query": "cocktail bar drink",
+        "alt_hint": "Two vibrant cocktails with berries and ice, set in a stylish bar setting."
+      },
+      {
+        "id": 24868933,
+        "photographer": "Kadir Avşar",
+        "query": "cocktail bar drink",
+        "alt_hint": "Close-up of colorful cocktails with pineapple garnishes on a marble table. Perfect for summer or tropical themed settings."
+      }
+    ],
+    "despensa-organizada": [
+      {
+        "id": 10568352,
+        "photographer": "Ron Lach",
+        "query": "pantry organized jars",
+        "alt_hint": "Stylish kitchen setup featuring glass jars with pasta and grains on a clean counter."
+      },
+      {
+        "id": 7262983,
+        "photographer": "Sarah  Chai",
+        "query": "pantry organized jars",
+        "alt_hint": "Collection of various glass jars with different dry food and glassware placed on wooden shelf"
+      },
+      {
+        "id": 11911870,
+        "photographer": "Mathias Reding",
+        "query": "pantry organized jars",
+        "alt_hint": "A variety of spices stored in glass jars lined on a shelf, perfect for kitchen organization."
+      }
+    ],
+    "geladeira-organizada": [
+      {
+        "id": 9031968,
+        "photographer": "Kevin  Malik",
+        "query": "organized refrigerator fridge",
+        "alt_hint": "Back view of a blonde woman retrieving food from a refrigerator in a bright kitchen."
+      },
+      {
+        "id": 4443442,
+        "photographer": "Polina Tankilevitch",
+        "query": "organized refrigerator fridge",
+        "alt_hint": "Colorful array of fresh fruits and vegetables neatly arranged in a refrigerator."
+      },
+      {
+        "id": 35594805,
+        "photographer": "Lisa from Pexels",
+        "query": "organized refrigerator fridge",
+        "alt_hint": "A variety of fresh fruits and vegetables including avocados, lemons, strawberries, and lettuce in a fridge drawer."
+      }
+    ],
+    "carrinho-de-compras-mercado": [
+      {
+        "id": 11018212,
+        "photographer": "Jan van der Wolf",
+        "query": "grocery shopping cart supermarket",
+        "alt_hint": "A row of neatly arranged shopping carts in front of a green tiled wall with shadows."
+      },
+      {
+        "id": 4124939,
+        "photographer": "Christian Naccarato",
+        "query": "grocery shopping cart supermarket",
+        "alt_hint": "Shopping cart in a vibrant supermarket aisle in Padova, Italy."
+      },
+      {
+        "id": 27175870,
+        "photographer": "Helena Lopes",
+        "query": "grocery shopping cart supermarket",
+        "alt_hint": "A man wearing a mask shops in a supermarket, selecting items from a refrigerated section."
+      }
+    ],
+    "lista-de-compras": [
+      {
+        "id": 5191391,
+        "photographer": "cottonbro studio",
+        "query": "shopping list notebook",
+        "alt_hint": "Close-up of hands writing on notepads with a to-do list. Perfect for productivity or organization themes."
+      },
+      {
+        "id": 8845104,
+        "photographer": "Yaroslav Shuraev",
+        "query": "shopping list notebook",
+        "alt_hint": "A woman in a pink shirt writing in a notebook on a kitchen counter with a pen."
+      },
+      {
+        "id": 410727,
+        "photographer": "Lisa from Pexels",
+        "query": "shopping list notebook",
+        "alt_hint": "A cozy setup with a notebook, pen, coffee, and cookies on a rustic wooden table, ideal for planning and relaxation."
+      }
+    ],
+    "cozinha-cotidiano": [
+      {
+        "id": 36731470,
+        "photographer": "Vitaly Gariev",
+        "query": "home kitchen cooking",
+        "alt_hint": "Mother and daughter joyfully baking in a cozy kitchen setting."
+      },
+      {
+        "id": 37332211,
+        "photographer": "Gu Ko",
+        "query": "home kitchen cooking",
+        "alt_hint": "Hands cracking eggs into a bowl with vegetables and flour, preparing Asian cuisine."
+      },
+      {
+        "id": 5427305,
+        "photographer": "Amina Filkins",
+        "query": "home kitchen cooking",
+        "alt_hint": "Adult pregnant woman in casual dress cutting vegetables while husband cooking meal on heater in contemporary light kitchen"
+      }
+    ],
+    "cardapio-semanal-planejamento": [
+      {
+        "id": 1640771,
+        "photographer": "Ella Olsson",
+        "query": "meal planning weekly food",
+        "alt_hint": "Colorful meal prep containers with falafel, chickpeas, rice, and vegetables for a healthy lifestyle."
+      },
+      {
+        "id": 1640775,
+        "photographer": "Ella Olsson",
+        "query": "meal planning weekly food",
+        "alt_hint": "Colorful healthy meal prep with corn, olives, tomatoes, and lentils in glass containers. Perfect for mindful eating."
+      },
+      {
+        "id": 12499380,
+        "photographer": "Spencer Stone",
+        "query": "meal planning weekly food",
+        "alt_hint": "A wooden table setup with apple slices, a calorie chart, and a glass of water for a healthy diet plan."
+      }
+    ],
+    "conservas-e-enlatados": [
+      {
+        "id": 35567499,
+        "photographer": "Yasin Onuş",
+        "query": "canned food jars preserves",
+        "alt_hint": "Homemade preserves in mason jars neatly arranged on a rustic wooden shelf."
+      },
+      {
+        "id": 12419505,
+        "photographer": "Jonathan Cooper",
+        "query": "canned food jars preserves",
+        "alt_hint": "Detailed close-up shot of bottled pork tongues on display in a supermarket."
+      },
+      {
+        "id": 6611594,
+        "photographer": "Dale Jackson",
+        "query": "canned food jars preserves",
+        "alt_hint": "Assorted preserved foods in glass jars on a wooden shelf, showcasing traditional storage methods."
+      }
+    ],
+    "congelados": [
+      {
+        "id": 21071800,
+        "photographer": "Carsten Ruthemann",
+        "query": "frozen food freezer",
+        "alt_hint": "Clear view of two frozen sandwiches wrapped in plastic inside a refrigerator."
+      },
+      {
+        "id": 3985081,
+        "photographer": "Gustavo Fring",
+        "query": "frozen food freezer",
+        "alt_hint": "A family enjoying time together while shopping in a supermarket aisle."
+      },
+      {
+        "id": 27175516,
+        "photographer": "Helena Lopes",
+        "query": "frozen food freezer",
+        "alt_hint": "Woman wearing mask shops in grocery store, reaching for freezer door, holding basket."
+      }
+    ]
+  }
+}
