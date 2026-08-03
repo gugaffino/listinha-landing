@@ -916,6 +916,17 @@ const posts = [
     dateLabel: 'Jun 2026',
     locales: ['pt'],
   },
+  {
+    slug: 'o-que-e-agua-tonica',
+    tag: 'Ingredientes',
+    title: 'O que é água tônica: benefícios, calorias e como usar',
+    description: 'Água tônica nasceu como remédio contra malária e virou refrigerante de bar. Veja o que é, se faz mal, quantas calorias tem e como usar no gim-tônica.',
+    img: 'https://images.pexels.com/photos/8128069/pexels-photo-8128069.jpeg?auto=compress&cs=tinysrgb&w=800&h=480&fit=crop',
+    imgAlt: 'Garrafa de água tônica sobre superfície neutra',
+    date: '2026-08-03',
+    dateLabel: 'Ago 2026',
+    locales: ['pt'],
+  },
 ]
 
 export default async function BlogPage({ params }) {

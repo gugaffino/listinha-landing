@@ -1238,6 +1238,26 @@ Ao construir um cluster pra uma nova página:
 
 ---
 
+### 65. `agua tonica` → `/blog/o-que-e-agua-tonica`
+
+- **Fonte primária:** ✓ CSV (vol 22.200, KD 34, Informational)
+- **Score:** 22200 / 34 = 652.9
+- **Usada na página:** `/blog/o-que-e-agua-tonica`
+- **Cluster:**
+
+| Keyword secundária | Fonte |
+|---|---|
+| água tônica | ✓ CSV (vol 4.400, KD 38) |
+| agua tonica para que serve | ✓ CSV (vol 1.900, KD 30) |
+| o que é agua tonica | ✓ CSV (vol 1.900, KD 32) |
+| para que serve água tônica | ✓ CSV (vol 1.900, KD 33) |
+| para que serve agua tonica | ✓ CSV (vol 1.600, KD 28) |
+| beneficios da agua tonica | ✓ CSV (vol 590, KD 29) |
+| agua tonica faz bem | ✓ CSV (vol 720, KD 35) |
+| água tônica faz bem | ✓ CSV (vol 720, KD 33) |
+
+---
+
 ## Primárias disponíveis (não usadas ainda)
 
 Do cluster restante em `seo/blog-keywords.csv` — alto volume, baixo KD, ainda sem página:
