@@ -25,14 +25,22 @@ export async function generateMetadata({ params }) {
 const posts = [
   {
     slug: 'lista-basica-de-compras',
-    tag: 'Lista de compras',
-    title: 'Lista básica de compras: guia com 80+ itens pra copiar',
-    description: 'Os 7 grupos essenciais, quanto custa por mês por perfil de família e dicas pra economizar no supermercado.',
+    tag: { pt: 'Lista de compras', en: 'Shopping List', es: 'Lista de compras' },
+    title: {
+      pt: 'Lista básica de compras: guia com 80+ itens pra copiar',
+      en: 'Basic Grocery List: The Complete Guide (80+ Items)',
+      es: 'Lista básica del supermercado: guía con más de 80 productos',
+    },
+    description: {
+      pt: 'Lista básica de compras com os 7 grupos essenciais, 80+ itens pra copiar, como adaptar ao seu perfil, quanto custa por mês e 5 dicas pra economizar no supermercado.',
+      en: 'A basic grocery list covering all 7 essential categories, 80+ items to copy, how to adjust it to your household, monthly cost by household size, and 5 tips to save at checkout.',
+      es: 'Lista básica del supermercado con las 7 categorías esenciales, más de 80 productos para copiar, cómo adaptarla a tu hogar, cuánto cuesta al mes y 5 consejos para ahorrar.',
+    },
     img: 'https://images.pexels.com/photos/11018212/pexels-photo-11018212.jpeg?auto=compress&cs=tinysrgb&w=800&h=480&fit=crop',
     imgAlt: 'Carrinho de compras em supermercado',
     date: '2025-03-10',
     dateLabel: 'Mar 2025',
-    locales: ['pt'],
+    locales: ['pt', 'en', 'es'],
   },
   {
     slug: 'lista-de-compras-para-casa-nova',
@@ -55,14 +63,22 @@ const posts = [
   },
   {
     slug: 'como-organizar-a-despensa',
-    tag: 'Organização',
-    title: 'Como organizar a despensa: guia prático em 7 passos',
-    description: '7 passos pra esvaziar, agrupar, rotular e manter organizado — incluindo como organizar a geladeira por zonas.',
+    tag: { pt: 'Organização', en: 'Organization', es: 'Organización' },
+    title: {
+      pt: 'Como organizar a despensa: guia prático em 7 passos',
+      en: 'How to Organize a Pantry: A Practical 7-Step Guide',
+      es: 'Cómo organizar la despensa: guía práctica en 7 pasos',
+    },
+    description: {
+      pt: 'Como organizar a despensa do zero: 7 passos pra esvaziar, agrupar, rotular e manter tudo no lugar — com dicas extras pra geladeira organizada.',
+      en: 'Learn how to organize a pantry from scratch: empty it out, group by category, apply FIFO, and label everything — plus a simple system for the fridge too.',
+      es: 'Cómo organizar la despensa desde cero: 7 pasos para vaciarla, agrupar por categorías, rotular y mantener todo en su lugar — más un sistema simple para el refrigerador.',
+    },
     img: 'https://images.pexels.com/photos/6660254/pexels-photo-6660254.jpeg?auto=compress&cs=tinysrgb&w=800&h=480&fit=crop',
     imgAlt: 'Despensa organizada com potes transparentes e prateleiras bem distribuídas',
     date: '2026-05-21',
     dateLabel: 'Mai 2026',
-    locales: ['pt'],
+    locales: ['pt', 'en', 'es'],
   },
   {
     slug: 'como-economizar-no-mercado',
@@ -180,14 +196,22 @@ const posts = [
   },
   {
     slug: 'o-que-e-curcuma',
-    tag: 'Ingredientes',
-    title: 'O que é cúrcuma: benefícios, como usar e onde comprar',
-    description: 'Cúrcuma é o tempero amarelo do curry e do arroz. Saiba o que é, para que serve a curcumina, por que precisa de pimenta preta e como guardar na despensa.',
+    tag: { pt: 'Ingredientes', en: 'Ingredients', es: 'Ingredientes' },
+    title: {
+      pt: 'O que é cúrcuma: benefícios, como usar e onde comprar',
+      en: 'Turmeric: What It Actually Does, and How to Use It Right',
+      es: 'Cúrcuma: para qué sirve, cómo usarla y cómo guardarla',
+    },
+    description: {
+      pt: 'Cúrcuma é o tempero amarelo que colore curry, arroz e sopas. Saiba o que é, para que serve a curcumina, como absorver melhor e onde comprar no Brasil.',
+      en: 'Turmeric is the earthy yellow spice behind curry and golden milk. What curcumin really does, why black pepper matters for absorption, and how to cook, buy, and store it.',
+      es: 'La cúrcuma es la especia amarilla del curry y la leche dorada. Qué es la curcumina, por qué necesita pimienta negra para absorberse y cómo cocinar, comprar y guardarla.',
+    },
     img: 'https://images.pexels.com/photos/877220/pexels-photo-877220.jpeg?auto=compress&cs=tinysrgb&w=800&h=480&fit=crop',
     imgAlt: 'Pó de cúrcuma amarelo-alaranjado em colher de madeira sobre superfície escura',
     date: '2026-05-29',
     dateLabel: 'Mai 2026',
-    locales: ['pt'],
+    locales: ['pt', 'en', 'es'],
   },
   {
     slug: 'lista-de-compras-do-mes',
@@ -1118,7 +1142,7 @@ const posts = [
     imgAlt: 'Sementes de gergelim douradas espalhadas — base do óleo de gergelim',
     date: '2026-06-27',
     dateLabel: 'Jun 2026',
-    locales: ['pt'],
+    locales: ['pt', 'en', 'es'],
   },
   {
     slug: 'pimenta-vermelha',

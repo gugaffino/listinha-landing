@@ -12,16 +12,17 @@ const TRANSLATED_PATHS = [
 ]
 
 const BLOG_POSTS = [
-  { slug: 'lista-basica-de-compras', locales: ['pt'] },
+  { slug: 'lista-basica-de-compras', locales: ['pt', 'en', 'es'] },
+  { slug: 'dieta-mediterranea-cardapio', locales: ['pt'] },
   { slug: 'lista-de-compras-para-casa-nova', locales: ['pt', 'en', 'es'] },
-  { slug: 'como-organizar-a-despensa', locales: ['pt'] },
+  { slug: 'como-organizar-a-despensa', locales: ['pt', 'en', 'es'] },
   { slug: 'como-economizar-no-mercado', locales: ['pt', 'en', 'es'] },
   { slug: 'o-que-e-cranberry', locales: ['pt', 'en', 'es'] },
   { slug: 'o-que-e-pistache', locales: ['pt', 'en', 'es'] },
   { slug: 'caderno-de-receitas', locales: ['pt', 'en', 'es'] },
   { slug: 'para-que-serve-oleo-de-linhaca', locales: ['pt', 'en', 'es'] },
   { slug: 'o-que-e-chia', locales: ['pt', 'en', 'es'] },
-  { slug: 'o-que-e-curcuma', locales: ['pt'] },
+  { slug: 'o-que-e-curcuma', locales: ['pt', 'en', 'es'] },
   { slug: 'lista-de-compras-do-mes', locales: ['pt', 'en', 'es'] },
   { slug: 'alimentos-ricos-em-magnesio', locales: ['pt', 'en', 'es'] },
   { slug: 'cardapio-semanal-simples-caseiro', locales: ['pt', 'en', 'es'] },
