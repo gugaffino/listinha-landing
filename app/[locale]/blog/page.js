@@ -1261,6 +1261,25 @@ const posts = [
     dateLabel: 'Nov 2026',
     locales: ['pt', 'en', 'es'],
   },
+  {
+    slug: 'lista-de-compras-para-2-pessoas',
+    tag: { pt: 'Lista de compras', en: 'Shopping list', es: 'Lista de compras' },
+    title: {
+      pt: 'Lista de compras para 2 pessoas: guia de quantidade certa',
+      en: 'Grocery List for 2 People: How Much to Actually Buy',
+      es: 'Lista de compras para 2 personas: cuánto comprar',
+    },
+    description: {
+      pt: 'Lista de compras para 2 pessoas com quantidade certa por categoria, lista pronta pra copiar, quanto custa por mês e como não sobrar nem faltar comida.',
+      en: 'A grocery list for 2 people with the right quantity per category, a ready-to-copy weekly list, monthly cost, and how to stop food from going bad in the fridge.',
+      es: 'Lista de compras para 2 personas con la cantidad correcta por categoría, lista lista para copiar, cuánto cuesta al mes y cómo evitar que se eche a perder la comida.',
+    },
+    img: 'https://images.pexels.com/photos/8845104/pexels-photo-8845104.jpeg?auto=compress&cs=tinysrgb&w=800&h=480&fit=crop',
+    imgAlt: 'Mulher escrevendo lista de compras em caderno sobre bancada da cozinha',
+    date: '2026-08-17',
+    dateLabel: 'Ago 2026',
+    locales: ['pt', 'en', 'es'],
+  },
 ]
 
 export default async function BlogPage({ params }) {

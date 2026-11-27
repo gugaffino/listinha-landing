@@ -78,6 +78,7 @@ const BLOG_POSTS = [
   { slug: 'quinoa-para-que-serve', locales: ['pt', 'en', 'es'] },
   { slug: 'vinagre-balsamico', locales: ['pt', 'en', 'es'] },
   { slug: 'lista-de-aniversario-o-que-comprar', locales: ['pt', 'en', 'es'] },
+  { slug: 'lista-de-compras-para-2-pessoas', locales: ['pt', 'en', 'es'] },
 ]
 
 export default function sitemap() {
