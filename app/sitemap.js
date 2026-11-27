@@ -77,7 +77,7 @@ const BLOG_POSTS = [
   { slug: 'pimenta-vermelha', locales: ['pt', 'en', 'es'] },
   { slug: 'quinoa-para-que-serve', locales: ['pt', 'en', 'es'] },
   { slug: 'vinagre-balsamico', locales: ['pt', 'en', 'es'] },
-  { slug: 'lista-de-aniversario-o-que-comprar', locales: ['pt', 'en', 'es'] },
+  { slug: 'lista-de-aniversario-o-que-comprar', locales: ['pt'] },
 ]
 
 export default function sitemap() {

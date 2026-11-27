@@ -1244,22 +1244,14 @@ const posts = [
   },
   {
     slug: 'lista-de-aniversario-o-que-comprar',
-    tag: { pt: 'Lista de compras', en: 'Shopping List', es: 'Lista de compras' },
-    title: {
-      pt: 'Lista de aniversário: o que comprar e quanto gastar',
-      en: 'Birthday Party Checklist: What to Buy, How Much to Spend',
-      es: 'Lista de cumpleaños: qué comprar sin gastar de más',
-    },
-    description: {
-      pt: 'Lista de aniversário: o que comprar em comida, bebida, descartáveis e decoração por convidado, com dica de orçamento e o que cortar primeiro se apertar.',
-      en: 'A birthday party shopping list covering food, drinks, paper goods, and decor by guest count, with a simple budget split and what to cut first if money is tight.',
-      es: 'Lista de cumpleaños: qué comprar en comida, bebida, desechables y decoración por invitado, con un reparto de presupuesto simple y qué recortar si falta dinero.',
-    },
+    tag: 'Lista de compras',
+    title: 'Lista de aniversário: o que comprar e quanto gastar',
+    description: 'Comida, bebida, descartáveis e decoração por convidado, com dica de orçamento e o que cortar primeiro se apertar.',
     img: 'https://images.pexels.com/photos/8845104/pexels-photo-8845104.jpeg?auto=compress&cs=tinysrgb&w=800&h=480&fit=crop',
     imgAlt: 'Mulher escrevendo lista de compras de aniversário em caderno sobre balcão de cozinha',
     date: '2026-11-27',
     dateLabel: 'Nov 2026',
-    locales: ['pt', 'en', 'es'],
+    locales: ['pt'],
   },
 ]
 
