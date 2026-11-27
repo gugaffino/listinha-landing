@@ -1261,6 +1261,25 @@ const posts = [
     dateLabel: 'Nov 2026',
     locales: ['pt', 'en', 'es'],
   },
+  {
+    slug: 'organizar-geladeira',
+    tag: { pt: 'Organização', en: 'Organization', es: 'Organización' },
+    title: {
+      pt: 'Organizar geladeira: guia completo por zona e temperatura',
+      en: 'How to Organize a Fridge: Zones, Temperature, and Shelf Life',
+      es: 'Cómo organizar el refrigerador: zonas, temperatura y caducidad',
+    },
+    description: {
+      pt: 'Organizar geladeira não é arrumar prateleira. Veja as zonas de temperatura, o que vai em cada uma, a rotina pós-mercado e os erros que estragam comida rápido.',
+      en: 'Organizing a fridge is not about tidy shelves. See the temperature zones, what goes where, the after-shopping routine, and the habits that waste food fastest.',
+      es: 'Organizar el refrigerador no es acomodar estantes. Descubre las zonas de temperatura, qué va en cada una, la rutina post-compra y los errores que dañan la comida.',
+    },
+    img: 'https://images.pexels.com/photos/4443442/pexels-photo-4443442.jpeg?auto=compress&cs=tinysrgb&w=800&h=480&fit=crop',
+    imgAlt: 'Geladeira aberta com frutas e vegetais frescos organizados por prateleira',
+    date: '2026-08-31',
+    dateLabel: 'Ago 2026',
+    locales: ['pt', 'en', 'es'],
+  },
 ]
 
 export default async function BlogPage({ params }) {
