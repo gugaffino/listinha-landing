@@ -1296,6 +1296,26 @@ Ao construir um cluster pra uma nova página:
 
 ---
 
+### 68. `chalota` → `/blog/o-que-e-chalota`
+
+- **Fonte primária:** ✓ CSV (vol 4.400, KD 36, Informational)
+- **Score:** 4400 / 36 = 122.2
+- **Usada na página:** `/blog/o-que-e-chalota`
+- **Cluster:**
+
+| Keyword secundária | Fonte |
+|---|---|
+| o que é chalota | (inventado) |
+| para que serve chalota | (inventado) |
+| chalota diferença cebola | (inventado) |
+| chalota como usar na cozinha | (inventado) |
+| chalota onde comprar no brasil | (inventado) |
+| chalota crua ou refogada | (inventado) |
+| chalota molho francês | (inventado) |
+| como guardar chalota | (inventado) |
+
+---
+
 ## Primárias disponíveis (não usadas ainda)
 
 Do cluster restante em `seo/blog-keywords.csv` — alto volume, baixo KD, ainda sem página:

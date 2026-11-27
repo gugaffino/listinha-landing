@@ -1261,6 +1261,25 @@ const posts = [
     dateLabel: 'Nov 2026',
     locales: ['pt', 'en', 'es'],
   },
+  {
+    slug: 'o-que-e-chalota',
+    tag: { pt: 'Ingredientes', en: 'Ingredients', es: 'Ingredientes' },
+    title: {
+      pt: 'Chalota: o que é, diferença da cebola e como usar na cozinha',
+      en: 'Shallots: What They Are, and How They Differ from Onion',
+      es: 'Chalota: qué es, diferencia con la cebolla y cómo usarla',
+    },
+    description: {
+      pt: 'Chalota é uma cebola pequena e adocicada, queridinha da cozinha francesa. Saiba o que é, a diferença pra cebola e alho, como usar e onde comprar no Brasil.',
+      en: 'A shallot is a small, sweet member of the onion family loved in French cooking. What it is, how it differs from onion and garlic, and how to cook and store it.',
+      es: 'La chalota es una cebolla pequeña y dulce, favorita de la cocina francesa. Qué es, en qué se diferencia de la cebolla y el ajo, y cómo cocinarla y guardarla.',
+    },
+    img: 'https://images.pexels.com/photos/37321079/pexels-photo-37321079.jpeg?auto=compress&cs=tinysrgb&w=800&h=480&fit=crop',
+    imgAlt: 'Variedade colorida de legumes e vegetais frescos em banca de mercado',
+    date: '2026-08-26',
+    dateLabel: 'Ago 2026',
+    locales: ['pt', 'en', 'es'],
+  },
 ]
 
 export default async function BlogPage({ params }) {
