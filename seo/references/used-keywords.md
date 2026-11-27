@@ -1277,6 +1277,25 @@ Ao construir um cluster pra uma nova página:
 
 ---
 
+### 67. `lista de aniversário o que comprar` → `/blog/lista-de-aniversario-o-que-comprar`
+
+- **Fonte primária:** ✓ CSV (vol 590, KD 7, Informational)
+- **Score:** 590 / 7 = 84.3
+- **Usada na página:** `/blog/lista-de-aniversario-o-que-comprar`
+- **Cluster:**
+
+| Keyword secundária | Fonte |
+|---|---|
+| lista de aniversario o que comprar | ✓ CSV (vol 320, KD 11) |
+| lista de compras para festa de aniversário infantil | ✓ CSV (vol 140, KD 6) |
+| lista de compras para aniversário de 1 ano | ✓ CSV (vol 140, KD 22) |
+| lista de compras churrasco | ✓ CSV (vol 110, KD 4) |
+| o que comprar para festa de aniversário em casa | (inventado) |
+| quanto gastar com festa de aniversário em casa | (inventado) |
+| decoração e comida para aniversário infantil em casa | (inventado) |
+
+---
+
 ## Primárias disponíveis (não usadas ainda)
 
 Do cluster restante em `seo/blog-keywords.csv` — alto volume, baixo KD, ainda sem página:
