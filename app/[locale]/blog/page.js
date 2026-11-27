@@ -1261,6 +1261,25 @@ const posts = [
     dateLabel: 'Nov 2026',
     locales: ['pt', 'en', 'es'],
   },
+  {
+    slug: 'lista-de-compras-para-casal',
+    tag: { pt: 'Lista de compras', en: 'Shopping List', es: 'Lista de compras' },
+    title: {
+      pt: 'Lista de compras para casal: guia com quantidades certas',
+      en: 'Grocery List for Two: Quantities That Actually Work',
+      es: 'Lista de compras para pareja: cantidades que sí funcionan',
+    },
+    description: {
+      pt: 'Lista de compras para casal com quantidades certas pra 2 pessoas: o que comprar toda semana, o que comprar uma vez por mês, quanto custa e como dividir sem duplicar.',
+      en: 'A grocery list built for two people, not a family of four halved. What to buy weekly versus monthly, real quantities per category, a realistic monthly budget, and how to split it.',
+      es: 'Lista de compras para pareja con cantidades reales para 2 personas: qué comprar cada semana, qué comprar una vez al mes, cuánto cuesta y cómo dividir la lista sin duplicar.',
+    },
+    img: 'https://images.pexels.com/photos/5427305/pexels-photo-5427305.jpeg?auto=compress&cs=tinysrgb&w=800&h=480&fit=crop',
+    imgAlt: 'Casal cozinhando junto em cozinha clara',
+    date: '2026-08-21',
+    dateLabel: 'Ago 2026',
+    locales: ['pt', 'en', 'es'],
+  },
 ]
 
 export default async function BlogPage({ params }) {

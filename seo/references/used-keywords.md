@@ -1296,6 +1296,26 @@ Ao construir um cluster pra uma nova página:
 
 ---
 
+### 68. `lista de compras para casal` → `/blog/lista-de-compras-para-casal`
+
+- **Fonte primária:** ✓ CSV (vol 480, KD 17, Informational)
+- **Score:** 480 / 17 = 28.2
+- **Usada na página:** `/blog/lista-de-compras-para-casal`
+- **Cluster:**
+
+| Keyword secundária | Fonte |
+|---|---|
+| lista de compras para um casal | ✓ CSV (vol 390, KD 14) |
+| lista de compras casal | ✓ CSV (vol 320, KD 24) |
+| lista de compras para 2 pessoas | ✓ CSV (vol 260, KD 16) |
+| lista de compras do mês para casal | ✓ CSV (vol 260, KD 11) |
+| lista de compras 2 pessoas | ✓ CSV (vol 210, KD 15) |
+| lista de compras para duas pessoas | ✓ CSV (vol 210, KD 13) |
+| casal lista de compras supermercado | ✓ CSV (vol 170, KD 20) |
+| lista de mercado para casal | ✓ CSV (vol 140, KD 6) |
+
+---
+
 ## Primárias disponíveis (não usadas ainda)
 
 Do cluster restante em `seo/blog-keywords.csv` — alto volume, baixo KD, ainda sem página:
